@@ -1,0 +1,691 @@
+{
+  "meta": {
+    "version": "0.1",
+    "slice": "conlaw > 1st_amendment > freedom_of_association",
+    "description": "MVP test slice #7. Covers Freedom of Association doctrine across three tracks: expressive association (NAACP v. Alabama through Boy Scouts v. Dale), compelled disclosure (NAACP v. Alabama, Americans for Prosperity Foundation v. Bonta), and intimate association (stub \u2014 requires Due Process slice for full modeling). Three schema issues surfaced (#34-36).",
+    "created": "2026-03-17",
+    "status": "draft",
+    "schema_version": "0.4",
+    "cross_slice_dependencies": [
+      "amendment_1 (ConstitutionalProvision) \u2014 commercial_speech slice",
+      "amendment_14_section_1 (ConstitutionalProvision) \u2014 commercial_speech slice",
+      "first_amendment (Area) \u2014 commercial_speech slice",
+      "core_political_speech (Area) \u2014 core_political_speech slice",
+      "establishment_clause (Area) \u2014 establishment_clause slice"
+    ]
+  },
+  "nodes": {
+    "areas": [
+      {
+        "@type": "Area",
+        "id": "freedom_of_association",
+        "label": "Freedom of Association \u203a Doctrine",
+        "description": "The First Amendment protects the right to associate with others for expressive purposes and the right to remain free from compelled association with groups whose message one rejects. The doctrine has three tracks: (1) expressive association \u2014 the right to form groups for advocacy, political organizing, and other expressive activity; (2) intimate association \u2014 the right to form and maintain intimate personal relationships, grounded in both the First Amendment and 14th Amendment liberty; and (3) compelled disclosure \u2014 the right to keep associational membership private, protecting against government-compelled revelation of membership lists. Freedom of association is not mentioned in the constitutional text but is recognized as implicit in the First Amendment's speech, assembly, and petition protections.",
+        "parent_id": "first_amendment",
+        "secondary_parents": [],
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "tier": 3,
+        "status": "active",
+        "valid_from": "1958-06-30",
+        "valid_until": null,
+        "tags": [
+          "freedom_of_association",
+          "expressive_association",
+          "compelled_disclosure",
+          "first_amendment"
+        ],
+        "notes": "valid_from reflects NAACP v. Alabama (1958), which first clearly articulated a constitutional right of associational privacy. The right of association is implicit rather than textually stated \u2014 this makes its constitutional grounding more complex than other First Amendment rights. The intimate association track is modeled as a stub here pending the Due Process slice (Phase 2)."
+      }
+    ],
+    "doctrines": [
+      {
+        "@type": "Doctrine",
+        "id": "expressive_association_doctrine",
+        "label": "Expressive Association Doctrine",
+        "description": "The First Amendment protects the right of individuals to associate with others for purposes of engaging in protected speech and expressive activity. The government may not compel a group to include members whose presence would significantly burden the group's ability to express its collective message or viewpoint. Expressive association is a derivative right \u2014 it protects association in service of expression, not association as an end in itself. A group claiming expressive association protection must demonstrate that: (1) it engages in expressive activity; (2) the forced inclusion of a member would significantly burden that expression; and (3) the government's interest does not override the associational claim.",
+        "area_id": "freedom_of_association",
+        "scrutiny_level": "strict",
+        "elements": [
+          "The organization engages in expressive activity \u2014 speech, advocacy, political organizing, or similar First Amendment activity",
+          "Forced inclusion of the contested member would significantly burden the group's expressive message",
+          "The government's interest in compelling inclusion does not override the First Amendment associational right",
+          "Protection extends to choosing not to associate as well as to choosing to associate"
+        ],
+        "burden": "government",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1984-07-03",
+        "valid_until": null,
+        "notes": "valid_from reflects Roberts v. United States Jaycees (1984), which first articulated the expressive association framework. NAACP v. Alabama (1958) established associational privacy but in the disclosure rather than forced-inclusion context. SCHEMA ISSUE B: The expressive association doctrine requires a threshold determination \u2014 whether a group engages in protected expression \u2014 before the doctrine applies. This is a precondition to the merits analysis, identical structurally to the public figure taxonomy (Issue #19) and the belief/conduct distinction (Issue #25). Third instance confirming the PRECONDITION_TO pattern is systemic."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "compelled_disclosure_doctrine",
+        "label": "Compelled Disclosure Doctrine",
+        "description": "The First Amendment protects individuals and organizations from government-compelled disclosure of their associational memberships, donor lists, and organizational affiliations when such disclosure would chill protected First Amendment activity. The government may compel disclosure only if it demonstrates a substantial relationship between the disclosure requirement and a compelling or overriding state interest. The doctrine protects anonymous association as well as anonymous speech \u2014 the NAACP line and the political speech line converge here.",
+        "area_id": "freedom_of_association",
+        "scrutiny_level": "strict",
+        "elements": [
+          "Government seeks to compel disclosure of associational membership, donor identity, or organizational affiliation",
+          "The disclosure would result in a reasonable probability of harm \u2014 harassment, economic retaliation, or physical threat \u2014 to members",
+          "Government must demonstrate a substantial relationship between the disclosure requirement and a compelling state interest",
+          "The doctrine applies to disclosure requirements imposed on individuals and on organizations acting on behalf of their members"
+        ],
+        "burden": "government",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1958-06-30",
+        "valid_until": null,
+        "notes": "The compelled disclosure doctrine connects the associational right to the anonymous speech doctrine in core political speech. NAACP v. Alabama (1958) and Americans for Prosperity Foundation v. Bonta (2021) are the bookends. The intervening period includes Buckley v. Valeo (1976, campaign finance disclosure) and a range of cases applying different standards to different disclosure contexts. The doctrine has variable strength depending on context: political organizations receive the strongest protection; professional licensing and tax disclosure receive the weakest."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "intimate_association_doctrine",
+        "label": "Intimate Association Doctrine",
+        "description": "The Constitution protects close personal relationships \u2014 family, marriage, intimate friendship \u2014 from undue government interference. Unlike expressive association, intimate association is grounded in substantive due process (14th Amendment) rather than the First Amendment. Government interference with intimate associations must satisfy heightened scrutiny. This doctrine is modeled as a stub pending the Due Process slice, where its full constitutional grounding can be properly represented.",
+        "area_id": "freedom_of_association",
+        "scrutiny_level": "strict",
+        "elements": [
+          "The relationship is a close personal relationship \u2014 family, marriage, intimate companionship",
+          "Government action directly interferes with the relationship",
+          "Heightened scrutiny applies proportionate to the intimacy and importance of the relationship"
+        ],
+        "burden": "government",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1984-07-03",
+        "valid_until": null,
+        "pending_establishment": [
+          {
+            "case_id": "roberts_v_united_states_jaycees_1984",
+            "case_citation": "468 U.S. 609 (1984)",
+            "slice_id": "conlaw > 14th_amendment > substantive_due_process",
+            "note": "Roberts articulated the intimate/expressive association distinction. Full modeling of intimate association deferred to the Due Process slice where its 14th Amendment grounding can be properly represented."
+          }
+        ],
+        "notes": "SCHEMA ISSUE A (second instance): Intimate association is a doctrine within the freedom_of_association Area but is grounded in amendment_14_section_1, not amendment_1. The GROUNDED_IN edge from the Area to amendment_1 is accurate for expressive association but does not capture the intimate association doctrine's different constitutional basis. This is the clearest instance yet of the dual-grounding problem. Proposed fix: add GROUNDED_IN edges from individual Doctrine nodes to their specific constitutional provisions, not just from the Area node. The current schema allows GROUNDED_IN from Area or Doctrine to ConstitutionalProvision \u2014 use the Doctrine-level edge here."
+      }
+    ],
+    "doctrinal_tests": [
+      {
+        "@type": "DoctrinalTest",
+        "id": "expressive_association_test",
+        "label": "Expressive Association Test",
+        "description": "The constitutional framework for evaluating whether a group has a First Amendment right to exclude members whose presence would burden the group's expressive message. Established in Roberts v. United States Jaycees (1984) and applied in Boy Scouts of America v. Dale (2000). The test asks whether the group engages in expressive activity, whether forced inclusion would significantly affect the group's ability to express its views, and whether the government's interest in preventing discrimination justifies the associational burden.",
+        "area_id": "freedom_of_association",
+        "source_case_id": "boy_scouts_v_dale_2000",
+        "scrutiny_level": "strict",
+        "burden": "government",
+        "status": "active",
+        "valid_from": "1984-07-03",
+        "valid_until": null,
+        "prongs": [
+          {
+            "number": 1,
+            "label": "Group engages in expressive association",
+            "description": "The group must engage in some form of expression \u2014 advocating a viewpoint, promoting a message, engaging in activities protected by the First Amendment. A group that exists purely for social purposes without an expressive dimension receives less protection than one with a clear expressive purpose.",
+            "burden_note": "Group bears initial burden of establishing it engages in expressive association. Courts look to the group's stated purpose, activities, and messaging.",
+            "valid_from": "1984-07-03",
+            "valid_until": null,
+            "contested": true,
+            "contest_note": "What counts as 'expressive' association is contested at the margins. Dale expanded the category significantly \u2014 the Boy Scouts' opposition to homosexuality was found to be part of its expressive mission even though the Scouts had never publicly articulated that position. Critics argued this definition of 'expressive' was so broad as to give any organization with any viewpoint a license to discriminate."
+          },
+          {
+            "number": 2,
+            "label": "Forced inclusion significantly burdens expressive message",
+            "description": "Compelling the group to accept the member must significantly affect the group's ability to advocate its viewpoint. The government cannot force a group to include a member whose presence would impair the group's expression of its message in a significant way.",
+            "burden_note": "Group must show that including the member would significantly burden its message \u2014 not merely that it prefers not to include them. The more clearly the member's presence conflicts with the group's expressive mission, the stronger the protection.",
+            "valid_from": "1984-07-03",
+            "valid_until": null,
+            "contested": true,
+            "contest_note": "The 'significantly burdens' standard is applied deferentially \u2014 courts generally accept the group's characterization of what burdens its message. This deference was criticized in Dale: the Court accepted the Boy Scouts' post-hoc articulation of its anti-homosexuality message without requiring that the position be actually expressed or consistently held."
+          },
+          {
+            "number": 3,
+            "label": "Government interest does not justify the burden",
+            "description": "The government's interest in compelling inclusion \u2014 typically anti-discrimination law \u2014 must be weighed against the associational burden. The more purely expressive the group's purpose, the less likely the government interest will override it. A large, quasi-commercial organization receives less protection than a small, ideologically cohesive advocacy group.",
+            "burden_note": "Government must justify the anti-discrimination interest against the associational burden. The Roberts Court drew a distinction between large commercial organizations (Jaycees \u2014 required to admit women) and intimate expressive associations (more protected).",
+            "valid_from": "1984-07-03",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          }
+        ],
+        "notes": "source_case_id points to Roberts (1984) which established the test and has the ESTABLISHES edge. Dale (2000) significantly expanded and modified the test through a MODIFIES(expands) edge \u2014 Dale is the operative statement of how the test works in practice, but Roberts is the canonical source. The expressive association test was initially articulated in Roberts (1984) but its current form reflects Dale (2000), which significantly expanded the scope of expressive association protection and the deference courts give to groups' claims about their expressive purposes. source_case_id points to Dale as the operative statement of the test."
+      },
+      {
+        "@type": "DoctrinalTest",
+        "id": "compelled_disclosure_test",
+        "label": "Compelled Disclosure Test",
+        "description": "The constitutional standard for evaluating government requirements that compel disclosure of associational membership or donor identity. Established in NAACP v. Alabama (1958) and significantly tightened in Americans for Prosperity Foundation v. Bonta (2021), which held that disclosure requirements are subject to exacting scrutiny: they must be narrowly tailored to a substantial government interest.",
+        "area_id": "freedom_of_association",
+        "source_case_id": "naacp_v_alabama_1958",
+        "scrutiny_level": "strict",
+        "burden": "government",
+        "status": "active",
+        "valid_from": "1958-06-30",
+        "valid_until": null,
+        "prongs": [
+          {
+            "number": 1,
+            "label": "Compelled disclosure of protected associational information",
+            "description": "The government must be compelling disclosure of membership lists, donor identities, or organizational affiliations that are protected by the First Amendment. Not all disclosure requirements trigger this test \u2014 routine business records and public organizational information do not implicate associational privacy.",
+            "burden_note": "Challenger must demonstrate the disclosure requirement reaches protected associational information, not merely public or non-sensitive organizational data.",
+            "valid_from": "1958-06-30",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 2,
+            "label": "Chilling effect on protected association",
+            "description": "The disclosure requirement must create a reasonable probability of harm to members \u2014 harassment, retaliation, or deterrence of protected associational activity. The chilling effect need not be proven with certainty; a reasonable probability of harm suffices.",
+            "burden_note": "Challenger must demonstrate a reasonable probability that disclosure would chill protected First Amendment activity. Courts look to evidence of past harassment or the nature of the organization's activities.",
+            "valid_from": "1958-06-30",
+            "valid_until": null,
+            "contested": true,
+            "contest_note": "What constitutes a sufficient showing of chilling effect has varied across circuits. Americans for Prosperity Foundation v. Bonta (2021) held that the state's blanket requirement that charities disclose major donors to the Attorney General was not narrowly tailored even without proof of specific harassment \u2014 the Court presumed the chilling effect from the nature of the requirement."
+          },
+          {
+            "number": 3,
+            "label": "Substantial government interest, narrowly tailored",
+            "description": "Post-Bonta, the government must demonstrate that its disclosure requirement is narrowly tailored to a substantial interest. A blanket disclosure requirement that is not limited to cases where disclosure is actually necessary to serve the government's interest fails this prong. The government cannot satisfy this prong by asserting a general regulatory interest in knowing who funds organizations.",
+            "burden_note": "Government bears the burden of demonstrating narrow tailoring. Bonta rejected California's blanket donor disclosure requirement as insufficiently tailored even to a legitimate anti-fraud interest.",
+            "valid_from": "2021-07-01",
+            "valid_until": null,
+            "contested": true,
+            "contest_note": "Bonta significantly tightened the compelled disclosure test by requiring narrow tailoring rather than merely a substantial relationship between disclosure and a state interest. The precise scope of Bonta's narrow tailoring requirement is being worked out in lower courts \u2014 particularly whether it effectively establishes strict scrutiny for donor disclosure or a somewhat less demanding standard."
+          }
+        ],
+        "notes": "The compelled disclosure test connects to the anonymous speech doctrine in core_political_speech. Both protect the ability to engage in expressive activity without government-compelled identification. Buckley v. Valeo (1976) established a somewhat different (more permissive) standard for campaign finance disclosure that exists in tension with the NAACP/Bonta line \u2014 that tension is a Phase 2 issue requiring the campaign finance doctrine to be modeled."
+      }
+    ],
+    "cases": [
+      {
+        "@type": "Case",
+        "id": "naacp_v_alabama_1958",
+        "short_name": "NAACP v. Alabama",
+        "full_name": "NAACP v. Alabama ex rel. Patterson",
+        "citation": "357 U.S. 449 (1958)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1958-06-30",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "The First Amendment protects the right of association, including the right to keep membership lists private. Alabama's demand that the NAACP produce its membership lists would expose members to economic reprisal, loss of employment, and physical coercion \u2014 effectively destroying the NAACP's ability to advocate collectively. The state must demonstrate a substantial regulatory interest that overrides this associational privacy right.",
+        "holding_type": "affirmative",
+        "majority_author": "Harlan",
+        "per_curiam": false,
+        "vote": "9-0",
+        "opinions": [],
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1958-06-30",
+        "valid_until": null,
+        "courtlistener_id": null,
+        "notes": "The foundational freedom of association case. Alabama's demand for NAACP membership lists was transparently designed to expose civil rights activists to retaliation \u2014 the same enforcement pattern as Sullivan (defamation law weaponized against civil rights). Harlan's unanimous opinion established that the First Amendment protects associational privacy as implicit in the freedom to associate. The case is also significant for the incorporation of associational rights against states."
+      },
+      {
+        "@type": "Case",
+        "id": "roberts_v_united_states_jaycees_1984",
+        "short_name": "Roberts v. Jaycees",
+        "full_name": "Roberts v. United States Jaycees",
+        "citation": "468 U.S. 609 (1984)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1984-07-03",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "affirmed",
+        "holding": "Minnesota's public accommodations law requiring the Jaycees to admit women does not violate the First Amendment. The Jaycees is a large, publicly accessible organization whose membership criteria are unrelated to its expressive purposes \u2014 forced inclusion of women does not significantly burden the Jaycees' ability to express its views. The Court distinguished between intimate associations (highly personal relationships warranting strong protection) and expressive associations (groups organized for expressive purposes warranting protection where selective membership is integral to the expressive mission).",
+        "holding_type": "affirmative",
+        "majority_author": "Brennan",
+        "per_curiam": false,
+        "vote": "7-0",
+        "opinions": [],
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1984-07-03",
+        "valid_until": null,
+        "courtlistener_id": null,
+        "notes": "Roberts established the foundational two-track framework: intimate association (strong protection) and expressive association (conditional protection). The Jaycees lost because their size, public accessibility, and non-selective membership criteria meant that forced inclusion of women did not burden their expressive mission. This framework set the stage for the harder question in Boy Scouts v. Dale \u2014 what happens when a group claims its selectivity IS integral to its expressive mission."
+      },
+      {
+        "@type": "Case",
+        "id": "hurley_v_irish_american_gay_group_1995",
+        "short_name": "Hurley v. Irish-American Gay Group",
+        "full_name": "Hurley v. Irish-American Gay, Lesbian and Bisexual Group of Boston",
+        "citation": "515 U.S. 557 (1995)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1995-06-19",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "A private parade organizer may not be compelled by a public accommodations law to include a group whose message the organizer does not wish to convey. A parade is expressive conduct and its organizer has the right to control the expressive message. Compelling inclusion of a group whose presence would alter the parade's message violates the First Amendment's protection against compelled speech.",
+        "holding_type": "affirmative",
+        "majority_author": "Souter",
+        "per_curiam": false,
+        "vote": "9-0",
+        "opinions": [],
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1995-06-19",
+        "valid_until": null,
+        "courtlistener_id": null,
+        "notes": "Hurley connects freedom of association to compelled speech doctrine \u2014 the parade organizer's right to exclude is grounded in both the right not to associate with unwanted messages and the right not to be compelled to speak. Unanimous decision. Sets up the framework that Dale applies to organizational membership rather than parade participation."
+      },
+      {
+        "@type": "Case",
+        "id": "boy_scouts_v_dale_2000",
+        "short_name": "Boy Scouts v. Dale",
+        "full_name": "Boy Scouts of America v. Dale",
+        "citation": "530 U.S. 640 (2000)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "2000-06-28",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "New Jersey's public accommodations law may not be applied to require the Boy Scouts to retain a gay scoutmaster. The Boy Scouts is an expressive organization whose expressive mission includes teaching that homosexuality is inconsistent with Scout values. Forced inclusion of an openly gay scoutmaster would significantly burden this expressive mission. The state's anti-discrimination interest does not override the Boy Scouts' First Amendment right of expressive association.",
+        "holding_type": "affirmative",
+        "majority_author": "Rehnquist",
+        "per_curiam": false,
+        "vote": "5-4",
+        "opinions": [
+          {
+            "type": "dissent",
+            "author": "Stevens",
+            "joined_by": [
+              "Souter",
+              "Ginsburg",
+              "Breyer"
+            ],
+            "doctrinal_significance": "Stevens argued the majority's near-total deference to the Boy Scouts' assertion of expressive burden effectively eliminates judicial review and allows any organization to claim expressive exemptions from anti-discrimination laws. The dissent argued the Boy Scouts had never publicly emphasized opposition to homosexuality as part of its mission before the litigation.",
+            "adopted_in": []
+          }
+        ],
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "2000-06-28",
+        "valid_until": null,
+        "courtlistener_id": null,
+        "notes": "Dale is the most contested expressive association decision. The 5-4 split reflects genuine disagreement about how much deference courts owe to organizational assertions of expressive burden. The decision's practical effect is that organizations can claim First Amendment protection against anti-discrimination laws by asserting that the excluded individual's presence would burden their expressive message \u2014 a claim courts are reluctant to second-guess. Post-Dale developments: the Boy Scouts later voluntarily changed their policies on gay members and leaders, which does not affect the legal holding but undercuts the factual basis for the expressive burden claimed in litigation."
+      },
+      {
+        "@type": "Case",
+        "id": "americans_for_prosperity_v_bonta_2021",
+        "short_name": "Americans for Prosperity v. Bonta",
+        "full_name": "Americans for Prosperity Foundation v. Bonta",
+        "citation": "594 U.S. 595 (2021)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "2021-07-01",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "affirmed",
+        "holding": "California's requirement that charities disclose their major donors to the state Attorney General is facially unconstitutional as applied to Americans for Prosperity Foundation. Compelled disclosure requirements are subject to exacting scrutiny: they must be narrowly tailored to a substantial government interest. California's blanket disclosure requirement \u2014 which compelled disclosure regardless of whether it was necessary to the state's anti-fraud enforcement \u2014 failed narrow tailoring.",
+        "holding_type": "affirmative",
+        "majority_author": "Roberts",
+        "per_curiam": false,
+        "vote": "6-3",
+        "opinions": [
+          {
+            "type": "concurrence",
+            "author": "Thomas",
+            "joined_by": [],
+            "doctrinal_significance": "Thomas argued the Court should apply strict scrutiny rather than exacting scrutiny to compelled disclosure requirements \u2014 a higher standard that would provide even stronger protection for associational privacy.",
+            "adopted_in": []
+          },
+          {
+            "type": "dissent",
+            "author": "Sotomayor",
+            "joined_by": [
+              "Breyer",
+              "Kagan"
+            ],
+            "doctrinal_significance": "Sotomayor argued the majority applied a more demanding standard than prior precedent required and that California's disclosure requirement \u2014 limited to confidential regulatory use by the Attorney General \u2014 was adequately tailored to a legitimate anti-fraud interest.",
+            "adopted_in": []
+          }
+        ],
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "2021-07-01",
+        "valid_until": null,
+        "courtlistener_id": null,
+        "notes": "Bonta significantly tightened the compelled disclosure standard by adding a narrow tailoring requirement. Prior cases (Buckley v. Valeo, 1976) had applied a somewhat less demanding substantial relationship test for campaign finance disclosure. Bonta's narrow tailoring requirement puts it in tension with the campaign finance disclosure line \u2014 a tension that will require the campaign finance doctrine to be modeled to resolve fully."
+      }
+    ]
+  },
+  "edges": [
+    {
+      "id": "freedom_of_association_child_of_first_amendment",
+      "source_id": "freedom_of_association",
+      "target_id": "first_amendment",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1958-06-30",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "citation": null,
+      "notes": null
+    },
+    {
+      "id": "freedom_of_association_grounded_in_amendment_1",
+      "source_id": "freedom_of_association",
+      "target_id": "amendment_1",
+      "edge_type": "GROUNDED_IN",
+      "valid_from": "1791-12-15",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ],
+      "citation": null,
+      "notes": "Freedom of association is implicit in the First Amendment's speech, assembly, and petition clauses \u2014 not textually stated but inferred from the structure of First Amendment rights."
+    },
+    {
+      "id": "freedom_of_association_related_to_core_political_speech",
+      "source_id": "freedom_of_association",
+      "target_id": "core_political_speech",
+      "edge_type": "RELATED_TO",
+      "valid_from": "1958-06-30",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "citation": null,
+      "notes": "RELATED_TO criteria: (1) Shared constitutional grounding \u2014 both GROUNDED_IN amendment_1. (2) Overlapping case law \u2014 NAACP v. Alabama (1958) is simultaneously a compelled disclosure case and a core political speech case (NAACP's civil rights advocacy is core political speech). Americans for Prosperity v. Bonta (2021) implicates anonymous political speech doctrine. (3) Complementary not hierarchical \u2014 core political speech protects what individuals say; freedom of association protects who individuals say it with and whether they can be compelled to disclose their associational identities. SCHEMA ISSUE C: This RELATED_TO edge also captures the anonymous speech connection \u2014 compelled disclosure doctrine and anonymous speech doctrine (Talley v. California, McIntyre v. Ohio) are parallel bodies of doctrine that have never been fully unified. A future anonymous_speech sub-slice under core_political_speech would strengthen this connection."
+    },
+    {
+      "id": "freedom_of_association_governed_by_expressive_doctrine",
+      "source_id": "freedom_of_association",
+      "target_id": "expressive_association_doctrine",
+      "edge_type": "GOVERNED_BY",
+      "valid_from": "1984-07-03",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "citation": null,
+      "notes": null
+    },
+    {
+      "id": "freedom_of_association_governed_by_expressive_test",
+      "source_id": "freedom_of_association",
+      "target_id": "expressive_association_test",
+      "edge_type": "GOVERNED_BY",
+      "valid_from": "2000-06-28",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "citation": null,
+      "notes": null
+    },
+    {
+      "id": "freedom_of_association_governed_by_compelled_test",
+      "source_id": "freedom_of_association",
+      "target_id": "compelled_disclosure_test",
+      "edge_type": "GOVERNED_BY",
+      "valid_from": "1958-06-30",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "citation": null,
+      "notes": null
+    },
+    {
+      "id": "intimate_association_grounded_in_amendment_1",
+      "source_id": "intimate_association_doctrine",
+      "target_id": "amendment_1",
+      "edge_type": "GROUNDED_IN",
+      "valid_from": "1984-07-03",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "citation": null,
+      "notes": "First Amendment implicit association grounding for intimate association doctrine."
+    },
+    {
+      "id": "intimate_association_grounded_in_amendment_14",
+      "source_id": "intimate_association_doctrine",
+      "target_id": "amendment_14_section_1",
+      "edge_type": "GROUNDED_IN",
+      "valid_from": "1984-07-03",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "citation": null,
+      "notes": "SCHEMA ISSUE A: This is the first GROUNDED_IN edge from a Doctrine node to a ConstitutionalProvision. The v0.4 ontology spec permits GROUNDED_IN from 'Area / Doctrine' sources \u2014 confirmed valid. But this dual grounding (intimate_association is grounded in BOTH amendment_1 and amendment_14_section_1 through different legal theories) has no precedent in the graph. The two GROUNDED_IN edges represent different legal theories: the amendment_1 edge captures the implicit association right; the amendment_14 edge captures the substantive due process liberty interest. A future schema improvement: add a theory attribute to GROUNDED_IN edges documenting which legal theory grounds the connection."
+    },
+    {
+      "id": "naacp_establishes_compelled_disclosure_doctrine",
+      "source_id": "naacp_v_alabama_1958",
+      "target_id": "compelled_disclosure_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1958-06-30",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "citation": null,
+      "notes": null
+    },
+    {
+      "id": "naacp_establishes_compelled_disclosure_test",
+      "source_id": "naacp_v_alabama_1958",
+      "target_id": "compelled_disclosure_test",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1958-06-30",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "citation": null,
+      "notes": null
+    },
+    {
+      "id": "naacp_interprets_amendment_1",
+      "source_id": "naacp_v_alabama_1958",
+      "target_id": "amendment_1",
+      "edge_type": "INTERPRETS",
+      "valid_from": "1958-06-30",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "citation": null,
+      "notes": null
+    },
+    {
+      "id": "roberts_establishes_expressive_association_doctrine",
+      "source_id": "roberts_v_united_states_jaycees_1984",
+      "target_id": "expressive_association_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1984-07-03",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "citation": null,
+      "notes": null
+    },
+    {
+      "id": "roberts_establishes_intimate_association_doctrine",
+      "source_id": "roberts_v_united_states_jaycees_1984",
+      "target_id": "intimate_association_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1984-07-03",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "citation": null,
+      "notes": null
+    },
+    {
+      "id": "roberts_interprets_amendment_1",
+      "source_id": "roberts_v_united_states_jaycees_1984",
+      "target_id": "amendment_1",
+      "edge_type": "INTERPRETS",
+      "valid_from": "1984-07-03",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "citation": null,
+      "notes": null
+    },
+    {
+      "id": "hurley_interprets_amendment_1",
+      "source_id": "hurley_v_irish_american_gay_group_1995",
+      "target_id": "amendment_1",
+      "edge_type": "INTERPRETS",
+      "valid_from": "1995-06-19",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "citation": null,
+      "notes": null
+    },
+    {
+      "id": "dale_establishes_expressive_association_test",
+      "source_id": "boy_scouts_v_dale_2000",
+      "target_id": "expressive_association_test",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2000-06-28",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "citation": null,
+      "notes": null
+    },
+    {
+      "id": "dale_modifies_expressive_association_doctrine",
+      "source_id": "boy_scouts_v_dale_2000",
+      "target_id": "expressive_association_doctrine",
+      "edge_type": "MODIFIES",
+      "direction": "clarifies",
+      "valid_from": "2000-06-28",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "citation": null,
+      "notes": "Clarifies: Dale clarified that organizational assertions of expressive burden receive near-total judicial deference \u2014 courts will not second-guess an organization's characterization of its own expressive mission. This resolved a question left open by Roberts about how much deference courts owe to organizational self-characterization."
+    },
+    {
+      "id": "dale_distinguishes_roberts",
+      "source_id": "boy_scouts_v_dale_2000",
+      "target_id": "roberts_v_united_states_jaycees_1984",
+      "edge_type": "DISTINGUISHES",
+      "valid_from": "2000-06-28",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "citation": null,
+      "notes": "Dale distinguished Roberts by holding that the Boy Scouts \u2014 unlike the Jaycees \u2014 is an expressive organization whose selectivity on the contested characteristic (sexual orientation) is integral to its expressive mission. The Jaycees' exclusion of women was unrelated to its expressive activities; the Boy Scouts' exclusion of gay scoutmasters was allegedly central to its expressive mission of teaching Scout values."
+    },
+    {
+      "id": "dale_interprets_amendment_1",
+      "source_id": "boy_scouts_v_dale_2000",
+      "target_id": "amendment_1",
+      "edge_type": "INTERPRETS",
+      "valid_from": "2000-06-28",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "citation": null,
+      "notes": null
+    },
+    {
+      "id": "bonta_modifies_compelled_disclosure_test",
+      "source_id": "americans_for_prosperity_v_bonta_2021",
+      "target_id": "compelled_disclosure_test",
+      "edge_type": "MODIFIES",
+      "direction": "narrows",
+      "valid_from": "2021-07-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "citation": null,
+      "notes": "Narrows: Bonta added a narrow tailoring requirement to the compelled disclosure test, tightening the standard beyond the prior substantial relationship test. This narrows the government's ability to compel disclosure \u2014 government must now show not just a substantial interest but that its disclosure requirement is narrowly tailored to serve that interest."
+    },
+    {
+      "id": "bonta_modifies_compelled_disclosure_doctrine",
+      "source_id": "americans_for_prosperity_v_bonta_2021",
+      "target_id": "compelled_disclosure_doctrine",
+      "edge_type": "MODIFIES",
+      "direction": "expands",
+      "valid_from": "2021-07-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "citation": null,
+      "notes": "Expands: Bonta expanded the protection for associational privacy by adding the narrow tailoring requirement \u2014 making it harder for government to justify compelled disclosure requirements."
+    }
+  ],
+  "schema_issues_found": [
+    {
+      "issue_id": 34,
+      "severity": "medium",
+      "location": "intimate_association_doctrine (Doctrine node) / intimate_association_grounded_in_amendment_14 (edge)",
+      "description": "Dual constitutional grounding through different legal theories \u2014 theory attribute needed on GROUNDED_IN edges. The intimate association doctrine is grounded in both amendment_1 (First Amendment implicit association) and amendment_14_section_1 (substantive due process liberty) through two different legal theories. Two GROUNDED_IN edges correctly capture the dual grounding, but the schema has no way to represent which legal theory each grounding reflects. A researcher looking at the graph cannot tell whether the amendment_14 GROUNDED_IN edge reflects incorporation (14th Amendment applying 1st Amendment to states) or substantive due process (14th Amendment's own liberty clause). Proposed fix: add an optional theory attribute to GROUNDED_IN edges: incorporation | substantive_due_process | structural_inference | textual | historical. This would make doctrinal theories navigable rather than implicit in the notes field."
+    },
+    {
+      "issue_id": 35,
+      "severity": "medium",
+      "location": "expressive_association_doctrine (Doctrine node) / expressive_association_test prong 1",
+      "description": "Third instance of threshold classification meta-test problem (Issues #19, #25). The expressive association doctrine requires a threshold determination \u2014 does this organization engage in protected expressive activity? \u2014 before the merits analysis applies. This is the same structural pattern as the public figure taxonomy (Issue #19) and the belief/conduct distinction (Issue #25): a classification framework that preconditions which analysis follows. Three confirmed instances across three different doctrinal areas (press freedom, free exercise, association) establishes this as a systemic schema gap. The PRECONDITION_TO edge type proposed in Issue #19 is now confirmed as a genuine need. Adding it to the v0.5 spec is high priority before modeling Equal Protection, where the strict/intermediate/rational basis tiers are the most consequential instance of this pattern."
+    },
+    {
+      "issue_id": 36,
+      "severity": "low",
+      "location": "freedom_of_association_related_to_core_political_speech (edge) / compelled_disclosure_doctrine",
+      "description": "Anonymous speech sub-doctrine not yet modeled \u2014 floating connection. The compelled disclosure doctrine (NAACP v. Alabama, Americans for Prosperity) is substantively connected to the anonymous speech doctrine (Talley v. California, 1960; McIntyre v. Ohio Elections Commission, 1995) in the core political speech area. Both protect the ability to engage in expressive activity without government-compelled identification. The RELATED_TO edge from freedom_of_association to core_political_speech captures this relationship at the Area level, but the specific doctrinal connection (compelled_disclosure_doctrine \u2194 anonymous_speech_doctrine) cannot be modeled because anonymous_speech is not yet a separate doctrine node in the core_political_speech slice. The core_political_speech slice should be expanded to include the anonymous speech doctrine as a sub-doctrine, at which point a RELATED_TO edge between compelled_disclosure_doctrine and the anonymous_speech_doctrine node would make the connection explicit."
+    }
+  ]
+}
