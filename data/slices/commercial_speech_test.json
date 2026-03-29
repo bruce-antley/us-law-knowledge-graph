@@ -1,0 +1,635 @@
+{
+  "meta": {
+    "version": "0.1",
+    "slice": "conlaw > 1st_amendment > free_speech > commercial_speech",
+    "description": "MVP test slice for schema validation. Covers the full commercial speech doctrinal line from Valentine (1942) through Sorrell (2011).",
+    "created": "2026-03-15",
+    "status": "draft"
+  },
+
+  "nodes": {
+
+    "constitutional_provisions": [
+      {
+        "@type": "ConstitutionalProvision",
+        "id": "amendment_1",
+        "label": "First Amendment",
+        "text": "Congress shall make no law respecting an establishment of religion, or prohibiting the free exercise thereof; or abridging the freedom of speech, or of the press; or the right of the people peaceably to assemble, and to petition the Government for a redress of grievances.",
+        "provision_type": "amendment",
+        "ratified_date": "1791-12-15",
+        "notes": null
+      },
+      {
+        "@type": "ConstitutionalProvision",
+        "id": "amendment_14_section_1",
+        "label": "Fourteenth Amendment, Section 1",
+        "text": "All persons born or naturalized in the United States, and subject to the jurisdiction thereof, are citizens of the United States and of the State wherein they reside. No State shall make or enforce any law which shall abridge the privileges or immunities of citizens of the United States; nor shall any State deprive any person of life, liberty, or property, without due process of law; nor deny to any person within its equal protection of the laws.",
+        "provision_type": "amendment",
+        "ratified_date": "1868-07-09",
+        "notes": "Section 1 is the vehicle for incorporation of the Bill of Rights against the states via the Due Process Clause."
+      }
+    ],
+
+    "areas": [
+      {
+        "@type": "Area",
+        "id": "constitutional_law",
+        "label": "Constitutional Law",
+        "description": "The body of law governing the interpretation and application of the U.S. Constitution, including individual rights, structural provisions, and judicial review.",
+        "parent_id": null,
+        "secondary_parents": [],
+        "jurisdiction": ["federal"],
+        "tier": 0,
+        "status": "active",
+        "valid_from": "1788-06-21",
+        "valid_until": null,
+        "tags": ["constitutional", "federal"],
+        "sali_code": "AL_CNSTL",
+        "notes": "Root node for constitutional law taxonomy."
+      },
+      {
+        "@type": "Area",
+        "id": "individual_rights",
+        "label": "Individual Rights",
+        "description": "Constitutional protections for individual liberties against government action, primarily sourced in the Bill of Rights and the Fourteenth Amendment.",
+        "parent_id": "constitutional_law",
+        "secondary_parents": [],
+        "jurisdiction": ["federal"],
+        "tier": 1,
+        "status": "active",
+        "valid_from": "1791-12-15",
+        "valid_until": null,
+        "tags": ["rights", "bill_of_rights"],
+        "sali_code": null,
+        "notes": null
+      },
+      {
+        "@type": "Area",
+        "id": "first_amendment",
+        "label": "First Amendment",
+        "description": "Doctrine governing the First Amendment's protections for speech, press, religion, assembly, and petition. Applied to the states through the Fourteenth Amendment's Due Process Clause.",
+        "parent_id": "individual_rights",
+        "secondary_parents": [],
+        "jurisdiction": ["federal", "state"],
+        "tier": 2,
+        "status": "active",
+        "valid_from": "1791-12-15",
+        "valid_until": null,
+        "tags": ["first_amendment", "speech", "religion", "press"],
+        "sali_code": null,
+        "notes": "Applied to states via incorporation. See Gitlow v. New York (1925) for speech incorporation."
+      },
+      {
+        "@type": "Area",
+        "id": "free_speech",
+        "label": "Free Speech",
+        "description": "The body of doctrine governing government regulation of speech and expression under the First Amendment. Includes categorical analysis (protected vs. unprotected speech), content-based vs. content-neutral distinctions, and tiered scrutiny.",
+        "parent_id": "first_amendment",
+        "secondary_parents": [],
+        "jurisdiction": ["federal", "state"],
+        "tier": 3,
+        "status": "active",
+        "valid_from": "1791-12-15",
+        "valid_until": null,
+        "tags": ["speech", "expression", "first_amendment"],
+        "sali_code": null,
+        "notes": null
+      },
+      {
+        "@type": "Area",
+        "id": "commercial_speech",
+        "label": "Commercial Speech",
+        "description": "Speech that proposes a commercial transaction or is expression related solely to the economic interests of the speaker and audience. Receives intermediate First Amendment protection under the Central Hudson framework, provided the speech concerns lawful activity and is not misleading.",
+        "parent_id": "free_speech",
+        "secondary_parents": [],
+        "jurisdiction": ["federal", "state"],
+        "tier": 4,
+        "status": "active",
+        "valid_from": "1976-05-24",
+        "valid_until": null,
+        "tags": ["commercial_speech", "advertising", "first_amendment", "intermediate_scrutiny"],
+        "sali_code": null,
+        "notes": "Valid_from reflects Virginia Pharmacy Board (1976), which first extended 1A protection to commercial speech. Pre-1976 commercial speech received no constitutional protection per Valentine v. Chrestensen (1942)."
+      }
+    ],
+
+    "doctrines": [
+      {
+        "@type": "Doctrine",
+        "id": "commercial_speech_doctrine",
+        "label": "Commercial Speech Doctrine",
+        "description": "Commercial speech occupies a subordinate position in the First Amendment hierarchy. It receives protection only if it concerns lawful activity and is not misleading or fraudulent. Government regulation of commercial speech is evaluated under the four-part Central Hudson test. Fully protected (non-commercial) speech receives stricter scrutiny than commercial speech.",
+        "area_id": "commercial_speech",
+        "scrutiny_level": "intermediate",
+        "elements": [
+          "Speech must propose a commercial transaction or relate solely to economic interests",
+          "Speech must concern lawful activity",
+          "Speech must not be misleading or fraudulent",
+          "Government regulation must satisfy the Central Hudson four-part test"
+        ],
+        "burden": "government",
+        "jurisdiction": ["federal", "state"],
+        "status": "active",
+        "valid_from": "1980-06-20",
+        "valid_until": null,
+        "notes": "The boundary between commercial and non-commercial speech is contested. Sorrell v. IMS Health (2011) raised questions about whether content- or speaker-based restrictions on commercial speech might trigger higher scrutiny."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "commercial_speech_no_protection",
+        "label": "Commercial Speech — No Protection (Pre-1976)",
+        "description": "Prior to Virginia Pharmacy Board (1976), purely commercial speech received no First Amendment protection whatsoever. The government could regulate or prohibit commercial advertising without constitutional constraint.",
+        "area_id": "commercial_speech",
+        "scrutiny_level": null,
+        "elements": [
+          "Speech proposing a commercial transaction receives no First Amendment protection",
+          "Government may freely regulate commercial advertising"
+        ],
+        "burden": null,
+        "jurisdiction": ["federal", "state"],
+        "status": "overruled",
+        "valid_from": "1942-02-23",
+        "valid_until": "1976-05-24",
+        "notes": "Established by Valentine v. Chrestensen (1942). Overruled by Virginia Pharmacy Board v. Virginia Consumer Council (1976)."
+      }
+    ],
+
+    "doctrinal_tests": [
+      {
+        "@type": "DoctrinalTest",
+        "id": "central_hudson_test",
+        "label": "Central Hudson Test",
+        "description": "The four-part intermediate scrutiny test governing government regulation of commercial speech. All four prongs must be satisfied for a regulation to survive constitutional challenge. The government bears the burden of justification.",
+        "area_id": "commercial_speech",
+        "source_case_id": "central_hudson_gas_v_public_service_comm_1980",
+        "scrutiny_level": "intermediate",
+        "burden": "government",
+        "status": "active",
+        "valid_from": "1980-06-20",
+        "valid_until": null,
+        "prongs": [
+          {
+            "number": 1,
+            "label": "Lawful and non-misleading",
+            "description": "The speech must concern lawful activity and must not be misleading or fraudulent. If this threshold is not met, the speech receives no First Amendment protection and the analysis ends.",
+            "burden_note": "Threshold requirement. If not met, no protection attaches and government may freely regulate."
+          },
+          {
+            "number": 2,
+            "label": "Substantial government interest",
+            "description": "The government must assert a substantial interest in restricting the speech. A merely reasonable or rational interest is insufficient.",
+            "burden_note": "Government must identify and demonstrate a substantial — not merely legitimate — interest."
+          },
+          {
+            "number": 3,
+            "label": "Directly advances",
+            "description": "The regulation must directly and materially advance the asserted government interest. The government must demonstrate a reasonable fit between the regulation and the interest — a mere speculative connection is insufficient.",
+            "burden_note": "Government must show the regulation actually advances the interest, not just that it might."
+          },
+          {
+            "number": 4,
+            "label": "No more extensive than necessary",
+            "description": "The regulation must be no more extensive than necessary to serve the government's interest. Some Justices have argued this requires the least restrictive means available; the Court has generally applied a reasonable fit standard rather than a least-restrictive-means requirement.",
+            "burden_note": "Government must show reasonable fit. Circuit split exists on whether least restrictive means is required. See 44 Liquormart (1996) concurrences."
+          }
+        ],
+        "notes": "Prong 4 has generated the most doctrinal tension. Justice Thomas has argued commercial speech should receive full First Amendment protection, eliminating the need for Central Hudson entirely. Sorrell (2011) left open whether content- or speaker-based restrictions trigger a higher standard."
+      }
+    ],
+
+    "cases": [
+      {
+        "@type": "Case",
+        "id": "valentine_v_chrestensen_1942",
+        "citation": "316 U.S. 52 (1942)",
+        "short_name": "Valentine v. Chrestensen",
+        "full_name": "Valentine v. Chrestensen",
+        "court": "scotus",
+        "decided_date": "1942-02-23",
+        "disposition": "affirmed",
+        "holding": "The First Amendment imposes no restraint on government regulation of purely commercial advertising. A city ordinance prohibiting distribution of commercial handbills in the streets does not violate the First Amendment.",
+        "majority_author": "Roberts",
+        "vote": "9-0",
+        "status": "overruled",
+        "valid_from": "1942-02-23",
+        "valid_until": "1976-05-24",
+        "courtlistener_id": null,
+        "notes": "The foundational 'no protection for commercial speech' case. Brief per curiam. Overruled in substance by Virginia Pharmacy Board (1976), though the Court never explicitly said so."
+      },
+      {
+        "@type": "Case",
+        "id": "virginia_pharmacy_board_v_virginia_consumer_council_1976",
+        "citation": "425 U.S. 748 (1976)",
+        "short_name": "Virginia Pharmacy Board",
+        "full_name": "Virginia State Board of Pharmacy v. Virginia Citizens Consumer Council, Inc.",
+        "court": "scotus",
+        "decided_date": "1976-05-24",
+        "disposition": "affirmed",
+        "holding": "The First Amendment protects the recipient's interest in the free flow of commercial information. A state statute prohibiting licensed pharmacists from advertising prescription drug prices violates the First Amendment. Pure commercial speech is not wholly outside First Amendment protection.",
+        "majority_author": "Blackmun",
+        "vote": "8-1",
+        "status": "good_law",
+        "valid_from": "1976-05-24",
+        "valid_until": null,
+        "courtlistener_id": null,
+        "notes": "Landmark. First case to extend First Amendment protection to commercial speech. Rehnquist dissented alone. Established that listeners — not just speakers — have a First Amendment interest in receiving commercial information."
+      },
+      {
+        "@type": "Case",
+        "id": "central_hudson_gas_v_public_service_comm_1980",
+        "citation": "447 U.S. 557 (1980)",
+        "short_name": "Central Hudson",
+        "full_name": "Central Hudson Gas & Electric Corp. v. Public Service Commission of New York",
+        "court": "scotus",
+        "decided_date": "1980-06-20",
+        "disposition": "reversed",
+        "holding": "Government regulation of commercial speech must satisfy a four-part test: (1) the speech concerns lawful activity and is not misleading; (2) the government asserts a substantial interest; (3) the regulation directly advances that interest; (4) the regulation is no more extensive than necessary. A New York Public Service Commission order prohibiting an electric utility from advertising to promote electricity use failed prongs 3 and 4.",
+        "majority_author": "Powell",
+        "vote": "8-1",
+        "status": "good_law",
+        "valid_from": "1980-06-20",
+        "valid_until": null,
+        "courtlistener_id": null,
+        "notes": "The foundational commercial speech test case. Rehnquist dissented. The four-part test remains the governing framework, though its application has been contested in subsequent cases."
+      },
+      {
+        "@type": "Case",
+        "id": "posadas_de_puerto_rico_v_tourism_co_1986",
+        "citation": "478 U.S. 328 (1986)",
+        "short_name": "Posadas",
+        "full_name": "Posadas de Puerto Rico Associates v. Tourism Company of Puerto Rico",
+        "court": "scotus",
+        "decided_date": "1986-07-01",
+        "disposition": "affirmed",
+        "holding": "Puerto Rico's restriction on casino advertising directed at local residents satisfies the Central Hudson test. The legislature's interest in reducing demand for casino gambling among residents is substantial, the advertising ban directly advances that interest, and the restriction is no more extensive than necessary.",
+        "majority_author": "Rehnquist",
+        "vote": "5-4",
+        "status": "limited",
+        "valid_from": "1986-07-01",
+        "valid_until": null,
+        "courtlistener_id": null,
+        "notes": "Broadly applied Central Hudson with strong deference to the legislature. The 'greater includes the lesser' reasoning — that because government can ban gambling it can ban gambling ads — was effectively repudiated by 44 Liquormart (1996)."
+      },
+      {
+        "@type": "Case",
+        "id": "44_liquormart_v_rhode_island_1996",
+        "citation": "517 U.S. 484 (1996)",
+        "short_name": "44 Liquormart",
+        "full_name": "44 Liquormart, Inc. v. Rhode Island",
+        "court": "scotus",
+        "decided_date": "1996-05-13",
+        "disposition": "affirmed",
+        "holding": "A Rhode Island statute banning retail liquor price advertising violates the First Amendment. The 'greater includes the lesser' rationale of Posadas is rejected. Complete bans on truthful, non-misleading commercial speech about lawful products receive particularly careful Central Hudson scrutiny. Rhode Island failed to show its ban directly and materially advanced its interest in temperance.",
+        "majority_author": "Stevens",
+        "vote": "9-0",
+        "status": "good_law",
+        "valid_from": "1996-05-13",
+        "valid_until": null,
+        "courtlistener_id": null,
+        "notes": "Unanimous result but highly fractured reasoning — no majority opinion on rationale. Effectively limited Posadas. Multiple concurrences debated whether Central Hudson should be replaced with full strict scrutiny for commercial speech (Thomas, Scalia). Tightened application of prongs 3 and 4."
+      },
+      {
+        "@type": "Case",
+        "id": "lorillard_tobacco_v_reilly_2001",
+        "citation": "533 U.S. 525 (2001)",
+        "short_name": "Lorillard Tobacco",
+        "full_name": "Lorillard Tobacco Co. v. Reilly",
+        "court": "scotus",
+        "decided_date": "2001-06-28",
+        "disposition": "affirmed_in_part_reversed_in_part",
+        "holding": "Massachusetts regulations restricting outdoor and point-of-sale tobacco advertising near schools and playgrounds violate the First Amendment as applied to smokeless tobacco and cigar advertising. The regulations fail Central Hudson prong 4 — they are more extensive than necessary because they effectively prohibit advertising in a substantial portion of Massachusetts's major cities.",
+        "majority_author": "O'Connor",
+        "vote": "5-4",
+        "status": "good_law",
+        "valid_from": "2001-06-28",
+        "valid_until": null,
+        "courtlistener_id": null,
+        "notes": "Important application of Central Hudson prong 4. Court requires government to show a reasonable fit — not least restrictive means — but the Massachusetts regulations swept too broadly. Cigarette advertising regulations were preempted by federal law (FCLAA) and decided on those grounds."
+      },
+      {
+        "@type": "Case",
+        "id": "sorrell_v_ims_health_2011",
+        "citation": "564 U.S. 552 (2011)",
+        "short_name": "Sorrell",
+        "full_name": "Sorrell v. IMS Health Inc.",
+        "court": "scotus",
+        "decided_date": "2011-06-23",
+        "disposition": "affirmed",
+        "holding": "A Vermont statute restricting the sale, disclosure, and use of pharmacy records for pharmaceutical marketing purposes imposes a speaker- and content-based burden on protected expression. Laws that impose special burdens on speakers because of the content of their speech are subject to heightened scrutiny — at least as searching as Central Hudson, and potentially the stricter standard applicable to content-based restrictions on fully protected speech.",
+        "majority_author": "Kennedy",
+        "vote": "6-3",
+        "status": "good_law",
+        "valid_from": "2011-06-23",
+        "valid_until": null,
+        "courtlistener_id": null,
+        "notes": "Significant doctrinal complication. The majority avoided definitively choosing between Central Hudson intermediate scrutiny and strict scrutiny, but applied heightened review. Breyer dissented (joined by Ginsburg, Kagan) arguing the majority wrongly constitutionalized economic regulation. Left open the question of whether content- or speaker-based restrictions on commercial speech trigger strict scrutiny."
+      }
+    ]
+  },
+
+  "edges": [
+
+    {
+      "id": "amendment_14_incorporates_amendment_1",
+      "source_id": "amendment_14_section_1",
+      "target_id": "amendment_1",
+      "edge_type": "INCORPORATES",
+      "valid_from": "1925-06-08",
+      "valid_until": null,
+      "jurisdiction": ["state"],
+      "citation": "Gitlow v. New York, 268 U.S. 652 (1925)",
+      "notes": "The 14th Amendment Due Process Clause incorporates the 1st Amendment speech protections against state governments. Valid_from reflects Gitlow (1925), first case to hold this."
+    },
+
+    {
+      "id": "first_amendment_grounded_in_amendment_1",
+      "source_id": "first_amendment",
+      "target_id": "amendment_1",
+      "edge_type": "GROUNDED_IN",
+      "valid_from": "1791-12-15",
+      "valid_until": null,
+      "jurisdiction": ["federal"],
+      "citation": null,
+      "notes": null
+    },
+    {
+      "id": "first_amendment_grounded_in_amendment_14",
+      "source_id": "first_amendment",
+      "target_id": "amendment_14_section_1",
+      "edge_type": "GROUNDED_IN",
+      "valid_from": "1925-06-08",
+      "valid_until": null,
+      "jurisdiction": ["state"],
+      "citation": "Gitlow v. New York, 268 U.S. 652 (1925)",
+      "notes": "The 1st Amendment applies to state governments via the 14th Amendment's Due Process Clause."
+    },
+
+    {
+      "id": "free_speech_child_of_first_amendment",
+      "source_id": "free_speech",
+      "target_id": "first_amendment",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1791-12-15",
+      "valid_until": null,
+      "jurisdiction": ["federal", "state"],
+      "citation": null,
+      "notes": null
+    },
+    {
+      "id": "commercial_speech_child_of_free_speech",
+      "source_id": "commercial_speech",
+      "target_id": "free_speech",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1976-05-24",
+      "valid_until": null,
+      "jurisdiction": ["federal", "state"],
+      "citation": "Virginia State Board of Pharmacy v. Virginia Citizens Consumer Council, 425 U.S. 748 (1976)",
+      "notes": "Commercial speech became a recognized doctrinal sub-area only after Virginia Pharmacy Board extended First Amendment protection to it."
+    },
+
+    {
+      "id": "free_speech_governed_by_commercial_speech_doctrine",
+      "source_id": "commercial_speech",
+      "target_id": "commercial_speech_doctrine",
+      "edge_type": "GOVERNED_BY",
+      "valid_from": "1980-06-20",
+      "valid_until": null,
+      "jurisdiction": ["federal", "state"],
+      "citation": null,
+      "notes": null
+    },
+    {
+      "id": "commercial_speech_governed_by_central_hudson",
+      "source_id": "commercial_speech",
+      "target_id": "central_hudson_test",
+      "edge_type": "GOVERNED_BY",
+      "valid_from": "1980-06-20",
+      "valid_until": null,
+      "jurisdiction": ["federal", "state"],
+      "citation": null,
+      "notes": null
+    },
+
+    {
+      "id": "valentine_establishes_no_protection_doctrine",
+      "source_id": "valentine_v_chrestensen_1942",
+      "target_id": "commercial_speech_no_protection",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1942-02-23",
+      "valid_until": null,
+      "jurisdiction": ["federal", "state"],
+      "citation": null,
+      "notes": "SCHEMA NOTE: Valentine established a rule by denying protection — not by articulating a positive doctrine. This edge exposes a gap: ESTABLISHES implies positive creation. Consider adding holding_type: [affirmative | by_negation] to Case nodes, or a separate ESTABLISHES_BY_NEGATION edge type."
+    },
+    {
+      "id": "valentine_interprets_amendment_1",
+      "source_id": "valentine_v_chrestensen_1942",
+      "target_id": "amendment_1",
+      "edge_type": "INTERPRETS",
+      "valid_from": "1942-02-23",
+      "valid_until": null,
+      "jurisdiction": ["federal", "state"],
+      "citation": null,
+      "notes": null
+    },
+
+    {
+      "id": "virginia_pharmacy_overrules_valentine",
+      "source_id": "virginia_pharmacy_board_v_virginia_consumer_council_1976",
+      "target_id": "valentine_v_chrestensen_1942",
+      "edge_type": "OVERRULES",
+      "valid_from": "1976-05-24",
+      "valid_until": null,
+      "jurisdiction": ["federal", "state"],
+      "citation": "425 U.S. 748 (1976)",
+      "notes": "The Court did not explicitly say it was overruling Valentine, but the holding is directly incompatible. SCHEMA NOTE: Need a way to represent implicit vs. explicit overruling. Consider adding overrule_type: [explicit | implicit] to OVERRULES edges."
+    },
+    {
+      "id": "virginia_pharmacy_establishes_commercial_speech_doctrine",
+      "source_id": "virginia_pharmacy_board_v_virginia_consumer_council_1976",
+      "target_id": "commercial_speech_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1976-05-24",
+      "valid_until": null,
+      "jurisdiction": ["federal", "state"],
+      "citation": null,
+      "notes": null
+    },
+    {
+      "id": "virginia_pharmacy_interprets_amendment_1",
+      "source_id": "virginia_pharmacy_board_v_virginia_consumer_council_1976",
+      "target_id": "amendment_1",
+      "edge_type": "INTERPRETS",
+      "valid_from": "1976-05-24",
+      "valid_until": null,
+      "jurisdiction": ["federal", "state"],
+      "citation": null,
+      "notes": null
+    },
+
+    {
+      "id": "central_hudson_establishes_test",
+      "source_id": "central_hudson_gas_v_public_service_comm_1980",
+      "target_id": "central_hudson_test",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1980-06-20",
+      "valid_until": null,
+      "jurisdiction": ["federal", "state"],
+      "citation": null,
+      "notes": null
+    },
+    {
+      "id": "central_hudson_applies_commercial_speech_doctrine",
+      "source_id": "central_hudson_gas_v_public_service_comm_1980",
+      "target_id": "commercial_speech_doctrine",
+      "edge_type": "APPLIES",
+      "valid_from": "1980-06-20",
+      "valid_until": null,
+      "jurisdiction": ["federal", "state"],
+      "citation": null,
+      "notes": null
+    },
+    {
+      "id": "central_hudson_interprets_amendment_1",
+      "source_id": "central_hudson_gas_v_public_service_comm_1980",
+      "target_id": "amendment_1",
+      "edge_type": "INTERPRETS",
+      "valid_from": "1980-06-20",
+      "valid_until": null,
+      "jurisdiction": ["federal", "state"],
+      "citation": null,
+      "notes": null
+    },
+
+    {
+      "id": "posadas_applies_central_hudson",
+      "source_id": "posadas_de_puerto_rico_v_tourism_co_1986",
+      "target_id": "central_hudson_test",
+      "edge_type": "APPLIES",
+      "valid_from": "1986-07-01",
+      "valid_until": null,
+      "jurisdiction": ["federal", "state"],
+      "citation": null,
+      "notes": null
+    },
+    {
+      "id": "posadas_modifies_central_hudson_test",
+      "source_id": "posadas_de_puerto_rico_v_tourism_co_1986",
+      "target_id": "central_hudson_test",
+      "edge_type": "MODIFIES",
+      "valid_from": "1986-07-01",
+      "valid_until": null,
+      "jurisdiction": ["federal", "state"],
+      "citation": null,
+      "notes": "SCHEMA NOTE: Posadas both applies AND modifies Central Hudson — the 'greater includes lesser' reasoning expanded the test's deference to government. A single node can have both APPLIES and MODIFIES edges to the same target. Is that right, or should MODIFIES subsume APPLIES? Consider making MODIFIES a sub-type that implies application."
+    },
+
+    {
+      "id": "44_liquormart_limits_posadas",
+      "source_id": "44_liquormart_v_rhode_island_1996",
+      "target_id": "posadas_de_puerto_rico_v_tourism_co_1986",
+      "edge_type": "DISTINGUISHES",
+      "valid_from": "1996-05-13",
+      "valid_until": null,
+      "jurisdiction": ["federal", "state"],
+      "citation": null,
+      "notes": "SCHEMA NOTE: DISTINGUISHES is technically correct but undersells what happened — 44 Liquormart effectively repudiated Posadas's 'greater includes lesser' reasoning without formally overruling it. Consider adding a LIMITS edge type, or a direction attribute on MODIFIES: [narrows | expands | complicates | repudiates]. This is the Sorrell problem anticipated in our design discussion."
+    },
+    {
+      "id": "44_liquormart_modifies_central_hudson_test",
+      "source_id": "44_liquormart_v_rhode_island_1996",
+      "target_id": "central_hudson_test",
+      "edge_type": "MODIFIES",
+      "valid_from": "1996-05-13",
+      "valid_until": null,
+      "jurisdiction": ["federal", "state"],
+      "citation": null,
+      "notes": "Tightened application of prongs 3 and 4. Rejected broad deference to legislative judgment. Direction: narrows (government-friendly application)."
+    },
+    {
+      "id": "44_liquormart_applies_central_hudson",
+      "source_id": "44_liquormart_v_rhode_island_1996",
+      "target_id": "central_hudson_test",
+      "edge_type": "APPLIES",
+      "valid_from": "1996-05-13",
+      "valid_until": null,
+      "jurisdiction": ["federal", "state"],
+      "citation": null,
+      "notes": null
+    },
+
+    {
+      "id": "lorillard_applies_central_hudson",
+      "source_id": "lorillard_tobacco_v_reilly_2001",
+      "target_id": "central_hudson_test",
+      "edge_type": "APPLIES",
+      "valid_from": "2001-06-28",
+      "valid_until": null,
+      "jurisdiction": ["federal", "state"],
+      "citation": null,
+      "notes": null
+    },
+
+    {
+      "id": "sorrell_complicates_central_hudson",
+      "source_id": "sorrell_v_ims_health_2011",
+      "target_id": "central_hudson_test",
+      "edge_type": "MODIFIES",
+      "valid_from": "2011-06-23",
+      "valid_until": null,
+      "jurisdiction": ["federal", "state"],
+      "citation": null,
+      "notes": "Direction: complicates. Sorrell raised the possibility that content- or speaker-based commercial speech restrictions might trigger scrutiny higher than Central Hudson intermediate scrutiny — potentially strict scrutiny. The Court declined to resolve this, leaving the framework unsettled. SCHEMA NOTE: This is the clearest case for a direction attribute on MODIFIES. 'Complicates' is not the same as 'narrows' or 'expands'."
+    },
+    {
+      "id": "sorrell_applies_commercial_speech_doctrine",
+      "source_id": "sorrell_v_ims_health_2011",
+      "target_id": "commercial_speech_doctrine",
+      "edge_type": "APPLIES",
+      "valid_from": "2011-06-23",
+      "valid_until": null,
+      "jurisdiction": ["federal", "state"],
+      "citation": null,
+      "notes": null
+    }
+  ],
+
+  "schema_issues_found": [
+    {
+      "issue_id": 1,
+      "severity": "medium",
+      "location": "valentine_establishes_no_protection_doctrine (edge)",
+      "description": "ESTABLISHES edge type implies positive doctrine creation. Valentine established a rule by denying protection, not by articulating a framework. Need holding_type attribute on Case nodes (affirmative | by_negation) or a separate ESTABLISHES_BY_NEGATION edge type."
+    },
+    {
+      "issue_id": 2,
+      "severity": "medium",
+      "location": "virginia_pharmacy_overrules_valentine (edge)",
+      "description": "Virginia Pharmacy did not explicitly overrule Valentine but is directly incompatible with it. OVERRULES edge needs an overrule_type attribute: explicit | implicit | effective."
+    },
+    {
+      "issue_id": 3,
+      "severity": "high",
+      "location": "MODIFIES edge type (schema)",
+      "description": "MODIFIES is doing too much work. Posadas expanded Central Hudson deference, 44 Liquormart narrowed it, Sorrell complicated it without resolving it. Need a direction attribute: narrows | expands | complicates | repudiates | clarifies. Without this, MODIFIES edges carry no directionality and the research tool cannot tell users whether doctrine tightened or loosened."
+    },
+    {
+      "issue_id": 4,
+      "severity": "low",
+      "location": "posadas_applies_central_hudson and posadas_modifies_central_hudson_test (edges)",
+      "description": "A case can have both APPLIES and MODIFIES edges to the same target. Ambiguous whether MODIFIES should subsume APPLIES or coexist with it. Recommend: MODIFIES implies application. Remove redundant APPLIES edge when MODIFIES is present."
+    },
+    {
+      "issue_id": 5,
+      "severity": "medium",
+      "location": "central_hudson_test prong 4 (node)",
+      "description": "Prong 4 has been interpreted differently over time — some justices push for least restrictive means, the majority applies reasonable fit. The prong text itself is contested. Static prong sub-schema cannot represent this evolution. Consider adding a valid_from / valid_until window to individual prongs, or a contested: true flag with a notes field."
+    },
+    {
+      "issue_id": 6,
+      "severity": "low",
+      "location": "INCORPORATES edge type (schema)",
+      "description": "INCORPORATES is not in the original edge type list — added here ad hoc for the 14th Amendment incorporation relationship. Needs to be added to the formal schema as a ConstitutionalProvision-to-ConstitutionalProvision edge type."
+    }
+  ]
+}
