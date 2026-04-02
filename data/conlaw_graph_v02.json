@@ -17,8 +17,8 @@
     "created": "2026-03-15",
     "status": "draft",
     "schema_version": "0.2",
-    "node_count": 92,
-    "edge_count": 194,
+    "node_count": 102,
+    "edge_count": 215,
     "schema_issue_count": 41,
     "fixes_applied": [
       "FIX 1: ConstitutionalProvision labels changed to citation form (amendment_1, amendment_14_section_1) to disambiguate from Area nodes with same common-name labels",
@@ -595,6 +595,32 @@
           }
         ],
         "notes": "The Noerr-Pennington doctrine is the most practically significant petition doctrine application. It regularly arises in antitrust litigation when defendants claim their lobbying or litigation activity is protected petitioning. The sham exception (Professional Real Estate Investors v. Columbia Pictures, 1993) limits the immunity. The doctrine sits at the intersection of constitutional law and antitrust \u2014 it is modeled here as a constitutional petition doctrine though it has significant antitrust dimensions that will be better represented when the statutory/regulatory layer (Phase 2) is built."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "student_speech_doctrine",
+        "label": "Student Speech Doctrine",
+        "description": "Public school students retain First Amendment rights on school grounds, but those rights are qualified by the school setting. The government may restrict student speech only when it can demonstrate that the speech would substantially disrupt or materially interfere with school operations or the rights of other students. Mere discomfort, disagreement, or a desire to avoid controversy does not justify restriction. The doctrine has three established exceptions: lewd or vulgar speech (Bethel), school-sponsored speech (Hazelwood), and speech promoting illegal drug use (Morse). Outside those exceptions, Tinker's substantial-disruption test governs.",
+        "area_id": "core_political_speech",
+        "scrutiny_level": "intermediate",
+        "elements": [
+          "Students do not shed their constitutional rights at the schoolhouse gate",
+          "School officials may restrict student speech only upon demonstrating substantial disruption or material interference with school operations",
+          "Undifferentiated fear or apprehension of disturbance is not enough",
+          "Viewpoint-based restrictions are particularly suspect even in the school context",
+          "Exception: lewd, vulgar, or plainly offensive speech may be restricted without disruption showing (Bethel)",
+          "Exception: school-sponsored speech (newspapers, plays, curricular activities) may be regulated for legitimate pedagogical concerns (Hazelwood)",
+          "Exception: speech promoting illegal drug use may be restricted (Morse)"
+        ],
+        "burden": "government",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1969-02-24",
+        "valid_until": null,
+        "notes": "The student speech doctrine is a specialized sub-doctrine within core political speech. The general rule (Tinker's substantial-disruption test) protects student expression robustly; the three exceptions carve out specific categories where the school's institutional interest overrides ordinary First Amendment analysis. The doctrine has not been revisited comprehensively by the Supreme Court since Morse (2007), leaving open questions about social media speech, off-campus speech, and the scope of the Hazelwood curricular exception."
       }
     ],
     "areas": [
@@ -2200,6 +2226,270 @@
         "valid_until": null,
         "courtlistener_id": null,
         "notes": "Guarnieri is the clearest statement that the Petition Clause does not operate independently of speech doctrine in the public employee context. Kennedy's majority held that treating petition and speech differently would create anomalies \u2014 a public employee who files a grievance gets no more protection than one who speaks publicly about the same matter. Thomas's dissent is significant as the most sustained recent argument for an independent Petition Clause. The public concern doctrine from Snyder v. Phelps (core_political_speech slice) applies here."
+      },
+      {
+        "@type": "Case",
+        "id": "abrams_v_united_states_1919",
+        "short_name": "Abrams v. United States",
+        "full_name": "Abrams v. United States",
+        "citation": "250 U.S. 616 (1919)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1919-11-10",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "affirmed",
+        "holding": "The Espionage Act convictions of Russian immigrants who threw leaflets from a building criticizing U.S. intervention in Russia are affirmed. The leaflets were intended to provoke resistance to the war effort and constituted speech that created a clear and present danger of an evil Congress has a right to prevent.",
+        "holding_type": "affirmative",
+        "majority_author": "Clarke",
+        "per_curiam": false,
+        "vote": "7-2",
+        "opinions": [
+          {
+            "type": "dissent",
+            "author": "Holmes",
+            "joined_by": [
+              "Brandeis"
+            ],
+            "doctrinal_significance": "Holmes's Abrams dissent is the foundational statement of marketplace-of-ideas free speech theory. He argued that 'the ultimate good desired is better reached by free trade in ideas \u2014 that the best test of truth is the power of the thought to get itself accepted in the competition of the market.' He argued the majority's 'clear and present danger' test required immediate, proximate danger \u2014 not the speculative threat the leaflets posed. This dissent, along with Gitlow (1925), became the intellectual foundation for Brandenburg v. Ohio (1969) fifty years later.",
+            "adopted_in": [
+              "brandenburg_v_ohio_1969"
+            ]
+          }
+        ],
+        "status": "limited",
+        "precedential_weight": "binding",
+        "valid_from": "1919-11-10",
+        "valid_until": null,
+        "courtlistener_id": null,
+        "notes": "Abrams is significant primarily for Holmes's dissent, not the majority holding. The majority's expansive reading of 'clear and present danger' was effectively repudiated by Brandenburg (1969). Holmes's marketplace-of-ideas argument and his insistence on imminence and likelihood of harm became the doctrinal foundation of modern incitement law. status: limited because the majority's reasoning was superseded by Brandenburg."
+      },
+      {
+        "@type": "Case",
+        "id": "gitlow_v_new_york_1925",
+        "short_name": "Gitlow v. New York",
+        "full_name": "Gitlow v. New York",
+        "citation": "268 U.S. 652 (1925)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1925-06-08",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "affirmed",
+        "holding": "New York's Criminal Anarchy Act conviction of a Socialist Party member who published a manifesto calling for mass strikes and revolutionary action is affirmed. The First Amendment is incorporated against the states through the Fourteenth Amendment, but states may punish speech that tends to subvert or imperil the government even without showing immediate danger.",
+        "holding_type": "affirmative",
+        "majority_author": "Sanford",
+        "per_curiam": false,
+        "vote": "7-2",
+        "opinions": [
+          {
+            "type": "dissent",
+            "author": "Holmes",
+            "joined_by": [
+              "Brandeis"
+            ],
+            "doctrinal_significance": "Holmes reiterated and deepened his Abrams argument \u2014 the manifesto posed no immediate danger and the marketplace of ideas should be trusted to reject dangerous ideas without government suppression. He argued that the test should be whether the speech creates a clear and present danger of an immediate evil, not whether it has a bad tendency. This dissent continued the intellectual lineage that culminated in Brandenburg.",
+            "adopted_in": [
+              "brandenburg_v_ohio_1969"
+            ]
+          }
+        ],
+        "status": "limited",
+        "precedential_weight": "binding",
+        "valid_from": "1925-06-08",
+        "valid_until": null,
+        "courtlistener_id": null,
+        "notes": "Gitlow is significant for two holdings: (1) it incorporated the First Amendment against the states via the 14th Amendment Due Process Clause \u2014 the first incorporation of a Bill of Rights provision; (2) it applied the 'bad tendency' test rather than Holmes's clear and present danger standard. The bad tendency test was effectively overruled by Brandenburg (1969). Holmes's dissent continued the marketplace-of-ideas argument from Abrams."
+      },
+      {
+        "@type": "Case",
+        "id": "tinker_v_des_moines_1969",
+        "short_name": "Tinker v. Des Moines",
+        "full_name": "Tinker v. Des Moines Independent Community School District",
+        "citation": "393 U.S. 503 (1969)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1969-02-24",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "Public school students who wore black armbands to protest the Vietnam War engaged in constitutionally protected symbolic speech. School officials may not suppress student expression unless they can demonstrate facts that reasonably support a forecast that the expression will substantially disrupt or materially interfere with school activities. Students do not shed their constitutional rights at the schoolhouse gate.",
+        "holding_type": "affirmative",
+        "majority_author": "Fortas",
+        "per_curiam": false,
+        "vote": "7-2",
+        "opinions": [
+          {
+            "type": "dissent",
+            "author": "Black",
+            "joined_by": [],
+            "doctrinal_significance": "Justice Black argued that the Constitution does not guarantee students the right to use schools as platforms for political expression \u2014 schools are for education, not political activity. His dissent anticipated later decisions narrowing Tinker in specific contexts (Bethel, Hazelwood, Morse).",
+            "adopted_in": []
+          }
+        ],
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1969-02-24",
+        "valid_until": null,
+        "courtlistener_id": null,
+        "notes": "Tinker is the foundational student speech case and one of the most cited First Amendment decisions ever issued. The armband facts make it a particularly clean precedent \u2014 silent, passive, political expression with no evidence of disruption. Three subsequent cases (Bethel, Hazelwood, Morse) carved out specific exceptions to Tinker's substantial-disruption test, but the core rule remains good law. The Court's 2021 decision in Mahanoy Area School District v. B.L. reaffirmed Tinker while declining to set a comprehensive rule for off-campus speech."
+      },
+      {
+        "@type": "Case",
+        "id": "bethel_school_district_v_fraser_1986",
+        "short_name": "Bethel School District v. Fraser",
+        "full_name": "Bethel School District No. 403 v. Fraser",
+        "citation": "478 U.S. 675 (1986)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1986-07-07",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "A public school may discipline a student for delivering a lewd and sexually suggestive speech at a school assembly even without demonstrating substantial disruption. The First Amendment does not prevent school officials from determining that such speech is inappropriate for a school assembly. The constitutional rights of students in public schools are not automatically coextensive with the rights of adults in other settings.",
+        "holding_type": "affirmative",
+        "majority_author": "Burger",
+        "per_curiam": false,
+        "vote": "7-2",
+        "opinions": [],
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1986-07-07",
+        "valid_until": null,
+        "courtlistener_id": null,
+        "notes": "Bethel established the first exception to Tinker's substantial-disruption requirement: lewd, vulgar, or plainly offensive speech may be restricted in the school context without showing disruption. The exception is limited to speech that is plainly offensive \u2014 not merely controversial or provocative."
+      },
+      {
+        "@type": "Case",
+        "id": "hazelwood_school_district_v_kuhlmeier_1988",
+        "short_name": "Hazelwood v. Kuhlmeier",
+        "full_name": "Hazelwood School District v. Kuhlmeier",
+        "citation": "484 U.S. 260 (1988)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1988-01-13",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "A public school may exercise editorial control over the style and content of student speech in school-sponsored expressive activities \u2014 such as a school newspaper \u2014 so long as the editorial decisions are reasonably related to legitimate pedagogical concerns. School-sponsored speech does not receive the full Tinker protection because the school itself is the speaker.",
+        "holding_type": "affirmative",
+        "majority_author": "White",
+        "per_curiam": false,
+        "vote": "5-3",
+        "opinions": [
+          {
+            "type": "dissent",
+            "author": "Brennan",
+            "joined_by": [
+              "Marshall",
+              "Blackmun"
+            ],
+            "doctrinal_significance": "Brennan argued the majority's 'legitimate pedagogical concerns' standard gave schools virtually unlimited authority to censor student expression in any school-sponsored activity, effectively gutting Tinker for the most important forum of student expression.",
+            "adopted_in": []
+          }
+        ],
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1988-01-13",
+        "valid_until": null,
+        "courtlistener_id": null,
+        "notes": "Hazelwood established the second Tinker exception: school-sponsored speech (newspapers, plays, curricular activities) may be regulated for legitimate pedagogical concerns without showing substantial disruption. The key distinction is between student expression that the school sponsors and bears responsibility for versus student expression that merely occurs on school grounds."
+      },
+      {
+        "@type": "Case",
+        "id": "morse_v_frederick_2007",
+        "short_name": "Morse v. Frederick",
+        "full_name": "Morse v. Frederick",
+        "citation": "551 U.S. 393 (2007)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "2007-06-25",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "A public school principal did not violate the First Amendment by confiscating a student's banner reading 'Bong Hits 4 Jesus' at a school-supervised event. Schools may restrict student speech that can reasonably be viewed as promoting illegal drug use.",
+        "holding_type": "affirmative",
+        "majority_author": "Roberts",
+        "per_curiam": false,
+        "vote": "5-4",
+        "opinions": [
+          {
+            "type": "dissent",
+            "author": "Stevens",
+            "joined_by": [
+              "Souter",
+              "Ginsburg"
+            ],
+            "doctrinal_significance": "Stevens argued the majority created a dangerously broad exception that could be used to suppress any speech school officials deem inconsistent with school values \u2014 far beyond drug promotion. He argued Tinker should govern and the banner caused no disruption.",
+            "adopted_in": []
+          }
+        ],
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "2007-06-25",
+        "valid_until": null,
+        "courtlistener_id": null,
+        "notes": "Morse established the third Tinker exception: speech that can reasonably be viewed as promoting illegal drug use may be restricted without a disruption showing. The exception is narrow \u2014 the Court explicitly declined to extend it to political speech about drug policy (e.g., advocating marijuana legalization would be protected). The 5-4 split reflects genuine disagreement about the breadth of the exception."
+      },
+      {
+        "@type": "Case",
+        "id": "texas_monthly_v_bullock_1989",
+        "short_name": "Texas Monthly v. Bullock",
+        "full_name": "Texas Monthly, Inc. v. Bullock",
+        "citation": "489 U.S. 1 (1989)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1989-02-21",
+        "opinion_form": "plurality",
+        "procedural_disposition": "reversed",
+        "holding": "A Texas sales tax exemption limited exclusively to periodicals published by religious organizations violates the Establishment Clause. A tax exemption that benefits only religious publications \u2014 without a secular equivalent \u2014 impermissibly endorses religion and subsidizes the dissemination of religious doctrine.",
+        "holding_type": "affirmative",
+        "majority_author": null,
+        "per_curiam": false,
+        "vote": "6-3",
+        "opinions": [
+          {
+            "type": "concurrence",
+            "author": "Blackmun",
+            "joined_by": [
+              "O'Connor"
+            ],
+            "doctrinal_significance": "Blackmun's concurrence distinguished Texas Monthly from Amos \u2014 a religious exemption from a civil regulation burden is permissible accommodation, but a tax exemption that bestows an affirmative financial benefit on religion without a corresponding burden is impermissible preference.",
+            "adopted_in": []
+          }
+        ],
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1989-02-21",
+        "valid_until": null,
+        "courtlistener_id": null,
+        "notes": "Texas Monthly draws the critical line between permissible accommodation and impermissible preference in religious exemption doctrine. An exemption that relieves a genuine burden on religious exercise (Amos) is constitutionally permissible; an exemption that confers a pure financial benefit on religion with no secular equivalent (Texas Monthly) violates the Establishment Clause. This distinction survives Kennedy v. Bremerton \u2014 the no-establishment core doctrine (which Texas Monthly enforces) was explicitly preserved by Kennedy."
+      },
+      {
+        "@type": "Case",
+        "id": "corporation_of_presiding_bishop_v_amos_1987",
+        "short_name": "Corporation of Presiding Bishop v. Amos",
+        "full_name": "Corporation of the Presiding Bishop of the Church of Jesus Christ of Latter-Day Saints v. Amos",
+        "citation": "483 U.S. 327 (1987)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1987-06-24",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "Section 702 of Title VII, which exempts religious organizations from the statute's prohibition on religious discrimination in employment, does not violate the Establishment Clause. Congress may permissibly accommodate religious organizations by exempting them from generally applicable civil rights laws, because doing so relieves the government-imposed burden on their ability to define their own religious community.",
+        "holding_type": "affirmative",
+        "majority_author": "White",
+        "per_curiam": false,
+        "vote": "9-0",
+        "opinions": [],
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1987-06-24",
+        "valid_until": null,
+        "courtlistener_id": null,
+        "notes": "Amos is the foundational case for permissible religious accommodation doctrine. A unanimous Court held that exempting religious organizations from civil rights compliance is not an establishment of religion \u2014 it is a permissible accommodation that protects religious autonomy. Read alongside Texas Monthly (1989), Amos establishes that exemptions relieving genuine regulatory burdens on religious organizations are constitutional, while exemptions that confer pure financial benefits without corresponding burdens are not."
       }
     ],
     "doctrinal_tests": [
@@ -2764,6 +3054,41 @@
           }
         ],
         "notes": "The compelled disclosure test connects to the anonymous speech doctrine in core_political_speech. Both protect the ability to engage in expressive activity without government-compelled identification. Buckley v. Valeo (1976) established a somewhat different (more permissive) standard for campaign finance disclosure that exists in tension with the NAACP/Bonta line \u2014 that tension is a Phase 2 issue requiring the campaign finance doctrine to be modeled."
+      },
+      {
+        "@type": "DoctrinalTest",
+        "id": "tinker_substantial_disruption_test",
+        "label": "Tinker Substantial Disruption Test",
+        "description": "The governing test for student speech in public schools. School officials may restrict student expression only when they can reasonably forecast that the speech will substantially disrupt or materially interfere with school activities or the rights of other students. The test requires specific, articulable facts supporting the forecast \u2014 not speculation or undifferentiated fear. Established in Tinker v. Des Moines Independent Community School District (1969).",
+        "area_id": "core_political_speech",
+        "source_case_id": "tinker_v_des_moines_1969",
+        "scrutiny_level": "intermediate",
+        "burden": "government",
+        "status": "active",
+        "valid_from": "1969-02-24",
+        "valid_until": null,
+        "prongs": [
+          {
+            "number": 1,
+            "label": "Student expression on school grounds",
+            "description": "The expression must occur in the school context \u2014 on school grounds, at school events, or in school-sponsored activities. The scope of 'school context' for off-campus digital speech is an actively contested question not yet resolved by the Supreme Court.",
+            "burden_note": "Student establishes prima facie case by demonstrating expression occurred in school context.",
+            "valid_from": "1969-02-24",
+            "valid_until": null,
+            "contested": true,
+            "contest_note": "The application of Tinker to off-campus social media speech is heavily contested in lower courts. Mahanoy Area School District v. B.L. (2021) addressed a cheerleader's off-campus Snapchat but the Court declined to set a clear rule, holding only that the school had overstepped in that particular case."
+          },
+          {
+            "number": 2,
+            "label": "Substantial disruption or material interference",
+            "description": "School officials must demonstrate a reasonable forecast \u2014 based on specific, articulable facts \u2014 that the student expression will substantially disrupt school operations or materially interfere with the rights of other students. Past incidents, credible threats, or specific evidence of planned disruption may support the forecast. Speculation, displeasure with the message, or desire to avoid controversy is insufficient.",
+            "burden_note": "Government bears the burden of demonstrating substantial disruption or material interference. The showing must be based on specific facts, not generalized concern.",
+            "valid_from": "1969-02-24",
+            "valid_until": null,
+            "contested": true,
+            "contest_note": "What constitutes 'substantial disruption' is contested at the margins. Courts disagree on whether a school can suppress speech in anticipation of third-party disruption (the heckler's veto problem), and on how much weight to give to evidence that the speech topic is controversial in the school community."
+          }
+        ]
       }
     ]
   },
@@ -5527,6 +5852,318 @@
       ],
       "citation": null,
       "notes": null
+    },
+    {
+      "id": "holmes_abrams_dissent_precedes_brandenburg",
+      "source_id": "abrams_v_united_states_1919",
+      "target_id": "brandenburg_v_ohio_1969",
+      "edge_type": "INTELLECTUALLY_PRECEDES",
+      "opinion_ref": {
+        "opinion_type": "dissent",
+        "author": "Holmes"
+      },
+      "valid_from": "1969-06-09",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "citation": null,
+      "notes": "The longest INTELLECTUALLY_PRECEDES gap in the graph \u2014 50 years. Holmes's Abrams dissent (1919) argued that the First Amendment requires imminence and likelihood of harm before speech may be punished, and that the marketplace of ideas should be trusted to reject dangerous expression. Brandenburg adopted this reasoning wholesale in 1969, overruling the bad tendency test that the Abrams majority had applied."
+    },
+    {
+      "id": "holmes_gitlow_dissent_precedes_brandenburg",
+      "source_id": "gitlow_v_new_york_1925",
+      "target_id": "brandenburg_v_ohio_1969",
+      "edge_type": "INTELLECTUALLY_PRECEDES",
+      "opinion_ref": {
+        "opinion_type": "dissent",
+        "author": "Holmes"
+      },
+      "valid_from": "1969-06-09",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "citation": null,
+      "notes": "Holmes's Gitlow dissent (1925) reiterated and deepened the Abrams argument \u2014 requiring imminence, likelihood of harm, and deference to the marketplace of ideas. Brandenburg (1969) adopted this position 44 years later. Two Holmes dissents, two INTELLECTUALLY_PRECEDES edges, both converging on Brandenburg."
+    },
+    {
+      "id": "abrams_interprets_amendment_1",
+      "source_id": "abrams_v_united_states_1919",
+      "target_id": "amendment_1",
+      "edge_type": "INTERPRETS",
+      "valid_from": "1919-11-10",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ],
+      "citation": null,
+      "notes": null
+    },
+    {
+      "id": "gitlow_interprets_amendment_1",
+      "source_id": "gitlow_v_new_york_1925",
+      "target_id": "amendment_1",
+      "edge_type": "INTERPRETS",
+      "valid_from": "1925-06-08",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "citation": null,
+      "notes": null
+    },
+    {
+      "id": "gitlow_interprets_amendment_14",
+      "source_id": "gitlow_v_new_york_1925",
+      "target_id": "amendment_14_section_1",
+      "edge_type": "INTERPRETS",
+      "valid_from": "1925-06-08",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "citation": null,
+      "notes": "Gitlow was the first case to incorporate a Bill of Rights provision against the states via the 14th Amendment Due Process Clause."
+    },
+    {
+      "id": "tinker_establishes_student_speech_doctrine",
+      "source_id": "tinker_v_des_moines_1969",
+      "target_id": "student_speech_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1969-02-24",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "citation": null,
+      "notes": null
+    },
+    {
+      "id": "tinker_establishes_tinker_test",
+      "source_id": "tinker_v_des_moines_1969",
+      "target_id": "tinker_substantial_disruption_test",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1969-02-24",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "citation": null,
+      "notes": null
+    },
+    {
+      "id": "tinker_interprets_amendment_1",
+      "source_id": "tinker_v_des_moines_1969",
+      "target_id": "amendment_1",
+      "edge_type": "INTERPRETS",
+      "valid_from": "1969-02-24",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "citation": null,
+      "notes": null
+    },
+    {
+      "id": "core_political_speech_governed_by_student_speech",
+      "source_id": "core_political_speech",
+      "target_id": "student_speech_doctrine",
+      "edge_type": "GOVERNED_BY",
+      "valid_from": "1969-02-24",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "citation": null,
+      "condition": {
+        "context": "Applies in public school settings only",
+        "note": "Student speech doctrine is a specialized sub-doctrine of core political speech operative only in the public school context"
+      }
+    },
+    {
+      "id": "core_political_speech_governed_by_tinker_test",
+      "source_id": "core_political_speech",
+      "target_id": "tinker_substantial_disruption_test",
+      "edge_type": "GOVERNED_BY",
+      "valid_from": "1969-02-24",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "citation": null,
+      "condition": {
+        "context": "Applies in public school settings only",
+        "note": "Tinker test governs student speech in public schools"
+      }
+    },
+    {
+      "id": "bethel_modifies_student_speech_doctrine",
+      "source_id": "bethel_school_district_v_fraser_1986",
+      "target_id": "student_speech_doctrine",
+      "edge_type": "MODIFIES",
+      "direction": "narrows",
+      "valid_from": "1986-07-07",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "citation": null,
+      "notes": "Narrows: Bethel carved out the first exception to Tinker's substantial-disruption test, holding that lewd, vulgar, or plainly offensive speech may be restricted in the school context without a disruption showing."
+    },
+    {
+      "id": "bethel_interprets_amendment_1",
+      "source_id": "bethel_school_district_v_fraser_1986",
+      "target_id": "amendment_1",
+      "edge_type": "INTERPRETS",
+      "valid_from": "1986-07-07",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "citation": null,
+      "notes": null
+    },
+    {
+      "id": "hazelwood_modifies_student_speech_doctrine",
+      "source_id": "hazelwood_school_district_v_kuhlmeier_1988",
+      "target_id": "student_speech_doctrine",
+      "edge_type": "MODIFIES",
+      "direction": "narrows",
+      "valid_from": "1988-01-13",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "citation": null,
+      "notes": "Narrows: Hazelwood carved out the second exception to Tinker \u2014 school-sponsored speech may be regulated for legitimate pedagogical concerns without showing substantial disruption."
+    },
+    {
+      "id": "hazelwood_interprets_amendment_1",
+      "source_id": "hazelwood_school_district_v_kuhlmeier_1988",
+      "target_id": "amendment_1",
+      "edge_type": "INTERPRETS",
+      "valid_from": "1988-01-13",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "citation": null,
+      "notes": null
+    },
+    {
+      "id": "morse_modifies_student_speech_doctrine",
+      "source_id": "morse_v_frederick_2007",
+      "target_id": "student_speech_doctrine",
+      "edge_type": "MODIFIES",
+      "direction": "narrows",
+      "valid_from": "2007-06-25",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "citation": null,
+      "notes": "Narrows: Morse carved out the third exception to Tinker \u2014 speech promoting illegal drug use may be restricted without a disruption showing."
+    },
+    {
+      "id": "morse_interprets_amendment_1",
+      "source_id": "morse_v_frederick_2007",
+      "target_id": "amendment_1",
+      "edge_type": "INTERPRETS",
+      "valid_from": "2007-06-25",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "citation": null,
+      "notes": null
+    },
+    {
+      "id": "texas_monthly_modifies_no_establishment_core",
+      "source_id": "texas_monthly_v_bullock_1989",
+      "target_id": "no_establishment_core",
+      "edge_type": "MODIFIES",
+      "direction": "clarifies",
+      "valid_from": "1989-02-21",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "citation": null,
+      "notes": "Clarifies: Texas Monthly clarified the boundary of permissible religious accommodation \u2014 exemptions that confer pure financial benefits on religion without a corresponding burden cross into impermissible establishment. This is a clarification of the no-establishment core doctrine, not a narrowing or expansion."
+    },
+    {
+      "id": "texas_monthly_interprets_amendment_1",
+      "source_id": "texas_monthly_v_bullock_1989",
+      "target_id": "amendment_1",
+      "edge_type": "INTERPRETS",
+      "valid_from": "1989-02-21",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "citation": null,
+      "notes": null
+    },
+    {
+      "id": "amos_modifies_no_establishment_core",
+      "source_id": "corporation_of_presiding_bishop_v_amos_1987",
+      "target_id": "no_establishment_core",
+      "edge_type": "MODIFIES",
+      "direction": "clarifies",
+      "valid_from": "1987-06-24",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "citation": null,
+      "notes": "Clarifies: Amos clarified that exempting religious organizations from generally applicable civil regulations is permissible accommodation, not establishment. Paired with Texas Monthly, it defines the accommodation/preference line."
+    },
+    {
+      "id": "amos_interprets_amendment_1",
+      "source_id": "corporation_of_presiding_bishop_v_amos_1987",
+      "target_id": "amendment_1",
+      "edge_type": "INTERPRETS",
+      "valid_from": "1987-06-24",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "citation": null,
+      "notes": null
+    },
+    {
+      "id": "texas_monthly_distinguishes_amos",
+      "source_id": "texas_monthly_v_bullock_1989",
+      "target_id": "corporation_of_presiding_bishop_v_amos_1987",
+      "edge_type": "DISTINGUISHES",
+      "valid_from": "1989-02-21",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "citation": null,
+      "notes": "Texas Monthly distinguished Amos on the ground that a tax exemption conferring pure financial benefit differs from a regulatory exemption relieving a genuine burden on religious exercise. This distinction defines the accommodation/preference line."
     }
   ],
   "schema_issues_found": [
