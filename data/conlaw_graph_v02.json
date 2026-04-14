@@ -17,8 +17,8 @@
     "created": "2026-03-15",
     "status": "draft",
     "schema_version": "0.2",
-    "node_count": 183,
-    "edge_count": 377,
+    "node_count": 196,
+    "edge_count": 412,
     "schema_issue_count": 41,
     "fixes_applied": [
       "FIX 1: ConstitutionalProvision labels changed to citation form (amendment_1, amendment_14_section_1) to disambiguate from Area nodes with same common-name labels",
@@ -4567,6 +4567,375 @@
         "valid_from": "1969-04-07",
         "valid_until": null,
         "notes": "Stanley v. Georgia established a constitutional right to possess obscene material in one's home, rooted in privacy and the First Amendment. However, the Court has consistently refused to extend Stanley to commercial distribution, sale, or transportation of obscene material. Paris Adult Theatre I v. Slaton (1973) explicitly held that Stanley does not create a right to receive obscene material through commercial channels or to view it in adult theaters. The private-possession right established in Stanley therefore has narrow practical reach \u2014 it protects personal possession at home but does not immunize the commercial distribution chain that gets obscene material into private hands."
+      },
+      {
+        "@type": "Case",
+        "id": "in_re_rmj_1982",
+        "short_name": "In Re R.M.J.",
+        "full_name": "In Re R.M.J.",
+        "citation": "455 U.S. 191 (1982)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1982-01-25",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "A state supreme court rule restricting attorney advertising to specified categories of information and prohibiting mailings to persons other than lawyers violates the First Amendment as applied to an attorney who deviated from the prescribed forms in truthful, non-deceptive ways. The state must demonstrate that its restrictions on commercial speech directly and substantially advance a substantial interest and are no more extensive than necessary \u2014 the mere possibility that some advertising might be misleading is insufficient to justify categorical prohibition of non-misleading advertising.",
+        "holding_type": "affirmative",
+        "majority_author": "Powell",
+        "per_curiam": false,
+        "vote": "9-0",
+        "opinions": [],
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1982-01-25",
+        "valid_until": null,
+        "notes": "In Re R.M.J. is the first post-Central Hudson application of the four-part test to attorney advertising, establishing that truthful, non-deceptive professional advertising is protected and that states must demonstrate actual harm from the specific type of advertising restricted rather than relying on generalized concerns about potential deception."
+      },
+      {
+        "@type": "Case",
+        "id": "members_of_city_council_v_taxpayers_for_vincent_1984",
+        "short_name": "Taxpayers for Vincent",
+        "full_name": "Members of the City Council of the City of Los Angeles v. Taxpayers for Vincent",
+        "citation": "466 U.S. 789 (1984)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1984-05-15",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "A Los Angeles ordinance prohibiting the posting of signs on public property does not violate the First Amendment. The ordinance is a content-neutral regulation of the time, place, and manner of expression that serves the substantial government interest in eliminating visual clutter and blight. It leaves open ample alternative channels of communication and is no broader than necessary to advance the aesthetic interest.",
+        "holding_type": "affirmative",
+        "majority_author": "Stevens",
+        "per_curiam": false,
+        "vote": "6-3",
+        "opinions": [
+          {
+            "type": "dissent",
+            "author": "Brennan",
+            "joined_by": [
+              "Marshall",
+              "Blackmun"
+            ],
+            "doctrinal_significance": "Brennan argued the ordinance was not sufficiently narrowly tailored because it was a total ban on a traditional form of political communication \u2014 posted signs \u2014 without any showing of actual harm from such signs.",
+            "adopted_in": []
+          }
+        ],
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1984-05-15",
+        "valid_until": null,
+        "notes": "Taxpayers for Vincent is the foundational case for content-neutral sign ordinances on public property, establishing that aesthetic interests can constitute a substantial government interest sufficient to justify restrictions on posted signs. The case is frequently cited alongside Metromedia v. San Diego in sign ordinance litigation. City of Ladue v. Gilleo (1994) distinguished Taxpayers for Vincent in the residential sign context."
+      },
+      {
+        "@type": "Case",
+        "id": "bolger_v_youngs_drug_products_1983",
+        "short_name": "Bolger v. Youngs Drug Products Corp.",
+        "full_name": "Bolger v. Youngs Drug Products Corp.",
+        "citation": "463 U.S. 60 (1983)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1983-06-24",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "affirmed",
+        "holding": "A federal statute prohibiting the unsolicited mailing of contraceptive advertisements violates the First Amendment as applied to truthful, non-deceptive commercial speech. The Court applied the Central Hudson four-part test and found the government failed to demonstrate that the prohibition directly and materially advanced its interest in protecting recipients from offensive mail and shielding minors from exposure to contraceptive information. The fact that recipients can protect themselves by discarding unwanted mail undermines the government's interest.",
+        "holding_type": "affirmative",
+        "majority_author": "Marshall",
+        "per_curiam": false,
+        "vote": "8-0",
+        "opinions": [],
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1983-06-24",
+        "valid_until": null,
+        "notes": "Bolger v. Youngs Drug Products is significant for applying the Central Hudson test to strike down a federal prohibition on unsolicited contraceptive advertising and for clarifying that material does not lose First Amendment protection merely because it is commercial speech that some recipients find offensive. The case also addressed the definition of commercial speech, holding that mailings combining commercial and informational content can still qualify as commercial speech."
+      },
+      {
+        "@type": "Case",
+        "id": "zauderer_v_office_of_disciplinary_counsel_1985",
+        "short_name": "Zauderer v. Office of Disciplinary Counsel",
+        "full_name": "Zauderer v. Office of Disciplinary Counsel of the Supreme Court of Ohio",
+        "citation": "471 U.S. 626 (1985)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1985-05-28",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "affirmed_in_part",
+        "holding": "Ohio's prohibition on attorney advertising using illustrations violates the First Amendment as applied to truthful, non-deceptive print advertisements. However, a state may require attorneys who advertise contingency fee arrangements to disclose that clients may be liable for court costs. Compelled disclosure of purely factual and uncontroversial commercial information is subject to a less demanding standard than restrictions on commercial speech \u2014 the government need only show the disclosure is reasonably related to the State's interest in preventing deception of consumers.",
+        "holding_type": "affirmative",
+        "majority_author": "White",
+        "per_curiam": false,
+        "vote": "5-3 (with separate opinions)",
+        "opinions": [],
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1985-05-28",
+        "valid_until": null,
+        "notes": "Zauderer established the foundational distinction between restrictions on commercial speech (governed by Central Hudson) and compelled commercial disclosures (governed by a more lenient rational basis-like standard requiring only that the disclosure be reasonably related to preventing consumer deception). This Zauderer standard has been applied extensively in product labeling, financial disclosure, and professional licensing contexts. NIFLA v. Becerra (2018) limited Zauderer by holding it applies only to purely factual and uncontroversial disclosures, not ideologically contested ones."
+      },
+      {
+        "@type": "Case",
+        "id": "shapero_v_kentucky_bar_assn_1988",
+        "short_name": "Shapero v. Kentucky Bar Assn.",
+        "full_name": "Shapero v. Kentucky Bar Association",
+        "citation": "486 U.S. 466 (1988)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1988-06-13",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "A state may not categorically prohibit lawyers from sending targeted direct-mail solicitations to potential clients known to face specific legal problems. The First Amendment protects truthful, non-deceptive targeted direct mail advertising by attorneys. The mere possibility that some recipients might find such solicitations intrusive or that attorneys might engage in false statements does not justify a categorical ban on a form of communication that is less likely to create the coercive pressure that justifies restrictions on in-person solicitation under Ohralik.",
+        "holding_type": "affirmative",
+        "majority_author": "Brennan",
+        "per_curiam": false,
+        "vote": "6-3",
+        "opinions": [],
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1988-06-13",
+        "valid_until": null,
+        "notes": "Shapero extended the attorney advertising protection from Bates v. State Bar of Arizona and In Re R.M.J. to targeted direct mail, distinguishing it from in-person solicitation (prohibited in Ohralik) because written communications lack the coercive, hard-to-resist quality of face-to-face encounters. Florida Bar v. Went for It, Inc. (1995) later upheld a 30-day ban on direct mail to accident victims under Central Hudson, creating a limited exception."
+      },
+      {
+        "@type": "Case",
+        "id": "city_of_ladue_v_gilleo_1994",
+        "short_name": "City of Ladue v. Gilleo",
+        "full_name": "City of Ladue v. Gilleo",
+        "citation": "512 U.S. 43 (1994)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1994-06-13",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "affirmed",
+        "holding": "A city ordinance prohibiting homeowners from displaying signs on their property, with narrow exceptions, violates the First Amendment. Residential signs are an important and distinctive medium of expression, particularly for political and religious messages. The ordinance's near-total prohibition on this form of speech forecloses a venerable means of communication that is both unique and important \u2014 the home is the one place where a person can speak to the world without relying on the government's permission to use public forums or the owner's permission to use private property.",
+        "holding_type": "affirmative",
+        "majority_author": "Stevens",
+        "per_curiam": false,
+        "vote": "9-0",
+        "opinions": [],
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1994-06-13",
+        "valid_until": null,
+        "notes": "City of Ladue v. Gilleo distinguished Taxpayers for Vincent (which upheld a ban on signs on public property) by emphasizing the unique significance of the home as a forum for expression. The Court avoided the content-neutrality question by focusing on the ordinance's total prohibition of a distinctive communication medium. Reed v. Town of Gilbert (2015) subsequently hardened the content-based/content-neutral analysis that applies when sign ordinances make distinctions based on message type."
+      },
+      {
+        "@type": "Case",
+        "id": "edenfield_v_fane_1993",
+        "short_name": "Edenfield v. Fane",
+        "full_name": "Edenfield v. Fane",
+        "citation": "507 U.S. 761 (1993)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1993-04-26",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "affirmed",
+        "holding": "Florida's ban on in-person solicitation by certified public accountants violates the First Amendment under the Central Hudson test. The state failed to demonstrate that the ban directly and materially advances its interests in protecting consumers from fraud and maintaining CPA independence. Unlike attorney in-person solicitation in Ohralik, CPA solicitation typically occurs in a business context between sophisticated parties, not in circumstances where overreaching is likely.",
+        "holding_type": "affirmative",
+        "majority_author": "Kennedy",
+        "per_curiam": false,
+        "vote": "8-1",
+        "opinions": [],
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1993-04-26",
+        "valid_until": null,
+        "notes": "Edenfield v. Fane is significant for articulating Central Hudson's third prong requirement with precision: the government must demonstrate that its restriction will actually advance the asserted interest in a direct and material way \u2014 speculation or conjecture is insufficient. The decision distinguished Ohralik v. Ohio State Bar (upholding attorney in-person solicitation bans) based on the different context of professional-to-business solicitation."
+      },
+      {
+        "@type": "Case",
+        "id": "city_of_cincinnati_v_discovery_network_1993",
+        "short_name": "City of Cincinnati v. Discovery Network",
+        "full_name": "City of Cincinnati v. Discovery Network, Inc.",
+        "citation": "507 U.S. 410 (1993)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1993-03-24",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "affirmed",
+        "holding": "A city ordinance revoking permits for commercial newsracks while allowing newsracks for traditional newspapers violates the First Amendment. The city's distinction between commercial and non-commercial publications is not a valid content-neutral justification under Central Hudson because the differential treatment bears no relationship to the city's interest in safety and aesthetics. A regulation is not content-neutral merely because it targets commercial speech \u2014 the government must still demonstrate the restriction directly advances a substantial interest.",
+        "holding_type": "affirmative",
+        "majority_author": "Stevens",
+        "per_curiam": false,
+        "vote": "6-3",
+        "opinions": [],
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1993-03-24",
+        "valid_until": null,
+        "notes": "City of Cincinnati v. Discovery Network is significant for holding that the commercial/non-commercial distinction cannot serve as a sufficient basis for differential treatment under the First Amendment \u2014 content discrimination targeting commercial speech is still content discrimination and must be justified under Central Hudson's framework. The decision reinforced that regulations of commercial speech must directly advance the asserted government interest, not merely correlate with it."
+      },
+      {
+        "@type": "Case",
+        "id": "florida_bar_v_went_for_it_1995",
+        "short_name": "Florida Bar v. Went for It, Inc.",
+        "full_name": "Florida Bar v. Went for It, Inc.",
+        "citation": "515 U.S. 618 (1995)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1995-06-21",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "A Florida Bar rule prohibiting lawyers from sending targeted direct-mail solicitations to accident victims and their relatives for 30 days following an accident survives First Amendment scrutiny under the Central Hudson test. The state has a substantial interest in protecting the privacy of accident victims and in maintaining the professionalism of the legal profession. A 30-day waiting period is narrowly tailored to serve these interests without unduly burdening the overall flow of commercial information.",
+        "holding_type": "affirmative",
+        "majority_author": "O'Connor",
+        "per_curiam": false,
+        "vote": "5-4",
+        "opinions": [
+          {
+            "type": "dissent",
+            "author": "Kennedy",
+            "joined_by": [
+              "Stevens",
+              "Souter",
+              "Ginsburg"
+            ],
+            "doctrinal_significance": "Kennedy argued the majority improperly credited the state's speculative evidence about harms from attorney solicitation and that the decision undermined Central Hudson's requirement of a direct and material relationship between the restriction and the asserted interest.",
+            "adopted_in": []
+          }
+        ],
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1995-06-21",
+        "valid_until": null,
+        "notes": "Florida Bar v. Went for It, Inc. is the primary example of a commercial speech restriction that survived Central Hudson scrutiny in the attorney advertising context, creating a limited exception to Shapero's protection of targeted direct mail. The decision is notable for accepting empirical evidence (consumer surveys, anecdotal reports) as sufficient to demonstrate direct advancement of the state's interest, a more lenient approach than Edenfield's demand for concrete proof."
+      },
+      {
+        "@type": "Case",
+        "id": "rubin_v_coors_brewing_co_1995",
+        "short_name": "Rubin v. Coors Brewing Co.",
+        "full_name": "Rubin v. Coors Brewing Co.",
+        "citation": "514 U.S. 476 (1995)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1995-04-19",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "affirmed",
+        "holding": "A provision of the Federal Alcohol Administration Act prohibiting beer labels from displaying alcohol content violates the First Amendment under Central Hudson. The government's interest in preventing strength wars among brewers is substantial, but the prohibition fails Central Hudson's fourth prong because it is more extensive than necessary \u2014 the government's own regulations affirmatively required disclosure of alcohol content in wines and spirits, demonstrating that less restrictive alternatives existed.",
+        "holding_type": "affirmative",
+        "majority_author": "Thomas",
+        "per_curiam": false,
+        "vote": "9-0",
+        "opinions": [],
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1995-04-19",
+        "valid_until": null,
+        "notes": "Rubin v. Coors Brewing Co. applied Central Hudson to strike a federal alcohol labeling restriction, finding the government's regulatory scheme internally inconsistent \u2014 it prohibited alcohol content disclosures on beer labels while requiring them on wine and spirits. This inconsistency was fatal under Central Hudson's fourth prong because it demonstrated the restriction was more extensive than necessary. The case is frequently cited for the proposition that the government cannot demonstrate narrow tailoring when its own regulatory scheme contradicts the asserted rationale."
+      },
+      {
+        "@type": "Case",
+        "id": "expressions_hair_design_v_schneiderman_2017",
+        "short_name": "Expressions Hair Design v. Schneiderman",
+        "full_name": "Expressions Hair Design v. Schneiderman",
+        "citation": "581 U.S. 37 (2017)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "2017-03-29",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "vacated",
+        "holding": "A New York statute prohibiting merchants from displaying the cash price of a good alongside a credit card surcharge regulates speech, not conduct. The statute controls how merchants communicate their prices \u2014 specifically, it restricts the message that the higher price is a surcharge for credit card use rather than a discount for cash payment. Because the statute regulates a merchant's communication of price information, it is subject to First Amendment scrutiny.",
+        "holding_type": "affirmative",
+        "majority_author": "Roberts",
+        "per_curiam": false,
+        "vote": "8-0",
+        "opinions": [
+          {
+            "type": "concurrence",
+            "author": "Breyer",
+            "joined_by": [
+              "Ginsburg",
+              "Sotomayor"
+            ],
+            "doctrinal_significance": "Breyer argued the case presented a simple commercial disclosure regulation that should be evaluated under Zauderer's rational basis standard rather than Central Hudson's intermediate scrutiny.",
+            "adopted_in": []
+          }
+        ],
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "2017-03-29",
+        "valid_until": null,
+        "notes": "Expressions Hair Design is significant for holding that price disclosure laws that regulate how prices are communicated \u2014 not just what prices may be charged \u2014 regulate speech and are subject to First Amendment scrutiny. The Court vacated and remanded for the lower courts to determine the appropriate level of scrutiny under Central Hudson or Zauderer. The case sits at the intersection of commercial speech and compelled disclosure doctrine."
+      },
+      {
+        "@type": "Case",
+        "id": "matal_v_tam_2017",
+        "short_name": "Matal v. Tam",
+        "full_name": "Matal v. Tam",
+        "citation": "582 U.S. 218 (2017)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "2017-06-19",
+        "opinion_form": "plurality",
+        "procedural_disposition": "affirmed",
+        "holding": "The Lanham Act's disparagement clause violates the First Amendment. Trademarks are private speech, not government speech, and the disparagement clause discriminates on the basis of viewpoint. The Court split on the application of the commercial speech doctrine: a plurality found that the clause failed even intermediate scrutiny under Central Hudson, while a concurring plurality argued that viewpoint discrimination triggers strict scrutiny and renders the commercial speech inquiry entirely unnecessary.",
+        "holding_type": "affirmative",
+        "majority_author": "Alito",
+        "per_curiam": false,
+        "vote": "8-0",
+        "opinions": [
+          {
+            "type": "concurrence",
+            "author": "Kennedy",
+            "joined_by": [
+              "Ginsburg",
+              "Sotomayor",
+              "Kagan"
+            ],
+            "doctrinal_significance": "Kennedy's concurrence took a broader view that the disparagement clause was straightforwardly viewpoint discriminatory and that viewpoint discrimination is unconstitutional regardless of the forum or the nature of the speech.",
+            "adopted_in": []
+          }
+        ],
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "2017-06-19",
+        "valid_until": null,
+        "notes": "Matal v. Tam is significant for holding that trademark registration is private speech subject to full First Amendment protection and that viewpoint discrimination in trademark registration is unconstitutional. The decision resolved a circuit split and set up Iancu v. Brunetti (2019), which struck the Lanham Act's prohibition on immoral or scandalous trademarks on the same viewpoint discrimination rationale."
+      },
+      {
+        "@type": "Case",
+        "id": "city_of_austin_v_reagan_national_advertising_2022",
+        "short_name": "City of Austin v. Reagan National Advertising",
+        "full_name": "City of Austin v. Reagan National Advertising of Austin, LLC",
+        "citation": "596 U.S. 61 (2022)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "2022-04-21",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "Austin's sign ordinance distinguishing between on-premises and off-premises signs is a content-neutral regulation subject to intermediate scrutiny. Clarifying Reed v. Town of Gilbert, the Court held that a regulation is not automatically content-based simply because one must read the sign to determine if it applies. Reading a sign to determine its location-based context (on/off premises) is content-neutral, whereas reading a sign to restrict its substantive topic or viewpoint is content-based.",
+        "holding_type": "affirmative",
+        "majority_author": "Sotomayor",
+        "per_curiam": false,
+        "vote": "6-3",
+        "opinions": [
+          {
+            "type": "dissent",
+            "author": "Thomas",
+            "joined_by": [
+              "Gorsuch",
+              "Barrett"
+            ],
+            "doctrinal_significance": "Thomas argued that the on/off premises distinction is inherently content-based because determining whether a sign advertises an on-site or off-site business requires reading the sign's message.",
+            "adopted_in": []
+          }
+        ],
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "2022-04-21",
+        "valid_until": null,
+        "notes": "City of Austin v. Reagan National Advertising is the most recent significant billboard regulation case, clarifying that Reed v. Town of Gilbert's content-based definition applies only when a law requires examining a message's communicative content \u2014 not when it examines location or context. The decision limits Reed's reach and provides guidance for sign ordinances that regulate based on non-communicative factors like location. The case directly follows the Metromedia/Ladue/Taxpayers for Vincent sign ordinance lineage."
       }
     ],
     "doctrinal_tests": [
@@ -10383,6 +10752,437 @@
         "state"
       ],
       "notes": "Yates laid the intellectual groundwork for Brandenburg by requiring proof of advocacy of illegal action rather than abstract doctrine. Brandenburg absorbed this distinction and formalized it into the modern imminence/likelihood test."
+    },
+    {
+      "id": "rmj_applies_central_hudson",
+      "source_id": "in_re_rmj_1982",
+      "target_id": "central_hudson_test",
+      "edge_type": "APPLIES",
+      "valid_from": "1982-01-25",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "rmj_applies_commercial_speech",
+      "source_id": "in_re_rmj_1982",
+      "target_id": "commercial_speech_doctrine",
+      "edge_type": "APPLIES",
+      "valid_from": "1982-01-25",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "rmj_interprets_a1",
+      "source_id": "in_re_rmj_1982",
+      "target_id": "amendment_1",
+      "edge_type": "INTERPRETS",
+      "valid_from": "1982-01-25",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "taxpayers_vincent_applies_public_forum",
+      "source_id": "members_of_city_council_v_taxpayers_for_vincent_1984",
+      "target_id": "public_forum_doctrine",
+      "edge_type": "APPLIES",
+      "valid_from": "1984-05-15",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Upheld content-neutral ban on signs on public property under intermediate scrutiny, establishing aesthetic interests as a substantial government interest."
+    },
+    {
+      "id": "ladue_distinguishes_taxpayers_vincent",
+      "source_id": "city_of_ladue_v_gilleo_1994",
+      "target_id": "members_of_city_council_v_taxpayers_for_vincent_1984",
+      "edge_type": "DISTINGUISHES",
+      "valid_from": "1994-06-13",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Ladue distinguished Taxpayers for Vincent by emphasizing the unique significance of the home as a forum \u2014 a total ban on residential signs forecloses a communication medium unavailable anywhere else."
+    },
+    {
+      "id": "taxpayers_vincent_interprets_a1",
+      "source_id": "members_of_city_council_v_taxpayers_for_vincent_1984",
+      "target_id": "amendment_1",
+      "edge_type": "INTERPRETS",
+      "valid_from": "1984-05-15",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "bolger_applies_central_hudson",
+      "source_id": "bolger_v_youngs_drug_products_1983",
+      "target_id": "central_hudson_test",
+      "edge_type": "APPLIES",
+      "valid_from": "1983-06-24",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "bolger_modifies_commercial_speech",
+      "source_id": "bolger_v_youngs_drug_products_1983",
+      "target_id": "commercial_speech_doctrine",
+      "edge_type": "MODIFIES",
+      "valid_from": "1983-06-24",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "direction": "clarifies",
+      "notes": "Clarifies: Bolger established the three-factor test (the 'Bolger factors') for determining whether speech is commercial: (1) whether it is an advertisement, (2) whether it refers to a specific product, and (3) whether the speaker has an economic motivation."
+    },
+    {
+      "id": "bolger_interprets_a1",
+      "source_id": "bolger_v_youngs_drug_products_1983",
+      "target_id": "amendment_1",
+      "edge_type": "INTERPRETS",
+      "valid_from": "1983-06-24",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "zauderer_modifies_commercial_speech",
+      "source_id": "zauderer_v_office_of_disciplinary_counsel_1985",
+      "target_id": "commercial_speech_doctrine",
+      "edge_type": "MODIFIES",
+      "direction": "clarifies",
+      "valid_from": "1985-05-28",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Clarifies: Zauderer established a separate, more lenient standard for compelled commercial disclosures \u2014 requiring only reasonable relation to preventing deception \u2014 distinct from Central Hudson's intermediate scrutiny for restrictions on commercial speech. Clarifies: Zauderer created a bifurcated commercial speech standard \u2014 compelled disclosures only require reasonable relation to preventing deception (not Central Hudson's intermediate scrutiny), while restrictions on commercial speech still require Central Hudson analysis."
+    },
+    {
+      "id": "zauderer_applies_central_hudson",
+      "source_id": "zauderer_v_office_of_disciplinary_counsel_1985",
+      "target_id": "central_hudson_test",
+      "edge_type": "APPLIES",
+      "valid_from": "1985-05-28",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "zauderer_interprets_a1",
+      "source_id": "zauderer_v_office_of_disciplinary_counsel_1985",
+      "target_id": "amendment_1",
+      "edge_type": "INTERPRETS",
+      "valid_from": "1985-05-28",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "shapero_applies_commercial_speech",
+      "source_id": "shapero_v_kentucky_bar_assn_1988",
+      "target_id": "commercial_speech_doctrine",
+      "edge_type": "APPLIES",
+      "valid_from": "1988-06-13",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "shapero_interprets_a1",
+      "source_id": "shapero_v_kentucky_bar_assn_1988",
+      "target_id": "amendment_1",
+      "edge_type": "INTERPRETS",
+      "valid_from": "1988-06-13",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "ladue_applies_public_forum",
+      "source_id": "city_of_ladue_v_gilleo_1994",
+      "target_id": "public_forum_doctrine",
+      "edge_type": "APPLIES",
+      "valid_from": "1994-06-13",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "ladue_interprets_a1",
+      "source_id": "city_of_ladue_v_gilleo_1994",
+      "target_id": "amendment_1",
+      "edge_type": "INTERPRETS",
+      "valid_from": "1994-06-13",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "edenfield_applies_central_hudson",
+      "source_id": "edenfield_v_fane_1993",
+      "target_id": "central_hudson_test",
+      "edge_type": "APPLIES",
+      "valid_from": "1993-04-26",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "edenfield_applies_commercial_speech",
+      "source_id": "edenfield_v_fane_1993",
+      "target_id": "commercial_speech_doctrine",
+      "edge_type": "APPLIES",
+      "valid_from": "1993-04-26",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "edenfield_interprets_a1",
+      "source_id": "edenfield_v_fane_1993",
+      "target_id": "amendment_1",
+      "edge_type": "INTERPRETS",
+      "valid_from": "1993-04-26",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "discovery_network_applies_central_hudson",
+      "source_id": "city_of_cincinnati_v_discovery_network_1993",
+      "target_id": "central_hudson_test",
+      "edge_type": "APPLIES",
+      "valid_from": "1993-03-24",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "discovery_network_applies_commercial_speech",
+      "source_id": "city_of_cincinnati_v_discovery_network_1993",
+      "target_id": "commercial_speech_doctrine",
+      "edge_type": "APPLIES",
+      "valid_from": "1993-03-24",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "discovery_network_interprets_a1",
+      "source_id": "city_of_cincinnati_v_discovery_network_1993",
+      "target_id": "amendment_1",
+      "edge_type": "INTERPRETS",
+      "valid_from": "1993-03-24",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "florida_bar_applies_central_hudson",
+      "source_id": "florida_bar_v_went_for_it_1995",
+      "target_id": "central_hudson_test",
+      "edge_type": "APPLIES",
+      "valid_from": "1995-06-21",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "florida_bar_modifies_shapero",
+      "source_id": "florida_bar_v_went_for_it_1995",
+      "target_id": "commercial_speech_doctrine",
+      "edge_type": "MODIFIES",
+      "valid_from": "1995-06-21",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Narrows: Florida Bar created a limited exception to the commercial speech protection for targeted attorney direct mail established in Shapero, upholding a 30-day waiting period after accidents under Central Hudson.",
+      "direction": "narrows"
+    },
+    {
+      "id": "florida_bar_interprets_a1",
+      "source_id": "florida_bar_v_went_for_it_1995",
+      "target_id": "amendment_1",
+      "edge_type": "INTERPRETS",
+      "valid_from": "1995-06-21",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "rubin_applies_central_hudson",
+      "source_id": "rubin_v_coors_brewing_co_1995",
+      "target_id": "central_hudson_test",
+      "edge_type": "APPLIES",
+      "valid_from": "1995-04-19",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "rubin_applies_commercial_speech",
+      "source_id": "rubin_v_coors_brewing_co_1995",
+      "target_id": "commercial_speech_doctrine",
+      "edge_type": "APPLIES",
+      "valid_from": "1995-04-19",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "rubin_interprets_a1",
+      "source_id": "rubin_v_coors_brewing_co_1995",
+      "target_id": "amendment_1",
+      "edge_type": "INTERPRETS",
+      "valid_from": "1995-04-19",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "expressions_applies_commercial_speech",
+      "source_id": "expressions_hair_design_v_schneiderman_2017",
+      "target_id": "commercial_speech_doctrine",
+      "edge_type": "APPLIES",
+      "valid_from": "2017-03-29",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "expressions_interprets_a1",
+      "source_id": "expressions_hair_design_v_schneiderman_2017",
+      "target_id": "amendment_1",
+      "edge_type": "INTERPRETS",
+      "valid_from": "2017-03-29",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "matal_applies_core_political_speech",
+      "source_id": "matal_v_tam_2017",
+      "target_id": "core_political_speech_doctrine",
+      "edge_type": "APPLIES",
+      "valid_from": "2017-06-19",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Matal held that trademarks are private speech entitled to full First Amendment protection \u2014 viewpoint discrimination in trademark registration is unconstitutional regardless of the commercial context."
+    },
+    {
+      "id": "matal_interprets_a1",
+      "source_id": "matal_v_tam_2017",
+      "target_id": "amendment_1",
+      "edge_type": "INTERPRETS",
+      "valid_from": "2017-06-19",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "city_of_austin_modifies_reed",
+      "source_id": "city_of_austin_v_reagan_national_advertising_2022",
+      "target_id": "core_political_speech_doctrine",
+      "edge_type": "MODIFIES",
+      "valid_from": "2022-04-21",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Narrows: City of Austin clarified and narrowed Reed v. Town of Gilbert's content-based definition \u2014 a regulation is not automatically content-based simply because one must read a sign to apply it. Only regulations requiring examination of communicative content (topic, viewpoint) are content-based.",
+      "direction": "narrows"
+    },
+    {
+      "id": "city_of_austin_applies_commercial_speech",
+      "source_id": "city_of_austin_v_reagan_national_advertising_2022",
+      "target_id": "commercial_speech_doctrine",
+      "edge_type": "APPLIES",
+      "valid_from": "2022-04-21",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "city_of_austin_interprets_a1",
+      "source_id": "city_of_austin_v_reagan_national_advertising_2022",
+      "target_id": "amendment_1",
+      "edge_type": "INTERPRETS",
+      "valid_from": "2022-04-21",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
     }
   ],
   "schema_issues_found": [
