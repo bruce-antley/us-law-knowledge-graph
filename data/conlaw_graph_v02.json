@@ -17,8 +17,8 @@
     "created": "2026-03-15",
     "status": "draft",
     "schema_version": "0.2",
-    "node_count": 178,
-    "edge_count": 361,
+    "node_count": 183,
+    "edge_count": 377,
     "schema_issue_count": 41,
     "fixes_applied": [
       "FIX 1: ConstitutionalProvision labels changed to citation form (amendment_1, amendment_14_section_1) to disambiguate from Area nodes with same common-name labels",
@@ -4392,6 +4392,181 @@
         "valid_from": "1974-06-25",
         "valid_until": null,
         "notes": "Lehman v. City of Shaker Heights introduced the captive audience doctrine into public forum analysis \u2014 the idea that when people cannot avoid hearing or seeing a message, their interest in not being subjected to it may outweigh the speaker's interest in communicating it. The case is limited to its specific context (transit advertising) and its reasoning has not been broadly extended."
+      },
+      {
+        "@type": "Case",
+        "id": "yates_v_united_states_1957",
+        "short_name": "Yates v. United States",
+        "full_name": "Yates v. United States",
+        "citation": "354 U.S. 298 (1957)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1957-06-17",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "The Smith Act's prohibition on advocacy of violent overthrow of the government must be distinguished between advocacy of abstract doctrine and advocacy of action. The trial court's instructions failed to distinguish between advocacy of abstract doctrine \u2014 which is protected \u2014 and advocacy directed at promoting unlawful action \u2014 which may be punished. Convictions of Communist Party members for organizing and conspiring to advocate overthrow are reversed where the advocacy charged was of ideas rather than of action.",
+        "holding_type": "affirmative",
+        "majority_author": "Harlan",
+        "per_curiam": false,
+        "vote": "6-1 (with separate opinions)",
+        "opinions": [
+          {
+            "type": "concurrence",
+            "author": "Black",
+            "joined_by": [
+              "Douglas"
+            ],
+            "doctrinal_significance": "Black and Douglas concurred in part and dissented in part, arguing the Smith Act was entirely unconstitutional \u2014 a more absolutist First Amendment position that foreshadowed the Warren/Burger Court's ultimate shift in Brandenburg.",
+            "adopted_in": []
+          }
+        ],
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1957-06-17",
+        "valid_until": null,
+        "notes": "Yates is the critical bridge case between Dennis (1951) and Brandenburg (1969) in the incitement doctrine's evolution. Without formally overruling Dennis, the Court gutted it by requiring that prosecution prove advocacy of illegal action rather than mere abstract advocacy of dangerous ideas. This distinction \u2014 abstract doctrine versus action advocacy \u2014 became central to Brandenburg's reformulation of the incitement standard twelve years later. Yates effectively rendered the Smith Act unenforceable against Communist Party members who stuck to theoretical advocacy."
+      },
+      {
+        "@type": "Case",
+        "id": "reed_v_town_of_gilbert_2015",
+        "short_name": "Reed v. Town of Gilbert",
+        "full_name": "Reed v. Town of Gilbert",
+        "citation": "576 U.S. 155 (2015)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "2015-06-18",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "A town sign code that imposed different restrictions on temporary directional signs, ideological signs, and political signs based on their content is a content-based regulation subject to strict scrutiny. A law that singles out a specific subject matter for differential treatment is content-based on its face, regardless of the government's benign motive or the lack of evidence of viewpoint discrimination. Content-based laws \u2014 those that target speech based on its communicative content \u2014 are presumptively unconstitutional and may be justified only if they are narrowly tailored to serve compelling government interests.",
+        "holding_type": "affirmative",
+        "majority_author": "Thomas",
+        "per_curiam": false,
+        "vote": "9-0",
+        "opinions": [
+          {
+            "type": "concurrence",
+            "author": "Alito",
+            "joined_by": [
+              "Kennedy",
+              "Sotomayor"
+            ],
+            "doctrinal_significance": "Alito's concurrence emphasized that Reed should not be read to subject all content-based distinctions to strict scrutiny \u2014 many ordinary regulations (traffic laws, noise ordinances, etc.) necessarily differentiate based on subject matter without raising serious First Amendment concerns.",
+            "adopted_in": []
+          },
+          {
+            "type": "concurrence",
+            "author": "Kagan",
+            "joined_by": [
+              "Ginsburg",
+              "Breyer"
+            ],
+            "doctrinal_significance": "Kagan argued the majority's categorical approach was too broad and would subject a vast range of ordinary regulations to strict scrutiny, preferring a more functional inquiry into whether the regulation actually threatens First Amendment values.",
+            "adopted_in": []
+          }
+        ],
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "2015-06-18",
+        "valid_until": null,
+        "notes": "Reed v. Town of Gilbert significantly hardened and broadened the content-based/content-neutral distinction established in Police Department of Chicago v. Mosley (1972) and refined through subsequent cases. The decision is now one of the most frequently cited First Amendment cases in lower court litigation because it applies strict scrutiny to any law that facially distinguishes based on subject matter, regardless of motive. The concurrences signal ongoing disagreement about how broadly Reed should be read \u2014 whether any subject-matter distinction triggers strict scrutiny or only those that actually threaten free expression values."
+      },
+      {
+        "@type": "Case",
+        "id": "davis_v_fec_2008",
+        "short_name": "Davis v. FEC",
+        "full_name": "Davis v. Federal Election Commission",
+        "citation": "554 U.S. 724 (2008)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "2008-06-26",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "affirmed_in_part",
+        "holding": "The Millionaire's Amendment to BCRA \u2014 which raised contribution limits for candidates whose opponents spend more than $350,000 of personal funds \u2014 violates the First Amendment. A candidate has a First Amendment right to spend personal funds on their own campaign, and this right cannot be burdened by a scheme that advantages opponents based on the candidate's decision to exercise that right. The government may not impose a penalty on a candidate for spending personal funds, even if the penalty takes the form of asymmetric contribution limits rather than a direct cap.",
+        "holding_type": "affirmative",
+        "majority_author": "Alito",
+        "per_curiam": false,
+        "vote": "5-4",
+        "opinions": [
+          {
+            "type": "dissent",
+            "author": "Stevens",
+            "joined_by": [
+              "Souter",
+              "Ginsburg",
+              "Breyer"
+            ],
+            "doctrinal_significance": "Stevens argued the Millionaire's Amendment was a reasonable anti-corruption measure that leveled the playing field without directly capping expenditures \u2014 the asymmetric structure should be constitutional because it leaves the self-funding candidate free to spend as much as desired.",
+            "adopted_in": []
+          }
+        ],
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "2008-06-26",
+        "valid_until": null,
+        "notes": "Davis v. FEC is the most directly on-point case for personal expenditure caps on self-funded candidates. It established that the government cannot penalize a candidate for exercising the First Amendment right to spend personal funds, even indirectly through asymmetric regulatory schemes. The decision extends Buckley v. Valeo's protection of candidate expenditures and forecloses legislative attempts to level the playing field between wealthy self-funded candidates and candidates dependent on contributions."
+      },
+      {
+        "@type": "Case",
+        "id": "arizona_free_enterprise_v_bennett_2011",
+        "short_name": "Arizona Free Enterprise Club v. Bennett",
+        "full_name": "Arizona Free Enterprise Club's Freedom Club PAC v. Bennett",
+        "citation": "564 U.S. 721 (2011)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "2011-06-27",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "Arizona's public campaign finance system, which provided matching funds to publicly financed candidates when their privately financed opponents spent beyond a threshold, violated the First Amendment. Triggered matching funds impose a burden on privately financed candidates' political speech by requiring them to choose between spending more and thereby triggering additional public funds for their opponents. The anti-corruption interest does not justify a scheme that directly penalizes a candidate's decision to speak.",
+        "holding_type": "affirmative",
+        "majority_author": "Roberts",
+        "per_curiam": false,
+        "vote": "5-4",
+        "opinions": [
+          {
+            "type": "dissent",
+            "author": "Kagan",
+            "joined_by": [
+              "Ginsburg",
+              "Breyer",
+              "Sotomayor"
+            ],
+            "doctrinal_significance": "Kagan argued the majority mischaracterized the matching funds as a burden on speech \u2014 they simply subsidize more speech, which is what the First Amendment should encourage. A law that results in more political speech cannot be a First Amendment violation.",
+            "adopted_in": []
+          }
+        ],
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "2011-06-27",
+        "valid_until": null,
+        "notes": "Arizona Free Enterprise Club v. Bennett applied Davis v. FEC's reasoning to triggered matching fund systems, holding that any mechanism that penalizes privately financed candidates for exercising their First Amendment right to spend violates the Constitution. Together with Davis, this case forecloses most legislative attempts to reduce the influence of wealthy candidates through asymmetric or reactive funding schemes. The decision confirmed that the anti-corruption rationale cannot justify regulations that burden expenditure decisions."
+      },
+      {
+        "@type": "Case",
+        "id": "stanley_v_georgia_1969",
+        "short_name": "Stanley v. Georgia",
+        "full_name": "Stanley v. Georgia",
+        "citation": "394 U.S. 557 (1969)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1969-04-07",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "The First and Fourteenth Amendments prohibit making the private possession of obscene material a crime. A person has the right to receive information and ideas regardless of their social worth, and that right is fundamental to a free society. The state has no legitimate interest in controlling what a person reads or views in the privacy of his own home.",
+        "holding_type": "affirmative",
+        "majority_author": "Marshall",
+        "per_curiam": false,
+        "vote": "9-0",
+        "opinions": [],
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1969-04-07",
+        "valid_until": null,
+        "notes": "Stanley v. Georgia established a constitutional right to possess obscene material in one's home, rooted in privacy and the First Amendment. However, the Court has consistently refused to extend Stanley to commercial distribution, sale, or transportation of obscene material. Paris Adult Theatre I v. Slaton (1973) explicitly held that Stanley does not create a right to receive obscene material through commercial channels or to view it in adult theaters. The private-possession right established in Stanley therefore has narrow practical reach \u2014 it protects personal possession at home but does not immunize the commercial distribution chain that gets obscene material into private hands."
       }
     ],
     "doctrinal_tests": [
@@ -10000,6 +10175,214 @@
         "state"
       ],
       "notes": "Virginia v. Black clarified the true threats doctrine by holding that cross burning with intent to intimidate is a constitutionally proscribable true threat \u2014 articulating the 'serious expression of intent to commit unlawful violence' formulation that became central to subsequent true threats analysis including Counterman."
+    },
+    {
+      "id": "yates_modifies_incitement_doctrine",
+      "source_id": "yates_v_united_states_1957",
+      "target_id": "incitement_doctrine",
+      "edge_type": "MODIFIES",
+      "direction": "clarifies",
+      "valid_from": "1957-06-17",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Clarifies: Yates required that incitement prosecution prove advocacy of illegal action rather than abstract advocacy of dangerous ideas \u2014 effectively gutting Dennis without formally overruling it. The abstract doctrine/action advocacy distinction became central to Brandenburg's reformulation twelve years later."
+    },
+    {
+      "id": "yates_distinguishes_dennis",
+      "source_id": "yates_v_united_states_1957",
+      "target_id": "dennis_v_united_states_1951",
+      "edge_type": "DISTINGUISHES",
+      "valid_from": "1957-06-17",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ],
+      "notes": "Yates distinguished Dennis without overruling it by requiring proof of advocacy of illegal action rather than abstract doctrine \u2014 effectively rendering the Smith Act unenforceable against theoretical advocacy."
+    },
+    {
+      "id": "yates_interprets_a1",
+      "source_id": "yates_v_united_states_1957",
+      "target_id": "amendment_1",
+      "edge_type": "INTERPRETS",
+      "valid_from": "1957-06-17",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "reed_modifies_content_neutrality",
+      "source_id": "reed_v_town_of_gilbert_2015",
+      "target_id": "core_political_speech_doctrine",
+      "edge_type": "MODIFIES",
+      "direction": "clarifies",
+      "valid_from": "2015-06-18",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Clarifies: Reed hardened and broadened the content-based/content-neutral distinction by holding that any facial subject-matter distinction triggers strict scrutiny regardless of the government's motive \u2014 the most significant expansion of content-neutrality doctrine since Mosley (1972)."
+    },
+    {
+      "id": "reed_distinguishes_mosley",
+      "source_id": "reed_v_town_of_gilbert_2015",
+      "target_id": "police_dept_of_chicago_v_mosley_1972",
+      "edge_type": "DISTINGUISHES",
+      "valid_from": "2015-06-18",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Reed extended Mosley's content-neutrality principle by making facial subject-matter distinctions categorically content-based, subject to strict scrutiny regardless of discriminatory intent."
+    },
+    {
+      "id": "reed_interprets_a1",
+      "source_id": "reed_v_town_of_gilbert_2015",
+      "target_id": "amendment_1",
+      "edge_type": "INTERPRETS",
+      "valid_from": "2015-06-18",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "davis_applies_buckley_test",
+      "source_id": "davis_v_fec_2008",
+      "target_id": "buckley_campaign_finance_test",
+      "edge_type": "APPLIES",
+      "valid_from": "2008-06-26",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ],
+      "notes": "Davis applied Buckley's expenditure protection to strike down the Millionaire's Amendment \u2014 a scheme that raised opponents' contribution limits when a self-funded candidate spent beyond a threshold. Any mechanism penalizing a candidate's decision to spend personal funds violates the First Amendment."
+    },
+    {
+      "id": "davis_modifies_campaign_finance_doctrine",
+      "source_id": "davis_v_fec_2008",
+      "target_id": "campaign_finance_doctrine",
+      "edge_type": "MODIFIES",
+      "direction": "expands",
+      "valid_from": "2008-06-26",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ],
+      "notes": "Expands: Davis extended Buckley's protection of candidate expenditures to cover asymmetric regulatory schemes that penalize spending decisions, not just direct expenditure caps."
+    },
+    {
+      "id": "davis_interprets_a1",
+      "source_id": "davis_v_fec_2008",
+      "target_id": "amendment_1",
+      "edge_type": "INTERPRETS",
+      "valid_from": "2008-06-26",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ]
+    },
+    {
+      "id": "arizona_applies_buckley_test",
+      "source_id": "arizona_free_enterprise_v_bennett_2011",
+      "target_id": "buckley_campaign_finance_test",
+      "edge_type": "APPLIES",
+      "valid_from": "2011-06-27",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "arizona_distinguishes_davis",
+      "source_id": "arizona_free_enterprise_v_bennett_2011",
+      "target_id": "campaign_finance_doctrine",
+      "edge_type": "MODIFIES",
+      "valid_from": "2011-06-27",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Expands: Arizona Free Enterprise extended Davis's reasoning from asymmetric contribution limits to triggered public matching fund systems, completing the doctrinal foreclosure of legislative attempts to level the playing field through reactive funding schemes.",
+      "direction": "expands"
+    },
+    {
+      "id": "arizona_interprets_a1",
+      "source_id": "arizona_free_enterprise_v_bennett_2011",
+      "target_id": "amendment_1",
+      "edge_type": "INTERPRETS",
+      "valid_from": "2011-06-27",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "stanley_modifies_obscenity_doctrine",
+      "source_id": "stanley_v_georgia_1969",
+      "target_id": "obscenity_doctrine",
+      "edge_type": "MODIFIES",
+      "direction": "clarifies",
+      "valid_from": "1969-04-07",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Clarifies: Stanley established that the obscenity doctrine's categorical exclusion does not extend to private possession in the home \u2014 the state's interest in regulating obscenity stops at the threshold of private possession for personal use."
+    },
+    {
+      "id": "stanley_interprets_a1",
+      "source_id": "stanley_v_georgia_1969",
+      "target_id": "amendment_1",
+      "edge_type": "INTERPRETS",
+      "valid_from": "1969-04-07",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "paris_distinguishes_stanley",
+      "source_id": "paris_adult_theatre_v_slaton_1973",
+      "target_id": "stanley_v_georgia_1969",
+      "edge_type": "DISTINGUISHES",
+      "valid_from": "1973-06-21",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Paris Adult Theatre explicitly held that Stanley's private-possession right does not extend to commercial exhibition \u2014 states may regulate obscene material in adult theaters even for consenting adults, because the privacy rationale of Stanley does not apply to commercial settings."
+    },
+    {
+      "id": "yates_ip_brandenburg",
+      "source_id": "yates_v_united_states_1957",
+      "target_id": "brandenburg_v_ohio_1969",
+      "edge_type": "INTELLECTUALLY_PRECEDES",
+      "opinion_ref": {
+        "opinion_type": "plurality",
+        "author": "Harlan",
+        "note": "Yates majority laid the abstract/action distinction that Brandenburg formalized"
+      },
+      "valid_from": "1969-06-09",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Yates laid the intellectual groundwork for Brandenburg by requiring proof of advocacy of illegal action rather than abstract doctrine. Brandenburg absorbed this distinction and formalized it into the modern imminence/likelihood test."
     }
   ],
   "schema_issues_found": [
