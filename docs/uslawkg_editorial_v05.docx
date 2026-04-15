@@ -1,0 +1,358 @@
+**U.S. Law Knowledge Graph**
+
+Editorial Conventions • Version 0.5 (Draft)
+
+*Document 3 of 4 --- Label rules, description standards, contribution
+workflow, disputed doctrine handling*
+
++-----------------------------------------------------------------------+
+| **VERSION 0.5 --- WHAT CHANGED FROM v0.4**                            |
+|                                                                       |
+| Fix 1: ConstitutionalProvision label conventions expanded (Section    |
+| 1.1). Clause-level nodes now have their own label convention:        |
+| citation form + parenthetical clause name. Example: "U.S. Const.    |
+| amend. V (Due Process Clause)".                                       |
+|                                                                       |
+| Fix 2: ID patterns for ConstitutionalProvision updated (Section 5.2) |
+| to reflect the clause-level hierarchy: amendment_5,                  |
+| amendment_5_due_process, amendment_14_section_1,                     |
+| amendment_14_privileges_immunities.                                   |
+|                                                                       |
+| Fix 3: plurality author convention added (Section 1.4). When a case  |
+| has no majority opinion, majority_author should be set to            |
+| "{Author} (plurality)" rather than null. Applies to Frontiero,       |
+| Vieth, and similar cases.                                             |
+|                                                                       |
+| Fix 4: Holdings standard clarified for self-limiting opinions        |
+| (Section 2.3). When a per curiam opinion expressly limits its scope, |
+| the self-limiting language must appear in the holding field.          |
+|                                                                       |
+| Fix 5: Editorial workflow updated (Section 4) to reflect current     |
+| tooling: validate.py, neo4j_import.py, CourtListener pipeline v3,   |
+| and agent pipeline (planned).                                         |
++-----------------------------------------------------------------------+
+
+**1. Label Conventions**
+
+Labels are the human-facing names for nodes. They appear in the research
+tool, the visualization, and the API. The label conventions exist to
+prevent display collisions, ensure consistency, and make the graph
+legible to contributors and users.
+
+Core rule: no two nodes across any type may share a display label. The
+validator enforces this.
+
+**1.1 Label convention by node type**
+
+  --------------------------------------------------------------------------------------
+  **Node Type**                 **Label Convention**                 **Examples**
+  ----------------------------- ------------------------------------ -------------------
+  Area                          Common doctrinal name + > Doctrine   Free Speech >
+                                suffix when the common name would    Doctrine, Equal
+                                collide with a ConstitutionalPro-    Protection >
+                                vision label. Otherwise use common   Doctrine,
+                                name.                                Individual Rights
+
+  Doctrine                      Descriptive phrase, title case.      Suspect
+                                Must not duplicate parent Area       Classification
+                                label. Append parent area in         Doctrine,
+                                parentheses if needed to             Discriminatory
+                                disambiguate.                        Intent Doctrine
+
+  DoctrinalTest                 Proper name + Test, title case.      Central Hudson Test,
+                                If no established name, use the      Strict Scrutiny
+                                source case name.                    (Equal Protection),
+                                                                     Rational Basis Test
+                                                                     (Equal Protection)
+
+  Case                          Use short_name field. Party1 v.      New York Times v.
+                                Party2 (abbreviated). Full           US, Brandenburg,
+                                citation in citation field.          Claiborne Hardware
+
+  ConstitutionalProvision       Citation form only for amendment-    U.S. Const. amend. I
+  (amendment/section)           and section-level nodes. Never use   U.S. Const. amend.
+                                common name as label.                XIV, § 1
+
+  ConstitutionalProvision       Citation form + parenthetical        U.S. Const. amend. V
+  (clause)                      clause name. New in v0.5.            (Due Process Clause)
+                                                                     U.S. Const. amend. V
+                                                                     (Self-Incrimination
+                                                                     Clause)
+  --------------------------------------------------------------------------------------
+
++-----------------------------------------------------------------------+
+| **WHY CITATION FORM FOR CONSTITUTIONALPROVISION**                     |
+|                                                                       |
+| The collision problem: "First Amendment" as a ConstitutionalProvision |
+| label collides with "First Amendment > Doctrine" as an Area label.   |
+|                                                                       |
+| The fix: ConstitutionalProvision nodes use citation form, which is    |
+| both unambiguous and the form lawyers use in briefs and opinions.     |
+|                                                                       |
+| For clause-level nodes, add a parenthetical clause name to           |
+| distinguish sibling clauses within the same amendment.               |
+|                                                                       |
+| The research tool should display the common name in the UI alongside  |
+| the citation form --- that is a display concern, not a graph concern. |
++-----------------------------------------------------------------------+
+
+**1.2 The > Doctrine suffix rule**
+
+The > Doctrine suffix is appended to an Area label only when the common
+name is identical to a ConstitutionalProvision label or would cause
+confusion with a Doctrine label.
+
+> * Append > Doctrine when: the Area's common name is also a
+> ConstitutionalProvision's common name. Example: "Equal Protection" is
+> both an Area and a clause of the 14th Amendment. Suffix: "Equal
+> Protection > Doctrine".
+>
+> * Do not append when: no collision exists. "Individual Rights" has no
+> ConstitutionalProvision named "Individual Rights." No suffix needed.
+>
+> * Graph display rule: in the visualization, the > Doctrine suffix is
+> stripped for compactness on the canvas. It appears in full in the
+> detail panel and API responses.
+
+**1.3 Handling legitimate same-name concepts**
+
+> * Add a parenthetical qualifier: "Rational Basis (Equal Protection)"
+> vs. "Rational Basis (Due Process)"
+>
+> * For cases with identical short names, append the year: "Smith v.
+> Jones (1965)" vs. "Smith v. Jones (1987)"
+>
+> * For identical names in the same year, append the circuit: "Smith v.
+> Jones (1965, 9th Cir.)"
+
+**1.4 Plurality author convention --- New in v0.5**
+
+When a case has no majority opinion (opinion_form: plurality), the
+majority_author field should be set to "{Author} (plurality)" rather
+than null. This prevents E017 (per_curiam: false but majority_author
+null) while accurately representing that no majority opinion exists.
+
+Examples: "Brennan (plurality)" for Frontiero v. Richardson;
+"Scalia (plurality)" for Vieth v. Jubelirer.
+
+Do not use this convention for per curiam opinions. Per curiam nodes
+must have per_curiam: true and majority_author: null.
+
+**2. Description Standards**
+
+**2.1 Universal description rules**
+
+> * Write in plain English. Avoid jargon not standard in legal practice.
+>
+> * No advocacy. Describe what the law is, not what it should be.
+>
+> * Cite at least one primary source for every node.
+>
+> * Present tense for current doctrine. Past tense for overruled or
+> historical doctrine.
+>
+> * One paragraph for short descriptions. Area and Doctrine nodes may
+> have multi-paragraph descriptions if the doctrine is complex.
+
+**2.2 Disputed and contested doctrine**
+
+> * Use status: disputed for a node where the doctrine's current
+> validity or content is genuinely contested at the Supreme Court level.
+>
+> * Use contested: true on individual prongs of a DoctrinalTest where
+> there is active Court-level disagreement about that prong's meaning.
+>
+> * In notes, document both positions: which courts hold each view, the
+> leading cases on each side, and the current status.
+>
+> * Do not present one circuit's rule as the universal rule.
+>
+> * Post-Dobbs (2022), post-SFFA (2023), and post-Loper Bright (2024)
+> doctrinal instability: use status: disputed and document what changed.
+
+**2.3 Holdings**
+
+The holding field is the most consequential prose field in the graph.
+Write it as:
+
+> * What the court decided (not what the case was about)
+>
+> * The governing rule it established or applied
+>
+> * What that means for future cases in one sentence
+
+Good example: "The constitutional guarantees of free speech do not
+permit a state to forbid advocacy of the use of force except where such
+advocacy is directed to inciting or producing imminent lawless action
+and is likely to produce such action."
+
+Bad example: "The Supreme Court reversed the Ohio Supreme Court's
+decision affirming Brandenburg's conviction."
+
+Self-limiting opinions --- New in v0.5: When a per curiam opinion
+expressly limits the scope of its holding (e.g., Bush v. Gore: "Our
+consideration is limited to the present circumstances"), that
+self-limiting language must appear in the holding field. Omitting it
+misrepresents the precedential scope of the decision.
+
+**2.4 Fractured decisions**
+
+When no opinion commands a majority, the holding field should state the
+judgment (affirmed/reversed) and note that no majority opinion exists.
+Describe the controlling opinion and its vote count. Do not overstate
+the holding as if a plurality were a majority.
+
+Example structure: "A four-justice plurality held [X]. Justice [Y]
+concurred in the judgment on the ground that [Z]. The Court's judgment
+was [affirmed/reversed] but no majority opinion issued on [key question]."
+
+**3. Node Type Semantic Tests**
+
++-----------------------------------------------------------------------+
+| **THE SEMANTIC TEST FLOWCHART**                                       |
+|                                                                       |
+| 1. Is it a navigational container that groups related doctrines? ->   |
+| Area                                                                  |
+|                                                                       |
+| (If yes but it also has its own substantive rule: it is a Doctrine   |
+| with an Area parent)                                                  |
+|                                                                       |
+| 2. Is it a substantive rule or analytical framework that lawyers      |
+| apply to facts? -> Doctrine                                           |
+|                                                                       |
+| (If yes and it has numbered prongs with burden notes: go to step 3)  |
+|                                                                       |
+| 3. Does it have explicitly numbered prongs that function as a         |
+| structured checklist? -> DoctrinalTest                                |
+|                                                                       |
+| (Can the research tool display its prongs as a checklist a lawyer    |
+| fills out? If yes: DoctrinalTest)                                     |
+|                                                                       |
+| 4. Is it a threshold question that determines which test applies? ->  |
+| Doctrine with PRECONDITION_TO edge to the gated DoctrinalTest.        |
+| New in v0.5.                                                          |
+|                                                                       |
+| 5. Is it a case, constitutional provision, statute, or regulation? -> |
+| appropriate Authority node type                                       |
+|                                                                       |
+| 6. Does it meet two or more promotion rule conditions (Section 2.8   |
+| of Core Ontology)? -> flag for promotion                              |
++-----------------------------------------------------------------------+
+
+**4. Contribution Workflow**
+
+**4.1 Taxonomy spine changes (Layer 1)**
+
+The taxonomy spine requires the highest editorial scrutiny.
+
+> * Create a branch named area/{area-id}
+>
+> * Add a written justification: why this Area belongs where it does,
+> what doctrinal logic places it under its parent
+>
+> * Run the validator: python validate.py --file your_file.json
+>
+> * Submit a PR with the justification and at least one authoritative
+> secondary source (treatise, Restatement, or law review article)
+>
+> * Requires sign-off from two reviewers
+
+**4.2 Authority node contributions (Layer 2)**
+
+> * Create a branch named {node-type}/{node-id}
+>
+> * Add JSON to /data/{node_type}/
+>
+> * Run validate.py locally
+>
+> * Run neo4j_import.py with --wipe to verify Neo4j import
+>
+> * Submit a PR with plain-language description and primary source
+> citation
+>
+> * Requires sign-off from one reviewer
+
+**4.3 Agent pipeline contributions (planned)**
+
+When the agent pipeline is operational, generated nodes require:
+
+> * Passing QA: Semantic (Pydantic / validator), Factual (CourtListener
+> cross-reference), and Legal (LLM pressure test against NetworkX
+> sandbox)
+>
+> * Human review of the QA-passing diff before Neo4j Production merge
+>
+> * Same PR and sign-off requirements as manual contributions
+
+**4.4 Editorial standards**
+
+> * All descriptions in plain English, accurate, and neutral
+>
+> * No advocacy
+>
+> * Primary source citation for every node
+>
+> * Circuit splits explicitly flagged --- never present one circuit's
+> rule as universal
+>
+> * Disputed or recently destabilized doctrine: use status: disputed
+>
+> * Per curiam opinions: set per_curiam: true, majority_author: null,
+> document each separate opinion in opinions[]
+>
+> * Plurality opinions: set per_curiam: false, majority_author:
+> "{Author} (plurality)", document each opinion in opinions[]
+
+**5. ID Conventions**
+
+**5.1 Slug format**
+
+> * lowercase_snake_case only
+>
+> * No special characters except underscores
+>
+> * No leading or trailing underscores
+>
+> * Maximum 80 characters
+
+**5.2 ID patterns by node type**
+
+  ---------------------------------------------------------------------------------------------------------------
+  **Node Type**              **Pattern**                         **Examples**
+  -------------------------- ----------------------------------- -------------------------------------------------
+  Area                       {doctrinal_name}                    commercial_speech, equal_protection
+
+  Doctrine                   {doctrine_name}                     suspect_classification_doctrine,
+                                                                 discriminatory_intent_doctrine
+
+  DoctrinalTest              {test_name}_test                    central_hudson_test, strict_scrutiny_ep_test
+
+  Case                       {party1}_v_{party2}_{year}          loving_v_virginia_1967,
+                                                                 washington_v_davis_1976
+
+  ConstitutionalProvision    amendment_{number} for full         amendment_1, amendment_5,
+  (amendment)                amendments                          amendment_14_section_1
+
+  ConstitutionalProvision    amendment_{number}_{clause_name}    amendment_5_due_process,
+  (clause) New in v0.5       for clause-level nodes              amendment_5_self_incrimination,
+                                                                 amendment_14_privileges_immunities
+  ---------------------------------------------------------------------------------------------------------------
+
++-----------------------------------------------------------------------+
+| **ID COLLISION POLICY**                                               |
+|                                                                       |
+| Identical party names + same year: append reporter volume:            |
+| smith_v_jones_1973_410us                                              |
+|                                                                       |
+| Still ambiguous: append court: smith_v_jones_1973_9th_cir             |
+|                                                                       |
+| IDs are permanent. Once assigned, never change. Even if the label    |
+| changes, the ID does not.                                             |
++-----------------------------------------------------------------------+
+
++-----------------------------------------------------------------------+
+| **OPEN SOURCE LICENSE**                                               |
+|                                                                       |
+| Editorial Conventions: CC-BY 4.0. Proprietary research tool:          |
+| separately licensed.                                                  |
++-----------------------------------------------------------------------+

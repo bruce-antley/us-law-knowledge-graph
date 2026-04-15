@@ -1,0 +1,391 @@
+**U.S. Law Knowledge Graph**
+
+Validation Spec • Version 0.5 (Draft)
+
+*Document 2 of 4 --- All validation rules, error codes, and validator
+implementation guidance*
+
++-----------------------------------------------------------------------+
+| **VERSION 0.5 --- WHAT CHANGED FROM v0.4**                            |
+|                                                                       |
+| Fix 1: E018 added. New error code for PRECONDITION_TO validation:    |
+| source must be Doctrine, target must be Doctrine or DoctrinalTest,   |
+| condition_note is required.                                           |
+|                                                                       |
+| Fix 2: Compatibility matrix updated. PRECONDITION_TO added as valid  |
+| edge type with Doctrine -> Doctrine | DoctrinalTest.                  |
+|                                                                       |
+| Fix 3: opinion_ref.opinion_type enum updated (Section 2.6). Added    |
+| 'majority' as valid opinion_type for INTELLECTUALLY_PRECEDES.         |
+|                                                                       |
+| Fix 4: overrule_type enum updated (Section 2.4). Added 'partial' as  |
+| valid overrule_type for OVERRULES. Requires notes when partial is    |
+| used.                                                                 |
+|                                                                       |
+| Fix 5: Area required fields updated (Section 1.2). jurisdiction[] and|
+| tier now trigger E001 if missing (previously WARNING only).           |
+|                                                                       |
+| Fix 6: DoctrinalTest required fields updated (Section 1.5).          |
+| source_case_id, scrutiny_level, burden, and test_form now required   |
+| at top-level node; E001 if missing.                                   |
+|                                                                       |
+| Fix 7: E019 added. Partial overrule without notes triggers error.    |
++-----------------------------------------------------------------------+
+
++-----------------------------------------------------------------------+
+| **PURPOSE**                                                           |
+|                                                                       |
+| This document is the authoritative reference for the validation       |
+| layer. Every rule here must be implemented in the validator.          |
+|                                                                       |
+| Rules are classified as ERROR (rejects the addition) or WARNING       |
+| (flags for contributor review, does not reject).                      |
+|                                                                       |
+| The validator runs on every proposed addition, whether from a human  |
+| contributor or an automated pipeline.                                 |
++-----------------------------------------------------------------------+
+
+**1. Node Validation**
+
+**1.1 Universal rules (all node types)**
+
+> * [ERROR] All required attributes must be present and non-empty
+>
+> * [ERROR] id must be globally unique across all node types
+>
+> * [ERROR] id must match the slug format: lowercase_snake_case, no
+> special characters, max 80 chars
+>
+> * [ERROR] valid_until must be null or a date strictly after valid_from
+>
+> * [ERROR] status must be a defined enum value for that node type
+>
+> * [ERROR] jurisdiction must contain at least one value
+>
+> * [ERROR] No two nodes may share a display label across any node type
+
+**1.2 Area**
+
+> * [ERROR] parent_id must reference an existing Area node (except root
+> where parent_id is null)
+>
+> * [ERROR] If parent_id is set, a CHILD_OF edge with matching
+> source/target must exist
+>
+> * [ERROR] If a CHILD_OF edge exists, parent_id must match the edge's
+> target_id
+>
+> * [ERROR] jurisdiction[] must be present and non-empty --- New in v0.5
+>
+> * [ERROR] tier must be present and be a non-negative integer --- New in v0.5
+>
+> * [WARNING] tier should equal parent.tier + 1
+
+**1.3 Doctrine**
+
+> * [ERROR] area_id must reference an existing Area node
+>
+> * [WARNING] label must not duplicate the parent Area's label
+>
+> * [WARNING] If pending_establishment[] is non-empty and two slices
+> have been added since the entry was created, flag as stale (W002)
+
+**1.4 Case**
+
+> * [ERROR] decided_date must be a valid date not in the future
+>
+> * [ERROR] court_level must be a defined enum value
+>
+> * [ERROR] opinion_form must be a defined enum value
+>
+> * [ERROR] procedural_disposition must be a defined enum value
+>
+> * [ERROR] holding_type must be affirmative or by_negation
+>
+> * [ERROR] If per_curiam: true, majority_author must be null (E017)
+>
+> * [ERROR] If per_curiam: false, majority_author must not be null
+> (E017)
+>
+> * [ERROR] If opinion_form is per_curiam, per_curiam must be true
+>
+> * [WARNING] precedential_weight should be consistent with court_level
+> + status. If court_level is district and precedential_weight is
+> binding, flag as inconsistent (W004)
+>
+> * [WARNING] If status is mooted or cert_denied, precedential_weight
+> should be none
+
+**1.5 DoctrinalTest**
+
+> * [ERROR] prongs must contain at least two elements
+>
+> * [ERROR] source_case_id must reference an existing Case node
+>
+> * [ERROR] An ESTABLISHES edge must exist from source_case_id to this
+> DoctrinalTest --- canonical field check (E013)
+>
+> * [ERROR] If source_case_id and the ESTABLISHES edge disagree, reject
+> with: "source_case_id and ESTABLISHES edge are inconsistent. Edge is
+> canonical." (E013)
+>
+> * [ERROR] Any prong with contested: true must have a non-empty
+> contest_note
+>
+> * [ERROR] scrutiny_level must be present and a defined enum value ---
+> New in v0.5
+>
+> * [ERROR] burden must be present and a defined enum value --- New in
+> v0.5
+>
+> * [ERROR] test_form must be present and a defined enum value --- New
+> in v0.5
+>
+> * [WARNING] If pending_establishment[] is non-empty and two slices
+> have been added since the entry was created, flag as stale (W002)
+
+**1.6 ConstitutionalProvision**
+
+> * [ERROR] provision_type must be present and one of: amendment |
+> section | clause | article --- New in v0.5
+>
+> * [ERROR] text must be present and non-empty
+>
+> * [ERROR] ratified_date must be a valid date
+
+**2. Edge Validation**
+
+**2.1 Universal rules (all edge types)**
+
+> * [ERROR] source_id must reference an existing node or a declared
+> cross-slice dependency
+>
+> * [ERROR] target_id must reference an existing node or a declared
+> cross-slice dependency
+>
+> * [ERROR] Source and target node types must be compatible with the
+> edge type (see compatibility matrix, Section 2.8)
+>
+> * [ERROR] No duplicate edges: same source_id, target_id, and edge_type
+> within the same validity window
+>
+> * [ERROR] id must be globally unique and match slug format
+
+**2.2 CHILD_OF**
+
+> * [ERROR] Graph must remain a DAG after insertion --- no cycles
+>
+> * [ERROR] Each non-root Area node may have at most one CHILD_OF edge
+>
+> * [ERROR] target must be an Area node
+
+**2.3 MODIFIES**
+
+> * [ERROR] direction attribute must be present
+>
+> * [ERROR] direction must be one of: narrows | expands | clarifies |
+> complicates | repudiates | extends
+>
+> * [ERROR] MODIFIES and APPLIES edges must not both exist between the
+> same source and target --- MODIFIES subsumes APPLIES (E011)
+
+**2.4 OVERRULES**
+
+> * [ERROR] overrule_type must be present: explicit | implicit |
+> effective | partial --- partial is New in v0.5
+>
+> * [ERROR] target Case decided_date must be strictly before source Case
+> decided_date
+>
+> * [ERROR] If overrule_type is partial, notes must be non-empty
+> describing the scope of the overruling --- New in v0.5 (E019)
+>
+> * [WARNING --- cascade check] When an OVERRULES edge is added, surface
+> a list of all Doctrine and DoctrinalTest nodes ESTABLISHED by the
+> overruled Case. Require contributor to confirm: (a) each also needs an
+> OVERRULES edge, or (b) the doctrine survives the overruling. This is a
+> warning, not an error (W001).
+
+**2.5 CIRCUIT_SPLIT**
+
+> * [ERROR] source and target must both be Case nodes
+>
+> * [ERROR] source.court_level and target.court_level must both be
+> circuit
+>
+> * [ERROR] source.court_name and target.court_name must differ
+
+**2.6 INTELLECTUALLY_PRECEDES**
+
+> * [ERROR] opinion_ref attribute must be present
+>
+> * [ERROR] opinion_ref.opinion_type must be: dissent | concurrence |
+> plurality | majority --- majority is New in v0.5
+>
+> * [ERROR] source Case decided_date must be strictly before target Case
+> decided_date
+
+**2.7 PRECONDITION_TO --- New in v0.5**
+
+> * [ERROR] source must be a Doctrine node (E018)
+>
+> * [ERROR] target must be a Doctrine or DoctrinalTest node (E018)
+>
+> * [ERROR] condition_note attribute must be present and non-empty (E018)
+
+**2.8 Historical edges**
+
+> * [WARNING] A GOVERNED_BY edge with valid_until populated should have
+> a corresponding OVERRULES or MODIFIES edge on the governing
+> Doctrine/Test that explains its termination (W003)
+>
+> * [WARNING] Any edge where valid_until is before 1900 should be
+> reviewed --- likely a data entry error
+
+**2.9 Edge type compatibility matrix**
+
+  -----------------------------------------------------------------------------------
+  **Edge Type**           **Source -> Target**             **Notes**
+  ----------------------- -------------------------------- --------------------------
+  CHILD_OF                Area -> Area
+
+  RELATED_TO              Area -> Area                     3-condition editorial test
+                                                           required
+
+  INCORPORATES            ConstitutionalProvision ->
+                          ConstitutionalProvision
+
+  GROUNDED_IN             Area or Doctrine ->
+                          ConstitutionalProvision
+
+  GOVERNED_BY             Area -> Doctrine or              condition optional
+                          DoctrinalTest
+
+  ESTABLISHES             Case -> Doctrine or
+                          DoctrinalTest
+
+  APPLIES                 Case -> Doctrine or              Not allowed when MODIFIES
+                          DoctrinalTest                    exists for same source/target
+
+  MODIFIES                Case -> Doctrine or              direction required
+                          DoctrinalTest
+
+  OVERRULES               Case -> Case                     overrule_type required;
+                                                           target must predate source
+
+  INTERPRETS              Case ->
+                          ConstitutionalProvision
+
+  DISTINGUISHES           Case -> Case
+
+  CIRCUIT_SPLIT           Case -> Case                     Both must be circuit-level;
+                                                           different courts
+
+  INTELLECTUALLY_PRECEDES Case -> Case                     opinion_ref required;
+                                                           source must predate target
+
+  PRECONDITION_TO         Doctrine -> Doctrine or          condition_note required;
+                          DoctrinalTest                    New in v0.5
+  -----------------------------------------------------------------------------------
+
+**3. Graph-Level Validation**
+
+> * [ERROR] The Area taxonomy must form a valid DAG --- no cycles in
+> CHILD_OF edges
+>
+> * [ERROR] Every non-root Area node must have exactly one CHILD_OF edge
+>
+> * [ERROR] Every DoctrinalTest node must have at least one ESTABLISHES
+> edge from a Case node
+>
+> * [ERROR] No orphan nodes --- every node must have at least one edge
+>
+> * [ERROR] No two nodes across any type may share a display label
+>
+> * [ERROR] parent_id / CHILD_OF consistency --- every parent_id must
+> have a matching CHILD_OF edge and vice versa
+>
+> * [ERROR] source_case_id / ESTABLISHES consistency --- every
+> DoctrinalTest.source_case_id must match its ESTABLISHES edge source
+
+**4. Error Code Reference**
+
+  ---------------------------------------------------------------------------------
+  **Code**    **Meaning**                  **Notes**
+  ----------- ---------------------------- ----------------------------------------
+  E001        Missing required field       {field} is required on {node_type} but
+                                           is absent
+
+  E002        ID not unique                ID {id} already exists on node type
+                                           {type}
+
+  E003        Invalid slug format          ID {id} contains invalid characters or
+                                           exceeds 80 chars
+
+  E004        Label collision              Label {label} already used by
+                                           {existing_node_id}
+
+  E005        Broken reference             {field} references {id} which does not
+                                           exist
+
+  E006        Type incompatibility         Edge {edge_type} cannot connect
+                                           {source_type} to {target_type}
+
+  E007        Duplicate edge               Edge {type} from {source} to {target}
+                                           already exists in this validity window
+
+  E008        MODIFIES missing direction   MODIFIES edge {id} has no direction
+                                           attribute
+
+  E009        OVERRULES missing            OVERRULES edge {id} has no overrule_type
+              overrule_type
+
+  E010        Chronology violation         OVERRULES/INTELLECTUALLY_PRECEDES:
+                                           source must postdate target
+
+  E011        APPLIES+MODIFIES collision   {source} -> {target} has both APPLIES
+                                           and MODIFIES
+
+  E012        parent_id/CHILD_OF mismatch  parent_id {pid} has no matching CHILD_OF
+                                           edge or CHILD_OF edge disagrees
+
+  E013        source_case_id/ESTABLISHES   source_case_id {cid} has no matching
+              mismatch                     ESTABLISHES edge or edge disagrees
+
+  E014        Cycle in DAG                 Adding this CHILD_OF edge would create a
+                                           cycle
+
+  E015        Multiple CHILD_OF            Area {id} already has a CHILD_OF edge
+
+  E016        Orphan node                  Node {id} has no edges after insertion
+
+  E017        per_curiam inconsistency     per_curiam:true but majority_author is
+                                           set, or per_curiam:false but
+                                           majority_author is null
+
+  E018        PRECONDITION_TO violation    Source must be Doctrine; target must be  |
+                                           Doctrine or DoctrinalTest;               |
+                                           condition_note required. New in v0.5
+
+  E019        Partial overrule without     OVERRULES edge has overrule_type:partial  |
+              scope note                   but notes field is empty. New in v0.5
+
+  W001        Cascade check required       OVERRULES edge added: check Doctrines
+                                           established by {overruled_case}
+
+  W002        Stale pending_establishment  pending_establishment entry {case_id}
+                                           not resolved after 2 slices
+
+  W003        Historical edge without      GOVERNED_BY with valid_until has no
+              termination                  corresponding terminating event
+
+  W004        precedential_weight          precedential_weight {pw} appears
+              inconsistency                inconsistent with court_level {cl}
+  ---------------------------------------------------------------------------------
+
++-----------------------------------------------------------------------+
+| **OPEN SOURCE LICENSE**                                               |
+|                                                                       |
+| Validation Spec: CC-BY 4.0. Proprietary research tool: separately    |
+| licensed.                                                             |
++-----------------------------------------------------------------------+

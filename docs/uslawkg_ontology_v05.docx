@@ -1,0 +1,477 @@
+**U.S. Law Knowledge Graph**
+
+Core Ontology • Version 0.5 (Draft)
+
+*Document 1 of 4 --- Node types, edge types, field definitions, and
+canonical structure*
+
++-----------------------------------------------------------------------+
+| **VERSION 0.5 --- WHAT CHANGED FROM v0.4**                            |
+|                                                                       |
+| Fix 1: PRECONDITION_TO edge type added (Section 4.7). Required for    |
+| modeling threshold doctrines — discriminatory intent as precondition  |
+| to strict scrutiny, standing as precondition to merits review, etc.   |
+|                                                                       |
+| Fix 2: opinion_ref.opinion_type enum expanded (Section 4.4). Added    |
+| 'majority' to INTELLECTUALLY_PRECEDES opinion_ref. Allows modeling of |
+| majority-to-majority intellectual lineage (e.g., Loving → Obergefell).|
+|                                                                       |
+| Fix 3: overrule_type enum expanded (Section 4.6). Added 'partial' to  |
+| OVERRULES overrule_type. Handles cases like Brown v. Board, which     |
+| overruled Plessy only in the field of public education.               |
+|                                                                       |
+| Fix 4: ConstitutionalProvision hierarchy formalized (Section 3.5).    |
+| provision_type enum now includes amendment | section | clause |        |
+| article. Enables clause-level nodes (e.g., amendment_5_due_process)  |
+| as children of amendment-level nodes via INCORPORATES edges.          |
+|                                                                       |
+| Fix 5: Area node required fields expanded (Section 3.1). jurisdiction |
+| and tier are now required fields on Area nodes.                       |
+|                                                                       |
+| Fix 6: DoctrinalTest required fields expanded (Section 3.3).          |
+| source_case_id, scrutiny_level, burden, and test_form are now         |
+| required at the top-level DoctrinalTest node.                         |
+|                                                                       |
+| Fix 7: Open Issues Appendix updated. Reflects resolved issues and     |
+| new open issues surfaced during Equal Protection build.               |
+|                                                                       |
+| Fix 8: Pipeline status updated. Neo4j AuraDB live, CourtListener      |
+| pipeline v3 built, 244 nodes / 522 edges in production.               |
++-----------------------------------------------------------------------+
+
+**1. Purpose and Scope**
+
+This document defines the node types, edge types, field schemas, and
+canonical structure of the U.S. Law Knowledge Graph. It is the
+authoritative source for graph contributors and pipeline engineers.
+
+This is Document 1 of 4. The companion documents are:
+
+> * Validation Spec --- all validation rules, error codes, and validator
+> implementation guidance
+>
+> * Editorial Conventions --- label rules, description standards,
+> disputed doctrine handling, contribution workflow
+>
+> * Serialization & Pipeline Spec --- JSON-LD format, Neo4j import,
+> CourtListener integration
+
+MVP scope is Constitutional Law. The schema is designed to extend to
+federal statutory, regulatory, and state law in Phase 2.
+
+**2. Design Principles**
+
+**2.1 DAG, not tree**
+
+The graph is a directed acyclic graph. Legal concepts appear in multiple
+doctrinal contexts. Every node has exactly one primary parent for
+navigation and may have secondary parents for cross-referencing.
+
+**2.2 Separation of taxonomy and authority**
+
+Taxonomy nodes represent legal concepts (Area, Doctrine, DoctrinalTest).
+Authority nodes represent legal sources (Case, ConstitutionalProvision,
+Statute, Regulation). A case is never a taxonomy node. A doctrine is
+never an authority node.
+
+**2.3 Temporal validity**
+
+Every node and edge carries valid_from and valid_until. valid_until:
+null means currently good law. Overruled cases and superseded doctrines
+are never deleted --- they remain as historical record with valid_until
+populated.
+
+**2.4 Jurisdiction first**
+
+Every node carries jurisdiction metadata. Circuit splits are modeled
+through jurisdiction-scoped edge attributes, not duplicate nodes. See
+Section 3.3.1 for the v0.4 court model.
+
+**2.5 Machine-readable by default**
+
+All IDs are stable lowercase_snake_case slugs. All dates are ISO 8601.
+All enums are lowercase snake_case. The graph serializes as JSON-LD with
+deterministic mapping to Neo4j via the provided import scripts.
+
+**2.6 Doctrinal lineage is explicit**
+
+The graph represents not just current law but how it got there ---
+including intellectual lineage through non-majority opinions. The
+intellectual_source[] field on DoctrinalTest and the
+INTELLECTUALLY_PRECEDES edge type make this explicit.
+
+**2.7 Canonical vs. derived fields (v0.4)**
+
+  -------------------------------------------------------------------------------------
+  **Value**                          **Meaning**        **Notes**
+  ---------------------------------- ------------------ -------------------------------
+  **Area.parent_id**                 Denormalized       CHILD_OF edge is canonical.
+                                     convenience field  parent_id must match CHILD_OF
+                                                        edge target.
+
+  **DoctrinalTest.source_case_id**   Denormalized       ESTABLISHES edge is canonical.
+                                     convenience field  source_case_id must match the
+                                                        ESTABLISHES edge source.
+
+  **Case.precedential_weight**       Derived summary    Derived from court_level +
+                                     field              status. Validator warns if
+                                                        inconsistent.
+  -------------------------------------------------------------------------------------
+
+Rule: when a field is denormalized, the edge is always canonical.
+
+**2.8 Promotion rules (v0.4)**
+
+A concept must be promoted from enum/attribute to first-class node when
+it meets two or more of:
+
+1. Recurs across multiple doctrinal areas
+2. Has its own historical lineage
+3. Is the logical target of multiple edges from different source nodes
+4. Requires jurisdiction or time variation
+5. Is queried independently by the research tool
+
+**3. Node Types**
+
+**3.1 Area**
+
+Doctrinal areas of law forming the taxonomy spine.
+
+Required fields: id, label, description, parent_id (null for root),
+jurisdiction[], tier, status, valid_from, valid_until.
+
+New in v0.5: jurisdiction[] and tier are now required.
+
+tier values: 0 (root: constitutional_law), 1 (top-level:
+individual_rights), 2 (doctrinal area: first_amendment, equal_protection),
+3 (sub-area: commercial_speech, suspect_classification_doctrine).
+
+**3.2 Doctrine**
+
+Specific legal principles or frameworks within an Area.
+
+Required fields: id, label, description, area_id, status, valid_from,
+valid_until.
+
+Optional fields: scrutiny_level, burden, elements[], notes,
+pending_establishment[].
+
+**3.2.1 pending_establishment[] --- transitional field**
+
+When a Doctrine is modeled before the Case that established it is added
+to the graph, use pending_establishment[] to record the anticipated
+ESTABLISHES relationship. Format: [{ case_id, case_name, year, note }].
+
+When the relevant slice is added: remove the pending_establishment entry
+and add the ESTABLISHES edge. A stale entry (two slices added without
+resolution) triggers W002.
+
+**3.3 DoctrinalTest**
+
+Formalized multi-prong tests. Subtype of Doctrine with structured prong
+schema.
+
+Required fields: id, label, description, area_id, source_case_id,
+scrutiny_level, burden, test_form, prongs[], status, valid_from,
+valid_until.
+
+New in v0.5: source_case_id, scrutiny_level, burden, and test_form are
+now required at the top-level DoctrinalTest node.
+
+test_form values: conjunctive | disjunctive | balancing |
+threshold_then_conjunctive.
+
+scrutiny_level values: strict | intermediate | rational_basis |
+heightened | per_se | balancing | none.
+
+burden values: government | challenger | shared.
+
+**3.3.1 Prong sub-schema**
+
+Each prong: { number, label, description, burden_note, valid_from,
+valid_until, contested (bool), contest_note }.
+
+contested: true requires a non-empty contest_note.
+
+**3.4 Case**
+
+Judicial decisions. Authority nodes.
+
+Required fields: id, short_name, full_name, citation, court_level,
+court_name, binding_scope, decided_date, opinion_form,
+procedural_disposition, holding, holding_type, majority_author,
+per_curiam, vote, status, precedential_weight, valid_from, valid_until.
+
+Optional fields: opinions[], notes, courtlistener_id, data_tier.
+
+New in v0.5: courtlistener_id and data_tier formally recognized as
+optional fields.
+
+data_tier values: curated | auto_imported | inferred.
+
+**3.4.1 opinions[] sub-schema**
+
+Each opinion: { type, author, joined_by[], doctrinal_significance,
+adopted_in[] }.
+
+type values: dissent | concurrence | plurality | concurrence_in_judgment.
+
+adopted_in[] records case IDs where this opinion's reasoning was later
+adopted as majority law --- the source data for INTELLECTUALLY_PRECEDES
+edges.
+
+**3.4.2 per_curiam rule**
+
+If per_curiam: true, majority_author must be null.
+If per_curiam: false, majority_author should be set.
+If opinion_form is per_curiam, per_curiam must be true.
+
+**3.5 ConstitutionalProvision**
+
+Articles, Sections, Clauses, and Amendments of the U.S. Constitution.
+
+Required fields: id, label, text, provision_type, ratified_date, status.
+
+New in v0.5 --- provision_type values: amendment | section | clause |
+article.
+
+Hierarchy: amendment-level nodes are top level. Section-level nodes
+(e.g., amendment_14_section_1) are children of multi-section amendments.
+Clause-level nodes (e.g., amendment_5_due_process,
+amendment_5_self_incrimination) are children of sections or amendments.
+Relationship between levels: INCORPORATES edge from child to parent.
+
+Label convention: citation form only. Never use common name as label.
+Examples: "U.S. Const. amend. V (Due Process Clause)", "U.S. Const.
+amend. XIV, § 1". See Editorial Conventions, Section 1.1.
+
+**3.6 Statute** [Phase 2 --- node type reserved]
+
+**3.7 Regulation** [Phase 2 --- node type reserved]
+
+**4. Edge Types**
+
+**4.1 Edge type compatibility matrix**
+
+  -----------------------------------------------------------------------------------------
+  **Edge Type**           **Source -> Target**                 **Required Attributes**
+  ----------------------- ------------------------------------ ----------------------------
+  CHILD_OF                Area -> Area                         --
+
+  RELATED_TO              Area -> Area                         --
+
+  INCORPORATES            ConstitutionalProvision ->           --
+                          ConstitutionalProvision
+
+  GROUNDED_IN             Area or Doctrine ->                  --
+                          ConstitutionalProvision
+
+  GOVERNED_BY             Area -> Doctrine or DoctrinalTest    condition (optional)
+
+  ESTABLISHES             Case -> Doctrine or DoctrinalTest    --
+
+  APPLIES                 Case -> Doctrine or DoctrinalTest    Not allowed when MODIFIES
+                                                               exists for same source/target
+
+  MODIFIES                Case -> Doctrine or DoctrinalTest    direction (required)
+
+  OVERRULES               Case -> Case                         overrule_type (required)
+
+  INTERPRETS              Case -> ConstitutionalProvision      --
+
+  DISTINGUISHES           Case -> Case                         --
+
+  CIRCUIT_SPLIT           Case -> Case                         Both must be circuit-level;
+                                                               different courts
+
+  INTELLECTUALLY_PRECEDES Case -> Case                         opinion_ref (required)
+
+  PRECONDITION_TO         Doctrine -> Doctrine or             condition_note (required)
+                          DoctrinalTest                        New in v0.5
+  -----------------------------------------------------------------------------------------
+
+**4.2 MODIFIES --- direction attribute**
+
+  ---------------------------------------------------------------------------
+  **Value**         **Meaning**                     **Example**
+  ----------------- ------------------------------- -------------------------
+  narrows           Tightens doctrine, reduces       44 Liquormart tightening
+                    scope or government power        Central Hudson prongs 3-4
+
+  expands           Broadens doctrine, extends       Shapiro extending travel
+                    scope or government power        right to welfare residency
+
+  clarifies         Resolves ambiguity without       Hess v. Indiana on
+                    clearly narrowing or expanding   Brandenburg imminence
+
+  complicates       Introduces new uncertainty,      Vieth v. Jubelirer on
+                    leaves question open             Bandemer justiciability
+
+  repudiates        Rejects key reasoning without    44 Liquormart rejecting
+                    formally overruling              Posadas greater-includes-
+                                                     lesser logic
+
+  extends           Applies doctrine in new context  Claiborne Hardware
+                    without changing prongs          extending Brandenburg to
+                                                     civil liability
+  ---------------------------------------------------------------------------
+
+**4.3 RELATED_TO --- editorial criteria**
+
+All three conditions required:
+
+> * Shared constitutional grounding (both areas GROUNDED_IN same provision,
+> or one area's doctrine explicitly applied in other's cases)
+>
+> * Overlapping case law (at least one case in both lineages)
+>
+> * Complementary, not hierarchical (if one is a subset, use CHILD_OF)
+
+**4.4 INTELLECTUALLY_PRECEDES --- opinion_ref attribute**
+
+Required attribute opinion_ref: { case_id, opinion_type, author, note }.
+
+opinion_type values: dissent | concurrence | plurality | majority.
+
+New in v0.5: majority added. Use when a majority opinion in one case
+directly originated reasoning a later case adopted or extended. Example:
+Loving v. Virginia's recognition of marriage as a fundamental right
+(majority) intellectually preceded Obergefell v. Hodges.
+
+Canonical dissent example: Holmes's Abrams dissent (1919) → Brandenburg
+majority (1969).
+
+**4.5 GOVERNED_BY --- condition attribute**
+
+Optional: { instrument_type (licensing_scheme | judicial_injunction |
+administrative_order | statute | regulation), context, note }.
+
+Use when an area is governed by different tests depending on the
+government instrument. Example: prior_restraint governed by
+prior_restraint_test for licensing schemes and by madsen_injunction_test
+for content-neutral injunctions.
+
+**4.6 OVERRULES --- overrule_type and cascade rule**
+
+overrule_type values: explicit | implicit | effective | partial.
+
+New in v0.5: partial added. Use when a case overrules another only in
+a defined doctrinal context. When using partial, notes must specify the
+scope. Example: Brown v. Board overruled Plessy in the field of public
+education (partial).
+
+Cascade rule: when OVERRULES edge added, validator surfaces W001 listing
+all Doctrine and DoctrinalTest nodes ESTABLISHED by the overruled Case.
+Contributor must confirm whether each also needs OVERRULES or survives.
+
+**4.7 PRECONDITION_TO --- New in v0.5**
+
+Models threshold doctrines: Doctrine A must be satisfied before Test B
+applies.
+
+Source: Doctrine node (the threshold gate).
+Target: Doctrine or DoctrinalTest (what becomes applicable on satisfaction).
+
+Required attribute condition_note: string describing what must be
+satisfied and what outcome follows.
+
+Use when: a doctrine functions as a threshold question that, if
+satisfied, changes the applicable standard of review or legal test.
+
+Canonical examples:
+
+  discriminatory_intent_doctrine --[PRECONDITION_TO]--> strict_scrutiny_ep_test
+  Condition: Proof of discriminatory purpose required before strict scrutiny
+  applies to facially neutral laws. (Washington v. Davis, 1976)
+
+  standing_doctrine --[PRECONDITION_TO]--> merits_review
+  Condition: Article III standing must be established before court reaches
+  constitutional merits.
+
+**5. Temporal Model**
+
+**5.1 Validity windows**
+
+valid_from and valid_until on all nodes and edges. valid_until: null =
+currently good law.
+
+**5.2 Overruled cases**
+
+When B overrules A: add OVERRULES edge B->A; set valid_until on A to
+date of B; set status to overruled. Apply cascade rule. Do not delete A.
+
+For partial overrulings: set overrule_type: partial; document scope in
+notes; do not set valid_until on A unless wholly superseded.
+
+**5.3 Historical edges**
+
+Any edge with valid_until populated is a historical edge. Historical
+GOVERNED_BY edges should have a corresponding OVERRULES or MODIFIES edge.
+
+**5.4 Circuit splits**
+
+CIRCUIT_SPLIT edge between conflicting Case nodes, jurisdiction-scoped.
+
+**5.5 Mooted cases**
+
+status: mooted, valid_until: mootness date, precedential_weight: none.
+
+**Appendix --- Open Issues for v0.6**
+
++-----------------------------------------------------------------------+
+| **Opinion nodes (promotion candidate)**                               |
+|                                                                       |
+| The opinions[] array on Case nodes may be promoted to first-class     |
+| Opinion nodes in v0.6 or v1.0.                                        |
+|                                                                       |
+| Trigger: research tool query "show me all concurrences by Justice     |
+| Brennan that later became majority law."                              |
+|                                                                       |
+| Current workaround: INTELLECTUALLY_PRECEDES with opinion_ref captures |
+| the most important instances manually.                                |
++-----------------------------------------------------------------------+
+
++-----------------------------------------------------------------------+
+| **COMPANION_TO edge type (candidate)**                                |
+|                                                                       |
+| Same-day companion cases (Brown/Bolling, Van Orden/McCreary) currently|
+| modeled as RELATED_TO. A COMPANION_TO edge type would be more precise.|
+|                                                                       |
+| Deferred: RELATED_TO sufficient for current query patterns. Add in    |
+| v0.6 when companion case queries become a research tool feature.      |
++-----------------------------------------------------------------------+
+
++-----------------------------------------------------------------------+
+| **amendment_14 Privileges or Immunities Clause node**                 |
+|                                                                       |
+| Saenz v. Roe (1999) grounds the right of newly arrived residents in   |
+| the Privileges or Immunities Clause of the Fourteenth Amendment.     |
+| No clause-level node exists yet.                                      |
+|                                                                       |
+| Deferred: add amendment_14_privileges_immunities when Privileges or  |
+| Immunities doctrine is modeled (likely with substantive due process). |
++-----------------------------------------------------------------------+
+
++-----------------------------------------------------------------------+
+| **Phase 2 jurisdiction modeling**                                     |
+|                                                                       |
+| court_level / court_name / binding_scope are forward-compatible       |
+| placeholders. Phase 2 will introduce JurisdictionScope as a          |
+| structured object. Do not model state law until that spec is done.   |
++-----------------------------------------------------------------------+
+
++-----------------------------------------------------------------------+
+| **CourtListener ID population**                                       |
+|                                                                       |
+| courtlistener_id populated for CourtListener batch 1 (13 commercial  |
+| speech cases). Remaining ~230 curated Case nodes need population.    |
+|                                                                       |
+| Priority: medium. CourtListener pipeline v3 can populate in batch.   |
++-----------------------------------------------------------------------+
+
++-----------------------------------------------------------------------+
+| **OPEN SOURCE LICENSE**                                               |
+|                                                                       |
+| Schema and graph data: CC-BY 4.0. Proprietary research tool:          |
+| separately licensed.                                                  |
++-----------------------------------------------------------------------+

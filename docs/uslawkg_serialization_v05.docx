@@ -1,0 +1,402 @@
+**U.S. Law Knowledge Graph**
+
+Serialization & Pipeline Spec • Version 0.5 (Draft)
+
+*Document 4 of 4 --- JSON-LD format, Neo4j import, CourtListener
+integration, pipeline architecture*
+
++-----------------------------------------------------------------------+
+| **VERSION 0.5 --- WHAT CHANGED FROM v0.4**                            |
+|                                                                       |
+| Fix 1: Pipeline status updated throughout. Neo4j AuraDB is live and  |
+| operational. CourtListener pipeline v3 is built with --min-depth and |
+| --max-results flags. Current graph: 244 nodes, 522 edges, 0 errors.  |
+|                                                                       |
+| Fix 2: Neo4j connection details documented (Section 2.3). URI, user, |
+| database name, and MCP server config for Claude Desktop.             |
+|                                                                       |
+| Fix 3: Canonical query tests updated (Section 2.5). QT-1 through     |
+| QT-6 now documented with verified output from live graph.            |
+|                                                                       |
+| Fix 4: CourtListener pipeline v3 documented (Section 3.3).           |
+| Three-strategy architecture with --min-depth and --max-results flags.|
+|                                                                       |
+| Fix 5: Agent pipeline architecture added (Section 5). Multi-agent    |
+| CI/CD pipeline design (LangGraph/Vertex AI) for automated graph      |
+| expansion. Planned, not yet built.                                    |
+|                                                                       |
+| Fix 6: DoctrinalTest serialization example updated (Section 1.3) to  |
+| include new required fields: source_case_id, scrutiny_level, burden, |
+| and test_form at the top level.                                       |
+|                                                                       |
+| Fix 7: PRECONDITION_TO edge serialization example added (Section 1.6).|
++-----------------------------------------------------------------------+
+
+**1. Serialization Format**
+
+The graph is serialized as JSON-LD. JSON-LD is the canonical interchange
+format. It is importable into Neo4j via the provided import scripts and
+compatible with RDF triple stores via standard JSON-LD processing.
+
++-----------------------------------------------------------------------+
+| **PORTABILITY CLAIM**                                                 |
+|                                                                       |
+| The graph is serialized as JSON-LD with deterministic field mappings. |
+| A Neo4j import script is provided that handles the transformation    |
+| from JSON-LD to Neo4j property graph format. RDF import requires     |
+| standard JSON-LD framing and expansion, handled by any conformant    |
+| JSON-LD processor.                                                    |
+|                                                                       |
+| The transformation is provided and versioned alongside the graph.    |
+| Contributors do not need to write transformation code.               |
++-----------------------------------------------------------------------+
+
+**1.1 File structure**
+
+> * /data/conlaw_graph_v02.json --- combined graph, all slices, all
+> fixes applied. This is the authoritative source for Neo4j import.
+>
+> * /validate.py --- full validator, run before every import
+>
+> * /neo4j_import.py --- Neo4j import pipeline v0.4
+>
+> * /courtlistener_pipeline_v3.py --- CourtListener citation pipeline
+
+**1.2 JSON-LD top-level structure**
+
+  {
+    "meta": {
+      "version": "0.5",
+      "schema_version": "0.5",
+      "slices": [...],
+      "node_count": 244,
+      "edge_count": 522,
+      "schema_issue_count": 0
+    },
+    "nodes": {
+      "areas": [...],
+      "doctrines": [...],
+      "doctrinal_tests": [...],
+      "cases": [...],
+      "constitutional_provisions": [...]
+    },
+    "edges": [...]
+  }
+
+**1.3 DoctrinalTest serialization --- v0.5 required fields**
+
+  {
+    "@type": "DoctrinalTest",
+    "id": "strict_scrutiny_ep_test",
+    "label": "Strict Scrutiny (Equal Protection)",
+    "area_id": "equal_protection",
+    "source_case_id": "korematsu_v_united_states_1944",
+    "scrutiny_level": "strict",
+    "burden": "government",
+    "test_form": "conjunctive",
+    "status": "active",
+    "valid_from": "1944-12-18",
+    "valid_until": null,
+    "prongs": [
+      {
+        "number": 1,
+        "label": "Compelling governmental interest",
+        "description": "...",
+        "burden_note": "Government bears burden",
+        "valid_from": "1944-12-18",
+        "valid_until": null,
+        "contested": false,
+        "contest_note": null
+      },
+      {
+        "number": 2,
+        "label": "Narrow tailoring",
+        "description": "...",
+        "burden_note": "Government bears burden",
+        "valid_from": "1944-12-18",
+        "valid_until": null,
+        "contested": true,
+        "contest_note": "Degree of fit required disputed across cases"
+      }
+    ]
+  }
+
+**1.4 Case node serialization --- v0.4 decomposed court model**
+
+  {
+    "@type": "Case",
+    "id": "loving_v_virginia_1967",
+    "short_name": "Loving v. Virginia",
+    "full_name": "Loving v. Virginia",
+    "citation": "388 U.S. 1 (1967)",
+    "court_level": "scotus",
+    "court_name": "Supreme Court of the United States",
+    "binding_scope": "federal_all",
+    "decided_date": "1967-06-12",
+    "opinion_form": "signed_majority",
+    "procedural_disposition": "reversed",
+    "holding": "...",
+    "holding_type": "affirmative",
+    "majority_author": "Warren",
+    "per_curiam": false,
+    "vote": "9-0",
+    "status": "good_law",
+    "precedential_weight": "binding",
+    "valid_from": "1967-06-12",
+    "valid_until": null,
+    "opinions": [],
+    "courtlistener_id": null,
+    "data_tier": "curated"
+  }
+
+**1.5 Edge serialization --- GOVERNED_BY with condition**
+
+  {
+    "id": "prior_restraint_governed_by_madsen_test",
+    "source_id": "prior_restraint",
+    "target_id": "madsen_injunction_test",
+    "edge_type": "GOVERNED_BY",
+    "condition": {
+      "instrument_type": "judicial_injunction",
+      "context": "Content-neutral injunctions against specific parties",
+      "note": "Classic prior restraints governed by prior_restraint_test"
+    },
+    "valid_from": "1994-06-30",
+    "valid_until": null
+  }
+
+**1.6 Edge serialization --- PRECONDITION_TO (New in v0.5)**
+
+  {
+    "id": "discriminatory_intent_precondition_strict_scrutiny",
+    "source_id": "discriminatory_intent_doctrine",
+    "target_id": "strict_scrutiny_ep_test",
+    "edge_type": "PRECONDITION_TO",
+    "condition_note": "Proof of discriminatory purpose under the discriminatory intent doctrine is required before strict scrutiny applies to facially neutral laws under the Equal Protection Clause. (Washington v. Davis, 1976; Arlington Heights, 1977)",
+    "valid_from": "1976-06-07",
+    "valid_until": null,
+    "jurisdiction": ["federal", "state"]
+  }
+
+**2. Neo4j Import**
+
+**2.1 Node type to Neo4j label mapping**
+
+  -------------------------------------------------------------------------------------------
+  **JSON-LD @type**             **Neo4j Label**            **Secondary Label**
+  ----------------------------- -------------------------- ----------------------------------
+  Area                          :Area                      :TaxonomyNode
+
+  Doctrine                      :Doctrine                  :TaxonomyNode
+
+  DoctrinalTest                 :DoctrinalTest             :TaxonomyNode
+
+  Case                          :Case                      :AuthorityNode
+
+  ConstitutionalProvision       :ConstitutionalProvision   :AuthorityNode
+  -------------------------------------------------------------------------------------------
+
+**2.2 Edge type to Neo4j relationship mapping**
+
+All JSON-LD edge_type values map directly to Neo4j relationship types
+with the same name. Edge attributes map to Neo4j relationship properties.
+PRECONDITION_TO maps to the :PRECONDITION_TO relationship type.
+
+**2.3 Neo4j connection details (AuraDB)**
+
+  URI:       neo4j+s://779dfe5d.databases.neo4j.io
+  Username:  779dfe5d
+  Database:  779dfe5d
+  Password:  [in environment / not committed to version control]
+
+Note: AuraDB Free uses the instance ID as both username and database
+name --- not the default "neo4j". The URI scheme is neo4j+s:// (not
+bolt+s://).
+
+MCP server config for Claude Desktop (requires uvx):
+  mcp-neo4j-cypher with full path to uvx, Neo4j URI, and SSL cert path.
+
+**2.4 Import pipeline usage**
+
+  # Standard import with wipe
+  echo "yes" | python3 neo4j_import.py \
+    --uri "neo4j+s://779dfe5d.databases.neo4j.io" \
+    --user 779dfe5d \
+    --password "[password]" \
+    --file conlaw_graph_v02.json \
+    --wipe
+
+  # Validate before import
+  python3 validate.py --file conlaw_graph_v02.json
+
+The import pipeline runs canonical query tests (QT-1 through QT-6) after
+every import to verify graph integrity.
+
+**2.5 Canonical query tests**
+
+These six queries run automatically after every Neo4j import. All six
+must return results to pass.
+
+QT-1: What tests currently govern commercial speech?
+  MATCH (a:Area {id: 'commercial_speech'})-[:GOVERNED_BY]->(t:DoctrinalTest)
+  WHERE t.status = 'active'
+  RETURN t.id as test_id, t.label as test_label, t.status as status
+
+QT-2: What cases touch the Brandenburg incitement test?
+  MATCH (c:Case)-[r:ESTABLISHES|MODIFIES|APPLIES]->(t:DoctrinalTest {id: 'brandenburg_test'})
+  RETURN c.short_name as case_name, c.decided_date as date,
+         type(r) as relationship, r.direction as direction
+  ORDER BY c.decided_date
+
+QT-3: Full doctrinal lineage of the Brandenburg test
+  MATCH (source:Case)-[ip:INTELLECTUALLY_PRECEDES]->(target:Case)
+        -[:ESTABLISHES]->(t:DoctrinalTest {id: 'brandenburg_test'})
+  RETURN source.short_name as intellectual_source,
+         source.decided_date as source_date,
+         target.short_name as establishing_case,
+         target.decided_date as established_date
+
+QT-4: Taxonomy path from commercial speech to root
+  MATCH path = (a:Area {id: 'commercial_speech'})-[:CHILD_OF*]->(root:Area)
+  WHERE NOT (root)-[:CHILD_OF]->()
+  RETURN [n IN nodes(path) | n.label] as taxonomy_path
+
+QT-5: All overruled cases with their overruling cases
+  MATCH (b:Case)-[r:OVERRULES]->(a:Case)
+  RETURN b.short_name as overruling, b.decided_date as overruling_date,
+         a.short_name as overruled, a.decided_date as overruled_date,
+         r.overrule_type as type
+  ORDER BY b.decided_date
+
+QT-6: All RELATED_TO connections across doctrinal areas
+  MATCH (a1:Area)-[:RELATED_TO]-(a2:Area)
+  WHERE id(a1) < id(a2)
+  RETURN a1.label as area1, a2.label as area2
+  ORDER BY a1.label
+
+**3. CourtListener Integration**
+
+**3.1 What CourtListener provides**
+
+> * Full opinion text for all federal decisions
+>
+> * Citation metadata (party names, court, date, docket number)
+>
+> * Citation network (what cases cite this case)
+>
+> * CourtListener cluster ID --- the stable identifier for linking
+
+**3.2 Data tier model**
+
+Tier 1 (curated): Hand-modeled nodes at casebook depth. Holdings, votes,
+authors, opinion significance, and all edges are human-reviewed. These
+are the nodes that form the doctrinal spine.
+
+Tier 2 (auto_imported / inferred): Cases identified by citation depth
+from CourtListener. Minimum metadata only. Live CourtListener queries
+at research time augment these with full opinion text. These nodes are
+not added to the main graph by default --- they are surfaced via live
+API queries using the courtlistener_id field on Tier 1 nodes as the
+lookup hook.
+
+Tier 1 is the graph. Tier 2 is the citation network around the graph.
+
+**3.3 CourtListener pipeline v3**
+
+The pipeline is operational at courtlistener_pipeline_v3.py.
+Three-strategy architecture:
+
+  Strategy 1 (post-2000): Direct cluster search by case name + year.
+  Strategy 2 (pre-2000, precise): OpenSearch with party name filters.
+  Strategy 3 (pre-2000, fallback): Cluster enumeration with citation depth.
+
+Flags:
+  --min-depth N   Minimum citation depth to include a case (default: 2)
+  --max-results N Maximum results per case (default: 20)
+  --case-ids      Comma-separated list of case IDs to process
+
+Primary use: populate courtlistener_id on existing Tier 1 Case nodes.
+Secondary use: identify high-citation-depth cases that may warrant
+promotion to Tier 1 (human review required).
+
+**3.4 Integration status**
+
+courtlistener_id is populated for the 13 commercial speech cases added
+in CourtListener batch 1. Approximately 230 curated Case nodes still
+need courtlistener_id populated.
+
+**4. Merge Pipeline**
+
+**4.1 Merge steps**
+
+> * 1. Validate current combined graph (validate.py)
+> * 2. Write new nodes and edges to combined graph file
+> * 3. Update meta.node_count, meta.edge_count
+> * 4. Validate merged graph
+> * 5. If validation passes: import to Neo4j (neo4j_import.py --wipe)
+> * 6. Verify QT-1 through QT-6 pass
+> * 7. Copy to /mnt/user-data/outputs/ and commit to GitHub
+
+**4.2 Current graph status**
+
+  Combined graph: conlaw_graph_v02.json
+  Nodes: 244
+  Edges: 522
+  Validation errors: 0
+  Slices: First Amendment (complete, casebook depth + CourtListener batch 1)
+          Equal Protection (complete, casebook depth, 2 QC passes)
+
+**5. Agent Pipeline Architecture** [Planned --- not yet built]
+
+The agent pipeline automates graph expansion for new doctrinal areas.
+It is model-agnostic and designed to run on LangGraph / Vertex AI.
+
+**5.1 Pipeline components**
+
+Graph Builder (Generator): Takes a prompt (e.g., "Map the substantive
+due process doctrine") and generates draft JSON nodes and edges, strictly
+adhering to the v0.5 schema. Recommended model: Gemini 1.5 Pro (large
+context window for casebook ingestion).
+
+QA: Semantic / Schema (Pydantic + validate.py): Verifies the draft JSON
+against v0.5 schema constraints. This is largely the existing validator
+plus Pydantic model enforcement. No LLM required.
+
+QA: Factual / Citation (CourtListener): Cross-references generated Case
+nodes against CourtListener API. Verifies case names, citations, dates,
+vote counts, and majority authors. Flags hallucinated cases.
+
+QA: Legal Pressure Test (LLM-as-Judge): Spins up draft JSON into an
+ephemeral NetworkX sandbox. Generates hypothetical legal scenarios,
+executes them against the temporary graph, and evaluates whether the
+traversal paths match doctrinal reality. Recommended model: Claude
+(legal reasoning quality for pressure testing).
+
+Orchestrator: Routes output between components. If any QA agent fails,
+kicks draft back to Graph Builder with specific error logs for revision.
+If all three QA agents pass, flags for human review.
+
+Human Review: Diff of approved JSON against current graph. Human
+confirms before merge to Neo4j Production.
+
+**5.2 Schema requirement**
+
+The Graph Builder must be given the current version of all four spec
+documents as its primary constraints. Do not build the agent pipeline
+against a stale schema version. The v0.5 spec documents are the minimum
+acceptable input.
+
+**5.3 Build order**
+
+Do not build the agent pipeline until:
+  1. v0.5 schema spec is complete and committed (this document)
+  2. At least two doctrinal branches validated manually (done: 1A + EP)
+  3. Validator updated to enforce all v0.5 rules
+  4. PRECONDITION_TO edge type implemented in validator
+
++-----------------------------------------------------------------------+
+| **OPEN SOURCE LICENSE**                                               |
+|                                                                       |
+| Serialization & Pipeline Spec: CC-BY 4.0. Proprietary research tool: |
+| separately licensed.                                                  |
++-----------------------------------------------------------------------+
