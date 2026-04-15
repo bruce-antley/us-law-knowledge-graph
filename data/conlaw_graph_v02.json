@@ -17,8 +17,8 @@
     "created": "2026-03-15",
     "status": "draft",
     "schema_version": "0.2",
-    "node_count": 196,
-    "edge_count": 412,
+    "node_count": 233,
+    "edge_count": 498,
     "schema_issue_count": 41,
     "fixes_applied": [
       "FIX 1: ConstitutionalProvision labels changed to citation form (amendment_1, amendment_14_section_1) to disambiguate from Area nodes with same common-name labels",
@@ -917,6 +917,147 @@
         "valid_from": "1980-07-02",
         "valid_until": null,
         "notes": "Richmond Newspapers established the access right; Globe Newspaper Co. v. Superior Court (1982) applied it to require case-by-case rather than mandatory closure. The Press-Enterprise cases extended the right to jury selection (1984) and preliminary hearings (1986)."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "suspect_classification_doctrine",
+        "label": "Suspect Classification Doctrine",
+        "description": "Classifications based on race, national origin, and alienage are suspect and trigger strict scrutiny under the Equal Protection Clause. A classification is suspect when it is based on an immutable characteristic, bears no relation to ability or contribution to society, and has historically been used to oppress a discrete and insular minority. The strict scrutiny standard requires the government to demonstrate that the classification is necessary to achieve a compelling governmental interest and is narrowly tailored to that end.",
+        "area_id": "equal_protection",
+        "scrutiny_level": "strict",
+        "elements": [
+          "Classification is based on race, national origin, or alienage",
+          "Government must demonstrate a compelling governmental interest",
+          "Classification must be narrowly tailored to achieve that interest",
+          "Burden of justification falls on the government"
+        ],
+        "burden": "government",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1944-12-18",
+        "valid_until": null,
+        "notes": "The suspect classification doctrine emerged from United States v. Carolene Products (1938) footnote four, which suggested that prejudice against discrete and insular minorities may call for a correspondingly more searching judicial inquiry. Korematsu v. United States (1944) first applied the strict scrutiny label to racial classifications, though it upheld the Japanese internment. Loving v. Virginia (1967) applied strict scrutiny to strike an anti-miscegenation statute."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "quasi_suspect_classification_doctrine",
+        "label": "Quasi-Suspect Classification Doctrine",
+        "description": "Classifications based on sex and illegitimacy are quasi-suspect and trigger intermediate scrutiny under the Equal Protection Clause. A classification is quasi-suspect when it is based on a characteristic related to but not solely determined by immutable traits and has been used to relegate a class to inferior legal status, but where the characteristic may in some instances be a permissible basis for differential treatment. The intermediate scrutiny standard requires the government to demonstrate that the classification is substantially related to an important governmental interest.",
+        "area_id": "equal_protection",
+        "scrutiny_level": "intermediate",
+        "elements": [
+          "Classification is based on sex or illegitimacy",
+          "Government must demonstrate an important governmental interest",
+          "Classification must be substantially related to achieving that interest",
+          "Burden of justification falls on the government",
+          "Exceedingly persuasive justification required for sex classifications (post-VMI)"
+        ],
+        "burden": "government",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1976-12-20",
+        "valid_until": null,
+        "notes": "Craig v. Boren (1976) formally established intermediate scrutiny as a distinct tier for sex classifications. Prior to Craig, Reed v. Reed (1971) and Frontiero v. Richardson (1973) suggested heightened review without settling on a standard. United States v. Virginia (1996) strengthened intermediate scrutiny for sex to require an exceedingly persuasive justification, effectively approaching strict scrutiny."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "rational_basis_doctrine",
+        "label": "Rational Basis Review",
+        "description": "All equal protection challenges not involving suspect or quasi-suspect classifications or fundamental rights receive rational basis review \u2014 the most deferential standard. Under rational basis, a law survives if it is rationally related to any legitimate governmental interest. Courts will hypothesize legitimate interests even if not articulated by the legislature. The challenger bears the burden of negating every conceivable rational basis. In some cases, the Court has applied rational basis with more bite, striking down laws motivated by bare desire to harm a politically unpopular group.",
+        "area_id": "equal_protection",
+        "scrutiny_level": "rational_basis",
+        "elements": [
+          "Any legitimate governmental interest suffices \u2014 even one not articulated by the legislature",
+          "Law must be rationally related to that interest",
+          "Challenger bears burden of negating all conceivable rational bases",
+          "Courts defer to legislative judgments about means-ends fit"
+        ],
+        "burden": "challenger",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1938-04-25",
+        "valid_until": null,
+        "notes": "Rational basis is the default standard \u2014 it applies unless the challenger can invoke a suspect classification or fundamental right. A handful of cases have applied rational basis with more scrutiny ('rational basis with bite'), striking laws motivated by animus against an unpopular group: U.S. Dept. of Agriculture v. Moreno (1973), City of Cleburne v. Cleburne Living Center (1985), Romer v. Evans (1996). The doctrinal status of rational basis with bite remains contested."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "discriminatory_intent_doctrine",
+        "label": "Discriminatory Intent Doctrine",
+        "description": "A facially neutral law does not trigger strict scrutiny solely because it has a racially disparate impact. The Equal Protection Clause requires proof of discriminatory intent \u2014 a purpose to discriminate on the basis of race \u2014 before heightened scrutiny applies to a facially neutral law. Discriminatory intent may be shown through direct evidence, circumstantial evidence of the decision-making process, historical background, departures from normal procedures, or legislative history. A law enacted with discriminatory purpose and having a disparate racial impact is subject to strict scrutiny even if facially neutral.",
+        "area_id": "equal_protection",
+        "scrutiny_level": "strict",
+        "elements": [
+          "Facially neutral law with disparate racial impact does not alone trigger strict scrutiny",
+          "Plaintiff must demonstrate discriminatory purpose, not merely disparate impact",
+          "Purpose may be shown through direct evidence or Arlington Heights factors",
+          "Once discriminatory purpose shown, burden shifts to government to show same decision would have been made absent that purpose"
+        ],
+        "burden": "plaintiff",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1976-06-07",
+        "valid_until": null,
+        "notes": "Washington v. Davis (1976) established the discriminatory intent requirement for facially neutral laws. Village of Arlington Heights v. MHDC (1977) elaborated the multi-factor test for proving discriminatory intent from circumstantial evidence. The doctrine has been extensively criticized for making it nearly impossible to challenge facially neutral laws that perpetuate historic racial discrimination."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "affirmative_action_doctrine",
+        "label": "Affirmative Action Doctrine",
+        "description": "Racial classifications designed to benefit historically disadvantaged minorities \u2014 affirmative action \u2014 are subject to strict scrutiny under the Equal Protection Clause, the same standard applied to invidious racial discrimination. Strict scrutiny applies regardless of which race is burdened or benefited. Under Grutter v. Bollinger (2003), student body diversity was held to be a compelling interest sufficient to justify race-conscious university admissions. SFFA v. Harvard (2023) overruled Grutter, holding that race-conscious admissions programs at Harvard and UNC violated the Equal Protection Clause because they lacked measurable objectives, used race as a negative, and were not limited in time.",
+        "area_id": "equal_protection",
+        "scrutiny_level": "strict",
+        "elements": [
+          "Racial classification \u2014 even benign \u2014 triggers strict scrutiny",
+          "Government must demonstrate compelling interest (diversity, remedying specific documented discrimination)",
+          "Program must be narrowly tailored \u2014 race used only as one factor among many",
+          "No racial quotas or mechanical point systems",
+          "Program must be limited in time",
+          "Race-neutral alternatives must be considered first"
+        ],
+        "burden": "government",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1995-06-12",
+        "valid_until": null,
+        "notes": "Adarand Constructors v. Pena (1995) established that all racial classifications \u2014 including affirmative action \u2014 are subject to strict scrutiny at the federal level, overruling Metro Broadcasting v. FCC (1990). Grutter v. Bollinger (2003) upheld law school affirmative action. SFFA v. Harvard (2023) effectively ended race-conscious admissions, narrowing the doctrine significantly."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "fundamental_rights_ep_doctrine",
+        "label": "Fundamental Rights \u2014 Equal Protection",
+        "description": "When a law burdens the exercise of a fundamental right on an unequal basis, it triggers strict scrutiny under the Equal Protection Clause even if no suspect classification is involved. Fundamental rights triggering equal protection strict scrutiny include voting, interstate travel, and access to courts in criminal proceedings. This strand of equal protection doctrine \u2014 sometimes called equal protection/fundamental rights \u2014 is distinct from substantive due process protection of fundamental rights, though the two doctrines substantially overlap in cases involving voting and travel.",
+        "area_id": "equal_protection",
+        "scrutiny_level": "strict",
+        "elements": [
+          "Law distributes access to a fundamental right on an unequal basis",
+          "Fundamental rights include voting, interstate travel, access to criminal courts",
+          "Strict scrutiny applies regardless of whether a suspect classification is involved",
+          "Government must show compelling interest and narrow tailoring"
+        ],
+        "burden": "government",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1964-06-15",
+        "valid_until": null,
+        "notes": "The fundamental rights strand of equal protection emerged from Harper v. Virginia Board of Elections (1966) (voting) and Shapiro v. Thompson (1969) (travel). San Antonio ISD v. Rodriguez (1973) declined to extend the doctrine to education, holding that education is not a fundamental right under the Equal Protection Clause."
       }
     ],
     "areas": [
@@ -1202,6 +1343,22 @@
           "petition"
         ],
         "notes": "valid_from reflects NAACP v. Button (1963), which is the most significant petition doctrine case and the source of the 'breathing space' concept. The right to petition predates the Constitution \u2014 the English Bill of Rights of 1689 recognized it. The Petition Clause is often treated as co-extensive with the Speech Clause in modern doctrine, but the Noerr-Pennington line gives it independent significance in antitrust contexts. SCHEMA ISSUE: The petition doctrine is constitutionally thin compared to other 1A rights \u2014 most petition activity is protected under speech doctrine rather than petition doctrine independently. The Area node represents a real doctrinal category but the case law is sparser than any other 1A Area in this graph."
+      },
+      {
+        "@type": "Area",
+        "id": "equal_protection",
+        "label": "Equal Protection",
+        "description": "The Equal Protection Clause of the Fourteenth Amendment prohibits states from denying any person within their jurisdiction the equal protection of the laws. The Fifth Amendment's Due Process Clause has been interpreted to impose a parallel equal protection requirement on the federal government (Bolling v. Sharpe, 1954). Equal protection doctrine is organized around three tiers of scrutiny \u2014 strict, intermediate, and rational basis \u2014 applied based on the nature of the classification and whether a fundamental right is implicated. Race and national origin classifications trigger strict scrutiny; sex and quasi-suspect classifications trigger intermediate scrutiny; all other classifications receive rational basis review.",
+        "parent_id": "individual_rights",
+        "primary_constitutional_grounding": "amendment_14_section_1",
+        "status": "active",
+        "valid_from": "1868-07-09",
+        "valid_until": null,
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "tier": "doctrine"
       }
     ],
     "constitutional_provisions": [
@@ -1564,7 +1721,34 @@
         "binding_scope": "federal_all",
         "opinion_form": "per_curiam",
         "per_curiam": true,
-        "procedural_disposition": "affirmed"
+        "procedural_disposition": "affirmed",
+        "opinions": [
+          {
+            "type": "concurrence",
+            "author": "Stewart",
+            "joined_by": [
+              "White"
+            ],
+            "doctrinal_significance": "Articulated the operational standard that a prior restraint requires a showing that disclosure will surely result in direct, immediate, and irreparable damage to the Nation or its people.",
+            "adopted_in": []
+          },
+          {
+            "type": "concurrence",
+            "author": "Brennan",
+            "joined_by": [],
+            "doctrinal_significance": "Articulated an even stricter standard, requiring proof that publication must inevitably, directly, and immediately cause the occurrence of an event kindred to imperiling the safety of a transport already at sea.",
+            "adopted_in": []
+          },
+          {
+            "type": "concurrence",
+            "author": "Black",
+            "joined_by": [
+              "Douglas"
+            ],
+            "doctrinal_significance": "Argued the First Amendment's prohibition on prior restraints is absolute \u2014 the press must be left free to publish news, whatever the source, without censorship, injunctions, or prior restraints.",
+            "adopted_in": []
+          }
+        ]
       },
       {
         "@type": "Case",
@@ -4033,7 +4217,7 @@
         "decided_date": "1975-03-19",
         "opinion_form": "signed_majority",
         "procedural_disposition": "reversed",
-        "holding": "A municipal theater board's refusal to allow a production of Hair \u2014 a musical with nudity and profanity \u2014 to be staged in a city-owned theater was an unconstitutional prior restraint. When government creates a public forum, it may not discriminate based on content. The denial of access to the theater was not based on any neutral criteria but on the officials' discomfort with the play's content.",
+        "holding": "A municipal theater board's refusal to allow a production of Hair to be staged in a city-owned theater was an unconstitutional prior restraint because it lacked the procedural safeguards required for licensing schemes under Freedman v. Maryland. Any system of prior restraint must provide prompt judicial review, limit the time for the censor to act, and place the burden of proving the speech is unprotected on the censor. The theater board's exercise of unbridled discretion without these procedural prerequisites constituted an unconstitutional prior restraint.",
         "holding_type": "affirmative",
         "majority_author": "Blackmun",
         "per_curiam": false,
@@ -4936,6 +5120,881 @@
         "valid_from": "2022-04-21",
         "valid_until": null,
         "notes": "City of Austin v. Reagan National Advertising is the most recent significant billboard regulation case, clarifying that Reed v. Town of Gilbert's content-based definition applies only when a law requires examining a message's communicative content \u2014 not when it examines location or context. The decision limits Reed's reach and provides guidance for sign ordinances that regulate based on non-communicative factors like location. The case directly follows the Metromedia/Ladue/Taxpayers for Vincent sign ordinance lineage."
+      },
+      {
+        "@type": "Case",
+        "id": "dred_scott_v_sandford_1857",
+        "short_name": "Dred Scott v. Sandford",
+        "full_name": "Dred Scott v. Sandford",
+        "citation": "60 U.S. 393 (1857)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1857-03-06",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "African Americans, whether enslaved or free, were not citizens of the United States and had no standing to sue in federal court. Congress lacked power to prohibit slavery in the territories \u2014 the Missouri Compromise was unconstitutional. A slaveholder's property rights in enslaved persons were protected by the Fifth Amendment's Due Process Clause, which prevented Congress from depriving slaveholders of their property without due process of law.",
+        "holding_type": "affirmative",
+        "majority_author": "Taney",
+        "per_curiam": false,
+        "vote": "7-2",
+        "opinions": [
+          {
+            "type": "dissent",
+            "author": "Curtis",
+            "joined_by": [
+              "McLean"
+            ],
+            "doctrinal_significance": "Curtis's dissent demonstrated that free Black persons had been citizens of several states at the founding and thus were citizens of the United States, directly refuting Taney's historical claims. The dissent is considered one of the greatest in Supreme Court history.",
+            "adopted_in": []
+          }
+        ],
+        "status": "overruled",
+        "precedential_weight": "none",
+        "valid_from": "1857-03-06",
+        "valid_until": "1868-07-09",
+        "notes": "Dred Scott is widely considered the Supreme Court's worst decision. It was effectively overruled by the Thirteenth Amendment (1865), which abolished slavery, and definitively overruled by the Fourteenth Amendment (1868), whose first sentence \u2014 'All persons born or naturalized in the United States are citizens' \u2014 directly repudiated Taney's holding on citizenship. The case is foundational to understanding the constitutional history that produced the Fourteenth Amendment."
+      },
+      {
+        "@type": "Case",
+        "id": "strauder_v_west_virginia_1880",
+        "short_name": "Strauder v. West Virginia",
+        "full_name": "Strauder v. West Virginia",
+        "citation": "100 U.S. 303 (1880)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1880-03-01",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "A West Virginia statute limiting jury service to white male citizens violates the Equal Protection Clause of the Fourteenth Amendment as applied to a Black defendant convicted by an all-white jury. The Fourteenth Amendment was designed to secure freedom and equal civil rights to recently emancipated slaves, and a state law that excludes Black citizens from jury service because of their race denies Black defendants equal protection.",
+        "holding_type": "affirmative",
+        "majority_author": "Strong",
+        "per_curiam": false,
+        "vote": "7-2",
+        "opinions": [],
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1880-03-01",
+        "valid_until": null,
+        "notes": "Strauder v. West Virginia is the first significant Equal Protection Clause case, establishing that the Fourteenth Amendment prohibits racial discrimination in jury selection. The Court read the Amendment's purpose broadly as ensuring that Black citizens could participate fully in civic life. The decision preceded by decades the development of the tiered scrutiny framework but established the foundational principle that race-based state action violates equal protection."
+      },
+      {
+        "@type": "Case",
+        "id": "plessy_v_ferguson_1896",
+        "short_name": "Plessy v. Ferguson",
+        "full_name": "Plessy v. Ferguson",
+        "citation": "163 U.S. 537 (1896)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1896-05-18",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "affirmed",
+        "holding": "Louisiana's Separate Car Act, which required racial segregation in railroad cars, does not violate the Equal Protection Clause. The Fourteenth Amendment was intended to enforce the absolute equality of the two races before the law, but it was not intended to abolish distinctions based on color or to enforce social equality. Separate but equal accommodations do not deprive Black passengers of equal protection because the underlying assumption of racial inferiority is a fallacy \u2014 if one race finds the separation badge of inferiority, it is by the race itself, not by anything in the law.",
+        "holding_type": "affirmative",
+        "majority_author": "Brown",
+        "per_curiam": false,
+        "vote": "7-1",
+        "opinions": [
+          {
+            "type": "dissent",
+            "author": "Harlan",
+            "joined_by": [],
+            "doctrinal_significance": "Harlan's dissent \u2014 'Our Constitution is color-blind' \u2014 argued that the Constitution permits no caste distinctions and that the majority's reasoning was inconsistent with the Fourteenth Amendment's purpose. It was adopted as law in Brown v. Board of Education 58 years later.",
+            "adopted_in": [
+              "brown_v_board_of_education_1954"
+            ]
+          }
+        ],
+        "status": "overruled",
+        "precedential_weight": "none",
+        "valid_from": "1896-05-18",
+        "valid_until": "1954-05-17",
+        "notes": "Plessy v. Ferguson established the separate but equal doctrine that governed racial segregation law for 58 years. It was definitively overruled by Brown v. Board of Education (1954). Justice Harlan's lone dissent is one of the most celebrated in Supreme Court history \u2014 his prediction that the majority's decision would prove as pernicious as Dred Scott was vindicated."
+      },
+      {
+        "@type": "Case",
+        "id": "brown_v_board_of_education_1954",
+        "short_name": "Brown v. Board of Education",
+        "full_name": "Brown v. Board of Education of Topeka",
+        "citation": "347 U.S. 483 (1954)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1954-05-17",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "Racial segregation in public schools violates the Equal Protection Clause of the Fourteenth Amendment. The separate but equal doctrine of Plessy v. Ferguson has no place in the field of public education. Separate educational facilities are inherently unequal because segregation generates a feeling of inferiority in Black children that may affect their hearts and minds in a way unlikely ever to be undone. The Court relied on psychological evidence of the harm caused by segregation rather than solely on historical analysis of the Fourteenth Amendment.",
+        "holding_type": "affirmative",
+        "majority_author": "Warren",
+        "per_curiam": false,
+        "vote": "9-0",
+        "opinions": [],
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1954-05-17",
+        "valid_until": null,
+        "notes": "Brown v. Board of Education is the most important Equal Protection decision and one of the most consequential Supreme Court decisions in American history. Chief Justice Warren secured unanimity through extensive negotiation among the justices. Brown II (1955) ordered desegregation to proceed with all deliberate speed. The decision overruled Plessy v. Ferguson's separate but equal doctrine and launched the modern civil rights era."
+      },
+      {
+        "@type": "Case",
+        "id": "bolling_v_sharpe_1954",
+        "short_name": "Bolling v. Sharpe",
+        "full_name": "Bolling v. Sharpe",
+        "citation": "347 U.S. 497 (1954)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1954-05-17",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "Racial segregation in the public schools of the District of Columbia violates the Due Process Clause of the Fifth Amendment. Although the Fifth Amendment contains no equal protection clause, the concepts of equal protection and due process are not mutually exclusive \u2014 discrimination may be so unjustifiable as to be violative of due process. It would be unthinkable that the same Constitution that prohibits state-imposed segregation under the Fourteenth Amendment would impose a lesser duty on the federal government.",
+        "holding_type": "affirmative",
+        "majority_author": "Warren",
+        "per_curiam": false,
+        "vote": "9-0",
+        "opinions": [],
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1954-05-17",
+        "valid_until": null,
+        "notes": "Bolling v. Sharpe is the companion case to Brown v. Board of Education, decided the same day. Because the Fourteenth Amendment applies only to states, the federal government's segregation of DC schools required a separate constitutional basis. Warren rooted the prohibition in the Fifth Amendment's Due Process Clause, reading an implicit equal protection requirement into it \u2014 a holding that remains the basis for applying equal protection principles to federal action."
+      },
+      {
+        "@type": "Case",
+        "id": "korematsu_v_united_states_1944",
+        "short_name": "Korematsu v. United States",
+        "full_name": "Korematsu v. United States",
+        "citation": "323 U.S. 214 (1944)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1944-12-18",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "affirmed",
+        "holding": "The exclusion of persons of Japanese ancestry from the West Coast during World War II is constitutional. All legal restrictions which curtail the civil rights of a single racial group are immediately suspect and subject to the most rigid scrutiny. However, when under conditions of modern warfare the military urgency is so great that compulsory exclusion is necessary for the properly constituted military authorities to discharge their duty, the courts will not disturb their decision.",
+        "holding_type": "affirmative",
+        "majority_author": "Black",
+        "per_curiam": false,
+        "vote": "6-3",
+        "opinions": [
+          {
+            "type": "dissent",
+            "author": "Murphy",
+            "joined_by": [],
+            "doctrinal_significance": "Murphy argued the exclusion order fell into the ugly abyss of racism and that the military necessity rationale was a legalization of racism that had no reasonable relation to military necessity.",
+            "adopted_in": []
+          },
+          {
+            "type": "dissent",
+            "author": "Jackson",
+            "joined_by": [],
+            "doctrinal_significance": "Jackson argued the Court should not validate military orders that violate constitutional rights, warning that a military order validated by the Court becomes a doctrine of the Constitution and lies about like a loaded weapon ready for any authority that brings a plausible need.",
+            "adopted_in": []
+          }
+        ],
+        "status": "overruled",
+        "precedential_weight": "none",
+        "valid_from": "1944-12-18",
+        "valid_until": "2018-06-26",
+        "notes": "Korematsu is the foundational case for the strict scrutiny standard \u2014 the first time the Court used that label for racial classifications \u2014 but it is also the most discredited application of the standard, upholding Japanese American internment. Trump v. Hawaii (2018) expressly overruled Korematsu, with Chief Justice Roberts stating it was gravely wrong the day it was decided. Despite being overruled, Korematsu remains essential to understanding the development of equal protection strict scrutiny."
+      },
+      {
+        "@type": "Case",
+        "id": "loving_v_virginia_1967",
+        "short_name": "Loving v. Virginia",
+        "full_name": "Loving v. Virginia",
+        "citation": "388 U.S. 1 (1967)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1967-06-12",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "Virginia's anti-miscegenation statute, which prohibited and punished interracial marriages, violates both the Equal Protection Clause and the Due Process Clause of the Fourteenth Amendment. The Equal Protection Clause requires that racial classifications be subjected to the most rigid scrutiny. Virginia's statute rests solely on distinctions drawn according to race and can survive strict scrutiny only if shown to be necessary to the accomplishment of some permissible state objective. Preserving racial integrity and preventing the corruption of blood are not legitimate state purposes.",
+        "holding_type": "affirmative",
+        "majority_author": "Warren",
+        "per_curiam": false,
+        "vote": "9-0",
+        "opinions": [],
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1967-06-12",
+        "valid_until": null,
+        "notes": "Loving v. Virginia struck down anti-miscegenation laws in 16 states and established that the freedom to marry is a fundamental right protected by the Due Process Clause as well as an equal protection right. The case is cited in virtually every subsequent equal protection and due process case involving marriage rights, including Obergefell v. Hodges (2015). Warren wrote both equal protection and due process grounds, giving the decision unusual breadth."
+      },
+      {
+        "@type": "Case",
+        "id": "washington_v_davis_1976",
+        "short_name": "Washington v. Davis",
+        "full_name": "Washington v. Davis",
+        "citation": "426 U.S. 229 (1976)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1976-06-07",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "A facially neutral law does not violate the Equal Protection Clause solely because it has a racially disproportionate impact. Proof of racially discriminatory intent or purpose is required to show a violation of the Equal Protection Clause. Disproportionate impact may be relevant evidence of discriminatory intent but is not sufficient by itself to establish a constitutional violation. A written personnel test used by the DC police department that disqualified Black applicants at a higher rate than white applicants did not violate the Fifth Amendment's equal protection component absent proof of discriminatory purpose.",
+        "holding_type": "affirmative",
+        "majority_author": "White",
+        "per_curiam": false,
+        "vote": "7-2",
+        "opinions": [
+          {
+            "type": "dissent",
+            "author": "Brennan",
+            "joined_by": [
+              "Marshall"
+            ],
+            "doctrinal_significance": "Brennan argued that the discriminatory impact of the test was itself sufficient evidence of discriminatory purpose and that the majority's standard would immunize from constitutional challenge practices that perpetuate racial inequality.",
+            "adopted_in": []
+          }
+        ],
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1976-06-07",
+        "valid_until": null,
+        "notes": "Washington v. Davis is among the most consequential and criticized equal protection decisions. By requiring proof of discriminatory intent rather than allowing disparate impact alone to trigger strict scrutiny, the Court made it substantially more difficult to challenge systemic racial inequality embedded in facially neutral laws. The decision has been extensively criticized for insulating from constitutional scrutiny practices that perpetuate historic racial discrimination."
+      },
+      {
+        "@type": "Case",
+        "id": "village_of_arlington_heights_v_mhdc_1977",
+        "short_name": "Village of Arlington Heights v. MHDC",
+        "full_name": "Village of Arlington Heights v. Metropolitan Housing Development Corp.",
+        "citation": "429 U.S. 252 (1977)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1977-01-11",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "A village's refusal to rezone property for low-income housing did not violate the Equal Protection Clause absent proof of racially discriminatory intent. Discriminatory intent need not be the only purpose behind official action, but it must be a motivating factor. Courts may consider the following factors in determining whether discriminatory purpose motivated an official decision: the discriminatory impact of the official action, the historical background, the sequence of events leading to the challenged decision, departures from normal procedural and substantive standards, and legislative or administrative history.",
+        "holding_type": "affirmative",
+        "majority_author": "Powell",
+        "per_curiam": false,
+        "vote": "5-3",
+        "opinions": [],
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1977-01-11",
+        "valid_until": null,
+        "notes": "Arlington Heights elaborated the Washington v. Davis discriminatory intent requirement by providing a multi-factor framework for proving intent from circumstantial evidence when direct evidence is unavailable. The Arlington Heights factors \u2014 impact, historical background, sequence of events, procedural departures, legislative history \u2014 have become the standard analytical framework for discriminatory intent claims involving facially neutral laws."
+      },
+      {
+        "@type": "Case",
+        "id": "mccleskey_v_kemp_1987",
+        "short_name": "McCleskey v. Kemp",
+        "full_name": "McCleskey v. Kemp",
+        "citation": "481 U.S. 279 (1987)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1987-04-22",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "affirmed",
+        "holding": "Statistical evidence showing that Black defendants convicted of killing white victims are significantly more likely to receive the death penalty than similarly situated defendants does not establish a constitutional violation under the Equal Protection Clause or the Eighth Amendment. To prevail on an equal protection claim, a defendant must prove that the decision-makers in his specific case acted with discriminatory purpose. System-wide statistical disparities, even if valid, do not prove discriminatory intent in any individual case.",
+        "holding_type": "affirmative",
+        "majority_author": "Powell",
+        "per_curiam": false,
+        "vote": "5-4",
+        "opinions": [
+          {
+            "type": "dissent",
+            "author": "Brennan",
+            "joined_by": [
+              "Marshall",
+              "Blackmun",
+              "Stevens"
+            ],
+            "doctrinal_significance": "Brennan argued that the Baldus study demonstrated the risk that race infected the capital sentencing process and that the majority's demand for proof of individual discriminatory intent was impossible to satisfy and shielded systemic racial bias from constitutional scrutiny.",
+            "adopted_in": []
+          }
+        ],
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1987-04-22",
+        "valid_until": null,
+        "notes": "McCleskey v. Kemp applied Washington v. Davis to the capital punishment context, holding that the Baldus study \u2014 which showed a significant statistical correlation between race and death sentences in Georgia \u2014 was insufficient to prove discriminatory intent in McCleskey's individual case. Justice Powell later said McCleskey was the decision he most regretted. The case is widely considered the effective end of statistical equal protection challenges to systemic racial disparities in criminal justice."
+      },
+      {
+        "@type": "Case",
+        "id": "adarand_constructors_v_pena_1995",
+        "short_name": "Adarand Constructors v. Pe\u00f1a",
+        "full_name": "Adarand Constructors, Inc. v. Pe\u00f1a",
+        "citation": "515 U.S. 200 (1995)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1995-06-12",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "All racial classifications imposed by federal, state, or local governmental actors must be analyzed under strict scrutiny regardless of whether the classification is intended to burden or benefit a racial minority. The Fifth Amendment's equal protection component imposes the same strict scrutiny standard on federal affirmative action programs as the Fourteenth Amendment imposes on state programs. Metro Broadcasting v. FCC (1990) is overruled to the extent it held that benign federal racial classifications require only intermediate scrutiny.",
+        "holding_type": "affirmative",
+        "majority_author": "O'Connor",
+        "per_curiam": false,
+        "vote": "5-4",
+        "opinions": [
+          {
+            "type": "dissent",
+            "author": "Stevens",
+            "joined_by": [
+              "Ginsburg"
+            ],
+            "doctrinal_significance": "Stevens argued that the majority's insistence on treating all racial classifications identically ignored the difference between a caste system and a system of remediation \u2014 the Constitution's original prohibition on racial caste does not require treating attempts to dismantle that caste identically to attempts to enforce it.",
+            "adopted_in": []
+          }
+        ],
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1995-06-12",
+        "valid_until": null,
+        "notes": "Adarand established that strict scrutiny applies to all racial classifications by all levels of government regardless of the classification's purpose. The three-part Adarand framework \u2014 skepticism, consistency, congruence \u2014 requires that all racial classifications be treated with skepticism, that the same standard apply regardless of the race burdened or benefited, and that the standard be congruent across federal and state actors."
+      },
+      {
+        "@type": "Case",
+        "id": "grutter_v_bollinger_2003",
+        "short_name": "Grutter v. Bollinger",
+        "full_name": "Grutter v. Bollinger",
+        "citation": "539 U.S. 306 (2003)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "2003-06-23",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "affirmed",
+        "holding": "The University of Michigan Law School's race-conscious admissions program, which considered race as one factor among many in a holistic review of each application, survives strict scrutiny. Student body diversity is a compelling governmental interest that can justify the use of race in university admissions. The Law School's narrowly tailored program \u2014 which considered race as a plus factor but did not use quotas or point systems \u2014 satisfies the narrow tailoring requirement. The Court expected that racial preferences in admissions would no longer be necessary within 25 years.",
+        "holding_type": "affirmative",
+        "majority_author": "O'Connor",
+        "per_curiam": false,
+        "vote": "5-4",
+        "opinions": [
+          {
+            "type": "dissent",
+            "author": "Thomas",
+            "joined_by": [
+              "Scalia"
+            ],
+            "doctrinal_significance": "Thomas argued that diversity is not a compelling interest capable of justifying racial discrimination and that the majority's decision was tantamount to an endorsement of racial discrimination in the name of racial discrimination.",
+            "adopted_in": [
+              "sffa_v_harvard_2023"
+            ]
+          }
+        ],
+        "status": "overruled",
+        "precedential_weight": "none",
+        "valid_from": "2003-06-23",
+        "valid_until": "2023-06-29",
+        "notes": "Grutter v. Bollinger upheld holistic race-conscious admissions at the University of Michigan Law School, establishing student body diversity as a compelling interest under strict scrutiny. Companion case Gratz v. Bollinger (2003) struck the undergraduate point system. Students for Fair Admissions v. Harvard (2023) overruled Grutter, holding that race-conscious admissions programs are unconstitutional because they lack measurable objectives, use race as a negative, and are not limited in time."
+      },
+      {
+        "@type": "Case",
+        "id": "sffa_v_harvard_2023",
+        "short_name": "Students for Fair Admissions v. Harvard",
+        "full_name": "Students for Fair Admissions, Inc. v. President and Fellows of Harvard College",
+        "citation": "600 U.S. 181 (2023)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "2023-06-29",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "Race-conscious admissions programs at Harvard College and the University of North Carolina violate the Equal Protection Clause. The programs fail strict scrutiny because they lack sufficiently focused and measurable objectives that would allow for judicial review, unavoidably employ race in a negative manner, involve racial stereotyping, and have no logical endpoint. Grutter v. Bollinger is overruled. Universities may still consider how race affected an applicant's life through discrimination, inspiration, or otherwise \u2014 but race itself cannot be a factor in admissions decisions.",
+        "holding_type": "affirmative",
+        "majority_author": "Roberts",
+        "per_curiam": false,
+        "vote": "6-3 (UNC) / 6-2 (Harvard)",
+        "opinions": [
+          {
+            "type": "dissent",
+            "author": "Sotomayor",
+            "joined_by": [
+              "Kagan",
+              "Jackson"
+            ],
+            "doctrinal_significance": "Sotomayor argued the majority cements a superficial rule of colorblindness as a constitutional principle in an endemically segregated society and effectively overrules decades of precedent permitting narrowly tailored race-conscious admissions programs.",
+            "adopted_in": []
+          }
+        ],
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "2023-06-29",
+        "valid_until": null,
+        "notes": "SFFA v. Harvard is the most significant equal protection decision since Grutter, effectively ending race-conscious admissions in higher education. The decision overrules Grutter v. Bollinger (2003) and Gratz v. Bollinger (2003) and marks a fundamental shift in affirmative action doctrine. Roberts's majority opinion preserves a narrow exception for applicants who discuss how race has affected their personal experiences."
+      },
+      {
+        "@type": "Case",
+        "id": "reed_v_reed_1971",
+        "short_name": "Reed v. Reed",
+        "full_name": "Reed v. Reed",
+        "citation": "404 U.S. 71 (1971)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1971-11-22",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "An Idaho statute giving mandatory preference to males over females as administrators of decedents' estates violates the Equal Protection Clause. The Equal Protection Clause denies to states the power to legislate that different treatment be accorded to persons placed by a statute in the same class on the basis of criteria wholly unrelated to the objective of that statute. A classification must be reasonable and not arbitrary and must rest upon some ground of difference having a fair and substantial relation to the object of the legislation.",
+        "holding_type": "affirmative",
+        "majority_author": "Burger",
+        "per_curiam": false,
+        "vote": "7-0",
+        "opinions": [],
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1971-11-22",
+        "valid_until": null,
+        "notes": "Reed v. Reed is the first case in which the Supreme Court struck down a sex-based classification under the Equal Protection Clause. The Court applied rational basis review but with unusual rigor, finding no substantial relation between the sex preference and the objective of reducing probate court workload. The decision opened the door to heightened scrutiny for sex classifications, though the Court did not formally adopt intermediate scrutiny until Craig v. Boren (1976). Ruth Bader Ginsburg argued the case for the ACLU."
+      },
+      {
+        "@type": "Case",
+        "id": "frontiero_v_richardson_1973",
+        "short_name": "Frontiero v. Richardson",
+        "full_name": "Frontiero v. Richardson",
+        "citation": "411 U.S. 677 (1973)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1973-05-14",
+        "opinion_form": "plurality",
+        "procedural_disposition": "reversed",
+        "holding": "Federal statutes allowing male service members to claim their wives as dependents automatically while requiring female service members to prove their husbands' dependency violate the equal protection component of the Fifth Amendment. A four-Justice plurality would have treated sex as a suspect classification requiring strict scrutiny. The judgment invalidating the statutes commanded a broader majority, but the Court did not produce a majority opinion adopting strict scrutiny for sex classifications.",
+        "holding_type": "affirmative",
+        "majority_author": "Brennan (plurality)",
+        "per_curiam": false,
+        "vote": "8-1",
+        "opinions": [
+          {
+            "type": "concurrence",
+            "author": "Stewart",
+            "joined_by": [],
+            "doctrinal_significance": "Stewart concurred in the judgment under Reed v. Reed without joining Brennan's plurality opinion that would have elevated sex to a suspect classification.",
+            "adopted_in": []
+          },
+          {
+            "type": "concurrence",
+            "author": "Powell",
+            "joined_by": [
+              "Burger",
+              "Blackmun"
+            ],
+            "doctrinal_significance": "Powell declined to reach the suspect classification question, arguing the Equal Rights Amendment was pending ratification and the Court should not preempt the democratic process on this fundamental constitutional question.",
+            "adopted_in": []
+          }
+        ],
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1973-05-14",
+        "valid_until": null,
+        "notes": "Frontiero is the high-water mark of the effort to make sex a suspect classification requiring strict scrutiny. Brennan's plurality opinion garnered only four votes \u2014 one short of a majority. The ERA's pending ratification persuaded Powell not to join, and strict scrutiny for sex has never commanded a majority. The case settled that sex discrimination by the federal government violates the Fifth Amendment's equal protection component."
+      },
+      {
+        "@type": "Case",
+        "id": "craig_v_boren_1976",
+        "short_name": "Craig v. Boren",
+        "full_name": "Craig v. Boren",
+        "citation": "429 U.S. 190 (1976)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1976-12-20",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "An Oklahoma statute prohibiting the sale of 3.2% beer to males under 21 and females under 18 violates the Equal Protection Clause. To withstand constitutional challenge under the Equal Protection Clause, classifications by gender must serve important governmental objectives and must be substantially related to achievement of those objectives. Statistical evidence showing that young men are more frequently arrested for drunk driving does not substantially relate the gender classification to the state's traffic safety objective.",
+        "holding_type": "affirmative",
+        "majority_author": "Brennan",
+        "per_curiam": false,
+        "vote": "7-2",
+        "opinions": [
+          {
+            "type": "concurrence",
+            "author": "Powell",
+            "joined_by": [],
+            "doctrinal_significance": "Powell agreed with the result and the standard but questioned whether the Court had clearly articulated what the intermediate scrutiny standard means in practice.",
+            "adopted_in": []
+          }
+        ],
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1976-12-20",
+        "valid_until": null,
+        "notes": "Craig v. Boren formally established intermediate scrutiny as the constitutional standard for sex-based classifications \u2014 important governmental objective, substantially related classification. The case settled the standard that Frontiero's plurality had failed to establish as a majority position. The decision was somewhat unusual procedurally because the original plaintiff (a male under 21) had turned 21 by the time of decision, requiring the Court to address standing through the beer vendor."
+      },
+      {
+        "@type": "Case",
+        "id": "united_states_v_virginia_1996",
+        "short_name": "United States v. Virginia (VMI)",
+        "full_name": "United States v. Virginia",
+        "citation": "518 U.S. 515 (1996)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1996-06-26",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "affirmed",
+        "holding": "Virginia's exclusion of women from the Virginia Military Institute violates the Equal Protection Clause. Parties seeking to uphold government action that classifies individuals on the basis of sex must demonstrate an exceedingly persuasive justification for the classification. The justification must be genuine, not hypothesized or invented post hoc, and it must not rely on overbroad generalizations about the different talents, capacities, or preferences of males and females. Virginia's proposed remedy \u2014 a separate Virginia Women's Institute for Leadership \u2014 is not an adequate substitute for VMI's unique educational opportunities.",
+        "holding_type": "affirmative",
+        "majority_author": "Ginsburg",
+        "per_curiam": false,
+        "vote": "7-1",
+        "opinions": [
+          {
+            "type": "dissent",
+            "author": "Scalia",
+            "joined_by": [],
+            "doctrinal_significance": "Scalia argued the majority had effectively applied strict scrutiny to a sex classification while pretending to apply intermediate scrutiny, and that the exceedingly persuasive justification standard had no clear content.",
+            "adopted_in": []
+          }
+        ],
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1996-06-26",
+        "valid_until": null,
+        "notes": "United States v. Virginia strengthened intermediate scrutiny for sex classifications by adding the exceedingly persuasive justification requirement \u2014 a standard that approaches but does not formally reach strict scrutiny. Justice Ginsburg's opinion made clear that sex classifications cannot rest on overbroad generalizations or stereotypes about gender roles. The decision is widely understood as having elevated the effective rigor of sex discrimination review without formally changing the doctrinal tier."
+      },
+      {
+        "@type": "Case",
+        "id": "nyc_transit_authority_v_beazer_1979",
+        "short_name": "NYC Transit Authority v. Beazer",
+        "full_name": "New York City Transit Authority v. Beazer",
+        "citation": "440 U.S. 568 (1979)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1979-03-21",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "A New York City Transit Authority rule categorically excluding persons on methadone maintenance from employment satisfies rational basis review under the Equal Protection Clause. The rule is not constitutionally invalid even though it may be unwise or based on incorrect assumptions about methadone users. The rule bears a rational relationship to legitimate employment goals of safety and efficiency. Equal protection does not require perfect fit between means and ends under rational basis review.",
+        "holding_type": "affirmative",
+        "majority_author": "Stevens",
+        "per_curiam": false,
+        "vote": "6-3",
+        "opinions": [],
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1979-03-21",
+        "valid_until": null,
+        "notes": "Beazer is a leading illustration of rational basis review's extreme deference \u2014 sustaining an employment exclusion that the dissenters argued was based on factual error and overbreadth. The case demonstrates that rational basis does not require empirical accuracy or narrow tailoring, only a conceivable rational relationship between the classification and any legitimate government purpose."
+      },
+      {
+        "@type": "Case",
+        "id": "us_dept_of_agriculture_v_moreno_1973",
+        "short_name": "U.S. Dept. of Agriculture v. Moreno",
+        "full_name": "United States Department of Agriculture v. Moreno",
+        "citation": "413 U.S. 528 (1973)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1973-06-25",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "affirmed",
+        "holding": "A provision of the Food Stamp Act excluding households containing individuals unrelated to any other household member violates the equal protection component of the Fifth Amendment's Due Process Clause. If the constitutional conception of equal protection means anything, it must at the very least mean that a bare congressional desire to harm a politically unpopular group cannot constitute a legitimate governmental interest. The legislative history reveals that the classification was motivated by a desire to exclude hippie communes \u2014 a purpose that is not a legitimate government interest.",
+        "holding_type": "affirmative",
+        "majority_author": "Brennan",
+        "per_curiam": false,
+        "vote": "7-2",
+        "opinions": [],
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1973-06-25",
+        "valid_until": null,
+        "notes": "Moreno is a foundational rational basis with bite case \u2014 establishing that bare animus against an unpopular group is not a legitimate government interest. The case established that even under rational basis review, a classification motivated purely by hostility to a politically disfavored group cannot survive equal protection scrutiny. Moreno, Cleburne, and Romer form the trilogy of rational basis with bite decisions."
+      },
+      {
+        "@type": "Case",
+        "id": "city_of_cleburne_v_cleburne_living_center_1985",
+        "short_name": "City of Cleburne v. Cleburne Living Center",
+        "full_name": "City of Cleburne, Texas v. Cleburne Living Center, Inc.",
+        "citation": "473 U.S. 432 (1985)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1985-07-01",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "affirmed",
+        "holding": "Mental disability is not a quasi-suspect classification requiring intermediate scrutiny under the Equal Protection Clause. However, Cleburne's denial of a special use permit for a group home for intellectually disabled persons violates rational basis review because it was based on irrational prejudice and fear. The city's asserted justifications \u2014 concerns about the reaction of neighbors, fears about students from a nearby school, and the location near a flood plain \u2014 were not legitimate rational bases but reflected nothing more than an irrational prejudice against the disabled.",
+        "holding_type": "affirmative",
+        "majority_author": "White",
+        "per_curiam": false,
+        "vote": "9-0",
+        "opinions": [
+          {
+            "type": "concurrence",
+            "author": "Marshall",
+            "joined_by": [
+              "Brennan",
+              "Blackmun"
+            ],
+            "doctrinal_significance": "Marshall argued the majority was applying something more demanding than ordinary rational basis review \u2014 effectively a sliding scale of scrutiny \u2014 and that the Court should acknowledge that disability warrants intermediate scrutiny rather than pretending to apply rational basis.",
+            "adopted_in": []
+          }
+        ],
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1985-07-01",
+        "valid_until": null,
+        "notes": "Cleburne is the most important rational basis with bite decision \u2014 striking a zoning decision on rational basis grounds while explicitly declining to make disability a quasi-suspect classification. The Court's application of rational basis was notably more searching than typical, leading Marshall to accuse the majority of covert heightened review. The case establishes that animus and irrational prejudice are not legitimate government interests even under the most deferential standard. The judgment was unanimous in result, but the reasoning reflected important differences \u2014 Marshall argued the Court was applying something more demanding than ordinary rational basis, while the majority insisted it was not."
+      },
+      {
+        "@type": "Case",
+        "id": "romer_v_evans_1996",
+        "short_name": "Romer v. Evans",
+        "full_name": "Romer v. Evans",
+        "citation": "517 U.S. 620 (1996)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1996-05-20",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "affirmed",
+        "holding": "Colorado's Amendment 2, which prohibited state and local governments from enacting any law protecting gay, lesbian, or bisexual persons from discrimination, violates the Equal Protection Clause under rational basis review. Amendment 2 classifies gay, lesbian, and bisexual persons not to further a proper legislative end but to make them unequal to everyone else \u2014 a bare desire to harm a politically unpopular group does not constitute a legitimate government interest. A law declaring that in general a certain class is unequal seems inexplicable by anything but animus.",
+        "holding_type": "affirmative",
+        "majority_author": "Kennedy",
+        "per_curiam": false,
+        "vote": "6-3",
+        "opinions": [
+          {
+            "type": "dissent",
+            "author": "Scalia",
+            "joined_by": [
+              "Rehnquist",
+              "Thomas"
+            ],
+            "doctrinal_significance": "Scalia argued the majority's analysis was logically incoherent \u2014 Colorado's law reflected legitimate moral disapproval of homosexual conduct, and the majority had invented an animus rationale to strike a democratically enacted law it found distasteful.",
+            "adopted_in": []
+          }
+        ],
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1996-05-20",
+        "valid_until": null,
+        "notes": "Romer v. Evans applied Moreno's animus principle to sexual orientation, holding that bare desire to harm gay and lesbian persons is not a legitimate government interest. The decision completed the Moreno-Cleburne-Romer rational basis with bite trilogy and became the foundational case for constitutional protection of gay rights, leading directly to Lawrence v. Texas (2003) and Obergefell v. Hodges (2015). Kennedy's majority declined to identify sexual orientation as a suspect or quasi-suspect classification."
+      },
+      {
+        "@type": "Case",
+        "id": "harper_v_virginia_board_of_elections_1966",
+        "short_name": "Harper v. Virginia Board of Elections",
+        "full_name": "Harper v. Virginia State Board of Elections",
+        "citation": "383 U.S. 663 (1966)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1966-03-24",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "Virginia's poll tax as a condition of voting in state elections violates the Equal Protection Clause. The right to vote is a fundamental political right, preservative of all other rights, and wealth or fee-paying has no relation to voter qualifications. Once the franchise is granted to the electorate, lines may not be drawn that are inconsistent with equal protection.",
+        "holding_type": "affirmative",
+        "majority_author": "Douglas",
+        "per_curiam": false,
+        "vote": "6-3",
+        "opinions": [
+          {
+            "type": "dissent",
+            "author": "Black",
+            "joined_by": [],
+            "doctrinal_significance": "Black argued the Court's invalidation of the poll tax under equal protection was judicial legislation \u2014 the original Constitution explicitly permitted property qualifications for voting and the Twenty-Fourth Amendment addressed only federal elections, demonstrating the Framers' intent to leave state voting qualifications to the states.",
+            "adopted_in": []
+          }
+        ],
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1966-03-24",
+        "valid_until": null,
+        "notes": "Harper v. Virginia Board of Elections established voting as a fundamental right whose unequal distribution triggers strict scrutiny under the Equal Protection Clause. The decision struck poll taxes in state elections (the Twenty-Fourth Amendment had already prohibited them in federal elections). Harper is the foundational case for the fundamental rights strand of equal protection doctrine, applied later in Reynolds v. Sims and Shapiro v. Thompson."
+      },
+      {
+        "@type": "Case",
+        "id": "reynolds_v_sims_1964",
+        "short_name": "Reynolds v. Sims",
+        "full_name": "Reynolds v. Sims",
+        "citation": "377 U.S. 533 (1964)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1964-06-15",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "affirmed",
+        "holding": "The Equal Protection Clause requires that the seats in both houses of a bicameral state legislature be apportioned substantially on a population basis. The right to vote is too important in our free, democratic society to be stripped of judicial protection. Legislators represent people, not trees or acres. A citizen, a qualified voter, is no more nor no less so because he lives in the city or on the farm. The dilution of a citizen's vote in one legislative district compared to another is an unconstitutional denial of equal protection.",
+        "holding_type": "affirmative",
+        "majority_author": "Warren",
+        "per_curiam": false,
+        "vote": "8-1",
+        "opinions": [
+          {
+            "type": "dissent",
+            "author": "Harlan",
+            "joined_by": [],
+            "doctrinal_significance": "Harlan argued the Equal Protection Clause was never intended to apply to political apportionment and that the Court's decision was a flagrant violation of the principle that courts should not decide political questions.",
+            "adopted_in": []
+          }
+        ],
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1964-06-15",
+        "valid_until": null,
+        "notes": "Reynolds v. Sims established the one person, one vote principle for state legislative apportionment. The decision required both chambers of state legislatures to be apportioned by population, rejecting the federal analogy that would have allowed one chamber to represent geographic units. Warren later called Reynolds the most important decision of his tenure. The case triggered a massive reapportionment of state legislatures across the country."
+      },
+      {
+        "@type": "Case",
+        "id": "shapiro_v_thompson_1969",
+        "short_name": "Shapiro v. Thompson",
+        "full_name": "Shapiro v. Thompson",
+        "citation": "394 U.S. 618 (1969)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1969-04-21",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "affirmed",
+        "holding": "State statutes denying welfare assistance to residents who have not resided within the state for at least one year violate the Equal Protection Clause. The right to travel interstate is a fundamental right protected by the Constitution. A state law that conditions receipt of welfare benefits on prior residence penalizes the exercise of the constitutional right to travel by creating two classes of residents. Such a classification requires and cannot survive strict scrutiny unless shown to promote a compelling governmental interest.",
+        "holding_type": "affirmative",
+        "majority_author": "Brennan",
+        "per_curiam": false,
+        "vote": "6-3",
+        "opinions": [
+          {
+            "type": "dissent",
+            "author": "Warren",
+            "joined_by": [
+              "Black"
+            ],
+            "doctrinal_significance": "Warren argued that the constitutionally protected right to travel should not be derived from equal protection but from the Privileges and Immunities Clause, and that the majority's strict scrutiny analysis was too broad.",
+            "adopted_in": []
+          }
+        ],
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1969-04-21",
+        "valid_until": null,
+        "notes": "Shapiro v. Thompson established that welfare residency requirements that penalize the exercise of the right to travel interstate are subject to strict scrutiny and violate the Equal Protection Clause. The case is the foundation of the fundamental right to travel doctrine and the principle that conditioning government benefits on the relinquishment of a constitutional right triggers heightened scrutiny."
+      },
+      {
+        "@type": "Case",
+        "id": "san_antonio_isd_v_rodriguez_1973",
+        "short_name": "San Antonio ISD v. Rodriguez",
+        "full_name": "San Antonio Independent School District v. Rodriguez",
+        "citation": "411 U.S. 1 (1973)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1973-03-21",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "Texas's system of financing public education through local property taxes, which results in wide disparities in per-pupil expenditures across school districts, does not violate the Equal Protection Clause. Education is not a fundamental right under the Constitution. Poverty is not a suspect classification. The Texas system bears a rational relationship to the legitimate state purpose of local control over public schools. The Court defers to legislative judgment on complex social and economic policy questions that do not involve suspect classifications or fundamental rights.",
+        "holding_type": "affirmative",
+        "majority_author": "Powell",
+        "per_curiam": false,
+        "vote": "5-4",
+        "opinions": [
+          {
+            "type": "dissent",
+            "author": "Marshall",
+            "joined_by": [
+              "Douglas"
+            ],
+            "doctrinal_significance": "Marshall argued for a sliding scale approach to equal protection scrutiny calibrated to the importance of the interest and the degree of discrimination, and that the Court's refusal to recognize education as a fundamental right ignored its connection to the exercise of explicitly guaranteed constitutional rights like voting and free expression.",
+            "adopted_in": []
+          },
+          {
+            "type": "dissent",
+            "author": "Brennan",
+            "joined_by": [],
+            "doctrinal_significance": "Brennan argued that wealth discrimination in access to education required at least intermediate scrutiny and that the Texas system failed even that standard.",
+            "adopted_in": []
+          }
+        ],
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1973-03-21",
+        "valid_until": null,
+        "notes": "San Antonio ISD v. Rodriguez is the major limit on the fundamental rights strand of equal protection \u2014 holding that education is not a fundamental right under the federal Constitution and that wealth is not a suspect classification. The decision foreclosed federal equal protection challenges to school funding disparities and confined the fundamental rights doctrine to rights explicitly or implicitly guaranteed by the Constitution. Marshall's dissent arguing for a sliding scale scrutiny approach has been influential in academic literature but never adopted by the Court."
+      },
+      {
+        "@type": "Case",
+        "id": "obergefell_v_hodges_2015",
+        "short_name": "Obergefell v. Hodges",
+        "full_name": "Obergefell v. Hodges",
+        "citation": "576 U.S. 644 (2015)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "2015-06-26",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "The Fourteenth Amendment requires states to license marriages between two people of the same sex and to recognize same-sex marriages validly performed out of state. The right to marry is a fundamental liberty protected by the Due Process Clause of the Fourteenth Amendment, and the Equal Protection Clause reinforces this conclusion. The four principles identified as underlying the right to marry \u2014 individual autonomy, a unique two-person union, the safeguards afforded families and children, and the connection to the nation's social order \u2014 apply with equal force to same-sex couples.",
+        "holding_type": "affirmative",
+        "majority_author": "Kennedy",
+        "per_curiam": false,
+        "vote": "5-4",
+        "opinions": [
+          {
+            "type": "dissent",
+            "author": "Roberts",
+            "joined_by": [
+              "Scalia",
+              "Thomas"
+            ],
+            "doctrinal_significance": "Roberts argued that the Constitution does not resolve the marriage question and that the majority's decision was an act of judicial will rather than legal judgment \u2014 removing the issue from democratic deliberation without constitutional warrant.",
+            "adopted_in": []
+          },
+          {
+            "type": "dissent",
+            "author": "Scalia",
+            "joined_by": [
+              "Thomas"
+            ],
+            "doctrinal_significance": "Scalia argued the majority's decision represented a threat to American democracy by removing a hotly debated social policy question from democratic resolution and substituting nine lawyers' judgment for that of the people.",
+            "adopted_in": []
+          }
+        ],
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "2015-06-26",
+        "valid_until": null,
+        "notes": "Obergefell v. Hodges held that the fundamental right to marry extends to same-sex couples, grounding its holding in both the Due Process and Equal Protection Clauses of the Fourteenth Amendment. Kennedy's opinion synthesized the liberty and equality strands of constitutional doctrine. The decision extended the Romer-Lawrence line of gay rights cases and relied heavily on Loving v. Virginia's recognition of marriage as a fundamental right. Dobbs v. Jackson Women's Health Organization (2022) cast some uncertainty on Obergefell's continued vitality, though Dobbs expressly disclaimed any effect on Obergefell."
+      },
+      {
+        "@type": "Case",
+        "id": "lawrence_v_texas_2003",
+        "short_name": "Lawrence v. Texas",
+        "full_name": "Lawrence v. Texas",
+        "citation": "539 U.S. 558 (2003)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "2003-06-26",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "A Texas statute making it a crime for two persons of the same sex to engage in certain intimate sexual conduct violates the Due Process Clause of the Fourteenth Amendment. The liberty protected by the Constitution allows homosexual persons the right to make personal choices regarding their private sexual conduct without government intervention. Bowers v. Hardwick is overruled. The petitioners' right to liberty under the Due Process Clause gives them the full right to engage in their conduct without intervention of the government.",
+        "holding_type": "affirmative",
+        "majority_author": "Kennedy",
+        "per_curiam": false,
+        "vote": "6-3",
+        "opinions": [
+          {
+            "type": "concurrence",
+            "author": "O'Connor",
+            "joined_by": [],
+            "doctrinal_significance": "O'Connor concurred on equal protection grounds rather than due process \u2014 the Texas statute applied only to same-sex couples, making it a discriminatory law that could not survive even rational basis review under Romer v. Evans. O'Connor would not have overruled Bowers.",
+            "adopted_in": []
+          },
+          {
+            "type": "dissent",
+            "author": "Scalia",
+            "joined_by": [
+              "Rehnquist",
+              "Thomas"
+            ],
+            "doctrinal_significance": "Scalia argued the majority had signed onto the homosexual agenda, had effectively overruled morality-based legislation, and that the majority's logic would invalidate sodomy laws across the country and compel recognition of same-sex marriage \u2014 a prediction that proved accurate.",
+            "adopted_in": []
+          }
+        ],
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "2003-06-26",
+        "valid_until": null,
+        "notes": "Lawrence v. Texas overruled Bowers v. Hardwick (1986) and held that intimate consensual sexual conduct between adults of the same sex is protected by the liberty guarantee of the Due Process Clause. The decision was grounded in substantive due process rather than equal protection, though O'Connor's concurrence suggested an equal protection path. Lawrence is the bridge case between Romer v. Evans (1996) and Obergefell v. Hodges (2015) in the constitutional protection of gay rights. SCHEMA NOTE: Lawrence explicitly overruled Bowers v. Hardwick (1986) \u2014 add bowers_v_hardwick_1986 node and OVERRULES edge when Bowers is added."
       }
     ],
     "doctrinal_tests": [
@@ -5670,6 +6729,120 @@
             "contest_note": "The scope of the anti-corruption interest is heavily contested. McConnell v. FEC (2003) took a broader view; Citizens United narrowed it back to quid pro quo corruption."
           }
         ]
+      },
+      {
+        "@type": "DoctrinalTest",
+        "id": "strict_scrutiny_ep_test",
+        "label": "Strict Scrutiny (Equal Protection)",
+        "description": "The most demanding standard of judicial review under the Equal Protection Clause. Applied to laws that classify on the basis of race, national origin, or alienage, or that burden the exercise of a fundamental right. A law subject to strict scrutiny is presumptively unconstitutional and will be upheld only if the government demonstrates that it is necessary to achieve a compelling governmental interest and is narrowly tailored to that end. Strict scrutiny is famously described as 'strict in theory and fatal in fact,' though in practice some laws survive.",
+        "area_id": "equal_protection",
+        "governed_by_area": "equal_protection",
+        "prongs": [
+          {
+            "number": 1,
+            "label": "Compelling governmental interest",
+            "description": "The government must identify a compelling interest served by the classification. Accepted compelling interests include national security (debated), remedying specific documented past discrimination, and \u2014 until SFFA (2023) \u2014 student body diversity in higher education. Mere legitimate or important interests are insufficient.",
+            "burden_note": "Government bears burden of demonstrating compelling interest",
+            "valid_from": "1944-12-18",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 2,
+            "label": "Narrow tailoring",
+            "description": "The classification must be narrowly tailored to achieve the compelling interest \u2014 it must be necessary, not merely helpful. Narrow tailoring requires consideration of race-neutral alternatives, avoidance of unnecessary burden on non-benefited groups, and (for affirmative action) temporal limitation. The government may not use racial quotas or mechanical point systems.",
+            "burden_note": "Government bears burden of demonstrating narrow tailoring",
+            "valid_from": "1944-12-18",
+            "valid_until": null,
+            "contested": true,
+            "contest_note": "The degree of fit required by narrow tailoring \u2014 whether it requires the least restrictive means or merely a close fit \u2014 has been contested across cases."
+          }
+        ],
+        "test_form": "conjunctive",
+        "status": "active",
+        "valid_from": "1944-12-18",
+        "valid_until": null,
+        "notes": "Strict scrutiny under equal protection was first articulated in Korematsu v. United States (1944), which applied the standard while upholding Japanese internment. In practice strict scrutiny is nearly always fatal \u2014 the major exceptions are Korematsu itself (subsequently repudiated in Trump v. Hawaii, 2018) and Grutter v. Bollinger (2003), which SFFA v. Harvard (2023) later overruled.",
+        "source_case_id": "korematsu_v_united_states_1944",
+        "scrutiny_level": "strict",
+        "burden": "government"
+      },
+      {
+        "@type": "DoctrinalTest",
+        "id": "intermediate_scrutiny_ep_test",
+        "label": "Intermediate Scrutiny (Equal Protection)",
+        "description": "The middle tier of judicial review under the Equal Protection Clause. Applied to laws that classify on the basis of sex or illegitimacy. The government must demonstrate that the classification is substantially related to an important governmental interest. Intermediate scrutiny is more demanding than rational basis but less demanding than strict scrutiny. United States v. Virginia (1996) effectively heightened the standard for sex classifications by requiring an exceedingly persuasive justification.",
+        "area_id": "equal_protection",
+        "governed_by_area": "equal_protection",
+        "prongs": [
+          {
+            "number": 1,
+            "label": "Important governmental interest",
+            "description": "The government must demonstrate that its classification serves an important governmental interest \u2014 more than merely legitimate but less than compelling. Accepted important interests include preventing drunk driving (Craig v. Boren), compensating for past economic discrimination (Califano v. Webster), and maintaining the effectiveness of military forces (Rostker v. Goldberg).",
+            "burden_note": "Government bears burden of demonstrating important interest",
+            "valid_from": "1976-12-20",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 2,
+            "label": "Substantial relation / Exceedingly persuasive justification",
+            "description": "The classification must be substantially related to achieving the important interest. After United States v. Virginia (1996), sex classifications also require an exceedingly persuasive justification \u2014 a standard that effectively approaches strict scrutiny. The justification must be genuine, not hypothesized post hoc.",
+            "burden_note": "Government bears burden; post-VMI must show exceedingly persuasive justification for sex classifications",
+            "valid_from": "1976-12-20",
+            "valid_until": null,
+            "contested": true,
+            "contest_note": "Whether post-VMI intermediate scrutiny for sex is functionally equivalent to strict scrutiny is contested. The Court has not formally elevated sex to a suspect classification."
+          }
+        ],
+        "test_form": "conjunctive",
+        "status": "active",
+        "valid_from": "1976-12-20",
+        "valid_until": null,
+        "notes": "Craig v. Boren (1976) formally established intermediate scrutiny as the standard for sex-based classifications. The standard was developed to avoid the 4-justice plurality in Frontiero v. Richardson (1973) that would have elevated sex to a suspect classification requiring strict scrutiny.",
+        "source_case_id": "craig_v_boren_1976",
+        "scrutiny_level": "intermediate",
+        "burden": "government"
+      },
+      {
+        "@type": "DoctrinalTest",
+        "id": "rational_basis_ep_test",
+        "label": "Rational Basis Test (Equal Protection)",
+        "description": "The default, most deferential standard of judicial review under the Equal Protection Clause. Applied to all laws that do not involve suspect or quasi-suspect classifications or fundamental rights. A law satisfies rational basis if it is rationally related to any legitimate governmental interest \u2014 even one not articulated by the legislature. Courts will hypothesize conceivable rational bases and sustain the law unless no rational basis is conceivable. The challenger bears the burden of negating every possible rational basis.",
+        "area_id": "equal_protection",
+        "governed_by_area": "equal_protection",
+        "prongs": [
+          {
+            "number": 1,
+            "label": "Legitimate governmental interest",
+            "description": "Any legitimate governmental interest suffices \u2014 the government need not articulate it, and courts will hypothesize one. Virtually any plausible government purpose qualifies: economic regulation, administrative convenience, promotion of health or safety. Only bare desire to harm a politically unpopular group is illegitimate.",
+            "burden_note": "Challenger bears burden of negating all conceivable legitimate interests",
+            "valid_from": "1938-04-25",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 2,
+            "label": "Rational relation",
+            "description": "The law must be rationally related to the legitimate interest \u2014 not perfectly tailored, just not arbitrary. The fit may be loose, overinclusive, or underinclusive. Courts defer to legislative judgments about the relationship between means and ends. In rare cases of animus-based classifications, the Court applies rational basis with more scrutiny, asking whether any legitimate interest actually explains the classification.",
+            "burden_note": "Challenger bears burden; highly deferential to legislature",
+            "valid_from": "1938-04-25",
+            "valid_until": null,
+            "contested": true,
+            "contest_note": "Rational basis with bite \u2014 applied in Moreno, Cleburne, and Romer \u2014 is more demanding than standard rational basis but has not been formally acknowledged as a distinct tier. Its doctrinal status remains contested."
+          }
+        ],
+        "test_form": "conjunctive",
+        "status": "active",
+        "valid_from": "1938-04-25",
+        "valid_until": null,
+        "notes": "Rational basis emerged from the post-Lochner settlement \u2014 the Court's abandonment of substantive economic due process review after 1937. Carolene Products (1938) established rational basis as the default standard while reserving heightened review for fundamental rights and discrete and insular minorities.",
+        "source_case_id": "united_states_v_carolene_products_1938",
+        "scrutiny_level": "rational_basis",
+        "burden": "challenger"
       }
     ]
   },
@@ -10030,13 +11203,15 @@
       "id": "lovell_establishes_prior_restraint",
       "source_id": "lovell_v_city_of_griffin_1938",
       "target_id": "prior_restraint_doctrine",
-      "edge_type": "APPLIES",
+      "edge_type": "MODIFIES",
       "valid_from": "1938-03-28",
       "valid_until": null,
       "jurisdiction": [
         "federal",
         "state"
-      ]
+      ],
+      "direction": "expands",
+      "notes": "Expands: Lovell expanded prior restraint doctrine beyond judicial injunctions (as in Near) to encompass administrative licensing schemes, holding that granting an official unbridled discretion to permit or deny distribution of literature is a facially unconstitutional prior restraint."
     },
     {
       "id": "lovell_interprets_a1",
@@ -11183,6 +12358,1095 @@
         "federal",
         "state"
       ]
+    },
+    {
+      "id": "equal_protection_child_of_individual_rights",
+      "source_id": "equal_protection",
+      "target_id": "individual_rights",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1868-07-09",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "equal_protection_grounded_in_14a",
+      "source_id": "equal_protection",
+      "target_id": "amendment_14_section_1",
+      "edge_type": "GROUNDED_IN",
+      "valid_from": "1868-07-09",
+      "valid_until": null,
+      "jurisdiction": [
+        "state"
+      ]
+    },
+    {
+      "id": "suspect_class_governed_by_ep",
+      "source_id": "equal_protection",
+      "target_id": "suspect_classification_doctrine",
+      "edge_type": "GOVERNED_BY",
+      "valid_from": "1944-12-18",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "quasi_suspect_governed_by_ep",
+      "source_id": "equal_protection",
+      "target_id": "quasi_suspect_classification_doctrine",
+      "edge_type": "GOVERNED_BY",
+      "valid_from": "1976-12-20",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "rational_basis_governed_by_ep",
+      "source_id": "equal_protection",
+      "target_id": "rational_basis_doctrine",
+      "edge_type": "GOVERNED_BY",
+      "valid_from": "1938-04-25",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "discriminatory_intent_governed_by_ep",
+      "source_id": "equal_protection",
+      "target_id": "discriminatory_intent_doctrine",
+      "edge_type": "GOVERNED_BY",
+      "valid_from": "1976-06-07",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "affirmative_action_governed_by_ep",
+      "source_id": "equal_protection",
+      "target_id": "affirmative_action_doctrine",
+      "edge_type": "GOVERNED_BY",
+      "valid_from": "1995-06-12",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "fundamental_rights_ep_governed_by_ep",
+      "source_id": "equal_protection",
+      "target_id": "fundamental_rights_ep_doctrine",
+      "edge_type": "GOVERNED_BY",
+      "valid_from": "1964-03-09",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "ep_governed_by_strict_scrutiny_test",
+      "source_id": "equal_protection",
+      "target_id": "strict_scrutiny_ep_test",
+      "edge_type": "GOVERNED_BY",
+      "valid_from": "1944-12-18",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "ep_governed_by_intermediate_scrutiny_test",
+      "source_id": "equal_protection",
+      "target_id": "intermediate_scrutiny_ep_test",
+      "edge_type": "GOVERNED_BY",
+      "valid_from": "1976-12-20",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "ep_governed_by_rational_basis_test",
+      "source_id": "equal_protection",
+      "target_id": "rational_basis_ep_test",
+      "edge_type": "GOVERNED_BY",
+      "valid_from": "1938-04-25",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "dred_scott_interprets_a14",
+      "source_id": "dred_scott_v_sandford_1857",
+      "target_id": "amendment_14_section_1",
+      "edge_type": "RELATED_TO",
+      "valid_from": "1868-07-09",
+      "valid_until": "1868-07-09",
+      "jurisdiction": [
+        "federal"
+      ],
+      "notes": "Dred Scott (1857) predates the Fourteenth Amendment (1868) by eleven years. This edge represents the constitutional void that the Amendment was designed to fill \u2014 the Amendment's citizenship clause directly repudiated Taney's holding that Black persons could not be citizens."
+    },
+    {
+      "id": "strauder_establishes_ep_race",
+      "source_id": "strauder_v_west_virginia_1880",
+      "target_id": "suspect_classification_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1880-03-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "state"
+      ],
+      "notes": "Strauder was the first significant equal protection case, establishing that the Fourteenth Amendment prohibits racial discrimination in jury selection and reading the Amendment's purpose as securing full civic equality for Black citizens."
+    },
+    {
+      "id": "strauder_interprets_a14",
+      "source_id": "strauder_v_west_virginia_1880",
+      "target_id": "amendment_14_section_1",
+      "edge_type": "INTERPRETS",
+      "valid_from": "1880-03-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "state"
+      ]
+    },
+    {
+      "id": "plessy_narrows_equal_protection",
+      "source_id": "plessy_v_ferguson_1896",
+      "target_id": "suspect_classification_doctrine",
+      "edge_type": "MODIFIES",
+      "direction": "narrows",
+      "valid_from": "1896-05-18",
+      "valid_until": "1954-05-17",
+      "jurisdiction": [
+        "state"
+      ],
+      "notes": "Narrows: Plessy dramatically narrowed the equal protection guarantee established in Strauder by holding that separate but equal facilities satisfied the Fourteenth Amendment \u2014 effectively gutting the Amendment's promise of civic equality for 58 years."
+    },
+    {
+      "id": "plessy_interprets_a14",
+      "source_id": "plessy_v_ferguson_1896",
+      "target_id": "amendment_14_section_1",
+      "edge_type": "INTERPRETS",
+      "valid_from": "1896-05-18",
+      "valid_until": "1954-05-17",
+      "jurisdiction": [
+        "state"
+      ]
+    },
+    {
+      "id": "harlan_plessy_precedes_brown",
+      "source_id": "plessy_v_ferguson_1896",
+      "target_id": "brown_v_board_of_education_1954",
+      "edge_type": "INTELLECTUALLY_PRECEDES",
+      "opinion_ref": {
+        "opinion_type": "dissent",
+        "author": "Harlan",
+        "note": "Harlan's color-blind Constitution dissent was adopted as law in Brown 58 years later"
+      },
+      "valid_from": "1954-05-17",
+      "valid_until": null,
+      "jurisdiction": [
+        "state"
+      ],
+      "notes": "Justice Harlan's Plessy dissent \u2014 arguing that the Constitution is color-blind and permits no caste distinctions \u2014 was vindicated and effectively adopted in Brown v. Board of Education 58 years later."
+    },
+    {
+      "id": "brown_overrules_plessy",
+      "source_id": "brown_v_board_of_education_1954",
+      "target_id": "plessy_v_ferguson_1896",
+      "edge_type": "OVERRULES",
+      "overrule_type": "effective",
+      "valid_from": "1954-05-17",
+      "valid_until": null,
+      "jurisdiction": [
+        "state"
+      ],
+      "notes": "Brown overruled Plessy in the field of public education \u2014 holding that separate educational facilities are inherently unequal. The separate but equal doctrine was subsequently dismantled in other contexts. Coded as effective rather than explicit because Brown did not use the word overrule."
+    },
+    {
+      "id": "brown_establishes_desegregation",
+      "source_id": "brown_v_board_of_education_1954",
+      "target_id": "suspect_classification_doctrine",
+      "edge_type": "MODIFIES",
+      "direction": "expands",
+      "valid_from": "1954-05-17",
+      "valid_until": null,
+      "jurisdiction": [
+        "state"
+      ],
+      "notes": "Expands: Brown dramatically expanded the equal protection guarantee by holding that separate educational facilities are inherently unequal and abolishing the separate but equal doctrine in public education."
+    },
+    {
+      "id": "brown_interprets_a14",
+      "source_id": "brown_v_board_of_education_1954",
+      "target_id": "amendment_14_section_1",
+      "edge_type": "INTERPRETS",
+      "valid_from": "1954-05-17",
+      "valid_until": null,
+      "jurisdiction": [
+        "state"
+      ]
+    },
+    {
+      "id": "bolling_establishes_federal_ep",
+      "source_id": "bolling_v_sharpe_1954",
+      "target_id": "suspect_classification_doctrine",
+      "edge_type": "MODIFIES",
+      "direction": "expands",
+      "valid_from": "1954-05-17",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ],
+      "notes": "Expands: Bolling extended equal protection principles to the federal government via the Fifth Amendment's Due Process Clause \u2014 making the federal government subject to the same non-discrimination requirements as states under the Fourteenth Amendment."
+    },
+    {
+      "id": "bolling_interprets_5th_amendment",
+      "source_id": "bolling_v_sharpe_1954",
+      "target_id": "amendment_14_section_1",
+      "edge_type": "INTERPRETS",
+      "valid_from": "1954-05-17",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ],
+      "notes": "Bolling grounded federal equal protection in the Fifth Amendment's Due Process Clause rather than the Fourteenth Amendment, which applies only to states. NOTE: This case is grounded in the Fifth Amendment Due Process Clause equal protection component, not the Fourteenth Amendment directly. Retarget to amendment_5_due_process when that node is added."
+    },
+    {
+      "id": "korematsu_establishes_strict_scrutiny",
+      "source_id": "korematsu_v_united_states_1944",
+      "target_id": "strict_scrutiny_ep_test",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1944-12-18",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Korematsu was the first case to apply the strict scrutiny label to racial classifications \u2014 articulating that legal restrictions curtailing the rights of a single racial group are immediately suspect and subject to the most rigid scrutiny."
+    },
+    {
+      "id": "korematsu_applies_suspect_class",
+      "source_id": "korematsu_v_united_states_1944",
+      "target_id": "suspect_classification_doctrine",
+      "edge_type": "APPLIES",
+      "valid_from": "1944-12-18",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "korematsu_interprets_a14",
+      "source_id": "korematsu_v_united_states_1944",
+      "target_id": "amendment_14_section_1",
+      "edge_type": "INTERPRETS",
+      "valid_from": "1944-12-18",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "loving_applies_strict_scrutiny",
+      "source_id": "loving_v_virginia_1967",
+      "target_id": "strict_scrutiny_ep_test",
+      "edge_type": "APPLIES",
+      "valid_from": "1967-06-12",
+      "valid_until": null,
+      "jurisdiction": [
+        "state"
+      ]
+    },
+    {
+      "id": "loving_applies_suspect_class",
+      "source_id": "loving_v_virginia_1967",
+      "target_id": "suspect_classification_doctrine",
+      "edge_type": "APPLIES",
+      "valid_from": "1967-06-12",
+      "valid_until": null,
+      "jurisdiction": [
+        "state"
+      ]
+    },
+    {
+      "id": "loving_interprets_a14",
+      "source_id": "loving_v_virginia_1967",
+      "target_id": "amendment_14_section_1",
+      "edge_type": "INTERPRETS",
+      "valid_from": "1967-06-12",
+      "valid_until": null,
+      "jurisdiction": [
+        "state"
+      ]
+    },
+    {
+      "id": "washington_establishes_intent_doctrine",
+      "source_id": "washington_v_davis_1976",
+      "target_id": "discriminatory_intent_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1976-06-07",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Washington v. Davis established the foundational rule that facially neutral laws require proof of discriminatory intent \u2014 not merely disparate impact \u2014 to trigger strict scrutiny under the Equal Protection Clause."
+    },
+    {
+      "id": "washington_interprets_a14",
+      "source_id": "washington_v_davis_1976",
+      "target_id": "amendment_14_section_1",
+      "edge_type": "INTERPRETS",
+      "valid_from": "1976-06-07",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": " NOTE: This case is grounded in the Fifth Amendment Due Process Clause equal protection component, not the Fourteenth Amendment directly. Retarget to amendment_5_due_process when that node is added."
+    },
+    {
+      "id": "arlington_modifies_intent_doctrine",
+      "source_id": "village_of_arlington_heights_v_mhdc_1977",
+      "target_id": "discriminatory_intent_doctrine",
+      "edge_type": "MODIFIES",
+      "direction": "clarifies",
+      "valid_from": "1977-01-11",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Clarifies: Arlington Heights elaborated the Washington v. Davis discriminatory intent requirement with a multi-factor framework for proving intent from circumstantial evidence \u2014 impact, historical background, sequence of events, procedural departures, and legislative history."
+    },
+    {
+      "id": "arlington_interprets_a14",
+      "source_id": "village_of_arlington_heights_v_mhdc_1977",
+      "target_id": "amendment_14_section_1",
+      "edge_type": "INTERPRETS",
+      "valid_from": "1977-01-11",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "mccleskey_applies_intent_doctrine",
+      "source_id": "mccleskey_v_kemp_1987",
+      "target_id": "discriminatory_intent_doctrine",
+      "edge_type": "APPLIES",
+      "valid_from": "1987-04-22",
+      "valid_until": null,
+      "jurisdiction": [
+        "state"
+      ],
+      "notes": "McCleskey applied Washington v. Davis to hold that statistical evidence of systemic racial disparities in capital sentencing is insufficient to prove discriminatory intent in an individual defendant's case."
+    },
+    {
+      "id": "mccleskey_interprets_a14",
+      "source_id": "mccleskey_v_kemp_1987",
+      "target_id": "amendment_14_section_1",
+      "edge_type": "INTERPRETS",
+      "valid_from": "1987-04-22",
+      "valid_until": null,
+      "jurisdiction": [
+        "state"
+      ]
+    },
+    {
+      "id": "adarand_establishes_affirmative_action",
+      "source_id": "adarand_constructors_v_pena_1995",
+      "target_id": "affirmative_action_doctrine",
+      "edge_type": "MODIFIES",
+      "direction": "clarifies",
+      "valid_from": "1995-06-12",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Clarifies: Adarand settled that strict scrutiny applies to all racial classifications regardless of purpose or benefited group \u2014 establishing the consistency and congruence principles that govern affirmative action analysis."
+    },
+    {
+      "id": "adarand_applies_strict_scrutiny",
+      "source_id": "adarand_constructors_v_pena_1995",
+      "target_id": "strict_scrutiny_ep_test",
+      "edge_type": "APPLIES",
+      "valid_from": "1995-06-12",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "adarand_interprets_a14",
+      "source_id": "adarand_constructors_v_pena_1995",
+      "target_id": "amendment_14_section_1",
+      "edge_type": "INTERPRETS",
+      "valid_from": "1995-06-12",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": " NOTE: This case is grounded in the Fifth Amendment Due Process Clause equal protection component, not the Fourteenth Amendment directly. Retarget to amendment_5_due_process when that node is added."
+    },
+    {
+      "id": "grutter_applies_affirmative_action",
+      "source_id": "grutter_v_bollinger_2003",
+      "target_id": "affirmative_action_doctrine",
+      "edge_type": "APPLIES",
+      "valid_from": "2003-06-23",
+      "valid_until": "2023-06-29",
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Grutter applied strict scrutiny to uphold race-conscious holistic admissions, establishing student body diversity as a compelling interest \u2014 the major exception to the near-fatal application of strict scrutiny to racial classifications."
+    },
+    {
+      "id": "grutter_applies_strict_scrutiny",
+      "source_id": "grutter_v_bollinger_2003",
+      "target_id": "strict_scrutiny_ep_test",
+      "edge_type": "APPLIES",
+      "valid_from": "2003-06-23",
+      "valid_until": "2023-06-29",
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "grutter_interprets_a14",
+      "source_id": "grutter_v_bollinger_2003",
+      "target_id": "amendment_14_section_1",
+      "edge_type": "INTERPRETS",
+      "valid_from": "2003-06-23",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "thomas_grutter_precedes_sffa",
+      "source_id": "grutter_v_bollinger_2003",
+      "target_id": "sffa_v_harvard_2023",
+      "edge_type": "INTELLECTUALLY_PRECEDES",
+      "opinion_ref": {
+        "opinion_type": "dissent",
+        "author": "Thomas",
+        "note": "Thomas's Grutter dissent arguing diversity is not a compelling interest was adopted as law in SFFA 20 years later"
+      },
+      "valid_from": "2023-06-29",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Thomas's Grutter dissent \u2014 arguing that diversity is not a compelling interest and that all racial preferences are unconstitutional \u2014 was vindicated and effectively adopted by the Roberts Court majority in SFFA v. Harvard 20 years later."
+    },
+    {
+      "id": "sffa_overrules_grutter",
+      "source_id": "sffa_v_harvard_2023",
+      "target_id": "grutter_v_bollinger_2003",
+      "edge_type": "OVERRULES",
+      "overrule_type": "explicit",
+      "valid_from": "2023-06-29",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "sffa_modifies_affirmative_action",
+      "source_id": "sffa_v_harvard_2023",
+      "target_id": "affirmative_action_doctrine",
+      "edge_type": "MODIFIES",
+      "direction": "narrows",
+      "valid_from": "2023-06-29",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Narrows: SFFA dramatically narrowed the affirmative action doctrine by eliminating student body diversity as a compelling interest and effectively ending race-conscious admissions in higher education."
+    },
+    {
+      "id": "sffa_interprets_a14",
+      "source_id": "sffa_v_harvard_2023",
+      "target_id": "amendment_14_section_1",
+      "edge_type": "INTERPRETS",
+      "valid_from": "2023-06-29",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "reed_establishes_sex_ep",
+      "source_id": "reed_v_reed_1971",
+      "target_id": "quasi_suspect_classification_doctrine",
+      "edge_type": "MODIFIES",
+      "valid_from": "1971-11-22",
+      "valid_until": null,
+      "jurisdiction": [
+        "state"
+      ],
+      "notes": "Clarifies: Reed v. Reed was the breakthrough case invalidating a sex-based classification, opening the path toward heightened scrutiny for sex, but the quasi-suspect classification doctrine in its modern form was established in Craig v. Boren (1976).",
+      "direction": "clarifies"
+    },
+    {
+      "id": "reed_interprets_a14",
+      "source_id": "reed_v_reed_1971",
+      "target_id": "amendment_14_section_1",
+      "edge_type": "INTERPRETS",
+      "valid_from": "1971-11-22",
+      "valid_until": null,
+      "jurisdiction": [
+        "state"
+      ]
+    },
+    {
+      "id": "frontiero_applies_sex_scrutiny",
+      "source_id": "frontiero_v_richardson_1973",
+      "target_id": "quasi_suspect_classification_doctrine",
+      "edge_type": "MODIFIES",
+      "direction": "clarifies",
+      "valid_from": "1973-05-14",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ],
+      "notes": "Clarifies: Frontiero's plurality would have made sex a suspect classification requiring strict scrutiny \u2014 the high-water mark of that effort \u2014 but fell one vote short of a majority, leaving the standard unsettled until Craig v. Boren."
+    },
+    {
+      "id": "frontiero_interprets_a14",
+      "source_id": "frontiero_v_richardson_1973",
+      "target_id": "amendment_14_section_1",
+      "edge_type": "INTERPRETS",
+      "valid_from": "1973-05-14",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ],
+      "notes": " NOTE: This case is grounded in the Fifth Amendment Due Process Clause equal protection component, not the Fourteenth Amendment directly. Retarget to amendment_5_due_process when that node is added."
+    },
+    {
+      "id": "craig_establishes_intermediate_scrutiny",
+      "source_id": "craig_v_boren_1976",
+      "target_id": "intermediate_scrutiny_ep_test",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1976-12-20",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Craig v. Boren formally established intermediate scrutiny as the constitutional standard for sex-based classifications \u2014 settling the standard that Frontiero's plurality had failed to establish as a majority holding."
+    },
+    {
+      "id": "craig_establishes_quasi_suspect",
+      "source_id": "craig_v_boren_1976",
+      "target_id": "quasi_suspect_classification_doctrine",
+      "edge_type": "MODIFIES",
+      "direction": "clarifies",
+      "valid_from": "1976-12-20",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Clarifies: Craig formally established sex as a quasi-suspect classification subject to intermediate scrutiny, resolving the uncertainty left by Frontiero's fractured plurality."
+    },
+    {
+      "id": "craig_interprets_a14",
+      "source_id": "craig_v_boren_1976",
+      "target_id": "amendment_14_section_1",
+      "edge_type": "INTERPRETS",
+      "valid_from": "1976-12-20",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "vmi_modifies_intermediate_scrutiny",
+      "source_id": "united_states_v_virginia_1996",
+      "target_id": "intermediate_scrutiny_ep_test",
+      "edge_type": "MODIFIES",
+      "direction": "complicates",
+      "valid_from": "1996-06-26",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Complicates: VMI added the exceedingly persuasive justification requirement to intermediate scrutiny for sex classifications \u2014 a standard that approaches but does not formally reach strict scrutiny, making the tier harder to define precisely."
+    },
+    {
+      "id": "vmi_applies_quasi_suspect",
+      "source_id": "united_states_v_virginia_1996",
+      "target_id": "quasi_suspect_classification_doctrine",
+      "edge_type": "APPLIES",
+      "valid_from": "1996-06-26",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "vmi_interprets_a14",
+      "source_id": "united_states_v_virginia_1996",
+      "target_id": "amendment_14_section_1",
+      "edge_type": "INTERPRETS",
+      "valid_from": "1996-06-26",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "beazer_applies_rational_basis",
+      "source_id": "nyc_transit_authority_v_beazer_1979",
+      "target_id": "rational_basis_ep_test",
+      "edge_type": "APPLIES",
+      "valid_from": "1979-03-21",
+      "valid_until": null,
+      "jurisdiction": [
+        "state"
+      ],
+      "notes": "Beazer illustrates rational basis review at its most deferential \u2014 sustaining a categorical employment exclusion based on conceivable safety and efficiency rationales despite evidence of overbreadth."
+    },
+    {
+      "id": "beazer_applies_rational_basis_doctrine",
+      "source_id": "nyc_transit_authority_v_beazer_1979",
+      "target_id": "rational_basis_doctrine",
+      "edge_type": "APPLIES",
+      "valid_from": "1979-03-21",
+      "valid_until": null,
+      "jurisdiction": [
+        "state"
+      ]
+    },
+    {
+      "id": "beazer_interprets_a14",
+      "source_id": "nyc_transit_authority_v_beazer_1979",
+      "target_id": "amendment_14_section_1",
+      "edge_type": "INTERPRETS",
+      "valid_from": "1979-03-21",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "moreno_establishes_animus",
+      "source_id": "us_dept_of_agriculture_v_moreno_1973",
+      "target_id": "rational_basis_doctrine",
+      "edge_type": "MODIFIES",
+      "direction": "clarifies",
+      "valid_from": "1973-06-25",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Clarifies: Moreno established that bare congressional desire to harm a politically unpopular group cannot constitute a legitimate government interest \u2014 introducing the animus principle into rational basis review that Cleburne and Romer would later develop."
+    },
+    {
+      "id": "moreno_interprets_a14",
+      "source_id": "us_dept_of_agriculture_v_moreno_1973",
+      "target_id": "amendment_14_section_1",
+      "edge_type": "INTERPRETS",
+      "valid_from": "1973-06-25",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": " NOTE: This case is grounded in the Fifth Amendment Due Process Clause equal protection component, not the Fourteenth Amendment directly. Retarget to amendment_5_due_process when that node is added."
+    },
+    {
+      "id": "cleburne_applies_rational_basis_bite",
+      "source_id": "city_of_cleburne_v_cleburne_living_center_1985",
+      "target_id": "rational_basis_doctrine",
+      "edge_type": "MODIFIES",
+      "direction": "clarifies",
+      "valid_from": "1985-07-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Clarifies: Cleburne applied rational basis with unusual rigor \u2014 effectively rational basis with bite \u2014 striking a zoning denial based on irrational prejudice against the disabled while explicitly declining to make disability a quasi-suspect classification."
+    },
+    {
+      "id": "cleburne_interprets_a14",
+      "source_id": "city_of_cleburne_v_cleburne_living_center_1985",
+      "target_id": "amendment_14_section_1",
+      "edge_type": "INTERPRETS",
+      "valid_from": "1985-07-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "state"
+      ]
+    },
+    {
+      "id": "romer_applies_rational_basis_bite",
+      "source_id": "romer_v_evans_1996",
+      "target_id": "rational_basis_doctrine",
+      "edge_type": "MODIFIES",
+      "direction": "clarifies",
+      "valid_from": "1996-05-20",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Clarifies: Romer applied Moreno's animus principle to sexual orientation, completing the Moreno-Cleburne-Romer rational basis with bite trilogy and establishing that bare desire to harm gay and lesbian persons is not a legitimate government interest."
+    },
+    {
+      "id": "romer_interprets_a14",
+      "source_id": "romer_v_evans_1996",
+      "target_id": "amendment_14_section_1",
+      "edge_type": "INTERPRETS",
+      "valid_from": "1996-05-20",
+      "valid_until": null,
+      "jurisdiction": [
+        "state"
+      ]
+    },
+    {
+      "id": "romer_related_to_sexual_orientation",
+      "source_id": "romer_v_evans_1996",
+      "target_id": "equal_protection",
+      "edge_type": "RELATED_TO",
+      "valid_from": "1996-05-20",
+      "valid_until": null,
+      "jurisdiction": [
+        "state"
+      ],
+      "notes": "Romer is the foundational constitutional protection for sexual orientation under equal protection, leading directly to Lawrence v. Texas (2003) and Obergefell v. Hodges (2015)."
+    },
+    {
+      "id": "harper_establishes_voting_fundamental",
+      "source_id": "harper_v_virginia_board_of_elections_1966",
+      "target_id": "fundamental_rights_ep_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1966-03-24",
+      "valid_until": null,
+      "jurisdiction": [
+        "state"
+      ],
+      "notes": "Harper established voting as a fundamental right whose unequal distribution triggers strict scrutiny under the Equal Protection Clause \u2014 the foundational case for the fundamental rights strand of equal protection."
+    },
+    {
+      "id": "harper_applies_strict_scrutiny_ep",
+      "source_id": "harper_v_virginia_board_of_elections_1966",
+      "target_id": "strict_scrutiny_ep_test",
+      "edge_type": "RELATED_TO",
+      "valid_from": "1966-03-24",
+      "valid_until": null,
+      "jurisdiction": [
+        "state"
+      ],
+      "notes": " Connection captured through fundamental_rights_ep_doctrine rather than direct strict scrutiny test application."
+    },
+    {
+      "id": "harper_interprets_a14",
+      "source_id": "harper_v_virginia_board_of_elections_1966",
+      "target_id": "amendment_14_section_1",
+      "edge_type": "INTERPRETS",
+      "valid_from": "1966-03-24",
+      "valid_until": null,
+      "jurisdiction": [
+        "state"
+      ]
+    },
+    {
+      "id": "reynolds_applies_voting_fundamental",
+      "source_id": "reynolds_v_sims_1964",
+      "target_id": "fundamental_rights_ep_doctrine",
+      "edge_type": "APPLIES",
+      "valid_from": "1964-06-15",
+      "valid_until": null,
+      "jurisdiction": [
+        "state"
+      ],
+      "notes": "Reynolds applied the fundamental right to vote to require population-based apportionment of both chambers of state legislatures \u2014 establishing one person, one vote as a constitutional requirement."
+    },
+    {
+      "id": "reynolds_applies_strict_scrutiny_ep",
+      "source_id": "reynolds_v_sims_1964",
+      "target_id": "strict_scrutiny_ep_test",
+      "edge_type": "RELATED_TO",
+      "valid_from": "1964-06-15",
+      "valid_until": null,
+      "jurisdiction": [
+        "state"
+      ],
+      "notes": " Connection captured through fundamental_rights_ep_doctrine rather than direct strict scrutiny test application."
+    },
+    {
+      "id": "reynolds_interprets_a14",
+      "source_id": "reynolds_v_sims_1964",
+      "target_id": "amendment_14_section_1",
+      "edge_type": "INTERPRETS",
+      "valid_from": "1964-06-15",
+      "valid_until": null,
+      "jurisdiction": [
+        "state"
+      ]
+    },
+    {
+      "id": "shapiro_establishes_travel_fundamental",
+      "source_id": "shapiro_v_thompson_1969",
+      "target_id": "fundamental_rights_ep_doctrine",
+      "edge_type": "MODIFIES",
+      "direction": "expands",
+      "valid_from": "1969-04-21",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Expands: Shapiro extended the fundamental rights EP doctrine to the right to travel interstate, establishing that welfare residency requirements penalizing travel trigger strict scrutiny."
+    },
+    {
+      "id": "shapiro_applies_strict_scrutiny_ep",
+      "source_id": "shapiro_v_thompson_1969",
+      "target_id": "strict_scrutiny_ep_test",
+      "edge_type": "APPLIES",
+      "valid_from": "1969-04-21",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "shapiro_interprets_a14",
+      "source_id": "shapiro_v_thompson_1969",
+      "target_id": "amendment_14_section_1",
+      "edge_type": "INTERPRETS",
+      "valid_from": "1969-04-21",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "rodriguez_limits_fundamental_rights_ep",
+      "source_id": "san_antonio_isd_v_rodriguez_1973",
+      "target_id": "fundamental_rights_ep_doctrine",
+      "edge_type": "MODIFIES",
+      "direction": "narrows",
+      "valid_from": "1973-03-21",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Narrows: Rodriguez established the major limit on the fundamental rights EP doctrine \u2014 holding that education is not a fundamental right and wealth is not a suspect classification, foreclosing federal equal protection challenges to school funding disparities."
+    },
+    {
+      "id": "rodriguez_applies_rational_basis_ep",
+      "source_id": "san_antonio_isd_v_rodriguez_1973",
+      "target_id": "rational_basis_ep_test",
+      "edge_type": "APPLIES",
+      "valid_from": "1973-03-21",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "rodriguez_interprets_a14",
+      "source_id": "san_antonio_isd_v_rodriguez_1973",
+      "target_id": "amendment_14_section_1",
+      "edge_type": "INTERPRETS",
+      "valid_from": "1973-03-21",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "romer_precedes_lawrence",
+      "source_id": "romer_v_evans_1996",
+      "target_id": "lawrence_v_texas_2003",
+      "edge_type": "INTELLECTUALLY_PRECEDES",
+      "opinion_ref": {
+        "opinion_type": "concurrence",
+        "author": "O'Connor",
+        "note": "O'Connor's Romer equal protection reasoning was applied in Lawrence's equal protection path"
+      },
+      "valid_from": "2003-06-26",
+      "valid_until": null,
+      "jurisdiction": [
+        "state"
+      ],
+      "notes": "Romer's animus-based equal protection analysis intellectually preceded Lawrence \u2014 O'Connor's Lawrence concurrence applied Romer's equal protection reasoning directly to the Texas sodomy statute."
+    },
+    {
+      "id": "lawrence_applies_due_process",
+      "source_id": "lawrence_v_texas_2003",
+      "target_id": "equal_protection",
+      "edge_type": "RELATED_TO",
+      "valid_from": "2003-06-26",
+      "valid_until": null,
+      "jurisdiction": [
+        "state"
+      ],
+      "notes": "Lawrence was decided on due process grounds but O'Connor's concurrence identified an equal protection path \u2014 the Texas statute's application only to same-sex couples raised equal protection concerns under Romer's animus rationale."
+    },
+    {
+      "id": "lawrence_interprets_a14",
+      "source_id": "lawrence_v_texas_2003",
+      "target_id": "amendment_14_section_1",
+      "edge_type": "INTERPRETS",
+      "valid_from": "2003-06-26",
+      "valid_until": null,
+      "jurisdiction": [
+        "state"
+      ]
+    },
+    {
+      "id": "obergefell_applies_fundamental_rights_ep",
+      "source_id": "obergefell_v_hodges_2015",
+      "target_id": "fundamental_rights_ep_doctrine",
+      "edge_type": "MODIFIES",
+      "direction": "expands",
+      "valid_from": "2015-06-26",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Expands: Obergefell extended the fundamental right to marry to same-sex couples under both the Due Process and Equal Protection Clauses \u2014 the culmination of the Romer-Lawrence-Obergefell constitutional arc."
+    },
+    {
+      "id": "obergefell_applies_strict_scrutiny_ep",
+      "source_id": "obergefell_v_hodges_2015",
+      "target_id": "strict_scrutiny_ep_test",
+      "edge_type": "RELATED_TO",
+      "valid_from": "2015-06-26",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Obergefell fused due process and equal protection \u2014 it did not present as a clean strict scrutiny equal protection case. The RELATED_TO edge captures the connection without overstating doctrinal formalism."
+    },
+    {
+      "id": "obergefell_interprets_a14",
+      "source_id": "obergefell_v_hodges_2015",
+      "target_id": "amendment_14_section_1",
+      "edge_type": "INTERPRETS",
+      "valid_from": "2015-06-26",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "loving_precedes_obergefell",
+      "source_id": "loving_v_virginia_1967",
+      "target_id": "obergefell_v_hodges_2015",
+      "edge_type": "INTELLECTUALLY_PRECEDES",
+      "opinion_ref": {
+        "opinion_type": "plurality",
+        "author": "Warren",
+        "note": "Loving's recognition of marriage as a fundamental right was directly applied in Obergefell (majority opinion \u2014 plurality used as schema approximation for INTELLECTUALLY_PRECEDES)"
+      },
+      "valid_from": "2015-06-26",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Loving v. Virginia's recognition of marriage as a fundamental right and its rejection of race-based marriage restrictions as unconstitutional were directly applied in Obergefell \u2014 Kennedy's majority opinion cited Loving as the foundational precedent for the right to marry regardless of identity."
+    },
+    {
+      "id": "romer_precedes_obergefell",
+      "source_id": "romer_v_evans_1996",
+      "target_id": "obergefell_v_hodges_2015",
+      "edge_type": "INTELLECTUALLY_PRECEDES",
+      "opinion_ref": {
+        "opinion_type": "plurality",
+        "author": "Kennedy",
+        "note": "Romer's equal protection protection for gay persons preceded Obergefell's extension of marriage rights (majority opinion \u2014 plurality used as schema approximation for INTELLECTUALLY_PRECEDES)"
+      },
+      "valid_from": "2015-06-26",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Romer established that gay and lesbian persons are entitled to constitutional equal protection \u2014 the foundational premise that Obergefell extended to the right to marry."
+    },
+    {
+      "id": "harlan_plessy_precedes_sffa",
+      "source_id": "plessy_v_ferguson_1896",
+      "target_id": "sffa_v_harvard_2023",
+      "edge_type": "INTELLECTUALLY_PRECEDES",
+      "opinion_ref": {
+        "opinion_type": "dissent",
+        "author": "Harlan",
+        "note": "Harlan's color-blind Constitution dissent was invoked by Roberts in SFFA to justify colorblind equal protection"
+      },
+      "valid_from": "2023-06-29",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Justice Harlan's Plessy dissent \u2014 arguing the Constitution is color-blind and permits no caste distinctions \u2014 was explicitly invoked by Chief Justice Roberts in SFFA v. Harvard to justify the colorblind equal protection principle that bars race-conscious admissions."
+    },
+    {
+      "id": "brown_related_to_bolling",
+      "source_id": "brown_v_board_of_education_1954",
+      "target_id": "bolling_v_sharpe_1954",
+      "edge_type": "RELATED_TO",
+      "valid_from": "1954-05-17",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Companion cases decided the same day holding state and federal school segregation unconstitutional under the Fourteenth and Fifth Amendments respectively."
     }
   ],
   "schema_issues_found": [
