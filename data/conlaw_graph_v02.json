@@ -17,8 +17,8 @@
     "created": "2026-03-15",
     "status": "draft",
     "schema_version": "0.2",
-    "node_count": 233,
-    "edge_count": 498,
+    "node_count": 242,
+    "edge_count": 522,
     "schema_issue_count": 41,
     "fixes_applied": [
       "FIX 1: ConstitutionalProvision labels changed to citation form (amendment_1, amendment_14_section_1) to disambiguate from Area nodes with same common-name labels",
@@ -5995,6 +5995,299 @@
         "valid_from": "2003-06-26",
         "valid_until": null,
         "notes": "Lawrence v. Texas overruled Bowers v. Hardwick (1986) and held that intimate consensual sexual conduct between adults of the same sex is protected by the liberty guarantee of the Due Process Clause. The decision was grounded in substantive due process rather than equal protection, though O'Connor's concurrence suggested an equal protection path. Lawrence is the bridge case between Romer v. Evans (1996) and Obergefell v. Hodges (2015) in the constitutional protection of gay rights. SCHEMA NOTE: Lawrence explicitly overruled Bowers v. Hardwick (1986) \u2014 add bowers_v_hardwick_1986 node and OVERRULES edge when Bowers is added."
+      },
+      {
+        "@type": "Case",
+        "id": "rice_v_cayetano_2000",
+        "short_name": "Rice v. Cayetano",
+        "full_name": "Rice v. Cayetano",
+        "citation": "528 U.S. 495 (2000)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "2000-02-23",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "A Hawaii constitutional provision limiting the right to vote for trustees of the Office of Hawaiian Affairs to persons of Hawaiian ancestry violates the Fifteenth Amendment's prohibition on denying or abridging the right to vote on account of race. The ancestry classification in this context is a proxy for race and functions as a racial classification subject to strict constitutional scrutiny. The Fourteenth and Fifteenth Amendments apply to all persons regardless of ancestry.",
+        "holding_type": "affirmative",
+        "majority_author": "Kennedy",
+        "per_curiam": false,
+        "vote": "7-2",
+        "opinions": [],
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "2000-02-23",
+        "valid_until": null,
+        "notes": "Rice v. Cayetano applied the Fifteenth Amendment to strike a voting restriction based on Hawaiian ancestry, holding that ancestry is a proxy for race in this context. The decision complicated Hawaiian sovereignty arguments and the status of the Office of Hawaiian Affairs. The case is significant for the broader principle that ancestry-based classifications that function as racial proxies are subject to the same constitutional scrutiny as explicit racial classifications."
+      },
+      {
+        "@type": "Case",
+        "id": "davis_v_bandemer_1986",
+        "short_name": "Davis v. Bandemer",
+        "full_name": "Davis v. Bandemer",
+        "citation": "478 U.S. 109 (1986)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1986-06-30",
+        "opinion_form": "plurality",
+        "procedural_disposition": "reversed",
+        "holding": "Equal protection challenges to partisan political gerrymandering are justiciable. The political question doctrine does not bar judicial review of claims that a legislative apportionment plan discriminates against an identifiable political group. However, the Indiana legislative reapportionment plan at issue does not constitute an unconstitutional partisan gerrymander \u2014 to succeed, plaintiffs must show both intentional discrimination against an identifiable political group and an actual discriminatory effect on that group's ability to influence the political process as a whole.",
+        "holding_type": "affirmative",
+        "majority_author": "White",
+        "per_curiam": false,
+        "vote": "6-3",
+        "opinions": [
+          {
+            "type": "concurrence",
+            "author": "O'Connor",
+            "joined_by": [
+              "Burger",
+              "Rehnquist"
+            ],
+            "doctrinal_significance": "O'Connor argued that partisan gerrymandering claims are non-justiciable political questions and that the plurality's standard for unconstitutional gerrymandering was unworkable.",
+            "adopted_in": [
+              "vieth_v_jubelirer_2004"
+            ]
+          }
+        ],
+        "status": "overruled",
+        "precedential_weight": "none",
+        "valid_from": "1986-06-30",
+        "valid_until": "2019-06-27",
+        "notes": "Davis v. Bandemer held partisan gerrymandering claims justiciable but set a standard so demanding that no plaintiff ever succeeded under it. Vieth v. Jubelirer (2004) produced a plurality that would have overruled Bandemer, and Rucho v. Common Cause (2019) definitively held that federal courts lack jurisdiction over partisan gerrymandering claims, effectively overruling Bandemer's justiciability holding."
+      },
+      {
+        "@type": "Case",
+        "id": "vieth_v_jubelirer_2004",
+        "short_name": "Vieth v. Jubelirer",
+        "full_name": "Vieth v. Jubelirer",
+        "citation": "541 U.S. 267 (2004)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "2004-04-28",
+        "opinion_form": "plurality",
+        "procedural_disposition": "affirmed",
+        "holding": "A four-justice plurality would hold that partisan gerrymandering claims present a non-justiciable political question because there are no judicially discoverable and manageable standards for adjudicating them. Justice Kennedy concurred in the judgment on the ground that no workable standard had been identified but declined to foreclose the possibility that such a standard might be developed in the future. Davis v. Bandemer's holding that partisan gerrymandering is justiciable was not overruled because Kennedy's concurrence declined to join the plurality's categorical holding.",
+        "holding_type": "affirmative",
+        "majority_author": "Scalia (plurality)",
+        "per_curiam": false,
+        "vote": "5-4",
+        "opinions": [
+          {
+            "type": "concurrence",
+            "author": "Kennedy",
+            "joined_by": [],
+            "doctrinal_significance": "Kennedy's decisive concurrence left open the possibility that a workable standard for partisan gerrymandering might be developed, preventing the plurality from overruling Bandemer while signaling deep skepticism about justiciability.",
+            "adopted_in": [
+              "rucho_v_common_cause_2019"
+            ]
+          }
+        ],
+        "status": "limited",
+        "precedential_weight": "binding",
+        "valid_from": "2004-04-28",
+        "valid_until": null,
+        "notes": "Vieth v. Jubelirer produced a deeply fractured Court on partisan gerrymandering. Because Kennedy declined to join Scalia's plurality, Bandemer was not formally overruled. Rucho v. Common Cause (2019) ultimately held that partisan gerrymandering claims present non-justiciable political questions, ending the search for a workable standard that Kennedy had kept open."
+      },
+      {
+        "@type": "Case",
+        "id": "bush_v_gore_2000",
+        "short_name": "Bush v. Gore",
+        "full_name": "Bush v. Gore",
+        "citation": "531 U.S. 98 (2000)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "2000-12-12",
+        "opinion_form": "per_curiam",
+        "procedural_disposition": "reversed",
+        "holding": "The Florida Supreme Court's order mandating manual recounts of undervotes in the 2000 presidential election violated the Equal Protection Clause because it lacked uniform standards for evaluating ballots. When a state grants the right to vote on equal terms, it may not value one person's vote over that of another through arbitrary and disparate treatment in the tabulation process. Because there was insufficient time to establish uniform standards before the federal safe harbor deadline, the recount could not continue. The per curiam opinion expressly limited its holding: 'Our consideration is limited to the present circumstances, for the problem of equal protection in election processes generally presents many complexities.'",
+        "holding_type": "affirmative",
+        "majority_author": null,
+        "per_curiam": true,
+        "vote": "5-4",
+        "opinions": [
+          {
+            "type": "dissent",
+            "author": "Stevens",
+            "joined_by": [
+              "Ginsburg",
+              "Breyer"
+            ],
+            "doctrinal_significance": "Stevens argued the majority's equal protection analysis was unprecedented, that the Court had no basis for stopping the recount, and that the decision threatened public confidence in the judiciary.",
+            "adopted_in": []
+          },
+          {
+            "type": "dissent",
+            "author": "Souter",
+            "joined_by": [
+              "Breyer"
+            ],
+            "doctrinal_significance": "Souter agreed there was an equal protection problem but argued the remedy should be to remand for establishment of uniform standards rather than ending the recount entirely.",
+            "adopted_in": []
+          }
+        ],
+        "status": "limited",
+        "precedential_weight": "binding",
+        "valid_from": "2000-12-12",
+        "valid_until": null,
+        "notes": "Bush v. Gore is one of the most controversial Supreme Court decisions in modern history. The per curiam opinion expressly stated it was 'limited to the present circumstances,' which courts have widely read as a signal that the decision should not be treated as precedent beyond its specific facts. The decision effectively ended the Florida recount and decided the 2000 presidential election. Its equal protection holding \u2014 that standardless manual recounts violate equal protection \u2014 has rarely been applied by lower courts."
+      },
+      {
+        "@type": "Case",
+        "id": "griffin_v_illinois_1956",
+        "short_name": "Griffin v. Illinois",
+        "full_name": "Griffin v. Illinois",
+        "citation": "351 U.S. 12 (1956)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1956-04-23",
+        "opinion_form": "plurality",
+        "procedural_disposition": "reversed",
+        "holding": "A state may not condition the right to appeal a criminal conviction on the defendant's ability to pay for a trial transcript. Destitute defendants must be afforded as adequate appellate review as defendants who can afford to pay for the trial transcript. There can be no equal justice where the kind of trial a man gets depends on the amount of money he has. The Due Process and Equal Protection Clauses require that criminal procedure be fair to all defendants regardless of wealth.",
+        "holding_type": "affirmative",
+        "majority_author": "Black",
+        "per_curiam": false,
+        "vote": "5-4",
+        "opinions": [],
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1956-04-23",
+        "valid_until": null,
+        "notes": "Griffin v. Illinois is the foundational case for the access-to-courts strand of equal protection doctrine, establishing that states cannot condition meaningful access to criminal appellate review on a defendant's ability to pay. The decision drew on both equal protection and due process, often in combination \u2014 a fusion that became characteristic of fundamental rights cases. Douglas v. California (1963) extended Griffin to the right to appointed counsel on first appeal."
+      },
+      {
+        "@type": "Case",
+        "id": "douglas_v_california_1963",
+        "short_name": "Douglas v. California",
+        "full_name": "Douglas v. California",
+        "citation": "372 U.S. 353 (1963)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1963-03-18",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "A state procedure under which appointed counsel is denied to an indigent defendant on a first appeal as of right violates the Equal Protection and Due Process Clauses of the Fourteenth Amendment. Where the merits of the one and only appeal an indigent has as of right are decided without benefit of counsel, there is inequality before the law in that an indigent, though entitled to appeal, does not have the right to have a lawyer argue on his behalf. The right to counsel on first appeal is constitutionally required.",
+        "holding_type": "affirmative",
+        "majority_author": "Douglas",
+        "per_curiam": false,
+        "vote": "6-3",
+        "opinions": [],
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1963-03-18",
+        "valid_until": null,
+        "notes": "Douglas v. California extended Griffin v. Illinois to the right to appointed counsel on first appeal as of right, holding that indigent defendants are entitled to counsel even on appeal. The decision is limited to first appeals as of right \u2014 Ross v. Moffitt (1974) held there is no constitutional right to appointed counsel for discretionary appeals or certiorari petitions."
+      },
+      {
+        "@type": "Case",
+        "id": "dandridge_v_williams_1970",
+        "short_name": "Dandridge v. Williams",
+        "full_name": "Dandridge v. Williams",
+        "citation": "397 U.S. 471 (1970)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1970-04-06",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "Maryland's maximum grant regulation, which limits welfare benefits regardless of family size, does not violate the Equal Protection Clause. The regulation bears a rational basis to Maryland's legitimate interest in encouraging employment and in allocating limited resources. In the area of economics and social welfare, a state does not violate the Equal Protection Clause merely because the classifications made by its laws are imperfect. The Constitution does not require the state to choose between attacking every aspect of a problem or not attacking the problem at all.",
+        "holding_type": "affirmative",
+        "majority_author": "Stewart",
+        "per_curiam": false,
+        "vote": "5-3",
+        "opinions": [
+          {
+            "type": "dissent",
+            "author": "Marshall",
+            "joined_by": [
+              "Brennan"
+            ],
+            "doctrinal_significance": "Marshall argued that welfare benefits are essential to survival and that the majority's rational basis analysis was insufficiently rigorous \u2014 the case should have received heightened scrutiny because the classification burdened the poor's ability to meet subsistence needs.",
+            "adopted_in": []
+          }
+        ],
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1970-04-06",
+        "valid_until": null,
+        "notes": "Dandridge v. Williams is the major equal protection precedent for the proposition that welfare benefit classifications receive only rational basis review \u2014 establishing that economic and social welfare legislation is subject to minimal scrutiny even when it affects the poor. The decision rejected the argument that poverty or welfare receipt should trigger heightened scrutiny, limiting the fundamental rights strand of equal protection. San Antonio ISD v. Rodriguez (1973) relied on Dandridge in rejecting education as a fundamental right."
+      },
+      {
+        "@type": "Case",
+        "id": "saenz_v_roe_1999",
+        "short_name": "Saenz v. Roe",
+        "full_name": "Saenz v. Roe",
+        "citation": "526 U.S. 489 (1999)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1999-05-17",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "affirmed",
+        "holding": "A California law limiting new residents for one year to the welfare benefits they would have received in their prior state of residence violates the right to travel protected by the Fourteenth Amendment's Privileges or Immunities Clause. The right to travel has three components: the right to enter and leave another state, the right to be treated as a welcome visitor in other states, and the right of a new resident to be treated like other citizens of the new state. The third component \u2014 the right of the newly arrived citizen \u2014 is protected by the Privileges or Immunities Clause, not merely by equal protection.",
+        "holding_type": "affirmative",
+        "majority_author": "Stevens",
+        "per_curiam": false,
+        "vote": "7-2",
+        "opinions": [
+          {
+            "type": "dissent",
+            "author": "Rehnquist",
+            "joined_by": [
+              "Thomas"
+            ],
+            "doctrinal_significance": "Rehnquist argued the majority was wrong to revive the Privileges or Immunities Clause, which had been dormant since the Slaughterhouse Cases (1873), and that the right to travel was adequately protected by equal protection doctrine.",
+            "adopted_in": []
+          }
+        ],
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1999-05-17",
+        "valid_until": null,
+        "notes": "Saenz v. Roe is constitutionally significant for reviving the Privileges or Immunities Clause of the Fourteenth Amendment as an independent source of constitutional rights \u2014 the first significant application of that clause since the Slaughterhouse Cases (1873) gutted it. The decision grounded the right to travel in the Privileges or Immunities Clause rather than equal protection, representing a major doctrinal shift in how the right to travel is conceptualized."
+      },
+      {
+        "@type": "Case",
+        "id": "bowers_v_hardwick_1986",
+        "short_name": "Bowers v. Hardwick",
+        "full_name": "Bowers v. Hardwick",
+        "citation": "478 U.S. 186 (1986)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1986-06-30",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "The Constitution does not confer a fundamental right upon homosexuals to engage in sodomy. The Court declined to announce a fundamental right to engage in homosexual sodomy in the face of longstanding criminal proscription of such conduct. Hardwick's asserted fundamental right \u2014 to engage in consensual homosexual sodomy \u2014 is facially different from the fundamental rights recognized in Meyer, Pierce, and Griswold. The issue is whether the Constitution confers a fundamental right to engage in consensual homosexual sodomy, and the answer is no.",
+        "holding_type": "affirmative",
+        "majority_author": "White",
+        "per_curiam": false,
+        "vote": "5-4",
+        "opinions": [
+          {
+            "type": "dissent",
+            "author": "Blackmun",
+            "joined_by": [
+              "Brennan",
+              "Marshall",
+              "Stevens"
+            ],
+            "doctrinal_significance": "Blackmun argued the case was about the fundamental right to be left alone in the most intimate aspects of one's life \u2014 not about a 'right to engage in homosexual sodomy' \u2014 and that the majority's framing was deliberately degrading.",
+            "adopted_in": [
+              "lawrence_v_texas_2003"
+            ]
+          }
+        ],
+        "status": "overruled",
+        "precedential_weight": "none",
+        "valid_from": "1986-06-30",
+        "valid_until": "2003-06-26",
+        "notes": "Bowers v. Hardwick held that the Constitution does not protect consensual homosexual sodomy. The decision was explicitly overruled by Lawrence v. Texas (2003), which held that Bowers was wrong when decided. Bowers is essential for understanding Lawrence \u2014 Lawrence's holding is the direct repudiation of Bowers's reasoning and framing. Justice Powell, who provided the fifth vote in Bowers, later said it was his biggest mistake."
       }
     ],
     "doctrinal_tests": [
@@ -13447,6 +13740,288 @@
         "state"
       ],
       "notes": "Companion cases decided the same day holding state and federal school segregation unconstitutional under the Fourteenth and Fifth Amendments respectively."
+    },
+    {
+      "id": "rice_applies_suspect_class",
+      "source_id": "rice_v_cayetano_2000",
+      "target_id": "suspect_classification_doctrine",
+      "edge_type": "APPLIES",
+      "valid_from": "2000-02-23",
+      "valid_until": null,
+      "jurisdiction": [
+        "state"
+      ],
+      "notes": "Rice applied strict scrutiny to strike an ancestry-based voting restriction, holding that ancestry classifications that function as racial proxies are subject to the same constitutional scrutiny as explicit racial classifications."
+    },
+    {
+      "id": "rice_interprets_a14",
+      "source_id": "rice_v_cayetano_2000",
+      "target_id": "amendment_14_section_1",
+      "edge_type": "INTERPRETS",
+      "valid_from": "2000-02-23",
+      "valid_until": null,
+      "jurisdiction": [
+        "state"
+      ]
+    },
+    {
+      "id": "bandemer_applies_ep_voting",
+      "source_id": "davis_v_bandemer_1986",
+      "target_id": "fundamental_rights_ep_doctrine",
+      "edge_type": "APPLIES",
+      "valid_from": "1986-06-30",
+      "valid_until": "2019-06-27",
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Bandemer held partisan gerrymandering claims justiciable under equal protection \u2014 later overruled on justiciability by Rucho v. Common Cause (2019)."
+    },
+    {
+      "id": "bandemer_interprets_a14",
+      "source_id": "davis_v_bandemer_1986",
+      "target_id": "amendment_14_section_1",
+      "edge_type": "INTERPRETS",
+      "valid_from": "1986-06-30",
+      "valid_until": null,
+      "jurisdiction": [
+        "state"
+      ]
+    },
+    {
+      "id": "vieth_modifies_gerrymandering",
+      "source_id": "vieth_v_jubelirer_2004",
+      "target_id": "fundamental_rights_ep_doctrine",
+      "edge_type": "MODIFIES",
+      "valid_from": "2004-04-28",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Complicates: Vieth's plurality would have overruled Bandemer as non-justiciable, but Kennedy's concurrence refused \u2014 leaving partisan gerrymandering's justiciability under equal protection nominally intact but practically undermined until Rucho v. Common Cause (2019).",
+      "direction": "complicates"
+    },
+    {
+      "id": "vieth_interprets_a14",
+      "source_id": "vieth_v_jubelirer_2004",
+      "target_id": "amendment_14_section_1",
+      "edge_type": "INTERPRETS",
+      "valid_from": "2004-04-28",
+      "valid_until": null,
+      "jurisdiction": [
+        "state"
+      ]
+    },
+    {
+      "id": "bush_gore_applies_voting_ep",
+      "source_id": "bush_v_gore_2000",
+      "target_id": "fundamental_rights_ep_doctrine",
+      "edge_type": "APPLIES",
+      "valid_from": "2000-12-12",
+      "valid_until": null,
+      "jurisdiction": [
+        "state"
+      ],
+      "notes": "Bush v. Gore applied the fundamental right to vote to require uniform standards in manual recounts \u2014 but expressly limited the holding to its unique facts, making its precedential value minimal."
+    },
+    {
+      "id": "bush_gore_interprets_a14",
+      "source_id": "bush_v_gore_2000",
+      "target_id": "amendment_14_section_1",
+      "edge_type": "INTERPRETS",
+      "valid_from": "2000-12-12",
+      "valid_until": null,
+      "jurisdiction": [
+        "state"
+      ]
+    },
+    {
+      "id": "griffin_establishes_access_courts",
+      "source_id": "griffin_v_illinois_1956",
+      "target_id": "fundamental_rights_ep_doctrine",
+      "edge_type": "MODIFIES",
+      "direction": "expands",
+      "valid_from": "1956-04-23",
+      "valid_until": null,
+      "jurisdiction": [
+        "state"
+      ],
+      "notes": "Expands: Griffin established the access-to-courts strand of fundamental rights equal protection, holding that states cannot condition meaningful appellate review on ability to pay for a trial transcript."
+    },
+    {
+      "id": "griffin_interprets_a14",
+      "source_id": "griffin_v_illinois_1956",
+      "target_id": "amendment_14_section_1",
+      "edge_type": "INTERPRETS",
+      "valid_from": "1956-04-23",
+      "valid_until": null,
+      "jurisdiction": [
+        "state"
+      ]
+    },
+    {
+      "id": "douglas_modifies_griffin",
+      "source_id": "douglas_v_california_1963",
+      "target_id": "fundamental_rights_ep_doctrine",
+      "edge_type": "MODIFIES",
+      "valid_from": "1963-03-18",
+      "valid_until": null,
+      "jurisdiction": [
+        "state"
+      ],
+      "notes": "Expands: Douglas extended Griffin's access-to-courts doctrine from the right to a trial transcript to the right to appointed counsel on first appeal as of right.",
+      "direction": "expands"
+    },
+    {
+      "id": "douglas_interprets_a14",
+      "source_id": "douglas_v_california_1963",
+      "target_id": "amendment_14_section_1",
+      "edge_type": "INTERPRETS",
+      "valid_from": "1963-03-18",
+      "valid_until": null,
+      "jurisdiction": [
+        "state"
+      ]
+    },
+    {
+      "id": "dandridge_applies_rational_basis",
+      "source_id": "dandridge_v_williams_1970",
+      "target_id": "rational_basis_ep_test",
+      "edge_type": "APPLIES",
+      "valid_from": "1970-04-06",
+      "valid_until": null,
+      "jurisdiction": [
+        "state"
+      ],
+      "notes": "Dandridge established that welfare benefit classifications receive only rational basis review, rejecting poverty as a suspect classification or welfare as a fundamental right."
+    },
+    {
+      "id": "dandridge_applies_rational_basis_doctrine",
+      "source_id": "dandridge_v_williams_1970",
+      "target_id": "rational_basis_doctrine",
+      "edge_type": "APPLIES",
+      "valid_from": "1970-04-06",
+      "valid_until": null,
+      "jurisdiction": [
+        "state"
+      ]
+    },
+    {
+      "id": "dandridge_interprets_a14",
+      "source_id": "dandridge_v_williams_1970",
+      "target_id": "amendment_14_section_1",
+      "edge_type": "INTERPRETS",
+      "valid_from": "1970-04-06",
+      "valid_until": null,
+      "jurisdiction": [
+        "state"
+      ]
+    },
+    {
+      "id": "rodriguez_applies_dandridge",
+      "source_id": "san_antonio_isd_v_rodriguez_1973",
+      "target_id": "rational_basis_doctrine",
+      "edge_type": "APPLIES",
+      "valid_from": "1973-03-21",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Rodriguez applied Dandridge's rational basis framework to reject education as a fundamental right and wealth as a suspect classification."
+    },
+    {
+      "id": "saenz_applies_travel_right",
+      "source_id": "saenz_v_roe_1999",
+      "target_id": "fundamental_rights_ep_doctrine",
+      "edge_type": "MODIFIES",
+      "direction": "clarifies",
+      "valid_from": "1999-05-17",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Clarifies: Saenz grounded the right to travel in the Privileges or Immunities Clause rather than equal protection, clarifying the constitutional basis for the travel right established in Shapiro."
+    },
+    {
+      "id": "saenz_distinguishes_shapiro",
+      "source_id": "saenz_v_roe_1999",
+      "target_id": "shapiro_v_thompson_1969",
+      "edge_type": "DISTINGUISHES",
+      "valid_from": "1999-05-17",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Saenz distinguished Shapiro by grounding the right of new residents to equal welfare benefits in the Privileges or Immunities Clause rather than equal protection \u2014 a significant doctrinal shift in the constitutional basis for the travel right."
+    },
+    {
+      "id": "saenz_interprets_a14",
+      "source_id": "saenz_v_roe_1999",
+      "target_id": "amendment_14_section_1",
+      "edge_type": "INTERPRETS",
+      "valid_from": "1999-05-17",
+      "valid_until": null,
+      "jurisdiction": [
+        "state"
+      ],
+      "notes": "Saenz grounded the right of newly arrived citizens in the Privileges or Immunities Clause of Section 1 of the Fourteenth Amendment \u2014 a significant revival of that clause after its dormancy since the Slaughterhouse Cases (1873). SCHEMA NOTE: Add saenz_interprets_privileges_immunities edge when amendment_14_privileges_immunities clause node is added."
+    },
+    {
+      "id": "bowers_applies_rational_basis_orientation",
+      "source_id": "bowers_v_hardwick_1986",
+      "target_id": "rational_basis_doctrine",
+      "edge_type": "APPLIES",
+      "valid_from": "1986-06-30",
+      "valid_until": "2003-06-26",
+      "jurisdiction": [
+        "state"
+      ],
+      "notes": "Bowers applied rational basis to uphold Georgia's sodomy law as applied to homosexual conduct, finding the longstanding criminalization of such conduct a sufficient rational basis."
+    },
+    {
+      "id": "bowers_interprets_a14",
+      "source_id": "bowers_v_hardwick_1986",
+      "target_id": "amendment_14_section_1",
+      "edge_type": "INTERPRETS",
+      "valid_from": "1986-06-30",
+      "valid_until": "2003-06-26",
+      "jurisdiction": [
+        "state"
+      ]
+    },
+    {
+      "id": "lawrence_overrules_bowers_explicit",
+      "source_id": "lawrence_v_texas_2003",
+      "target_id": "bowers_v_hardwick_1986",
+      "edge_type": "OVERRULES",
+      "overrule_type": "explicit",
+      "valid_from": "2003-06-26",
+      "valid_until": null,
+      "jurisdiction": [
+        "state"
+      ],
+      "notes": "Lawrence explicitly overruled Bowers v. Hardwick, stating it was wrong when decided and that its reasoning should be and now is rejected. The decision was grounded in substantive due process liberty rather than equal protection."
+    },
+    {
+      "id": "blackmun_bowers_precedes_lawrence",
+      "source_id": "bowers_v_hardwick_1986",
+      "target_id": "lawrence_v_texas_2003",
+      "edge_type": "INTELLECTUALLY_PRECEDES",
+      "opinion_ref": {
+        "opinion_type": "dissent",
+        "author": "Blackmun",
+        "note": "Blackmun's Bowers dissent arguing the case was about the fundamental right to be left alone was adopted in Lawrence"
+      },
+      "valid_from": "2003-06-26",
+      "valid_until": null,
+      "jurisdiction": [
+        "state"
+      ],
+      "notes": "Blackmun's Bowers dissent \u2014 reframing the issue as being about the fundamental right to be left alone rather than a 'right to engage in homosexual sodomy' \u2014 was effectively adopted by Kennedy's Lawrence majority, which similarly reframed the question around liberty rather than the specific conduct."
     }
   ],
   "schema_issues_found": [
