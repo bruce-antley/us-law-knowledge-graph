@@ -17,7 +17,7 @@
     "created": "2026-03-15",
     "status": "draft",
     "schema_version": "0.2",
-    "node_count": 242,
+    "node_count": 244,
     "edge_count": 522,
     "schema_issue_count": 41,
     "fixes_applied": [
@@ -1380,6 +1380,26 @@
         "provision_type": "amendment",
         "ratified_date": "1868-07-09",
         "notes": "Section 1 is the vehicle for incorporation of the Bill of Rights against the states via the Due Process Clause.",
+        "status": "active"
+      },
+      {
+        "@type": "ConstitutionalProvision",
+        "id": "amendment_5",
+        "label": "U.S. Const. amend. V",
+        "text": "No person shall be held to answer for a capital, or otherwise infamous crime, unless on a presentment or indictment of a Grand Jury, except in cases arising in the land or naval forces, or in the Militia, when in actual service in time of War or public danger; nor shall any person be subject for the same offence to be twice put in jeopardy of life or limb; nor shall be compelled in any criminal case to be a witness against himself, nor be deprived of life, liberty, or property, without due process of law; nor shall private property be taken for public use, without just compensation.",
+        "provision_type": "amendment",
+        "ratified_date": "1791-12-15",
+        "notes": "The Fifth Amendment contains five distinct clauses: Grand Jury, Double Jeopardy, Self-Incrimination, Due Process, and Takings. The Due Process Clause is the vehicle for federal equal protection doctrine (Bolling v. Sharpe) and substantive due process. The Self-Incrimination and Double Jeopardy Clauses are central to criminal procedure doctrine.",
+        "status": "active"
+      },
+      {
+        "@type": "ConstitutionalProvision",
+        "id": "amendment_5_due_process",
+        "label": "U.S. Const. amend. V (Due Process Clause)",
+        "text": "nor shall any person be deprived of life, liberty, or property, without due process of law",
+        "provision_type": "amendment",
+        "ratified_date": "1791-12-15",
+        "notes": "The Fifth Amendment Due Process Clause applies to the federal government. Bolling v. Sharpe (1954) read an implicit equal protection component into this clause, making the federal government subject to equal protection requirements parallel to the Fourteenth Amendment's explicit guarantee against states. Also the vehicle for substantive due process claims against federal action.",
         "status": "active"
       }
     ],
@@ -6329,7 +6349,8 @@
             "burden_note": "Government must show reasonable fit. Circuit split exists on whether 'least restrictive means' is required. See 44 Liquormart (1996) concurrences."
           }
         ],
-        "notes": "Prong 4 has generated the most doctrinal tension. Justice Thomas has argued commercial speech should receive full First Amendment protection, eliminating the need for Central Hudson entirely. Sorrell (2011) left open whether content- or speaker-based restrictions trigger a higher standard."
+        "notes": "Prong 4 has generated the most doctrinal tension. Justice Thomas has argued commercial speech should receive full First Amendment protection, eliminating the need for Central Hudson entirely. Sorrell (2011) left open whether content- or speaker-based restrictions trigger a higher standard.",
+        "test_form": "conjunctive"
       },
       {
         "@type": "DoctrinalTest",
@@ -6365,7 +6386,8 @@
             "contest_note": "The likelihood prong intersects with context in ways courts have handled inconsistently. Online speech contexts have generated significant disagreement \u2014 when is violent speech online 'likely' to produce imminent violence, given the disconnect between online advocacy and real-world action? Post-January 6 litigation has brought this to the foreground in lower courts."
           }
         ],
-        "notes": "Brandenburg per curiam was brief and left significant interpretive questions open. The test's intellectual origin lies in Holmes's Abrams dissent (1919) and Brandeis's Whitney concurrence (1927) \u2014 both of which insisted on imminence as a constitutional requirement \u2014 but those were minority positions for 40+ years. SCHEMA ISSUE: source_case_id points to Brandenburg, but the doctrinal content traces to non-majority opinions in earlier cases. The schema cannot currently represent that the 'source' of a test's intellectual substance differs from the case that made it majority law."
+        "notes": "Brandenburg per curiam was brief and left significant interpretive questions open. The test's intellectual origin lies in Holmes's Abrams dissent (1919) and Brandeis's Whitney concurrence (1927) \u2014 both of which insisted on imminence as a constitutional requirement \u2014 but those were minority positions for 40+ years. SCHEMA ISSUE: source_case_id points to Brandenburg, but the doctrinal content traces to non-majority opinions in earlier cases. The schema cannot currently represent that the 'source' of a test's intellectual substance differs from the case that made it majority law.",
+        "test_form": "conjunctive"
       },
       {
         "@type": "DoctrinalTest",
@@ -6401,7 +6423,8 @@
             "contest_note": "Counterman's majority held that recklessness is the constitutional floor but left open whether higher mental states are required. Justice Barrett (majority) and Justice Thomas (dissent) disagreed sharply on whether the First Amendment requires any subjective mental state for true threats. Circuit courts are actively working out: (1) whether purpose or knowledge is required in some contexts; (2) how to instruct juries on recklessness; (3) whether Counterman applies retroactively to convictions under objective-standard statutes. Active circuit split expected to produce cert petition within 2-3 years."
           }
         ],
-        "notes": "Counterman is the Court's most significant true threats decision since Virginia v. Black (2003). The recklessness standard resolves a long-standing circuit split but creates new interpretive questions. Pre-Counterman, the majority of circuits applied purely objective standards; post-Counterman those standards are constitutionally deficient. State statutes with objective-only true threats standards are now vulnerable to facial or as-applied challenges."
+        "notes": "Counterman is the Court's most significant true threats decision since Virginia v. Black (2003). The recklessness standard resolves a long-standing circuit split but creates new interpretive questions. Pre-Counterman, the majority of circuits applied purely objective standards; post-Counterman those standards are constitutionally deficient. State statutes with objective-only true threats standards are now vulnerable to facial or as-applied challenges.",
+        "test_form": "conjunctive"
       },
       {
         "@type": "DoctrinalTest",
@@ -6447,7 +6470,8 @@
             "contest_note": null
           }
         ],
-        "notes": "The test as articulated is a distillation from Near and Pentagon Papers. No single majority opinion has cleanly enumerated all three prongs \u2014 they emerge from the weight of the doctrine across multiple cases. SCHEMA ISSUE C: Pentagon Papers produced nine separate opinions, none commanding a majority. The doctrinal content of what the government must show is assembled from concurrences and dissents, not from a majority holding. The schema's source_case_id points to Near as the doctrinal source, but the test's operational prongs are substantially shaped by Pentagon Papers \u2014 a case with no majority opinion."
+        "notes": "The test as articulated is a distillation from Near and Pentagon Papers. No single majority opinion has cleanly enumerated all three prongs \u2014 they emerge from the weight of the doctrine across multiple cases. SCHEMA ISSUE C: Pentagon Papers produced nine separate opinions, none commanding a majority. The doctrinal content of what the government must show is assembled from concurrences and dissents, not from a majority holding. The schema's source_case_id points to Near as the doctrinal source, but the test's operational prongs are substantially shaped by Pentagon Papers \u2014 a case with no majority opinion.",
+        "test_form": "conjunctive"
       },
       {
         "@type": "DoctrinalTest",
@@ -6483,7 +6507,8 @@
             "contest_note": null
           }
         ],
-        "notes": "Madsen is important not just for the test but for the institutional holding that courts may issue injunctions restricting speech when needed to protect the rights of others \u2014 but that those injunctions are subject to constitutional scrutiny. The Madsen test has been applied and refined in Schenck v. Pro-Choice Network (1997) and Hill v. Colorado (2000), both of which are outside this slice's scope."
+        "notes": "Madsen is important not just for the test but for the institutional holding that courts may issue injunctions restricting speech when needed to protect the rights of others \u2014 but that those injunctions are subject to constitutional scrutiny. The Madsen test has been applied and refined in Schenck v. Pro-Choice Network (1997) and Hill v. Colorado (2000), both of which are outside this slice's scope.",
+        "test_form": "conjunctive"
       },
       {
         "@type": "DoctrinalTest",
@@ -6529,7 +6554,8 @@
             "contest_note": null
           }
         ],
-        "notes": "The actual malice standard has been extended beyond classic press defamation to: IIED claims by public figures (Hustler v. Falwell, 1988), false light invasion of privacy, and some tortious interference claims. The extension pattern is modeled through MODIFIES edges from the relevant cases."
+        "notes": "The actual malice standard has been extended beyond classic press defamation to: IIED claims by public figures (Hustler v. Falwell, 1988), false light invasion of privacy, and some tortious interference claims. The extension pattern is modeled through MODIFIES edges from the relevant cases.",
+        "test_form": "conjunctive"
       },
       {
         "@type": "DoctrinalTest",
@@ -6585,7 +6611,8 @@
             "contest_note": null
           }
         ],
-        "notes": "SCHEMA ISSUE A (second instance): This test functions as a threshold classification that determines which other test applies. It is a meta-test \u2014 a test about which test governs \u2014 rather than a test applied to the merits. The schema has no way to represent a DoctrinalTest that is a precondition to another DoctrinalTest rather than an independent test applied to the underlying facts. The GOVERNED_BY edge from freedom_of_press to this test is accurate, but the conditional relationship between this test and actual_malice_test is not expressible in the current edge vocabulary."
+        "notes": "SCHEMA ISSUE A (second instance): This test functions as a threshold classification that determines which other test applies. It is a meta-test \u2014 a test about which test governs \u2014 rather than a test applied to the merits. The schema has no way to represent a DoctrinalTest that is a precondition to another DoctrinalTest rather than an independent test applied to the underlying facts. The GOVERNED_BY edge from freedom_of_press to this test is accurate, but the conditional relationship between this test and actual_malice_test is not expressible in the current edge vocabulary.",
+        "test_form": "conjunctive"
       },
       {
         "@type": "DoctrinalTest",
@@ -6631,7 +6658,8 @@
             "contest_note": null
           }
         ],
-        "notes": "Status: modified rather than overruled. Smith did not overrule Sherbert across the board \u2014 it limited Sherbert to non-neutral, non-generally-applicable laws. Sherbert remains operative in its original domain (unemployment compensation cases and analogous individualized exemption systems) and was restored by RFRA for federal laws. The Sherbert test is also the model for RFRA's statutory compelling interest test. SCHEMA ISSUE B: RFRA (42 U.S.C. \u00a7 2000bb) restored the Sherbert test as a statutory matter after Smith abandoned it constitutionally. The graph models the constitutional Sherbert test but cannot represent that a statute has restored an abandoned constitutional standard. The constitutional test and the statutory test now coexist and are applied in different contexts. Phase 2 statute layer problem."
+        "notes": "Status: modified rather than overruled. Smith did not overrule Sherbert across the board \u2014 it limited Sherbert to non-neutral, non-generally-applicable laws. Sherbert remains operative in its original domain (unemployment compensation cases and analogous individualized exemption systems) and was restored by RFRA for federal laws. The Sherbert test is also the model for RFRA's statutory compelling interest test. SCHEMA ISSUE B: RFRA (42 U.S.C. \u00a7 2000bb) restored the Sherbert test as a statutory matter after Smith abandoned it constitutionally. The graph models the constitutional Sherbert test but cannot represent that a statute has restored an abandoned constitutional standard. The constitutional test and the statutory test now coexist and are applied in different contexts. Phase 2 statute layer problem.",
+        "test_form": "conjunctive"
       },
       {
         "@type": "DoctrinalTest",
@@ -6677,7 +6705,8 @@
             "contest_note": "The rational basis tier for neutral general laws is contested at the Supreme Court level \u2014 not in application but in validity. At least four sitting justices (Alito, Thomas, Gorsuch, and Barrett in Fulton) have questioned whether Smith correctly held that neutral general laws only require rational basis. If Smith is overruled, this prong disappears entirely and Sherbert's compelling interest standard is restored. SCHEMA ISSUE C: This is the first instance in the graph of a prong that is contested not because of application disagreements but because the test itself may be overruled. The contested flag was designed for circuit splits on prong meaning \u2014 not for intra-Court challenges to the test's existence."
           }
         ],
-        "notes": "Smith is the most contested Free Exercise precedent. Scalia's majority opinion was joined by only four other justices; O'Connor, joined by Brennan, Marshall, and Blackmun, concurred in the judgment but rejected the majority's reasoning and argued Sherbert should have been applied. The 5-4 split on reasoning (though not on result) foreshadowed the precedent's contested status. Justice Alito has written extensively against Smith in Fulton concurrences and other writings. The Barrett-Kavanaugh-Thomas concurrence in Fulton explicitly invited reconsideration."
+        "notes": "Smith is the most contested Free Exercise precedent. Scalia's majority opinion was joined by only four other justices; O'Connor, joined by Brennan, Marshall, and Blackmun, concurred in the judgment but rejected the majority's reasoning and argued Sherbert should have been applied. The 5-4 split on reasoning (though not on result) foreshadowed the precedent's contested status. Justice Alito has written extensively against Smith in Fulton concurrences and other writings. The Barrett-Kavanaugh-Thomas concurrence in Fulton explicitly invited reconsideration.",
+        "test_form": "conjunctive"
       },
       {
         "@type": "DoctrinalTest",
@@ -6723,7 +6752,8 @@
             "contest_note": "The excessive entanglement prong was eventually absorbed into the primary effect inquiry in Agostini v. Felton (1997), reducing Lemon from a three-part to an effectively two-part test in practice. The fact that courts were silently modifying the test's structure without formally overruling it contributed to its eventual demise."
           }
         ],
-        "notes": "The Lemon test is the first fully overruled DoctrinalTest in this graph. valid_until: 2022-06-27 (date of Kennedy v. Bremerton decision). status: overruled. The test governed Establishment Clause analysis for 51 years despite persistent criticism. Justice Scalia's Lamb's Chapel v. Center Moriches (1993) concurrence mocked the test as a 'ghoul in a horror movie.' Multiple justices called for its replacement in multiple cases. Kennedy v. Bremerton finally provided a majority willing to overrule it. SCHEMA ISSUE A: This is the first instance of a fully overruled DoctrinalTest with valid_until populated. The temporal model handles this correctly, but the visualization and query layer need to ensure overruled tests are displayed differently from active ones \u2014 particularly that queries for 'what test currently governs this area' exclude overruled tests."
+        "notes": "The Lemon test is the first fully overruled DoctrinalTest in this graph. valid_until: 2022-06-27 (date of Kennedy v. Bremerton decision). status: overruled. The test governed Establishment Clause analysis for 51 years despite persistent criticism. Justice Scalia's Lamb's Chapel v. Center Moriches (1993) concurrence mocked the test as a 'ghoul in a horror movie.' Multiple justices called for its replacement in multiple cases. Kennedy v. Bremerton finally provided a majority willing to overrule it. SCHEMA ISSUE A: This is the first instance of a fully overruled DoctrinalTest with valid_until populated. The temporal model handles this correctly, but the visualization and query layer need to ensure overruled tests are displayed differently from active ones \u2014 particularly that queries for 'what test currently governs this area' exclude overruled tests.",
+        "test_form": "conjunctive"
       },
       {
         "@type": "DoctrinalTest",
@@ -6759,7 +6789,8 @@
             "contest_note": "How much indirect pressure constitutes coercion is actively contested. The school prayer cases apply a sensitive coercion standard; cases involving adult audiences apply a more demanding standard. Kennedy v. Bremerton's majority found no coercion from a coach's personal prayers \u2014 the dissent argued this ignored the realistic coercive pressure on players. The post-Kennedy scope of the coercion standard in non-school contexts is unsettled."
           }
         ],
-        "notes": "The coercion test was Justice Kennedy's preferred alternative to Lemon, articulated in Lee v. Weisman. It survived Kennedy v. Bremerton (2022) as a distinct analytical framework \u2014 the Kennedy majority did not overrule the coercion test, only Lemon. The coercion test is particularly important in school prayer contexts where the captive audience and authority relationships make indirect pressure more salient."
+        "notes": "The coercion test was Justice Kennedy's preferred alternative to Lemon, articulated in Lee v. Weisman. It survived Kennedy v. Bremerton (2022) as a distinct analytical framework \u2014 the Kennedy majority did not overrule the coercion test, only Lemon. The coercion test is particularly important in school prayer contexts where the captive audience and authority relationships make indirect pressure more salient.",
+        "test_form": "conjunctive"
       },
       {
         "@type": "DoctrinalTest",
@@ -6805,7 +6836,8 @@
             "contest_note": null
           }
         ],
-        "notes": "source_case_id points to Roberts (1984) which established the test and has the ESTABLISHES edge. Dale (2000) significantly expanded and modified the test through a MODIFIES(expands) edge \u2014 Dale is the operative statement of how the test works in practice, but Roberts is the canonical source. The expressive association test was initially articulated in Roberts (1984) but its current form reflects Dale (2000), which significantly expanded the scope of expressive association protection and the deference courts give to groups' claims about their expressive purposes. source_case_id points to Dale as the operative statement of the test."
+        "notes": "source_case_id points to Roberts (1984) which established the test and has the ESTABLISHES edge. Dale (2000) significantly expanded and modified the test through a MODIFIES(expands) edge \u2014 Dale is the operative statement of how the test works in practice, but Roberts is the canonical source. The expressive association test was initially articulated in Roberts (1984) but its current form reflects Dale (2000), which significantly expanded the scope of expressive association protection and the deference courts give to groups' claims about their expressive purposes. source_case_id points to Dale as the operative statement of the test.",
+        "test_form": "conjunctive"
       },
       {
         "@type": "DoctrinalTest",
@@ -6851,7 +6883,8 @@
             "contest_note": "Bonta significantly tightened the compelled disclosure test by requiring narrow tailoring rather than merely a substantial relationship between disclosure and a state interest. The precise scope of Bonta's narrow tailoring requirement is being worked out in lower courts \u2014 particularly whether it effectively establishes strict scrutiny for donor disclosure or a somewhat less demanding standard."
           }
         ],
-        "notes": "The compelled disclosure test connects to the anonymous speech doctrine in core_political_speech. Both protect the ability to engage in expressive activity without government-compelled identification. Buckley v. Valeo (1976) established a somewhat different (more permissive) standard for campaign finance disclosure that exists in tension with the NAACP/Bonta line \u2014 that tension is a Phase 2 issue requiring the campaign finance doctrine to be modeled."
+        "notes": "The compelled disclosure test connects to the anonymous speech doctrine in core_political_speech. Both protect the ability to engage in expressive activity without government-compelled identification. Buckley v. Valeo (1976) established a somewhat different (more permissive) standard for campaign finance disclosure that exists in tension with the NAACP/Bonta line \u2014 that tension is a Phase 2 issue requiring the campaign finance doctrine to be modeled.",
+        "test_form": "conjunctive"
       },
       {
         "@type": "DoctrinalTest",
@@ -6886,7 +6919,8 @@
             "contested": true,
             "contest_note": "What constitutes 'substantial disruption' is contested at the margins. Courts disagree on whether a school can suppress speech in anticipation of third-party disruption (the heckler's veto problem), and on how much weight to give to evidence that the speech topic is controversial in the school community."
           }
-        ]
+        ],
+        "test_form": "conjunctive"
       },
       {
         "@type": "DoctrinalTest",
@@ -6931,7 +6965,8 @@
             "contested": false,
             "contest_note": null
           }
-        ]
+        ],
+        "test_form": "conjunctive"
       },
       {
         "@type": "DoctrinalTest",
@@ -6986,7 +7021,8 @@
             "contested": false,
             "contest_note": null
           }
-        ]
+        ],
+        "test_form": "conjunctive"
       },
       {
         "@type": "DoctrinalTest",
@@ -7021,7 +7057,8 @@
             "contested": true,
             "contest_note": "The scope of the anti-corruption interest is heavily contested. McConnell v. FEC (2003) took a broader view; Citizens United narrowed it back to quid pro quo corruption."
           }
-        ]
+        ],
+        "test_form": "balancing"
       },
       {
         "@type": "DoctrinalTest",
@@ -12912,14 +12949,14 @@
     {
       "id": "bolling_interprets_5th_amendment",
       "source_id": "bolling_v_sharpe_1954",
-      "target_id": "amendment_14_section_1",
+      "target_id": "amendment_5_due_process",
       "edge_type": "INTERPRETS",
       "valid_from": "1954-05-17",
       "valid_until": null,
       "jurisdiction": [
         "federal"
       ],
-      "notes": "Bolling grounded federal equal protection in the Fifth Amendment's Due Process Clause rather than the Fourteenth Amendment, which applies only to states. NOTE: This case is grounded in the Fifth Amendment Due Process Clause equal protection component, not the Fourteenth Amendment directly. Retarget to amendment_5_due_process when that node is added."
+      "notes": "Bolling grounded federal equal protection in the Fifth Amendment's Due Process Clause rather than the Fourteenth Amendment, which applies only to states."
     },
     {
       "id": "korematsu_establishes_strict_scrutiny",
@@ -13007,7 +13044,7 @@
     {
       "id": "washington_interprets_a14",
       "source_id": "washington_v_davis_1976",
-      "target_id": "amendment_14_section_1",
+      "target_id": "amendment_5_due_process",
       "edge_type": "INTERPRETS",
       "valid_from": "1976-06-07",
       "valid_until": null,
@@ -13015,7 +13052,7 @@
         "federal",
         "state"
       ],
-      "notes": " NOTE: This case is grounded in the Fifth Amendment Due Process Clause equal protection component, not the Fourteenth Amendment directly. Retarget to amendment_5_due_process when that node is added."
+      "notes": null
     },
     {
       "id": "arlington_modifies_intent_doctrine",
@@ -13095,7 +13132,7 @@
     {
       "id": "adarand_interprets_a14",
       "source_id": "adarand_constructors_v_pena_1995",
-      "target_id": "amendment_14_section_1",
+      "target_id": "amendment_5_due_process",
       "edge_type": "INTERPRETS",
       "valid_from": "1995-06-12",
       "valid_until": null,
@@ -13103,7 +13140,7 @@
         "federal",
         "state"
       ],
-      "notes": " NOTE: This case is grounded in the Fifth Amendment Due Process Clause equal protection component, not the Fourteenth Amendment directly. Retarget to amendment_5_due_process when that node is added."
+      "notes": null
     },
     {
       "id": "grutter_applies_affirmative_action",
@@ -13239,14 +13276,14 @@
     {
       "id": "frontiero_interprets_a14",
       "source_id": "frontiero_v_richardson_1973",
-      "target_id": "amendment_14_section_1",
+      "target_id": "amendment_5_due_process",
       "edge_type": "INTERPRETS",
       "valid_from": "1973-05-14",
       "valid_until": null,
       "jurisdiction": [
         "federal"
       ],
-      "notes": " NOTE: This case is grounded in the Fifth Amendment Due Process Clause equal protection component, not the Fourteenth Amendment directly. Retarget to amendment_5_due_process when that node is added."
+      "notes": null
     },
     {
       "id": "craig_establishes_intermediate_scrutiny",
@@ -13377,7 +13414,7 @@
     {
       "id": "moreno_interprets_a14",
       "source_id": "us_dept_of_agriculture_v_moreno_1973",
-      "target_id": "amendment_14_section_1",
+      "target_id": "amendment_5_due_process",
       "edge_type": "INTERPRETS",
       "valid_from": "1973-06-25",
       "valid_until": null,
@@ -13385,7 +13422,7 @@
         "federal",
         "state"
       ],
-      "notes": " NOTE: This case is grounded in the Fifth Amendment Due Process Clause equal protection component, not the Fourteenth Amendment directly. Retarget to amendment_5_due_process when that node is added."
+      "notes": null
     },
     {
       "id": "cleburne_applies_rational_basis_bite",
@@ -14022,6 +14059,18 @@
         "state"
       ],
       "notes": "Blackmun's Bowers dissent \u2014 reframing the issue as being about the fundamental right to be left alone rather than a 'right to engage in homosexual sodomy' \u2014 was effectively adopted by Kennedy's Lawrence majority, which similarly reframed the question around liberty rather than the specific conduct."
+    },
+    {
+      "id": "amendment_5_due_process_part_of_5",
+      "source_id": "amendment_5_due_process",
+      "target_id": "amendment_5",
+      "edge_type": "INCORPORATES",
+      "valid_from": "1791-12-15",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ],
+      "notes": "The Due Process Clause is one of five clauses of the Fifth Amendment."
     }
   ],
   "schema_issues_found": [
