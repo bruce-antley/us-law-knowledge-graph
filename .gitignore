@@ -1,0 +1,27 @@
+# Environment files
+.env
+*.env
+.env.*
+
+# API keys and secrets
+secrets.json
+config.local.json
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.Python
+*.egg-info/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Pipeline working files
+raw_output_backup.txt
+draft_*.json
