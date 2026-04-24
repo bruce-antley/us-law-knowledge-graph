@@ -7,6 +7,8 @@ The graph models legal doctrine as structure: what tests govern a doctrinal area
 **Current status:** MVP — Constitutional Law. First Amendment (complete) and Equal Protection (complete). Graph building pipeline operational with LLM-assisted extraction, schema validation, and CourtListener factual QA.
 
 ---
+![U.S. Law Knowledge Graph — First Amendment and Equal Protection](docs/images/graph_screenshot.png)
+*244 nodes · 522 edges · First Amendment (8 doctrinal areas) and Equal Protection fully modeled*
 
 ## Why a knowledge graph
 
