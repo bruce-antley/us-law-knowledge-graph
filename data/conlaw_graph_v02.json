@@ -17,8 +17,8 @@
     "created": "2026-03-15",
     "status": "draft",
     "schema_version": "0.2",
-    "node_count": 250,
-    "edge_count": 527,
+    "node_count": 254,
+    "edge_count": 535,
     "schema_issue_count": 41,
     "fixes_applied": [
       "FIX 1: ConstitutionalProvision labels changed to citation form (amendment_1, amendment_14_section_1) to disambiguate from Area nodes with same common-name labels",
@@ -1064,7 +1064,7 @@
         "id": "substantive_due_process_doctrine",
         "label": "Substantive Due Process",
         "description": "The doctrine that the Due Process Clause of the Fourteenth Amendment protects substantive rights, including those not explicitly mentioned in the Constitution but deemed fundamental because they are deeply rooted in the Nation's history and tradition and essential to ordered liberty.",
-        "area_id": "individual_rights",
+        "area_id": "substantive_due_process",
         "jurisdiction": [
           "federal",
           "state"
@@ -1094,7 +1094,7 @@
         "id": "rational_basis_review_doctrine",
         "label": "Rational Basis Review (Substantive Due Process)",
         "description": "The standard of review applicable to state regulations that do not implicate fundamental rights or suspect classifications, requiring only that the regulation be rationally related to a legitimate state interest.",
-        "area_id": "individual_rights",
+        "area_id": "substantive_due_process",
         "jurisdiction": [
           "federal",
           "state"
@@ -1103,6 +1103,36 @@
         "valid_from": "1900-01-01",
         "valid_until": null,
         "notes": "Dobbs holds that rational-basis review is the appropriate standard for state abortion regulations, as abortion is not a fundamental constitutional right."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "substantive_due_process_marriage",
+        "label": "Substantive Due Process Protection of Marriage",
+        "description": "The Fourteenth Amendment's Due Process Clause protects the fundamental right to marry as an aspect of liberty and personal autonomy, extending to personal choices central to individual dignity and autonomy, including intimate choices defining personal identity and beliefs.",
+        "area_id": "substantive_due_process",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "2015-06-26",
+        "valid_until": null,
+        "notes": "Established in Obergefell; builds on precedents including Griswold v. Connecticut, Eisenstadt v. Baird, Loving v. Virginia, Turner v. Safley, and Lawrence v. Texas."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "equal_protection_marriage",
+        "label": "Equal Protection in Marriage",
+        "description": "The Fourteenth Amendment's Equal Protection Clause prohibits laws that deny same-sex couples the benefits afforded opposite-sex couples and bar them from exercising the fundamental right to marry, particularly where such denial works grave and continuing harm by disrespecting and subordinating gays and lesbians.",
+        "area_id": "equal_protection",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "2015-06-26",
+        "valid_until": null,
+        "notes": "Established in Obergefell; recognizes the interlocking nature of Due Process and Equal Protection Clauses in the context of same-sex marriage."
       }
     ],
     "areas": [
@@ -1404,6 +1434,22 @@
           "state"
         ],
         "tier": "doctrine"
+      },
+      {
+        "@type": "Area",
+        "id": "substantive_due_process",
+        "label": "Substantive Due Process > Doctrine",
+        "description": "The doctrine under which the Due Process Clause of the Fourteenth Amendment protects certain fundamental rights and liberties not explicitly enumerated in the Constitution. Rights must be deeply rooted in the Nation's history and tradition and essential to ordered liberty to qualify for substantive due process protection. The doctrine is distinct from procedural due process, which requires fair procedures before the government deprives a person of life, liberty, or property.",
+        "parent_id": "individual_rights",
+        "primary_constitutional_grounding": "amendment_14_section_1",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "tier": 2,
+        "status": "active",
+        "valid_from": "1868-07-28",
+        "valid_until": null
       }
     ],
     "constitutional_provisions": [
@@ -6442,6 +6488,31 @@
         "valid_until": "2022-06-24",
         "opinions": [],
         "notes": "Stub node \u2014 overruled by dobbs_v_jackson_womens_health_organization_2022. Full node to be added when this case is modeled."
+      },
+      {
+        "@type": "Case",
+        "id": "baker_v_nelson_1972",
+        "short_name": "Baker v. Nelson",
+        "full_name": "Baker v. Nelson",
+        "citation": "409 U.S. 810 (1972)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1972-11-10",
+        "opinion_form": "memorandum",
+        "procedural_disposition": "affirmed",
+        "holding": "The exclusion of same-sex couples from marriage does not present a substantial federal question.",
+        "holding_type": "by_negation",
+        "majority_author": null,
+        "per_curiam": false,
+        "vote": null,
+        "status": "overruled",
+        "precedential_weight": "none",
+        "valid_from": "1972-11-10",
+        "valid_until": "2015-06-26",
+        "data_tier": "inferred",
+        "opinions": [],
+        "notes": "Stub node \u2014 overruled by obergefell_v_hodges_2015. One-line summary decision."
       }
     ],
     "doctrinal_tests": [
@@ -14272,6 +14343,106 @@
         "state"
       ],
       "notes": "Dobbs holds that rational-basis review is the appropriate standard for evaluating state abortion regulations, as abortion is not a fundamental constitutional right."
+    },
+    {
+      "id": "obergefell_overrules_baker",
+      "source_id": "obergefell_v_hodges_2015",
+      "target_id": "baker_v_nelson_1972",
+      "edge_type": "OVERRULES",
+      "overrule_type": "explicit",
+      "valid_from": "2015-06-26",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Obergefell explicitly overrules Baker v. Nelson, holding that the exclusion of same-sex couples from marriage does present a substantial federal question."
+    },
+    {
+      "id": "obergefell_establishes_sdp_marriage",
+      "source_id": "obergefell_v_hodges_2015",
+      "target_id": "substantive_due_process_marriage",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2015-06-26",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Obergefell establishes that the fundamental right to marry extends to same-sex couples under the Due Process Clause of the Fourteenth Amendment."
+    },
+    {
+      "id": "obergefell_establishes_ep_marriage",
+      "source_id": "obergefell_v_hodges_2015",
+      "target_id": "equal_protection_marriage",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2015-06-26",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Obergefell establishes that state laws denying same-sex couples the right to marry violate the Equal Protection Clause of the Fourteenth Amendment."
+    },
+    {
+      "id": "sdp_child_of_individual_rights",
+      "source_id": "substantive_due_process",
+      "target_id": "individual_rights",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1868-07-28",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "sdp_grounded_in_14a",
+      "source_id": "substantive_due_process",
+      "target_id": "amendment_14_section_1",
+      "edge_type": "GROUNDED_IN",
+      "valid_from": "1868-07-28",
+      "valid_until": null,
+      "jurisdiction": [
+        "state"
+      ],
+      "notes": "Substantive due process is grounded in the Due Process Clause of Section 1 of the Fourteenth Amendment."
+    },
+    {
+      "id": "sdp_governed_by_sdp_doctrine",
+      "source_id": "substantive_due_process",
+      "target_id": "substantive_due_process_doctrine",
+      "edge_type": "GOVERNED_BY",
+      "valid_from": "1868-07-28",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "sdp_governed_by_sdp_marriage",
+      "source_id": "substantive_due_process",
+      "target_id": "substantive_due_process_marriage",
+      "edge_type": "GOVERNED_BY",
+      "valid_from": "2015-06-26",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "sdp_governed_by_rational_basis",
+      "source_id": "substantive_due_process",
+      "target_id": "rational_basis_review_doctrine",
+      "edge_type": "GOVERNED_BY",
+      "valid_from": "2022-06-24",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
     }
   ],
   "schema_issues_found": [
