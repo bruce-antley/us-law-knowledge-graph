@@ -383,6 +383,18 @@ def validate_graph_level(nodes, node_types, edges, cross_slice_ok, r, draft_mode
         if node_types.get(nid) == 'DoctrinalTest':
             scid = node.get('source_case_id')
             if scid:
+                # E020 (v0.5): DoctrinalTest must not be sourced from a stub/inferred case
+                # Only applies in draft mode — in production, overruled cases can legitimately
+                # have established tests that survive (e.g., Korematsu → strict scrutiny)
+                source_node = nodes.get(scid, {})
+                if draft_mode and (source_node.get('data_tier') == 'inferred' or
+                        source_node.get('status') == 'overruled'):
+                    r.error('E020',
+                        f"DoctrinalTest source_case_id='{scid}' points to an overruled or "
+                        f"stub case in this draft. Do not extract DoctrinalTest nodes for "
+                        f"overruled stub cases — remove this DoctrinalTest from the draft.",
+                        f"DoctrinalTest:{nid}")
+
                 source_is_local = scid in nodes
                 if source_is_local:
                     if nid not in establishes_map:

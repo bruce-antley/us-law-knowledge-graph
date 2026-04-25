@@ -17,8 +17,8 @@
     "created": "2026-03-15",
     "status": "draft",
     "schema_version": "0.2",
-    "node_count": 244,
-    "edge_count": 522,
+    "node_count": 250,
+    "edge_count": 527,
     "schema_issue_count": 41,
     "fixes_applied": [
       "FIX 1: ConstitutionalProvision labels changed to citation form (amendment_1, amendment_14_section_1) to disambiguate from Area nodes with same common-name labels",
@@ -1058,6 +1058,51 @@
         "valid_from": "1964-06-15",
         "valid_until": null,
         "notes": "The fundamental rights strand of equal protection emerged from Harper v. Virginia Board of Elections (1966) (voting) and Shapiro v. Thompson (1969) (travel). San Antonio ISD v. Rodriguez (1973) declined to extend the doctrine to education, holding that education is not a fundamental right under the Equal Protection Clause."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "substantive_due_process_doctrine",
+        "label": "Substantive Due Process",
+        "description": "The doctrine that the Due Process Clause of the Fourteenth Amendment protects substantive rights, including those not explicitly mentioned in the Constitution but deemed fundamental because they are deeply rooted in the Nation's history and tradition and essential to ordered liberty.",
+        "area_id": "individual_rights",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1868-07-28",
+        "valid_until": null,
+        "notes": "Dobbs clarifies that substantive due process protection requires that a right be deeply rooted in the Nation's history and tradition and essential to ordered liberty. The Court rejected the application of this doctrine to abortion."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "stare_decisis_doctrine",
+        "label": "Stare Decisis",
+        "description": "The doctrine that courts should respect and follow precedent, though it is not an inexorable command and is weakest when interpreting the Constitution.",
+        "area_id": "constitutional_law",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1800-01-01",
+        "valid_until": null,
+        "notes": "Dobbs reaffirms that stare decisis is not an inexorable command and is at its weakest in constitutional interpretation. The Court identified five factors for determining when precedent should be overruled: nature of error, quality of reasoning, workability, effect on other areas of law, and reliance interests."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "rational_basis_review_doctrine",
+        "label": "Rational Basis Review (Substantive Due Process)",
+        "description": "The standard of review applicable to state regulations that do not implicate fundamental rights or suspect classifications, requiring only that the regulation be rationally related to a legitimate state interest.",
+        "area_id": "individual_rights",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1900-01-01",
+        "valid_until": null,
+        "notes": "Dobbs holds that rational-basis review is the appropriate standard for state abortion regulations, as abortion is not a fundamental constitutional right."
       }
     ],
     "areas": [
@@ -6308,6 +6353,95 @@
         "valid_from": "1986-06-30",
         "valid_until": "2003-06-26",
         "notes": "Bowers v. Hardwick held that the Constitution does not protect consensual homosexual sodomy. The decision was explicitly overruled by Lawrence v. Texas (2003), which held that Bowers was wrong when decided. Bowers is essential for understanding Lawrence \u2014 Lawrence's holding is the direct repudiation of Bowers's reasoning and framing. Justice Powell, who provided the fifth vote in Bowers, later said it was his biggest mistake."
+      },
+      {
+        "@type": "Case",
+        "id": "dobbs_v_jackson_womens_health_organization_2022",
+        "short_name": "Dobbs v. Jackson Women's Health Organization",
+        "full_name": "Dobbs, State Health Officer of the Mississippi Department of Health, et al. v. Jackson Women's Health Organization et al.",
+        "citation": "142 S. Ct. 2228 (2022)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "2022-06-24",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "The Constitution does not confer a right to abortion; Roe v. Wade and Planned Parenthood v. Casey are overruled; and the authority to regulate abortion is returned to the people and their elected representatives. Rational-basis review is the appropriate standard for state abortion regulations.",
+        "holding_type": "affirmative",
+        "majority_author": "Alito",
+        "per_curiam": false,
+        "vote": "6-3",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "2022-06-24",
+        "valid_until": null,
+        "opinions": [
+          {
+            "type": "concurrence",
+            "author": "Thomas"
+          },
+          {
+            "type": "concurrence",
+            "author": "Kavanaugh"
+          },
+          {
+            "type": "concurrence_in_judgment",
+            "author": "Roberts"
+          },
+          {
+            "type": "dissent",
+            "author": "Breyer, Sotomayor, Kagan"
+          }
+        ],
+        "notes": "Majority opinion joined by Thomas, Gorsuch, Kavanaugh, and Barrett. Roberts concurred in the judgment but would have taken a narrower approach. Breyer, Sotomayor, and Kagan dissented. The decision explicitly overrules Roe v. Wade (1973) and Planned Parenthood v. Casey (1992)."
+      },
+      {
+        "@type": "Case",
+        "id": "roe_v_wade_1973",
+        "short_name": "Roe v. Wade",
+        "full_name": "Roe v. Wade",
+        "citation": "410 U.S. 113 (1973)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1973-01-22",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "affirmed",
+        "holding": "The Constitution protects a woman's right to obtain an abortion prior to fetal viability, subject to state regulation that does not substantially burden that right.",
+        "holding_type": "affirmative",
+        "majority_author": null,
+        "per_curiam": false,
+        "vote": null,
+        "status": "overruled",
+        "precedential_weight": "none",
+        "valid_from": "1973-01-22",
+        "valid_until": "2022-06-24",
+        "opinions": [],
+        "notes": "Stub node \u2014 overruled by dobbs_v_jackson_womens_health_organization_2022. Full node to be added when this case is modeled."
+      },
+      {
+        "@type": "Case",
+        "id": "planned_parenthood_v_casey_1992",
+        "short_name": "Planned Parenthood v. Casey",
+        "full_name": "Planned Parenthood of Southeastern Pennsylvania v. Casey",
+        "citation": "505 U.S. 833 (1992)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1992-06-29",
+        "opinion_form": "plurality",
+        "procedural_disposition": "affirmed_in_part",
+        "holding": "The essential holding of Roe v. Wade is reaffirmed: a woman has a right to obtain an abortion prior to fetal viability without excessive government restriction, subject to an undue burden standard.",
+        "holding_type": "affirmative",
+        "majority_author": null,
+        "per_curiam": false,
+        "vote": null,
+        "status": "overruled",
+        "precedential_weight": "none",
+        "valid_from": "1992-06-29",
+        "valid_until": "2022-06-24",
+        "opinions": [],
+        "notes": "Stub node \u2014 overruled by dobbs_v_jackson_womens_health_organization_2022. Full node to be added when this case is modeled."
       }
     ],
     "doctrinal_tests": [
@@ -14071,6 +14205,73 @@
         "federal"
       ],
       "notes": "The Due Process Clause is one of five clauses of the Fifth Amendment."
+    },
+    {
+      "id": "dobbs_overrules_roe",
+      "source_id": "dobbs_v_jackson_womens_health_organization_2022",
+      "target_id": "roe_v_wade_1973",
+      "edge_type": "OVERRULES",
+      "valid_from": "2022-06-24",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "overrule_type": "explicit",
+      "notes": "Dobbs explicitly overrules Roe v. Wade, holding that the Constitution does not confer a right to abortion."
+    },
+    {
+      "id": "dobbs_overrules_casey",
+      "source_id": "dobbs_v_jackson_womens_health_organization_2022",
+      "target_id": "planned_parenthood_v_casey_1992",
+      "edge_type": "OVERRULES",
+      "valid_from": "2022-06-24",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "overrule_type": "explicit",
+      "notes": "Dobbs explicitly overrules Planned Parenthood v. Casey, which had reaffirmed Roe's essential holding."
+    },
+    {
+      "id": "dobbs_applies_substantive_due_process",
+      "source_id": "dobbs_v_jackson_womens_health_organization_2022",
+      "target_id": "substantive_due_process_doctrine",
+      "edge_type": "APPLIES",
+      "valid_from": "2022-06-24",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Dobbs applies the substantive due process doctrine to determine whether abortion is a protected liberty interest, concluding that it is not deeply rooted in the Nation's history and tradition."
+    },
+    {
+      "id": "dobbs_applies_stare_decisis",
+      "source_id": "dobbs_v_jackson_womens_health_organization_2022",
+      "target_id": "stare_decisis_doctrine",
+      "edge_type": "APPLIES",
+      "valid_from": "2022-06-24",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Dobbs applies stare decisis principles to justify overruling Roe and Casey, identifying five factors that weigh in favor of overruling."
+    },
+    {
+      "id": "dobbs_applies_rational_basis_review",
+      "source_id": "dobbs_v_jackson_womens_health_organization_2022",
+      "target_id": "rational_basis_review_doctrine",
+      "edge_type": "APPLIES",
+      "valid_from": "2022-06-24",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Dobbs holds that rational-basis review is the appropriate standard for evaluating state abortion regulations, as abortion is not a fundamental constitutional right."
     }
   ],
   "schema_issues_found": [
