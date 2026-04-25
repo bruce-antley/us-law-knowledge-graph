@@ -224,6 +224,19 @@ def compare_case(case_node, cl_facts):
                 "message": f"Author names differ: draft='{draft_author}', CL='{cl_author}'"
             })
 
+    # Check for slip opinion citation (e.g. "576 U.S. ___ (2015)")
+    draft_citation = case_node.get("citation", "")
+    if "___" in draft_citation:
+        cl_citation = cl_facts.get("citation", "")
+        findings.append({
+            "field": "citation",
+            "severity": "medium",
+            "draft_value": draft_citation,
+            "cl_value": cl_citation,
+            "message": f"Slip opinion citation '{draft_citation}' — patch with final reporter citation from CourtListener",
+            "auto_patch": True
+        })
+
     # Check case name similarity
     draft_name = case_node.get("short_name", "")
     cl_name = cl_facts.get("case_name", "")
