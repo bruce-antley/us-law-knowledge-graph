@@ -17,8 +17,8 @@
     "created": "2026-03-15",
     "status": "draft",
     "schema_version": "0.2",
-    "node_count": 258,
-    "edge_count": 539,
+    "node_count": 261,
+    "edge_count": 541,
     "schema_issue_count": 41,
     "fixes_applied": [
       "FIX 1: ConstitutionalProvision labels changed to citation form (amendment_1, amendment_14_section_1) to disambiguate from Area nodes with same common-name labels",
@@ -1178,6 +1178,21 @@
         "valid_from": "2003-06-26",
         "valid_until": null,
         "notes": "Established in Lawrence v. Texas. Applies to consensual conduct between adults in private settings. Does not extend to minors, coerced conduct, public conduct, or prostitution."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "right_to_refuse_medical_treatment",
+        "label": "Right to Refuse Medical Treatment",
+        "description": "A liberty interest under the Due Process Clause of the Fourteenth Amendment protecting a competent person's right to refuse unwanted medical treatment, including life-sustaining hydration and nutrition.",
+        "area_id": "substantive_due_process",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1990-06-25",
+        "valid_until": null,
+        "notes": "Cruzan established that this right exists for competent persons but does not automatically extend to incompetent persons. States may impose procedural safeguards, including clear and convincing evidence standards, to protect this interest."
       }
     ],
     "areas": [
@@ -6618,6 +6633,62 @@
           }
         ],
         "notes": "Majority opinion joined by Clark, Harlan, Brennan, White, Goldberg, and Warren. Multiple concurrences reflect different constitutional grounds for the right to marital privacy."
+      },
+      {
+        "@type": "Case",
+        "id": "cruzan_v_director_1990",
+        "short_name": "Cruzan v. Director",
+        "full_name": "Cruzan v. Director, Missouri Department of Health",
+        "citation": "497 U.S. 261 (1990)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1990-06-25",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "affirmed",
+        "holding": "The United States Constitution does not forbid a state from requiring that evidence of an incompetent person's wishes as to the withdrawal of life-sustaining treatment be proved by clear and convincing evidence, and a state may constitutionally apply such a standard as a procedural safeguard to protect the liberty interest in refusing unwanted medical treatment.",
+        "holding_type": "affirmative",
+        "majority_author": "Rehnquist",
+        "per_curiam": false,
+        "vote": "5-4",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1990-06-25",
+        "valid_until": null,
+        "opinions": [
+          {
+            "type": "concurrence",
+            "author": "O'Connor",
+            "doctrinal_significance": "Grounded right to refuse treatment in liberty rather than privacy; emphasized importance of advance directives",
+            "joined_by": [],
+            "adopted_in": []
+          },
+          {
+            "type": "concurrence",
+            "author": "Scalia",
+            "doctrinal_significance": "Argued no constitutional right to refuse treatment exists; matter for states to decide",
+            "joined_by": [],
+            "adopted_in": []
+          },
+          {
+            "type": "dissent",
+            "author": "Brennan",
+            "doctrinal_significance": "Argued Missouri's clear and convincing standard was unconstitutional as applied; right to refuse treatment is fundamental",
+            "joined_by": [
+              "Marshall",
+              "Blackmun"
+            ],
+            "adopted_in": []
+          },
+          {
+            "type": "dissent",
+            "author": "Stevens",
+            "doctrinal_significance": "Argued Missouri's interest in preserving life could not override individual liberty interest",
+            "joined_by": [],
+            "adopted_in": []
+          }
+        ],
+        "notes": "The Court assumed for purposes of this case that a competent person has a constitutionally protected liberty interest under the Due Process Clause in refusing lifesaving hydration and nutrition, but held that an incompetent person does not necessarily possess the same right. The Court rejected the argument that close family members have a constitutional right to exercise substituted judgment for an incompetent patient absent substantial proof that their views reflect the patient's wishes."
       }
     ],
     "doctrinal_tests": [
@@ -7483,6 +7554,43 @@
         "source_case_id": "united_states_v_carolene_products_1938",
         "scrutiny_level": "rational_basis",
         "burden": "challenger"
+      },
+      {
+        "@type": "DoctrinalTest",
+        "id": "cruzan_clear_convincing_evidence_test",
+        "label": "Clear and Convincing Evidence Standard for Withdrawal of Life-Sustaining Treatment",
+        "description": "A procedural standard requiring that evidence of an incompetent person's wishes regarding withdrawal of life-sustaining treatment be proved by clear and convincing evidence, balancing the individual's liberty interest against state interests in preserving life and protecting against surrogate abuse.",
+        "area_id": "substantive_due_process",
+        "source_case_id": "cruzan_v_director_1990",
+        "scrutiny_level": "balancing",
+        "burden": "challenger",
+        "test_form": "balancing",
+        "prongs": [
+          {
+            "number": 1,
+            "label": "Individual Liberty Interest",
+            "description": "The competent person's constitutionally protected liberty interest in refusing unwanted medical treatment, including life-sustaining hydration and nutrition.",
+            "burden_note": "The challenger seeking to withdraw treatment must prove the incompetent person's wishes by clear and convincing evidence.",
+            "valid_from": "1990-06-25",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 2,
+            "label": "State Interests",
+            "description": "The state's interests include: (a) general interest in protection and preservation of human life; (b) safeguarding the personal element of an individual's choice between life and death; (c) guarding against potential abuses by surrogates; (d) ensuring accurate factfinding through adversarial process; and (e) declining to make judgments about quality of life while asserting an unqualified interest in preservation of human life.",
+            "burden_note": "The state bears the burden of articulating and defending its interests; the clear and convincing evidence standard distributes the risk of erroneous decision on those seeking to terminate treatment.",
+            "valid_from": "1990-06-25",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          }
+        ],
+        "status": "active",
+        "valid_from": "1990-06-25",
+        "valid_until": null,
+        "notes": "This test applies specifically to decisions regarding withdrawal of life-sustaining treatment for incompetent persons. The Court emphasized that an erroneous decision to withdraw treatment cannot be corrected, whereas an erroneous decision not to withdraw maintains the status quo and may be corrected by future events. The test does not require states to accept substituted judgment by family members absent substantial proof that their views reflect the patient's wishes."
       }
     ]
   },
@@ -14600,6 +14708,32 @@
         "state"
       ],
       "notes": "Lawrence establishes the doctrine that private, consensual sexual conduct between adults is protected from criminal prohibition under the Due Process Clause."
+    },
+    {
+      "id": "cruzan_establishes_right_to_refuse_medical_treatment",
+      "source_id": "cruzan_v_director_1990",
+      "target_id": "right_to_refuse_medical_treatment",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1990-06-25",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Cruzan established the doctrine that a competent person has a liberty interest under the Due Process Clause in refusing unwanted medical treatment."
+    },
+    {
+      "id": "cruzan_establishes_cruzan_clear_convincing_evidence_test",
+      "source_id": "cruzan_v_director_1990",
+      "target_id": "cruzan_clear_convincing_evidence_test",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1990-06-25",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Cruzan established the clear and convincing evidence standard as a constitutionally permissible procedural safeguard for decisions regarding withdrawal of life-sustaining treatment for incompetent persons."
     }
   ],
   "schema_issues_found": [
