@@ -17,8 +17,8 @@
     "created": "2026-03-15",
     "status": "draft",
     "schema_version": "0.2",
-    "node_count": 256,
-    "edge_count": 537,
+    "node_count": 258,
+    "edge_count": 539,
     "schema_issue_count": 41,
     "fixes_applied": [
       "FIX 1: ConstitutionalProvision labels changed to citation form (amendment_1, amendment_14_section_1) to disambiguate from Area nodes with same common-name labels",
@@ -1148,6 +1148,36 @@
         "valid_from": "1965-06-07",
         "valid_until": null,
         "notes": "Established in Griswold v. Connecticut. The doctrine protects intimate decisions within marriage from state interference."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "substantive_due_process_liberty",
+        "label": "Substantive Due Process Liberty",
+        "description": "The Due Process Clause of the Fourteenth Amendment protects a sphere of personal liberty that extends beyond spatial bounds to include autonomy of self, freedom of thought, belief, expression, and certain intimate conduct. Liberty presumes an autonomy of self that includes the right to make fundamental decisions affecting one's destiny without unwarranted government intrusion.",
+        "area_id": "substantive_due_process",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "2003-06-26",
+        "valid_until": null,
+        "notes": "Established and clarified in Lawrence v. Texas. Builds on Griswold v. Connecticut, Eisenstadt v. Baird, Roe v. Wade, and Planned Parenthood v. Casey. Protects personal decisions relating to marriage, procreation, contraception, family relationships, child rearing, education, and intimate sexual conduct between consenting adults in private."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "private_consensual_conduct_protection",
+        "label": "Protection of Private Consensual Conduct",
+        "description": "Adults have a liberty interest under the Due Process Clause in making personal decisions concerning intimate conduct and relationships in private settings without criminal prohibition. The state cannot criminalize such conduct merely because a majority views it as immoral.",
+        "area_id": "substantive_due_process",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "2003-06-26",
+        "valid_until": null,
+        "notes": "Established in Lawrence v. Texas. Applies to consensual conduct between adults in private settings. Does not extend to minors, coerced conduct, public conduct, or prostitution."
       }
     ],
     "areas": [
@@ -14544,6 +14574,32 @@
         "state"
       ],
       "notes": "Griswold invokes the Fourteenth Amendment's Due Process Clause, particularly through Harlan's concurrence which grounds the right to marital privacy in substantive due process rather than the Bill of Rights penumbra."
+    },
+    {
+      "id": "lawrence_establishes_substantive_due_process_liberty",
+      "source_id": "lawrence_v_texas_2003",
+      "target_id": "substantive_due_process_liberty",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2003-06-26",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Lawrence clarifies and expands the substantive due process liberty doctrine by explicitly recognizing that liberty protects intimate conduct between consenting adults and extends beyond spatial bounds to include autonomy of self."
+    },
+    {
+      "id": "lawrence_establishes_private_consensual_conduct",
+      "source_id": "lawrence_v_texas_2003",
+      "target_id": "private_consensual_conduct_protection",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2003-06-26",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Lawrence establishes the doctrine that private, consensual sexual conduct between adults is protected from criminal prohibition under the Due Process Clause."
     }
   ],
   "schema_issues_found": [
