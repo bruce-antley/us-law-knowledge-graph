@@ -17,8 +17,8 @@
     "created": "2026-03-15",
     "status": "draft",
     "schema_version": "0.2",
-    "node_count": 254,
-    "edge_count": 535,
+    "node_count": 256,
+    "edge_count": 537,
     "schema_issue_count": 41,
     "fixes_applied": [
       "FIX 1: ConstitutionalProvision labels changed to citation form (amendment_1, amendment_14_section_1) to disambiguate from Area nodes with same common-name labels",
@@ -1133,6 +1133,21 @@
         "valid_from": "2015-06-26",
         "valid_until": null,
         "notes": "Established in Obergefell; recognizes the interlocking nature of Due Process and Equal Protection Clauses in the context of same-sex marriage."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "marital_privacy_doctrine",
+        "label": "Right to Marital Privacy",
+        "description": "A constitutional right to marital privacy protected within the penumbra of specific guarantees of the Bill of Rights, which protects married persons' use of contraceptives from state prohibition.",
+        "area_id": "individual_rights",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1965-06-07",
+        "valid_until": null,
+        "notes": "Established in Griswold v. Connecticut. The doctrine protects intimate decisions within marriage from state interference."
       }
     ],
     "areas": [
@@ -6513,6 +6528,66 @@
         "data_tier": "inferred",
         "opinions": [],
         "notes": "Stub node \u2014 overruled by obergefell_v_hodges_2015. One-line summary decision."
+      },
+      {
+        "@type": "Case",
+        "id": "griswold_v_connecticut_1965",
+        "short_name": "Griswold v. Connecticut",
+        "full_name": "Griswold v. Connecticut",
+        "citation": "381 U.S. 479 (1965)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1965-06-07",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "A state statute forbidding the use of contraceptives violates the constitutional right of marital privacy, which is protected within the penumbra of specific guarantees of the Bill of Rights.",
+        "holding_type": "affirmative",
+        "majority_author": "Douglas",
+        "per_curiam": false,
+        "vote": "7-2",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1965-06-07",
+        "valid_until": null,
+        "opinions": [
+          {
+            "type": "concurrence",
+            "author": "Goldberg",
+            "doctrinal_significance": "Joined by Warren and Brennan; grounded right in Ninth Amendment",
+            "joined_by": [],
+            "adopted_in": []
+          },
+          {
+            "type": "concurrence",
+            "author": "Harlan",
+            "doctrinal_significance": "Concurred on due process grounds",
+            "joined_by": [],
+            "adopted_in": []
+          },
+          {
+            "type": "concurrence_in_judgment",
+            "author": "White",
+            "doctrinal_significance": "Concurred in the judgment",
+            "joined_by": [],
+            "adopted_in": []
+          },
+          {
+            "type": "dissent",
+            "author": "Black",
+            "doctrinal_significance": "Black and Stewart dissented",
+            "joined_by": [],
+            "adopted_in": []
+          },
+          {
+            "type": "dissent",
+            "author": "Stewart",
+            "doctrinal_significance": "Black and Stewart dissented",
+            "joined_by": [],
+            "adopted_in": []
+          }
+        ],
+        "notes": "Majority opinion joined by Clark, Harlan, Brennan, White, Goldberg, and Warren. Multiple concurrences reflect different constitutional grounds for the right to marital privacy."
       }
     ],
     "doctrinal_tests": [
@@ -14443,6 +14518,32 @@
         "federal",
         "state"
       ]
+    },
+    {
+      "id": "griswold_establishes_marital_privacy_doctrine",
+      "source_id": "griswold_v_connecticut_1965",
+      "target_id": "marital_privacy_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1965-06-07",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Griswold established the constitutional doctrine of marital privacy as a fundamental right protected by the Bill of Rights."
+    },
+    {
+      "id": "griswold_interprets_amendment_14",
+      "source_id": "griswold_v_connecticut_1965",
+      "target_id": "amendment_14_section_1",
+      "edge_type": "INTERPRETS",
+      "valid_from": "1965-06-07",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Griswold invokes the Fourteenth Amendment's Due Process Clause, particularly through Harlan's concurrence which grounds the right to marital privacy in substantive due process rather than the Bill of Rights penumbra."
     }
   ],
   "schema_issues_found": [
