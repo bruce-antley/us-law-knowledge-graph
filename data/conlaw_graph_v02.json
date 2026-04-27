@@ -17,8 +17,8 @@
     "created": "2026-03-15",
     "status": "draft",
     "schema_version": "0.2",
-    "node_count": 280,
-    "edge_count": 556,
+    "node_count": 283,
+    "edge_count": 558,
     "schema_issue_count": 41,
     "fixes_applied": [
       "FIX 1: ConstitutionalProvision labels changed to citation form (amendment_1, amendment_14_section_1) to disambiguate from Area nodes with same common-name labels",
@@ -1343,6 +1343,21 @@
         "valid_from": "1977-01-01",
         "valid_until": null,
         "notes": "Established in Moore v. City of East Cleveland as a limitation on the holding in Village of Belle Terre v. Boraas, which had upheld restrictions on unrelated persons. Moore extended protection to blood relatives and family living arrangements."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "parental_fundamental_right",
+        "label": "Parental Fundamental Right to Direct Upbringing",
+        "description": "A fundamental right under the Fourteenth Amendment's Due Process Clause for parents to make decisions concerning the care, custody, and control of their children, with a presumption that fit parents act in their children's best interests and are entitled to deference in such decisions.",
+        "area_id": "substantive_due_process",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "2000-06-05",
+        "valid_until": null,
+        "notes": "Established in Troxel v. Granville as a fundamental liberty interest protected by the Due Process Clause. The doctrine requires that state interference with parental decision-making receive heightened protection and that fit parents' determinations be accorded deference."
       }
     ],
     "areas": [
@@ -7021,6 +7036,39 @@
         ],
         "notes": "Plurality decision. Powell's opinion (pp. 498-506) announced the judgment; Stevens concurred in the judgment (pp. 513-521). The decision is fractured and does not command a clear majority on the full doctrinal scope, but the reversal itself was the judgment of the Court.",
         "courtlistener_id": "109670"
+      },
+      {
+        "@type": "Case",
+        "id": "troxel_v_granville_2000",
+        "short_name": "Troxel v. Granville",
+        "full_name": "Troxel et vir v. Granville",
+        "citation": "530 U.S. 57 (2000)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "2000-06-05",
+        "opinion_form": "plurality",
+        "procedural_disposition": "affirmed",
+        "holding": "A parent has a fundamental right under the Fourteenth Amendment's Due Process Clause to make decisions concerning the care, custody, and control of their children, and a state statute that permits any person to petition for visitation rights at any time based solely on the child's best interest, without according deference to a fit parent's determination and without requiring a showing of harm, violates that fundamental right.",
+        "holding_type": "affirmative",
+        "majority_author": "O'Connor (plurality)",
+        "per_curiam": false,
+        "vote": "6-3",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "2000-06-05",
+        "valid_until": null,
+        "opinions": [
+          {
+            "type": "concurrence",
+            "author": "Souter",
+            "doctrinal_significance": "Concurred in the judgment on narrower grounds, finding the statute sweeps too broadly in authorizing any person at any time to request visitation, without deciding whether harm is required or the precise scope of parental rights.",
+            "joined_by": [],
+            "adopted_in": []
+          }
+        ],
+        "notes": "Plurality opinion. Justice O'Connor's opinion joined by Chief Justice Rehnquist, Justice Ginsburg, and Justice Breyer. Justice Souter concurred in the judgment on narrower grounds. The holding reflects what the plurality concluded; Souter's concurrence did not join the full reasoning but agreed the statute was unconstitutional as applied. Thomas, Kennedy, and Scalia also wrote separately concurring in the judgment. Stevens, Kennedy, Scalia, and Thomas each had distinct rationales.",
+        "courtlistener_id": "9264694"
       }
     ],
     "doctrinal_tests": [
@@ -8044,6 +8092,53 @@
         "valid_from": "1937-01-01",
         "valid_until": null,
         "notes": "This test represents the Court's selective incorporation framework. Rights that fail the test (such as double jeopardy protection, grand jury indictment, jury trial, and immunity from self-incrimination) are not incorporated. Rights that pass (such as freedom of speech, press, religion, assembly, and right to counsel in capital cases) are incorporated and bind the states. The test emphasizes that the mere presence of a right in the Bill of Rights does not automatically make it applicable to the states."
+      },
+      {
+        "@type": "DoctrinalTest",
+        "id": "troxel_parental_right_test",
+        "label": "Parental Fundamental Right Protection Test",
+        "description": "A test for evaluating whether state interference with parental decisions concerning child care, custody, and control violates the Due Process Clause. The test examines whether the state has accorded appropriate deference to a fit parent's determination, whether there is a presumption favoring parental judgment, and whether the state action is narrowly tailored to address legitimate state interests.",
+        "area_id": "substantive_due_process",
+        "source_case_id": "troxel_v_granville_2000",
+        "scrutiny_level": "balancing",
+        "burden": "government",
+        "test_form": "balancing",
+        "prongs": [
+          {
+            "number": 1,
+            "label": "Fit Parent Status",
+            "description": "Whether the parent is fit. A presumption exists that fit parents act in their children's best interests.",
+            "burden_note": "Government must establish unfitness or harm/potential harm to justify interference.",
+            "valid_from": "2000-06-05",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 2,
+            "label": "Deference to Parental Judgment",
+            "description": "Whether the state accords appropriate deference and weight to the fit parent's determination of the child's best interests.",
+            "burden_note": "Government must show it gave proper deference to parental judgment; failure to do so violates the fundamental right.",
+            "valid_from": "2000-06-05",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 3,
+            "label": "Narrowness of State Action",
+            "description": "Whether the state action is narrowly tailored and does not sweep too broadly in permitting interference with parental decisions.",
+            "burden_note": "Government must demonstrate that the statute or application is not overbroad and is limited to legitimate protective purposes.",
+            "valid_from": "2000-06-05",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          }
+        ],
+        "status": "active",
+        "valid_from": "2000-06-05",
+        "valid_until": null,
+        "notes": "This test applies heightened scrutiny to state interference with parental decisions. The Court emphasized that absent a showing of harm or potential harm to the child, or absent a finding that the parent is unfit, the state should not inject itself into the private realm of the family. The test does not require a formal harm showing as a threshold matter in all cases, but the plurality declined to decide that precise question. The plurality explicitly declined to identify the precise standard of review, stating only that the statute failed as applied. The test reflects balancing rather than a formal scrutiny tier."
       }
     ]
   },
@@ -15382,6 +15477,32 @@
         "state"
       ],
       "notes": "Skinner applied strict scrutiny to Oklahoma's sterilization act, holding that legislation affecting fundamental rights like procreation requires the most rigid scrutiny."
+    },
+    {
+      "id": "troxel_establishes_parental_fundamental_right",
+      "source_id": "troxel_v_granville_2000",
+      "target_id": "parental_fundamental_right",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2000-06-05",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Troxel v. Granville established the parental fundamental right doctrine as a substantive due process protection under the Fourteenth Amendment."
+    },
+    {
+      "id": "troxel_establishes_troxel_parental_right_test",
+      "source_id": "troxel_v_granville_2000",
+      "target_id": "troxel_parental_right_test",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2000-06-05",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Troxel v. Granville established the parental right protection test for evaluating state interference with parental decisions concerning child care, custody, and control."
     }
   ],
   "schema_issues_found": [
