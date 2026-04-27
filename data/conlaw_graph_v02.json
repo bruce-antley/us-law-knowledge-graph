@@ -17,8 +17,8 @@
     "created": "2026-03-15",
     "status": "draft",
     "schema_version": "0.2",
-    "node_count": 261,
-    "edge_count": 541,
+    "node_count": 280,
+    "edge_count": 556,
     "schema_issue_count": 41,
     "fixes_applied": [
       "FIX 1: ConstitutionalProvision labels changed to citation form (amendment_1, amendment_14_section_1) to disambiguate from Area nodes with same common-name labels",
@@ -1193,6 +1193,156 @@
         "valid_from": "1990-06-25",
         "valid_until": null,
         "notes": "Cruzan established that this right exists for competent persons but does not automatically extend to incompetent persons. States may impose procedural safeguards, including clear and convincing evidence standards, to protect this interest."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "parental_rights_education",
+        "label": "Parental Rights in Education",
+        "description": "Parents have a fundamental liberty interest in directing the education and upbringing of their children, including the right to engage qualified teachers to instruct their children in subjects such as foreign languages. This right is protected by the Fourteenth Amendment's Due Process Clause.",
+        "area_id": "substantive_due_process",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1923-06-04",
+        "valid_until": null,
+        "notes": "Meyer recognized the natural duty of parents to provide suitable education for their children and the constitutional protection of this parental prerogative."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "liberty_of_contract",
+        "label": "Liberty of Contract",
+        "description": "The right of individuals to enter into contracts regarding labor and employment, protected by the Fourteenth Amendment's Due Process Clause. This doctrine recognizes that both employers and employees have the right to contract on terms they agree upon, subject to legitimate state police power regulations that have a fair, reasonable, and direct relation to public health, safety, morals, or welfare.",
+        "area_id": "substantive_due_process",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1905-04-17",
+        "valid_until": null,
+        "notes": "Lochner v. New York is the foundational case establishing the scope and limits of liberty of contract doctrine under the Fourteenth Amendment. The Court held that while states have police powers, those powers cannot be exercised arbitrarily or without a substantial connection to a legitimate public purpose."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "police_power",
+        "label": "Police Power",
+        "description": "The inherent sovereign power of states to enact legislation to protect the safety, health, morals, and general welfare of the public. However, this power is not unlimited and must be exercised in a manner that does not arbitrarily or unreasonably interfere with individual liberty and freedom of contract protected by the Fourteenth Amendment.",
+        "area_id": "constitutional_law",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1905-04-17",
+        "valid_until": null,
+        "notes": "Lochner establishes that while police power is broad, it has limits. The Court must determine whether a regulation is a fair, reasonable, and appropriate exercise of police power or an unreasonable, unnecessary, and arbitrary interference with individual rights."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "ordered_liberty_doctrine",
+        "label": "Ordered Liberty Doctrine",
+        "description": "A framework for determining which rights in the Bill of Rights are so fundamental to ordered liberty and the concept of due process that they are binding on the states through the Fourteenth Amendment. Rights are incorporated only if they are rooted in the traditions and conscience of the people and essential to a scheme of ordered liberty, not merely because they appear in the first eight amendments.",
+        "area_id": "substantive_due_process",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1937-01-01",
+        "valid_until": null,
+        "notes": "This doctrine represents the Court's selective incorporation approach, distinguishing between fundamental rights that apply to the states and procedural protections that do not. The test asks whether a right is 'of the very essence of a scheme of ordered liberty' and whether it is 'a principle of justice so rooted in the traditions and conscience of our people as to be ranked as fundamental.'"
+      },
+      {
+        "@type": "Doctrine",
+        "id": "selective_incorporation_doctrine",
+        "label": "Selective Incorporation Doctrine",
+        "description": "The constitutional doctrine that certain fundamental rights and protections enumerated in the Bill of Rights are incorporated into the Fourteenth Amendment's Due Process Clause and thus apply to the states, while others are not. Incorporation occurs on a case-by-case basis depending on whether a right is fundamental to ordered liberty.",
+        "area_id": "substantive_due_process",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1937-01-01",
+        "valid_until": null,
+        "notes": "Palko established the framework for selective incorporation, rejecting the 'total incorporation' theory that all Bill of Rights protections automatically apply to the states. The Court identified certain rights (freedom of speech, press, religion, assembly, and right to counsel in capital cases) as fundamental, while rejecting others (grand jury indictment, jury trial, immunity from self-incrimination, double jeopardy protection) as not fundamental to ordered liberty."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "fundamental_right_to_procreation",
+        "label": "Fundamental Right to Procreation",
+        "description": "The right to marry and procreate is fundamental to the existence and survival of the race and is protected as a basic civil right under the Fourteenth Amendment. Laws affecting this right are subject to strict scrutiny under the Equal Protection Clause.",
+        "area_id": "substantive_due_process",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1942",
+        "valid_until": null,
+        "notes": "Established in Skinner v. Oklahoma as a foundational principle requiring strict scrutiny of classifications affecting procreation and marriage."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "strict_scrutiny_equal_protection",
+        "label": "Strict Scrutiny in Equal Protection",
+        "description": "When legislation affects fundamental rights or involves suspect classifications, the state must demonstrate that the classification serves a compelling governmental interest and is narrowly tailored to achieve that interest. The classification must not be arbitrary or based on invidious discrimination.",
+        "area_id": "equal_protection",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1942",
+        "valid_until": null,
+        "notes": "Skinner establishes that strict scrutiny is essential when a state law involves fundamental rights such as procreation, to prevent invidious discriminations against groups or types of individuals."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "strict_scrutiny_racial_classifications",
+        "label": "Strict Scrutiny for Racial Classifications",
+        "description": "Racial classifications, especially in criminal statutes, are subject to the most rigid scrutiny and can be upheld only if shown to be necessary to accomplish a permissible state objective independent of the racial discrimination the Fourteenth Amendment was designed to eliminate.",
+        "area_id": "equal_protection",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1967-06-12",
+        "valid_until": null,
+        "notes": "Established in Loving v. Virginia as the applicable standard for reviewing state statutes containing racial classifications. The Court emphasized that the mere fact of equal application of a statute containing racial classifications does not remove it from the Fourteenth Amendment's proscription of invidious racial discrimination."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "fundamental_right_to_marry",
+        "label": "Fundamental Right to Marry",
+        "description": "The freedom to marry is a fundamental personal right essential to the orderly pursuit of happiness by free persons and is one of the basic civil rights of man, fundamental to human existence and survival. This right cannot be restricted by invidious racial discriminations.",
+        "area_id": "substantive_due_process",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1967-06-12",
+        "valid_until": null,
+        "notes": "Established in Loving v. Virginia as a fundamental liberty interest protected by the Due Process Clause of the Fourteenth Amendment. The Court held that the freedom to marry, or not marry, a person of another race resides with the individual and cannot be infringed by the State."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "family_living_arrangements_sdp",
+        "label": "Family Living Arrangements and Substantive Due Process",
+        "description": "The doctrine that decisions regarding family composition and living arrangements are protected liberty interests under the Fourteenth Amendment's Due Process Clause, and that government restrictions on such arrangements must satisfy heightened constitutional scrutiny.",
+        "area_id": "substantive_due_process",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1977-01-01",
+        "valid_until": null,
+        "notes": "Established in Moore v. City of East Cleveland as a limitation on the holding in Village of Belle Terre v. Boraas, which had upheld restrictions on unrelated persons. Moore extended protection to blood relatives and family living arrangements."
       }
     ],
     "areas": [
@@ -6689,6 +6839,188 @@
           }
         ],
         "notes": "The Court assumed for purposes of this case that a competent person has a constitutionally protected liberty interest under the Due Process Clause in refusing lifesaving hydration and nutrition, but held that an incompetent person does not necessarily possess the same right. The Court rejected the argument that close family members have a constitutional right to exercise substituted judgment for an incompetent patient absent substantial proof that their views reflect the patient's wishes."
+      },
+      {
+        "@type": "Case",
+        "id": "meyer_v_nebraska_1923",
+        "short_name": "Meyer v. Nebraska",
+        "full_name": "Meyer v. State of Nebraska",
+        "citation": "262 U.S. 390 (1923)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1923-06-04",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "A state statute that prohibits the teaching of modern foreign languages in schools to children who have not passed the eighth grade violates the liberty protected by the Fourteenth Amendment's Due Process Clause because it is arbitrary and without reasonable relation to any legitimate state purpose, and infringes fundamental rights of parents to control their children's education and of teachers to pursue their occupation.",
+        "holding_type": "affirmative",
+        "majority_author": "McReynolds",
+        "per_curiam": false,
+        "vote": null,
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1923-06-04",
+        "valid_until": null,
+        "opinions": [
+          {
+            "type": "concurrence",
+            "author": "Holmes",
+            "doctrinal_significance": "Holmes concurred in the judgment but expressed reservations about the breadth of substantive due process protection for economic liberty.",
+            "joined_by": [
+              "Sutherland"
+            ],
+            "adopted_in": []
+          }
+        ],
+        "notes": "The opinion discusses the scope of liberty protected by the Fourteenth Amendment's Due Process Clause, including the right of parents to control their children's education and the right of individuals to pursue lawful occupations. The Court rejected the state's police power justification based on promoting civic unity and preventing foreign influence.",
+        "courtlistener_id": "100233"
+      },
+      {
+        "@type": "Case",
+        "id": "pierce_v_society_of_sisters_1925",
+        "short_name": "Pierce v. Society of Sisters",
+        "full_name": "Pierce v. Society of Sisters of the Holy Names of Jesus and Mary",
+        "citation": "268 U.S. 510 (1925)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1925-06-01",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "affirmed",
+        "holding": "A state statute that compels all children to attend public schools and effectively prohibits private school education unreasonably interferes with the liberty of parents and guardians to direct the upbringing and education of children under their control, and violates the Due Process Clause of the Fourteenth Amendment.",
+        "holding_type": "affirmative",
+        "majority_author": "McReynolds",
+        "per_curiam": false,
+        "vote": null,
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1925-06-01",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "The Court affirmed preliminary injunctions restraining enforcement of Oregon's Compulsory Education Act of 1922. The decision protects parental liberty to direct children's education and the right of private schools to operate. The Court noted that states retain power to reasonably regulate schools, require attendance, set teacher qualifications, and mandate instruction in subjects essential to citizenship."
+      },
+      {
+        "@type": "Case",
+        "id": "lochner_v_new_york_1905",
+        "short_name": "Lochner v. New York",
+        "full_name": "Lochner v. New York",
+        "citation": "198 U.S. 45 (1905)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1905-04-17",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "A state law limiting the hours of labor in bakeries violates the liberty of contract protected by the Fourteenth Amendment because the regulation lacks a fair, reasonable, and direct relation to public health or the health of bakery employees.",
+        "holding_type": "by_negation",
+        "majority_author": "Peckham",
+        "per_curiam": false,
+        "vote": null,
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1905-04-17",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "The Court struck down a New York labor law limiting bakery workers to 10 hours per day and 60 hours per week. The opinion establishes that while states possess police powers to regulate health, safety, morals, and welfare, those powers have limits when they interfere with liberty of contract without a substantial and direct relation to a legitimate public health purpose. Lochner Era effectively ended with West Coast Hotel Co. v. Parrish (1937) which adopted rational basis review for economic legislation, though Lochner was never formally overruled.",
+        "courtlistener_id": "96276"
+      },
+      {
+        "@type": "Case",
+        "id": "palko_v_connecticut_1937",
+        "short_name": "Palko v. Connecticut",
+        "full_name": "Palko v. Connecticut",
+        "citation": "302 U.S. 319 (1937)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1937-12-06",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "affirmed",
+        "holding": "A state statute permitting the state to appeal in criminal cases and retry a defendant does not violate the Due Process Clause of the Fourteenth Amendment when the retrial is conducted free from substantial legal error, because the right to be free from double jeopardy is not a fundamental principle of liberty and justice implicit in the concept of ordered liberty that is binding on the states.",
+        "holding_type": "by_negation",
+        "majority_author": "Cardozo",
+        "per_curiam": false,
+        "vote": null,
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1937-12-06",
+        "valid_until": null,
+        "opinions": [
+          {
+            "type": "dissent",
+            "author": "Butler",
+            "doctrinal_significance": "Disagreed with the majority's conclusion that state-initiated retrial does not violate fundamental due process protections.",
+            "joined_by": [],
+            "adopted_in": []
+          }
+        ],
+        "notes": "Cardozo articulated the 'ordered liberty' or 'fundamental fairness' test for determining which Bill of Rights protections apply to the states via the Fourteenth Amendment. The Court distinguished between rights that are fundamental to ordered liberty (which bind the states) and those that are merely procedural or not essential to justice (which do not). This case established the selective incorporation doctrine framework, though the specific holding rejected incorporation of the Fifth Amendment's double jeopardy protection. Note: Palko's specific holding that double jeopardy is not incorporated was overruled by Benton v. Maryland (1969). The ordered liberty framework articulated in Palko survived and remains influential.",
+        "courtlistener_id": "102879"
+      },
+      {
+        "@type": "Case",
+        "id": "skinner_v_oklahoma_1942",
+        "short_name": "Skinner v. Oklahoma",
+        "full_name": "Skinner v. Oklahoma",
+        "citation": "316 U.S. 535 (1942)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1942-06-01",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "A state law that imposes sterilization as punishment for habitual criminals violates the Equal Protection Clause of the Fourteenth Amendment when it creates arbitrary classifications between crimes of intrinsically the same quality, such as distinguishing between larceny and embezzlement, with no rational basis in eugenics or criminal inheritability.",
+        "holding_type": "affirmative",
+        "majority_author": "Douglas",
+        "per_curiam": false,
+        "vote": null,
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1942-06-01",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "The Court reversed the Oklahoma Supreme Court's 5-4 decision upholding the Habitual Criminal Sterilization Act. The opinion emphasizes that strict scrutiny applies to classifications affecting fundamental rights such as procreation and marriage. The Court distinguished Buck v. Bell on the ground that the Virginia statute in that case had a 'saving feature' (enabling confined individuals to be released), whereas Oklahoma's statute created arbitrary distinctions with no eugenic justification.",
+        "courtlistener_id": "103701"
+      },
+      {
+        "@type": "Case",
+        "id": "moore_v_city_of_east_cleveland_1977",
+        "short_name": "Moore v. City of East Cleveland",
+        "full_name": "Moore v. City of East Cleveland",
+        "citation": "431 U.S. 494 (1977)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1977-05-31",
+        "opinion_form": "plurality",
+        "procedural_disposition": "reversed",
+        "holding": "A city ordinance that restricts occupancy of a dwelling unit to members of a single family, defined narrowly to exclude certain blood relatives living together, violates substantive due process when applied to prevent a grandmother from living with her son and grandsons who are first cousins.",
+        "holding_type": "affirmative",
+        "majority_author": "Powell (plurality)",
+        "per_curiam": false,
+        "vote": null,
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1977-05-31",
+        "valid_until": null,
+        "opinions": [
+          {
+            "type": "plurality",
+            "author": "Powell",
+            "doctrinal_significance": "Established that family living arrangements are protected under substantive due process; distinguished Village of Belle Terre on the basis that Belle Terre involved unrelated persons while Moore involved blood relatives.",
+            "joined_by": [],
+            "adopted_in": []
+          },
+          {
+            "type": "concurrence",
+            "author": "Stevens",
+            "doctrinal_significance": "Concurred in the judgment of reversal.",
+            "joined_by": [],
+            "adopted_in": []
+          }
+        ],
+        "notes": "Plurality decision. Powell's opinion (pp. 498-506) announced the judgment; Stevens concurred in the judgment (pp. 513-521). The decision is fractured and does not command a clear majority on the full doctrinal scope, but the reversal itself was the judgment of the Court.",
+        "courtlistener_id": "109670"
       }
     ],
     "doctrinal_tests": [
@@ -7591,6 +7923,127 @@
         "valid_from": "1990-06-25",
         "valid_until": null,
         "notes": "This test applies specifically to decisions regarding withdrawal of life-sustaining treatment for incompetent persons. The Court emphasized that an erroneous decision to withdraw treatment cannot be corrected, whereas an erroneous decision not to withdraw maintains the status quo and may be corrected by future events. The test does not require states to accept substituted judgment by family members absent substantial proof that their views reflect the patient's wishes."
+      },
+      {
+        "@type": "DoctrinalTest",
+        "id": "meyer_sdp_rationality_test",
+        "label": "Meyer Substantive Due Process Rationality Test",
+        "description": "A state law that interferes with liberty protected by the Fourteenth Amendment's Due Process Clause must have a reasonable relation to a legitimate purpose within the state's competency to effect. The legislature's determination of what constitutes proper exercise of police power is not final but is subject to judicial supervision. Arbitrary legislation lacking reasonable relation to a legitimate state purpose violates substantive due process.",
+        "area_id": "substantive_due_process",
+        "source_case_id": "meyer_v_nebraska_1923",
+        "scrutiny_level": "rational_basis",
+        "burden": "government",
+        "test_form": "conjunctive",
+        "prongs": [
+          {
+            "number": 1,
+            "label": "Legitimate State Purpose",
+            "description": "The state must identify a purpose within its competency to effect.",
+            "burden_note": "Government must establish a legitimate purpose.",
+            "valid_from": "1923-06-04",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 2,
+            "label": "Reasonable Relation",
+            "description": "The legislative means must have a reasonable relation to the identified legitimate purpose. The means cannot be arbitrary or wholly unrelated to the purpose.",
+            "burden_note": "Government must demonstrate reasonable relation between means and purpose.",
+            "valid_from": "1923-06-04",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          }
+        ],
+        "status": "active",
+        "valid_from": "1923-06-04",
+        "valid_until": null,
+        "notes": "Meyer applied this test to strike down Nebraska's foreign language teaching prohibition, finding that while the state had a legitimate interest in promoting civic unity and English language proficiency, the means (complete prohibition of modern language instruction before eighth grade) was arbitrary and lacked reasonable relation to that purpose, particularly in peacetime. The Court emphasized that desirable ends cannot be promoted by prohibited means."
+      },
+      {
+        "@type": "DoctrinalTest",
+        "id": "lochner_police_power_test",
+        "label": "Lochner Police Power Test",
+        "description": "A test for determining whether a state regulation is a valid exercise of police power or an unconstitutional interference with liberty of contract. The regulation must have a fair, reasonable, and appropriate relation to a legitimate public purpose (safety, health, morals, or welfare), and the connection between the means and the end must be direct and substantial, not remote or shadowy.",
+        "area_id": "substantive_due_process",
+        "source_case_id": "lochner_v_new_york_1905",
+        "scrutiny_level": "rational_basis",
+        "burden": "government",
+        "test_form": "conjunctive",
+        "prongs": [
+          {
+            "number": 1,
+            "label": "Legitimate Public Purpose",
+            "description": "The regulation must relate to a legitimate state interest in safety, health, morals, or general welfare of the public.",
+            "burden_note": "Government must demonstrate the regulation addresses a legitimate public purpose.",
+            "valid_from": "1905-04-17",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 2,
+            "label": "Fair, Reasonable, and Appropriate Means",
+            "description": "The regulation must be a fair, reasonable, and appropriate exercise of police power in relation to the stated purpose. The connection between the regulation and the public purpose must be direct and substantial, not remote, shadowy, or arbitrary.",
+            "burden_note": "Government must demonstrate the regulation is reasonably related to the legitimate purpose and not arbitrary or meddlesome.",
+            "valid_from": "1905-04-17",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 3,
+            "label": "No Arbitrary Interference with Liberty of Contract",
+            "description": "The regulation must not constitute an arbitrary or unreasonable interference with the liberty of contract protected by the Fourteenth Amendment. The regulation cannot be justified merely by assertion that it relates to public health; there must be a material and substantial danger to public health or employee health.",
+            "burden_note": "Government must demonstrate the regulation is not arbitrary and has a material connection to the stated public purpose.",
+            "valid_from": "1905-04-17",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          }
+        ],
+        "status": "active",
+        "valid_from": "1905-04-17",
+        "valid_until": null,
+        "notes": "This test requires courts to examine whether a regulation is truly a health law or merely a pretext for regulating labor. The Court must look beyond the proclaimed purpose to the natural and legal effect of the statute. The test applies heightened scrutiny to regulations that interfere with liberty of contract, requiring more than a remote or speculative connection to public health."
+      },
+      {
+        "@type": "DoctrinalTest",
+        "id": "palko_ordered_liberty_test",
+        "label": "Palko Ordered Liberty Test",
+        "description": "A test for determining whether a right enumerated in the Bill of Rights is so fundamental to ordered liberty and due process that it applies to the states through the Fourteenth Amendment. The test asks whether the right is rooted in the traditions and conscience of the people and whether it is essential to a scheme of ordered liberty such that its denial would violate fundamental principles of liberty and justice.",
+        "area_id": "substantive_due_process",
+        "source_case_id": "palko_v_connecticut_1937",
+        "scrutiny_level": "rational_basis",
+        "burden": "challenger",
+        "test_form": "balancing",
+        "prongs": [
+          {
+            "number": 1,
+            "label": "Rooted in Traditions and Conscience",
+            "description": "The right must be rooted in the traditions and conscience of the American people and recognized as fundamental throughout the nation's history.",
+            "burden_note": "Challenger must demonstrate that the right is deeply embedded in American legal and political traditions.",
+            "valid_from": "1937-01-01",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 2,
+            "label": "Essential to Ordered Liberty",
+            "description": "The right must be of the very essence of a scheme of ordered liberty, such that neither liberty nor justice would exist if it were sacrificed. It must be a principle of justice so fundamental that a fair and enlightened system of justice would be impossible without it.",
+            "burden_note": "Challenger must show that the right is indispensable to the concept of ordered liberty and due process.",
+            "valid_from": "1937-01-01",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          }
+        ],
+        "status": "active",
+        "valid_from": "1937-01-01",
+        "valid_until": null,
+        "notes": "This test represents the Court's selective incorporation framework. Rights that fail the test (such as double jeopardy protection, grand jury indictment, jury trial, and immunity from self-incrimination) are not incorporated. Rights that pass (such as freedom of speech, press, religion, assembly, and right to counsel in capital cases) are incorporated and bind the states. The test emphasizes that the mere presence of a right in the Bill of Rights does not automatically make it applicable to the states."
       }
     ]
   },
@@ -14734,6 +15187,201 @@
         "state"
       ],
       "notes": "Cruzan established the clear and convincing evidence standard as a constitutionally permissible procedural safeguard for decisions regarding withdrawal of life-sustaining treatment for incompetent persons."
+    },
+    {
+      "id": "meyer_applies_sdp_liberty",
+      "source_id": "meyer_v_nebraska_1923",
+      "target_id": "substantive_due_process_liberty",
+      "edge_type": "APPLIES",
+      "valid_from": "1923-06-04",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Meyer applied the substantive due process liberty doctrine to protect parental rights and occupational freedom from arbitrary state interference."
+    },
+    {
+      "id": "meyer_establishes_meyer_sdp_rationality_test",
+      "source_id": "meyer_v_nebraska_1923",
+      "target_id": "meyer_sdp_rationality_test",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1923-06-04",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Meyer established the substantive due process rationality test requiring that laws interfering with liberty have a reasonable relation to a legitimate state purpose."
+    },
+    {
+      "id": "meyer_establishes_parental_rights_education",
+      "source_id": "meyer_v_nebraska_1923",
+      "target_id": "parental_rights_education",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1923-06-04",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Meyer established that parental rights to direct children's education, including the choice of subjects and instructors, are fundamental liberties protected by the Fourteenth Amendment."
+    },
+    {
+      "id": "pierce_applies_parental_rights_education",
+      "source_id": "pierce_v_society_of_sisters_1925",
+      "target_id": "parental_rights_education",
+      "edge_type": "APPLIES",
+      "valid_from": "1925-06-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Pierce applied and reinforced Meyer's doctrine of parental rights in education, holding that Oregon's compulsory public school attendance law unconstitutionally interfered with parents' fundamental right to direct their children's education."
+    },
+    {
+      "id": "lochner_establishes_liberty_of_contract",
+      "source_id": "lochner_v_new_york_1905",
+      "target_id": "liberty_of_contract",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1905-04-17",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Lochner v. New York is the foundational case establishing the doctrine of liberty of contract as a fundamental right protected by the Fourteenth Amendment's Due Process Clause."
+    },
+    {
+      "id": "lochner_establishes_lochner_police_power_test",
+      "source_id": "lochner_v_new_york_1905",
+      "target_id": "lochner_police_power_test",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1905-04-17",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Lochner v. New York establishes the test for determining whether a state regulation is a valid exercise of police power or an unconstitutional interference with liberty of contract."
+    },
+    {
+      "id": "lochner_applies_police_power",
+      "source_id": "lochner_v_new_york_1905",
+      "target_id": "police_power",
+      "edge_type": "APPLIES",
+      "valid_from": "1905-04-17",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Lochner applies the doctrine of police power while establishing that this power has constitutional limits when it interferes with liberty of contract."
+    },
+    {
+      "id": "palko_establishes_ordered_liberty_doctrine",
+      "source_id": "palko_v_connecticut_1937",
+      "target_id": "ordered_liberty_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1937-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Palko established the ordered liberty doctrine as the framework for determining which Bill of Rights protections apply to the states through the Fourteenth Amendment."
+    },
+    {
+      "id": "palko_establishes_selective_incorporation_doctrine",
+      "source_id": "palko_v_connecticut_1937",
+      "target_id": "selective_incorporation_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1937-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Palko established the selective incorporation doctrine, rejecting total incorporation and adopting a case-by-case approach based on fundamental fairness and ordered liberty."
+    },
+    {
+      "id": "palko_establishes_palko_ordered_liberty_test",
+      "source_id": "palko_v_connecticut_1937",
+      "target_id": "palko_ordered_liberty_test",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1937-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Palko established the ordered liberty test as the operative standard for determining incorporation of Bill of Rights protections into the Fourteenth Amendment."
+    },
+    {
+      "id": "skinner_establishes_fundamental_right_to_procreation",
+      "source_id": "skinner_v_oklahoma_1942",
+      "target_id": "fundamental_right_to_procreation",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1942",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Skinner establishes procreation and marriage as fundamental rights requiring constitutional protection under the Fourteenth Amendment."
+    },
+    {
+      "id": "loving_establishes_strict_scrutiny_racial_classifications",
+      "source_id": "loving_v_virginia_1967",
+      "target_id": "strict_scrutiny_racial_classifications",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1967-06-12",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Loving v. Virginia established that racial classifications in state statutes, particularly criminal statutes, are subject to the most rigid scrutiny and can only be upheld if necessary to accomplish a permissible state objective independent of invidious racial discrimination."
+    },
+    {
+      "id": "loving_establishes_fundamental_right_to_marry",
+      "source_id": "loving_v_virginia_1967",
+      "target_id": "fundamental_right_to_marry",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1967-06-12",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Loving v. Virginia established the freedom to marry as a fundamental right protected by the Due Process Clause of the Fourteenth Amendment, holding that this right cannot be restricted by invidious racial discriminations."
+    },
+    {
+      "id": "moore_establishes_family_living_arrangements_sdp",
+      "source_id": "moore_v_city_of_east_cleveland_1977",
+      "target_id": "family_living_arrangements_sdp",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1977-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Moore established that family living arrangements involving blood relatives are protected liberty interests under substantive due process."
+    },
+    {
+      "id": "skinner_applies_strict_scrutiny_ep",
+      "source_id": "skinner_v_oklahoma_1942",
+      "target_id": "strict_scrutiny_equal_protection",
+      "edge_type": "APPLIES",
+      "valid_from": "1942-06-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Skinner applied strict scrutiny to Oklahoma's sterilization act, holding that legislation affecting fundamental rights like procreation requires the most rigid scrutiny."
     }
   ],
   "schema_issues_found": [
