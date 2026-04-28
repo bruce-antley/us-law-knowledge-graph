@@ -272,6 +272,31 @@ def step_qa_factual(result):
         result['qa_factual_error'] = str(e)
         return False
 
+def step_qa_structural(result):
+    """Step 5: Run qa_structural.py."""
+    try:
+        proc = subprocess.run(
+            ["python", "qa_structural.py",
+             "--draft", result['draft_path'],
+             "--combined", str(MASTER_GRAPH)],
+            capture_output=True, text=True,
+            cwd=str(PIPELINE_DIR)
+        )
+        result['qa_structural_output'] = proc.stdout
+        result['qa_structural_returncode'] = proc.returncode
+
+        import re as _re
+        error_match = _re.search(r'(\d+) errors', proc.stdout)
+        warning_match = _re.search(r'(\d+) warnings', proc.stdout)
+        result['struct_errors'] = int(error_match.group(1)) if error_match else 0
+        result['struct_warnings'] = int(warning_match.group(1)) if warning_match else 0
+        result['qa_structural_status'] = 'pass' if proc.returncode == 0 else 'fail'
+        return proc.returncode == 0
+    except Exception as e:
+        result['qa_structural_status'] = 'error'
+        result['qa_structural_error'] = str(e)
+        return False
+
 # ─── Report Generation ────────────────────────────────────────────────────────
 
 def generate_report(run_results, cases, run_start, run_end):
@@ -310,6 +335,10 @@ def generate_report(run_results, cases, run_start, run_end):
                 lines.append(f"- **CourtListener:** {r['qa_not_found']} case(s) not found — courtlistener_id will be null")
             if r.get('validate_warnings', 0) > 0:
                 lines.append(f"- **Validator warnings:** {r['validate_warnings']}")
+            if r.get('struct_errors', 0) > 0:
+                lines.append(f"- **QA Structural:** {r['struct_errors']} errors, {r['struct_warnings']} warnings — check before merging")
+            elif r.get('struct_warnings', 0) > 0:
+                lines.append(f"- **QA Structural:** {r['struct_warnings']} warnings")
             lines.append("")
     else:
         lines.append("_No cases passed QA._")
@@ -453,6 +482,14 @@ def run_pipeline(cases_file, model=DEFAULT_MODEL):
         # Step 4: QA Factual
         print("  Step 4: QA Factual — checking CourtListener...")
         qa_ok = step_qa_factual(result)
+
+        # Step 5: QA Structural
+        print("  Step 5: QA Structural — checking graph consistency...")
+        step_qa_structural(result)
+        if result.get('struct_errors', 0) > 0:
+            print(f"  ⚠ Structural: {result['struct_errors']} errors, {result['struct_warnings']} warnings")
+        else:
+            print(f"  ✓ Structural: 0 errors, {result.get('struct_warnings', 0)} warnings")
 
         if qa_ok:
             result['overall_status'] = 'passed'
