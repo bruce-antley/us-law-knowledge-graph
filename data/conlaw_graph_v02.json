@@ -17,8 +17,8 @@
     "created": "2026-03-15",
     "status": "draft",
     "schema_version": "0.2",
-    "node_count": 290,
-    "edge_count": 566,
+    "node_count": 320,
+    "edge_count": 590,
     "schema_issue_count": 41,
     "fixes_applied": [
       "FIX 1: ConstitutionalProvision labels changed to citation form (amendment_1, amendment_14_section_1) to disambiguate from Area nodes with same common-name labels",
@@ -1388,6 +1388,199 @@
         "valid_from": "1969-06-23",
         "valid_until": null,
         "notes": "Established in Benton v. Maryland (1969), overruling Palko v. Connecticut (1937). The doctrine reflects the Court's modern approach to selective incorporation of Bill of Rights guarantees through the Fourteenth Amendment."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "exclusionary_rule_federal",
+        "label": "Exclusionary Rule (Federal)",
+        "description": "Evidence obtained by federal officers in violation of the Fourth Amendment through unreasonable searches and seizures must be excluded from trial and cannot be used against the defendant.",
+        "area_id": "criminal_procedure",
+        "jurisdiction": [
+          "federal"
+        ],
+        "status": "active",
+        "valid_from": "1914-02-24",
+        "valid_until": null,
+        "notes": "Established in Weeks v. United States. Applies only to federal officers and federal prosecutions at the time of decision. The doctrine requires that illegally seized materials be returned to the defendant upon timely application."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "fourth_amendment_protection",
+        "label": "Fourth Amendment Protection Against Unreasonable Searches and Seizures",
+        "description": "The Fourth Amendment secures the right of the people to be secure in their persons, houses, papers, and effects against unreasonable searches and seizures. Federal officers may only conduct searches and seizures when armed with a warrant issued upon probable cause, supported by oath or affirmation, and particularly describing the place to be searched and the things to be seized.",
+        "area_id": "criminal_procedure",
+        "jurisdiction": [
+          "federal"
+        ],
+        "status": "active",
+        "valid_from": "1914-02-24",
+        "valid_until": null,
+        "notes": "The Court emphasized that the Fourth Amendment applies to federal officials and agencies. The protection extends to all persons, whether accused of crime or not. The Court traced the historical origins of the Amendment to English common law protections against general warrants and writs of assistance."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "fourth_amendment_privacy_protection",
+        "label": "Fourth Amendment Protection Against Arbitrary Police Intrusion",
+        "description": "The security of one's privacy against arbitrary intrusion by the police, which is at the core of the Fourth Amendment, is a fundamental right basic to a free society and therefore enforceable against the states through the Fourteenth Amendment's Due Process Clause.",
+        "area_id": "individual_rights",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1949-06-27",
+        "valid_until": null,
+        "notes": "Wolf established that the Fourth Amendment's core protection is incorporated, but left open the question of what remedies states must employ to enforce this right."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "remedy_flexibility_doctrine",
+        "label": "Flexibility in Remedies for Constitutional Violations",
+        "description": "When a fundamental right is incorporated against the states, the specific remedy for enforcing that right is not necessarily fixed by the federal constitutional requirement. States may employ alternative remedies such as private actions for damages, internal police discipline, and public opinion, provided such remedies are consistently enforced and equally effective.",
+        "area_id": "constitutional_law",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1949-06-27",
+        "valid_until": null,
+        "notes": "This doctrine permits federalism-based variation in enforcement mechanisms for incorporated rights, distinguishing between the right itself and the remedy for its violation."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "exclusionary_rule",
+        "label": "Exclusionary Rule",
+        "description": "The doctrine that evidence obtained in violation of the Fourth Amendment must be excluded from use in criminal proceedings, applicable to both federal and state prosecutions.",
+        "area_id": "criminal_procedure",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1961-06-19",
+        "valid_until": null,
+        "notes": "Established as constitutionally mandated and applicable to the states in Mapp v. Ohio. The Court held that the exclusionary rule is an essential ingredient of the Fourth Amendment right to privacy."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "fourth_amendment_privacy",
+        "label": "Fourth Amendment Right to Privacy",
+        "description": "The constitutional right to be free from unreasonable searches and seizures of person, house, papers, and effects, protecting the sanctity of the home and personal privacy.",
+        "area_id": "individual_rights",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1961-06-19",
+        "valid_until": null,
+        "notes": "Mapp clarified that this right is enforceable against the states through the Fourteenth Amendment and that the exclusionary rule is essential to its protection."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "right_to_counsel_doctrine",
+        "label": "Right to Counsel Doctrine",
+        "description": "The Sixth Amendment guarantees the right to counsel in all criminal prosecutions, and states must provide appointed counsel to defendants who cannot afford to retain one. The right to counsel is fundamental to a fair trial and essential to ordered liberty.",
+        "area_id": "criminal_procedure",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1963-03-18",
+        "valid_until": null,
+        "notes": "Established in Gideon v. Wainwright, overruling Betts v. Brady (1942). The Court held unanimously that the right to counsel is a fundamental right essential to a fair trial."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "sixth_amendment_right_to_counsel_pretrial",
+        "label": "Sixth Amendment Right to Counsel at Pretrial Interrogation",
+        "description": "The Sixth Amendment guarantees the right to counsel not only at trial but at critical pretrial stages, including police interrogation when the investigation has focused on a particular suspect and the suspect is in custody.",
+        "area_id": "criminal_procedure",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1964-06-22",
+        "valid_until": null,
+        "notes": "Established in Escobedo v. Illinois. The doctrine rejects a purely formal approach based on indictment and instead applies a functional test focusing on whether the investigation has shifted from general to accusatory."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "accusatory_vs_investigatory_stage",
+        "label": "Accusatory vs. Investigatory Stage Distinction",
+        "description": "The critical distinction in criminal procedure is whether the police investigation remains general (investigatory) or has focused on a particular suspect as the accused (accusatory). The right to counsel attaches when the process shifts from investigatory to accusatory.",
+        "area_id": "criminal_procedure",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1964-06-22",
+        "valid_until": null,
+        "notes": "Established in Escobedo v. Illinois. This doctrine rejects a purely formal test based on indictment and applies a functional test based on the actual focus and purpose of the interrogation."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "miranda_doctrine",
+        "label": "Miranda Doctrine",
+        "description": "The constitutional requirement that law enforcement must inform suspects of their Fifth Amendment right against self-incrimination and Sixth Amendment right to counsel before custodial interrogation, with statements obtained in violation of these warnings being inadmissible.",
+        "area_id": "criminal_procedure",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1966-06-13",
+        "valid_until": null,
+        "notes": "Established in Miranda v. Arizona as a prophylactic rule to protect Fifth and Sixth Amendment rights during custodial interrogation."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "reasonable_expectation_of_privacy_doctrine",
+        "label": "Reasonable Expectation of Privacy Doctrine",
+        "description": "The Fourth Amendment protects people, not places. A person has Fourth Amendment protection in a location or activity when he has a reasonable expectation of privacy, regardless of whether the location is public or private, and regardless of whether there is physical intrusion into a constitutionally protected area.",
+        "area_id": "criminal_procedure",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1967-12-18",
+        "valid_until": null,
+        "notes": "Replaces the trespass doctrine that limited Fourth Amendment protection to tangible property and physical intrusions. Applies to electronic surveillance and other forms of government intrusion on reasonable expectations of privacy."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "stop_and_frisk_doctrine",
+        "label": "Stop and Frisk Doctrine",
+        "description": "A police officer may conduct a limited investigatory stop and frisk of a person's outer clothing for weapons based on reasonable suspicion of criminal activity and concern for officer safety, without requiring probable cause for arrest.",
+        "area_id": "criminal_procedure",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1968-06-10",
+        "valid_until": null,
+        "notes": "Established in Terry v. Ohio. Distinguishes between an investigatory stop and an arrest, and between a frisk of outer clothing for weapons and a full search for evidence."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "probable_cause_informant_tip",
+        "label": "Probable Cause from Informant Tips",
+        "description": "The doctrine governing how courts determine whether an informant's tip, combined with corroborating police investigation, establishes probable cause for issuance of a search warrant. Under the totality of the circumstances approach, courts apply a flexible, common-sense standard rather than a rigid two-pronged test.",
+        "area_id": "criminal_procedure",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1983-06-08",
+        "valid_until": null,
+        "notes": "This doctrine replaced the rigid Aguilar-Spinelli two-pronged test with a more flexible totality of the circumstances analysis."
       }
     ],
     "areas": [
@@ -1695,6 +1888,22 @@
         "id": "substantive_due_process",
         "label": "Substantive Due Process > Doctrine",
         "description": "The doctrine under which the Due Process Clause of the Fourteenth Amendment protects certain fundamental rights and liberties not explicitly enumerated in the Constitution. Rights must be deeply rooted in the Nation's history and tradition and essential to ordered liberty to qualify for substantive due process protection. The doctrine is distinct from procedural due process, which requires fair procedures before the government deprives a person of life, liberty, or property.",
+        "parent_id": "individual_rights",
+        "primary_constitutional_grounding": "amendment_14_section_1",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "tier": 2,
+        "status": "active",
+        "valid_from": "1868-07-28",
+        "valid_until": null
+      },
+      {
+        "@type": "Area",
+        "id": "criminal_procedure",
+        "label": "Criminal Procedure > Doctrine",
+        "description": "Constitutional doctrine governing the rights of persons accused of crimes, including Fourth Amendment search and seizure, Fifth Amendment self-incrimination, Sixth Amendment right to counsel, and Eighth Amendment cruel and unusual punishment. Most criminal procedure rights apply to the states through selective incorporation via the Fourteenth Amendment.",
         "parent_id": "individual_rights",
         "primary_constitutional_grounding": "amendment_14_section_1",
         "jurisdiction": [
@@ -7245,6 +7454,333 @@
         "opinions": [],
         "notes": "Stub node \u2014 overruled by west_coast_hotel_co_v_parrish_1937. Full node to be added when this case is modeled.",
         "courtlistener_id": "100181"
+      },
+      {
+        "@type": "Case",
+        "id": "weeks_v_united_states_1914",
+        "short_name": "Weeks v. United States",
+        "full_name": "Weeks v. United States",
+        "citation": "232 U.S. 383 (1914)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1914-02-24",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "Evidence obtained by federal officers in violation of the Fourth Amendment through an unreasonable search and seizure of a defendant's home and private papers without a warrant must be excluded from trial, and a defendant has the right to petition for the return of such illegally seized materials.",
+        "holding_type": "affirmative",
+        "majority_author": "Day",
+        "per_curiam": false,
+        "vote": null,
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1914-02-24",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "Establishes the exclusionary rule for federal prosecutions. The Court held that the Fourth Amendment protects against unreasonable searches and seizures by federal officers and that illegally obtained evidence must be excluded. The Court distinguished this case from Adams v. New York on the ground that Adams involved incidental seizure in execution of a lawful warrant, whereas here the seizure was wholly unlawful and warrantless.",
+        "courtlistener_id": "98094"
+      },
+      {
+        "@type": "Case",
+        "id": "wolf_v_colorado_1949",
+        "short_name": "Wolf v. Colorado",
+        "full_name": "Wolf v. Colorado",
+        "citation": "338 U.S. 25 (1949)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1949-06-27",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "affirmed",
+        "holding": "The Fourteenth Amendment incorporates the Fourth Amendment's protection against arbitrary intrusion by police as a fundamental right implicit in the concept of ordered liberty, but the Fourteenth Amendment does not require states to exclude evidence obtained by unreasonable search and seizure as the remedy for Fourth Amendment violations.",
+        "holding_type": "affirmative",
+        "majority_author": "Frankfurter",
+        "per_curiam": false,
+        "vote": "6-3",
+        "status": "overruled",
+        "precedential_weight": "none",
+        "valid_from": "1949-06-27",
+        "valid_until": "1961-06-19",
+        "opinions": [],
+        "notes": "The Court held that the Fourth Amendment's core protection against arbitrary police intrusion is fundamental and incorporated into the Fourteenth Amendment, but declined to impose the exclusionary rule on the states. The Court emphasized that states may employ alternative remedies such as private actions for damages, internal police discipline, and public opinion.",
+        "courtlistener_id": "104709"
+      },
+      {
+        "@type": "Case",
+        "id": "mapp_v_ohio_1961",
+        "short_name": "Mapp v. Ohio",
+        "full_name": "Mapp v. Ohio",
+        "citation": "367 U.S. 643 (1961)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1961-06-19",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "Evidence obtained by searches and seizures in violation of the Fourth Amendment is inadmissible in state court proceedings, as the exclusionary rule is an essential ingredient of the Fourth Amendment right enforceable against the states through the Fourteenth Amendment Due Process Clause.",
+        "holding_type": "affirmative",
+        "majority_author": "Clark",
+        "per_curiam": false,
+        "vote": "6-3",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1961-06-19",
+        "valid_until": null,
+        "opinions": [
+          {
+            "type": "dissent",
+            "author": "Harlan",
+            "doctrinal_significance": "Argued against applying the exclusionary rule to the states",
+            "joined_by": [
+              "Frankfurter",
+              "Whittaker"
+            ],
+            "adopted_in": []
+          }
+        ],
+        "notes": "Overrules Wolf v. Colorado (1949) on the question of whether the exclusionary rule applies to state prosecutions. The Court held that the Fourth Amendment exclusionary rule is constitutionally mandated and must be applied to the states through the Fourteenth Amendment.",
+        "courtlistener_id": "8951163"
+      },
+      {
+        "@type": "Case",
+        "id": "gideon_v_wainwright_1963",
+        "short_name": "Gideon v. Wainwright",
+        "full_name": "Gideon v. Wainwright",
+        "citation": "372 U.S. 335 (1963)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1963-03-18",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "The Sixth Amendment guarantees the right to counsel in criminal prosecutions, and states must provide counsel to defendants who cannot afford to retain one.",
+        "holding_type": "affirmative",
+        "majority_author": "Black",
+        "per_curiam": false,
+        "vote": "9-0",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1963-03-18",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "Landmark decision establishing the constitutional right to appointed counsel for indigent criminal defendants.",
+        "courtlistener_id": "106545"
+      },
+      {
+        "@type": "Case",
+        "id": "escobedo_v_illinois_1964",
+        "short_name": "Escobedo v. Illinois",
+        "full_name": "Danny Escobedo v. State of Illinois",
+        "citation": "378 U.S. 478 (1964)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1964-06-22",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "Where the investigation has focused on a particular suspect in police custody, the suspect has requested and been denied an opportunity to consult with his lawyer, and the police have not effectively warned him of his absolute constitutional right to remain silent, the accused has been denied the Assistance of Counsel in violation of the Sixth Amendment as made obligatory upon the States by the Fourteenth Amendment, and no statement elicited by the police during interrogation may be used against him at trial.",
+        "holding_type": "affirmative",
+        "majority_author": "Goldberg",
+        "per_curiam": false,
+        "vote": "5-4",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1964-06-22",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "The Court held that the right to counsel attaches at the investigatory stage when the focus shifts from a general investigation to an accusatory interrogation of a particular suspect, prior to formal indictment. The opinion emphasizes that the critical stage for legal advice is during police interrogation, not merely at trial."
+      },
+      {
+        "@type": "Case",
+        "id": "miranda_v_arizona_1966",
+        "short_name": "Miranda v. Arizona",
+        "full_name": "Ernesto Miranda v. State of Arizona",
+        "citation": "384 U.S. 436 (1966)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1966-06-13",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "Law enforcement officers must inform suspects of their Fifth Amendment right against self-incrimination and Sixth Amendment right to counsel prior to custodial interrogation, and any statements obtained without such warnings are inadmissible in criminal proceedings.",
+        "holding_type": "affirmative",
+        "majority_author": "Warren",
+        "per_curiam": false,
+        "vote": "5-4",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1966-06-13",
+        "valid_until": null,
+        "opinions": [
+          {
+            "type": "dissent",
+            "author": "White",
+            "doctrinal_significance": "Argued that the majority's decision imposed unnecessary restrictions on law enforcement and that the Constitution did not require warnings before custodial interrogation.",
+            "joined_by": [
+              "Harlan",
+              "Stewart"
+            ],
+            "adopted_in": []
+          },
+          {
+            "type": "dissent",
+            "author": "Harlan",
+            "doctrinal_significance": "Criticized the majority's approach as going beyond constitutional requirements and imposing prophylactic rules not mandated by the Fifth and Sixth Amendments.",
+            "joined_by": [],
+            "adopted_in": []
+          }
+        ],
+        "notes": "This case established the requirement for Miranda warnings before custodial interrogation. The decision was 5-4, with Chief Justice Warren writing for the majority. Justices White, Harlan, and Stewart dissented."
+      },
+      {
+        "@type": "Case",
+        "id": "katz_v_united_states_1967",
+        "short_name": "Katz v. United States",
+        "full_name": "Katz v. United States",
+        "citation": "389 U.S. 347 (1967)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1967-12-18",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "The Fourth Amendment protects people, not places. Electronic surveillance of a person's words in a telephone booth, where he has a reasonable expectation of privacy, constitutes a search and seizure under the Fourth Amendment, and such surveillance without prior judicial authorization based on probable cause is per se unreasonable.",
+        "holding_type": "affirmative",
+        "majority_author": "Stewart",
+        "per_curiam": false,
+        "vote": "8-1",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1967-12-18",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "Overrules the trespass doctrine of Olmstead v. United States and Goldman v. United States. Establishes the reasonable expectation of privacy test for Fourth Amendment protection.",
+        "courtlistener_id": "107564"
+      },
+      {
+        "@type": "Case",
+        "id": "olmstead_v_united_states_1928",
+        "short_name": "Olmstead v. United States",
+        "full_name": "Olmstead v. United States",
+        "citation": "277 U.S. 438 (1928)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1928-06-04",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "affirmed",
+        "holding": "Surveillance without physical trespass and without seizure of material objects falls outside the scope of Fourth Amendment protection because the Fourth Amendment limits only searches and seizures of tangible property.",
+        "holding_type": "affirmative",
+        "majority_author": null,
+        "per_curiam": false,
+        "vote": null,
+        "status": "overruled",
+        "precedential_weight": "none",
+        "valid_from": "1928-06-04",
+        "valid_until": "1967-12-18",
+        "opinions": [],
+        "notes": "Stub node \u2014 overruled by katz_v_united_states_1967. Full node to be added when this case is modeled.",
+        "courtlistener_id": "101320"
+      },
+      {
+        "@type": "Case",
+        "id": "goldman_v_united_states_1942",
+        "short_name": "Goldman v. United States",
+        "full_name": "Goldman v. United States",
+        "citation": "316 U.S. 129 (1942)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1942-04-27",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "affirmed",
+        "holding": "Surveillance conducted without physical penetration of a protected area does not constitute a search or seizure under the Fourth Amendment.",
+        "holding_type": "affirmative",
+        "majority_author": null,
+        "per_curiam": false,
+        "vote": null,
+        "status": "overruled",
+        "precedential_weight": "none",
+        "valid_from": "1942-04-27",
+        "valid_until": "1967-12-18",
+        "opinions": [],
+        "notes": "Stub node \u2014 overruled by katz_v_united_states_1967. Full node to be added when this case is modeled.",
+        "courtlistener_id": "8196369"
+      },
+      {
+        "@type": "Case",
+        "id": "terry_v_ohio_1968",
+        "short_name": "Terry v. Ohio",
+        "full_name": "Terry v. Ohio",
+        "citation": "392 U.S. 1 (1968)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1968-06-10",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "affirmed",
+        "holding": "A police officer may conduct a limited search of the outer clothing of a person for weapons when the officer has reasonable suspicion, based on articulable facts, that the person may be armed and dangerous, even without probable cause for arrest.",
+        "holding_type": "affirmative",
+        "majority_author": "Warren",
+        "per_curiam": false,
+        "vote": "8-1",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1968-06-10",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "Chief Justice Warren delivered the opinion of the Court. The case establishes the constitutional framework for stop-and-frisk searches under the Fourth Amendment.",
+        "courtlistener_id": "107729"
+      },
+      {
+        "@type": "Case",
+        "id": "dickerson_v_united_states_2000",
+        "short_name": "Dickerson v. United States",
+        "full_name": "Dickerson v. United States",
+        "citation": "530 U.S. 428 (2000)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "2000-06-26",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "Miranda v. Arizona announced a constitutional rule governing the admissibility of statements made during custodial interrogation in both state and federal courts, and Congress may not supersede this constitutional holding through legislation such as 18 U.S.C. \u00a7 3501.",
+        "holding_type": "affirmative",
+        "majority_author": "Rehnquist",
+        "per_curiam": false,
+        "vote": "7-2",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "2000-06-26",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "The Court held that Miranda is a constitutional decision that cannot be overruled by statute. The Court declined to overrule Miranda itself, applying stare decisis principles.",
+        "courtlistener_id": "9190515"
+      },
+      {
+        "@type": "Case",
+        "id": "illinois_v_gates_1983",
+        "short_name": "Illinois v. Gates",
+        "full_name": "Illinois v. Gates",
+        "citation": "462 U.S. 213 (1983)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1983-06-08",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "The rigid two-pronged test from Aguilar and Spinelli for determining whether an informant's tip establishes probable cause is abandoned in favor of a flexible totality of the circumstances approach, under which a magistrate must make a practical, common-sense decision whether there is a fair probability that contraband or evidence of a crime will be found in a particular place.",
+        "holding_type": "affirmative",
+        "majority_author": "Rehnquist",
+        "per_curiam": false,
+        "vote": null,
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1983-06-08",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "The Court declined to address the exclusionary rule modification question under the 'not pressed or passed on below' doctrine. The decision explicitly overrules the rigid application of the Aguilar-Spinelli two-pronged test.",
+        "courtlistener_id": "110959"
       }
     ],
     "doctrinal_tests": [
@@ -8315,6 +8851,214 @@
         "valid_from": "2000-06-05",
         "valid_until": null,
         "notes": "This test applies heightened scrutiny to state interference with parental decisions. The Court emphasized that absent a showing of harm or potential harm to the child, or absent a finding that the parent is unfit, the state should not inject itself into the private realm of the family. The test does not require a formal harm showing as a threshold matter in all cases, but the plurality declined to decide that precise question. The plurality explicitly declined to identify the precise standard of review, stating only that the statute failed as applied. The test reflects balancing rather than a formal scrutiny tier."
+      },
+      {
+        "@type": "DoctrinalTest",
+        "id": "escobedo_pretrial_counsel_test",
+        "label": "Escobedo Pretrial Right to Counsel Test",
+        "description": "A multi-factor test determining whether the right to counsel attaches at the pretrial interrogation stage, requiring consideration of whether the investigation has focused on a particular suspect, the suspect is in custody, interrogation is being conducted, the suspect has requested counsel, and the suspect has not been warned of the right to remain silent.",
+        "area_id": "individual_rights",
+        "source_case_id": "escobedo_v_illinois_1964",
+        "scrutiny_level": "none",
+        "burden": "government",
+        "test_form": "conjunctive",
+        "prongs": [
+          {
+            "number": 1,
+            "label": "Investigation Focused on Particular Suspect",
+            "description": "The investigation must have ceased to be a general inquiry into an unsolved crime and must have begun to focus on a particular suspect.",
+            "burden_note": "Government must demonstrate the investigation remains general; if focused on suspect, right to counsel attaches.",
+            "valid_from": "1964-06-22",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 2,
+            "label": "Suspect in Police Custody",
+            "description": "The suspect must have been taken into police custody or otherwise restrained of liberty.",
+            "burden_note": "Government must show suspect was not in custody to avoid counsel requirement.",
+            "valid_from": "1964-06-22",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 3,
+            "label": "Interrogation Process Conducted",
+            "description": "The police must be carrying out a process of interrogations that lends itself to eliciting incriminating statements.",
+            "burden_note": "Government must show no interrogation occurred to avoid counsel requirement.",
+            "valid_from": "1964-06-22",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 4,
+            "label": "Suspect Requested and Was Denied Counsel",
+            "description": "The suspect must have requested an opportunity to consult with his lawyer and been denied that opportunity.",
+            "burden_note": "Government must show suspect did not request counsel or was granted access to counsel.",
+            "valid_from": "1964-06-22",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 5,
+            "label": "No Effective Warning of Right to Remain Silent",
+            "description": "The police must not have effectively warned the suspect of his absolute constitutional right to remain silent.",
+            "burden_note": "Government must show suspect was warned of right to remain silent to avoid exclusion of statement.",
+            "valid_from": "1964-06-22",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          }
+        ],
+        "status": "active",
+        "valid_from": "1964-06-22",
+        "valid_until": null,
+        "notes": "When all five prongs are satisfied, the accused has been denied the Assistance of Counsel in violation of the Sixth Amendment, and any statement elicited during interrogation is inadmissible. The test applies a functional rather than formal approach, rejecting reliance on whether formal indictment has occurred."
+      },
+      {
+        "@type": "DoctrinalTest",
+        "id": "miranda_warnings_test",
+        "label": "Miranda Warnings Test",
+        "description": "A test requiring law enforcement to provide specific warnings to suspects in custody before interrogation, and to obtain a valid waiver of rights before questioning.",
+        "area_id": "criminal_procedure",
+        "source_case_id": "miranda_v_arizona_1966",
+        "scrutiny_level": "per_se",
+        "burden": "government",
+        "test_form": "conjunctive",
+        "prongs": [
+          {
+            "number": 1,
+            "label": "Custody Requirement",
+            "description": "The suspect must be in custody or otherwise deprived of freedom of action in any significant way.",
+            "burden_note": "Government must establish that the suspect was in custody.",
+            "valid_from": "1966-06-13",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 2,
+            "label": "Interrogation Requirement",
+            "description": "There must be interrogation or its functional equivalent (express questioning or words or actions likely to elicit an incriminating response).",
+            "burden_note": "Government must establish that interrogation occurred.",
+            "valid_from": "1966-06-13",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 3,
+            "label": "Warning of Right Against Self-Incrimination",
+            "description": "The suspect must be warned that they have the right to remain silent and that anything they say can be used against them in court.",
+            "burden_note": "Government must provide this warning before custodial interrogation.",
+            "valid_from": "1966-06-13",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 4,
+            "label": "Warning of Right to Counsel",
+            "description": "The suspect must be warned that they have the right to an attorney and that one will be provided if they cannot afford one.",
+            "burden_note": "Government must provide this warning before custodial interrogation.",
+            "valid_from": "1966-06-13",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 5,
+            "label": "Valid Waiver",
+            "description": "The suspect must knowingly, intelligently, and voluntarily waive their rights before any interrogation proceeds.",
+            "burden_note": "Government must establish a valid waiver of rights.",
+            "valid_from": "1966-06-13",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          }
+        ],
+        "status": "active",
+        "valid_from": "1966-06-13",
+        "valid_until": null,
+        "notes": "This test establishes the procedural requirements for lawful custodial interrogation. Failure to comply results in suppression of any statements obtained."
+      },
+      {
+        "@type": "DoctrinalTest",
+        "id": "terry_stop_frisk_test",
+        "label": "Terry Stop and Frisk Test",
+        "description": "A two-part test for evaluating the constitutionality of a stop and frisk: (1) the officer must have reasonable suspicion based on articulable facts that criminal activity is afoot; and (2) the frisk must be limited to a pat-down of outer clothing for weapons, conducted for officer safety.",
+        "area_id": "criminal_procedure",
+        "source_case_id": "terry_v_ohio_1968",
+        "scrutiny_level": "none",
+        "burden": "government",
+        "test_form": "conjunctive",
+        "prongs": [
+          {
+            "number": 1,
+            "label": "Reasonable Suspicion",
+            "description": "The officer must have reasonable suspicion based on articulable facts that criminal activity is afoot or that the person may be armed and dangerous.",
+            "burden_note": "Government must articulate specific facts and rational inferences supporting the suspicion.",
+            "valid_from": "1968-06-10",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 2,
+            "label": "Limited Frisk for Weapons",
+            "description": "The frisk must be limited to a pat-down of the outer clothing to determine whether the person is armed, and may not extend to a full search for evidence of crime unless a weapon is felt.",
+            "burden_note": "Officer must limit the search to outer garments and to the purpose of detecting weapons.",
+            "valid_from": "1968-06-10",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          }
+        ],
+        "status": "active",
+        "valid_from": "1968-06-10",
+        "valid_until": null,
+        "notes": "The test applies when an officer conducts an investigatory stop without probable cause for arrest. The frisk is justified by officer safety concerns and must be strictly limited in scope."
+      },
+      {
+        "@type": "DoctrinalTest",
+        "id": "gates_totality_circumstances_test",
+        "label": "Totality of the Circumstances Test for Probable Cause",
+        "description": "A flexible standard for determining whether an informant's tip, combined with corroborating facts, establishes probable cause for a search warrant. The issuing magistrate must make a practical, common-sense decision whether there is a fair probability that contraband or evidence of a crime will be found in a particular place, considering all circumstances set forth in the affidavit.",
+        "area_id": "criminal_procedure",
+        "source_case_id": "illinois_v_gates_1983",
+        "scrutiny_level": "none",
+        "burden": "government",
+        "test_form": "balancing",
+        "prongs": [
+          {
+            "number": 1,
+            "label": "Fair Probability Standard",
+            "description": "The magistrate must determine whether there is a fair probability that contraband or evidence of a crime will be found in the particular place to be searched.",
+            "burden_note": "Government must establish fair probability based on totality of circumstances.",
+            "valid_from": "1983-06-08",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 2,
+            "label": "Substantial Basis for Magistrate's Conclusion",
+            "description": "A reviewing court must ensure that the magistrate had a substantial basis for concluding that probable cause existed.",
+            "burden_note": "Reviewing court must verify the magistrate's reasoning was grounded in the facts presented.",
+            "valid_from": "1983-06-08",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          }
+        ],
+        "status": "active",
+        "valid_from": "1983-06-08",
+        "valid_until": null,
+        "notes": "This test replaces the rigid two-pronged Aguilar-Spinelli test. Corroboration of informant details by independent police work is of significant value under this standard. The elements of veracity, reliability, and basis of knowledge are understood as closely intertwined issues that inform the common-sense probable cause determination."
       }
     ]
   },
@@ -15785,6 +16529,317 @@
         "federal"
       ],
       "notes": "Explicitly overruled by syllabus point 6."
+    },
+    {
+      "id": "criminal_procedure_child_of_individual_rights",
+      "source_id": "criminal_procedure",
+      "target_id": "individual_rights",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1868-07-28",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "criminal_procedure_grounded_in_14a",
+      "source_id": "criminal_procedure",
+      "target_id": "amendment_14_section_1",
+      "edge_type": "GROUNDED_IN",
+      "valid_from": "1868-07-28",
+      "valid_until": null,
+      "jurisdiction": [
+        "state"
+      ],
+      "notes": "Criminal procedure rights apply to the states through selective incorporation via the Fourteenth Amendment."
+    },
+    {
+      "id": "weeks_establishes_exclusionary_rule_federal",
+      "source_id": "weeks_v_united_states_1914",
+      "target_id": "exclusionary_rule_federal",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1914-02-24",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ],
+      "notes": "Weeks v. United States established the exclusionary rule for federal prosecutions, holding that evidence obtained in violation of the Fourth Amendment must be excluded from trial."
+    },
+    {
+      "id": "weeks_applies_fourth_amendment_protection",
+      "source_id": "weeks_v_united_states_1914",
+      "target_id": "fourth_amendment_protection",
+      "edge_type": "APPLIES",
+      "valid_from": "1914-02-24",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ],
+      "notes": "The Court applied Fourth Amendment protections to the warrantless search and seizure of the defendant's home and private papers by a federal marshal."
+    },
+    {
+      "id": "wolf_applies_selective_incorporation_doctrine",
+      "source_id": "wolf_v_colorado_1949",
+      "target_id": "selective_incorporation_doctrine",
+      "edge_type": "APPLIES",
+      "valid_from": "1949-06-27",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Wolf applies the selective incorporation framework from Palko, holding that the Fourth Amendment's core protection is incorporated but the exclusionary rule is not required."
+    },
+    {
+      "id": "wolf_establishes_fourth_amendment_privacy",
+      "source_id": "wolf_v_colorado_1949",
+      "target_id": "fourth_amendment_privacy_protection",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1949-06-27",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Wolf establishes that the Fourth Amendment's core protection against arbitrary police intrusion is a fundamental right incorporated into the Fourteenth Amendment."
+    },
+    {
+      "id": "wolf_establishes_remedy_flexibility",
+      "source_id": "wolf_v_colorado_1949",
+      "target_id": "remedy_flexibility_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1949-06-27",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Wolf establishes that states have flexibility in choosing remedies for Fourth Amendment violations, including alternatives to the exclusionary rule such as damages actions and police discipline."
+    },
+    {
+      "id": "mapp_overrules_wolf",
+      "source_id": "mapp_v_ohio_1961",
+      "target_id": "wolf_v_colorado_1949",
+      "edge_type": "OVERRULES",
+      "overrule_type": "explicit",
+      "valid_from": "1961-06-19",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Mapp explicitly overrules Wolf's holding that the exclusionary rule is not an essential ingredient of the Fourth Amendment right enforceable against the states."
+    },
+    {
+      "id": "mapp_establishes_exclusionary_rule",
+      "source_id": "mapp_v_ohio_1961",
+      "target_id": "exclusionary_rule",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1961-06-19",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Mapp established that the exclusionary rule is a constitutionally mandated doctrine applicable to state prosecutions."
+    },
+    {
+      "id": "mapp_applies_fourth_amendment_privacy",
+      "source_id": "mapp_v_ohio_1961",
+      "target_id": "fourth_amendment_privacy",
+      "edge_type": "APPLIES",
+      "valid_from": "1961-06-19",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Mapp applied and extended the Fourth Amendment right to privacy to state prosecutions through the Fourteenth Amendment."
+    },
+    {
+      "id": "gideon_establishes_right_to_counsel",
+      "source_id": "gideon_v_wainwright_1963",
+      "target_id": "right_to_counsel_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1963-03-18",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Gideon established that the Sixth Amendment right to counsel applies to state criminal prosecutions through the Fourteenth Amendment."
+    },
+    {
+      "id": "escobedo_establishes_escobedo_pretrial_counsel_test",
+      "source_id": "escobedo_v_illinois_1964",
+      "target_id": "escobedo_pretrial_counsel_test",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1964-06-22",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Escobedo v. Illinois established the multi-factor test for determining when the right to counsel attaches at the pretrial interrogation stage."
+    },
+    {
+      "id": "escobedo_establishes_sixth_amendment_right_to_counsel_pretrial",
+      "source_id": "escobedo_v_illinois_1964",
+      "target_id": "sixth_amendment_right_to_counsel_pretrial",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1964-06-22",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Escobedo v. Illinois established that the Sixth Amendment right to counsel extends to critical pretrial stages, including police interrogation."
+    },
+    {
+      "id": "escobedo_establishes_accusatory_vs_investigatory_stage",
+      "source_id": "escobedo_v_illinois_1964",
+      "target_id": "accusatory_vs_investigatory_stage",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1964-06-22",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Escobedo v. Illinois established the functional distinction between investigatory and accusatory stages, rejecting a purely formal test based on indictment."
+    },
+    {
+      "id": "miranda_establishes_miranda_doctrine",
+      "source_id": "miranda_v_arizona_1966",
+      "target_id": "miranda_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1966-06-13",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Miranda v. Arizona established the Miranda Doctrine as a constitutional requirement for custodial interrogation."
+    },
+    {
+      "id": "miranda_establishes_miranda_warnings_test",
+      "source_id": "miranda_v_arizona_1966",
+      "target_id": "miranda_warnings_test",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1966-06-13",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Miranda v. Arizona established the Miranda Warnings Test as the operative standard for determining the admissibility of statements obtained during custodial interrogation."
+    },
+    {
+      "id": "katz_overrules_olmstead",
+      "source_id": "katz_v_united_states_1967",
+      "target_id": "olmstead_v_united_states_1928",
+      "edge_type": "OVERRULES",
+      "overrule_type": "explicit",
+      "valid_from": "1967-12-18",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Katz explicitly rejects the trespass doctrine of Olmstead, holding that Fourth Amendment protection does not depend on physical intrusion into a protected area."
+    },
+    {
+      "id": "katz_overrules_goldman",
+      "source_id": "katz_v_united_states_1967",
+      "target_id": "goldman_v_united_states_1942",
+      "edge_type": "OVERRULES",
+      "overrule_type": "explicit",
+      "valid_from": "1967-12-18",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Katz explicitly rejects Goldman's holding that surveillance without physical penetration falls outside Fourth Amendment protection."
+    },
+    {
+      "id": "katz_establishes_reasonable_expectation_of_privacy",
+      "source_id": "katz_v_united_states_1967",
+      "target_id": "reasonable_expectation_of_privacy_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1967-12-18",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Katz establishes the reasonable expectation of privacy doctrine as the framework for determining Fourth Amendment protection, replacing the property-based trespass doctrine."
+    },
+    {
+      "id": "terry_v_ohio_1968_establishes_stop_and_frisk_doctrine",
+      "source_id": "terry_v_ohio_1968",
+      "target_id": "stop_and_frisk_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1968-06-10",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Terry v. Ohio established the constitutional framework for stop-and-frisk searches under the Fourth Amendment."
+    },
+    {
+      "id": "terry_v_ohio_1968_establishes_terry_stop_frisk_test",
+      "source_id": "terry_v_ohio_1968",
+      "target_id": "terry_stop_frisk_test",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1968-06-10",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Terry v. Ohio established the two-part test for evaluating the constitutionality of stops and frisks."
+    },
+    {
+      "id": "dickerson_applies_miranda_doctrine",
+      "source_id": "dickerson_v_united_states_2000",
+      "target_id": "miranda_doctrine",
+      "edge_type": "APPLIES",
+      "valid_from": "2000-06-26",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Dickerson affirms and applies the Miranda doctrine, holding that it is a constitutional rule that governs admissibility in both state and federal courts."
+    },
+    {
+      "id": "illinois_v_gates_establishes_gates_totality_circumstances_test",
+      "source_id": "illinois_v_gates_1983",
+      "target_id": "gates_totality_circumstances_test",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1983-06-08",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Illinois v. Gates established the totality of the circumstances test as the standard for evaluating probable cause from informant tips."
+    },
+    {
+      "id": "illinois_v_gates_establishes_probable_cause_informant_tip",
+      "source_id": "illinois_v_gates_1983",
+      "target_id": "probable_cause_informant_tip",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1983-06-08",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Illinois v. Gates established the modern doctrine governing probable cause determinations based on informant tips, replacing the rigid Aguilar-Spinelli framework."
     }
   ],
   "schema_issues_found": [
