@@ -17,8 +17,8 @@
     "created": "2026-03-15",
     "status": "draft",
     "schema_version": "0.2",
-    "node_count": 320,
-    "edge_count": 590,
+    "node_count": 342,
+    "edge_count": 605,
     "schema_issue_count": 41,
     "fixes_applied": [
       "FIX 1: ConstitutionalProvision labels changed to citation form (amendment_1, amendment_14_section_1) to disambiguate from Area nodes with same common-name labels",
@@ -1581,6 +1581,141 @@
         "valid_from": "1983-06-08",
         "valid_until": null,
         "notes": "This doctrine replaced the rigid Aguilar-Spinelli two-pronged test with a more flexible totality of the circumstances analysis."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "sixth_amendment_right_to_counsel_post_indictment",
+        "label": "Sixth Amendment Right to Counsel After Indictment",
+        "description": "A defendant has a constitutional right to the assistance of counsel after indictment, including protection against government-elicited incriminating statements obtained in the defendant's absence, whether through direct interrogation or surreptitious means.",
+        "area_id": "criminal_procedure",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1964-05-18",
+        "valid_until": null,
+        "notes": "Established in Massiah v. United States. Applies to post-indictment period and protects against both direct and indirect government elicitation of statements. The Court grounded this in the Sixth Amendment's guarantee of counsel and principles established in Powell v. Alabama."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "right_to_effective_assistance_of_counsel",
+        "label": "Right to Effective Assistance of Counsel",
+        "description": "The Sixth Amendment guarantees criminal defendants the right to effective assistance of counsel. Counsel's conduct must not undermine the proper functioning of the adversarial process such that the trial cannot be relied upon as having produced a just result.",
+        "area_id": "criminal_procedure",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1984-05-14",
+        "valid_until": null,
+        "notes": "Applies to both trial proceedings and capital sentencing proceedings that are sufficiently adversarial in format."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "search_incident_to_arrest",
+        "label": "Search Incident to Arrest",
+        "description": "A warrantless search may be conducted incident to a lawful arrest, but is limited in scope to the person of the arrestee and the area within his immediate control.",
+        "area_id": "criminal_procedure",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1969-06-23",
+        "valid_until": null,
+        "notes": "Established in Chimel v. California as a limitation on the scope of searches incident to arrest."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "good_faith_exception_exclusionary_rule",
+        "label": "Good-Faith Exception to the Exclusionary Rule",
+        "description": "An exception to the Fourth Amendment exclusionary rule that permits the introduction of evidence obtained by officers acting in reasonable reliance on a search warrant issued by a detached and neutral magistrate, even if the warrant is ultimately found to be invalid.",
+        "area_id": "criminal_procedure",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1984-07-05",
+        "valid_until": null,
+        "notes": "Established in United States v. Leon. The exception applies when an officer's reliance on the magistrate's probable-cause determination and on the technical sufficiency of the warrant is objectively reasonable."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "automobile_exception_fourth_amendment",
+        "label": "Automobile Exception to Warrant Requirement",
+        "description": "A warrantless search and seizure of a motor vehicle may be conducted without a warrant if the seizing officer has probable cause to believe the vehicle contains contraband goods subject to forfeiture, based on the practical distinction between searches of fixed structures and searches of mobile vehicles that can be quickly moved beyond the jurisdiction where a warrant must be sought.",
+        "area_id": "criminal_procedure",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1925-03-02",
+        "valid_until": null,
+        "notes": "Established in Carroll v. United States. The doctrine recognizes that the Fourth Amendment does not forbid all searches, but only unreasonable searches. The Court distinguished between searches of dwellings (requiring warrant) and searches of vehicles in transportation (permissible without warrant upon probable cause)."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "probable_cause_doctrine",
+        "label": "Probable Cause Standard",
+        "description": "Probable cause exists when the facts and circumstances before an officer are such as to warrant a man of prudence and caution in believing that an offense has been committed or that contraband is present. It requires reasonable ground for belief based on facts within the officer's knowledge or reasonably trustworthy information, not merely good faith suspicion.",
+        "area_id": "criminal_procedure",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1925-03-02",
+        "valid_until": null,
+        "notes": "Defined and applied in Carroll v. United States. The Court synthesized prior definitions from Stacey v. Emery, Commonwealth v. Carey, and other authorities. Good faith alone is insufficient; the faith must be grounded on facts that would make it reasonable."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "fourth_amendment_home_privacy",
+        "label": "Fourth Amendment Protection of Home Privacy Against Sense-Enhancing Technology",
+        "description": "The Fourth Amendment protects the home against warrantless searches using sense-enhancing technology not in general public use that reveals details of the home's interior that could not otherwise be obtained without physical intrusion. This protection preserves the degree of privacy against government that existed when the Fourth Amendment was adopted.",
+        "area_id": "criminal_procedure",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "2001-06-11",
+        "valid_until": null,
+        "notes": "Applies the Katz reasonable expectation of privacy test specifically to the home and sense-enhancing technology. Rejects mechanical interpretation focusing on whether information comes from home's external surface or whether it reveals 'intimate details.'"
+      },
+      {
+        "@type": "Doctrine",
+        "id": "fourth_amendment_digital_privacy",
+        "label": "Fourth Amendment Protection for Digital Location Information",
+        "description": "Digital location information derived from cell-site records revealing a person's movements and location is protected by the Fourth Amendment and cannot be accessed without a warrant supported by probable cause, notwithstanding the third-party doctrine.",
+        "area_id": "criminal_procedure",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "2018-06-22",
+        "valid_until": null,
+        "notes": "Established in Carpenter v. United States as a limitation on the third-party doctrine in the context of modern digital surveillance."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "fourth_amendment_traffic_stop_doctrine",
+        "label": "Fourth Amendment Traffic Stop Doctrine",
+        "description": "Under the Fourth Amendment, a temporary detention of a motorist is reasonable where probable cause exists to believe that a traffic violation has occurred, regardless of the officer's subjective intent or ulterior motives.",
+        "area_id": "criminal_procedure",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1996-06-10",
+        "valid_until": null,
+        "notes": "This doctrine establishes that subjective intentions play no role in Fourth Amendment analysis of traffic stops, and that the reasonableness of police conduct does not vary based on local law enforcement practices or the minor nature of the violation."
       }
     ],
     "areas": [
@@ -7781,6 +7916,250 @@
         "opinions": [],
         "notes": "The Court declined to address the exclusionary rule modification question under the 'not pressed or passed on below' doctrine. The decision explicitly overrules the rigid application of the Aguilar-Spinelli two-pronged test.",
         "courtlistener_id": "110959"
+      },
+      {
+        "@type": "Case",
+        "id": "betts_v_brady_1942",
+        "short_name": "Betts v. Brady",
+        "full_name": "Betts v. Brady",
+        "citation": "316 U.S. 455 (1942)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1942-06-01",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "remanded",
+        "holding": "A state criminal defendant does not have an absolute right to appointed counsel in all felony cases; the right to counsel depends on the circumstances of the particular case.",
+        "holding_type": "by_negation",
+        "majority_author": "Roberts",
+        "per_curiam": false,
+        "vote": null,
+        "status": "overruled",
+        "precedential_weight": "none",
+        "valid_from": "1942-06-01",
+        "valid_until": "1963-03-18",
+        "opinions": [],
+        "notes": "Petition for writ of certiorari granted. Court requested counsel to discuss jurisdiction and exhaustion of state remedies. This case was overruled by Gideon v. Wainwright, 372 U.S. 335 (1963).",
+        "courtlistener_id": "8195398"
+      },
+      {
+        "@type": "Case",
+        "id": "massiah_v_united_states_1964",
+        "short_name": "Massiah v. United States",
+        "full_name": "Massiah v. United States",
+        "citation": "377 U.S. 201 (1964)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1964-05-18",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "A defendant's own incriminating statements obtained by federal agents after indictment and in the absence of counsel cannot constitutionally be used as evidence against him at trial, even if obtained through surreptitious means without the defendant's knowledge.",
+        "holding_type": "affirmative",
+        "majority_author": "Stewart",
+        "per_curiam": false,
+        "vote": "6-3",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1964-05-18",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "The Court held that the Sixth Amendment right to counsel applies to post-indictment interrogation by government agents, whether direct or surreptitious. The Court distinguished between the government's right to continue investigation and its right to use the defendant's own statements obtained without counsel present.",
+        "courtlistener_id": "106822"
+      },
+      {
+        "@type": "Case",
+        "id": "strickland_v_washington_1984",
+        "short_name": "Strickland v. Washington",
+        "full_name": "Strickland v. Washington",
+        "citation": "466 U.S. 668 (1984)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1984-05-14",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "The Sixth Amendment guarantees the right to effective assistance of counsel. A defendant claiming ineffective assistance must demonstrate that counsel's performance was deficient and that this deficiency prejudiced the defense such that there is a reasonable probability the result would have been different, applying a standard of reasonably effective assistance with strong deference to counsel's strategic choices.",
+        "holding_type": "affirmative",
+        "majority_author": "O'Connor",
+        "per_curiam": false,
+        "vote": "8-1",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1984-05-14",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "Established the two-prong test for ineffective assistance of counsel claims: deficient performance and prejudice. Applies to both trial and capital sentencing proceedings.",
+        "courtlistener_id": "111170"
+      },
+      {
+        "@type": "Case",
+        "id": "chimel_v_california_1969",
+        "short_name": "Chimel v. California",
+        "full_name": "Chimel v. California",
+        "citation": "395 U.S. 752 (1969)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1969-06-23",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "A warrantless search incident to arrest is limited in scope to the person of the arrestee and the area within his immediate control, and may not extend to other areas of the premises.",
+        "holding_type": "affirmative",
+        "majority_author": "Stewart",
+        "per_curiam": false,
+        "vote": "7-2",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1969-06-23",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "Established the constitutional scope of searches incident to arrest under the Fourth Amendment. The Court rejected the broader scope permitted under earlier decisions including Harris v. United States and United States v. Rabinowitz.",
+        "courtlistener_id": "8974742"
+      },
+      {
+        "@type": "Case",
+        "id": "united_states_v_leon_1984",
+        "short_name": "United States v. Leon",
+        "full_name": "United States v. Leon",
+        "citation": "468 U.S. 897 (1984)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1984-07-05",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "The Fourth Amendment exclusionary rule does not bar the use in the prosecution's case in chief of evidence obtained by officers acting in reasonable reliance on a search warrant issued by a detached and neutral magistrate but ultimately found to be invalid.",
+        "holding_type": "affirmative",
+        "majority_author": "White",
+        "per_curiam": false,
+        "vote": "6-3",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1984-07-05",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "Established the good-faith exception to the Fourth Amendment exclusionary rule. The Court reversed the Court of Appeals' judgment and held that evidence obtained pursuant to a facially valid warrant is admissible even if the warrant is later found to be invalid, provided the officer's reliance on the warrant was objectively reasonable.",
+        "courtlistener_id": "9048842"
+      },
+      {
+        "@type": "Case",
+        "id": "carroll_v_united_states_1925",
+        "short_name": "Carroll v. United States",
+        "full_name": "Carroll v. United States",
+        "citation": "267 U.S. 132 (1925)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1925-03-02",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "affirmed",
+        "holding": "A warrantless search and seizure of an automobile may be conducted without a warrant if the seizing officer has probable cause to believe the vehicle contains contraband goods subject to forfeiture, because the mobility of vehicles and the impracticability of obtaining a warrant in such circumstances distinguish them from searches of fixed structures like dwellings.",
+        "holding_type": "affirmative",
+        "majority_author": "Taft",
+        "per_curiam": false,
+        "vote": "6-2",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1925-03-02",
+        "valid_until": null,
+        "opinions": [
+          {
+            "type": "concurrence",
+            "author": "McKenna",
+            "doctrinal_significance": "Concurred in the majority opinion",
+            "joined_by": [],
+            "adopted_in": []
+          }
+        ],
+        "notes": "Chief Justice Taft delivered the opinion of the Court. Justice McKenna concurred before his retirement. The decision establishes the automobile exception to the warrant requirement under the Fourth Amendment.",
+        "courtlistener_id": "100567"
+      },
+      {
+        "@type": "Case",
+        "id": "kyllo_v_united_states_2001",
+        "short_name": "Kyllo v. United States",
+        "full_name": "Kyllo v. United States",
+        "citation": "533 U.S. 27 (2001)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "2001-06-11",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "Where the Government uses a device not in general public use to explore details of a private home that would previously have been unknowable without physical intrusion, the surveillance constitutes a Fourth Amendment search and is presumptively unreasonable without a warrant.",
+        "holding_type": "affirmative",
+        "majority_author": "Scalia",
+        "per_curiam": false,
+        "vote": "5-4",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "2001-06-11",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "Reversed Ninth Circuit decision affirming thermal imaging search. Established that use of sense-enhancing technology to obtain information about home interior not otherwise obtainable without physical intrusion constitutes a search under the Fourth Amendment.",
+        "courtlistener_id": "118443"
+      },
+      {
+        "@type": "Case",
+        "id": "carpenter_v_united_states_2018",
+        "short_name": "Carpenter v. United States",
+        "full_name": "Carpenter v. United States",
+        "citation": "585 U.S. 296 (2018)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "2018-06-22",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "Access to historical cell-site records revealing the location and movements of a mobile phone user constitutes a Fourth Amendment search requiring a warrant supported by probable cause.",
+        "holding_type": "affirmative",
+        "majority_author": "Roberts",
+        "per_curiam": false,
+        "vote": "5-4",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "2018-06-22",
+        "valid_until": null,
+        "opinions": [
+          {
+            "type": "dissent",
+            "author": "Kennedy",
+            "doctrinal_significance": "Argued that the third-party doctrine should apply to cell-site records and that the majority's approach improperly expanded Fourth Amendment protections.",
+            "joined_by": [
+              "Thomas",
+              "Alito"
+            ],
+            "adopted_in": []
+          }
+        ],
+        "notes": "The Court held that digital location information derived from cell-site records is not subject to the third-party doctrine and requires Fourth Amendment protection. This represents a significant expansion of privacy rights in the digital age.",
+        "courtlistener_id": "4510032"
+      },
+      {
+        "@type": "Case",
+        "id": "whren_v_united_states_1996",
+        "short_name": "Whren v. United States",
+        "full_name": "Whren v. United States",
+        "citation": "517 U.S. 806 (1996)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1996-06-10",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "affirmed",
+        "holding": "The temporary detention of a motorist upon probable cause to believe that he has violated the traffic laws does not violate the Fourth Amendment's prohibition against unreasonable seizures, even if a reasonable officer would not have stopped the motorist absent some additional law enforcement objective.",
+        "holding_type": "affirmative",
+        "majority_author": "Scalia",
+        "per_curiam": false,
+        "vote": "9-0",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1996-06-10",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "The Court rejected the argument that subjective intent or pretext can invalidate police conduct justified by probable cause in traffic stops. The Court also rejected a balancing test that would vary Fourth Amendment protections based on local law enforcement practices or the minor nature of the traffic violation.",
+        "courtlistener_id": "9272891"
       }
     ],
     "doctrinal_tests": [
@@ -9059,6 +9438,194 @@
         "valid_from": "1983-06-08",
         "valid_until": null,
         "notes": "This test replaces the rigid two-pronged Aguilar-Spinelli test. Corroboration of informant details by independent police work is of significant value under this standard. The elements of veracity, reliability, and basis of knowledge are understood as closely intertwined issues that inform the common-sense probable cause determination."
+      },
+      {
+        "@type": "DoctrinalTest",
+        "id": "strickland_ineffective_assistance_test",
+        "label": "Strickland Ineffective Assistance of Counsel Test",
+        "description": "Two-part test for evaluating claims of ineffective assistance of counsel under the Sixth Amendment. Defendant must show deficient performance and prejudice resulting from that deficiency.",
+        "area_id": "criminal_procedure",
+        "source_case_id": "strickland_v_washington_1984",
+        "scrutiny_level": "none",
+        "burden": "challenger",
+        "test_form": "conjunctive",
+        "prongs": [
+          {
+            "number": 1,
+            "label": "Deficient Performance",
+            "description": "Counsel's performance was deficient. The proper standard is reasonably effective assistance, considering all circumstances. Counsel's representation must be evaluated from counsel's perspective at the time, with strong presumption that conduct falls within the wide range of reasonable professional assistance. Judicial scrutiny must be highly deferential and eliminate hindsight bias.",
+            "burden_note": "Defendant must show counsel's performance fell below an objective standard of reasonableness.",
+            "valid_from": "1984-05-14",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 2,
+            "label": "Prejudice",
+            "description": "The deficient performance prejudiced the defense. Defendant must show there is a reasonable probability that, but for counsel's unprofessional errors, the result of the proceeding would have been different. A reasonable probability is one sufficient to undermine confidence in the outcome. Court must consider the totality of evidence before the judge or jury.",
+            "burden_note": "Defendant must demonstrate reasonable probability of different outcome absent counsel's errors.",
+            "valid_from": "1984-05-14",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          }
+        ],
+        "status": "active",
+        "valid_from": "1984-05-14",
+        "valid_until": null,
+        "notes": "Court need not determine deficient performance before examining prejudice; if easier to dispose on lack of prejudice, that course should be followed. Applies in federal collateral proceedings, direct appeal, motions for new trial, and federal habeas challenges to state convictions."
+      },
+      {
+        "@type": "DoctrinalTest",
+        "id": "leon_good_faith_test",
+        "label": "Good-Faith Reliance on Warrant Test",
+        "description": "A test determining whether evidence obtained pursuant to a search warrant is admissible despite the warrant's invalidity, based on whether the officer's reliance on the warrant was objectively reasonable.",
+        "area_id": "criminal_procedure",
+        "source_case_id": "united_states_v_leon_1984",
+        "scrutiny_level": "rational_basis",
+        "burden": "challenger",
+        "test_form": "conjunctive",
+        "prongs": [
+          {
+            "number": 1,
+            "label": "Detached and Neutral Magistrate",
+            "description": "The warrant must have been issued by a detached and neutral magistrate, not one who merely serves as a rubber stamp for police.",
+            "burden_note": "Government must show the magistrate performed a neutral and detached function.",
+            "valid_from": "1984-07-05",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 2,
+            "label": "Objectively Reasonable Reliance",
+            "description": "The officer's reliance on the magistrate's probable-cause determination and on the technical sufficiency of the warrant must be objectively reasonable.",
+            "burden_note": "Government must demonstrate the officer could not reasonably question the warrant's validity.",
+            "valid_from": "1984-07-05",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 3,
+            "label": "No Knowing or Reckless Falsity",
+            "description": "The affidavit supporting the warrant must not contain information that the affiant knew was false or would have known was false except for reckless disregard of the truth.",
+            "burden_note": "Challenger must show knowing or reckless falsity in the affidavit.",
+            "valid_from": "1984-07-05",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 4,
+            "label": "Substantial Basis for Probable Cause",
+            "description": "The affidavit must provide the magistrate with a substantial basis for determining the existence of probable cause; the warrant cannot be based on an affidavit so lacking in indicia of probable cause as to render official belief in its existence entirely unreasonable.",
+            "burden_note": "Government must show the affidavit provided a substantial basis for probable cause.",
+            "valid_from": "1984-07-05",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 5,
+            "label": "Facial Validity of Warrant",
+            "description": "The warrant must not be so facially deficient\u2014such as in failing to particularize the place to be searched or the things to be seized\u2014that executing officers cannot reasonably presume it to be valid.",
+            "burden_note": "Government must show the warrant was not facially deficient.",
+            "valid_from": "1984-07-05",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          }
+        ],
+        "status": "active",
+        "valid_from": "1984-07-05",
+        "valid_until": null,
+        "notes": "The test applies when evidence is obtained pursuant to a search warrant that is ultimately found to be invalid. Suppression remains an appropriate remedy if the magistrate was misled by knowing or reckless falsity, wholly abandoned the detached and neutral role, or if the warrant is so facially deficient that reasonable reliance is impossible."
+      },
+      {
+        "@type": "DoctrinalTest",
+        "id": "carroll_automobile_search_test",
+        "label": "Carroll Automobile Search Test",
+        "description": "A warrantless search of an automobile is valid if: (1) the seizing officer has probable cause to believe the vehicle contains contraband or goods subject to forfeiture; and (2) the search is conducted in circumstances where securing a warrant is impracticable due to the vehicle's mobility. The test balances the government's need to seize contraband in transit against the individual's Fourth Amendment protections.",
+        "area_id": "criminal_procedure",
+        "source_case_id": "carroll_v_united_states_1925",
+        "scrutiny_level": "rational_basis",
+        "burden": "government",
+        "test_form": "conjunctive",
+        "prongs": [
+          {
+            "number": 1,
+            "label": "Probable Cause",
+            "description": "The seizing officer must have probable cause\u2014facts and circumstances sufficient to warrant a man of prudence and caution in believing\u2014that the automobile contains contraband or goods subject to forfeiture and destruction.",
+            "burden_note": "Government must establish probable cause based on facts known to the officer or reasonably trustworthy information received.",
+            "valid_from": "1925-03-02",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 2,
+            "label": "Impracticability of Warrant",
+            "description": "The search must occur in circumstances where it is not practicable to secure a warrant because the vehicle can be quickly moved out of the locality or jurisdiction in which the warrant must be sought, distinguishing automobiles from fixed structures like dwellings.",
+            "burden_note": "The government need not show it attempted to obtain a warrant; the inherent mobility of vehicles satisfies this prong.",
+            "valid_from": "1925-03-02",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          }
+        ],
+        "status": "active",
+        "valid_from": "1925-03-02",
+        "valid_until": null,
+        "notes": "Established in Carroll v. United States. The test reflects the Court's holding that the Fourth Amendment recognizes a necessary distinction between searches of dwellings (requiring warrant) and searches of vehicles in transportation (permissible without warrant upon probable cause). The Court emphasized that the seizure of contraband in transit is the primary purpose, with arrest of the transporter being incidental."
+      },
+      {
+        "@type": "DoctrinalTest",
+        "id": "kyllo_sense_enhancing_tech_test",
+        "label": "Sense-Enhancing Technology Search Test",
+        "description": "A search occurs under the Fourth Amendment when: (1) the Government uses a device not in general public use; (2) to explore details of a private home; (3) that would previously have been unknowable without physical intrusion into a constitutionally protected area. Such a search is presumptively unreasonable without a warrant.",
+        "area_id": "criminal_procedure",
+        "source_case_id": "kyllo_v_united_states_2001",
+        "scrutiny_level": "per_se",
+        "burden": "government",
+        "test_form": "conjunctive",
+        "prongs": [
+          {
+            "number": 1,
+            "label": "Device Not in General Public Use",
+            "description": "The technology or device used must not be in general public use.",
+            "burden_note": "Government must establish that the device is in general public use to avoid triggering search analysis.",
+            "valid_from": "2001-06-11",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 2,
+            "label": "Exploration of Home Details",
+            "description": "The device must be used to explore details of a private home.",
+            "burden_note": "Applies specifically to the home, which receives heightened Fourth Amendment protection.",
+            "valid_from": "2001-06-11",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 3,
+            "label": "Information Previously Unknowable Without Physical Intrusion",
+            "description": "The information obtained could not previously have been obtained without physical intrusion into a constitutionally protected area.",
+            "burden_note": "Government cannot justify warrantless use by arguing the information came from the home's external surface or did not reveal 'intimate details.'",
+            "valid_from": "2001-06-11",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          }
+        ],
+        "status": "active",
+        "valid_from": "2001-06-11",
+        "valid_until": null,
+        "notes": "When all three prongs are satisfied, the surveillance is a Fourth Amendment search and is presumptively unreasonable without a warrant. The test rejects mechanical interpretations based on whether information originates from external surfaces or whether it reveals 'intimate details.' In the sanctity of the home, all details are treated as intimate."
       }
     ]
   },
@@ -16840,6 +17407,202 @@
         "state"
       ],
       "notes": "Illinois v. Gates established the modern doctrine governing probable cause determinations based on informant tips, replacing the rigid Aguilar-Spinelli framework."
+    },
+    {
+      "id": "betts_applies_right_to_counsel",
+      "source_id": "betts_v_brady_1942",
+      "target_id": "right_to_counsel_doctrine",
+      "edge_type": "APPLIES",
+      "valid_from": "1942-06-01",
+      "valid_until": "1963-03-18",
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Betts applied the right to counsel doctrine in a limited, circumstance-dependent form, holding that the right does not require appointment of counsel in all state felony cases. Overruled by Gideon v. Wainwright."
+    },
+    {
+      "id": "massiah_establishes_sixth_amendment_right_to_counsel_post_indictment",
+      "source_id": "massiah_v_united_states_1964",
+      "target_id": "sixth_amendment_right_to_counsel_post_indictment",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1964-05-18",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Massiah established the doctrine that the Sixth Amendment protects a defendant's right to counsel after indictment against government-elicited incriminating statements."
+    },
+    {
+      "id": "strickland_establishes_strickland_ineffective_assistance_test",
+      "source_id": "strickland_v_washington_1984",
+      "target_id": "strickland_ineffective_assistance_test",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1984-05-14",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Strickland established the foundational two-prong test for ineffective assistance of counsel claims."
+    },
+    {
+      "id": "strickland_establishes_right_to_effective_assistance_of_counsel",
+      "source_id": "strickland_v_washington_1984",
+      "target_id": "right_to_effective_assistance_of_counsel",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1984-05-14",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Strickland articulated the substantive doctrine that the Sixth Amendment guarantees effective assistance of counsel as a fundamental right."
+    },
+    {
+      "id": "chimel_establishes_search_incident_to_arrest",
+      "source_id": "chimel_v_california_1969",
+      "target_id": "search_incident_to_arrest",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1969-06-23",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Chimel established the scope limitation for searches incident to arrest."
+    },
+    {
+      "id": "united_states_v_leon_establishes_good_faith_exception",
+      "source_id": "united_states_v_leon_1984",
+      "target_id": "good_faith_exception_exclusionary_rule",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1984-07-05",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "United States v. Leon established the good-faith exception to the Fourth Amendment exclusionary rule."
+    },
+    {
+      "id": "united_states_v_leon_establishes_leon_good_faith_test",
+      "source_id": "united_states_v_leon_1984",
+      "target_id": "leon_good_faith_test",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1984-07-05",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "United States v. Leon established the good-faith reliance on warrant test for determining admissibility of evidence obtained pursuant to an invalid warrant."
+    },
+    {
+      "id": "united_states_v_leon_modifies_fourth_amendment_exclusionary_rule",
+      "source_id": "united_states_v_leon_1984",
+      "target_id": "exclusionary_rule",
+      "edge_type": "MODIFIES",
+      "valid_from": "1984-07-05",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "direction": "narrows",
+      "notes": "United States v. Leon narrowed the Fourth Amendment exclusionary rule by creating an exception for evidence obtained by officers acting in reasonable reliance on a facially valid warrant issued by a detached and neutral magistrate."
+    },
+    {
+      "id": "carroll_establishes_automobile_exception",
+      "source_id": "carroll_v_united_states_1925",
+      "target_id": "automobile_exception_fourth_amendment",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1925-03-02",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Carroll v. United States established the automobile exception to the Fourth Amendment warrant requirement."
+    },
+    {
+      "id": "carroll_establishes_carroll_automobile_search_test",
+      "source_id": "carroll_v_united_states_1925",
+      "target_id": "carroll_automobile_search_test",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1925-03-02",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Carroll v. United States established the two-prong test for warrantless automobile searches: probable cause and impracticability of obtaining a warrant."
+    },
+    {
+      "id": "carroll_applies_probable_cause_doctrine",
+      "source_id": "carroll_v_united_states_1925",
+      "target_id": "probable_cause_doctrine",
+      "edge_type": "APPLIES",
+      "valid_from": "1925-03-02",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Carroll v. United States applied and synthesized the probable cause standard from prior cases including Stacey v. Emery and Commonwealth v. Carey, defining it as facts and circumstances warranting a man of prudence and caution in believing an offense has been committed."
+    },
+    {
+      "id": "kyllo_establishes_kyllo_sense_enhancing_tech_test",
+      "source_id": "kyllo_v_united_states_2001",
+      "target_id": "kyllo_sense_enhancing_tech_test",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2001-06-11",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Kyllo established the sense-enhancing technology test as a framework for determining when use of technology constitutes a Fourth Amendment search."
+    },
+    {
+      "id": "kyllo_establishes_fourth_amendment_home_privacy",
+      "source_id": "kyllo_v_united_states_2001",
+      "target_id": "fourth_amendment_home_privacy",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2001-06-11",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Kyllo established the doctrine that the Fourth Amendment protects the home against warrantless searches using sense-enhancing technology not in general public use."
+    },
+    {
+      "id": "carpenter_establishes_fourth_amendment_digital_privacy",
+      "source_id": "carpenter_v_united_states_2018",
+      "target_id": "fourth_amendment_digital_privacy",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2018-06-22",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Carpenter established that digital location information from cell-site records receives Fourth Amendment protection despite the third-party doctrine."
+    },
+    {
+      "id": "whren_establishes_fourth_amendment_traffic_stop_doctrine",
+      "source_id": "whren_v_united_states_1996",
+      "target_id": "fourth_amendment_traffic_stop_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1996-06-10",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Whren established the principle that probable cause to believe a traffic violation has occurred is sufficient to justify a traffic stop under the Fourth Amendment, regardless of the officer's subjective intent."
     }
   ],
   "schema_issues_found": [
