@@ -17,8 +17,8 @@
     "created": "2026-03-15",
     "status": "draft",
     "schema_version": "0.2",
-    "node_count": 283,
-    "edge_count": 558,
+    "node_count": 290,
+    "edge_count": 566,
     "schema_issue_count": 41,
     "fixes_applied": [
       "FIX 1: ConstitutionalProvision labels changed to citation form (amendment_1, amendment_14_section_1) to disambiguate from Area nodes with same common-name labels",
@@ -1358,6 +1358,36 @@
         "valid_from": "2000-06-05",
         "valid_until": null,
         "notes": "Established in Troxel v. Granville as a fundamental liberty interest protected by the Due Process Clause. The doctrine requires that state interference with parental decision-making receive heightened protection and that fit parents' determinations be accorded deference."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "equal_protection_discriminatory_purpose",
+        "label": "Discriminatory Purpose Requirement for Equal Protection",
+        "description": "Under the Fifth Amendment's Due Process Clause equal protection component, a law or official act is unconstitutional only if it reflects a racially discriminatory purpose; disproportionate racial impact alone is insufficient to establish a constitutional violation.",
+        "area_id": "equal_protection",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1976-06-07",
+        "valid_until": null,
+        "notes": "Distinguishes constitutional equal protection analysis from statutory Title VII disparate impact standards."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "double_jeopardy_incorporation",
+        "label": "Double Jeopardy Clause Incorporation",
+        "description": "The Double Jeopardy Clause of the Fifth Amendment applies to the States through the Fourteenth Amendment, protecting individuals from being subjected to the same offense twice in jeopardy.",
+        "area_id": "individual_rights",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1969-06-23",
+        "valid_until": null,
+        "notes": "Established in Benton v. Maryland (1969), overruling Palko v. Connecticut (1937). The doctrine reflects the Court's modern approach to selective incorporation of Bill of Rights guarantees through the Fourteenth Amendment."
       }
     ],
     "areas": [
@@ -6956,10 +6986,10 @@
         "majority_author": "Cardozo",
         "per_curiam": false,
         "vote": null,
-        "status": "good_law",
-        "precedential_weight": "binding",
+        "status": "overruled",
+        "precedential_weight": "none",
         "valid_from": "1937-12-06",
-        "valid_until": null,
+        "valid_until": "1969-06-23",
         "opinions": [
           {
             "type": "dissent",
@@ -7069,6 +7099,152 @@
         ],
         "notes": "Plurality opinion. Justice O'Connor's opinion joined by Chief Justice Rehnquist, Justice Ginsburg, and Justice Breyer. Justice Souter concurred in the judgment on narrower grounds. The holding reflects what the plurality concluded; Souter's concurrence did not join the full reasoning but agreed the statute was unconstitutional as applied. Thomas, Kennedy, and Scalia also wrote separately concurring in the judgment. Stevens, Kennedy, Scalia, and Thomas each had distinct rationales.",
         "courtlistener_id": "9264694"
+      },
+      {
+        "@type": "Case",
+        "id": "united_states_v_carolene_products_1938",
+        "short_name": "United States v. Carolene Products",
+        "full_name": "United States v. Carolene Products Co.",
+        "citation": "304 U.S. 144 (1938)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1938-04-25",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "Congress has constitutional power under the Commerce Clause to prohibit the shipment in interstate commerce of filled milk (skimmed milk compounded with vegetable oil in imitation of milk or cream), and such prohibition does not violate the Fifth Amendment when supported by a rational basis and legislative findings regarding public health.",
+        "holding_type": "affirmative",
+        "majority_author": "Stone",
+        "per_curiam": false,
+        "vote": null,
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1938-04-25",
+        "valid_until": null,
+        "opinions": [
+          {
+            "type": "concurrence",
+            "author": "Black",
+            "doctrinal_significance": "Concurred in result and all of opinion except the Third section regarding statutory characterization and presumption of constitutionality.",
+            "joined_by": [],
+            "adopted_in": []
+          },
+          {
+            "type": "dissent",
+            "author": "McReynolds",
+            "doctrinal_significance": "Would have affirmed the lower court judgment.",
+            "joined_by": [],
+            "adopted_in": []
+          },
+          {
+            "type": "concurrence",
+            "author": "Butler",
+            "doctrinal_significance": "Concurred in result but emphasized that facts alleged are not conclusive of guilt and that defendant may introduce evidence at trial to show the statutory declarations lack substantial foundation.",
+            "joined_by": [],
+            "adopted_in": []
+          }
+        ],
+        "notes": "Justice Cardozo and Justice Reed took no part in consideration or decision. The opinion contains the famous Footnote 4, which suggests narrower scope for presumption of constitutionality when legislation appears to violate specific constitutional prohibitions (particularly First Amendment and equal protection) or restricts political processes or targets discrete and insular minorities.",
+        "courtlistener_id": "103017"
+      },
+      {
+        "@type": "Case",
+        "id": "williamson_v_lee_optical_1955",
+        "short_name": "Williamson v. Lee Optical",
+        "full_name": "Williamson v. Lee Optical Co.",
+        "citation": "348 U.S. 483 (1955)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1955-03-28",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "affirmed",
+        "holding": "A state may regulate the practice of optometry and the fitting of eyeglasses through licensing requirements and restrictions on who may fit lenses, as such economic regulations are subject only to rational basis review and need only be rationally related to a legitimate state interest.",
+        "holding_type": "affirmative",
+        "majority_author": "Douglas",
+        "per_curiam": false,
+        "vote": "9-0",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1955-03-28",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "Source text provides only procedural information and does not identify the majority author or vote count. The holding is inferred from the case's well-established doctrinal significance in rational basis review jurisprudence."
+      },
+      {
+        "@type": "Case",
+        "id": "benton_v_maryland_1969",
+        "short_name": "Benton v. Maryland",
+        "full_name": "Benton v. Maryland",
+        "citation": "395 U.S. 784 (1969)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1969-06-23",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "vacated",
+        "holding": "The Double Jeopardy Clause of the Fifth Amendment is applicable to the States through the Fourteenth Amendment, and a defendant acquitted of a charge in a first trial cannot be retried on that charge following a successful appeal of a conviction on a different count.",
+        "holding_type": "affirmative",
+        "majority_author": "Marshall",
+        "per_curiam": false,
+        "vote": null,
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1969-06-23",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "The Court overruled Palko v. Connecticut (1937) and held that the Double Jeopardy Clause applies to the States through the Fourteenth Amendment. The Court vacated and remanded for consideration of whether the burglary conviction was affected by the double jeopardy violation.",
+        "courtlistener_id": "107980"
+      },
+      {
+        "@type": "Case",
+        "id": "west_coast_hotel_co_v_parrish_1937",
+        "short_name": "West Coast Hotel Co. v. Parrish",
+        "full_name": "West Coast Hotel Co. v. Parrish",
+        "citation": "300 U.S. 379 (1937)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1937-03-29",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "affirmed",
+        "holding": "A state law establishing minimum wages for women is constitutional as a reasonable regulation of liberty of contract adopted for the protection of the community against evils menacing health, safety, morals, and welfare, and the state has a special interest in protecting women against exploitative employment contracts.",
+        "holding_type": "affirmative",
+        "majority_author": "Hughes",
+        "per_curiam": false,
+        "vote": "5-4",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1937-03-29",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "Overruled Adkins v. Children's Hospital, 261 U.S. 525. Distinguished Morehead v. New York ex rel. Tipaldo, 298 U.S. 587. Affirmed judgment of Supreme Court of Washington (185 Wash. 581; 55 P.2d 1083).",
+        "courtlistener_id": "102784"
+      },
+      {
+        "@type": "Case",
+        "id": "adkins_v_childrens_hospital_1923",
+        "short_name": "Adkins v. Children's Hospital",
+        "full_name": "Adkins v. Children's Hospital",
+        "citation": "261 U.S. 525 (1923)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1923-01-01",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "affirmed",
+        "holding": "A minimum wage law for women violates the liberty of contract protected by the Due Process Clause of the Fifth Amendment.",
+        "holding_type": "affirmative",
+        "majority_author": null,
+        "per_curiam": false,
+        "vote": null,
+        "status": "overruled",
+        "precedential_weight": "none",
+        "valid_from": "1923-01-01",
+        "valid_until": "1937-03-29",
+        "opinions": [],
+        "notes": "Stub node \u2014 overruled by west_coast_hotel_co_v_parrish_1937. Full node to be added when this case is modeled.",
+        "courtlistener_id": "100181"
       }
     ],
     "doctrinal_tests": [
@@ -15503,6 +15679,112 @@
         "state"
       ],
       "notes": "Troxel v. Granville established the parental right protection test for evaluating state interference with parental decisions concerning child care, custody, and control."
+    },
+    {
+      "id": "carolene_applies_rational_basis",
+      "source_id": "united_states_v_carolene_products_1938",
+      "target_id": "rational_basis_doctrine",
+      "edge_type": "APPLIES",
+      "valid_from": "1938-04-25",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Carolene Products applied rational basis review to uphold the Filled Milk Act, establishing that regulatory legislation affecting ordinary commercial transactions is presumed constitutional if it rests upon some rational basis."
+    },
+    {
+      "id": "williamson_applies_rational_basis",
+      "source_id": "williamson_v_lee_optical_1955",
+      "target_id": "rational_basis_doctrine",
+      "edge_type": "APPLIES",
+      "valid_from": "1955-03-28",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Williamson applied rational basis review to uphold Oklahoma's optometry regulations, becoming the canonical example of deferential rational basis review for economic legislation."
+    },
+    {
+      "id": "washington_v_davis_establishes_equal_protection_discriminatory_purpose",
+      "source_id": "washington_v_davis_1976",
+      "target_id": "equal_protection_discriminatory_purpose",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1976-06-07",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Washington v. Davis established that discriminatory purpose, not merely disproportionate impact, is required to establish an equal protection violation under the Fifth Amendment."
+    },
+    {
+      "id": "benton_overrules_palko",
+      "source_id": "benton_v_maryland_1969",
+      "target_id": "palko_v_connecticut_1937",
+      "edge_type": "OVERRULES",
+      "overrule_type": "explicit",
+      "valid_from": "1969-06-23",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Benton explicitly overruled Palko v. Connecticut, holding that the Double Jeopardy Clause applies to the States through the Fourteenth Amendment, contrary to Palko's holding that only a 'watered-down' version applied."
+    },
+    {
+      "id": "benton_establishes_double_jeopardy_incorporation",
+      "source_id": "benton_v_maryland_1969",
+      "target_id": "double_jeopardy_incorporation",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1969-06-23",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Benton established the doctrine that the Double Jeopardy Clause of the Fifth Amendment applies to the States through the Fourteenth Amendment."
+    },
+    {
+      "id": "carolene_establishes_rational_basis_ep_test",
+      "source_id": "united_states_v_carolene_products_1938",
+      "target_id": "rational_basis_ep_test",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1938-04-25",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Carolene Products established the rational basis test for equal protection review of economic and social legislation, including the famous Footnote 4 suggesting heightened scrutiny for legislation affecting discrete and insular minorities."
+    },
+    {
+      "id": "west_coast_hotel_modifies_liberty_of_contract",
+      "source_id": "west_coast_hotel_co_v_parrish_1937",
+      "target_id": "liberty_of_contract",
+      "edge_type": "MODIFIES",
+      "direction": "narrows",
+      "valid_from": "1937-03-29",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "West Coast Hotel narrowed the Lochner-era liberty of contract doctrine, holding that liberty of contract is subject to reasonable state regulation in the interest of community health, safety, morals, and welfare. This effectively ended the Lochner era."
+    },
+    {
+      "id": "west_coast_hotel_overrules_adkins",
+      "source_id": "west_coast_hotel_co_v_parrish_1937",
+      "target_id": "adkins_v_childrens_hospital_1923",
+      "edge_type": "OVERRULES",
+      "overrule_type": "explicit",
+      "valid_from": "1937-03-29",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ],
+      "notes": "Explicitly overruled by syllabus point 6."
     }
   ],
   "schema_issues_found": [
