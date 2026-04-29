@@ -202,6 +202,10 @@ def fetch_from_lii(citation_volume, citation_page, session):
                     cut = idx
             
             syllabus = clean_text(candidate[:cut])
+            # Detect LII's intentionally omitted placeholder for pre-1990 cases
+            if 'intentionally omitted' in syllabus.lower() or len(syllabus) < 200:
+                print(f"    LII: syllabus intentionally omitted or too short — falling back to CourtListener")
+                return None, None
             if len(syllabus) > 300:
                 return syllabus, "lii_extracted"
 
