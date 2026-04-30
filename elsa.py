@@ -228,43 +228,72 @@ def get_cl_headers():
         return None
     return {"Authorization": f"Token {key}"}
 
+def build_name_variants(case_name):
+    """Generate simplified name variants for CourtListener search."""
+    variants = [case_name]
+    # Strip corporate suffixes
+    stripped = re.sub(r'\b(Co\.|Corp\.|Inc\.|Ltd\.|LLC)\b', '', case_name).strip()
+    stripped = re.sub(r'\s+', ' ', stripped)
+    if stripped != case_name and stripped not in variants:
+        variants.append(stripped)
+    # Try stripping everything after a comma in each party name
+    parts = re.split(r'\s+v\.\s+', case_name, maxsplit=1, flags=re.IGNORECASE)
+    if len(parts) == 2:
+        p1 = parts[0].split(',')[0].strip()
+        p2 = parts[1].split(',')[0].strip()
+        simple = f"{p1} v. {p2}"
+        if simple not in variants:
+            variants.append(simple)
+    return variants
+
 def fetch_from_courtlistener(case_name, year, headers):
     """
     Fetch opinion text from CourtListener.
     Uses the search API to find the case, then fetches the opinion text.
+    Tries multiple name variants to handle CourtListener name mismatches.
     """
     if not headers:
         return None, None
 
-    print(f"    Trying CourtListener: {case_name} ({year})")
+    name_variants = build_name_variants(case_name)
+    results = []
 
-    # Search for the case
-    params = {
-        "q": f'"{case_name}"',
-        "type": "o",
-        "order_by": "score desc",
-        "stat_Precedential": "on",
-        "court": "scotus",
-    }
-    if year:
-        params["filed_after"] = f"{year}-01-01"
-        params["filed_before"] = f"{year}-12-31"
+    for variant in name_variants:
+        print(f"    Trying CourtListener: {variant} ({year})")
 
-    try:
-        resp = requests.get(
-            f"{CL_BASE}/search/",
-            params=params,
-            headers=headers,
-            timeout=15
-        )
-        resp.raise_for_status()
-        results = resp.json().get("results", [])
+        # Search for the case
+        params = {
+            "q": f'"{variant}"',
+            "type": "o",
+            "order_by": "score desc",
+            "stat_Precedential": "on",
+            "court": "scotus",
+        }
+        if year:
+            params["filed_after"] = f"{year}-01-01"
+            params["filed_before"] = f"{year}-12-31"
 
-        if not results:
-            print(f"    CourtListener: no results")
-            return None, None
+        try:
+            resp = requests.get(
+                f"{CL_BASE}/search/",
+                params=params,
+                headers=headers,
+                timeout=15
+            )
+            resp.raise_for_status()
+            results = resp.json().get("results", [])
+            if results:
+                print(f"    CourtListener: found via variant '{variant}'")
+                break
+        except Exception as e:
+            print(f"    CourtListener search failed for '{variant}': {e}")
+            continue
 
-        # Get the cluster ID from the first result
+    if not results:
+        print(f"    CourtListener: no results for any name variant")
+        return None, None
+
+    # Get the cluster ID from the first result
         cluster_id = results[0].get("cluster_id")
         if not cluster_id:
             return None, None
@@ -313,9 +342,6 @@ def fetch_from_courtlistener(case_name, year, headers):
             # return first 3000 chars of opinion text
             if len(text) > 200:
                 return clean_text(text[:3000]) + "\n\n[EXCERPT — full opinion available on CourtListener]", "courtlistener_excerpt"
-
-    except Exception as e:
-        print(f"    CourtListener failed: {e}")
 
     return None, None
 
