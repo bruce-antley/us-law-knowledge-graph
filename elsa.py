@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Elsa — Case Retrieval Agent v2.0
+Elsa — Case Retrieval Agent v2.1
 Retrieves Supreme Court syllabi and opinion text for pipeline input.
 
 Retrieval cascade (stops at first success):
@@ -8,8 +8,9 @@ Retrieval cascade (stops at first success):
     2. LII by citation — best for post-1990 SCOTUS cases
     3. CourtListener by citation — volume/page lookup via search API
     4. CourtListener by name variants — fallback name matching
-    5. Supreme Court website — PDF fetch for post-2000 cases
-    6. Manual queue — writes to manual_queue.txt and continues
+    5. Justia — structured full-text for virtually all SCOTUS cases
+    6. Google Scholar — broad coverage fallback
+    7. Manual queue — writes to manual_queue.txt and continues
 
 Self-populating registry: every successful retrieval writes the
 CourtListener ID back to case_registry.json for future use.
@@ -368,32 +369,129 @@ def fetch_cl_by_cluster_id(cluster_id, headers):
 
     return None, None, None
 
-# ─── Strategy 5: Supreme Court Website ─────────────────────────────────────────
+# ─── Strategy 5: Justia ────────────────────────────────────────────────────────
 
-def fetch_from_scotus_website(case_name, year, citation):
-    """Try to fetch from supremecourt.gov for post-2000 cases."""
-    if not year or int(year) < 2000:
-        return None, None
-
-    volume, page, _ = parse_citation(citation)
+def fetch_from_justia(volume, page, case_name):
+    """
+    Fetch from Justia Supreme Court database.
+    Justia has structured full-text for virtually all SCOTUS cases.
+    URL pattern: https://supreme.justia.com/cases/federal/us/{volume}/{page}/
+    """
     if not volume or not page:
         return None, None
 
-    # Try the opinions search page
+    url = f"https://supreme.justia.com/cases/federal/us/{volume}/{page}/"
+    print(f"    Trying Justia: {url}")
     try:
-        term_year = int(year) - 1  # SCOTUS terms span two years
-        url = f"https://www.supremecourt.gov/opinions/slipopinion/{str(term_year)[-2:]}"
-        print(f"    Trying SCOTUS website: {url}")
         resp = requests.get(url, timeout=15,
-                           headers={"User-Agent": "LexGraph/2.0"})
-        if resp.status_code == 200:
-            # Look for the case in the listing
-            text = resp.text
-            # Simple heuristic: find docket numbers or case names
-            # This is a best-effort approach
-            pass
-    except Exception:
-        pass
+                           headers={"User-Agent": "LexGraph/2.0 (legal research)"})
+        if resp.status_code == 404:
+            print(f"    Justia 404 — not available at this URL")
+            return None, None
+        resp.raise_for_status()
+
+        soup = BeautifulSoup(resp.text, 'html.parser')
+
+        # Try to find the syllabus/opinion section
+        # Justia structures content in <p> tags within main content divs
+        content = None
+        for selector in ['#opinion-text', '.opinion-text', 'article', 'main',
+                         '[class*="opinion"]', '[id*="opinion"]']:
+            el = soup.select_one(selector)
+            if el:
+                content = el
+                break
+
+        if not content:
+            content = soup.find('body')
+
+        if content:
+            text = clean_text(content.get_text())
+            if len(text) > 300:
+                # Try to extract just the syllabus
+                syllabus = extract_syllabus_section(text)
+                if len(syllabus) > 200:
+                    return syllabus, "justia"
+                # Return first 3000 chars of opinion
+                return clean_text(text[:3000]), "justia_excerpt"
+
+    except Exception as e:
+        print(f"    Justia failed: {e}")
+
+    return None, None
+
+# ─── Strategy 6: Google Scholar ────────────────────────────────────────────────
+
+def fetch_from_google_scholar(case_name, year, citation):
+    """
+    Fetch from Google Scholar case law database.
+    Google Scholar has broad SCOTUS coverage including pre-1900 cases.
+    """
+    volume, page, _ = parse_citation(citation)
+
+    # Build search query — citation is most reliable
+    if volume and page:
+        query = f"{volume} U.S. {page}"
+    else:
+        query = case_name
+
+    url = f"https://scholar.google.com/scholar?q={requests.utils.quote(query)}&as_sdt=2006&hl=en"
+    print(f"    Trying Google Scholar: {query}")
+
+    try:
+        headers = {
+            "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
+                         "AppleWebKit/537.36 (KHTML, like Gecko) "
+                         "Chrome/120.0.0.0 Safari/537.36",
+            "Accept-Language": "en-US,en;q=0.9",
+        }
+        resp = requests.get(url, timeout=15, headers=headers)
+        if resp.status_code != 200:
+            print(f"    Google Scholar: status {resp.status_code}")
+            return None, None
+
+        soup = BeautifulSoup(resp.text, 'html.parser')
+
+        # Find case links in results
+        case_links = []
+        for link in soup.find_all('a', href=True):
+            href = link['href']
+            if '/scholar_case?' in href and 'case=' in href:
+                case_links.append(href)
+
+        if not case_links:
+            print(f"    Google Scholar: no case links found")
+            return None, None
+
+        # Fetch the first case result
+        case_url = case_links[0]
+        if not case_url.startswith('http'):
+            case_url = f"https://scholar.google.com{case_url}"
+
+        time.sleep(1.0)  # Be polite
+        case_resp = requests.get(case_url, timeout=15, headers=headers)
+        if case_resp.status_code != 200:
+            return None, None
+
+        case_soup = BeautifulSoup(case_resp.text, 'html.parser')
+
+        # Extract opinion text
+        opinion_div = case_soup.find('div', id='gs_opinion')
+        if not opinion_div:
+            opinion_div = case_soup.find('div', class_='gs_opinion')
+        if not opinion_div:
+            opinion_div = case_soup.find('body')
+
+        if opinion_div:
+            text = clean_text(opinion_div.get_text())
+            if len(text) > 300:
+                syllabus = extract_syllabus_section(text)
+                if len(syllabus) > 200:
+                    return syllabus, "google_scholar"
+                return clean_text(text[:3000]), "google_scholar_excerpt"
+
+    except Exception as e:
+        print(f"    Google Scholar failed: {e}")
 
     return None, None
 
@@ -443,9 +541,14 @@ def retrieve_case(case_name, year, citation=None, output_dir=Path("syllabi")):
     if not text and cl_headers:
         text, source, cl_id = fetch_cl_by_name(case_name, year, cl_headers)
 
-    # Strategy 5: Supreme Court website (post-2000)
+    # Strategy 5: Justia
     if not text:
-        text, source = fetch_from_scotus_website(case_name, year, citation)
+        volume, page, _ = parse_citation(citation)
+        text, source = fetch_from_justia(volume, page, case_name)
+
+    # Strategy 6: Google Scholar
+    if not text:
+        text, source = fetch_from_google_scholar(case_name, year, citation)
 
     # All strategies failed
     if not text:
