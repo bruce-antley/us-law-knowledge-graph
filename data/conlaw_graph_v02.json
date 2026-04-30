@@ -17,8 +17,8 @@
     "created": "2026-03-15",
     "status": "draft",
     "schema_version": "0.2",
-    "node_count": 346,
-    "edge_count": 609,
+    "node_count": 368,
+    "edge_count": 626,
     "schema_issue_count": 41,
     "fixes_applied": [
       "FIX 1: ConstitutionalProvision labels changed to citation form (amendment_1, amendment_14_section_1) to disambiguate from Area nodes with same common-name labels",
@@ -1746,6 +1746,141 @@
         "valid_from": "2014-06-25",
         "valid_until": null,
         "notes": "Established by Riley v. California. Recognizes the unique nature of cell phones as repositories of vast amounts of personal digital information, including data that may be stored on remote servers."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "sixth_amendment_right_to_counsel_lineup",
+        "label": "Sixth Amendment Right to Counsel at Post-Indictment Lineups",
+        "description": "The Sixth Amendment guarantees the right to the assistance of counsel at post-indictment lineups. A lineup conducted without notice to and in the absence of appointed counsel violates this right, and identifications resulting from such a lineup are subject to exclusion.",
+        "area_id": "criminal_procedure",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1967-06-12",
+        "valid_until": null,
+        "notes": "Established in United States v. Wade. This doctrine protects the accused's right to have counsel present during a critical stage of the criminal process."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "vehicle_search_incident_to_arrest",
+        "label": "Vehicle Search Incident to Arrest",
+        "description": "A warrantless search of a vehicle incident to arrest is justified when the arrestee is unsecured and within reaching distance of the passenger compartment, or when it is reasonable to believe that evidence of the offense of arrest might be found in the vehicle.",
+        "area_id": "criminal_procedure",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "2009-04-21",
+        "valid_until": null,
+        "notes": "Modified by Arizona v. Gant to clarify that Belton does not authorize searches when arrestee is secured and cannot access the vehicle interior."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "consent_search_doctrine",
+        "label": "Consent Search Doctrine",
+        "description": "Police may conduct searches based on voluntary consent without a warrant or probable cause, provided the consent is freely and voluntarily given. A reasonable person must understand that refusal is possible.",
+        "area_id": "criminal_procedure",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1991-06-20",
+        "valid_until": null,
+        "notes": "Established in context of police encounters in public places including buses, airports, train stations, and bus depots."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "reasonable_person_refusal_doctrine",
+        "label": "Reasonable Person Refusal Standard",
+        "description": "In evaluating whether a police encounter constitutes a seizure under the Fourth Amendment, courts apply an objective test: whether a reasonable person would feel free to refuse cooperation and terminate the encounter.",
+        "area_id": "criminal_procedure",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1991-06-20",
+        "valid_until": null,
+        "notes": "Applied to police encounters in public places including airports, train stations, bus depots, and buses."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "protective_sweep_doctrine",
+        "label": "Protective Sweep Doctrine",
+        "description": "A quick and limited search of premises, incident to an arrest and conducted to protect the safety of police officers or others. It is narrowly confined to a cursory visual inspection of those places in which a person might be hiding.",
+        "area_id": "criminal_procedure",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1990-02-03",
+        "valid_until": null,
+        "notes": "Established in Maryland v. Buie as a Fourth Amendment doctrine permitting warrantless searches incident to arrest under specified conditions."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "anonymous_tip_reliability_doctrine",
+        "label": "Anonymous Tip Reliability Doctrine",
+        "description": "Anonymous tips are generally less reliable than tips from known informants and cannot form the basis for reasonable suspicion without specific indicia of reliability, such as correct forecasts of a subject's movements or other qualifying indicia.",
+        "area_id": "criminal_procedure",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "2000-03-28",
+        "valid_until": null,
+        "notes": "Established in Florida v. J.L. as a Fourth Amendment principle governing investigatory stops and frisks."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "custodial_interrogation_doctrine",
+        "label": "Custodial Interrogation Doctrine",
+        "description": "The legal framework determining when a suspect is in custody for purposes of triggering Miranda protections. Custody requires that a reasonable person would not feel free to leave or terminate the interrogation.",
+        "area_id": "criminal_procedure",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1966-06-13",
+        "valid_until": null,
+        "notes": "Berkemer clarifies that routine traffic stops, even when the motorist is detained and questioned, do not constitute custodial interrogation for Miranda purposes."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "apprendi_rule",
+        "label": "Apprendi Rule: Jury Trial Right for Sentence-Enhancing Facts",
+        "description": "Any fact, other than a prior conviction, that increases the maximum prison sentence for an offense must be submitted to a jury and proved beyond a reasonable doubt under the Due Process Clause of the Fourteenth Amendment.",
+        "area_id": "criminal_procedure",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "2000-06-26",
+        "valid_until": null,
+        "notes": "Establishes a constitutional floor for jury trial rights in criminal sentencing, requiring jury determination of facts that enhance sentences beyond statutory maximums."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "fifth_amendment_express_invocation_requirement",
+        "label": "Fifth Amendment Express Invocation Requirement",
+        "description": "A person must expressly invoke the Fifth Amendment privilege against self-incrimination at the time of questioning to prevent the government from using silence as evidence; silence alone, without explicit assertion of the privilege, does not invoke the privilege.",
+        "area_id": "criminal_procedure",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "2013-06-17",
+        "valid_until": null,
+        "notes": "Established in Salinas v. Texas. Applies to precustodial interrogation where the suspect is not in custody and has not received Miranda warnings."
       }
     ],
     "areas": [
@@ -8222,6 +8357,273 @@
           }
         ],
         "notes": "Consolidated with United States v. Wurie, No. 13-212. Chief Justice Roberts delivered the opinion of the Court, joined by Justices Scalia, Kennedy, Thomas, Ginsburg, Breyer, Sotomayor, and Kagan. Justice Alito filed an opinion concurring in part and concurring in the judgment. The holding applies to both the Riley and Wurie cases."
+      },
+      {
+        "@type": "Case",
+        "id": "brewer_v_williams_1977",
+        "short_name": "Brewer v. Williams",
+        "full_name": "Brewer, Warden v. Williams",
+        "citation": "430 U.S. 387 (1977)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1977-03-23",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "affirmed",
+        "holding": "A suspect's incriminating statements obtained in violation of the right to counsel, even absent interrogation, are inadmissible in a criminal prosecution.",
+        "holding_type": "affirmative",
+        "majority_author": "Stewart",
+        "per_curiam": false,
+        "vote": "5-4",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1977-03-23",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "Habeas corpus proceeding. Federal District Court and Court of Appeals for the Eighth Circuit ruled in favor of respondent Williams. The case addresses the admissibility of statements obtained in violation of the Sixth Amendment right to counsel.",
+        "courtlistener_id": "109624"
+      },
+      {
+        "@type": "Case",
+        "id": "united_states_v_wade_1967",
+        "short_name": "United States v. Wade",
+        "full_name": "United States v. Wade",
+        "citation": "388 U.S. 218 (1967)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1967-06-12",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "A post-indictment lineup conducted without notice to and in the absence of the accused's appointed counsel violates the Sixth Amendment right to the assistance of counsel, and courtroom identifications resulting from such a lineup must be excluded from evidence unless the government can demonstrate the identifications were based on sources independent of the tainted lineup.",
+        "holding_type": "affirmative",
+        "majority_author": "Brennan",
+        "per_curiam": false,
+        "vote": "5-4",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1967-06-12",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "The Court reversed the Fifth Circuit's judgment and remanded for entry of a new judgment vacating the conviction. The opinion addresses whether courtroom identifications must be excluded when a post-indictment lineup was conducted without counsel present. The case was set for oral argument with Gilbert v. California and Stovall v. Denno, which present similar questions.",
+        "courtlistener_id": "107486"
+      },
+      {
+        "@type": "Case",
+        "id": "arizona_v_gant_2009",
+        "short_name": "Arizona v. Gant",
+        "full_name": "Arizona v. Gant",
+        "citation": "556 U.S. 332 (2009)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "2009-04-21",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "affirmed",
+        "holding": "Police may not search a vehicle incident to arrest after the arrestee has been secured and cannot access the interior of the vehicle, unless circumstances unique to the automobile context justify the search because it is reasonable to believe that evidence of the offense of arrest might be found in the vehicle.",
+        "holding_type": "affirmative",
+        "majority_author": "Stevens",
+        "per_curiam": false,
+        "vote": "5-4",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "2009-04-21",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "Affirmed the Arizona Supreme Court's holding that the search-incident-to-arrest exception did not justify the search. Modified the scope of New York v. Belton by limiting vehicle searches incident to arrest.",
+        "courtlistener_id": "145887"
+      },
+      {
+        "@type": "Case",
+        "id": "florida_v_bostick_1991",
+        "short_name": "Florida v. Bostick",
+        "full_name": "Florida v. Bostick",
+        "citation": "501 U.S. 429 (1991)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1991-06-20",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "Police officers may approach individuals on buses during scheduled stops to request consent to search luggage, provided a reasonable person would understand that he or she could refuse to cooperate, applying the same standard that governs police encounters in airport lobbies and other public places.",
+        "holding_type": "affirmative",
+        "majority_author": "O'Connor",
+        "per_curiam": false,
+        "vote": "6-3",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1991-06-20",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "The Court held that the Fourth Amendment permits police encounters on buses under the same reasonable-person standard applicable to airport and train station encounters. The opinion notes that officers advised Bostick of his right to refuse consent and did not threaten him with a weapon.",
+        "courtlistener_id": "9104125"
+      },
+      {
+        "@type": "Case",
+        "id": "maryland_v_buie_1990",
+        "short_name": "Maryland v. Buie",
+        "full_name": "Maryland v. Jerome Edward Buie",
+        "citation": "494 U.S. 325 (1990)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1990-02-03",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "vacated",
+        "holding": "Police officers conducting a warrantless protective sweep incident to an arrest in a home may do so if the searching officer possesses a reasonable belief based on specific and articulable facts which, taken together with rational inferences from those facts, reasonably warrant the officer in believing that the area swept harbored an individual posing a danger to the officer or others.",
+        "holding_type": "affirmative",
+        "majority_author": "White",
+        "per_curiam": false,
+        "vote": "7-2",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1990-02-03",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "Establishes the standard for warrantless protective sweeps incident to arrest in a home under the Fourth and Fourteenth Amendments."
+      },
+      {
+        "@type": "Case",
+        "id": "florida_v_j_l_2000",
+        "short_name": "Florida v. J.L.",
+        "full_name": "State of Florida v. J.L.",
+        "citation": "529 U.S. 266 (2000)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "2000-03-28",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "affirmed",
+        "holding": "An anonymous tip that a person is carrying a gun is not, without more, sufficient to justify a police officer's stop and frisk of that person.",
+        "holding_type": "by_negation",
+        "majority_author": "Ginsburg",
+        "per_curiam": false,
+        "vote": "9-0",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "2000-03-28",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "The Florida Supreme Court held the search invalid under the Fourth Amendment. The case addresses the reliability requirements for anonymous tips in the context of reasonable suspicion for investigatory stops and frisks."
+      },
+      {
+        "@type": "Case",
+        "id": "berkemer_v_mccarty_1984",
+        "short_name": "Berkemer v. McCarty",
+        "full_name": "Berkemer, Sheriff of Franklin County, Ohio v. McCarty",
+        "citation": "468 U.S. 420 (1984)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1984-07-02",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "Miranda warnings are not required for roadside questioning of a motorist detained pursuant to a traffic stop, as such questioning does not constitute custodial interrogation within the meaning of Miranda v. Arizona.",
+        "holding_type": "by_negation",
+        "majority_author": "Marshall",
+        "per_curiam": false,
+        "vote": "9-0",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1984-07-02",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "The Court addressed two questions: (1) whether Miranda applies to custodial interrogation for misdemeanor traffic offenses, and (2) whether roadside questioning during a traffic stop constitutes custodial interrogation. The holding addresses the second question, establishing that routine traffic stops do not trigger Miranda requirements.",
+        "courtlistener_id": "9047277"
+      },
+      {
+        "@type": "Case",
+        "id": "apprendi_v_new_jersey_2000",
+        "short_name": "Apprendi v. New Jersey",
+        "full_name": "Charles C. Apprendi, Jr. v. State of New Jersey",
+        "citation": "530 U.S. 466 (2000)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "2000-06-26",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "The Due Process Clause of the Fourteenth Amendment requires that any fact, other than a prior conviction, that increases the maximum prison sentence for an offense must be submitted to a jury and proved beyond a reasonable doubt.",
+        "holding_type": "affirmative",
+        "majority_author": "Stevens",
+        "per_curiam": false,
+        "vote": "5-4",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "2000-06-26",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "The case addresses the constitutional requirement for judicial fact-finding that increases criminal sentences beyond statutory maximums. The source text is incomplete but clearly establishes the core holding regarding jury trial rights and proof standards in sentencing."
+      },
+      {
+        "@type": "Case",
+        "id": "salinas_v_texas_2013",
+        "short_name": "Salinas v. Texas",
+        "full_name": "Salinas v. Texas",
+        "citation": "570 U.S. 178 (2013)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "2013-06-17",
+        "opinion_form": "plurality",
+        "procedural_disposition": "affirmed",
+        "holding": "A suspect who is not in custody and not given Miranda warnings must expressly invoke the Fifth Amendment privilege against self-incrimination at the time of questioning to prevent the prosecution from using his silence as evidence of guilt; silence alone, without express invocation, does not invoke the privilege.",
+        "holding_type": "affirmative",
+        "majority_author": "Alito (plurality)",
+        "per_curiam": false,
+        "vote": "5-4",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "2013-06-17",
+        "valid_until": null,
+        "opinions": [
+          {
+            "type": "plurality",
+            "author": "Alito",
+            "doctrinal_significance": "Established that express invocation of the Fifth Amendment privilege is required in precustodial interrogation; silence alone does not invoke the privilege.",
+            "joined_by": [
+              "Roberts",
+              "Kennedy"
+            ],
+            "adopted_in": []
+          },
+          {
+            "type": "concurrence",
+            "author": "Thomas",
+            "doctrinal_significance": "Argued that Griffin v. California should not extend to precustodial silence and that the prosecutor's comments did not compel self-incriminating testimony.",
+            "joined_by": [
+              "Scalia"
+            ],
+            "adopted_in": []
+          }
+        ],
+        "notes": "Fractured decision. Alito's plurality (joined by Roberts and Kennedy) announced the judgment and the express invocation requirement. Thomas (joined by Scalia) concurred in the judgment but on different grounds, arguing Griffin v. California should not apply to precustodial silence. No single rationale commanded a majority of the Court.",
+        "courtlistener_id": "903977"
+      },
+      {
+        "@type": "Case",
+        "id": "new_york_v_belton_1981",
+        "short_name": "New York v. Belton",
+        "full_name": "New York v. Belton",
+        "citation": "453 U.S. 454 (1981)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1981-07-01",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "When an occupant of an automobile is subjected to a lawful custodial arrest, the constitutionally permissible scope of a search incident to that arrest includes the passenger compartment of the automobile in which the arrestee was riding.",
+        "holding_type": "affirmative",
+        "majority_author": "Stewart",
+        "per_curiam": false,
+        "vote": "6-3",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1981-07-01",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "The opinion addresses the scope of search incident to arrest in the context of automobile searches. The text provided is incomplete (ends mid-sentence in the Appellate Division reasoning), so the full holding and any concurrences or dissents cannot be fully determined from this excerpt.",
+        "courtlistener_id": "9030420"
       }
     ],
     "doctrinal_tests": [
@@ -9735,6 +10137,117 @@
         "valid_from": "2014-06-25",
         "valid_until": null,
         "notes": "This test applies the balancing approach articulated in Wyoming v. Houghton, weighing privacy intrusion against government interests. The test does not preclude warrantless searches in exigent circumstances or physical examination of the phone itself to ensure officer safety. The Court rejected proposed fallback rules that would have allowed searches based on relevance to the crime of arrest, officer safety, or analogy to pre-digital counterparts."
+      },
+      {
+        "@type": "DoctrinalTest",
+        "id": "wade_independent_source_test",
+        "label": "Independent Source Test for Lineup Identifications",
+        "description": "When a post-indictment lineup is conducted in violation of the Sixth Amendment right to counsel, courtroom identifications may be admitted if the government demonstrates that the identifications were based on sources independent of the tainted lineup.",
+        "area_id": "criminal_procedure",
+        "source_case_id": "united_states_v_wade_1967",
+        "scrutiny_level": "none",
+        "burden": "government",
+        "test_form": "balancing",
+        "prongs": [
+          {
+            "number": 1,
+            "label": "Taint from Lineup Violation",
+            "description": "The government must first establish that a Sixth Amendment violation occurred at the lineup.",
+            "burden_note": "Government must prove the violation occurred.",
+            "valid_from": "1967-06-12",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 2,
+            "label": "Independent Source",
+            "description": "The government must demonstrate that the courtroom identification was based on sources independent of the tainted lineup, such as the witness's own observations at the crime scene.",
+            "burden_note": "Government bears the burden of proving independence.",
+            "valid_from": "1967-06-12",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          }
+        ],
+        "status": "active",
+        "valid_from": "1967-06-12",
+        "valid_until": null,
+        "notes": "This test allows for admission of courtroom identifications despite a Sixth Amendment violation at the lineup if the government can establish an independent source for the identification."
+      },
+      {
+        "@type": "DoctrinalTest",
+        "id": "gant_vehicle_search_test",
+        "label": "Gant Vehicle Search Incident to Arrest Test",
+        "description": "A warrantless search of a vehicle incident to arrest is permissible under two circumstances: (1) when the arrestee is unsecured and within reaching distance of the passenger compartment, or (2) when it is reasonable to believe that evidence of the offense of arrest might be found in the vehicle.",
+        "area_id": "criminal_procedure",
+        "source_case_id": "arizona_v_gant_2009",
+        "scrutiny_level": "per_se",
+        "burden": "government",
+        "test_form": "disjunctive",
+        "prongs": [
+          {
+            "number": 1,
+            "label": "Arrestee Access Prong",
+            "description": "The arrestee is unsecured and within reaching distance of the passenger compartment, allowing access to weapons or destructible evidence.",
+            "burden_note": "Government must show arrestee could access the interior.",
+            "valid_from": "2009-04-21",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 2,
+            "label": "Evidence of Offense Prong",
+            "description": "It is reasonable to believe that evidence of the offense of arrest might be found in the vehicle.",
+            "burden_note": "Government must show reasonable belief that evidence of the specific offense of arrest is in the vehicle.",
+            "valid_from": "2009-04-21",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          }
+        ],
+        "status": "active",
+        "valid_from": "2009-04-21",
+        "valid_until": null,
+        "notes": "Replaces the categorical approach of New York v. Belton with a fact-specific inquiry. Consistent with Thornton v. United States (2004)."
+      },
+      {
+        "@type": "DoctrinalTest",
+        "id": "buie_protective_sweep_test",
+        "label": "Buie Protective Sweep Test",
+        "description": "Standard for determining whether a warrantless protective sweep incident to arrest is justified under the Fourth Amendment. The searching officer must possess a reasonable belief based on specific and articulable facts which, taken together with rational inferences from those facts, reasonably warrant the officer in believing that the area swept harbored an individual posing a danger to the officer or others.",
+        "area_id": "criminal_procedure",
+        "source_case_id": "maryland_v_buie_1990",
+        "scrutiny_level": "none",
+        "burden": "government",
+        "test_form": "conjunctive",
+        "prongs": [
+          {
+            "number": 1,
+            "label": "Reasonable Belief",
+            "description": "The searching officer must possess a reasonable belief that the area swept harbored an individual posing a danger to the officer or others.",
+            "burden_note": "Government must establish reasonable belief based on specific and articulable facts.",
+            "valid_from": "1990-02-03",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 2,
+            "label": "Specific and Articulable Facts",
+            "description": "The reasonable belief must be based on specific and articulable facts which, taken together with rational inferences from those facts, reasonably warrant the officer in believing danger exists.",
+            "burden_note": "Government must articulate specific facts supporting the reasonable belief.",
+            "valid_from": "1990-02-03",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          }
+        ],
+        "status": "active",
+        "valid_from": "1990-02-03",
+        "valid_until": null,
+        "notes": "Applies to warrantless protective sweeps conducted incident to arrest in a home. The sweep must be narrowly confined to a cursory visual inspection of places where a person might be hiding."
       }
     ]
   },
@@ -17765,6 +18278,231 @@
         "state"
       ],
       "notes": "Riley applies and reinforces the Fourth Amendment warrant requirement, holding that warrants are generally required before searching digital information on cell phones and emphasizing that the warrant requirement is an important component of Fourth Amendment jurisprudence."
+    },
+    {
+      "id": "brewer_modifies_right_to_counsel",
+      "source_id": "brewer_v_williams_1977",
+      "target_id": "right_to_counsel_doctrine",
+      "edge_type": "MODIFIES",
+      "direction": "expands",
+      "valid_from": "1977-03-23",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Brewer expanded the right to counsel doctrine by holding that deliberately eliciting incriminating statements outside formal interrogation, after the Sixth Amendment right has attached, also violates the right to counsel."
+    },
+    {
+      "id": "united_states_v_wade_1967_establishes_sixth_amendment_right_to_counsel_lineup",
+      "source_id": "united_states_v_wade_1967",
+      "target_id": "sixth_amendment_right_to_counsel_lineup",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1967-06-12",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Wade establishes the doctrine that the Sixth Amendment guarantees the right to counsel at post-indictment lineups."
+    },
+    {
+      "id": "united_states_v_wade_1967_establishes_wade_independent_source_test",
+      "source_id": "united_states_v_wade_1967",
+      "target_id": "wade_independent_source_test",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1967-06-12",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Wade establishes the independent source test for determining whether courtroom identifications may be admitted despite a Sixth Amendment violation at a lineup."
+    },
+    {
+      "id": "arizona_v_gant_modifies_belton_vehicle_search",
+      "source_id": "arizona_v_gant_2009",
+      "target_id": "vehicle_search_incident_to_arrest",
+      "edge_type": "MODIFIES",
+      "direction": "narrows",
+      "valid_from": "2009-04-21",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Gant narrowed the scope of New York v. Belton by requiring that the arrestee be unsecured and able to access the vehicle interior, or that evidence of the specific offense be reasonably believed to be in the vehicle."
+    },
+    {
+      "id": "arizona_v_gant_establishes_gant_vehicle_search_test",
+      "source_id": "arizona_v_gant_2009",
+      "target_id": "gant_vehicle_search_test",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2009-04-21",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Arizona v. Gant established the two-prong disjunctive test for vehicle searches incident to arrest."
+    },
+    {
+      "id": "gant_applies_search_incident_to_arrest",
+      "source_id": "arizona_v_gant_2009",
+      "target_id": "search_incident_to_arrest",
+      "edge_type": "APPLIES",
+      "valid_from": "2009-04-21",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Gant applied and clarified the Chimel immediate control doctrine in the vehicle context."
+    },
+    {
+      "id": "florida_v_bostick_applies_consent_search_doctrine",
+      "source_id": "florida_v_bostick_1991",
+      "target_id": "consent_search_doctrine",
+      "edge_type": "APPLIES",
+      "valid_from": "1991-06-20",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "The Court applied the consent search doctrine to police encounters on buses."
+    },
+    {
+      "id": "florida_v_bostick_applies_reasonable_person_refusal_doctrine",
+      "source_id": "florida_v_bostick_1991",
+      "target_id": "reasonable_person_refusal_doctrine",
+      "edge_type": "APPLIES",
+      "valid_from": "1991-06-20",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "The Court applied the reasonable person refusal standard to determine whether police encounters on buses constitute Fourth Amendment seizures."
+    },
+    {
+      "id": "maryland_v_buie_establishes_protective_sweep_doctrine",
+      "source_id": "maryland_v_buie_1990",
+      "target_id": "protective_sweep_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1990-02-03",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Maryland v. Buie established the protective sweep doctrine as a Fourth Amendment principle."
+    },
+    {
+      "id": "maryland_v_buie_establishes_buie_protective_sweep_test",
+      "source_id": "maryland_v_buie_1990",
+      "target_id": "buie_protective_sweep_test",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1990-02-03",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Maryland v. Buie established the standard for evaluating the justification required for warrantless protective sweeps incident to arrest."
+    },
+    {
+      "id": "florida_v_j_l_establishes_anonymous_tip_reliability_doctrine",
+      "source_id": "florida_v_j_l_2000",
+      "target_id": "anonymous_tip_reliability_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2000-03-28",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Florida v. J.L. establishes the doctrine that anonymous tips require specific indicia of reliability to justify investigatory stops and frisks."
+    },
+    {
+      "id": "berkemer_applies_miranda_doctrine",
+      "source_id": "berkemer_v_mccarty_1984",
+      "target_id": "miranda_doctrine",
+      "edge_type": "APPLIES",
+      "valid_from": "1984-07-02",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Berkemer applies Miranda doctrine by clarifying its scope: Miranda does not apply to routine traffic stops."
+    },
+    {
+      "id": "berkemer_modifies_custodial_interrogation_doctrine",
+      "source_id": "berkemer_v_mccarty_1984",
+      "target_id": "custodial_interrogation_doctrine",
+      "edge_type": "MODIFIES",
+      "valid_from": "1984-07-02",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "direction": "clarifies",
+      "notes": "Berkemer clarifies that routine traffic stops do not constitute custodial interrogation, even though the motorist is detained and questioned."
+    },
+    {
+      "id": "apprendi_establishes_apprendi_rule",
+      "source_id": "apprendi_v_new_jersey_2000",
+      "target_id": "apprendi_rule",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2000-06-26",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Apprendi v. New Jersey establishes the constitutional requirement that sentence-enhancing facts must be proven to a jury beyond a reasonable doubt."
+    },
+    {
+      "id": "salinas_establishes_fifth_amendment_express_invocation",
+      "source_id": "salinas_v_texas_2013",
+      "target_id": "fifth_amendment_express_invocation_requirement",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2013-06-17",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Salinas established the doctrine that express invocation of the Fifth Amendment privilege is required in precustodial interrogation."
+    },
+    {
+      "id": "new_york_v_belton_applies_search_incident_to_arrest",
+      "source_id": "new_york_v_belton_1981",
+      "target_id": "search_incident_to_arrest",
+      "edge_type": "APPLIES",
+      "valid_from": "1981-07-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "The case applies and extends the search incident to arrest doctrine to automobile passenger compartments."
+    },
+    {
+      "id": "gant_modifies_belton",
+      "source_id": "arizona_v_gant_2009",
+      "target_id": "new_york_v_belton_1981",
+      "edge_type": "MODIFIES",
+      "direction": "narrows",
+      "valid_from": "2009-04-21",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Gant narrowed Belton by holding that vehicle searches incident to arrest are not categorically permitted when the arrestee is secured and cannot access the vehicle interior."
     }
   ],
   "schema_issues_found": [
