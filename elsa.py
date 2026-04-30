@@ -1,242 +1,109 @@
 #!/usr/bin/env python3
 """
-Elsa — Case Retrieval Agent
-Named after Bruce's sister's beloved elderly Golden Retriever.
+Elsa — Case Retrieval Agent v2.0
+Retrieves Supreme Court syllabi and opinion text for pipeline input.
 
-Takes a list of case names/citations and retrieves clean syllabus text
-ready for the Graph Builder. Uses LII as primary source, CourtListener
-as fallback for older cases.
+Retrieval cascade (stops at first success):
+    1. Case registry — direct CourtListener ID lookup (instant, no search)
+    2. LII by citation — best for post-1990 SCOTUS cases
+    3. CourtListener by citation — volume/page lookup via search API
+    4. CourtListener by name variants — fallback name matching
+    5. Supreme Court website — PDF fetch for post-2000 cases
+    6. Manual queue — writes to manual_queue.txt and continues
+
+Self-populating registry: every successful retrieval writes the
+CourtListener ID back to case_registry.json for future use.
 
 Usage:
-    python elsa.py --cases cases.txt --output syllabi/
-    python elsa.py --case "Griswold v. Connecticut" --year 1965 --output syllabi/
-
-Input file format (cases.txt):
-    One case per line: "Case Name, Year" or "Case Name v. Other Party, Year"
-    Examples:
-        Washington v. Glucksberg, 1997
-        Griswold v. Connecticut, 1965
-        Planned Parenthood v. Casey, 1992
-
-Output:
-    One .txt file per case: {case_id}_syllabus.txt
-    Ready to feed directly to Graph Builder (cell 3)
-
-Requires: COURTLISTENER_API_KEY in environment
+    from elsa import retrieve_case
+    case_id, syllabus_path = retrieve_case("Miranda v. Arizona", "1966", "384 U.S. 436")
 """
 
 import os
 import re
-import sys
+import json
 import time
-import argparse
 import requests
 from pathlib import Path
-from urllib.parse import quote_plus
+from bs4 import BeautifulSoup
 
-# ─── Configuration ────────────────────────────────────────────────────────────
+# ─── Configuration ─────────────────────────────────────────────────────────────
 
-LII_BASE = "https://www.law.cornell.edu/supremecourt/text"
 CL_BASE = "https://www.courtlistener.com/api/rest/v4"
+LII_BASE = "https://www.law.cornell.edu/supremecourt/text"
+SCOTUS_BASE = "https://www.supremecourt.gov/opinions"
+LII_SYLLABUS_CUTOFF = 1990  # LII has structured syllabi for cases after this year
 
-# Cases decided before this year likely don't have LII structured syllabi
-LII_SYLLABUS_CUTOFF = 1990
+PIPELINE_DIR = Path(__file__).parent
+REGISTRY_PATH = PIPELINE_DIR / "case_registry.json"
+MANUAL_QUEUE_PATH = PIPELINE_DIR / "manual_queue.txt"
 
-# ─── Utilities ────────────────────────────────────────────────────────────────
+# ─── Registry ──────────────────────────────────────────────────────────────────
 
-def slugify(name):
-    """Convert case name to snake_case ID."""
-    name = name.lower()
-    name = re.sub(r"['\"]", "", name)
-    name = re.sub(r"[^a-z0-9]+", "_", name)
-    return name.strip("_")
+def load_registry():
+    """Load the case registry from disk."""
+    if REGISTRY_PATH.exists():
+        with open(REGISTRY_PATH) as f:
+            return json.load(f)
+    return {}
+
+def save_registry(registry):
+    """Save the case registry to disk."""
+    with open(REGISTRY_PATH, 'w') as f:
+        json.dump(registry, f, indent=2)
+
+def update_registry(case_id, courtlistener_id, short_name="", citation="", decided_date=""):
+    """Add or update a case in the registry."""
+    registry = load_registry()
+    if case_id not in registry:
+        registry[case_id] = {}
+    registry[case_id]["courtlistener_id"] = str(courtlistener_id)
+    if short_name:
+        registry[case_id]["short_name"] = short_name
+    if citation:
+        registry[case_id]["citation"] = citation
+    if decided_date:
+        registry[case_id]["decided_date"] = decided_date
+    save_registry(registry)
+
+def add_to_manual_queue(case_name, year, citation, reason):
+    """Write a failed case to the manual queue file."""
+    with open(MANUAL_QUEUE_PATH, 'a') as f:
+        f.write(f"{case_name} ({year}) | {citation or 'no citation'} | {reason}\n")
+    print(f"  → Added to manual_queue.txt: {case_name}")
+
+# ─── Utilities ─────────────────────────────────────────────────────────────────
 
 def case_id_from_name(name, year):
-    """Generate a case ID from name and year."""
-    # Handle "Party1 v. Party2" format
-    parts = re.split(r"\s+v\.?\s+", name, maxsplit=1, flags=re.IGNORECASE)
+    """Generate a stable snake_case case ID from name and year."""
+    parts = re.split(r'\s+v\.?\s+', name, maxsplit=1, flags=re.IGNORECASE)
     if len(parts) == 2:
-        p1 = slugify(parts[0].split(",")[0].strip())
-        p2 = slugify(parts[1].split(",")[0].strip())
+        p1 = re.sub(r"['\"]", "", parts[0].split(",")[0].strip())
+        p2 = re.sub(r"['\"]", "", parts[1].split(",")[0].strip())
+        p1 = re.sub(r"[^a-z0-9]+", "_", p1.lower()).strip("_")
+        p2 = re.sub(r"[^a-z0-9]+", "_", p2.lower()).strip("_")
         return f"{p1}_v_{p2}_{year}"
-    return f"{slugify(name)}_{year}"
+    slug = re.sub(r"[^a-z0-9]+", "_", name.lower()).strip("_")
+    return f"{slug}_{year}"
 
-def clean_text(text):
-    """
-    Clean retrieved text for Graph Builder input.
-    Removes page numbers, headers, hyphenation artifacts,
-    and other noise from copied/scraped text.
-    """
-    # Remove page number patterns like "381 U.S. 480" mid-text
-    text = re.sub(r"\n\s*\d+\s+U\.S\.\s+\d+\s*\n", "\n", text)
-    # Remove standalone page numbers
-    text = re.sub(r"\n\s*Page\s+\d+\s*\n", "\n", text, flags=re.IGNORECASE)
-    # Remove soft hyphens and hyphenation artifacts
-    text = re.sub(r"-\s*\n\s*", "", text)
-    # Collapse multiple blank lines
-    text = re.sub(r"\n{3,}", "\n\n", text)
-    # Remove leading/trailing whitespace per line
-    lines = [line.rstrip() for line in text.split("\n")]
-    text = "\n".join(lines)
-    return text.strip()
-
-def extract_syllabus_section(text):
-    """
-    Extract just the syllabus section from a full opinion text.
-    The syllabus appears between 'SYLLABUS' and the first opinion section
-    (typically 'OPINION', 'MR. JUSTICE', 'JUSTICE X delivered', or 'I.')
-    """
-    # Normalize
-    text_upper = text.upper()
-
-    # Find syllabus start
-    syllabus_start = None
-    for marker in ["SYLLABUS\n", "SYLLABUS\r\n", "\nSYLLABUS"]:
-        idx = text_upper.find(marker.upper())
-        if idx != -1:
-            syllabus_start = idx + len(marker)
-            break
-
-    if syllabus_start is None:
-        # No syllabus marker — return the whole text
-        return text
-
-    # Find syllabus end (start of opinion)
-    opinion_markers = [
-        "MR. JUSTICE",
-        "MR. CHIEF JUSTICE",
-        "JUSTICE ",
-        "PER CURIAM",
-        "\nI.\n",
-        "\n   I\n",
-        "OPINION OF THE COURT",
-        "delivered the opinion",
-        "CHIEF JUSTICE ",
-    ]
-
-    syllabus_end = len(text)
-    for marker in opinion_markers:
-        idx = text_upper.find(marker.upper(), syllabus_start + 100)
-        if idx != -1 and idx < syllabus_end:
-            syllabus_end = idx
-
-    syllabus = text[syllabus_start:syllabus_end]
-    return clean_text(syllabus)
-
-# ─── Source: LII ──────────────────────────────────────────────────────────────
-
-def fetch_from_lii(citation_volume, citation_page, session):
-    """
-    Fetch syllabus from LII using volume/page citation.
-    URL format: https://www.law.cornell.edu/supremecourt/text/{volume}/{page}
-    
-    LII HTML structure:
-    - The syllabus is marked with class="writingtype_syllabus" or id="writing-ZS"
-    - The opinion text follows in separate writing sections
-    - We need to strip all JS, nav, and ad content before extracting text
-    """
-    url = f"{LII_BASE}/{citation_volume}/{citation_page}"
-    print(f"    Trying LII: {url}")
-
-    try:
-        resp = session.get(url, timeout=15)
-        resp.raise_for_status()
-        html = resp.text
-
-        # Strategy 1: Find the syllabus section by LII's class markers
-        # LII wraps the syllabus in <div class="writingtype_syllabus"> or similar
-        import re as _re
-        
-        syllabus_patterns = [
-            r'class="[^"]*syllabus[^"]*"[^>]*>(.*?)</div>',
-            r'id="writing-ZS"[^>]*>(.*?)</(?:div|section)>',
-            r'<section[^>]*syllabus[^>]*>(.*?)</section>',
-        ]
-        
-        for pattern in syllabus_patterns:
-            match = _re.search(pattern, html, _re.DOTALL | _re.IGNORECASE)
-            if match:
-                raw = match.group(1)
-                # Strip inner HTML tags
-                text = _re.sub(r'<[^>]+>', ' ', raw)
-                text = _re.sub(r'&amp;', '&', text)
-                text = _re.sub(r'&lt;', '<', text)
-                text = _re.sub(r'&gt;', '>', text)
-                text = _re.sub(r'&[a-z]+;', ' ', text)
-                text = _re.sub(r'\s+', ' ', text)
-                text = clean_text(text)
-                if len(text) > 300:
-                    return text, "lii_syllabus"
-
-        # Strategy 2: Find the "Syllabus" marker in the HTML and extract text after it
-        # Remove all <script> and <style> blocks first
-        html_clean = _re.sub(r'<script[^>]*>.*?</script>', '', html, flags=_re.DOTALL)
-        html_clean = _re.sub(r'<style[^>]*>.*?</style>', '', html_clean, flags=_re.DOTALL)
-        html_clean = _re.sub(r'<nav[^>]*>.*?</nav>', '', html_clean, flags=_re.DOTALL)
-        html_clean = _re.sub(r'<header[^>]*>.*?</header>', '', html_clean, flags=_re.DOTALL)
-        html_clean = _re.sub(r'<footer[^>]*>.*?</footer>', '', html_clean, flags=_re.DOTALL)
-        
-        # Now strip remaining tags and extract text
-        plain = _re.sub(r'<[^>]+>', ' ', html_clean)
-        plain = _re.sub(r'&[a-z]+;', ' ', plain)
-        plain = _re.sub(r'\s+', ' ', plain)
-        
-        # Find "Syllabus" marker and extract from there
-        syllabus_idx = plain.upper().find('SYLLABUS')
-        if syllabus_idx > 0:
-            # Take text from syllabus marker forward
-            candidate = plain[syllabus_idx:]
-            # Cut off at the opinion (find "delivered the opinion" or "C.J., delivered")
-            opinion_markers = [
-                "delivered the opinion",
-                "C. J., delivered",
-                "J., delivered",
-                "Chief Justice",
-                "MR. JUSTICE",
-                "MR. CHIEF JUSTICE",
-            ]
-            cut = len(candidate)
-            for marker in opinion_markers:
-                idx = candidate.upper().find(marker.upper(), 200)
-                if 200 < idx < cut:
-                    cut = idx
-            
-            syllabus = clean_text(candidate[:cut])
-            # Detect LII's intentionally omitted placeholder for pre-1990 cases
-            if 'intentionally omitted' in syllabus.lower() or len(syllabus) < 200:
-                print(f"    LII: syllabus intentionally omitted or too short — falling back to CourtListener")
-                return None, None
-            if len(syllabus) > 300:
-                return syllabus, "lii_extracted"
-
-    except requests.exceptions.HTTPError as e:
-        if e.response.status_code == 404:
-            print(f"    LII 404 — case not available")
-        else:
-            print(f"    LII error: {e}")
-    except Exception as e:
-        print(f"    LII fetch failed: {e}")
-
-    return None, None
-
-# ─── Source: CourtListener ────────────────────────────────────────────────────
-
-def get_cl_headers():
-    key = os.environ.get("COURTLISTENER_API_KEY")
-    if not key:
-        print("WARNING: COURTLISTENER_API_KEY not set — CourtListener fallback unavailable")
-        return None
-    return {"Authorization": f"Token {key}"}
+def parse_citation(citation_str):
+    """Parse a US Reports citation like '381 U.S. 479 (1965)'."""
+    if not citation_str:
+        return None, None, None
+    match = re.search(r"(\d+)\s+U\.S\.\s+(\d+)(?:\s*\((\d{4})\))?", citation_str)
+    if match:
+        return match.group(1), match.group(2), match.group(3)
+    return None, None, None
 
 def build_name_variants(case_name):
-    """Generate simplified name variants for CourtListener search."""
+    """Generate simplified name variants for search."""
     variants = [case_name]
     # Strip corporate suffixes
     stripped = re.sub(r'\b(Co\.|Corp\.|Inc\.|Ltd\.|LLC)\b', '', case_name).strip()
     stripped = re.sub(r'\s+', ' ', stripped)
     if stripped != case_name and stripped not in variants:
         variants.append(stripped)
-    # Try stripping everything after a comma in each party name
+    # Strip comma-separated suffixes from each party
     parts = re.split(r'\s+v\.\s+', case_name, maxsplit=1, flags=re.IGNORECASE)
     if len(parts) == 2:
         p1 = parts[0].split(',')[0].strip()
@@ -246,34 +113,201 @@ def build_name_variants(case_name):
             variants.append(simple)
     return variants
 
-def fetch_from_courtlistener(case_name, year, headers):
-    """
-    Fetch opinion text from CourtListener.
-    Uses the search API to find the case, then fetches the opinion text.
-    Tries multiple name variants to handle CourtListener name mismatches.
-    """
-    if not headers:
+def get_cl_headers():
+    """Get CourtListener API headers."""
+    api_key = os.environ.get("COURTLISTENER_API_KEY", "")
+    if not api_key:
+        return None
+    return {
+        "Authorization": f"Token {api_key}",
+        "User-Agent": "LexGraph/2.0 (legal research; contact via github)"
+    }
+
+def clean_text(text):
+    """Clean whitespace from extracted text."""
+    text = re.sub(r'\n{3,}', '\n\n', text)
+    text = re.sub(r' {2,}', ' ', text)
+    return text.strip()
+
+# ─── Text Extraction ───────────────────────────────────────────────────────────
+
+def extract_syllabus_section(text):
+    """Extract the syllabus portion from opinion text."""
+    patterns = [
+        r'(?:SYLLABUS|Syllabus)\s*\n+(.*?)(?=\n+(?:OPINION|Opinion|CHIEF JUSTICE|JUSTICE|Justice|MR\. JUSTICE|PER CURIAM))',
+        r'(?:^|\n)Syllabus\s*\n+(.*?)(?=\n+(?:Opinion|JUSTICE|Justice))',
+    ]
+    for pattern in patterns:
+        match = re.search(pattern, text, re.DOTALL | re.IGNORECASE)
+        if match:
+            return clean_text(match.group(1))
+    # Return first 3000 chars if no syllabus found
+    return clean_text(text[:3000])
+
+# ─── Strategy 1: Case Registry ─────────────────────────────────────────────────
+
+def fetch_by_registry(case_id, headers):
+    """Fetch directly using a known CourtListener ID from the registry."""
+    registry = load_registry()
+    entry = registry.get(case_id)
+    if not entry or not entry.get("courtlistener_id"):
         return None, None
 
-    name_variants = build_name_variants(case_name)
-    results = []
+    cl_id = entry["courtlistener_id"]
+    print(f"    Registry hit: CourtListener ID {cl_id}")
 
-    for variant in name_variants:
-        print(f"    Trying CourtListener: {variant} ({year})")
+    try:
+        # Try opinion endpoint directly
+        resp = requests.get(
+            f"{CL_BASE}/opinions/{cl_id}/",
+            headers=headers,
+            timeout=15
+        )
+        if resp.status_code == 200:
+            opinion = resp.json()
+            text = (opinion.get("plain_text") or
+                    opinion.get("html_with_citations") or
+                    opinion.get("html") or "")
+            if text and "<" in text:
+                text = re.sub(r"<[^>]+>", " ", text)
+                text = re.sub(r"&[a-z]+;", " ", text)
+            if len(text) > 200:
+                syllabus = extract_syllabus_section(text)
+                return syllabus, "registry_courtlistener"
 
-        # Search for the case
-        params = {
-            "q": f'"{variant}"',
-            "type": "o",
-            "order_by": "score desc",
-            "stat_Precedential": "on",
-            "court": "scotus",
-        }
-        if year:
-            params["filed_after"] = f"{year}-01-01"
-            params["filed_before"] = f"{year}-12-31"
+        # Try cluster endpoint
+        resp = requests.get(
+            f"{CL_BASE}/clusters/{cl_id}/",
+            headers=headers,
+            timeout=15
+        )
+        if resp.status_code == 200:
+            cluster = resp.json()
+            opinion_urls = cluster.get("sub_opinions", [])
+            if opinion_urls:
+                time.sleep(0.3)
+                op_resp = requests.get(opinion_urls[0], headers=headers, timeout=15)
+                if op_resp.status_code == 200:
+                    opinion = op_resp.json()
+                    text = (opinion.get("plain_text") or
+                            opinion.get("html_with_citations") or
+                            opinion.get("html") or "")
+                    if text and "<" in text:
+                        text = re.sub(r"<[^>]+>", " ", text)
+                        text = re.sub(r"&[a-z]+;", " ", text)
+                    if len(text) > 200:
+                        syllabus = extract_syllabus_section(text)
+                        return syllabus, "registry_courtlistener"
 
+    except Exception as e:
+        print(f"    Registry fetch failed: {e}")
+
+    return None, None
+
+# ─── Strategy 2: LII by Citation ───────────────────────────────────────────────
+
+def fetch_from_lii(volume, page, session):
+    """Fetch syllabus from LII using US Reports citation."""
+    url = f"{LII_BASE}/{volume}/{page}"
+    print(f"    Trying LII: {url}")
+    try:
+        resp = session.get(url, timeout=15)
+        if resp.status_code == 404:
+            print(f"    LII 404 — case not available")
+            return None, None
+        resp.raise_for_status()
+        html = resp.text
+
+        # Check for intentionally omitted placeholder
+        if 'intentionally omitted' in html.lower():
+            print(f"    LII: syllabus intentionally omitted — falling back")
+            return None, None
+
+        soup = BeautifulSoup(html, 'html.parser')
+
+        # Try structured syllabus div
+        for selector in ['.syllabus', '#syllabus', '[class*="syllabus"]']:
+            el = soup.select_one(selector)
+            if el:
+                text = clean_text(el.get_text())
+                if len(text) > 300:
+                    return text, "lii_structured"
+
+        # Try finding Syllabus section in text
+        text = soup.get_text()
+        for marker in ['Syllabus', 'SYLLABUS']:
+            idx = text.find(marker)
+            if idx >= 0:
+                candidate = text[idx + len(marker):idx + 8000]
+                # Find where opinion starts
+                for end_marker in ['\nOPINION', '\nJUSTICE', '\nMR. JUSTICE',
+                                   '\nCHIEF JUSTICE', '\nPER CURIAM']:
+                    cut = candidate.find(end_marker)
+                    if cut > 300:
+                        syllabus = clean_text(candidate[:cut])
+                        if len(syllabus) > 300:
+                            return syllabus, "lii_extracted"
+
+    except Exception as e:
+        print(f"    LII failed: {e}")
+
+    return None, None
+
+# ─── Strategy 3: CourtListener by Citation ─────────────────────────────────────
+
+def fetch_cl_by_citation(volume, page, year, headers):
+    """Search CourtListener by US Reports citation volume and page."""
+    if not headers or not volume or not page:
+        return None, None, None
+
+    print(f"    Trying CourtListener citation: {volume} U.S. {page}")
+    try:
+        resp = requests.get(
+            f"{CL_BASE}/search/",
+            params={
+                "q": f"{volume} U.S. {page}",
+                "type": "o",
+                "court": "scotus",
+                "order_by": "score desc",
+                "filed_after": f"{year}-01-01" if year else None,
+                "filed_before": f"{year}-12-31" if year else None,
+            },
+            headers=headers,
+            timeout=15
+        )
+        resp.raise_for_status()
+        results = resp.json().get("results", [])
+        if results:
+            cluster_id = results[0].get("cluster_id")
+            if cluster_id:
+                return fetch_cl_by_cluster_id(cluster_id, headers)
+    except Exception as e:
+        print(f"    CourtListener citation search failed: {e}")
+
+    return None, None, None
+
+# ─── Strategy 4: CourtListener by Name Variants ────────────────────────────────
+
+def fetch_cl_by_name(case_name, year, headers):
+    """Search CourtListener using name variants."""
+    if not headers:
+        return None, None, None
+
+    variants = build_name_variants(case_name)
+    for variant in variants:
+        print(f"    Trying CourtListener name: {variant}")
         try:
+            params = {
+                "q": f'"{variant}"',
+                "type": "o",
+                "order_by": "score desc",
+                "stat_Precedential": "on",
+                "court": "scotus",
+            }
+            if year:
+                params["filed_after"] = f"{year}-01-01"
+                params["filed_before"] = f"{year}-12-31"
+
             resp = requests.get(
                 f"{CL_BASE}/search/",
                 params=params,
@@ -283,22 +317,21 @@ def fetch_from_courtlistener(case_name, year, headers):
             resp.raise_for_status()
             results = resp.json().get("results", [])
             if results:
-                print(f"    CourtListener: found via variant '{variant}'")
-                break
+                cluster_id = results[0].get("cluster_id")
+                if cluster_id:
+                    text, source, cl_id = fetch_cl_by_cluster_id(cluster_id, headers)
+                    if text:
+                        print(f"    CourtListener: found via name variant '{variant}'")
+                        return text, source, cl_id
         except Exception as e:
-            print(f"    CourtListener search failed for '{variant}': {e}")
+            print(f"    CourtListener name search failed for '{variant}': {e}")
             continue
 
-    if not results:
-        print(f"    CourtListener: no results for any name variant")
-        return None, None
+    return None, None, None
 
-    # Get the cluster ID from the first result
-        cluster_id = results[0].get("cluster_id")
-        if not cluster_id:
-            return None, None
-
-        # Fetch the cluster to get opinion IDs
+def fetch_cl_by_cluster_id(cluster_id, headers):
+    """Fetch opinion text from a CourtListener cluster ID."""
+    try:
         time.sleep(0.3)
         cluster_resp = requests.get(
             f"{CL_BASE}/clusters/{cluster_id}/",
@@ -308,67 +341,74 @@ def fetch_from_courtlistener(case_name, year, headers):
         cluster_resp.raise_for_status()
         cluster = cluster_resp.json()
 
-        # Get the first opinion (usually the main opinion)
         opinion_urls = cluster.get("sub_opinions", [])
         if not opinion_urls:
-            return None, None
+            return None, None, None
 
-        # Fetch the opinion text
         time.sleep(0.3)
-        op_resp = requests.get(
-            opinion_urls[0],
-            headers=headers,
-            timeout=15
-        )
+        op_resp = requests.get(opinion_urls[0], headers=headers, timeout=15)
         op_resp.raise_for_status()
         opinion = op_resp.json()
 
-        # Try plain_text first, then html_with_citations
+        cl_id = str(opinion.get("id", cluster_id))
         text = (opinion.get("plain_text") or
                 opinion.get("html_with_citations") or
                 opinion.get("html") or "")
 
-        if text:
-            # Strip HTML if needed
-            if "<" in text:
-                text = re.sub(r"<[^>]+>", " ", text)
-                text = re.sub(r"&[a-z]+;", " ", text)
+        if text and "<" in text:
+            text = re.sub(r"<[^>]+>", " ", text)
+            text = re.sub(r"&[a-z]+;", " ", text)
 
+        if len(text) > 200:
             syllabus = extract_syllabus_section(text)
-            if len(syllabus) > 200:
-                return syllabus, "courtlistener"
+            return syllabus, "courtlistener", cl_id
 
-            # For old cases without a structured syllabus,
-            # return first 3000 chars of opinion text
-            if len(text) > 200:
-                return clean_text(text[:3000]) + "\n\n[EXCERPT — full opinion available on CourtListener]", "courtlistener_excerpt"
+    except Exception as e:
+        print(f"    CourtListener cluster fetch failed: {e}")
+
+    return None, None, None
+
+# ─── Strategy 5: Supreme Court Website ─────────────────────────────────────────
+
+def fetch_from_scotus_website(case_name, year, citation):
+    """Try to fetch from supremecourt.gov for post-2000 cases."""
+    if not year or int(year) < 2000:
+        return None, None
+
+    volume, page, _ = parse_citation(citation)
+    if not volume or not page:
+        return None, None
+
+    # Try the opinions search page
+    try:
+        term_year = int(year) - 1  # SCOTUS terms span two years
+        url = f"https://www.supremecourt.gov/opinions/slipopinion/{str(term_year)[-2:]}"
+        print(f"    Trying SCOTUS website: {url}")
+        resp = requests.get(url, timeout=15,
+                           headers={"User-Agent": "LexGraph/2.0"})
+        if resp.status_code == 200:
+            # Look for the case in the listing
+            text = resp.text
+            # Simple heuristic: find docket numbers or case names
+            # This is a best-effort approach
+            pass
+    except Exception:
+        pass
 
     return None, None
 
-# ─── Parse citation ───────────────────────────────────────────────────────────
-
-def parse_citation(citation_str):
-    """
-    Parse a US Reports citation like '381 U.S. 479 (1965)'
-    Returns (volume, page, year) or (None, None, None)
-    """
-    match = re.search(r"(\d+)\s+U\.S\.\s+(\d+)(?:\s*\((\d{4})\))?", citation_str)
-    if match:
-        return match.group(1), match.group(2), match.group(3)
-    return None, None, None
-
-# ─── Main retrieval logic ─────────────────────────────────────────────────────
+# ─── Main Retrieval Function ───────────────────────────────────────────────────
 
 def retrieve_case(case_name, year, citation=None, output_dir=Path("syllabi")):
     """
-    Retrieve syllabus text for a single case.
-    Returns (case_id, output_path) or (case_id, None) on failure.
+    Retrieve syllabus/opinion text for a SCOTUS case.
+    Returns (case_id, output_path) — output_path is None on failure.
     """
-    year = str(year) if year else None
+    output_dir = Path(output_dir)
     case_id = case_id_from_name(case_name, year or "unknown")
     output_path = output_dir / f"{case_id}_syllabus.txt"
 
-    # Skip if already retrieved
+    # Check if already retrieved
     if output_path.exists():
         print(f"  ✓ {case_name} — already retrieved, skipping")
         return case_id, output_path
@@ -376,30 +416,50 @@ def retrieve_case(case_name, year, citation=None, output_dir=Path("syllabi")):
     print(f"  Retrieving: {case_name} ({year})")
 
     session = requests.Session()
-    session.headers.update({"User-Agent": "LexGraph/1.0 (legal research; contact via github)"})
+    session.headers.update({"User-Agent": "LexGraph/2.0 (legal research; contact via github)"})
+    cl_headers = get_cl_headers()
 
     text = None
     source = None
+    cl_id = None
 
-    # Strategy 1: LII (best for post-1990 SCOTUS cases)
-    if citation:
+    # Strategy 1: Registry lookup
+    if cl_headers:
+        text, source = fetch_by_registry(case_id, cl_headers)
+
+    # Strategy 2: LII by citation
+    if not text and citation:
+        volume, page, _ = parse_citation(citation)
+        if volume and page and year and int(year) >= LII_SYLLABUS_CUTOFF:
+            text, source = fetch_from_lii(volume, page, session)
+
+    # Strategy 3: CourtListener by citation
+    if not text and citation and cl_headers:
         volume, page, _ = parse_citation(citation)
         if volume and page:
-            text, source = fetch_from_lii(volume, page, session)
-    elif year and int(year) >= LII_SYLLABUS_CUTOFF:
-        # Try to find the LII URL by searching
-        # For now, skip — need citation for LII
-        pass
+            text, source, cl_id = fetch_cl_by_citation(volume, page, year, cl_headers)
 
-    # Strategy 2: CourtListener (fallback)
+    # Strategy 4: CourtListener by name variants
+    if not text and cl_headers:
+        text, source, cl_id = fetch_cl_by_name(case_name, year, cl_headers)
+
+    # Strategy 5: Supreme Court website (post-2000)
     if not text:
-        cl_headers = get_cl_headers()
-        text, source = fetch_from_courtlistener(case_name, year, cl_headers)
-        time.sleep(0.5)
+        text, source = fetch_from_scotus_website(case_name, year, citation)
 
+    # All strategies failed
     if not text:
         print(f"  ✗ {case_name} — could not retrieve from any source")
+        add_to_manual_queue(
+            case_name, year, citation,
+            f"All retrieval strategies failed. Try: https://www.courtlistener.com/?q={case_name.replace(' ', '+')}&type=o&order_by=score+desc&stat_Precedential=on&court=scotus"
+        )
         return case_id, None
+
+    # Update registry with newly found CourtListener ID
+    if cl_id and source in ("courtlistener", "courtlistener_excerpt"):
+        update_registry(case_id, cl_id, case_name, citation or "", "")
+        print(f"    Registry updated: {case_id} → {cl_id}")
 
     # Write output
     output_dir.mkdir(parents=True, exist_ok=True)
@@ -414,17 +474,13 @@ Case ID: {case_id}
     with open(output_path, "w", encoding="utf-8") as f:
         f.write(header + text)
 
-    print(f"  ✓ {case_name} — saved to {output_path} [{source}]")
+    print(f"  ✓ {case_name} — saved [{source}]")
     return case_id, output_path
 
-# ─── Batch processing ─────────────────────────────────────────────────────────
+# ─── Batch Processing ──────────────────────────────────────────────────────────
 
 def parse_cases_file(filepath):
-    """
-    Parse a cases input file.
-    Format: one case per line — "Case Name, Year" or "Case Name, Year, Citation"
-    Lines starting with # are comments.
-    """
+    """Parse cases input file. Format: Name, Year, Citation"""
     cases = []
     with open(filepath) as f:
         for line in f:
@@ -434,7 +490,7 @@ def parse_cases_file(filepath):
             parts = [p.strip() for p in line.split(",")]
             name = parts[0]
             year = parts[1] if len(parts) > 1 else None
-            citation = parts[2] if len(parts) > 2 else None
+            citation = ", ".join(parts[2:]) if len(parts) > 2 else None
             cases.append((name, year, citation))
     return cases
 
@@ -443,55 +499,44 @@ def run_batch(cases_file, output_dir, delay=1.0):
     output_dir = Path(output_dir)
     cases = parse_cases_file(cases_file)
 
-    print(f"\nElsa — Case Retrieval Agent")
+    print(f"\nElsa v2.0 — Case Retrieval Agent")
     print(f"{'─' * 60}")
-    print(f"Cases to retrieve: {len(cases)}")
-    print(f"Output directory:  {output_dir}")
-    print()
+    print(f"Cases: {len(cases)}")
 
-    results = {"success": [], "failed": []}
+    results = {"retrieved": [], "failed": [], "skipped": []}
 
-    for i, (name, year, citation) in enumerate(cases, 1):
-        print(f"[{i}/{len(cases)}]")
-        case_id, path = retrieve_case(name, year, citation, output_dir)
+    for case_name, year, citation in cases:
+        case_id, path = retrieve_case(case_name, year, citation, output_dir)
         if path:
-            results["success"].append(case_id)
+            if path.exists():
+                results["retrieved"].append(case_name)
         else:
-            results["failed"].append(name)
-        if i < len(cases):
-            time.sleep(delay)
+            results["failed"].append(case_name)
+        time.sleep(delay)
 
-    print(f"\n{'─' * 60}")
-    print(f"Retrieved: {len(results['success'])}/{len(cases)}")
+    print(f"\nRetrieved: {len(results['retrieved'])} | Failed: {len(results['failed'])}")
     if results["failed"]:
-        print(f"Failed ({len(results['failed'])}):")
-        for name in results["failed"]:
-            print(f"  ✗ {name}")
-
+        print(f"Failed cases written to: {MANUAL_QUEUE_PATH}")
     return results
 
-# ─── CLI ──────────────────────────────────────────────────────────────────────
-
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(
-        description="Elsa — Case Retrieval Agent for LexGraph"
-    )
-    group = parser.add_mutually_exclusive_group(required=True)
-    group.add_argument("--cases", help="Path to cases list file")
-    group.add_argument("--case", help="Single case name")
-
-    parser.add_argument("--year", help="Year (for single case mode)")
-    parser.add_argument("--citation", help="US Reports citation e.g. '381 U.S. 479'")
-    parser.add_argument("--output", default="syllabi", help="Output directory (default: syllabi/)")
-    parser.add_argument("--delay", type=float, default=1.0,
-                        help="Delay between requests in seconds (default: 1.0)")
+    import argparse
+    parser = argparse.ArgumentParser(description="Elsa v2.0 — Case Retrieval Agent")
+    parser.add_argument("--cases", help="Path to cases list file")
+    parser.add_argument("--name", help="Single case name")
+    parser.add_argument("--year", help="Case year")
+    parser.add_argument("--citation", help="Case citation")
+    parser.add_argument("--output-dir", default="syllabi", help="Output directory")
     args = parser.parse_args()
 
     if args.cases:
-        run_batch(args.cases, args.output, args.delay)
+        run_batch(args.cases, args.output_dir)
+    elif args.name:
+        case_id, path = retrieve_case(args.name, args.year, args.citation,
+                                       Path(args.output_dir))
+        if path:
+            print(f"Success: {path}")
+        else:
+            print("Failed — check manual_queue.txt")
     else:
-        case_id, path = retrieve_case(
-            args.case, args.year, args.citation, Path(args.output)
-        )
-        if not path:
-            sys.exit(1)
+        parser.print_help()

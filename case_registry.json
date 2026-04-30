@@ -1,0 +1,183 @@
+{
+  "meyer_v_nebraska_1923": {
+    "courtlistener_id": "100233",
+    "short_name": "Meyer v. Nebraska",
+    "citation": "262 U.S. 390 (1923)",
+    "decided_date": "1923-06-04"
+  },
+  "lochner_v_new_york_1905": {
+    "courtlistener_id": "96276",
+    "short_name": "Lochner v. New York",
+    "citation": "198 U.S. 45 (1905)",
+    "decided_date": "1905-04-17"
+  },
+  "palko_v_connecticut_1937": {
+    "courtlistener_id": "102879",
+    "short_name": "Palko v. Connecticut",
+    "citation": "302 U.S. 319 (1937)",
+    "decided_date": "1937-12-06"
+  },
+  "skinner_v_oklahoma_1942": {
+    "courtlistener_id": "103701",
+    "short_name": "Skinner v. Oklahoma",
+    "citation": "316 U.S. 535 (1942)",
+    "decided_date": "1942-06-01"
+  },
+  "moore_v_city_of_east_cleveland_1977": {
+    "courtlistener_id": "109670",
+    "short_name": "Moore v. City of East Cleveland",
+    "citation": "431 U.S. 494 (1977)",
+    "decided_date": "1977-05-31"
+  },
+  "troxel_v_granville_2000": {
+    "courtlistener_id": "9264694",
+    "short_name": "Troxel v. Granville",
+    "citation": "530 U.S. 57 (2000)",
+    "decided_date": "2000-06-05"
+  },
+  "united_states_v_carolene_products_1938": {
+    "courtlistener_id": "103017",
+    "short_name": "United States v. Carolene Products",
+    "citation": "304 U.S. 144 (1938)",
+    "decided_date": "1938-04-25"
+  },
+  "benton_v_maryland_1969": {
+    "courtlistener_id": "107980",
+    "short_name": "Benton v. Maryland",
+    "citation": "395 U.S. 784 (1969)",
+    "decided_date": "1969-06-23"
+  },
+  "west_coast_hotel_co_v_parrish_1937": {
+    "courtlistener_id": "102784",
+    "short_name": "West Coast Hotel Co. v. Parrish",
+    "citation": "300 U.S. 379 (1937)",
+    "decided_date": "1937-03-29"
+  },
+  "adkins_v_childrens_hospital_1923": {
+    "courtlistener_id": "100181",
+    "short_name": "Adkins v. Children's Hospital",
+    "citation": "261 U.S. 525 (1923)",
+    "decided_date": "1923-01-01"
+  },
+  "weeks_v_united_states_1914": {
+    "courtlistener_id": "98094",
+    "short_name": "Weeks v. United States",
+    "citation": "232 U.S. 383 (1914)",
+    "decided_date": "1914-02-24"
+  },
+  "wolf_v_colorado_1949": {
+    "courtlistener_id": "104709",
+    "short_name": "Wolf v. Colorado",
+    "citation": "338 U.S. 25 (1949)",
+    "decided_date": "1949-06-27"
+  },
+  "mapp_v_ohio_1961": {
+    "courtlistener_id": "8951163",
+    "short_name": "Mapp v. Ohio",
+    "citation": "367 U.S. 643 (1961)",
+    "decided_date": "1961-06-19"
+  },
+  "gideon_v_wainwright_1963": {
+    "courtlistener_id": "106545",
+    "short_name": "Gideon v. Wainwright",
+    "citation": "372 U.S. 335 (1963)",
+    "decided_date": "1963-03-18"
+  },
+  "katz_v_united_states_1967": {
+    "courtlistener_id": "107564",
+    "short_name": "Katz v. United States",
+    "citation": "389 U.S. 347 (1967)",
+    "decided_date": "1967-12-18"
+  },
+  "olmstead_v_united_states_1928": {
+    "courtlistener_id": "101320",
+    "short_name": "Olmstead v. United States",
+    "citation": "277 U.S. 438 (1928)",
+    "decided_date": "1928-06-04"
+  },
+  "goldman_v_united_states_1942": {
+    "courtlistener_id": "8196369",
+    "short_name": "Goldman v. United States",
+    "citation": "316 U.S. 129 (1942)",
+    "decided_date": "1942-04-27"
+  },
+  "terry_v_ohio_1968": {
+    "courtlistener_id": "107729",
+    "short_name": "Terry v. Ohio",
+    "citation": "392 U.S. 1 (1968)",
+    "decided_date": "1968-06-10"
+  },
+  "dickerson_v_united_states_2000": {
+    "courtlistener_id": "9190515",
+    "short_name": "Dickerson v. United States",
+    "citation": "530 U.S. 428 (2000)",
+    "decided_date": "2000-06-26"
+  },
+  "illinois_v_gates_1983": {
+    "courtlistener_id": "110959",
+    "short_name": "Illinois v. Gates",
+    "citation": "462 U.S. 213 (1983)",
+    "decided_date": "1983-06-08"
+  },
+  "betts_v_brady_1942": {
+    "courtlistener_id": "8195398",
+    "short_name": "Betts v. Brady",
+    "citation": "316 U.S. 455 (1942)",
+    "decided_date": "1942-06-01"
+  },
+  "massiah_v_united_states_1964": {
+    "courtlistener_id": "106822",
+    "short_name": "Massiah v. United States",
+    "citation": "377 U.S. 201 (1964)",
+    "decided_date": "1964-05-18"
+  },
+  "strickland_v_washington_1984": {
+    "courtlistener_id": "111170",
+    "short_name": "Strickland v. Washington",
+    "citation": "466 U.S. 668 (1984)",
+    "decided_date": "1984-05-14"
+  },
+  "chimel_v_california_1969": {
+    "courtlistener_id": "8974742",
+    "short_name": "Chimel v. California",
+    "citation": "395 U.S. 752 (1969)",
+    "decided_date": "1969-06-23"
+  },
+  "united_states_v_leon_1984": {
+    "courtlistener_id": "9048842",
+    "short_name": "United States v. Leon",
+    "citation": "468 U.S. 897 (1984)",
+    "decided_date": "1984-07-05"
+  },
+  "carroll_v_united_states_1925": {
+    "courtlistener_id": "100567",
+    "short_name": "Carroll v. United States",
+    "citation": "267 U.S. 132 (1925)",
+    "decided_date": "1925-03-02"
+  },
+  "kyllo_v_united_states_2001": {
+    "courtlistener_id": "118443",
+    "short_name": "Kyllo v. United States",
+    "citation": "533 U.S. 27 (2001)",
+    "decided_date": "2001-06-11"
+  },
+  "carpenter_v_united_states_2018": {
+    "courtlistener_id": "4510032",
+    "short_name": "Carpenter v. United States",
+    "citation": "585 U.S. 296 (2018)",
+    "decided_date": "2018-06-22"
+  },
+  "whren_v_united_states_1996": {
+    "courtlistener_id": "9272891",
+    "short_name": "Whren v. United States",
+    "citation": "517 U.S. 806 (1996)",
+    "decided_date": "1996-06-10"
+  },
+  "riley_v_california_2014": {
+    "courtlistener_id": "2680439",
+    "short_name": "Riley v. California",
+    "citation": "573 U.S. 373 (2014)",
+    "decided_date": "2014-06-25",
+    "cl_opinion_url": "https://www.courtlistener.com/opinion/2680439/riley-v-cal-united-states/"
+  }
+}
