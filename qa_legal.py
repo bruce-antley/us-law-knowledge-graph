@@ -70,6 +70,8 @@ Cite precise Supreme Court precedents. Apply doctrinal standards exactly as cour
 Distinguish between what a case held vs. what it assumed or dicta.
 Note if a holding overstates or understates the actual rule.
 
+8. CASE IDENTITY — Before reviewing anything else, verify that the holding and notes actually describe the named case. If the holding describes a completely different legal matter (e.g., a labor arbitration case when reviewing Giglio v. United States, or a bankruptcy case when reviewing J.E.B. v. Alabama), flag this as a HIGH severity finding with field: "identity".
+
 You MUST respond with ONLY valid JSON in exactly this format:
 {
   "verdict": "pass" | "warn" | "fail",
@@ -77,7 +79,7 @@ You MUST respond with ONLY valid JSON in exactly this format:
   "findings": [
     {
       "severity": "high" | "medium" | "low",
-      "field": "holding | edge | doctrine | test | missing",
+      "field": "holding | edge | doctrine | test | missing | identity",
       "issue": "description of the legal inaccuracy",
       "suggestion": "what the correct statement should be"
     }
@@ -108,6 +110,8 @@ def build_review_context(case_node, draft_data, combined_data=None):
     """Build the context string for judge review."""
     lines = []
     lines.append("## Case Node Under Review")
+    lines.append(f"EXPECTED CASE: {case_node.get('short_name')} — {case_node.get('citation')}")
+    lines.append("IDENTITY CHECK: Verify that the holding below actually describes this specific case.")
     lines.append(f"ID: {case_node.get('id')}")
     lines.append(f"Short name: {case_node.get('short_name')}")
     lines.append(f"Citation: {case_node.get('citation')}")
