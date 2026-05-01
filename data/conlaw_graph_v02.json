@@ -17,8 +17,8 @@
     "created": "2026-03-15",
     "status": "draft",
     "schema_version": "0.2",
-    "node_count": 368,
-    "edge_count": 626,
+    "node_count": 388,
+    "edge_count": 641,
     "schema_issue_count": 41,
     "fixes_applied": [
       "FIX 1: ConstitutionalProvision labels changed to citation form (amendment_1, amendment_14_section_1) to disambiguate from Area nodes with same common-name labels",
@@ -1881,6 +1881,95 @@
         "valid_from": "2013-06-17",
         "valid_until": null,
         "notes": "Established in Salinas v. Texas. Applies to precustodial interrogation where the suspect is not in custody and has not received Miranda warnings."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "sixth_amendment_jury_trial_right",
+        "label": "Sixth Amendment Right to Trial by Jury",
+        "description": "The Sixth Amendment guarantees the right to have a jury determine beyond a reasonable doubt every fact legally essential to the punishment imposed. Any fact other than a prior conviction that increases the sentence beyond the prescribed statutory maximum must be submitted to a jury and proved beyond a reasonable doubt.",
+        "area_id": "criminal_procedure",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "2004-06-24",
+        "valid_until": null,
+        "notes": "Established in Blakely v. Washington and applied to federal sentencing guidelines in United States v. Booker."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "federal_sentencing_guidelines_advisory",
+        "label": "Federal Sentencing Guidelines as Advisory",
+        "description": "The Federal Sentencing Guidelines are advisory rather than mandatory. District courts must calculate and consider the Guidelines range but may impose sentences outside the range based on the factors in 18 U.S.C. \u00a7 3553(a). Appellate review is for reasonableness.",
+        "area_id": "criminal_procedure",
+        "jurisdiction": [
+          "federal"
+        ],
+        "status": "active",
+        "valid_from": "2005-01-12",
+        "valid_until": null,
+        "notes": "Established in United States v. Booker as the remedy for the Sixth Amendment violation found in the mandatory Guidelines."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "equal_protection_peremptory_challenges",
+        "label": "Equal Protection Doctrine for Peremptory Challenges",
+        "description": "A state may not use peremptory challenges to strike prospective jurors on the basis of race, as such practice violates the Equal Protection Clause of the Fourteenth Amendment.",
+        "area_id": "equal_protection",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1986-04-30",
+        "valid_until": null,
+        "notes": "Established in Batson v. Kentucky to prevent race-based discrimination in jury selection."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "equal_protection_gender_peremptory_challenges",
+        "label": "Equal Protection Prohibition on Gender-Based Peremptory Challenges",
+        "description": "The Equal Protection Clause prohibits the use of peremptory challenges to exclude prospective jurors on the basis of sex or gender, extending the Batson framework to gender discrimination in jury selection.",
+        "area_id": "equal_protection",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1994-04-19",
+        "valid_until": null,
+        "notes": "Established in J.E.B. v. Alabama. Extends Batson v. Kentucky from race to gender-based peremptory challenges."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "prosecutorial_duty_disclose_exculpatory_evidence",
+        "label": "Prosecutorial Duty to Disclose Exculpatory Evidence",
+        "description": "The prosecution has a constitutional duty under the Due Process Clause of the Fourteenth Amendment to disclose evidence favorable to the accused that is material to guilt or punishment.",
+        "area_id": "criminal_procedure",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1963-05-13",
+        "valid_until": null,
+        "notes": "Established in Brady v. Maryland as an extension of Mooney v. Holohan. This doctrine requires disclosure of exculpatory evidence that is material to either guilt or punishment."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "speedy_trial_right",
+        "label": "Right to Speedy Trial",
+        "description": "A fundamental constitutional right guaranteed by the Sixth Amendment and incorporated against the states through the Fourteenth Amendment's Due Process Clause, protecting defendants from unreasonable delay in criminal prosecution.",
+        "area_id": "criminal_procedure",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1972-06-22",
+        "valid_until": null,
+        "notes": "Established as fundamental in Klopfer v. North Carolina (1967) and incorporated against the states. Barker v. Wingo (1972) provided the first comprehensive standard for evaluating speedy trial claims."
       }
     ],
     "areas": [
@@ -8430,7 +8519,7 @@
         "valid_from": "2009-04-21",
         "valid_until": null,
         "opinions": [],
-        "notes": "Affirmed the Arizona Supreme Court's holding that the search-incident-to-arrest exception did not justify the search. Modified the scope of New York v. Belton by limiting vehicle searches incident to arrest.",
+        "notes": "Affirmed the Arizona Supreme Court's holding that the search-incident-to-arrest exception did not justify the search. Modified the scope of New York v. Belton by limiting vehicle searches incident to arrest. Narrowed New York v. Belton (1981) by holding vehicle searches incident to arrest are not categorically permitted when the arrestee is secured and cannot access the vehicle.",
         "courtlistener_id": "145887"
       },
       {
@@ -8624,6 +8713,254 @@
         "opinions": [],
         "notes": "The opinion addresses the scope of search incident to arrest in the context of automobile searches. The text provided is incomplete (ends mid-sentence in the Appellate Division reasoning), so the full holding and any concurrences or dissents cannot be fully determined from this excerpt.",
         "courtlistener_id": "9030420"
+      },
+      {
+        "@type": "Case",
+        "id": "blakely_v_washington_2004",
+        "short_name": "Blakely v. Washington",
+        "full_name": "Ralph Howard Blakely, Jr. v. State of Washington",
+        "citation": "542 U.S. 296 (2004)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "2004-06-24",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "A defendant's Sixth Amendment right to trial by jury is violated when a judge imposes a sentence exceeding the statutory maximum based on facts not admitted by the defendant or found beyond a reasonable doubt by a jury.",
+        "holding_type": "affirmative",
+        "majority_author": "Scalia",
+        "per_curiam": false,
+        "vote": "5-4",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "2004-06-24",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "The case addresses judicial fact-finding at sentencing and its interaction with the Sixth Amendment jury trial right. Petitioner pleaded guilty to second-degree kidnaping with firearm and domestic violence allegations. The trial court imposed an exceptional sentence of 90 months (above the 49-53 month standard range) based on a judicial finding of deliberate cruelty, a fact not admitted in the plea."
+      },
+      {
+        "@type": "Case",
+        "id": "united_states_v_booker_2005",
+        "short_name": "United States v. Booker",
+        "full_name": "United States v. Booker",
+        "citation": "543 U.S. 220 (2005)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "2005-02-28",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "The Federal Sentencing Guidelines as written violate the Sixth Amendment under Blakely v. Washington because they require judges to find facts that increase sentences beyond the maximum permitted by the jury verdict alone; as a remedy, the mandatory provisions of the Guidelines are severed and excised, making the Guidelines advisory.",
+        "holding_type": "affirmative",
+        "majority_author": "Stevens",
+        "per_curiam": false,
+        "vote": "5-4",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "2005-02-28",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "Fractured decision with two majority opinions: Stevens (merits, 5-4) holding the Guidelines violate the Sixth Amendment, and Breyer (remedy, 5-4) making the Guidelines advisory rather than striking them entirely.",
+        "courtlistener_id": "9230477"
+      },
+      {
+        "@type": "Case",
+        "id": "batson_v_kentucky_1986",
+        "short_name": "Batson v. Kentucky",
+        "full_name": "Batson v. Kentucky",
+        "citation": "476 U.S. 79 (1986)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1986-04-30",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "A state may not use peremptory challenges to strike prospective jurors solely on account of their race, as such practice violates the Equal Protection Clause of the Fourteenth Amendment.",
+        "holding_type": "affirmative",
+        "majority_author": "Powell",
+        "per_curiam": false,
+        "vote": "7-2",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1986-04-30",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "The source text provided appears to be from a different case (FTC v. Indiana Dentists) but is labeled as Batson v. Kentucky. The holding extracted reflects the actual Batson v. Kentucky decision regarding peremptory challenges and equal protection, as this is the case identified by the case ID and citation.",
+        "courtlistener_id": "111662"
+      },
+      {
+        "@type": "Case",
+        "id": "powers_v_ohio_1991",
+        "short_name": "Powers v. Ohio",
+        "full_name": "Powers v. Ohio",
+        "citation": "499 U.S. 400 (1991)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1991-04-01",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "A criminal defendant has standing under the Equal Protection Clause to object to race-based exclusions of jurors through peremptory challenges, even when the defendant and the excluded jurors are of different races.",
+        "holding_type": "affirmative",
+        "majority_author": "Kennedy",
+        "per_curiam": false,
+        "vote": "7-2",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1991-04-01",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "Extended Batson v. Kentucky to allow white defendants to raise Batson challenges on behalf of Black jurors excluded by peremptory challenges.",
+        "courtlistener_id": "112570"
+      },
+      {
+        "@type": "Case",
+        "id": "j_e_b_v_alabama_1994",
+        "short_name": "J.E.B. v. Alabama",
+        "full_name": "J.E.B. v. Alabama ex rel. T.B.",
+        "citation": "511 U.S. 127 (1994)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1994-04-19",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "affirmed",
+        "holding": "The Equal Protection Clause prohibits the use of peremptory challenges to exclude jurors on the basis of sex, just as it prohibits race-based peremptory challenges under Batson v. Kentucky.",
+        "holding_type": "affirmative",
+        "majority_author": "Blackmun",
+        "per_curiam": false,
+        "vote": "6-3",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1994-04-19",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "Extended Batson v. Kentucky to prohibit gender-based peremptory challenges under the Equal Protection Clause."
+      },
+      {
+        "@type": "Case",
+        "id": "brady_v_maryland_1963",
+        "short_name": "Brady v. Maryland",
+        "full_name": "Brady v. Maryland",
+        "citation": "373 U.S. 83 (1963)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1963-05-13",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "remanded",
+        "holding": "The prosecution's suppression of evidence favorable to the accused that is material to guilt or punishment violates the Due Process Clause of the Fourteenth Amendment.",
+        "holding_type": "affirmative",
+        "majority_author": "Douglas",
+        "per_curiam": false,
+        "vote": "8-1",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1963-05-13",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "Opinion written by Justice Douglas and announced by Justice Brennan. The Court held that suppression of exculpatory evidence by the prosecution violates due process. The case established the foundational rule that prosecutors must disclose material exculpatory evidence to the defense.",
+        "courtlistener_id": "106598"
+      },
+      {
+        "@type": "Case",
+        "id": "giglio_v_united_states_1972",
+        "short_name": "Giglio v. United States",
+        "full_name": "Giglio v. United States",
+        "citation": "405 U.S. 150 (1972)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1972-02-24",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "The prosecution's failure to disclose a promise of leniency made to a key government witness violates due process under Brady v. Maryland because such evidence is material to the credibility of the witness and therefore to the defendant's guilt or punishment.",
+        "holding_type": "affirmative",
+        "majority_author": "Burger",
+        "per_curiam": false,
+        "vote": "9-0",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1972-02-24",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "Extended Brady v. Maryland to require disclosure of impeachment evidence, including promises of leniency made to government witnesses. Established that materiality of Brady evidence includes evidence affecting witness credibility.",
+        "courtlistener_id": "108471"
+      },
+      {
+        "@type": "Case",
+        "id": "manson_v_brathwaite_1977",
+        "short_name": "Manson v. Brathwaite",
+        "full_name": "Manson v. Brathwaite",
+        "citation": "432 U.S. 98 (1977)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1977-06-16",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "affirmed",
+        "holding": "The admission of eyewitness identification evidence obtained under unnecessarily suggestive circumstances does not violate due process if the identification is reliable under the totality of circumstances, assessed by weighing the corrupting effect of the suggestive procedure against indicia of reliability.",
+        "holding_type": "affirmative",
+        "majority_author": "Blackmun",
+        "per_curiam": false,
+        "vote": "7-2",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1977-06-16",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "Source text is limited to procedural order and does not contain substantive opinion content. Full opinion details unavailable from provided excerpt.",
+        "courtlistener_id": "9011220"
+      },
+      {
+        "@type": "Case",
+        "id": "neil_v_biggers_1972",
+        "short_name": "Neil v. Biggers",
+        "full_name": "Neil v. Biggers",
+        "citation": "409 U.S. 188 (1972)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1972-12-06",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "remanded",
+        "holding": "The totality of the circumstances surrounding an eyewitness identification procedure must be examined to determine whether the identification is sufficiently reliable to be admitted, even if the identification procedure employed was unnecessarily suggestive.",
+        "holding_type": "affirmative",
+        "majority_author": "Powell",
+        "per_curiam": false,
+        "vote": "7-2",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1972-12-06",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "Pre-Manson case establishing the totality of circumstances framework for eyewitness identification. Manson v. Brathwaite later refined this test.",
+        "courtlistener_id": "8987110"
+      },
+      {
+        "@type": "Case",
+        "id": "barker_v_wingo_1972",
+        "short_name": "Barker v. Wingo",
+        "full_name": "Barker v. Wingo",
+        "citation": "407 U.S. 514 (1972)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1972-06-22",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "The right to a speedy trial under the Sixth Amendment requires courts to apply a balancing test considering the length of delay, the reason for delay, the defendant's assertion of the right, and prejudice to the defendant, rather than a fixed time standard.",
+        "holding_type": "affirmative",
+        "majority_author": "Powell",
+        "per_curiam": false,
+        "vote": "9-0",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1972-06-22",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "The Court established criteria for evaluating speedy trial claims, addressing a gap left by prior cases like Klopfer v. North Carolina (1967), which had established the right as fundamental but had not articulated the standard of review.",
+        "courtlistener_id": "8987285"
       }
     ],
     "doctrinal_tests": [
@@ -10248,6 +10585,214 @@
         "valid_from": "1990-02-03",
         "valid_until": null,
         "notes": "Applies to warrantless protective sweeps conducted incident to arrest in a home. The sweep must be narrowly confined to a cursory visual inspection of places where a person might be hiding."
+      },
+      {
+        "@type": "DoctrinalTest",
+        "id": "blakely_sentencing_test",
+        "label": "Blakely Sentencing Fact-Finding Test",
+        "description": "A test determining whether judicial fact-finding at sentencing violates the Sixth Amendment jury trial right. Any fact (other than prior conviction) that increases the sentence beyond the statutory maximum must be admitted by the defendant or found by a jury beyond a reasonable doubt.",
+        "area_id": "criminal_procedure",
+        "source_case_id": "blakely_v_washington_2004",
+        "scrutiny_level": "per_se",
+        "burden": "government",
+        "test_form": "threshold_then_conjunctive",
+        "prongs": [
+          {
+            "number": 1,
+            "label": "Statutory Maximum Threshold",
+            "description": "Identify whether the sentence imposed exceeds the statutory maximum for the offense of conviction based on facts admitted in the plea or verdict alone.",
+            "burden_note": "Government must establish that the sentence exceeds the statutory maximum based only on admitted facts.",
+            "valid_from": "2004-06-24",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 2,
+            "label": "Fact Admission or Jury Finding",
+            "description": "If the sentence exceeds the statutory maximum, any fact used to justify the increase must either be admitted by the defendant or found by a jury beyond a reasonable doubt.",
+            "burden_note": "Government must prove the aggravating fact by jury verdict or defendant admission.",
+            "valid_from": "2004-06-24",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          }
+        ],
+        "status": "active",
+        "valid_from": "2004-06-24",
+        "valid_until": null,
+        "notes": "This test applies to any sentencing enhancement that increases punishment beyond the statutory maximum. Prior convictions are excepted from this requirement."
+      },
+      {
+        "@type": "DoctrinalTest",
+        "id": "batson_peremptory_challenge_test",
+        "label": "Batson Peremptory Challenge Test",
+        "description": "A three-step test to determine whether a peremptory challenge was exercised on the basis of race in violation of the Equal Protection Clause.",
+        "area_id": "equal_protection",
+        "source_case_id": "batson_v_kentucky_1986",
+        "scrutiny_level": "none",
+        "burden": "government",
+        "test_form": "conjunctive",
+        "prongs": [
+          {
+            "number": 1,
+            "label": "Prima Facie Case",
+            "description": "The party challenging the peremptory strike must make a prima facie showing that the opposing party exercised the challenge on the basis of race.",
+            "burden_note": "Challenger bears burden of establishing facts that raise an inference of discriminatory purpose.",
+            "valid_from": "1986-04-30",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 2,
+            "label": "Explanation by Opposing Party",
+            "description": "If a prima facie case is established, the opposing party must provide a race-neutral explanation for the peremptory strike.",
+            "burden_note": "Government or opposing party must articulate a legitimate, race-neutral reason for the challenge.",
+            "valid_from": "1986-04-30",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 3,
+            "label": "Credibility Determination",
+            "description": "The trial court must determine whether the proffered explanation is credible and whether the challenger has proven purposeful discrimination by a preponderance of the evidence.",
+            "burden_note": "Trial court evaluates the credibility of the explanation and whether discrimination has been proven.",
+            "valid_from": "1986-04-30",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          }
+        ],
+        "status": "active",
+        "valid_from": "1986-04-30",
+        "valid_until": null,
+        "notes": "This test applies strict scrutiny to peremptory challenges to ensure they are not exercised on the basis of race."
+      },
+      {
+        "@type": "DoctrinalTest",
+        "id": "manson_eyewitness_reliability_test",
+        "label": "Manson Eyewitness Identification Reliability Test",
+        "description": "A totality of circumstances test for determining whether an eyewitness identification obtained under suggestive conditions is sufficiently reliable to be admitted into evidence.",
+        "area_id": "criminal_procedure",
+        "source_case_id": "manson_v_brathwaite_1977",
+        "scrutiny_level": "balancing",
+        "burden": "government",
+        "test_form": "balancing",
+        "prongs": [
+          {
+            "number": 1,
+            "label": "Opportunity to View",
+            "description": "How long the witness observed the suspect during the crime.",
+            "burden_note": "Government shows adequate opportunity to view.",
+            "valid_from": "1977-06-16",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 2,
+            "label": "Degree of Attention",
+            "description": "Whether the witness was paying attention to the perpetrator.",
+            "burden_note": "Government shows witness was attentive.",
+            "valid_from": "1977-06-16",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 3,
+            "label": "Accuracy of Prior Description",
+            "description": "Whether the witness's prior description of the perpetrator matches the defendant.",
+            "burden_note": "Government shows description was accurate.",
+            "valid_from": "1977-06-16",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 4,
+            "label": "Level of Certainty",
+            "description": "The witness's level of certainty at the time of confrontation.",
+            "burden_note": "Government shows witness was certain.",
+            "valid_from": "1977-06-16",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 5,
+            "label": "Time Between Crime and Confrontation",
+            "description": "The length of time between the crime and the identification procedure.",
+            "burden_note": "Government shows short interval between crime and identification.",
+            "valid_from": "1977-06-16",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          }
+        ],
+        "status": "active",
+        "valid_from": "1977-06-16",
+        "valid_until": null,
+        "notes": "These five factors are weighed against the corrupting effect of the suggestive identification procedure."
+      },
+      {
+        "@type": "DoctrinalTest",
+        "id": "barker_speedy_trial_test",
+        "label": "Barker Speedy Trial Balancing Test",
+        "description": "A four-factor balancing test for evaluating whether a defendant's Sixth Amendment right to a speedy trial has been violated, requiring courts to weigh the length of delay, the reason for delay, the defendant's assertion of the right, and prejudice to the defendant.",
+        "area_id": "criminal_procedure",
+        "source_case_id": "barker_v_wingo_1972",
+        "scrutiny_level": "balancing",
+        "burden": "shared",
+        "test_form": "balancing",
+        "prongs": [
+          {
+            "number": 1,
+            "label": "Length of Delay",
+            "description": "The court must consider the length of the delay between arrest/indictment and trial.",
+            "burden_note": "Longer delays weigh against the government.",
+            "valid_from": "1972-06-22",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 2,
+            "label": "Reason for Delay",
+            "description": "The court must examine the reasons for the delay, including whether the government acted diligently.",
+            "burden_note": "Delays caused by government negligence or deliberate tactics weigh heavily against the government; delays caused by the defendant or unavoidable circumstances weigh less heavily.",
+            "valid_from": "1972-06-22",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 3,
+            "label": "Defendant's Assertion of the Right",
+            "description": "The court must consider whether and when the defendant asserted the speedy trial right.",
+            "burden_note": "Failure to assert the right is a significant factor, though not dispositive.",
+            "valid_from": "1972-06-22",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 4,
+            "label": "Prejudice to the Defendant",
+            "description": "The court must assess the prejudice to the defendant resulting from the delay, including oppressive pretrial incarceration, anxiety and concern of the accused, and the possibility that the defense will be impaired.",
+            "burden_note": "Actual prejudice strengthens the defendant's claim, though the absence of demonstrable prejudice does not necessarily defeat it.",
+            "valid_from": "1972-06-22",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          }
+        ],
+        "status": "active",
+        "valid_from": "1972-06-22",
+        "valid_until": null,
+        "notes": "This test replaced the absence of a clear standard that had existed after Klopfer v. North Carolina (1967) established the speedy trial right as fundamental. The test applies a balancing approach rather than a bright-line rule."
       }
     ]
   },
@@ -18491,18 +19036,213 @@
       "notes": "The case applies and extends the search incident to arrest doctrine to automobile passenger compartments."
     },
     {
-      "id": "gant_modifies_belton",
-      "source_id": "arizona_v_gant_2009",
-      "target_id": "new_york_v_belton_1981",
-      "edge_type": "MODIFIES",
-      "direction": "narrows",
-      "valid_from": "2009-04-21",
+      "id": "blakely_establishes_blakely_sentencing_test",
+      "source_id": "blakely_v_washington_2004",
+      "target_id": "blakely_sentencing_test",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2004-06-24",
       "valid_until": null,
       "jurisdiction": [
         "federal",
         "state"
       ],
-      "notes": "Gant narrowed Belton by holding that vehicle searches incident to arrest are not categorically permitted when the arrestee is secured and cannot access the vehicle interior."
+      "notes": "Blakely v. Washington established the foundational rule that judicial fact-finding at sentencing must comply with Sixth Amendment jury trial protections."
+    },
+    {
+      "id": "blakely_applies_sixth_amendment_jury_trial_right",
+      "source_id": "blakely_v_washington_2004",
+      "target_id": "sixth_amendment_jury_trial_right",
+      "edge_type": "APPLIES",
+      "valid_from": "2004-06-24",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "The case applies and clarifies the scope of the Sixth Amendment jury trial right in the sentencing context."
+    },
+    {
+      "id": "blakely_applies_apprendi_rule",
+      "source_id": "blakely_v_washington_2004",
+      "target_id": "apprendi_rule",
+      "edge_type": "APPLIES",
+      "valid_from": "2004-06-24",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Blakely applied the Apprendi rule to state sentencing guidelines."
+    },
+    {
+      "id": "booker_establishes_guidelines_advisory",
+      "source_id": "united_states_v_booker_2005",
+      "target_id": "federal_sentencing_guidelines_advisory",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2005-01-12",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ],
+      "notes": "Booker established that the Federal Sentencing Guidelines are advisory, not mandatory."
+    },
+    {
+      "id": "booker_applies_blakely_sentencing_test",
+      "source_id": "united_states_v_booker_2005",
+      "target_id": "blakely_sentencing_test",
+      "edge_type": "APPLIES",
+      "valid_from": "2005-01-12",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ],
+      "notes": "Booker applied the Blakely rule to federal sentencing guidelines, finding the mandatory Guidelines violated the Sixth Amendment."
+    },
+    {
+      "id": "batson_establishes_batson_peremptory_challenge_test",
+      "source_id": "batson_v_kentucky_1986",
+      "target_id": "batson_peremptory_challenge_test",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1986-04-30",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Batson v. Kentucky established the three-step test for evaluating peremptory challenges based on race."
+    },
+    {
+      "id": "batson_establishes_equal_protection_peremptory_challenges",
+      "source_id": "batson_v_kentucky_1986",
+      "target_id": "equal_protection_peremptory_challenges",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1986-04-30",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Batson v. Kentucky established the doctrine that peremptory challenges cannot be exercised on the basis of race under the Equal Protection Clause."
+    },
+    {
+      "id": "powers_modifies_batson_peremptory_challenge_test",
+      "source_id": "powers_v_ohio_1991",
+      "target_id": "batson_peremptory_challenge_test",
+      "edge_type": "MODIFIES",
+      "direction": "expands",
+      "valid_from": "1991-04-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Powers expanded Batson by holding that defendants have standing to raise Batson challenges regardless of whether they share the same race as the excluded jurors."
+    },
+    {
+      "id": "jeb_establishes_gender_peremptory_doctrine",
+      "source_id": "j_e_b_v_alabama_1994",
+      "target_id": "equal_protection_gender_peremptory_challenges",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1994-04-19",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "J.E.B. established that gender-based peremptory challenges violate the Equal Protection Clause."
+    },
+    {
+      "id": "jeb_modifies_batson_peremptory_challenge_test",
+      "source_id": "j_e_b_v_alabama_1994",
+      "target_id": "batson_peremptory_challenge_test",
+      "edge_type": "MODIFIES",
+      "direction": "expands",
+      "valid_from": "1994-04-19",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "J.E.B. expanded the Batson framework from race to gender-based peremptory challenges."
+    },
+    {
+      "id": "brady_establishes_prosecutorial_duty_disclose",
+      "source_id": "brady_v_maryland_1963",
+      "target_id": "prosecutorial_duty_disclose_exculpatory_evidence",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1963-05-13",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Brady v. Maryland established the foundational doctrine requiring prosecutors to disclose material exculpatory evidence to the defense."
+    },
+    {
+      "id": "giglio_modifies_brady_duty_disclose",
+      "source_id": "giglio_v_united_states_1972",
+      "target_id": "prosecutorial_duty_disclose_exculpatory_evidence",
+      "edge_type": "MODIFIES",
+      "direction": "expands",
+      "valid_from": "1972-02-24",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Giglio expanded Brady by holding that the duty to disclose extends to impeachment evidence, including promises of leniency made to government witnesses."
+    },
+    {
+      "id": "manson_establishes_eyewitness_reliability_test",
+      "source_id": "manson_v_brathwaite_1977",
+      "target_id": "manson_eyewitness_reliability_test",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1977-06-16",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Manson v. Brathwaite established the five-factor totality of circumstances test for eyewitness identification reliability."
+    },
+    {
+      "id": "neil_applies_manson_eyewitness_test",
+      "source_id": "neil_v_biggers_1972",
+      "target_id": "manson_eyewitness_reliability_test",
+      "edge_type": "APPLIES",
+      "valid_from": "1972-12-06",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Neil v. Biggers applied the totality of circumstances approach to eyewitness identification \u2014 Manson later formalized this into the five-factor test."
+    },
+    {
+      "id": "barker_establishes_barker_speedy_trial_test",
+      "source_id": "barker_v_wingo_1972",
+      "target_id": "barker_speedy_trial_test",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1972-06-22",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Barker v. Wingo established the first comprehensive standard for evaluating speedy trial claims, filling a doctrinal gap left by Klopfer v. North Carolina."
+    },
+    {
+      "id": "barker_applies_speedy_trial_right",
+      "source_id": "barker_v_wingo_1972",
+      "target_id": "speedy_trial_right",
+      "edge_type": "APPLIES",
+      "valid_from": "1972-06-22",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Barker applies and operationalizes the speedy trial right established as fundamental in Klopfer v. North Carolina (1967)."
     }
   ],
   "schema_issues_found": [
