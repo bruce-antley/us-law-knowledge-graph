@@ -297,6 +297,33 @@ def step_qa_structural(result):
         result['qa_structural_error'] = str(e)
         return False
 
+def step_qa_legal(result):
+    """Step 6: Run qa_legal.py — adversarial LLM judge pair."""
+    try:
+        proc = subprocess.run(
+            ["python", "qa_legal.py",
+             "--draft", result['draft_path'],
+             "--combined", str(MASTER_GRAPH)],
+            capture_output=True, text=True,
+            cwd=str(PIPELINE_DIR)
+        )
+        result['qa_legal_output'] = proc.stdout
+        result['qa_legal_returncode'] = proc.returncode
+
+        import re as _re
+        fail_match = _re.search(r'(\d+) fail', proc.stdout)
+        review_match = _re.search(r'(\d+) review', proc.stdout)
+        warn_match = _re.search(r'(\d+) warn', proc.stdout)
+        result['legal_fail'] = int(fail_match.group(1)) if fail_match else 0
+        result['legal_review'] = int(review_match.group(1)) if review_match else 0
+        result['legal_warn'] = int(warn_match.group(1)) if warn_match else 0
+        result['qa_legal_status'] = 'pass' if result['legal_fail'] == 0 else 'fail'
+        return result['legal_fail'] == 0
+    except Exception as e:
+        result['qa_legal_status'] = 'error'
+        result['qa_legal_error'] = str(e)
+        return False
+
 # ─── Report Generation ────────────────────────────────────────────────────────
 
 def generate_report(run_results, cases, run_start, run_end):
@@ -339,6 +366,12 @@ def generate_report(run_results, cases, run_start, run_end):
                 lines.append(f"- **QA Structural:** {r['struct_errors']} errors, {r['struct_warnings']} warnings — check before merging")
             elif r.get('struct_warnings', 0) > 0:
                 lines.append(f"- **QA Structural:** {r['struct_warnings']} warnings")
+            if r.get('legal_fail', 0) > 0:
+                lines.append(f"- **QA Legal:** {r['legal_fail']} fail — check before merging")
+            elif r.get('legal_review', 0) > 0:
+                lines.append(f"- **QA Legal:** {r['legal_review']} mandatory review (judges disagree)")
+            elif r.get('legal_warn', 0) > 0:
+                lines.append(f"- **QA Legal:** {r['legal_warn']} warnings")
             lines.append("")
     else:
         lines.append("_No cases passed QA._")
@@ -490,6 +523,16 @@ def run_pipeline(cases_file, model=DEFAULT_MODEL):
             print(f"  ⚠ Structural: {result['struct_errors']} errors, {result['struct_warnings']} warnings")
         else:
             print(f"  ✓ Structural: 0 errors, {result.get('struct_warnings', 0)} warnings")
+
+        # Step 6: QA Legal
+        print("  Step 6: QA Legal — adversarial judge review...")
+        step_qa_legal(result)
+        if result.get('legal_fail', 0) > 0:
+            print(f"  ✗ Legal: {result['legal_fail']} fail, {result['legal_review']} review")
+        elif result.get('legal_review', 0) > 0:
+            print(f"  ⟳ Legal: {result['legal_review']} mandatory review, {result['legal_warn']} warn")
+        else:
+            print(f"  ✓ Legal: pass, {result['legal_warn']} warn")
 
         if qa_ok:
             result['overall_status'] = 'passed'
