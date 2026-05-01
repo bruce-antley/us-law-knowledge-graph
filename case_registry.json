@@ -231,14 +231,14 @@
     "citation": "476 U.S. 79"
   },
   "powers_v_ohio_1991": {
-    "courtlistener_id": "9101489",
+    "courtlistener_id": "9432245",
     "short_name": "Powers v. Ohio",
     "citation": "499 U.S. 400"
   },
   "j_e_b_v_alabama_1994": {
-    "courtlistener_id": "117879",
+    "courtlistener_id": "9136737",
     "short_name": "J.E.B. v. Alabama",
-    "citation": "511 U.S. 127"
+    "citation": "511 U.S. 127 (1994)"
   },
   "brady_v_maryland_1963": {
     "courtlistener_id": "9422583",
@@ -259,5 +259,10 @@
     "courtlistener_id": "9424967",
     "short_name": "Barker v. Wingo",
     "citation": "407 U.S. 514"
+  },
+  "giglio_v_united_states_1972": {
+    "courtlistener_id": "108471",
+    "short_name": "Giglio v. United States",
+    "citation": "405 U.S. 150"
   }
 }

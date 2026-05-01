@@ -362,6 +362,8 @@ def generate_report(run_results, cases, run_start, run_end):
                 lines.append(f"- **CourtListener:** {r['qa_not_found']} case(s) not found — courtlistener_id will be null")
             if r.get('validate_warnings', 0) > 0:
                 lines.append(f"- **Validator warnings:** {r['validate_warnings']}")
+            if r.get('thin_extraction'):
+                lines.append(f"- **Thin extraction:** Only 1 node, 0 edges — builder was conservative, may need manual doctrine nodes")
             if r.get('struct_errors', 0) > 0:
                 lines.append(f"- **QA Structural:** {r['struct_errors']} errors, {r['struct_warnings']} warnings — check before merging")
             elif r.get('struct_warnings', 0) > 0:
@@ -388,8 +390,10 @@ def generate_report(run_results, cases, run_start, run_end):
             if r.get('elsa_status') in ('failed', 'error'):
                 lines.append(f"- **Elsa failed:** {r.get('elsa_error', 'unknown error')}")
 
-            if r.get('stub_detected'):
-                lines.append(f"- **STUB DETECTED:** Only {r.get('draft_nodes', 1)} node(s) and 0 edges extracted — source text is likely for the wrong case or too thin. Find the correct syllabus manually.")
+            if r.get('wrong_case'):
+                lines.append(f"- **WRONG CASE:** Party names not found in holding — source text is for a different case. Delete syllabus and re-run.")
+            elif r.get('stub_detected'):
+                lines.append(f"- **STUB DETECTED:** Only {r.get('draft_nodes', 1)} node(s) and 0 edges extracted — source text is likely wrong or too thin.")
 
             if r.get('graph_builder_status') in ('json_error', 'error'):
                 lines.append(f"- **Graph Builder failed:** {r.get('graph_builder_error', 'unknown error')}")
@@ -523,15 +527,37 @@ def run_pipeline(cases_file, model=DEFAULT_MODEL):
             result['draft_nodes'] = _total_nodes
             result['draft_edges'] = _total_edges
             if _total_nodes <= 1 and _total_edges == 0:
-                result['overall_status'] = 'failed'
-                result['stub_detected'] = True
-                print(f"  ✗ Stub detected: {_total_nodes} node(s), 0 edges — likely wrong source text")
-                import shutil
-                shutil.copy(result['draft_path'],
-                           NEEDS_ATTENTION_DIR / Path(result['draft_path']).name)
-                run_results.append(result)
-                time.sleep(REQUEST_DELAY)
-                continue
+                # Check if it's a wrong case or just thin extraction
+                # by verifying party names appear in the SYLLABUS FILE not the holding
+                _case_name = result.get('case_name', '')
+                _syllabus_path = result.get('syllabus_path', '')
+                _wrong_case = False
+                if _syllabus_path and Path(_syllabus_path).exists():
+                    _syllabus_text = open(_syllabus_path).read().lower()
+                    _parts = re.split(r'\s+v\.?\s+', _case_name, maxsplit=1, flags=re.IGNORECASE)
+                    if len(_parts) == 2:
+                        _p1 = re.sub(r'[^a-z]', '', _parts[0].split(',')[0].strip().lower().split()[0] if _parts[0].strip() else '')
+                        _p2 = re.sub(r'[^a-z]', '', _parts[1].split(',')[0].strip().lower().split()[0] if _parts[1].strip() else '')
+                        _common = {'united', 'state', 'states', 'people', 'county', 'city', 'board'}
+                        if _p1 not in _common and _p1 not in _syllabus_text:
+                            _wrong_case = True
+                        if _p2 not in _common and _p2 not in _syllabus_text:
+                            _wrong_case = True
+                if _wrong_case:
+                    result['overall_status'] = 'failed'
+                    result['stub_detected'] = True
+                    result['wrong_case'] = True
+                    print(f"  ✗ WRONG CASE detected: party names not in holding — source text is for a different case")
+                    import shutil
+                    shutil.copy(result['draft_path'],
+                               NEEDS_ATTENTION_DIR / Path(result['draft_path']).name)
+                    run_results.append(result)
+                    time.sleep(REQUEST_DELAY)
+                    continue
+                else:
+                    # Thin extraction — correct case but builder was conservative
+                    result['thin_extraction'] = True
+                    print(f"  ⚠ Thin extraction: {_total_nodes} node(s), 0 edges — correct case but sparse output")
         except Exception:
             pass
 
