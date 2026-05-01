@@ -179,5 +179,85 @@
     "citation": "573 U.S. 373 (2014)",
     "decided_date": "2014-06-25",
     "cl_opinion_url": "https://www.courtlistener.com/opinion/2680439/riley-v-cal-united-states/"
+  },
+  "united_states_v_wade_1967": {
+    "courtlistener_id": "9423472",
+    "short_name": "United States v. Wade",
+    "citation": "388 U.S. 218"
+  },
+  "arizona_v_gant_2009": {
+    "courtlistener_id": "9435359",
+    "short_name": "Arizona v. Gant",
+    "citation": "556 U.S. 332"
+  },
+  "florida_v_bostick_1991": {
+    "courtlistener_id": "9842116",
+    "short_name": "Florida v. Bostick",
+    "citation": "501 U.S. 429"
+  },
+  "maryland_v_buie_1990": {
+    "courtlistener_id": "9431933",
+    "short_name": "Maryland v. Buie",
+    "citation": "494 U.S. 325"
+  },
+  "florida_v_j_l_2000": {
+    "courtlistener_id": "9184148",
+    "short_name": "Florida v. J.L.",
+    "citation": "529 U.S. 266"
+  },
+  "apprendi_v_new_jersey_2000": {
+    "courtlistener_id": "9433986",
+    "short_name": "Apprendi v. New Jersey",
+    "citation": "530 U.S. 466"
+  },
+  "salinas_v_texas_2013": {
+    "courtlistener_id": "903977",
+    "short_name": "Salinas v. Texas",
+    "citation": "570 U.S. 178"
+  },
+  "blakely_v_washington_2004": {
+    "courtlistener_id": "9434662",
+    "short_name": "Blakely v. Washington",
+    "citation": "542 U.S. 296"
+  },
+  "united_states_v_booker_2005": {
+    "courtlistener_id": "142731",
+    "short_name": "United States v. Booker",
+    "citation": "543 U.S. 220"
+  },
+  "batson_v_kentucky_1986": {
+    "courtlistener_id": "111677",
+    "short_name": "Batson v. Kentucky",
+    "citation": "476 U.S. 79"
+  },
+  "powers_v_ohio_1991": {
+    "courtlistener_id": "9101489",
+    "short_name": "Powers v. Ohio",
+    "citation": "499 U.S. 400"
+  },
+  "j_e_b_v_alabama_1994": {
+    "courtlistener_id": "117879",
+    "short_name": "J.E.B. v. Alabama",
+    "citation": "511 U.S. 127"
+  },
+  "brady_v_maryland_1963": {
+    "courtlistener_id": "9422583",
+    "short_name": "Brady v. Maryland",
+    "citation": "373 U.S. 83"
+  },
+  "manson_v_brathwaite_1977": {
+    "courtlistener_id": "9004132",
+    "short_name": "Manson v. Brathwaite",
+    "citation": "432 U.S. 98"
+  },
+  "neil_v_biggers_1972": {
+    "courtlistener_id": "8979169",
+    "short_name": "Neil v. Biggers",
+    "citation": "409 U.S. 188"
+  },
+  "barker_v_wingo_1972": {
+    "courtlistener_id": "9424967",
+    "short_name": "Barker v. Wingo",
+    "citation": "407 U.S. 514"
   }
 }

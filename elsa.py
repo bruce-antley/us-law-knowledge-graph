@@ -180,9 +180,14 @@ def verify_case_identity(case_name, text, citation):
             print(f"    Identity check FAILED: neither '{p1_word}' nor '{p2_word}' found in text")
             return None
 
-        if not p1_found or not p2_found:
-            missing = p1_word if not p1_found else p2_word
-            print(f"    Identity check WARNING: '{missing}' not found — proceeding with caution")
+        # If one specific party name is missing, fail — don't just warn
+        if not p1_found and p1_word not in common_words:
+            print(f"    Identity check FAILED: '{p1_word}' not found in text")
+            return None
+
+        if not p2_found and p2_word not in common_words:
+            print(f"    Identity check FAILED: '{p2_word}' not found in text")
+            return None
 
     return text
     """Fetch directly using a known CourtListener ID from the registry."""
@@ -236,6 +241,66 @@ def verify_case_identity(case_name, text, citation):
                     if len(text) > 200:
                         syllabus = extract_syllabus_section(text)
                         return syllabus, "registry_courtlistener"
+
+    except Exception as e:
+        print(f"    Registry fetch failed: {e}")
+
+    return None, None
+
+# ─── Strategy 1: Case Registry ─────────────────────────────────────────────────
+
+def fetch_by_registry(case_id, headers):
+    """Fetch directly using a known CourtListener ID from the registry."""
+    registry = load_registry()
+    entry = registry.get(case_id)
+    if not entry or not entry.get("courtlistener_id"):
+        return None, None
+
+    cl_id = entry["courtlistener_id"]
+    print(f"    Registry hit: CourtListener ID {cl_id}")
+
+    try:
+        # Try cluster endpoint first
+        resp = requests.get(
+            f"{CL_BASE}/clusters/{cl_id}/",
+            headers=headers,
+            timeout=15
+        )
+        if resp.status_code == 200:
+            cluster = resp.json()
+            opinion_urls = cluster.get("sub_opinions", [])
+            if opinion_urls:
+                time.sleep(0.3)
+                op_resp = requests.get(opinion_urls[0], headers=headers, timeout=15)
+                if op_resp.status_code == 200:
+                    opinion = op_resp.json()
+                    text = (opinion.get("plain_text") or
+                            opinion.get("html_with_citations") or
+                            opinion.get("html") or "")
+                    if text and "<" in text:
+                        text = re.sub(r"<[^>]+>", " ", text)
+                        text = re.sub(r"&[a-z]+;", " ", text)
+                    if len(text) > 200:
+                        syllabus = extract_syllabus_section(text)
+                        return syllabus, "registry_courtlistener"
+
+        # Try opinion endpoint directly
+        resp = requests.get(
+            f"{CL_BASE}/opinions/{cl_id}/",
+            headers=headers,
+            timeout=15
+        )
+        if resp.status_code == 200:
+            opinion = resp.json()
+            text = (opinion.get("plain_text") or
+                    opinion.get("html_with_citations") or
+                    opinion.get("html") or "")
+            if text and "<" in text:
+                text = re.sub(r"<[^>]+>", " ", text)
+                text = re.sub(r"&[a-z]+;", " ", text)
+            if len(text) > 200:
+                syllabus = extract_syllabus_section(text)
+                return syllabus, "registry_courtlistener"
 
     except Exception as e:
         print(f"    Registry fetch failed: {e}")
