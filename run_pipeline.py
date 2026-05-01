@@ -388,6 +388,9 @@ def generate_report(run_results, cases, run_start, run_end):
             if r.get('elsa_status') in ('failed', 'error'):
                 lines.append(f"- **Elsa failed:** {r.get('elsa_error', 'unknown error')}")
 
+            if r.get('stub_detected'):
+                lines.append(f"- **STUB DETECTED:** Only {r.get('draft_nodes', 1)} node(s) and 0 edges extracted — source text is likely for the wrong case or too thin. Find the correct syllabus manually.")
+
             if r.get('graph_builder_status') in ('json_error', 'error'):
                 lines.append(f"- **Graph Builder failed:** {r.get('graph_builder_error', 'unknown error')}")
 
@@ -504,13 +507,33 @@ def run_pipeline(cases_file, model=DEFAULT_MODEL):
         if not validate_ok:
             result['overall_status'] = 'failed'
             print(f"  ✗ Validation failed: {result['validate_errors']} errors")
-            # Copy to needs_attention
             import shutil
             shutil.copy(result['draft_path'],
                        NEEDS_ATTENTION_DIR / Path(result['draft_path']).name)
             run_results.append(result)
             time.sleep(REQUEST_DELAY)
             continue
+
+        # Stub detection — flag cases with 1 node and 0 edges
+        try:
+            with open(result['draft_path']) as _f:
+                _draft = json.load(_f)
+            _total_nodes = sum(len(v) for v in _draft.get('nodes', {}).values())
+            _total_edges = len(_draft.get('edges', []))
+            result['draft_nodes'] = _total_nodes
+            result['draft_edges'] = _total_edges
+            if _total_nodes <= 1 and _total_edges == 0:
+                result['overall_status'] = 'failed'
+                result['stub_detected'] = True
+                print(f"  ✗ Stub detected: {_total_nodes} node(s), 0 edges — likely wrong source text")
+                import shutil
+                shutil.copy(result['draft_path'],
+                           NEEDS_ATTENTION_DIR / Path(result['draft_path']).name)
+                run_results.append(result)
+                time.sleep(REQUEST_DELAY)
+                continue
+        except Exception:
+            pass
 
         # Step 4: QA Factual
         print("  Step 4: QA Factual — checking CourtListener...")

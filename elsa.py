@@ -147,7 +147,44 @@ def extract_syllabus_section(text):
 
 # ─── Strategy 1: Case Registry ─────────────────────────────────────────────────
 
-def fetch_by_registry(case_id, headers):
+def verify_case_identity(case_name, text, citation):
+    """
+    Verify that retrieved text is actually for the expected case.
+    Returns text if valid, None if identity check fails.
+    Checks for party names and basic content length.
+    """
+    if not text or len(text) < 200:
+        print(f"    Identity check: text too short ({len(text) if text else 0} chars)")
+        return None
+
+    # Extract party names from case_name
+    parts = re.split(r'\s+v\.?\s+', case_name, maxsplit=1, flags=re.IGNORECASE)
+    if len(parts) == 2:
+        p1 = parts[0].split(',')[0].strip().lower()
+        p2 = parts[1].split(',')[0].strip().lower()
+
+        # Only check first meaningful word of each party (handles long names)
+        p1_word = re.sub(r'[^a-z]', '', p1.split()[0]) if p1.split() else ''
+        p2_word = re.sub(r'[^a-z]', '', p2.split()[0]) if p2.split() else ''
+
+        text_lower = text.lower()
+
+        # Skip identity check for very common single-word parties that appear everywhere
+        common_words = {'united', 'state', 'states', 'people', 'county', 'city',
+                        'board', 'department', 'commissioner', 'director'}
+
+        p1_found = p1_word in text_lower if p1_word not in common_words else True
+        p2_found = p2_word in text_lower if p2_word not in common_words else True
+
+        if not p1_found and not p2_found:
+            print(f"    Identity check FAILED: neither '{p1_word}' nor '{p2_word}' found in text")
+            return None
+
+        if not p1_found or not p2_found:
+            missing = p1_word if not p1_found else p2_word
+            print(f"    Identity check WARNING: '{missing}' not found — proceeding with caution")
+
+    return text
     """Fetch directly using a known CourtListener ID from the registry."""
     registry = load_registry()
     entry = registry.get(case_id)
@@ -563,6 +600,16 @@ def retrieve_case(case_name, year, citation=None, output_dir=Path("syllabi")):
     if cl_id and source in ("courtlistener", "courtlistener_excerpt"):
         update_registry(case_id, cl_id, case_name, citation or "", "")
         print(f"    Registry updated: {case_id} → {cl_id}")
+
+    # Verify case identity — check that retrieved text matches expected case
+    text = verify_case_identity(case_name, text, citation)
+    if text is None:
+        print(f"  ✗ {case_name} — identity verification failed, adding to manual queue")
+        add_to_manual_queue(
+            case_name, year, citation,
+            f"Retrieved text does not appear to be for this case. Check CourtListener manually."
+        )
+        return case_id, None
 
     # Write output
     output_dir.mkdir(parents=True, exist_ok=True)
