@@ -17,8 +17,8 @@
     "created": "2026-03-15",
     "status": "draft",
     "schema_version": "0.2",
-    "node_count": 388,
-    "edge_count": 641,
+    "node_count": 399,
+    "edge_count": 652,
     "schema_issue_count": 41,
     "fixes_applied": [
       "FIX 1: ConstitutionalProvision labels changed to citation form (amendment_1, amendment_14_section_1) to disambiguate from Area nodes with same common-name labels",
@@ -1970,6 +1970,65 @@
         "valid_from": "1972-06-22",
         "valid_until": null,
         "notes": "Established as fundamental in Klopfer v. North Carolina (1967) and incorporated against the states. Barker v. Wingo (1972) provided the first comprehensive standard for evaluating speedy trial claims."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "fifth_amendment_self_incrimination",
+        "label": "Fifth Amendment Right Against Self-Incrimination",
+        "description": "The constitutional right not to be compelled in any criminal case to be a witness against oneself. This right is implicated only when statements are actually used in a criminal prosecution.",
+        "area_id": "criminal_procedure",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "2003-05-27",
+        "valid_until": null,
+        "notes": "As clarified in Chavez v. Martinez, the Fifth Amendment protection against compelled self-incrimination requires actual use of statements in a criminal case; coercive interrogation alone, without such use, does not constitute a Fifth Amendment violation."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "appellate_review_sentencing",
+        "label": "Appellate Review of Sentencing Decisions",
+        "description": "The standard governing how courts of appeals review the reasonableness of sentences imposed by district judges, including sentences within, just outside, or significantly outside the Federal Sentencing Guidelines range.",
+        "area_id": "criminal_procedure",
+        "jurisdiction": [
+          "federal"
+        ],
+        "status": "active",
+        "valid_from": "2007-12-10",
+        "valid_until": null,
+        "notes": "Established that abuse-of-discretion review applies to all sentences regardless of variance from Guidelines, rejecting a proportionality requirement for substantial variances."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "plain_view_doctrine",
+        "label": "Plain View Doctrine",
+        "description": "A warrantless seizure by police of an item that comes within plain view during a lawful search may be reasonable under the Fourth Amendment, but only when the police have probable cause to believe the item is evidence of a crime or contraband.",
+        "area_id": "criminal_procedure",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1987-03-03",
+        "valid_until": null,
+        "notes": "Arizona v. Hicks clarified that the plain view doctrine requires probable cause, not mere suspicion, as a prerequisite to seizure."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "plain_feel_doctrine",
+        "label": "Plain Feel Doctrine",
+        "description": "The Fourth Amendment principle governing the seizure of contraband discovered during a lawful patdown search through the officer's sense of touch, limited by the requirement that the officer's manipulation not exceed what is necessary to determine whether an object is a weapon.",
+        "area_id": "criminal_procedure",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1993-06-07",
+        "valid_until": null,
+        "notes": "Established in Minnesota v. Dickerson as a limitation on the seizure of contraband during protective patdown searches."
       }
     ],
     "areas": [
@@ -8961,6 +9020,178 @@
         "opinions": [],
         "notes": "The Court established criteria for evaluating speedy trial claims, addressing a gap left by prior cases like Klopfer v. North Carolina (1967), which had established the right as fundamental but had not articulated the standard of review.",
         "courtlistener_id": "8987285"
+      },
+      {
+        "@type": "Case",
+        "id": "georgia_v_mccollum_1992",
+        "short_name": "Georgia v. McCollum",
+        "full_name": "Georgia v. McCollum",
+        "citation": "505 U.S. 42 (1992)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1992-06-18",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "A criminal defendant's exercise of peremptory challenges in a racially discriminatory manner violates the Equal Protection Clause of the Fourteenth Amendment.",
+        "holding_type": "affirmative",
+        "majority_author": "Blackmun",
+        "per_curiam": false,
+        "vote": "6-3",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1992-06-18",
+        "valid_until": null,
+        "opinions": [
+          {
+            "type": "concurrence",
+            "author": "Rehnquist",
+            "doctrinal_significance": "Chief Justice Rehnquist filed a concurring opinion.",
+            "joined_by": [],
+            "adopted_in": []
+          },
+          {
+            "type": "concurrence_in_judgment",
+            "author": "Thomas",
+            "doctrinal_significance": "Justice Thomas filed an opinion concurring in the judgment.",
+            "joined_by": [],
+            "adopted_in": []
+          },
+          {
+            "type": "dissent",
+            "author": "O'Connor",
+            "doctrinal_significance": "Justice O'Connor filed a dissenting opinion.",
+            "joined_by": [],
+            "adopted_in": []
+          },
+          {
+            "type": "dissent",
+            "author": "Scalia",
+            "doctrinal_significance": "Justice Scalia filed a dissenting opinion.",
+            "joined_by": [],
+            "adopted_in": []
+          }
+        ],
+        "notes": "Majority comprised Justices Blackmun, Rehnquist, White, Stevens, Kennedy, and Souter (6 justices). The Court extended the prohibition on race-based peremptory challenges from civil litigants (Edmonson v. Leesville Concrete Co.) to criminal defendants.",
+        "courtlistener_id": "9116776"
+      },
+      {
+        "@type": "Case",
+        "id": "chavez_v_martinez_2003",
+        "short_name": "Chavez v. Martinez",
+        "full_name": "Ben Chavez v. Oliverio Martinez",
+        "citation": "538 U.S. 760 (2003)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "2003-05-27",
+        "opinion_form": "plurality",
+        "procedural_disposition": "reversed",
+        "holding": "A police officer's coercive interrogation without Miranda warnings does not violate the Fifth Amendment right against self-incrimination unless the statements are actually used in a criminal prosecution against the suspect.",
+        "holding_type": "by_negation",
+        "majority_author": "Thomas (plurality)",
+        "per_curiam": false,
+        "vote": "6-3",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "2003-05-27",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "Plurality decision. Justice Thomas announced the judgment. The case involved a \u00a7 1983 suit challenging interrogation practices. Martinez was never charged and his statements were never used in criminal prosecution. The Court held that absent use of statements in a criminal case, no Fifth Amendment violation occurred.",
+        "courtlistener_id": "127891"
+      },
+      {
+        "@type": "Case",
+        "id": "gall_v_united_states_2007",
+        "short_name": "Gall v. United States",
+        "full_name": "Gall v. United States",
+        "citation": "552 U.S. 38 (2007)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "2007-12-10",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "affirmed",
+        "holding": "Courts of appeals must review all sentences\u2014whether inside, just outside, or significantly outside the Federal Sentencing Guidelines range\u2014under a deferential abuse-of-discretion standard, and the extent of difference from the Guidelines range is relevant but does not trigger a proportionality requirement.",
+        "holding_type": "affirmative",
+        "majority_author": "Stevens",
+        "per_curiam": false,
+        "vote": "7-2",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "2007-12-10",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "Decided same day as Rita v. United States, 551 U.S. 338 (2007). Addressed the standard for appellate review of sentences below the Federal Sentencing Guidelines range, a question left open when Claiborne v. United States was mooted by the defendant's death.",
+        "courtlistener_id": "145843"
+      },
+      {
+        "@type": "Case",
+        "id": "arizona_v_hicks_1987",
+        "short_name": "Arizona v. Hicks",
+        "full_name": "Arizona v. Hicks",
+        "citation": "480 U.S. 321 (1987)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1987-03-03",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "The plain view doctrine may not be invoked when police have less than probable cause to believe that an item is evidence of a crime or contraband; a warrantless seizure of an item observed during a lawful search requires probable cause, not mere suspicion.",
+        "holding_type": "affirmative",
+        "majority_author": "Scalia",
+        "per_curiam": false,
+        "vote": "6-3",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1987-03-03",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "The Court addressed the scope of the plain view doctrine established in Coolidge v. New Hampshire (1971), holding that probable cause is a prerequisite to seizure under that doctrine.",
+        "courtlistener_id": "111834"
+      },
+      {
+        "@type": "Case",
+        "id": "minnesota_v_dickerson_1993",
+        "short_name": "Minnesota v. Dickerson",
+        "full_name": "Minnesota v. Dickerson",
+        "citation": "508 U.S. 366 (1993)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1993-06-07",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "The Fourth Amendment does not permit the seizure of contraband detected through a police officer's sense of touch during a protective patdown search when the officer's manipulation of the object goes beyond what is necessary to determine whether it is a weapon.",
+        "holding_type": "by_negation",
+        "majority_author": "White",
+        "per_curiam": false,
+        "vote": "6-3",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1993-06-07",
+        "valid_until": null,
+        "opinions": [
+          {
+            "type": "concurrence",
+            "author": "Scalia",
+            "doctrinal_significance": "Separate concurring opinion",
+            "joined_by": [],
+            "adopted_in": []
+          },
+          {
+            "type": "concurrence_in_judgment",
+            "author": "Rehnquist",
+            "doctrinal_significance": "Opinion concurring in part and dissenting in part",
+            "joined_by": [
+              "Blackmun",
+              "Thomas"
+            ],
+            "adopted_in": []
+          }
+        ],
+        "notes": "Justice White delivered the opinion of the Court for Parts I and II (unanimous) and Parts III and IV (joined by Stevens, O'Connor, Scalia, Kennedy, and Souter). Chief Justice Rehnquist filed an opinion concurring in part and dissenting in part, joined by Blackmun and Thomas. Justice Scalia filed a separate concurring opinion.",
+        "courtlistener_id": "112873"
       }
     ],
     "doctrinal_tests": [
@@ -10793,6 +11024,80 @@
         "valid_from": "1972-06-22",
         "valid_until": null,
         "notes": "This test replaced the absence of a clear standard that had existed after Klopfer v. North Carolina (1967) established the speedy trial right as fundamental. The test applies a balancing approach rather than a bright-line rule."
+      },
+      {
+        "@type": "DoctrinalTest",
+        "id": "gall_abuse_of_discretion_test",
+        "label": "Abuse-of-Discretion Standard for Sentencing Review",
+        "description": "Courts of appeals must review all sentences under a deferential abuse-of-discretion standard. The extent of difference between a particular sentence and the recommended Guidelines range is relevant but does not require extraordinary circumstances to justify a substantial variance.",
+        "area_id": "criminal_procedure",
+        "source_case_id": "gall_v_united_states_2007",
+        "scrutiny_level": "none",
+        "burden": "challenger",
+        "test_form": "balancing",
+        "prongs": [
+          {
+            "number": 1,
+            "label": "Deferential Review Standard",
+            "description": "The court of appeals must apply a deferential abuse-of-discretion standard to all sentences, regardless of whether they fall within, just outside, or significantly outside the Guidelines range.",
+            "burden_note": "Challenger bears burden of showing abuse of discretion",
+            "valid_from": "2007-12-10",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 2,
+            "label": "Relevance of Guidelines Variance",
+            "description": "The extent of difference between a particular sentence and the recommended Guidelines range is relevant to the reasonableness inquiry but does not trigger a proportionality requirement or demand extraordinary circumstances.",
+            "burden_note": "District judge's discretionary decision is reviewed for reasonableness",
+            "valid_from": "2007-12-10",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          }
+        ],
+        "status": "active",
+        "valid_from": "2007-12-10",
+        "valid_until": null,
+        "notes": "Rejects the proportionality test that would require extraordinary circumstances to justify substantial variances from Guidelines. Applies to sentences both within and outside the Guidelines range."
+      },
+      {
+        "@type": "DoctrinalTest",
+        "id": "dickerson_plain_feel_test",
+        "label": "Plain Feel Test for Patdown Searches",
+        "description": "A test determining whether contraband detected during a protective patdown search may be seized under the Fourth Amendment, requiring that the officer's tactile examination remain within the scope of determining whether a weapon is present.",
+        "area_id": "criminal_procedure",
+        "source_case_id": "minnesota_v_dickerson_1993",
+        "scrutiny_level": "per_se",
+        "burden": "government",
+        "test_form": "conjunctive",
+        "prongs": [
+          {
+            "number": 1,
+            "label": "Lawful Patdown Search",
+            "description": "The initial patdown search must be lawful and justified by the officer's need to determine whether the suspect is armed.",
+            "burden_note": "Government must establish lawful basis for patdown",
+            "valid_from": "1993-06-07",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 2,
+            "label": "Incriminating Character Immediately Apparent",
+            "description": "The incriminating character of the object must be immediately apparent to the officer's sense of touch, without further manipulation beyond what is necessary to determine if it is a weapon.",
+            "burden_note": "Officer's tactile examination must not exceed scope of weapon detection",
+            "valid_from": "1993-06-07",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          }
+        ],
+        "status": "active",
+        "valid_from": "1993-06-07",
+        "valid_until": null,
+        "notes": "The test prohibits seizure of contraband when the officer's manipulation of the object goes beyond what is necessary to determine whether it is a weapon, even if the contraband's incriminating character would have been immediately apparent had the officer confined the search to its lawful scope."
       }
     ]
   },
@@ -19243,6 +19548,148 @@
         "state"
       ],
       "notes": "Barker applies and operationalizes the speedy trial right established as fundamental in Klopfer v. North Carolina (1967)."
+    },
+    {
+      "id": "mccollum_modifies_batson_peremptory_challenge_test",
+      "source_id": "georgia_v_mccollum_1992",
+      "target_id": "batson_peremptory_challenge_test",
+      "edge_type": "MODIFIES",
+      "direction": "expands",
+      "valid_from": "1992-06-18",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "McCollum expanded Batson by holding that the Equal Protection Clause prohibits criminal defendants, not just prosecutors, from using race-based peremptory challenges."
+    },
+    {
+      "id": "mccollum_applies_equal_protection_peremptory",
+      "source_id": "georgia_v_mccollum_1992",
+      "target_id": "equal_protection_peremptory_challenges",
+      "edge_type": "APPLIES",
+      "valid_from": "1992-06-18",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "McCollum applied the equal protection prohibition on race-based peremptory challenges to criminal defendants."
+    },
+    {
+      "id": "chavez_applies_sdp_liberty",
+      "source_id": "chavez_v_martinez_2003",
+      "target_id": "substantive_due_process_liberty",
+      "edge_type": "APPLIES",
+      "valid_from": "2003-05-27",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Chavez addressed whether coercive interrogation violates substantive due process liberty interests under the Fourteenth Amendment."
+    },
+    {
+      "id": "chavez_applies_fifth_amendment_self_incrimination",
+      "source_id": "chavez_v_martinez_2003",
+      "target_id": "fifth_amendment_self_incrimination",
+      "edge_type": "APPLIES",
+      "valid_from": "2003-05-27",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "The Court applied and clarified the Fifth Amendment right against self-incrimination, holding that the right is implicated only when statements are used in a criminal prosecution."
+    },
+    {
+      "id": "gall_establishes_gall_abuse_of_discretion_test",
+      "source_id": "gall_v_united_states_2007",
+      "target_id": "gall_abuse_of_discretion_test",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2007-12-10",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ],
+      "notes": "Gall established the abuse-of-discretion standard for appellate review of all sentences."
+    },
+    {
+      "id": "gall_applies_appellate_review_sentencing",
+      "source_id": "gall_v_united_states_2007",
+      "target_id": "appellate_review_sentencing",
+      "edge_type": "APPLIES",
+      "valid_from": "2007-12-10",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ],
+      "notes": "Gall applies and clarifies the doctrine of appellate review of sentencing decisions."
+    },
+    {
+      "id": "gall_applies_guidelines_advisory",
+      "source_id": "gall_v_united_states_2007",
+      "target_id": "federal_sentencing_guidelines_advisory",
+      "edge_type": "APPLIES",
+      "valid_from": "2007-12-10",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ],
+      "notes": "Gall applied the advisory Guidelines framework from Booker, establishing the abuse-of-discretion standard for appellate review of all sentences."
+    },
+    {
+      "id": "arizona_v_hicks_applies_plain_view_doctrine",
+      "source_id": "arizona_v_hicks_1987",
+      "target_id": "plain_view_doctrine",
+      "edge_type": "MODIFIES",
+      "direction": "clarifies",
+      "valid_from": "1987-03-03",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Arizona v. Hicks clarified the plain view doctrine by establishing that probable cause is required for seizure, rejecting the application of the doctrine based on mere suspicion."
+    },
+    {
+      "id": "minnesota_v_dickerson_establishes_plain_feel_doctrine",
+      "source_id": "minnesota_v_dickerson_1993",
+      "target_id": "plain_feel_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1993-06-07",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Minnesota v. Dickerson established the plain feel doctrine as a Fourth Amendment limitation on seizure of contraband during patdown searches."
+    },
+    {
+      "id": "minnesota_v_dickerson_establishes_dickerson_plain_feel_test",
+      "source_id": "minnesota_v_dickerson_1993",
+      "target_id": "dickerson_plain_feel_test",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1993-06-07",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Minnesota v. Dickerson established the plain feel test as the operative standard for determining whether contraband may be seized during a protective patdown search."
+    },
+    {
+      "id": "dickerson_applies_terry_stop_frisk_test",
+      "source_id": "minnesota_v_dickerson_1993",
+      "target_id": "terry_stop_frisk_test",
+      "edge_type": "APPLIES",
+      "valid_from": "1993-06-07",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Dickerson applied the Terry stop and frisk framework, extending it to tactile discovery of contraband while limiting seizure to cases where incriminating character is immediately apparent."
     }
   ],
   "schema_issues_found": [
