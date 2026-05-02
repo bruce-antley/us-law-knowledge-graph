@@ -17,8 +17,8 @@
     "created": "2026-03-15",
     "status": "draft",
     "schema_version": "0.2",
-    "node_count": 399,
-    "edge_count": 652,
+    "node_count": 454,
+    "edge_count": 700,
     "schema_issue_count": 41,
     "fixes_applied": [
       "FIX 1: ConstitutionalProvision labels changed to citation form (amendment_1, amendment_14_section_1) to disambiguate from Area nodes with same common-name labels",
@@ -2029,6 +2029,403 @@
         "valid_from": "1993-06-07",
         "valid_until": null,
         "notes": "Established in Minnesota v. Dickerson as a limitation on the seizure of contraband during protective patdown searches."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "procedural_due_process_welfare_termination",
+        "label": "Procedural Due Process in Welfare Termination",
+        "description": "The constitutional requirement that a state must provide an evidentiary hearing prior to terminating public assistance payments to a recipient, as mandated by the Due Process Clause of the Fourteenth Amendment.",
+        "area_id": "procedural_due_process",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1970-03-23",
+        "valid_until": null,
+        "notes": "Established in Goldberg v. Kelly as a foundational procedural due process protection for welfare recipients."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "property_interest_doctrine",
+        "label": "Property Interest Doctrine",
+        "description": "A constitutional property interest in continued employment is not created by the mere fact of employment but requires a legitimate claim of entitlement to reemployment established by state law, statute, contract, or mutually explicit understandings. Without such an entitlement, an employee has no constitutionally protected property interest and is not entitled to procedural due process protections.",
+        "area_id": "procedural_due_process",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1972-06-29",
+        "valid_until": null,
+        "notes": "This doctrine establishes the threshold inquiry for determining whether procedural due process protections apply to government employment decisions. It rejects the notion that employment itself creates a constitutionally protected interest."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "liberty_interest_doctrine",
+        "label": "Liberty Interest Doctrine",
+        "description": "A liberty interest may be implicated when government action damages a person's reputation or standing in the community, even if no property interest exists. However, the source text indicates this requires further analysis beyond the scope of the immediate holding.",
+        "area_id": "procedural_due_process",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1972-06-29",
+        "valid_until": null,
+        "notes": "The opinion references liberty interests as a separate category from property interests but does not fully resolve the liberty interest question in the excerpt provided."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "property_interest_continued_employment",
+        "label": "Property Interest in Continued Employment",
+        "description": "A public employee who can be discharged only for cause has a constitutionally protected property interest in continued employment that triggers due process protections.",
+        "area_id": "procedural_due_process",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1985-03-19",
+        "valid_until": null,
+        "notes": "Established in Cleveland Board of Education v. Loudermill. The property interest arises from state law that limits termination to for-cause dismissals."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "pretermination_due_process",
+        "label": "Pretermination Due Process for Public Employees",
+        "description": "Public employees with a property interest in continued employment are entitled to notice of charges and an opportunity to respond before termination, even if a full post-termination hearing is available.",
+        "area_id": "procedural_due_process",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1985-03-19",
+        "valid_until": null,
+        "notes": "The pretermination process need not be elaborate, but must provide the employee with notice and a chance to respond before removal takes effect."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "enemy_combatant_due_process",
+        "label": "Due Process Rights of Enemy Combatants",
+        "description": "A United States citizen detained as an enemy combatant on United States soil is entitled to due process, including a meaningful opportunity to contest the factual basis for that detention before a neutral decisionmaker.",
+        "area_id": "procedural_due_process",
+        "jurisdiction": [
+          "federal"
+        ],
+        "status": "active",
+        "valid_from": "2004-06-28",
+        "valid_until": null,
+        "notes": "Established in Hamdi v. Rumsfeld as a constitutional requirement applicable to citizen enemy combatants detained domestically."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "implied_powers_doctrine",
+        "label": "Implied Powers Doctrine",
+        "description": "Congress possesses implied powers beyond those explicitly enumerated in the Constitution, derived from the Necessary and Proper Clause, to carry into execution the enumerated powers.",
+        "area_id": "constitutional_law",
+        "jurisdiction": [
+          "federal"
+        ],
+        "status": "active",
+        "valid_from": "1819-03-07",
+        "valid_until": null,
+        "notes": "Established in McCulloch v. Maryland as a foundational principle of federal constitutional law."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "federal_supremacy_doctrine",
+        "label": "Federal Supremacy and State Tax Immunity",
+        "description": "A state may not tax an instrumentality of the federal government, as such taxation would interfere with federal powers and violate the supremacy of federal law.",
+        "area_id": "constitutional_law",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1819-03-07",
+        "valid_until": null,
+        "notes": "Established in McCulloch v. Maryland as a corollary to the Supremacy Clause."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "commerce_clause_supremacy",
+        "label": "Commerce Clause Supremacy",
+        "description": "State laws that regulate commerce in a manner that conflicts with federal regulation or the exercise of federal commerce power are repugnant to the Commerce Clause and invalid.",
+        "area_id": "constitutional_law",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1824-03-02",
+        "valid_until": null,
+        "notes": "Established in Gibbons v. Ogden. Applies to state monopolies and exclusive privileges that interfere with federally licensed interstate commerce."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "commerce_clause_aggregation",
+        "label": "Commerce Clause Aggregation Doctrine",
+        "description": "Congress may regulate intrastate economic activity that, in the aggregate, substantially affects interstate commerce, even if individual instances of such activity have only an indirect effect on interstate commerce.",
+        "area_id": "constitutional_law",
+        "jurisdiction": [
+          "federal"
+        ],
+        "status": "active",
+        "valid_from": "1942-11-09",
+        "valid_until": null,
+        "notes": "Established in Wickard v. Filburn. This doctrine permits federal regulation of local production and consumption when the aggregate effect on interstate commerce is substantial."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "civil_rights_act_1964_title_ii",
+        "label": "Title II of the Civil Rights Act of 1964",
+        "description": "Federal statutory prohibition on discrimination in public accommodations, including restaurants and other establishments. Upheld as constitutional under the Commerce Clause as applied to restaurants.",
+        "area_id": "equal_protection",
+        "jurisdiction": [
+          "federal"
+        ],
+        "status": "active",
+        "valid_from": "1964-12-14",
+        "valid_until": null,
+        "notes": "This case upheld the constitutionality of Title II as applied to restaurants, extending the holding from Heart of Atlanta Motel v. United States."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "commerce_clause_limits",
+        "label": "Commerce Clause Limits on Federal Legislative Authority",
+        "description": "The Commerce Clause grants Congress authority to regulate interstate commerce, but this authority has limits. Congress cannot regulate activity that neither constitutes a commercial activity nor is connected to interstate commerce.",
+        "area_id": "constitutional_law",
+        "jurisdiction": [
+          "federal"
+        ],
+        "status": "active",
+        "valid_from": "1995-04-26",
+        "valid_until": null,
+        "notes": "Established in United States v. Lopez as a meaningful limit on the Commerce Clause after decades of expansive interpretation."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "commerce_clause_authority",
+        "label": "Commerce Clause Authority",
+        "description": "The constitutional authority of Congress to regulate interstate commerce under the Commerce Clause, including limitations on Congress's power to regulate non-economic activity.",
+        "area_id": "constitutional_law",
+        "jurisdiction": [
+          "federal"
+        ],
+        "status": "active",
+        "valid_from": "2000-05-15",
+        "valid_until": null,
+        "notes": "As applied in Morrison, Congress lacks authority under the Commerce Clause to regulate gender-motivated violence, which the Court found to be non-economic activity."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "fourteenth_amendment_section_5_authority",
+        "label": "Fourteenth Amendment Section 5 Authority",
+        "description": "The constitutional authority of Congress under Section 5 of the Fourteenth Amendment to enforce the substantive rights guaranteed by the Amendment.",
+        "area_id": "constitutional_law",
+        "jurisdiction": [
+          "federal"
+        ],
+        "status": "active",
+        "valid_from": "2000-05-15",
+        "valid_until": null,
+        "notes": "As applied in Morrison, Congress lacked authority under Section 5 to enact a federal civil remedy for gender-motivated violence."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "anti_commandeering_doctrine",
+        "label": "Anti-Commandeering Doctrine",
+        "description": "The constitutional principle that Congress cannot compel States to enact or administer a federal regulatory program or commandeer state legislative or executive officials to implement federal law.",
+        "area_id": "constitutional_law",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1992-06-19",
+        "valid_until": null,
+        "notes": "Established in New York v. United States as a limit on federal power under the Tenth Amendment. Distinguishes between permissible federal incentives (conditional spending) and impermissible commandeering of state sovereignty."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "tenth_amendment_state_sovereignty",
+        "label": "Tenth Amendment State Sovereignty",
+        "description": "The constitutional principle that the Tenth Amendment reserves to the States powers not delegated to the Federal Government, protecting state sovereignty from federal commandeering.",
+        "area_id": "constitutional_law",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1992-06-19",
+        "valid_until": null,
+        "notes": "Applied in New York v. United States to invalidate provisions that compelled States to take title to radioactive waste."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "voting_rights_act_section_5_preclearance",
+        "label": "Voting Rights Act Section 5 Preclearance Requirement",
+        "description": "Federal requirement that certain covered jurisdictions obtain federal approval (preclearance) before implementing changes to voting procedures or practices.",
+        "area_id": "equal_protection",
+        "jurisdiction": [
+          "federal"
+        ],
+        "status": "active",
+        "valid_from": "1965-08-06",
+        "valid_until": null,
+        "notes": "Section 5 of the Voting Rights Act of 1965 applies to jurisdictions identified by the coverage formula in Section 4."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "voting_rights_act_section_2",
+        "label": "Voting Rights Act Section 2 Nationwide Ban",
+        "description": "Nationwide permanent prohibition on any standard, practice, or procedure that results in denial or abridgement of the right to vote on account of race or color.",
+        "area_id": "equal_protection",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1965-08-06",
+        "valid_until": null,
+        "notes": "Section 2 applies nationwide and is permanent, not limited to covered jurisdictions."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "spending_power_doctrine",
+        "label": "Spending Power Doctrine",
+        "description": "The constitutional authority of Congress to condition the receipt of federal funds on a state's adoption of specified policies, subject to constitutional limitations.",
+        "area_id": "constitutional_law",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1987-06-23",
+        "valid_until": null,
+        "notes": "Established in South Dakota v. Dole as a framework for analyzing conditional federal spending."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "twenty_first_amendment_state_control",
+        "label": "Twenty-first Amendment State Control Over Alcoholic Beverages",
+        "description": "The Twenty-first Amendment grants states broad control over the regulation of alcoholic beverages, including the power to impose restrictions on sale and distribution, but does not confer power to permit sales that Congress seeks to prohibit through conditional spending.",
+        "area_id": "constitutional_law",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1987-06-23",
+        "valid_until": null,
+        "notes": "Clarified in South Dakota v. Dole regarding the interaction between the Twenty-first Amendment and the federal spending power."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "fourth_amendment_unreasonable_search",
+        "label": "Fourth Amendment Prohibition on Unreasonable Searches and Seizures",
+        "description": "The Fourth Amendment forbids unreasonable searches and seizures and generally requires police to have probable cause or a warrant before making an arrest.",
+        "area_id": "criminal_procedure",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "2009-01-14",
+        "valid_until": null,
+        "notes": "Herring confirms that an arrest based on a reasonable but mistaken belief in an outstanding warrant constitutes a Fourth Amendment violation."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "knock_and_announce_rule",
+        "label": "Knock-and-Announce Rule",
+        "description": "A Fourth Amendment requirement that law enforcement officers must announce their presence and provide residents an opportunity to open the door before entering a home to execute a search warrant. The rule has ancient common-law origins and has been part of federal statutory law since 1917.",
+        "area_id": "criminal_procedure",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1995-01-01",
+        "valid_until": null,
+        "notes": "Established as a Fourth Amendment requirement in Wilson v. Arkansas, 514 U.S. 927 (1995). The rule has exceptions when circumstances present a threat of physical violence or other exigent circumstances."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "attenuation_doctrine",
+        "label": "Attenuation Doctrine",
+        "description": "An exception to the exclusionary rule that permits admission of evidence when the connection between unconstitutional police conduct and the evidence is sufficiently remote or has been interrupted by some intervening circumstance, so that the interest protected by the constitutional guarantee violated would not be served by suppression.",
+        "area_id": "criminal_procedure",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "2016-06-20",
+        "valid_until": null,
+        "notes": "Established in Brown v. Illinois, 422 U.S. 590 (1975). Applied in Utah v. Strieff to warrant discovery as an intervening circumstance."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "independent_source_doctrine",
+        "label": "Independent Source Doctrine",
+        "description": "An exception to the exclusionary rule allowing admission of evidence obtained in an unlawful search if officers independently acquired it from a separate, independent source.",
+        "area_id": "criminal_procedure",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "2016-06-20",
+        "valid_until": null,
+        "notes": "Referenced in Utah v. Strieff as one of three exceptions involving the causal relationship between unconstitutional conduct and evidence discovery."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "inevitable_discovery_doctrine",
+        "label": "Inevitable Discovery Doctrine",
+        "description": "An exception to the exclusionary rule allowing admission of evidence that would have been discovered even without the unconstitutional source.",
+        "area_id": "criminal_procedure",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "2016-06-20",
+        "valid_until": null,
+        "notes": "Referenced in Utah v. Strieff as one of three exceptions involving the causal relationship between unconstitutional conduct and evidence discovery."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "fourth_amendment_trespass_doctrine",
+        "label": "Fourth Amendment Trespass Doctrine",
+        "description": "The Fourth Amendment protects against unreasonable searches and seizures by prohibiting physical intrusions on persons, houses, papers, and effects for the purpose of obtaining information. This doctrine is grounded in common-law trespass principles and applies regardless of reasonable expectation of privacy.",
+        "area_id": "criminal_procedure",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "2012-01-23",
+        "valid_until": null,
+        "notes": "Established in United States v. Jones as a foundational principle of Fourth Amendment jurisprudence, reviving the property-based approach that had been supplemented by the reasonable expectation of privacy test."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "exigency_exception_warrant",
+        "label": "Exigency Exception to Warrant Requirement",
+        "description": "An exception to the warrant requirement that permits warrantless searches when an officer faces an emergency where delay necessary to obtain a warrant threatens the destruction of evidence.",
+        "area_id": "criminal_procedure",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "2013-04-17",
+        "valid_until": null,
+        "notes": "Clarified in Missouri v. McNeely: natural dissipation of blood alcohol alone does not automatically constitute an exigency."
       }
     ],
     "areas": [
@@ -2352,6 +2749,22 @@
         "id": "criminal_procedure",
         "label": "Criminal Procedure > Doctrine",
         "description": "Constitutional doctrine governing the rights of persons accused of crimes, including Fourth Amendment search and seizure, Fifth Amendment self-incrimination, Sixth Amendment right to counsel, and Eighth Amendment cruel and unusual punishment. Most criminal procedure rights apply to the states through selective incorporation via the Fourteenth Amendment.",
+        "parent_id": "individual_rights",
+        "primary_constitutional_grounding": "amendment_14_section_1",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "tier": 2,
+        "status": "active",
+        "valid_from": "1868-07-28",
+        "valid_until": null
+      },
+      {
+        "@type": "Area",
+        "id": "procedural_due_process",
+        "label": "Procedural Due Process \u203a Doctrine",
+        "description": "Constitutional doctrine governing the procedures government must follow before depriving a person of life, liberty, or property. Requires notice and an opportunity to be heard appropriate to the nature of the deprivation.",
         "parent_id": "individual_rights",
         "primary_constitutional_grounding": "amendment_14_section_1",
         "jurisdiction": [
@@ -9192,6 +9605,667 @@
         ],
         "notes": "Justice White delivered the opinion of the Court for Parts I and II (unanimous) and Parts III and IV (joined by Stevens, O'Connor, Scalia, Kennedy, and Souter). Chief Justice Rehnquist filed an opinion concurring in part and dissenting in part, joined by Blackmun and Thomas. Justice Scalia filed a separate concurring opinion.",
         "courtlistener_id": "112873"
+      },
+      {
+        "@type": "Case",
+        "id": "goldberg_v_kelly_1970",
+        "short_name": "Goldberg v. Kelly",
+        "full_name": "Goldberg, Commissioner of Social Services of the City of New York v. Kelly et al.",
+        "citation": "397 U.S. 254 (1970)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1970-03-23",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "A state must provide an evidentiary hearing prior to terminating public assistance payments to a recipient, as required by the Due Process Clause of the Fourteenth Amendment.",
+        "holding_type": "affirmative",
+        "majority_author": "Brennan",
+        "per_curiam": false,
+        "vote": "5-4",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1970-03-23",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "The case addresses procedural due process requirements for termination of public assistance benefits under AFDC and New York State's general Home Relief program.",
+        "courtlistener_id": "108100"
+      },
+      {
+        "@type": "Case",
+        "id": "board_of_regents_v_roth_1972",
+        "short_name": "Board of Regents v. Roth",
+        "full_name": "Board of Regents of State Universities v. Roth",
+        "citation": "408 U.S. 564 (1972)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1972-06-29",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "A nontenured public employee has no constitutionally protected property interest in continued employment absent a legitimate claim of entitlement to reemployment created by state law, statute, or mutually explicit understandings, and therefore is not entitled to procedural due process protections before nonrenewal of a fixed-term contract.",
+        "holding_type": "by_negation",
+        "majority_author": "Stewart",
+        "per_curiam": false,
+        "vote": "5-2",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1972-06-29",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "The case addresses the threshold question of whether a property interest exists before procedural due process protections apply. The Court distinguishes between liberty interests (which may be implicated by damage to reputation) and property interests (which require a legitimate claim of entitlement)."
+      },
+      {
+        "@type": "Case",
+        "id": "mathews_v_eldridge_1976",
+        "short_name": "Mathews v. Eldridge",
+        "full_name": "Mathews, Secretary of Health, Education, and Welfare v. Eldridge",
+        "citation": "424 U.S. 319 (1976)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1976-02-24",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "The Due Process Clause of the Fifth Amendment requires that prior to termination of Social Security disability benefits, the recipient must be afforded an opportunity for an evidentiary hearing.",
+        "holding_type": "affirmative",
+        "majority_author": "Powell",
+        "per_curiam": false,
+        "vote": "6-2",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1976-02-24",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "Case addresses procedural due process requirements for termination of Social Security disability benefits. The opinion establishes a framework for analyzing what process is due in administrative proceedings.",
+        "courtlistener_id": "109382"
+      },
+      {
+        "@type": "Case",
+        "id": "cleveland_board_of_education_v_loudermill_1985",
+        "short_name": "Cleveland Board of Education v. Loudermill",
+        "full_name": "Cleveland Board of Education v. Loudermill",
+        "citation": "470 U.S. 532 (1985)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1985-03-19",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "A public employee who can be discharged only for cause is entitled to notice of the charges and an opportunity to respond before termination, even if a full post-termination hearing is provided later.",
+        "holding_type": "affirmative",
+        "majority_author": "White",
+        "per_curiam": false,
+        "vote": "8-1",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1985-03-19",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "The case addresses the pretermination process required by the Due Process Clause for public employees with property interests in continued employment.",
+        "courtlistener_id": "111372"
+      },
+      {
+        "@type": "Case",
+        "id": "hamdi_v_rumsfeld_2004",
+        "short_name": "Hamdi v. Rumsfeld",
+        "full_name": "Hamdi et al. v. Rumsfeld, Secretary of Defense, et al.",
+        "citation": "542 U.S. 507 (2004)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "2004-06-28",
+        "opinion_form": "plurality",
+        "procedural_disposition": "vacated",
+        "holding": "Although Congress authorized the detention of combatants in the narrow circumstances alleged, due process demands that a citizen held in the United States as an enemy combatant be given a meaningful opportunity to contest the factual basis for that detention before a neutral decisionmaker.",
+        "holding_type": "affirmative",
+        "majority_author": "O'Connor (plurality)",
+        "per_curiam": false,
+        "vote": "8-1",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "2004-06-28",
+        "valid_until": null,
+        "opinions": [
+          {
+            "type": "plurality",
+            "author": "O'Connor",
+            "doctrinal_significance": "Announced judgment of the Court; established the due process requirement for enemy combatant detention review",
+            "joined_by": [
+              "Rehnquist",
+              "Kennedy",
+              "Breyer"
+            ],
+            "adopted_in": []
+          },
+          {
+            "type": "concurrence",
+            "author": "Souter",
+            "doctrinal_significance": "Concurred in part, dissented in part, and concurred in the judgment; argued detention was unauthorized but joined plurality on remand procedures",
+            "joined_by": [
+              "Ginsburg"
+            ],
+            "adopted_in": []
+          },
+          {
+            "type": "dissent",
+            "author": "Scalia",
+            "doctrinal_significance": "Dissented from the plurality's approach to enemy combatant detention",
+            "joined_by": [
+              "Stevens"
+            ],
+            "adopted_in": []
+          },
+          {
+            "type": "dissent",
+            "author": "Thomas",
+            "doctrinal_significance": "Dissented from the plurality's approach to enemy combatant detention",
+            "joined_by": [],
+            "adopted_in": []
+          }
+        ],
+        "notes": "Fractured decision. Plurality opinion by O'Connor (joined by Rehnquist, Kennedy, Breyer) announced the judgment. Souter and Ginsburg concurred in part, dissented in part, and concurred in the judgment. Scalia and Stevens dissented. Thomas dissented separately. The holding reflects what the plurality and the Souter-Ginsburg group agreed upon regarding the meaningful opportunity to contest detention.",
+        "courtlistener_id": "137001"
+      },
+      {
+        "@type": "Case",
+        "id": "mcculloch_v_maryland_1819",
+        "short_name": "McCulloch v. Maryland",
+        "full_name": "McCulloch v. State of Maryland",
+        "citation": "17 U.S. 316 (1819)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1819-03-07",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "Congress possesses the implied power to incorporate a national bank under the Necessary and Proper Clause, and a state may not tax an instrumentality of the federal government.",
+        "holding_type": "affirmative",
+        "majority_author": "Marshall",
+        "per_curiam": false,
+        "vote": "7-0",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1819-03-07",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "Chief Justice Marshall delivered the opinion of the Court. The case addresses the scope of federal enumerated powers and the doctrine of implied powers under the Necessary and Proper Clause.",
+        "courtlistener_id": "1320585"
+      },
+      {
+        "@type": "Case",
+        "id": "gibbons_v_ogden_1824",
+        "short_name": "Gibbons v. Ogden",
+        "full_name": "Gibbons v. Ogden",
+        "citation": "22 U.S. 1 (1824)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1824-03-02",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "State laws granting exclusive navigation rights for steamboats are repugnant to the Commerce Clause insofar as they prohibit vessels licensed under federal law for the coasting trade from navigating state waters.",
+        "holding_type": "affirmative",
+        "majority_author": "Marshall",
+        "per_curiam": false,
+        "vote": "7-0",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1824-03-02",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "The source text is a syllabus and procedural summary. The majority author is not identified in the provided excerpt. The case establishes the supremacy of federal commerce power over state regulation of interstate commerce.",
+        "courtlistener_id": "85412"
+      },
+      {
+        "@type": "Case",
+        "id": "wickard_v_filburn_1942",
+        "short_name": "Wickard v. Filburn",
+        "full_name": "Wickard, Secretary of Agriculture, et al. v. Filburn",
+        "citation": "317 U.S. 111 (1942)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1942-11-09",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "Congress has authority under the Commerce Clause to regulate wheat production for home consumption when such production, in the aggregate, substantially affects interstate commerce.",
+        "holding_type": "affirmative",
+        "majority_author": "Jackson",
+        "per_curiam": false,
+        "vote": "9-0",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1942-11-09",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "Landmark Commerce Clause case establishing that intrastate activity affecting interstate commerce may be regulated by Congress. Appellee challenged wheat marketing quota provisions as beyond Commerce Clause authority and violative of Fifth Amendment Due Process Clause.",
+        "courtlistener_id": "103716"
+      },
+      {
+        "@type": "Case",
+        "id": "katzenbach_v_mcclung_1964",
+        "short_name": "Katzenbach v. McClung",
+        "full_name": "Katzenbach, Acting Attorney General, et al. v. McClung et al.",
+        "citation": "379 U.S. 294 (1964)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1964-12-14",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "Title II of the Civil Rights Act of 1964 is constitutional as applied to restaurants, and the District Court's injunction restraining enforcement of the Act against the restaurant was improper.",
+        "holding_type": "affirmative",
+        "majority_author": "Clark",
+        "per_curiam": false,
+        "vote": "9-0",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1964-12-14",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "Decided same date as Heart of Atlanta Motel v. United States (No. 515), which upheld Title II of the Civil Rights Act of 1964 as applied to hotels and motels. This case extends that holding to restaurants.",
+        "courtlistener_id": "106951"
+      },
+      {
+        "@type": "Case",
+        "id": "united_states_v_lopez_1995",
+        "short_name": "United States v. Lopez",
+        "full_name": "United States v. Lopez",
+        "citation": "514 U.S. 549 (1995)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1995-04-26",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "The Gun-Free School Zones Act of 1990 exceeds the authority of Congress under the Commerce Clause because it neither regulates a commercial activity nor contains a requirement that the possession be connected in any way to interstate commerce.",
+        "holding_type": "by_negation",
+        "majority_author": "Rehnquist",
+        "per_curiam": false,
+        "vote": "5-4",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1995-04-26",
+        "valid_until": null,
+        "opinions": [
+          {
+            "type": "concurrence",
+            "author": "Kennedy",
+            "doctrinal_significance": "Joined by O'Connor; provided additional reasoning on Commerce Clause limits",
+            "joined_by": [
+              "O'Connor"
+            ],
+            "adopted_in": []
+          },
+          {
+            "type": "concurrence",
+            "author": "Thomas",
+            "doctrinal_significance": "Separate concurrence on Commerce Clause interpretation",
+            "joined_by": [],
+            "adopted_in": []
+          },
+          {
+            "type": "dissent",
+            "author": "Stevens",
+            "doctrinal_significance": "Disagreed with Commerce Clause analysis",
+            "joined_by": [],
+            "adopted_in": []
+          },
+          {
+            "type": "dissent",
+            "author": "Souter",
+            "doctrinal_significance": "Disagreed with Commerce Clause analysis",
+            "joined_by": [],
+            "adopted_in": []
+          },
+          {
+            "type": "dissent",
+            "author": "Breyer",
+            "doctrinal_significance": "Disagreed with Commerce Clause analysis",
+            "joined_by": [
+              "Stevens",
+              "Souter",
+              "Ginsburg"
+            ],
+            "adopted_in": []
+          }
+        ],
+        "notes": "Majority opinion by Chief Justice Rehnquist joined by O'Connor, Scalia, Kennedy, and Thomas. Kennedy and Thomas filed separate concurrences. Stevens, Souter, and Breyer filed dissents, with Breyer's dissent joined by Stevens, Souter, and Ginsburg.",
+        "courtlistener_id": "117927"
+      },
+      {
+        "@type": "Case",
+        "id": "united_states_v_morrison_2000",
+        "short_name": "United States v. Morrison",
+        "full_name": "United States v. Morrison",
+        "citation": "529 U.S. 598 (2000)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "2000-05-15",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "affirmed",
+        "holding": "Congress lacked constitutional authority under the Commerce Clause and Section 5 of the Fourteenth Amendment to enact 42 U.S.C. \u00a7 13981, which provided a federal civil remedy for victims of gender-motivated violence.",
+        "holding_type": "by_negation",
+        "majority_author": "Rehnquist",
+        "per_curiam": false,
+        "vote": "5-4",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "2000-05-15",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "The Court affirmed the Fourth Circuit's decision striking down \u00a7 13981. The opinion indicates the case is controlled by United States v. Lopez (1995), United States v. Harris (1883), and the Civil Rights Cases (1883).",
+        "courtlistener_id": "9190792"
+      },
+      {
+        "@type": "Case",
+        "id": "new_york_v_united_states_1992",
+        "short_name": "New York v. United States",
+        "full_name": "New York v. United States",
+        "citation": "505 U.S. 144 (1992)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1992-06-19",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "affirmed_in_part",
+        "holding": "Congress may encourage States to provide for disposal of radioactive waste generated within their borders through conditional spending and other incentives, but the Constitution does not permit Congress to compel States to enact or administer a federal regulatory program, and a provision requiring States to take title to radioactive waste violates the Tenth Amendment.",
+        "holding_type": "affirmative",
+        "majority_author": "O'Connor",
+        "per_curiam": false,
+        "vote": "6-3",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1992-06-19",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "The Court addressed the constitutionality of three provisions of the Low-Level Radioactive Waste Policy Amendments Act of 1985. The opinion establishes the principle that Congress cannot commandeer state legislatures or executive officials to implement federal regulatory programs.",
+        "courtlistener_id": "112768"
+      },
+      {
+        "@type": "Case",
+        "id": "printz_v_united_states_1997",
+        "short_name": "Printz v. United States",
+        "full_name": "Printz, Sheriff/Coroner, Ravalli County, Montana v. United States",
+        "citation": "521 U.S. 898 (1997)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1997-06-27",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "The Brady Act's interim provisions commanding state and local law enforcement officers to conduct background checks on prospective handgun purchasers violate the Constitution by commandeering state officials to administer a federal regulatory program.",
+        "holding_type": "by_negation",
+        "majority_author": "Scalia",
+        "per_curiam": false,
+        "vote": "5-4",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1997-06-27",
+        "valid_until": null,
+        "opinions": [
+          {
+            "type": "concurrence",
+            "author": "O'Connor",
+            "doctrinal_significance": "Concurring in the judgment",
+            "joined_by": [],
+            "adopted_in": []
+          },
+          {
+            "type": "concurrence",
+            "author": "Thomas",
+            "doctrinal_significance": "Concurring in the judgment",
+            "joined_by": [],
+            "adopted_in": []
+          },
+          {
+            "type": "dissent",
+            "author": "Stevens",
+            "doctrinal_significance": "Disagreed with the majority's anti-commandeering holding",
+            "joined_by": [
+              "Souter",
+              "Ginsburg",
+              "Breyer"
+            ],
+            "adopted_in": []
+          },
+          {
+            "type": "dissent",
+            "author": "Souter",
+            "doctrinal_significance": "Separate dissent on the commandeering issue",
+            "joined_by": [],
+            "adopted_in": []
+          },
+          {
+            "type": "dissent",
+            "author": "Breyer",
+            "doctrinal_significance": "Separate dissent on the commandeering issue",
+            "joined_by": [
+              "Stevens"
+            ],
+            "adopted_in": []
+          }
+        ],
+        "notes": "The case involved the Brady Handgun Violence Prevention Act's interim provisions requiring state and local law enforcement to conduct background checks on handgun purchasers. The Court held that Congress cannot commandeer state officials to administer federal regulatory programs.",
+        "courtlistener_id": "118148"
+      },
+      {
+        "@type": "Case",
+        "id": "shelby_county_v_holder_2013",
+        "short_name": "Shelby County v. Holder",
+        "full_name": "Shelby County, Alabama v. Eric H. Holder, Jr., Attorney General",
+        "citation": "570 U.S. 529 (2013)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "2013-06-25",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "Section 4 of the Voting Rights Act of 1965, which provides the coverage formula determining which jurisdictions are subject to the preclearance requirement of Section 5, is unconstitutional because it is based on outdated data and fails to account for the significant progress in eliminating racial discrimination in voting.",
+        "holding_type": "affirmative",
+        "majority_author": "Roberts",
+        "per_curiam": false,
+        "vote": "5-4",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "2013-06-25",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "The text provided is incomplete (cuts off mid-sentence in the syllabus). Vote count and complete opinion information not available in the provided excerpt."
+      },
+      {
+        "@type": "Case",
+        "id": "south_dakota_v_dole_1987",
+        "short_name": "South Dakota v. Dole",
+        "full_name": "South Dakota v. Dole, Secretary of Transportation",
+        "citation": "483 U.S. 203 (1987)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1987-06-23",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "affirmed",
+        "holding": "Congress may condition the receipt of federal highway funds on a state's adoption of a minimum drinking age of 21 years, even though the Twenty-first Amendment reserves broad powers to the states over alcoholic beverages, because the spending power is not limited by the Twenty-first Amendment and the condition is reasonably related to the federal interest in highway safety.",
+        "holding_type": "affirmative",
+        "majority_author": "Rehnquist",
+        "per_curiam": false,
+        "vote": "7-2",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1987-06-23",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "Chief Justice Rehnquist delivered the opinion of the Court. The case addresses the scope of Congress's spending power and its relationship to the Twenty-first Amendment.",
+        "courtlistener_id": "111939"
+      },
+      {
+        "@type": "Case",
+        "id": "herring_v_united_states_2009",
+        "short_name": "Herring v. United States",
+        "full_name": "Herring v. United States",
+        "citation": "555 U.S. 135 (2009)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "2009-01-14",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "When police conduct a search incident to an arrest based on a reasonable but mistaken belief in an outstanding warrant caused by isolated negligence in police recordkeeping, the exclusionary rule does not automatically apply; instead, courts must consider the culpability of the police and the potential deterrent effect of exclusion.",
+        "holding_type": "affirmative",
+        "majority_author": "Roberts",
+        "per_curiam": false,
+        "vote": "5-4",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "2009-01-14",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "The Court held that suppression is not an automatic consequence of a Fourth Amendment violation, but rather depends on police culpability and deterrent effect.",
+        "courtlistener_id": "145922"
+      },
+      {
+        "@type": "Case",
+        "id": "hudson_v_michigan_2006",
+        "short_name": "Hudson v. Michigan",
+        "full_name": "Booker Hudson v. State of Michigan",
+        "citation": "547 U.S. 586 (2006)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "2006-06-15",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "Violation of the knock-and-announce rule does not require suppression of all evidence found in the search.",
+        "holding_type": "by_negation",
+        "majority_author": "Scalia",
+        "per_curiam": false,
+        "vote": "5-4",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "2006-06-15",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "Justice Scalia delivered the opinion of the Court except as to Part IV. The case addresses whether violation of the knock-and-announce rule, a Fourth Amendment protection established in Wilson v. Arkansas, requires suppression of evidence."
+      },
+      {
+        "@type": "Case",
+        "id": "utah_v_strieff_2016",
+        "short_name": "Utah v. Strieff",
+        "full_name": "Utah v. Edward Joseph Strieff, Jr.",
+        "citation": "579 U.S. 232 (2016)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "2016-06-20",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "When an officer makes an unconstitutional investigatory stop but discovers during that stop that the suspect is subject to a valid, pre-existing, and untainted arrest warrant, the discovery of that warrant attenuates the connection between the unlawful stop and evidence seized incident to a lawful arrest based on the warrant, making the evidence admissible under the attenuation doctrine.",
+        "holding_type": "affirmative",
+        "majority_author": "Thomas",
+        "per_curiam": false,
+        "vote": "6-3",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "2016-06-20",
+        "valid_until": null,
+        "opinions": [
+          {
+            "type": "dissent",
+            "author": "Sotomayor",
+            "doctrinal_significance": "Argues that the attenuation doctrine should not apply when an officer exploits an illegal stop to discover a warrant, and that the exclusionary rule should bar admission of evidence obtained through such exploitation.",
+            "joined_by": [
+              "Ginsburg"
+            ],
+            "adopted_in": []
+          },
+          {
+            "type": "dissent",
+            "author": "Kagan",
+            "doctrinal_significance": "Dissents from the majority's application of the attenuation doctrine.",
+            "joined_by": [
+              "Ginsburg"
+            ],
+            "adopted_in": []
+          }
+        ],
+        "notes": "Majority opinion joined by Roberts, Kennedy, Breyer, and Alito. Sotomayor's dissent joined by Ginsburg as to Parts I, II, and III. Kagan's dissent joined by Ginsburg.",
+        "courtlistener_id": "8176208"
+      },
+      {
+        "@type": "Case",
+        "id": "united_states_v_jones_2012",
+        "short_name": "United States v. Jones",
+        "full_name": "United States v. Antoine Jones",
+        "citation": "565 U.S. 400 (2012)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "2012-01-23",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "The Government's attachment of a GPS device to a vehicle and use of that device to monitor the vehicle's movements constitutes a search under the Fourth Amendment when the Government physically intrudes on an effect for the purpose of obtaining information.",
+        "holding_type": "affirmative",
+        "majority_author": "Scalia",
+        "per_curiam": false,
+        "vote": "9-0",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "2012-01-23",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "The Court held that the Fourth Amendment protects against physical intrusions on enumerated effects, consistent with common-law trespass principles. The opinion notes that later cases have applied Justice Harlan's reasonable expectation of privacy analysis from Katz v. United States, but the Court did not need to address the Government's contention regarding that framework in this case.",
+        "courtlistener_id": "7350871"
+      },
+      {
+        "@type": "Case",
+        "id": "missouri_v_mcneely_2013",
+        "short_name": "Missouri v. McNeely",
+        "full_name": "Missouri v. Tyler G. McNeely",
+        "citation": "569 U.S. 141 (2013)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "2013-04-17",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "affirmed",
+        "holding": "The natural dissipation of alcohol in the bloodstream does not constitute an exigency in every case sufficient to justify conducting a warrantless blood test in drunk-driving investigations; a warrantless search of the person is reasonable only if it falls within a recognized exception to the warrant requirement.",
+        "holding_type": "affirmative",
+        "majority_author": "Sotomayor",
+        "per_curiam": false,
+        "vote": "5-4",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "2013-04-17",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "Justice Sotomayor delivered the opinion of the Court with respect to Parts I, II-A, II-B, and IV. The opinion form indicates a signed majority opinion, though the text suggests potential fractured reasoning on some issues."
+      },
+      {
+        "@type": "Case",
+        "id": "kansas_v_glover_2020",
+        "short_name": "Kansas v. Glover",
+        "full_name": "Kansas v. Glover",
+        "citation": "589 U.S. 376 (2020)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "2020-04-06",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "When the registered owner of a vehicle has a revoked license, a police officer who lacks information negating the inference that the owner is the driver has reasonable suspicion to conduct an investigatory traffic stop.",
+        "holding_type": "affirmative",
+        "majority_author": "Thomas",
+        "per_curiam": false,
+        "vote": "8-1",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "2020-04-06",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "Clarified the reasonable suspicion standard for traffic stops based on vehicle registration information.",
+        "courtlistener_id": "4633252"
       }
     ],
     "doctrinal_tests": [
@@ -11098,6 +12172,278 @@
         "valid_from": "1993-06-07",
         "valid_until": null,
         "notes": "The test prohibits seizure of contraband when the officer's manipulation of the object goes beyond what is necessary to determine whether it is a weapon, even if the contraband's incriminating character would have been immediately apparent had the officer confined the search to its lawful scope."
+      },
+      {
+        "@type": "DoctrinalTest",
+        "id": "mathews_balancing_test",
+        "label": "Mathews Balancing Test",
+        "description": "A three-part balancing test for determining what process is due before government deprives a person of a protected interest. Courts must weigh: (1) the private interest affected; (2) the risk of erroneous deprivation under current procedures and the probable value of additional safeguards; and (3) the government's interest, including fiscal and administrative burdens.",
+        "area_id": "procedural_due_process",
+        "source_case_id": "mathews_v_eldridge_1976",
+        "scrutiny_level": "balancing",
+        "burden": "shared",
+        "test_form": "balancing",
+        "prongs": [
+          {
+            "number": 1,
+            "label": "Private Interest Affected",
+            "description": "The nature and magnitude of the private interest that will be affected by the government action.",
+            "burden_note": "Claimant must identify the protected interest at stake.",
+            "valid_from": "1976-02-24",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 2,
+            "label": "Risk of Erroneous Deprivation",
+            "description": "The risk of erroneous deprivation of the private interest through the procedures currently employed, and the probable value of additional or substitute procedural safeguards.",
+            "burden_note": "Shared burden to assess procedural adequacy and likelihood of error.",
+            "valid_from": "1976-02-24",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 3,
+            "label": "Government Interest",
+            "description": "The government's interest, including the function involved and fiscal and administrative burdens that additional or substitute procedural requirements would entail.",
+            "burden_note": "Government must articulate its interests, but courts weigh them against private interests.",
+            "valid_from": "1976-02-24",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          }
+        ],
+        "status": "active",
+        "valid_from": "1976-02-24",
+        "valid_until": null,
+        "notes": "This test applies to all procedural due process claims and requires flexible, context-specific analysis rather than categorical rules."
+      },
+      {
+        "@type": "DoctrinalTest",
+        "id": "loudermill_pretermination_test",
+        "label": "Loudermill Pretermination Due Process Test",
+        "description": "A public employee with a property interest in continued employment must receive notice of charges and an opportunity to respond before termination, followed by a full post-termination hearing.",
+        "area_id": "procedural_due_process",
+        "source_case_id": "cleveland_board_of_education_v_loudermill_1985",
+        "scrutiny_level": "none",
+        "burden": "government",
+        "test_form": "conjunctive",
+        "prongs": [
+          {
+            "number": 1,
+            "label": "Pretermination Notice",
+            "description": "The employee must be given notice of the charges against them before termination.",
+            "burden_note": "Government must provide notice",
+            "valid_from": "1985-03-19",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 2,
+            "label": "Opportunity to Respond",
+            "description": "The employee must be afforded an opportunity to respond to the charges before removal takes effect.",
+            "burden_note": "Government must provide opportunity to respond",
+            "valid_from": "1985-03-19",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 3,
+            "label": "Post-Termination Hearing",
+            "description": "A full post-termination hearing must be provided to determine whether the employee was properly discharged for cause.",
+            "burden_note": "Government must provide full hearing after termination",
+            "valid_from": "1985-03-19",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          }
+        ],
+        "status": "active",
+        "valid_from": "1985-03-19",
+        "valid_until": null,
+        "notes": "The pretermination process need not be elaborate; a brief opportunity to explain one's side of the story is sufficient. The full hearing can occur after termination."
+      },
+      {
+        "@type": "DoctrinalTest",
+        "id": "hamdi_enemy_combatant_test",
+        "label": "Enemy Combatant Detention Due Process Test",
+        "description": "A test requiring that a citizen held in the United States as an enemy combatant receive a meaningful opportunity to contest the factual basis for that detention before a neutral decisionmaker, subject to the government's authorization of such detention in narrow circumstances.",
+        "area_id": "procedural_due_process",
+        "source_case_id": "hamdi_v_rumsfeld_2004",
+        "scrutiny_level": "heightened",
+        "burden": "government",
+        "test_form": "conjunctive",
+        "prongs": [
+          {
+            "number": 1,
+            "label": "Congressional Authorization",
+            "description": "Congress must have authorized the detention of combatants in the narrow circumstances alleged.",
+            "burden_note": "Government must demonstrate congressional authorization",
+            "valid_from": "2004-06-28",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 2,
+            "label": "Meaningful Opportunity to Contest",
+            "description": "The detainee must be given a meaningful opportunity to contest the factual basis for the detention.",
+            "burden_note": "Government must provide this procedural opportunity",
+            "valid_from": "2004-06-28",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 3,
+            "label": "Neutral Decisionmaker",
+            "description": "The opportunity to contest detention must be before a neutral decisionmaker.",
+            "burden_note": "Government must ensure neutrality of the decisionmaker",
+            "valid_from": "2004-06-28",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          }
+        ],
+        "status": "active",
+        "valid_from": "2004-06-28",
+        "valid_until": null,
+        "notes": "Established by the plurality opinion in Hamdi v. Rumsfeld. The test applies specifically to United States citizens detained as enemy combatants on United States soil."
+      },
+      {
+        "@type": "DoctrinalTest",
+        "id": "spending_power_condition_test",
+        "label": "Spending Power Condition Test",
+        "description": "A test for determining whether Congress may constitutionally condition the receipt of federal funds on a state's adoption of specified policies. The test examines whether the condition is reasonably related to the federal interest in the funds and whether the condition is not prohibited by another constitutional provision.",
+        "area_id": "constitutional_law",
+        "source_case_id": "south_dakota_v_dole_1987",
+        "scrutiny_level": "rational_basis",
+        "burden": "challenger",
+        "test_form": "conjunctive",
+        "prongs": [
+          {
+            "number": 1,
+            "label": "Legitimate Federal Interest",
+            "description": "Congress must be pursuing a legitimate federal interest in conditioning the receipt of federal funds.",
+            "burden_note": "Challenger must demonstrate that the federal interest is not legitimate.",
+            "valid_from": "1987-06-23",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 2,
+            "label": "Reasonable Relationship to Federal Interest",
+            "description": "The condition imposed on the receipt of federal funds must be reasonably related to the federal interest.",
+            "burden_note": "Challenger must demonstrate that the condition is not reasonably related to the federal interest.",
+            "valid_from": "1987-06-23",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 3,
+            "label": "No Constitutional Prohibition",
+            "description": "The condition must not be prohibited by another constitutional provision.",
+            "burden_note": "Challenger must demonstrate that the condition violates another constitutional provision.",
+            "valid_from": "1987-06-23",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          }
+        ],
+        "status": "active",
+        "valid_from": "1987-06-23",
+        "valid_until": null,
+        "notes": "Established in South Dakota v. Dole as the framework for analyzing conditional federal spending. The test applies rational basis scrutiny to the relationship between the condition and the federal interest."
+      },
+      {
+        "@type": "DoctrinalTest",
+        "id": "herring_exclusionary_rule_test",
+        "label": "Herring Exclusionary Rule Application Test",
+        "description": "A test for determining whether evidence obtained in violation of the Fourth Amendment must be excluded, based on the culpability of the police and the potential of exclusion to deter wrongful police conduct.",
+        "area_id": "criminal_procedure",
+        "source_case_id": "herring_v_united_states_2009",
+        "scrutiny_level": "balancing",
+        "burden": "shared",
+        "test_form": "balancing",
+        "prongs": [
+          {
+            "number": 1,
+            "label": "Police Culpability",
+            "description": "Assess the degree of culpability of the police in committing the Fourth Amendment violation, including whether the error was isolated negligence or more systemic misconduct.",
+            "burden_note": "The court evaluates police conduct; isolated negligence weighs against exclusion.",
+            "valid_from": "2009-01-14",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 2,
+            "label": "Deterrent Effect",
+            "description": "Evaluate whether excluding the evidence would have a meaningful deterrent effect on future police wrongdoing.",
+            "burden_note": "The court assesses whether exclusion would deter the type of police conduct at issue.",
+            "valid_from": "2009-01-14",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          }
+        ],
+        "status": "active",
+        "valid_from": "2009-01-14",
+        "valid_until": null,
+        "notes": "This test applies when police conduct a search based on a reasonable but mistaken belief caused by negligent recordkeeping errors."
+      },
+      {
+        "@type": "DoctrinalTest",
+        "id": "brown_attenuation_test",
+        "label": "Brown Attenuation Test",
+        "description": "A three-factor test for determining whether the connection between unconstitutional police conduct and discovered evidence is sufficiently attenuated to permit admission of the evidence despite the Fourth Amendment violation.",
+        "area_id": "criminal_procedure",
+        "source_case_id": "utah_v_strieff_2016",
+        "scrutiny_level": "balancing",
+        "burden": "government",
+        "test_form": "balancing",
+        "prongs": [
+          {
+            "number": 1,
+            "label": "Temporal Proximity",
+            "description": "The time interval between the unconstitutional conduct and the discovery of evidence. Substantial time between the unlawful act and evidence discovery favors attenuation; short intervals favor suppression.",
+            "burden_note": "Favors suppression when discovery occurs within minutes of the violation.",
+            "valid_from": "2016-06-20",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 2,
+            "label": "Presence of Intervening Circumstances",
+            "description": "Whether an intervening circumstance has interrupted the causal chain between the unconstitutional conduct and evidence discovery. A valid, pre-existing, and untainted arrest warrant constitutes a strong intervening circumstance.",
+            "burden_note": "Favors the government when a valid warrant predates the investigation and is entirely unconnected with the unlawful stop.",
+            "valid_from": "2016-06-20",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 3,
+            "label": "Purpose and Flagrancy of Official Misconduct",
+            "description": "The nature and severity of the police misconduct. Negligent or good-faith errors favor attenuation; purposeful or flagrant violations favor suppression. The exclusionary rule exists to deter police misconduct, so this factor is particularly significant.",
+            "burden_note": "Favors the government when misconduct is negligent rather than purposeful or flagrant, and when there is no evidence of systemic or recurrent misconduct.",
+            "valid_from": "2016-06-20",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          }
+        ],
+        "status": "active",
+        "valid_from": "2016-06-20",
+        "valid_until": null,
+        "notes": "Articulated in Brown v. Illinois, 422 U.S. 590 (1975). Applied in Utah v. Strieff to determine that discovery of a valid arrest warrant attenuated the connection between an unconstitutional investigatory stop and evidence seized incident to arrest. The test applies to intervening circumstances beyond defendant's independent acts."
       }
     ]
   },
@@ -19690,6 +21036,620 @@
         "state"
       ],
       "notes": "Dickerson applied the Terry stop and frisk framework, extending it to tactile discovery of contraband while limiting seizure to cases where incriminating character is immediately apparent."
+    },
+    {
+      "id": "procedural_due_process_child_of_individual_rights",
+      "source_id": "procedural_due_process",
+      "target_id": "individual_rights",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1868-07-28",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "goldberg_establishes_procedural_due_process_welfare",
+      "source_id": "goldberg_v_kelly_1970",
+      "target_id": "procedural_due_process_welfare_termination",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1970-03-23",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Goldberg v. Kelly established the doctrine requiring procedural due process protections prior to welfare termination."
+    },
+    {
+      "id": "board_of_regents_v_roth_establishes_property_interest_doctrine",
+      "source_id": "board_of_regents_v_roth_1972",
+      "target_id": "property_interest_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1972-06-29",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "The Court establishes the foundational principle that a constitutionally protected property interest in employment requires a legitimate claim of entitlement under state law or contract, not merely the fact of employment."
+    },
+    {
+      "id": "board_of_regents_v_roth_establishes_liberty_interest_doctrine",
+      "source_id": "board_of_regents_v_roth_1972",
+      "target_id": "liberty_interest_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1972-06-29",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "The Court identifies liberty interests as a separate category of Fourteenth Amendment protection, distinct from property interests, though the full scope is not resolved in this excerpt."
+    },
+    {
+      "id": "mathews_establishes_mathews_balancing_test",
+      "source_id": "mathews_v_eldridge_1976",
+      "target_id": "mathews_balancing_test",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1976-02-24",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Mathews v. Eldridge establishes the foundational balancing test for procedural due process analysis."
+    },
+    {
+      "id": "loudermill_establishes_loudermill_pretermination_test",
+      "source_id": "cleveland_board_of_education_v_loudermill_1985",
+      "target_id": "loudermill_pretermination_test",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1985-03-19",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Cleveland Board of Education v. Loudermill established the pretermination due process test for public employees with property interests in continued employment."
+    },
+    {
+      "id": "loudermill_establishes_property_interest_continued_employment",
+      "source_id": "cleveland_board_of_education_v_loudermill_1985",
+      "target_id": "property_interest_continued_employment",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1985-03-19",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "The case establishes that a property interest in continued employment arises when state law limits termination to for-cause dismissals."
+    },
+    {
+      "id": "loudermill_establishes_pretermination_due_process",
+      "source_id": "cleveland_board_of_education_v_loudermill_1985",
+      "target_id": "pretermination_due_process",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1985-03-19",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "The case establishes the doctrine that pretermination due process is required before termination of public employees with property interests in continued employment."
+    },
+    {
+      "id": "hamdi_establishes_enemy_combatant_due_process",
+      "source_id": "hamdi_v_rumsfeld_2004",
+      "target_id": "enemy_combatant_due_process",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2004-06-28",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ],
+      "notes": "Hamdi established the doctrine that enemy combatants who are U.S. citizens detained domestically have due process rights."
+    },
+    {
+      "id": "hamdi_establishes_hamdi_enemy_combatant_test",
+      "source_id": "hamdi_v_rumsfeld_2004",
+      "target_id": "hamdi_enemy_combatant_test",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2004-06-28",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ],
+      "notes": "Hamdi established the specific test for evaluating enemy combatant detention of U.S. citizens."
+    },
+    {
+      "id": "mathews_modifies_goldberg_due_process",
+      "source_id": "mathews_v_eldridge_1976",
+      "target_id": "procedural_due_process_welfare_termination",
+      "edge_type": "MODIFIES",
+      "direction": "clarifies",
+      "valid_from": "1976-02-24",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Mathews refined the procedural due process framework established in Goldberg by introducing the balancing test rather than requiring pre-termination hearings in all cases."
+    },
+    {
+      "id": "hamdi_applies_mathews_balancing_test",
+      "source_id": "hamdi_v_rumsfeld_2004",
+      "target_id": "mathews_balancing_test",
+      "edge_type": "APPLIES",
+      "valid_from": "2004-06-28",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ],
+      "notes": "Hamdi applied the Mathews balancing test to determine the process due to a citizen detained as an enemy combatant."
+    },
+    {
+      "id": "mcculloch_establishes_implied_powers_doctrine",
+      "source_id": "mcculloch_v_maryland_1819",
+      "target_id": "implied_powers_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1819-03-07",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ],
+      "notes": "McCulloch v. Maryland established the doctrine of implied powers as a central principle of federal constitutional law."
+    },
+    {
+      "id": "mcculloch_establishes_federal_supremacy_doctrine",
+      "source_id": "mcculloch_v_maryland_1819",
+      "target_id": "federal_supremacy_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1819-03-07",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "McCulloch v. Maryland established that states cannot tax federal instrumentalities."
+    },
+    {
+      "id": "gibbons_establishes_commerce_clause_supremacy",
+      "source_id": "gibbons_v_ogden_1824",
+      "target_id": "commerce_clause_supremacy",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1824-03-02",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Gibbons v. Ogden establishes the doctrine that state laws granting exclusive navigation rights conflict with and are superseded by federal commerce power."
+    },
+    {
+      "id": "wickard_establishes_commerce_clause_aggregation",
+      "source_id": "wickard_v_filburn_1942",
+      "target_id": "commerce_clause_aggregation",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1942-11-09",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ],
+      "notes": "Wickard established the aggregation principle for Commerce Clause analysis, permitting federal regulation of intrastate activity with substantial aggregate effects on interstate commerce."
+    },
+    {
+      "id": "katzenbach_applies_civil_rights_act_1964_title_ii",
+      "source_id": "katzenbach_v_mcclung_1964",
+      "target_id": "civil_rights_act_1964_title_ii",
+      "edge_type": "APPLIES",
+      "valid_from": "1964-12-14",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ],
+      "notes": "The Court upheld the constitutionality of Title II of the Civil Rights Act of 1964 as applied to restaurants."
+    },
+    {
+      "id": "katzenbach_applies_commerce_clause_aggregation",
+      "source_id": "katzenbach_v_mcclung_1964",
+      "target_id": "commerce_clause_aggregation",
+      "edge_type": "APPLIES",
+      "valid_from": "1964-12-14",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ],
+      "notes": "Katzenbach applied the Wickard aggregation principle to uphold Title II of the Civil Rights Act as applied to restaurants serving interstate commerce."
+    },
+    {
+      "id": "lopez_applies_commerce_clause_limits",
+      "source_id": "united_states_v_lopez_1995",
+      "target_id": "commerce_clause_limits",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1995-04-26",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ],
+      "notes": "Lopez established that the Commerce Clause has judicially enforceable limits by striking down a federal statute as exceeding Congress's commerce power."
+    },
+    {
+      "id": "lopez_modifies_commerce_clause_aggregation",
+      "source_id": "united_states_v_lopez_1995",
+      "target_id": "commerce_clause_aggregation",
+      "edge_type": "MODIFIES",
+      "direction": "narrows",
+      "valid_from": "1995-04-26",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ],
+      "notes": "Lopez narrowed the Wickard aggregation doctrine by holding that non-economic activity cannot be aggregated to satisfy the Commerce Clause."
+    },
+    {
+      "id": "morrison_applies_commerce_clause_authority",
+      "source_id": "united_states_v_morrison_2000",
+      "target_id": "commerce_clause_authority",
+      "edge_type": "APPLIES",
+      "valid_from": "2000-05-15",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ],
+      "notes": "Morrison applies Commerce Clause doctrine to determine that Congress lacked authority to regulate gender-motivated violence as non-economic activity."
+    },
+    {
+      "id": "morrison_applies_fourteenth_amendment_section_5",
+      "source_id": "united_states_v_morrison_2000",
+      "target_id": "fourteenth_amendment_section_5_authority",
+      "edge_type": "APPLIES",
+      "valid_from": "2000-05-15",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ],
+      "notes": "Morrison applies Section 5 doctrine to determine that Congress lacked authority to enact the civil remedy under the Fourteenth Amendment."
+    },
+    {
+      "id": "morrison_applies_commerce_clause_limits",
+      "source_id": "united_states_v_morrison_2000",
+      "target_id": "commerce_clause_limits",
+      "edge_type": "APPLIES",
+      "valid_from": "2000-05-15",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ],
+      "notes": "Morrison applied Lopez's Commerce Clause limits to strike down VAWA's civil remedy."
+    },
+    {
+      "id": "new_york_establishes_anti_commandeering",
+      "source_id": "new_york_v_united_states_1992",
+      "target_id": "anti_commandeering_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1992-06-19",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "New York v. United States established the anti-commandeering doctrine as a constitutional limit on federal power."
+    },
+    {
+      "id": "new_york_applies_tenth_amendment",
+      "source_id": "new_york_v_united_states_1992",
+      "target_id": "tenth_amendment_state_sovereignty",
+      "edge_type": "APPLIES",
+      "valid_from": "1992-06-19",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "The Court applied Tenth Amendment principles to strike down provisions compelling States to take title to radioactive waste."
+    },
+    {
+      "id": "printz_applies_anti_commandeering",
+      "source_id": "printz_v_united_states_1997",
+      "target_id": "anti_commandeering_doctrine",
+      "edge_type": "APPLIES",
+      "valid_from": "1997-06-27",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Printz applied and extended the anti-commandeering doctrine to executive officials."
+    },
+    {
+      "id": "printz_establishes_anti_commandeering_doctrine",
+      "source_id": "printz_v_united_states_1997",
+      "target_id": "anti_commandeering_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1997-06-27",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Printz established the anti-commandeering doctrine as a constitutional limit on federal power to compel state and local officials to administer federal programs."
+    },
+    {
+      "id": "shelby_county_applies_vra_section_5",
+      "source_id": "shelby_county_v_holder_2013",
+      "target_id": "voting_rights_act_section_5_preclearance",
+      "edge_type": "APPLIES",
+      "valid_from": "2013-06-25",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ],
+      "notes": "The case addresses the constitutionality of the preclearance requirement under Section 5."
+    },
+    {
+      "id": "shelby_county_applies_vra_section_2",
+      "source_id": "shelby_county_v_holder_2013",
+      "target_id": "voting_rights_act_section_2",
+      "edge_type": "APPLIES",
+      "valid_from": "2013-06-25",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ],
+      "notes": "The syllabus notes that Section 2 is not at issue in this case but remains valid."
+    },
+    {
+      "id": "south_dakota_v_dole_establishes_spending_power_condition_test",
+      "source_id": "south_dakota_v_dole_1987",
+      "target_id": "spending_power_condition_test",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1987-06-23",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "South Dakota v. Dole established the test for analyzing whether Congress may condition the receipt of federal funds on a state's adoption of specified policies."
+    },
+    {
+      "id": "south_dakota_v_dole_applies_spending_power_doctrine",
+      "source_id": "south_dakota_v_dole_1987",
+      "target_id": "spending_power_doctrine",
+      "edge_type": "APPLIES",
+      "valid_from": "1987-06-23",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "South Dakota v. Dole applies the spending power doctrine to uphold Congress's authority to condition federal highway funds on state adoption of a minimum drinking age."
+    },
+    {
+      "id": "south_dakota_v_dole_applies_twenty_first_amendment",
+      "source_id": "south_dakota_v_dole_1987",
+      "target_id": "twenty_first_amendment_state_control",
+      "edge_type": "APPLIES",
+      "valid_from": "1987-06-23",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "South Dakota v. Dole clarifies that the Twenty-first Amendment does not limit Congress's spending power and does not confer on states the power to permit sales that Congress seeks to prohibit through conditional spending."
+    },
+    {
+      "id": "herring_modifies_exclusionary_rule",
+      "source_id": "herring_v_united_states_2009",
+      "target_id": "exclusionary_rule",
+      "edge_type": "MODIFIES",
+      "direction": "narrows",
+      "valid_from": "2009-01-14",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Herring narrowed the exclusionary rule by holding suppression is not automatic for Fourth Amendment violations caused by isolated police negligence."
+    },
+    {
+      "id": "herring_establishes_herring_exclusionary_rule_test",
+      "source_id": "herring_v_united_states_2009",
+      "target_id": "herring_exclusionary_rule_test",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2009-01-14",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Herring established the framework for applying the exclusionary rule based on police culpability and deterrent effect."
+    },
+    {
+      "id": "herring_applies_fourth_amendment",
+      "source_id": "herring_v_united_states_2009",
+      "target_id": "fourth_amendment_unreasonable_search",
+      "edge_type": "APPLIES",
+      "valid_from": "2009-01-14",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Herring applies Fourth Amendment doctrine in the context of arrests based on mistaken warrant information."
+    },
+    {
+      "id": "hudson_modifies_exclusionary_rule_knock",
+      "source_id": "hudson_v_michigan_2006",
+      "target_id": "exclusionary_rule",
+      "edge_type": "MODIFIES",
+      "direction": "narrows",
+      "valid_from": "2006-06-15",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Hudson held that knock-and-announce violations do not automatically trigger exclusionary rule suppression."
+    },
+    {
+      "id": "hudson_applies_knock_and_announce_rule",
+      "source_id": "hudson_v_michigan_2006",
+      "target_id": "knock_and_announce_rule",
+      "edge_type": "APPLIES",
+      "valid_from": "2006-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Hudson applies the knock-and-announce rule established in Wilson v. Arkansas to determine the remedy for violation."
+    },
+    {
+      "id": "utah_v_strieff_applies_attenuation_doctrine",
+      "source_id": "utah_v_strieff_2016",
+      "target_id": "attenuation_doctrine",
+      "edge_type": "APPLIES",
+      "valid_from": "2016-06-20",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Court applies the attenuation doctrine to determine that discovery of a valid arrest warrant sufficiently attenuates the connection between an unconstitutional investigatory stop and evidence seized incident to arrest."
+    },
+    {
+      "id": "utah_v_strieff_applies_exclusionary_rule",
+      "source_id": "utah_v_strieff_2016",
+      "target_id": "exclusionary_rule",
+      "edge_type": "APPLIES",
+      "valid_from": "2016-06-20",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Court applies the exclusionary rule framework and its exceptions to determine admissibility of evidence obtained following an unconstitutional stop."
+    },
+    {
+      "id": "utah_v_strieff_applies_fourth_amendment",
+      "source_id": "utah_v_strieff_2016",
+      "target_id": "fourth_amendment_protection",
+      "edge_type": "APPLIES",
+      "valid_from": "2016-06-20",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Court assumes without deciding that the officer's investigatory stop violated the Fourth Amendment by lacking reasonable suspicion."
+    },
+    {
+      "id": "utah_v_strieff_establishes_brown_attenuation_test",
+      "source_id": "utah_v_strieff_2016",
+      "target_id": "brown_attenuation_test",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2016-06-20",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Court applies and clarifies the Brown v. Illinois three-factor attenuation test, establishing that the test applies to intervening circumstances beyond defendant's independent acts, including discovery of valid arrest warrants."
+    },
+    {
+      "id": "united_states_v_jones_establishes_fourth_amendment_trespass_doctrine",
+      "source_id": "united_states_v_jones_2012",
+      "target_id": "fourth_amendment_trespass_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2012-01-23",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Jones established that physical intrusion on an effect constitutes a search under the Fourth Amendment, reviving the trespass-based approach to Fourth Amendment analysis."
+    },
+    {
+      "id": "jones_applies_reasonable_expectation_of_privacy",
+      "source_id": "united_states_v_jones_2012",
+      "target_id": "reasonable_expectation_of_privacy_doctrine",
+      "edge_type": "APPLIES",
+      "valid_from": "2012-01-23",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Jones applied the Katz reasonable expectation of privacy framework alongside the trespass doctrine."
+    },
+    {
+      "id": "mcneely_applies_fourth_amendment_warrant",
+      "source_id": "missouri_v_mcneely_2013",
+      "target_id": "fourth_amendment_warrant_requirement",
+      "edge_type": "APPLIES",
+      "valid_from": "2013-04-17",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "McNeely applied the Fourth Amendment warrant requirement to blood testing in DWI investigations."
+    },
+    {
+      "id": "missouri_v_mcneely_modifies_exigency_exception_warrant",
+      "source_id": "missouri_v_mcneely_2013",
+      "target_id": "exigency_exception_warrant",
+      "edge_type": "MODIFIES",
+      "valid_from": "2013-04-17",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "direction": "clarifies",
+      "notes": "McNeely clarifies that natural dissipation of blood alcohol does not automatically satisfy the exigency exception; case-by-case analysis required."
+    },
+    {
+      "id": "glover_applies_terry_stop_frisk_test",
+      "source_id": "kansas_v_glover_2020",
+      "target_id": "terry_stop_frisk_test",
+      "edge_type": "APPLIES",
+      "valid_from": "2020-04-06",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Glover applied the Terry reasonable suspicion standard to investigatory traffic stops based on vehicle registration information."
+    },
+    {
+      "id": "strieff_applies_independent_source_doctrine",
+      "source_id": "utah_v_strieff_2016",
+      "target_id": "independent_source_doctrine",
+      "edge_type": "APPLIES",
+      "valid_from": "2016-06-20",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Strieff references the independent source doctrine as one of the three exceptions to the exclusionary rule."
+    },
+    {
+      "id": "strieff_applies_inevitable_discovery_doctrine",
+      "source_id": "utah_v_strieff_2016",
+      "target_id": "inevitable_discovery_doctrine",
+      "edge_type": "APPLIES",
+      "valid_from": "2016-06-20",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Strieff references the inevitable discovery doctrine as one of the three exceptions to the exclusionary rule."
     }
   ],
   "schema_issues_found": [
