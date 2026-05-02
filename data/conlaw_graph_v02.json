@@ -17,8 +17,8 @@
     "created": "2026-03-15",
     "status": "draft",
     "schema_version": "0.2",
-    "node_count": 454,
-    "edge_count": 700,
+    "node_count": 511,
+    "edge_count": 748,
     "schema_issue_count": 41,
     "fixes_applied": [
       "FIX 1: ConstitutionalProvision labels changed to citation form (amendment_1, amendment_14_section_1) to disambiguate from Area nodes with same common-name labels",
@@ -2426,6 +2426,434 @@
         "valid_from": "2013-04-17",
         "valid_until": null,
         "notes": "Clarified in Missouri v. McNeely: natural dissipation of blood alcohol alone does not automatically constitute an exigency."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "takings_clause_doctrine",
+        "label": "Takings Clause Doctrine",
+        "description": "The constitutional principle under the Fifth and Fourteenth Amendments that government may not take private property for public use without just compensation. Addresses when land use restrictions, including historic preservation laws, constitute compensable takings.",
+        "area_id": "takings_clause",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1978-06-26",
+        "valid_until": null,
+        "notes": "Penn Central established that comprehensive historic preservation restrictions do not automatically constitute takings requiring compensation."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "historic_preservation_doctrine",
+        "label": "Historic Preservation Doctrine",
+        "description": "The legal framework permitting cities and states to restrict development of historic landmarks and districts to preserve buildings and areas with historic, cultural, or architectural significance without necessarily effecting a compensable taking.",
+        "area_id": "takings_clause",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1978-06-26",
+        "valid_until": null,
+        "notes": "Recognized as a legitimate governmental interest supported by widespread state and municipal legislation across all 50 states and over 500 municipalities."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "takings_clause_total_deprivation",
+        "label": "Total Economic Deprivation Takings Doctrine",
+        "description": "A state regulation that deprives a property owner of all economically beneficial use of land constitutes a taking of private property requiring just compensation under the Fifth and Fourteenth Amendments, unless the proscribed use interests were not part of the owner's title to begin with.",
+        "area_id": "takings_clause",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1992-06-29",
+        "valid_until": null,
+        "notes": "Established in Lucas v. South Carolina Coastal Council. Creates a categorical rule for total economic deprivation cases."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "takings_clause_public_use",
+        "label": "Takings Clause Public Use Doctrine",
+        "description": "The Fifth Amendment's takings clause permits government seizure of private property for public use with just compensation. Under Kelo, 'public use' is interpreted broadly to include economic development purposes and is not limited to literal public access or use.",
+        "area_id": "takings_clause",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "2005-06-23",
+        "valid_until": null,
+        "notes": "Kelo expanded the scope of permissible takings by interpreting 'public use' to encompass 'public purpose,' including private economic development that generates tax revenue and employment."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "physical_occupation_taking",
+        "label": "Physical Occupation Taking Doctrine",
+        "description": "A permanent physical occupation of private property authorized by government constitutes a taking of property for which just compensation is due under the Fifth and Fourteenth Amendments, regardless of the economic impact or public benefit.",
+        "area_id": "takings_clause",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1982-06-30",
+        "valid_until": null,
+        "notes": "Established in Loretto v. Teleprompter Manhattan CATV Corp. This doctrine applies to permanent physical occupations authorized by government, even if minor in nature."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "presidential_power_separation_of_powers",
+        "label": "Presidential Power and Separation of Powers",
+        "description": "The doctrine that the President's constitutional powers are limited by the separation of powers principle and cannot extend to exercises of legislative authority, particularly the taking of private property, absent express congressional authorization.",
+        "area_id": "separation_of_powers",
+        "jurisdiction": [
+          "federal"
+        ],
+        "status": "active",
+        "valid_from": "1952-06-02",
+        "valid_until": null,
+        "notes": "Established in Youngstown Sheet & Tube Co. v. Sawyer as a foundational principle limiting executive power during emergencies."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "appointments_clause",
+        "label": "Appointments Clause",
+        "description": "The constitutional requirement that officers of the United States be appointed in the manner prescribed by Article II, Section 2, either by the President with Senate confirmation or by Congress, the President, or the courts as Congress may direct.",
+        "area_id": "separation_of_powers",
+        "jurisdiction": [
+          "federal"
+        ],
+        "status": "active",
+        "valid_from": "1988-01-01",
+        "valid_until": null,
+        "notes": "Morrison v. Olson upheld the appointment mechanism for independent counsel as consistent with the Appointments Clause."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "article_iii_judicial_power",
+        "label": "Article III Judicial Power",
+        "description": "The constitutional limitation on the federal judiciary to exercise only the judicial power vested in it by Article III, Section 1, and the prohibition on Congress vesting judicial power in non-Article III courts.",
+        "area_id": "separation_of_powers",
+        "jurisdiction": [
+          "federal"
+        ],
+        "status": "active",
+        "valid_from": "1988-01-01",
+        "valid_until": null,
+        "notes": "Morrison v. Olson upheld the special court's allocation of powers as consistent with Article III."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "legislative_veto_doctrine",
+        "label": "Legislative Veto Doctrine",
+        "description": "A legislative veto \u2014 a provision allowing one or both houses of Congress to overturn executive action without presenting the measure to the President \u2014 violates the bicameralism and presentment requirements of Article I and is unconstitutional.",
+        "area_id": "separation_of_powers",
+        "jurisdiction": [
+          "federal"
+        ],
+        "status": "active",
+        "valid_from": "1983-06-23",
+        "valid_until": null,
+        "notes": "Established in INS v. Chadha. Affects over 200 federal statutes that contained legislative veto provisions."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "line_item_veto_doctrine",
+        "label": "Line Item Veto Doctrine",
+        "description": "Congress may not grant the President authority to unilaterally cancel individual items in enacted legislation. The Presentment Clause of Article I requires the President to sign or veto legislation in its entirety; a line item veto constitutes an unconstitutional amendment of enacted law.",
+        "area_id": "separation_of_powers",
+        "jurisdiction": [
+          "federal"
+        ],
+        "status": "active",
+        "valid_from": "1998-06-25",
+        "valid_until": null,
+        "notes": "Established in Clinton v. City of New York. Closely related to INS v. Chadha's bicameralism/presentment analysis."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "dormant_commerce_clause",
+        "label": "Dormant Commerce Clause",
+        "description": "The constitutional principle that state laws imposing substantial burdens on interstate commerce are unconstitutional unless the burden is clearly excessive in relation to putative local benefits.",
+        "area_id": "constitutional_law",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1970-03-02",
+        "valid_until": null,
+        "notes": "Established in Pike v. Bruce Church, Inc. as the governing standard for evaluating state laws that burden interstate commerce."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "commerce_clause_discrimination",
+        "label": "Commerce Clause Discrimination Doctrine",
+        "description": "A state law that discriminates against interstate commerce violates the Commerce Clause, even if justified by legitimate local concerns such as health and environmental protection.",
+        "area_id": "constitutional_law",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1978-06-23",
+        "valid_until": null,
+        "notes": "Established in Philadelphia v. New Jersey. The doctrine prohibits state laws that facially discriminate against interstate commerce unless the state can demonstrate that the law serves a legitimate local purpose and that there is no adequate nondiscriminatory alternative."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "twenty_first_amendment_scope",
+        "label": "21st Amendment Scope in Commerce Clause Context",
+        "description": "The 21st Amendment grants states authority to regulate alcohol importation, but this authority does not extend to economic discrimination favoring in-state businesses over out-of-state businesses in violation of the dormant Commerce Clause.",
+        "area_id": "constitutional_law",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "2005-01-01",
+        "valid_until": null,
+        "notes": "Granholm v. Heald clarified that the 21st Amendment does not save state laws that violate other constitutional provisions, particularly the dormant Commerce Clause."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "state_sovereign_immunity",
+        "label": "State Sovereign Immunity",
+        "description": "The doctrine that states are sovereign entities protected by the Eleventh Amendment from suit in federal court by private parties and Indian tribes without state consent, even when Congress purports to authorize such suits.",
+        "area_id": "constitutional_law",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1996-01-01",
+        "valid_until": null,
+        "notes": "Affirmed and clarified in Seminole Tribe v. Florida regarding the limits of congressional power to abrogate state sovereign immunity."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "congressional_abrogation_power",
+        "label": "Congressional Power to Abrogate State Sovereign Immunity",
+        "description": "The doctrine defining the scope of Congress's constitutional authority to abrogate state sovereign immunity. The Indian Commerce Clause does not grant Congress power to abrogate state sovereign immunity.",
+        "area_id": "constitutional_law",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1996-01-01",
+        "valid_until": null,
+        "notes": "Seminole Tribe held that the Indian Commerce Clause does not provide Congress with power to abrogate state sovereign immunity."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "discriminatory_purpose_doctrine",
+        "label": "Discriminatory Purpose Doctrine in Equal Protection",
+        "description": "Under the Equal Protection Clause, a governmental action violates equal protection only if it is motivated by a discriminatory purpose; a discriminatory effect alone, without discriminatory intent, is insufficient to establish an equal protection violation.",
+        "area_id": "equal_protection",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1977-06-28",
+        "valid_until": null,
+        "notes": "Established in the context of zoning and land use decisions. The Court held that proof of discriminatory purpose is necessary; discriminatory effect is not sufficient."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "sex_based_equal_protection",
+        "label": "Sex-Based Equal Protection",
+        "description": "Constitutional doctrine prohibiting government from drawing distinctions based on sex that command dissimilar treatment for similarly situated men and women.",
+        "area_id": "equal_protection",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1973-05-14",
+        "valid_until": null,
+        "notes": "Established in Frontiero v. Richardson. The Court held that sex-based classifications violate equal protection, though the Court fractured on the appropriate level of scrutiny."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "gender_based_classification_doctrine",
+        "label": "Gender-Based Classification Doctrine",
+        "description": "Constitutional doctrine governing statutory classifications based on gender, requiring that such classifications serve important governmental objectives and be substantially related to achievement of those objectives.",
+        "area_id": "equal_protection",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1976-12-20",
+        "valid_until": null,
+        "notes": "Established in Craig v. Boren as the framework for evaluating gender-based equal protection claims under the Fourteenth Amendment."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "sovereign_immunity_abrogation",
+        "label": "Sovereign Immunity Abrogation Under the Fourteenth Amendment",
+        "description": "Congress may abrogate state sovereign immunity under the Fourteenth Amendment when it enacts legislation that is a reasonable prophylactic measure reasonably targeted to a legitimate end, supported by sufficient evidence of constitutional violations by the states.",
+        "area_id": "constitutional_law",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "2004-01-01",
+        "valid_until": null,
+        "notes": "Established in Tennessee v. Lane as applied to Due Process violations. Distinguishable from the equal protection context addressed in Alabama v. Garrett."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "fundamental_right_to_court_access",
+        "label": "Fundamental Right to Access Courts",
+        "description": "Disabled persons have a fundamental right protected by the Due Process Clause of the Fourteenth Amendment to access courts and exercise their rights therein.",
+        "area_id": "individual_rights",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "2004-01-01",
+        "valid_until": null,
+        "notes": "Recognized in Tennessee v. Lane as a fundamental right protected by the Due Process Clause."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "section_5_fourteenth_amendment_abrogation",
+        "label": "Section 5 of the Fourteenth Amendment \u2014 Congressional Abrogation of State Sovereign Immunity",
+        "description": "Congress may abrogate state sovereign immunity under the Fourteenth Amendment Section 5 by enacting prophylactic legislation that addresses documented patterns of unconstitutional state conduct, even if the legislation extends beyond the precise scope of the underlying constitutional violation.",
+        "area_id": "constitutional_law",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "2003-01-01",
+        "valid_until": null,
+        "notes": "This case established that Section 5 legislation need not be narrowly tailored to the exact constitutional harm; prophylactic measures addressing documented discrimination are permissible."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "eleventh_amendment_abrogation",
+        "label": "Eleventh Amendment \u2014 Congressional Abrogation of State Sovereign Immunity",
+        "description": "Congress may abrogate a state's Eleventh Amendment immunity from suit in federal court when it clearly states its intention to do so and acts within its constitutional authority, such as under Section 5 of the Fourteenth Amendment.",
+        "area_id": "constitutional_law",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "2003-01-01",
+        "valid_until": null,
+        "notes": "The FMLA's private right of action against any employer, including states, constituted a clear statement of congressional intent to abrogate state sovereign immunity."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "gender_based_discrimination_equal_protection",
+        "label": "Gender-Based Discrimination and Equal Protection",
+        "description": "State discrimination on the basis of gender in the administration of benefits, including leave benefits, violates equal protection principles and may be addressed through prophylactic federal legislation under Section 5 of the Fourteenth Amendment.",
+        "area_id": "equal_protection",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "2003-01-01",
+        "valid_until": null,
+        "notes": "The Court found a weighty record of unconstitutional state participation in and fostering of gender-based discrimination in the administration of leave benefits, justifying prophylactic Section 5 legislation."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "right_to_travel",
+        "label": "Right to Travel",
+        "description": "A fundamental right protected by the Fourteenth Amendment that encompasses three distinct components: the right of citizens to move freely between states, the right to be treated equally in all states when visiting, and the right of new residents to be treated equally with long-time residents of a state. Durational residency requirements that discriminate against new residents violate this right.",
+        "area_id": "individual_rights",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1999-05-17",
+        "valid_until": null,
+        "notes": "Established in Saenz v. Roe as a fundamental right under the Fourteenth Amendment with three distinct protections against state discrimination based on residency duration."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "presidential_recognition_power",
+        "label": "Presidential Recognition Power",
+        "description": "The exclusive constitutional power of the President to recognize foreign nations, derived from the Reception Clause (Article II) and other Article II powers including treaty-making and ambassador appointment. Congress cannot enact legislation that contradicts or usurps this exclusive Executive power.",
+        "area_id": "separation_of_powers",
+        "jurisdiction": [
+          "federal"
+        ],
+        "status": "active",
+        "valid_from": "2015-06-08",
+        "valid_until": null,
+        "notes": "Established in Zivotofsky v. Kerry as an exclusive presidential power grounded in Article II. The Court held that the President's recognition decisions must speak with one voice and Congress cannot initiate or contradict them through legislation."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "separation_of_powers_foreign_affairs",
+        "label": "Separation of Powers in Foreign Affairs",
+        "description": "The constitutional allocation of foreign affairs powers between the Executive and Legislative branches, whereby residual foreign affairs powers not explicitly allocated to Congress are reserved to the President, while Congress retains specific enumerated powers such as regulation of commerce with foreign nations and naturalization.",
+        "area_id": "separation_of_powers",
+        "jurisdiction": [
+          "federal"
+        ],
+        "status": "active",
+        "valid_from": "2015-06-08",
+        "valid_until": null,
+        "notes": "Zivotofsky v. Kerry clarified that passport regulation falls within residual foreign affairs powers reserved to the President, while consular reports of birth abroad fall within Congress's naturalization powers."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "rational_basis_due_process",
+        "label": "Rational Basis Review Under Due Process",
+        "description": "Economic and social legislation is subject to rational basis review under the Due Process Clause of the Fourteenth Amendment, requiring only that the legislation be rationally related to a legitimate state interest.",
+        "area_id": "individual_rights",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1955-03-28",
+        "valid_until": null,
+        "notes": "Established in Williamson v. Lee Optical as the standard for reviewing economic and social legislation under the Due Process Clause."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "funeral_protest_first_amendment",
+        "label": "First Amendment Protection for Funeral Protests",
+        "description": "The First Amendment shields those who stage a protest at the funeral of a military service member from liability for defamation, invasion of privacy, and intentional infliction of emotional distress, even when the speech is distasteful and repugnant.",
+        "area_id": "free_speech",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "2011-03-02",
+        "valid_until": null,
+        "notes": "Established in Snyder v. Phelps. Protects offensive speech at public events, including funerals, from tort liability."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "categorical_approach_unprotected_speech",
+        "label": "Categorical Approach to Unprotected Speech",
+        "description": "The First Amendment's exclusion of certain speech categories from protection reflects a long-settled judgment that the value of the speech is clearly outweighed by its costs. Courts may not create new categories of unprotected speech based solely on an ad hoc cost-benefit analysis.",
+        "area_id": "free_speech",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "2010-04-20",
+        "valid_until": null,
+        "notes": "Established in United States v. Stevens. The categorical approach requires longstanding historical tradition, not judicial cost-benefit balancing, to justify excluding speech from First Amendment protection."
       }
     ],
     "areas": [
@@ -2774,6 +3202,36 @@
         "tier": 2,
         "status": "active",
         "valid_from": "1868-07-28",
+        "valid_until": null
+      },
+      {
+        "@type": "Area",
+        "id": "takings_clause",
+        "label": "Takings Clause \u203a Doctrine",
+        "description": "Fifth Amendment doctrine governing when government action constitutes a taking of private property requiring just compensation.",
+        "parent_id": "individual_rights",
+        "primary_constitutional_grounding": "amendment_5",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "tier": 2,
+        "status": "active",
+        "valid_from": "1791-12-15",
+        "valid_until": null
+      },
+      {
+        "@type": "Area",
+        "id": "separation_of_powers",
+        "label": "Separation of Powers \u203a Doctrine",
+        "description": "Constitutional doctrine governing the allocation of powers among the legislative, executive, and judicial branches.",
+        "parent_id": "constitutional_law",
+        "jurisdiction": [
+          "federal"
+        ],
+        "tier": 2,
+        "status": "active",
+        "valid_from": "1788-06-21",
         "valid_until": null
       }
     ],
@@ -8219,30 +8677,6 @@
       },
       {
         "@type": "Case",
-        "id": "williamson_v_lee_optical_1955",
-        "short_name": "Williamson v. Lee Optical",
-        "full_name": "Williamson v. Lee Optical Co.",
-        "citation": "348 U.S. 483 (1955)",
-        "court_level": "scotus",
-        "court_name": "Supreme Court of the United States",
-        "binding_scope": "federal_all",
-        "decided_date": "1955-03-28",
-        "opinion_form": "signed_majority",
-        "procedural_disposition": "affirmed",
-        "holding": "A state may regulate the practice of optometry and the fitting of eyeglasses through licensing requirements and restrictions on who may fit lenses, as such economic regulations are subject only to rational basis review and need only be rationally related to a legitimate state interest.",
-        "holding_type": "affirmative",
-        "majority_author": "Douglas",
-        "per_curiam": false,
-        "vote": "9-0",
-        "status": "good_law",
-        "precedential_weight": "binding",
-        "valid_from": "1955-03-28",
-        "valid_until": null,
-        "opinions": [],
-        "notes": "Source text provides only procedural information and does not identify the majority author or vote count. The holding is inferred from the case's well-established doctrinal significance in rational basis review jurisprudence."
-      },
-      {
-        "@type": "Case",
         "id": "benton_v_maryland_1969",
         "short_name": "Benton v. Maryland",
         "full_name": "Benton v. Maryland",
@@ -10266,6 +10700,551 @@
         "opinions": [],
         "notes": "Clarified the reasonable suspicion standard for traffic stops based on vehicle registration information.",
         "courtlistener_id": "4633252"
+      },
+      {
+        "@type": "Case",
+        "id": "penn_central_transportation_co_v_new_york_city_1978",
+        "short_name": "Penn Central v. New York City",
+        "full_name": "Penn Central Transportation Co. v. New York City",
+        "citation": "438 U.S. 104 (1978)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1978-06-26",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "affirmed",
+        "holding": "A city may restrict development of individual historic landmarks as part of a comprehensive historic preservation program without effecting a taking requiring just compensation under the Fifth and Fourteenth Amendments.",
+        "holding_type": "affirmative",
+        "majority_author": "Brennan",
+        "per_curiam": false,
+        "vote": "6-3",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1978-06-26",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "Appeal from the Court of Appeals of New York. The case addresses whether application of New York City's Landmarks Preservation Law to Grand Central Terminal constitutes a taking under the Fifth and Fourteenth Amendments.",
+        "courtlistener_id": "9016988"
+      },
+      {
+        "@type": "Case",
+        "id": "lucas_v_south_carolina_coastal_council_1992",
+        "short_name": "Lucas v. South Carolina Coastal Council",
+        "full_name": "David H. Lucas v. South Carolina Coastal Council",
+        "citation": "505 U.S. 1003 (1992)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1992-06-29",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "When a state regulation deprives a property owner of all economically beneficial use of land, it constitutes a taking of private property requiring just compensation under the Fifth and Fourteenth Amendments, unless the proscribed use interests were not part of the owner's title to begin with.",
+        "holding_type": "affirmative",
+        "majority_author": "Scalia",
+        "per_curiam": false,
+        "vote": "6-3",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1992-06-29",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "The case addresses the takings clause and establishes that total deprivation of economic value triggers heightened scrutiny, though the state may defend by showing the proscribed use was not part of the owner's title to begin with."
+      },
+      {
+        "@type": "Case",
+        "id": "kelo_v_city_of_new_london_2005",
+        "short_name": "Kelo v. City of New London",
+        "full_name": "Susette Kelo v. City of New London",
+        "citation": "545 U.S. 469 (2005)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "2005-06-23",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "affirmed",
+        "holding": "The Fifth Amendment's takings clause permits a city to exercise eminent domain to seize private property for transfer to private developers as part of an economic development plan, because such taking qualifies as a 'public use' or 'public purpose' even though the property will not be used by the general public.",
+        "holding_type": "affirmative",
+        "majority_author": "Stevens",
+        "per_curiam": false,
+        "vote": "5-4",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "2005-06-23",
+        "valid_until": null,
+        "opinions": [
+          {
+            "type": "dissent",
+            "author": null,
+            "doctrinal_significance": "Disagreed with the majority's broad interpretation of 'public use' in the takings clause.",
+            "joined_by": [],
+            "adopted_in": []
+          }
+        ],
+        "notes": "5-4 decision. The majority rejected a requirement of 'literal' public use, adopting instead a broader interpretation of 'public purpose' that defers to legislative judgments about economic development."
+      },
+      {
+        "@type": "Case",
+        "id": "loretto_v_teleprompter_manhattan_catv_corp_1982",
+        "short_name": "Loretto v. Teleprompter Manhattan CATV Corp.",
+        "full_name": "Jean Loretto v. Teleprompter Corp. and Teleprompter Manhattan CATV Corp.",
+        "citation": "458 U.S. 419 (1982)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1982-06-30",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "A minor but permanent physical occupation of an owner's property authorized by government constitutes a taking of property for which just compensation is due under the Fifth and Fourteenth Amendments.",
+        "holding_type": "affirmative",
+        "majority_author": "Marshall",
+        "per_curiam": false,
+        "vote": "6-3",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1982-06-30",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "The case addresses whether a state-authorized permanent physical occupation of private property constitutes a taking requiring just compensation. New York law required landlords to permit cable television companies to install facilities on their property."
+      },
+      {
+        "@type": "Case",
+        "id": "youngstown_sheet_tube_co_v_sawyer_1952",
+        "short_name": "Youngstown Sheet & Tube Co. v. Sawyer",
+        "full_name": "Youngstown Sheet & Tube Co. et al. v. Sawyer",
+        "citation": "343 U.S. 579 (1952)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1952-06-02",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "The President lacks constitutional authority to seize private property to avert an economic emergency absent express congressional authorization, as such seizure constitutes an exercise of legislative power reserved to Congress.",
+        "holding_type": "by_negation",
+        "majority_author": "Black",
+        "per_curiam": false,
+        "vote": "6-3",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1952-06-02",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "The case addresses the scope of presidential power during national emergencies and the separation of powers doctrine. The source text is incomplete but establishes the core holding regarding presidential authority limits."
+      },
+      {
+        "@type": "Case",
+        "id": "morrison_v_olson_1988",
+        "short_name": "Morrison v. Olson",
+        "full_name": "Morrison v. Olson",
+        "citation": "487 U.S. 654 (1988)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1988-06-29",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "affirmed",
+        "holding": "The appointment of an independent counsel under the Ethics in Government Act does not violate the Appointments Clause, the allocation of powers to the special court does not violate Article III, and the Act does not impermissibly interfere with Executive Branch functions under the separation of powers doctrine.",
+        "holding_type": "affirmative",
+        "majority_author": "Rehnquist",
+        "per_curiam": false,
+        "vote": "7-1",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1988-06-29",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "The Court upheld the constitutionality of the independent counsel statute on multiple grounds: Appointments Clause, Article III, and separation of powers.",
+        "courtlistener_id": "9075962"
+      },
+      {
+        "@type": "Case",
+        "id": "ins_v_chadha_1983",
+        "short_name": "INS v. Chadha",
+        "full_name": "Immigration and Naturalization Service v. Chadha",
+        "citation": "462 U.S. 919 (1983)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1983-06-23",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "affirmed",
+        "holding": "The one-house legislative veto provision of the Immigration and Nationality Act is unconstitutional because it violates the bicameralism and presentment requirements of Article I \u2014 Congress may not bypass the President's veto power by authorizing one house to overturn executive action.",
+        "holding_type": "by_negation",
+        "majority_author": "Burger",
+        "per_curiam": false,
+        "vote": "7-2",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1983-06-23",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "Invalidated the legislative veto device used in over 200 federal statutes. The decision reshaped the relationship between Congress and the executive branch by requiring full bicameralism and presentment for any action with the force of law."
+      },
+      {
+        "@type": "Case",
+        "id": "clinton_v_city_of_new_york_1998",
+        "short_name": "Clinton v. City of New York",
+        "full_name": "Clinton v. City of New York",
+        "citation": "524 U.S. 417 (1998)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1998-06-25",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "affirmed",
+        "holding": "The Line Item Veto Act is unconstitutional because it grants the President the power to unilaterally cancel individual items in enacted legislation, in violation of the Presentment Clause of Article I, which requires legislation to be passed by both houses and signed in full by the President.",
+        "holding_type": "by_negation",
+        "majority_author": "Stevens",
+        "per_curiam": false,
+        "vote": "6-3",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1998-06-25",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "Struck down the Line Item Veto Act of 1996. The decision reaffirmed that the Presentment Clause requires the President to either sign or veto legislation in its entirety."
+      },
+      {
+        "@type": "Case",
+        "id": "pike_v_bruce_church_inc_1970",
+        "short_name": "Pike v. Bruce Church, Inc.",
+        "full_name": "Pike v. Bruce Church, Inc.",
+        "citation": "397 U.S. 137 (1970)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1970-03-02",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "A state law that imposes a substantial burden on interstate commerce is unconstitutional unless the burden is clearly excessive in relation to the putative local benefits.",
+        "holding_type": "affirmative",
+        "majority_author": "Stewart",
+        "per_curiam": false,
+        "vote": "8-0",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1970-03-02",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "The Court reversed the district court's injunction against the Arizona Fruit and Vegetable Standardization Act provision requiring cantaloupes to be packed in closed standard containers. The case involved a dormant Commerce Clause challenge to a state law affecting interstate commerce in agricultural products.",
+        "courtlistener_id": "108085"
+      },
+      {
+        "@type": "Case",
+        "id": "philadelphia_v_new_jersey_1978",
+        "short_name": "Philadelphia v. New Jersey",
+        "full_name": "City of Philadelphia et al. v. New Jersey et al.",
+        "citation": "437 U.S. 617 (1978)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1978-06-23",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "A state law that prohibits the importation of most solid or liquid waste originating outside the state violates the Commerce Clause when it discriminates against interstate commerce, even if justified by health and environmental concerns.",
+        "holding_type": "affirmative",
+        "majority_author": "Stewart",
+        "per_curiam": false,
+        "vote": "7-2",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1978-06-23",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "The New Jersey Supreme Court had reversed the trial court's judgment, finding the statute constitutional. The U.S. Supreme Court reversed the state court decision, holding the statute unconstitutional under the Commerce Clause.",
+        "courtlistener_id": "109916"
+      },
+      {
+        "@type": "Case",
+        "id": "granholm_v_heald_2005",
+        "short_name": "Granholm v. Heald",
+        "full_name": "Granholm v. Heald",
+        "citation": "544 U.S. 460 (2005)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "2005-05-16",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "State laws that discriminate against out-of-state wineries by restricting direct shipment while allowing in-state wineries to ship directly to consumers violate the dormant Commerce Clause and are not saved by the 21st Amendment, which does not authorize economic discrimination among states.",
+        "holding_type": "affirmative",
+        "majority_author": "Kennedy",
+        "per_curiam": false,
+        "vote": "5-4",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "2005-05-16",
+        "valid_until": null,
+        "opinions": [
+          {
+            "type": "dissent",
+            "author": null,
+            "doctrinal_significance": "Disagreed with the majority's interpretation of the 21st Amendment's scope to authorize state alcohol regulation.",
+            "joined_by": [],
+            "adopted_in": []
+          }
+        ],
+        "notes": "5-4 decision. The Court reversed both the Sixth Circuit (which had ruled for the challenger in the Michigan case) and the Second Circuit (which had ruled for New York). The holding establishes that the 21st Amendment does not provide blanket authority for states to discriminate economically against out-of-state commerce in alcohol.",
+        "courtlistener_id": "142893"
+      },
+      {
+        "@type": "Case",
+        "id": "seminole_tribe_of_florida_v_florida_1996",
+        "short_name": "Seminole Tribe v. Florida",
+        "full_name": "Seminole Tribe of Florida v. Florida",
+        "citation": "517 U.S. 44 (1996)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1996-03-27",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "Congress lacks power under the Indian Commerce Clause to abrogate state sovereign immunity, and the Eleventh Amendment shields states from suit by Indian tribes in federal court for violations of the Indian Gaming Regulatory Act absent state consent.",
+        "holding_type": "affirmative",
+        "majority_author": "Rehnquist",
+        "per_curiam": false,
+        "vote": "5-4",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1996-03-27",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "The Court held that Congress did not have the power under the Indian Commerce Clause to abrogate state sovereign immunity under the IGRA. The decision also addressed the limits of Ex Parte Young in the context of IGRA provisions.",
+        "courtlistener_id": "118011"
+      },
+      {
+        "@type": "Case",
+        "id": "alden_v_maine_1999",
+        "short_name": "Alden v. Maine",
+        "full_name": "Alden v. Maine",
+        "citation": "527 U.S. 706 (1999)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1999-06-23",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "affirmed",
+        "holding": "Congress may not use its Article I powers to abrogate the states' sovereign immunity in their own courts; states retain sovereign immunity from private suits in state court despite the supremacy of federal law when the national government exercises its enumerated powers.",
+        "holding_type": "affirmative",
+        "majority_author": "Kennedy",
+        "per_curiam": false,
+        "vote": "5-4",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1999-06-23",
+        "valid_until": null,
+        "opinions": [
+          {
+            "type": "dissent",
+            "author": "Souter",
+            "doctrinal_significance": "Disagreed with the majority's extension of sovereign immunity to state courts and its interpretation of the Eleventh Amendment and constitutional structure.",
+            "joined_by": [],
+            "adopted_in": []
+          }
+        ],
+        "notes": "5-4 decision. The majority held that states retain sovereign immunity in their own courts based on the Eleventh Amendment, the original understanding of constitutional structure, and the Tenth Amendment. This case extended sovereign immunity doctrine beyond federal court (as established in Seminole Tribe v. Florida) to state courts.",
+        "courtlistener_id": "9184206"
+      },
+      {
+        "@type": "Case",
+        "id": "village_of_arlington_heights_v_metropolitan_housing_development_corp_1977",
+        "short_name": "Village of Arlington Heights v. Metropolitan Housing Development Corp.",
+        "full_name": "Village of Arlington Heights v. Metropolitan Housing Development Corp.",
+        "citation": "429 U.S. 252 (1977)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1977-06-28",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "A plaintiff challenging a zoning decision under the Equal Protection Clause must prove that the decision was motivated by a discriminatory purpose, not merely that it had a discriminatory effect; discriminatory intent is a necessary element of an equal protection violation in the land use context.",
+        "holding_type": "affirmative",
+        "majority_author": "Powell",
+        "per_curiam": false,
+        "vote": "7-1",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1977-06-28",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "The Court reversed the Court of Appeals' finding that the discriminatory effect of the rezoning denial violated the Fourteenth Amendment, establishing that discriminatory purpose is required.",
+        "courtlistener_id": "109573"
+      },
+      {
+        "@type": "Case",
+        "id": "tennessee_v_lane_2004",
+        "short_name": "Tennessee v. Lane",
+        "full_name": "Tennessee v. Lane",
+        "citation": "541 U.S. 509 (2004)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "2004-05-17",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "affirmed",
+        "holding": "Congress has authority under the Fourteenth Amendment to abrogate state sovereign immunity through Title II of the Americans with Disabilities Act as applied to access to courts and the exercise of fundamental rights protected by the Due Process Clause, where Congress has sufficiently demonstrated the problems faced by disabled persons and the remedies are reasonable prophylactic measures reasonably targeted to a legitimate end.",
+        "holding_type": "affirmative",
+        "majority_author": "Stevens",
+        "per_curiam": false,
+        "vote": "5-4",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "2004-05-17",
+        "valid_until": null,
+        "opinions": [
+          {
+            "type": "dissent",
+            "author": null,
+            "doctrinal_significance": "Disagreed with the majority's application of congruence and proportionality analysis to Title II's access provisions",
+            "joined_by": [],
+            "adopted_in": []
+          }
+        ],
+        "notes": "5-4 decision. Affirmed Sixth Circuit. Distinguished Alabama v. Garrett (2001) on the basis that Title II addresses Due Process violations rather than equal protection violations.",
+        "courtlistener_id": "134743"
+      },
+      {
+        "@type": "Case",
+        "id": "nevada_department_of_human_resources_v_hibbs_2003",
+        "short_name": "Nevada Department of Human Resources v. Hibbs",
+        "full_name": "Nevada Department of Human Resources v. Hibbs",
+        "citation": "538 U.S. 721 (2003)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "2003-05-27",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "State employees may recover money damages in federal court for a state's failure to comply with the Family and Medical Leave Act's family-care provision because Congress clearly stated its intention to abrogate the States' Eleventh Amendment immunity and acted within its authority under Section 5 of the Fourteenth Amendment by enacting prophylactic legislation addressing gender-based discrimination in the administration of leave benefits.",
+        "holding_type": "affirmative",
+        "majority_author": "Rehnquist",
+        "per_curiam": false,
+        "vote": "6-3",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "2003-05-27",
+        "valid_until": null,
+        "opinions": [
+          {
+            "type": "dissent",
+            "author": "Scalia",
+            "doctrinal_significance": "Disagreed with the majority's Section 5 analysis and Eleventh Amendment abrogation rationale",
+            "joined_by": [],
+            "adopted_in": []
+          },
+          {
+            "type": "dissent",
+            "author": "Kennedy",
+            "doctrinal_significance": "Disagreed with the majority's Section 5 analysis and Eleventh Amendment abrogation rationale",
+            "joined_by": [
+              "Thomas",
+              "Scalia"
+            ],
+            "adopted_in": []
+          }
+        ],
+        "notes": "The Court held that Congress validly abrogated state sovereign immunity under the Fourteenth Amendment Section 5 by enacting the FMLA's family-care provision as prophylactic legislation addressing documented gender-based discrimination in leave administration.",
+        "courtlistener_id": "127926"
+      },
+      {
+        "@type": "Case",
+        "id": "zivotofsky_v_kerry_2015",
+        "short_name": "Zivotofsky v. Kerry",
+        "full_name": "Menachem Binyamin Zivotofsky v. John F. Kerry",
+        "citation": "576 U.S. 1 (2015)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "2015-06-08",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "affirmed",
+        "holding": "The President possesses exclusive constitutional power to recognize foreign nations, derived from the Reception Clause and other Article II powers, and Congress cannot enact legislation that contradicts the President's recognition decisions, including by mandating passport designations that conflict with Executive branch policy on foreign sovereignty.",
+        "holding_type": "affirmative",
+        "majority_author": "Kennedy",
+        "per_curiam": false,
+        "vote": "6-3",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "2015-06-08",
+        "valid_until": null,
+        "opinions": [
+          {
+            "type": "concurrence",
+            "author": "Breyer",
+            "doctrinal_significance": "Breyer concurred in the judgment, noting the case presented a political question but joined the majority because precedent precluded political resolution.",
+            "joined_by": [],
+            "adopted_in": []
+          },
+          {
+            "type": "dissent",
+            "author": "Roberts",
+            "doctrinal_significance": "Roberts argued the President must be exercising a power that the Constitution conclusively and preclusively granted to the Executive branch to ignore Congress; history and precedent on recognition power are conflicting, and an optional passport designation does not constitute official recognition.",
+            "joined_by": [
+              "Alito"
+            ],
+            "adopted_in": []
+          },
+          {
+            "type": "dissent",
+            "author": "Scalia",
+            "doctrinal_significance": "Scalia argued that even if the President has recognition power, it is not exclusive because Congress has authority to regulate commerce with foreign nations; the statute merely directs geographic description accommodation, not recognition.",
+            "joined_by": [
+              "Roberts",
+              "Alito"
+            ],
+            "adopted_in": []
+          }
+        ],
+        "notes": "The Court split 6-3 on the passport issue but 5-4 on the consular reports issue. Justice Thomas joined the dissenters on the consular reports question, arguing the statute unconstitutionally usurped recognition power as to passports but not consular reports. The holding reflects the 6-3 majority on the primary passport question."
+      },
+      {
+        "@type": "Case",
+        "id": "williamson_v_lee_optical_of_oklahoma_1955",
+        "short_name": "Williamson v. Lee Optical",
+        "full_name": "Williamson, Attorney General of Oklahoma, et al. v. Lee Optical of Oklahoma, Inc., et al.",
+        "citation": "348 U.S. 483 (1955)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1955-03-28",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "affirmed",
+        "holding": "A state may regulate the practice of optometry and the fitting of lenses through licensing requirements and restrictions on who may perform such services, and such economic and social legislation is subject to rational basis review under the Due Process Clause of the Fourteenth Amendment.",
+        "holding_type": "affirmative",
+        "majority_author": "Douglas",
+        "per_curiam": false,
+        "vote": "9-0",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1955-03-28",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "The District Court held certain provisions of an Oklahoma law unconstitutional under the Due Process Clause of the Fourteenth Amendment. The Supreme Court affirmed the judgment. The case involved challenges to state licensing and practice restrictions for optometrists and optical services.",
+        "courtlistener_id": "105285"
+      },
+      {
+        "@type": "Case",
+        "id": "united_states_v_stevens_2010",
+        "short_name": "United States v. Stevens",
+        "full_name": "United States v. Stevens",
+        "citation": "559 U.S. 460 (2010)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "2010-04-20",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "affirmed",
+        "holding": "A federal statute criminalizing the commercial creation, sale, or possession of depictions of animal cruelty is substantially overbroad and therefore facially invalid under the First Amendment; the government cannot establish a new category of unprotected speech based solely on a cost-benefit analysis of the speech's value.",
+        "holding_type": "by_negation",
+        "majority_author": "Roberts",
+        "per_curiam": false,
+        "vote": "8-1",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "2010-04-20",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "Struck down 18 U.S.C. \u00a7 48. The Court rejected the government's argument that courts could balance the value of speech against its societal costs to create new categories of unprotected speech.",
+        "courtlistener_id": "7340372"
       }
     ],
     "doctrinal_tests": [
@@ -12444,6 +13423,352 @@
         "valid_from": "2016-06-20",
         "valid_until": null,
         "notes": "Articulated in Brown v. Illinois, 422 U.S. 590 (1975). Applied in Utah v. Strieff to determine that discovery of a valid arrest warrant attenuated the connection between an unconstitutional investigatory stop and evidence seized incident to arrest. The test applies to intervening circumstances beyond defendant's independent acts."
+      },
+      {
+        "@type": "DoctrinalTest",
+        "id": "penn_central_balancing_test",
+        "label": "Penn Central Takings Balancing Test",
+        "description": "An ad hoc balancing test for determining whether a government regulation constitutes a taking requiring just compensation. Courts weigh three factors: the economic impact on the claimant, interference with investment-backed expectations, and the character of the government action.",
+        "area_id": "takings_clause",
+        "source_case_id": "penn_central_transportation_co_v_new_york_city_1978",
+        "scrutiny_level": "balancing",
+        "burden": "challenger",
+        "test_form": "balancing",
+        "prongs": [
+          {
+            "number": 1,
+            "label": "Economic Impact",
+            "description": "The economic impact of the regulation on the claimant.",
+            "burden_note": "Challenger must show significant economic harm.",
+            "valid_from": "1978-06-26",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 2,
+            "label": "Interference with Investment-Backed Expectations",
+            "description": "The extent to which the regulation interferes with distinct investment-backed expectations.",
+            "burden_note": "Challenger must show reasonable investment-backed expectations were frustrated.",
+            "valid_from": "1978-06-26",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 3,
+            "label": "Character of Government Action",
+            "description": "The character of the government action, including whether it is a physical invasion or a restriction on land use.",
+            "burden_note": "Courts weigh whether the government is physically occupying or regulating.",
+            "valid_from": "1978-06-26",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          }
+        ],
+        "status": "active",
+        "valid_from": "1978-06-26",
+        "valid_until": null,
+        "notes": "The dominant framework for regulatory takings analysis."
+      },
+      {
+        "@type": "DoctrinalTest",
+        "id": "lucas_total_deprivation_test",
+        "label": "Lucas Total Economic Deprivation Test",
+        "description": "A two-part test for determining whether a regulation effects a taking: (1) whether the regulation deprives the owner of all economically beneficial use of the land; and (2) if so, whether the state can defend by showing the proscribed use interests were not part of the owner's title to begin with.",
+        "area_id": "takings_clause",
+        "source_case_id": "lucas_v_south_carolina_coastal_council_1992",
+        "scrutiny_level": "per_se",
+        "burden": "government",
+        "test_form": "threshold_then_conjunctive",
+        "prongs": [
+          {
+            "number": 1,
+            "label": "Total Economic Deprivation",
+            "description": "Whether the regulation deprives the property owner of all economically beneficial use of the land.",
+            "burden_note": "Challenger must show complete loss of economic value.",
+            "valid_from": "1992-06-29",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 2,
+            "label": "Title Defense",
+            "description": "Whether the state can defend by showing the proscribed use interests were not part of the owner's title to begin with.",
+            "burden_note": "Government must show the use was never part of the owner's property rights.",
+            "valid_from": "1992-06-29",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          }
+        ],
+        "status": "active",
+        "valid_from": "1992-06-29",
+        "valid_until": null,
+        "notes": "This test applies when a regulation eliminates all economically beneficial use. If the first prong is satisfied, the government must satisfy the second prong or just compensation is required."
+      },
+      {
+        "@type": "DoctrinalTest",
+        "id": "youngstown_jackson_framework",
+        "label": "Youngstown Jackson Three-Category Framework",
+        "description": "Justice Jackson's concurring opinion established the dominant framework for analyzing presidential power. Presidential authority falls into one of three categories based on the relationship between executive action and congressional intent.",
+        "area_id": "separation_of_powers",
+        "source_case_id": "youngstown_sheet_tube_co_v_sawyer_1952",
+        "scrutiny_level": "none",
+        "burden": "government",
+        "test_form": "threshold_then_conjunctive",
+        "prongs": [
+          {
+            "number": 1,
+            "label": "Category 1 \u2014 Congressional Authorization",
+            "description": "When the President acts pursuant to express or implied congressional authorization, executive power is at its maximum, combining the President's own powers plus all that Congress can delegate.",
+            "burden_note": "Government shows Congress authorized the action.",
+            "valid_from": "1952-06-02",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 2,
+            "label": "Category 2 \u2014 Congressional Silence (Zone of Twilight)",
+            "description": "When the President acts in absence of either congressional grant or denial, the President can rely only on independent powers. Congressional inertia or indifference may sometimes enable presidential action.",
+            "burden_note": "Courts examine whether Congress has impliedly authorized or prohibited the action.",
+            "valid_from": "1952-06-02",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 3,
+            "label": "Category 3 \u2014 Congressional Prohibition",
+            "description": "When the President takes measures incompatible with the expressed or implied will of Congress, presidential power is at its lowest ebb. The President must rely solely on constitutional grants not subject to congressional control.",
+            "burden_note": "Government must show exclusive constitutional authority.",
+            "valid_from": "1952-06-02",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          }
+        ],
+        "status": "active",
+        "valid_from": "1952-06-02",
+        "valid_until": null,
+        "notes": "From Justice Jackson's concurrence, not the Black majority. The Jackson framework is the governing analytical tool courts actually apply."
+      },
+      {
+        "@type": "DoctrinalTest",
+        "id": "pike_balancing_test",
+        "label": "Pike Balancing Test",
+        "description": "A balancing test for evaluating state laws that burden interstate commerce. The test requires courts to weigh the burden imposed on interstate commerce against the putative local benefits of the state law.",
+        "area_id": "constitutional_law",
+        "source_case_id": "pike_v_bruce_church_inc_1970",
+        "scrutiny_level": "balancing",
+        "burden": "shared",
+        "test_form": "balancing",
+        "prongs": [
+          {
+            "number": 1,
+            "label": "Burden on Interstate Commerce",
+            "description": "Identify whether the state law imposes a substantial burden on interstate commerce.",
+            "burden_note": "The challenger must demonstrate a substantial burden on interstate commerce.",
+            "valid_from": "1970-03-02",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 2,
+            "label": "Balancing Local Benefits Against Burden",
+            "description": "Balance the burden on interstate commerce against the putative local benefits of the state law. The law is unconstitutional if the burden is clearly excessive in relation to the local benefits.",
+            "burden_note": "The state must justify the burden by demonstrating that local benefits are not clearly outweighed by the burden on interstate commerce.",
+            "valid_from": "1970-03-02",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          }
+        ],
+        "status": "active",
+        "valid_from": "1970-03-02",
+        "valid_until": null,
+        "notes": "This test applies to state laws that have a legitimate local purpose but incidentally burden interstate commerce. It is distinct from per se rules that invalidate discriminatory state laws."
+      },
+      {
+        "@type": "DoctrinalTest",
+        "id": "arlington_heights_discriminatory_purpose_test",
+        "label": "Arlington Heights Discriminatory Purpose Test",
+        "description": "A multi-factor test for determining whether a governmental decision was motivated by discriminatory purpose in equal protection challenges. Courts examine the historical background of the decision, the specific sequence of events leading to the challenged decision, departures from normal procedures, and substantive departures from the normal course of business, along with the impact of the decision.",
+        "area_id": "equal_protection",
+        "source_case_id": "village_of_arlington_heights_v_metropolitan_housing_development_corp_1977",
+        "scrutiny_level": "none",
+        "burden": "challenger",
+        "test_form": "balancing",
+        "prongs": [
+          {
+            "number": 1,
+            "label": "Historical Background",
+            "description": "Examination of the historical background of the decision, including the sequence of events leading to the challenged action.",
+            "burden_note": "Challenger must present evidence of historical context suggesting discriminatory purpose.",
+            "valid_from": "1977-06-28",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 2,
+            "label": "Departures from Normal Procedures",
+            "description": "Examination of whether the decision involved departures from the normal course of business or established procedures.",
+            "burden_note": "Challenger must show that the decision deviated from standard procedures in a way suggesting discriminatory motive.",
+            "valid_from": "1977-06-28",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 3,
+            "label": "Impact of the Decision",
+            "description": "Consideration of the impact or effect of the decision, though discriminatory effect alone is insufficient without evidence of discriminatory purpose.",
+            "burden_note": "Discriminatory impact may be probative of discriminatory purpose but does not alone establish a violation.",
+            "valid_from": "1977-06-28",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          }
+        ],
+        "status": "active",
+        "valid_from": "1977-06-28",
+        "valid_until": null,
+        "notes": "This test establishes the framework for proving discriminatory purpose in equal protection cases. The Court emphasized that while discriminatory effect may be probative of discriminatory purpose, it is not sufficient by itself to establish an equal protection violation."
+      },
+      {
+        "@type": "DoctrinalTest",
+        "id": "craig_intermediate_scrutiny_gender_test",
+        "label": "Intermediate Scrutiny for Gender-Based Classifications",
+        "description": "A gender-based statutory classification is constitutional only if it serves important governmental objectives and the discriminatory means employed are substantially related to achievement of those objectives.",
+        "area_id": "equal_protection",
+        "source_case_id": "craig_v_boren_1976",
+        "scrutiny_level": "intermediate",
+        "burden": "government",
+        "test_form": "conjunctive",
+        "prongs": [
+          {
+            "number": 1,
+            "label": "Important Governmental Objective",
+            "description": "The gender-based classification must serve an important governmental objective.",
+            "burden_note": "Government must demonstrate the objective is important.",
+            "valid_from": "1976-12-20",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 2,
+            "label": "Substantial Relationship to Objective",
+            "description": "The discriminatory means employed must be substantially related to achievement of the important governmental objective.",
+            "burden_note": "Government must demonstrate substantial relationship between classification and objective.",
+            "valid_from": "1976-12-20",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          }
+        ],
+        "status": "active",
+        "valid_from": "1976-12-20",
+        "valid_until": null,
+        "notes": "This test applies to all gender-based statutory classifications under equal protection review. It represents a middle tier of scrutiny between rational basis and strict scrutiny."
+      },
+      {
+        "@type": "DoctrinalTest",
+        "id": "congruence_proportionality_test",
+        "label": "Congruence and Proportionality Test",
+        "description": "Congress may abrogate state sovereign immunity under the Fourteenth Amendment if the legislation is congruent and proportional to the constitutional violation it seeks to remedy. The test requires: (1) sufficient evidence of constitutional violations by the states; (2) remedies that are reasonable prophylactic measures; and (3) measures reasonably targeted to a legitimate end.",
+        "area_id": "constitutional_law",
+        "source_case_id": "tennessee_v_lane_2004",
+        "scrutiny_level": "heightened",
+        "burden": "government",
+        "test_form": "conjunctive",
+        "prongs": [
+          {
+            "number": 1,
+            "label": "Sufficient Evidence of Constitutional Violations",
+            "description": "Congress must demonstrate sufficient evidence of constitutional violations by the states that the legislation seeks to remedy.",
+            "burden_note": "Government must establish adequate factual predicate",
+            "valid_from": "2004-01-01",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 2,
+            "label": "Reasonable Prophylactic Measure",
+            "description": "The remedies required must constitute reasonable prophylactic measures, not imposing unreasonable burdens on the states.",
+            "burden_note": "Government must show remedies are reasonable",
+            "valid_from": "2004-01-01",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 3,
+            "label": "Reasonably Targeted to Legitimate End",
+            "description": "The measures must be reasonably targeted to a legitimate constitutional end.",
+            "burden_note": "Government must demonstrate rational connection between means and ends",
+            "valid_from": "2004-01-01",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          }
+        ],
+        "status": "active",
+        "valid_from": "2004-01-01",
+        "valid_until": null,
+        "notes": "Applied in Tennessee v. Lane to Title II of the ADA. Distinguished from Alabama v. Garrett by focusing on Due Process violations rather than equal protection violations."
+      },
+      {
+        "@type": "DoctrinalTest",
+        "id": "parental_right_interference_test",
+        "label": "Parental Fundamental Right Interference Test",
+        "description": "A test to determine whether state interference with a parent's fundamental right to direct the care, custody, and control of children violates the Due Process Clause. The test examines whether the state has accorded appropriate deference to a fit parent's decisions, whether the parent is presumed unfit, and whether the state has a sufficient basis for intervention.",
+        "area_id": "substantive_due_process",
+        "source_case_id": "troxel_v_granville_2000",
+        "scrutiny_level": "heightened",
+        "burden": "government",
+        "test_form": "balancing",
+        "prongs": [
+          {
+            "number": 1,
+            "label": "Fit Parent Presumption",
+            "description": "There is a presumption that fit parents act in their children's best interests. The state must not disregard or overturn a fit parent's decision without giving special weight to the parent's determination.",
+            "burden_note": "Government must rebut the presumption that a fit parent acts in the child's best interest.",
+            "valid_from": "2000-06-05",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 2,
+            "label": "Deference to Parental Decision",
+            "description": "When the state intervenes in parental decisions, it must accord deference to the fit parent's determination of the child's best interests. A court may not apply the opposite presumption or place the burden on the parent to disprove that third-party visitation would be in the child's best interest.",
+            "burden_note": "Government must show it has given appropriate deference to the parent's judgment.",
+            "valid_from": "2000-06-05",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 3,
+            "label": "Breadth and Scope of Interference",
+            "description": "The state statute or action must not be breathtakingly broad or sweep too broadly in permitting interference with parental decisions. A statute that permits any person to petition at any time based solely on a best-interest standard, without requiring a threshold showing of harm or potential harm to the child, exceeds constitutional bounds.",
+            "burden_note": "Government must demonstrate that its interference is narrowly tailored and not overbroad.",
+            "valid_from": "2000-06-05",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          }
+        ],
+        "status": "active",
+        "valid_from": "2000-06-05",
+        "valid_until": null,
+        "notes": "Established in Troxel v. Granville as a plurality opinion. The test reflects the Court's conclusion that Washington's statute violated the Due Process Clause because it failed to accord deference to the fit parent's decision and was overbroad in permitting any person to petition for visitation at any time. The Court did not decide whether harm is a required element in all nonparental visitation statutes."
       }
     ]
   },
@@ -19823,19 +21148,6 @@
       "notes": "Carolene Products applied rational basis review to uphold the Filled Milk Act, establishing that regulatory legislation affecting ordinary commercial transactions is presumed constitutional if it rests upon some rational basis."
     },
     {
-      "id": "williamson_applies_rational_basis",
-      "source_id": "williamson_v_lee_optical_1955",
-      "target_id": "rational_basis_doctrine",
-      "edge_type": "APPLIES",
-      "valid_from": "1955-03-28",
-      "valid_until": null,
-      "jurisdiction": [
-        "federal",
-        "state"
-      ],
-      "notes": "Williamson applied rational basis review to uphold Oklahoma's optometry regulations, becoming the canonical example of deferential rational basis review for economic legislation."
-    },
-    {
       "id": "washington_v_davis_establishes_equal_protection_discriminatory_purpose",
       "source_id": "washington_v_davis_1976",
       "target_id": "equal_protection_discriminatory_purpose",
@@ -21650,6 +22962,635 @@
         "state"
       ],
       "notes": "Strieff references the inevitable discovery doctrine as one of the three exceptions to the exclusionary rule."
+    },
+    {
+      "id": "takings_clause_child_of_individual_rights",
+      "source_id": "takings_clause",
+      "target_id": "individual_rights",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1791-12-15",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "penn_central_applies_takings_clause_doctrine",
+      "source_id": "penn_central_transportation_co_v_new_york_city_1978",
+      "target_id": "takings_clause_doctrine",
+      "edge_type": "APPLIES",
+      "valid_from": "1978-06-26",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Penn Central applies the Takings Clause doctrine to historic preservation restrictions."
+    },
+    {
+      "id": "penn_central_establishes_historic_preservation_doctrine",
+      "source_id": "penn_central_transportation_co_v_new_york_city_1978",
+      "target_id": "historic_preservation_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1978-06-26",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Penn Central established the constitutional framework permitting historic preservation restrictions without automatic compensation requirements."
+    },
+    {
+      "id": "penn_central_establishes_balancing_test",
+      "source_id": "penn_central_transportation_co_v_new_york_city_1978",
+      "target_id": "penn_central_balancing_test",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1978-06-26",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "lucas_establishes_lucas_total_deprivation_test",
+      "source_id": "lucas_v_south_carolina_coastal_council_1992",
+      "target_id": "lucas_total_deprivation_test",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1992-06-29",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Lucas v. South Carolina Coastal Council established the total economic deprivation test for takings clause analysis."
+    },
+    {
+      "id": "lucas_establishes_takings_total_deprivation",
+      "source_id": "lucas_v_south_carolina_coastal_council_1992",
+      "target_id": "takings_clause_total_deprivation",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1992-06-29",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Lucas v. South Carolina Coastal Council established the doctrine that total economic deprivation constitutes a taking requiring just compensation."
+    },
+    {
+      "id": "lucas_applies_penn_central_balancing",
+      "source_id": "lucas_v_south_carolina_coastal_council_1992",
+      "target_id": "penn_central_balancing_test",
+      "edge_type": "APPLIES",
+      "valid_from": "1992-06-29",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Lucas applied and extended Penn Central by establishing a categorical rule for total economic deprivation."
+    },
+    {
+      "id": "kelo_applies_takings_clause_public_use",
+      "source_id": "kelo_v_city_of_new_london_2005",
+      "target_id": "takings_clause_public_use",
+      "edge_type": "APPLIES",
+      "valid_from": "2005-06-23",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Kelo applies and interprets the takings clause doctrine by establishing that economic development qualifies as public use."
+    },
+    {
+      "id": "kelo_modifies_takings_clause_doctrine",
+      "source_id": "kelo_v_city_of_new_london_2005",
+      "target_id": "takings_clause_doctrine",
+      "edge_type": "MODIFIES",
+      "direction": "expands",
+      "valid_from": "2005-06-23",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Kelo expanded the public use requirement by holding that economic development constitutes a public purpose."
+    },
+    {
+      "id": "loretto_establishes_physical_occupation_taking",
+      "source_id": "loretto_v_teleprompter_manhattan_catv_corp_1982",
+      "target_id": "physical_occupation_taking",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1982-06-30",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Loretto established the doctrine that permanent physical occupations authorized by government constitute takings requiring just compensation."
+    },
+    {
+      "id": "sep_powers_child_of_conlaw",
+      "source_id": "separation_of_powers",
+      "target_id": "constitutional_law",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1788-06-21",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ]
+    },
+    {
+      "id": "youngstown_establishes_presidential_power_separation_of_powers",
+      "source_id": "youngstown_sheet_tube_co_v_sawyer_1952",
+      "target_id": "presidential_power_separation_of_powers",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1952-06-02",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ],
+      "notes": "The Court established the doctrine that presidential power is constrained by separation of powers and cannot encompass legislative functions like property seizure without congressional authorization."
+    },
+    {
+      "id": "youngstown_establishes_jackson_framework",
+      "source_id": "youngstown_sheet_tube_co_v_sawyer_1952",
+      "target_id": "youngstown_jackson_framework",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1952-06-02",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ],
+      "notes": "Jackson's concurrence established the three-category framework for analyzing presidential power."
+    },
+    {
+      "id": "morrison_applies_appointments_clause",
+      "source_id": "morrison_v_olson_1988",
+      "target_id": "appointments_clause",
+      "edge_type": "APPLIES",
+      "valid_from": "1988-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ],
+      "notes": "Morrison applied the Appointments Clause doctrine to validate the appointment mechanism for independent counsel."
+    },
+    {
+      "id": "morrison_applies_article_iii",
+      "source_id": "morrison_v_olson_1988",
+      "target_id": "article_iii_judicial_power",
+      "edge_type": "APPLIES",
+      "valid_from": "1988-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ],
+      "notes": "Morrison applied Article III doctrine to uphold the special court's powers."
+    },
+    {
+      "id": "chadha_establishes_legislative_veto_doctrine",
+      "source_id": "ins_v_chadha_1983",
+      "target_id": "legislative_veto_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1983-06-23",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ],
+      "notes": "Chadha established that legislative vetoes violate bicameralism and presentment requirements."
+    },
+    {
+      "id": "clinton_establishes_line_item_veto_doctrine",
+      "source_id": "clinton_v_city_of_new_york_1998",
+      "target_id": "line_item_veto_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1998-06-25",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ]
+    },
+    {
+      "id": "clinton_applies_chadha_presentment",
+      "source_id": "clinton_v_city_of_new_york_1998",
+      "target_id": "legislative_veto_doctrine",
+      "edge_type": "APPLIES",
+      "valid_from": "1998-06-25",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ],
+      "notes": "Clinton applied Chadha's presentment analysis to strike down the Line Item Veto Act."
+    },
+    {
+      "id": "pike_establishes_pike_balancing_test",
+      "source_id": "pike_v_bruce_church_inc_1970",
+      "target_id": "pike_balancing_test",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1970-03-02",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Pike v. Bruce Church, Inc. established the balancing test for evaluating state laws that burden interstate commerce."
+    },
+    {
+      "id": "pike_applies_dormant_commerce_clause",
+      "source_id": "pike_v_bruce_church_inc_1970",
+      "target_id": "dormant_commerce_clause",
+      "edge_type": "APPLIES",
+      "valid_from": "1970-03-02",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Pike applies the dormant Commerce Clause doctrine to evaluate the constitutionality of the Arizona Fruit and Vegetable Standardization Act."
+    },
+    {
+      "id": "philadelphia_establishes_commerce_clause_discrimination",
+      "source_id": "philadelphia_v_new_jersey_1978",
+      "target_id": "commerce_clause_discrimination",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1978-06-23",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Philadelphia v. New Jersey established the principle that state laws facially discriminating against interstate commerce violate the Commerce Clause."
+    },
+    {
+      "id": "philadelphia_applies_dormant_commerce_clause",
+      "source_id": "philadelphia_v_new_jersey_1978",
+      "target_id": "dormant_commerce_clause",
+      "edge_type": "APPLIES",
+      "valid_from": "1978-06-23",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Philadelphia applied dormant Commerce Clause doctrine to invalidate discriminatory waste import ban."
+    },
+    {
+      "id": "granholm_applies_dormant_commerce_clause",
+      "source_id": "granholm_v_heald_2005",
+      "target_id": "dormant_commerce_clause",
+      "edge_type": "APPLIES",
+      "valid_from": "2005-05-16",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "granholm_establishes_21st_amendment_scope",
+      "source_id": "granholm_v_heald_2005",
+      "target_id": "twenty_first_amendment_scope",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2005-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Granholm v. Heald established the principle that the 21st Amendment does not authorize state economic discrimination in violation of the dormant Commerce Clause."
+    },
+    {
+      "id": "seminole_tribe_applies_state_sovereign_immunity",
+      "source_id": "seminole_tribe_of_florida_v_florida_1996",
+      "target_id": "state_sovereign_immunity",
+      "edge_type": "APPLIES",
+      "valid_from": "1996-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "The Court applied and reaffirmed the doctrine of state sovereign immunity under the Eleventh Amendment."
+    },
+    {
+      "id": "seminole_tribe_establishes_congressional_abrogation",
+      "source_id": "seminole_tribe_of_florida_v_florida_1996",
+      "target_id": "congressional_abrogation_power",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1996-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "The Court established that the Indian Commerce Clause does not grant Congress power to abrogate state sovereign immunity."
+    },
+    {
+      "id": "alden_modifies_state_sovereign_immunity",
+      "source_id": "alden_v_maine_1999",
+      "target_id": "state_sovereign_immunity",
+      "edge_type": "MODIFIES",
+      "direction": "expands",
+      "valid_from": "1999-06-23",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Alden extended state sovereign immunity to state courts, building on Seminole Tribe's federal court holding."
+    },
+    {
+      "id": "arlington_heights_establishes_discriminatory_purpose_doctrine",
+      "source_id": "village_of_arlington_heights_v_metropolitan_housing_development_corp_1977",
+      "target_id": "discriminatory_purpose_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1977-06-28",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "The Court established the principle that discriminatory purpose, not merely discriminatory effect, is required for an equal protection violation."
+    },
+    {
+      "id": "arlington_heights_establishes_arlington_heights_test",
+      "source_id": "village_of_arlington_heights_v_metropolitan_housing_development_corp_1977",
+      "target_id": "arlington_heights_discriminatory_purpose_test",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1977-06-28",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "The Court established a multi-factor test for determining discriminatory purpose in equal protection cases."
+    },
+    {
+      "id": "frontiero_establishes_sex_based_equal_protection",
+      "source_id": "frontiero_v_richardson_1973",
+      "target_id": "sex_based_equal_protection",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1973-05-14",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Frontiero established that sex-based classifications violate equal protection doctrine."
+    },
+    {
+      "id": "craig_establishes_craig_intermediate_scrutiny_gender_test",
+      "source_id": "craig_v_boren_1976",
+      "target_id": "craig_intermediate_scrutiny_gender_test",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1976-12-20",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Craig v. Boren establishes the intermediate scrutiny standard for gender-based statutory classifications under equal protection."
+    },
+    {
+      "id": "craig_applies_gender_based_classification_doctrine",
+      "source_id": "craig_v_boren_1976",
+      "target_id": "gender_based_classification_doctrine",
+      "edge_type": "APPLIES",
+      "valid_from": "1976-12-20",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Craig v. Boren applies and develops the doctrine governing gender-based classifications under equal protection."
+    },
+    {
+      "id": "tennessee_v_lane_establishes_sovereign_immunity_abrogation",
+      "source_id": "tennessee_v_lane_2004",
+      "target_id": "sovereign_immunity_abrogation",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2004-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Tennessee v. Lane established the doctrine that Congress may abrogate state sovereign immunity under the Fourteenth Amendment when legislation is a reasonable prophylactic measure."
+    },
+    {
+      "id": "tennessee_v_lane_establishes_fundamental_right_to_court_access",
+      "source_id": "tennessee_v_lane_2004",
+      "target_id": "fundamental_right_to_court_access",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2004-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Tennessee v. Lane recognized access to courts as a fundamental right protected by the Due Process Clause."
+    },
+    {
+      "id": "tennessee_v_lane_establishes_congruence_proportionality_test",
+      "source_id": "tennessee_v_lane_2004",
+      "target_id": "congruence_proportionality_test",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2004-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Tennessee v. Lane articulated the congruence and proportionality test for evaluating whether Congress has validly abrogated state sovereign immunity."
+    },
+    {
+      "id": "tennessee_lane_applies_congruence_proportionality",
+      "source_id": "tennessee_v_lane_2004",
+      "target_id": "fourteenth_amendment_section_5_authority",
+      "edge_type": "APPLIES",
+      "valid_from": "2004-05-17",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Tennessee v. Lane applied Section 5 authority to uphold ADA Title II as applied to court access."
+    },
+    {
+      "id": "hibbs_applies_section5_abrogation",
+      "source_id": "nevada_department_of_human_resources_v_hibbs_2003",
+      "target_id": "section_5_fourteenth_amendment_abrogation",
+      "edge_type": "APPLIES",
+      "valid_from": "2003-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "The case applied and reinforced the doctrine that Congress may abrogate state sovereign immunity through Section 5 legislation addressing documented constitutional violations."
+    },
+    {
+      "id": "hibbs_applies_eleventh_amendment",
+      "source_id": "nevada_department_of_human_resources_v_hibbs_2003",
+      "target_id": "eleventh_amendment_abrogation",
+      "edge_type": "APPLIES",
+      "valid_from": "2003-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "The case applied the doctrine that Congress may abrogate Eleventh Amendment immunity when it clearly states its intent and acts within constitutional authority."
+    },
+    {
+      "id": "hibbs_applies_gender_discrimination",
+      "source_id": "nevada_department_of_human_resources_v_hibbs_2003",
+      "target_id": "gender_based_discrimination_equal_protection",
+      "edge_type": "APPLIES",
+      "valid_from": "2003-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "The case applied equal protection principles regarding gender-based discrimination in the administration of leave benefits to justify Section 5 prophylactic legislation."
+    },
+    {
+      "id": "saenz_establishes_right_to_travel",
+      "source_id": "saenz_v_roe_1999",
+      "target_id": "right_to_travel",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1999-05-17",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Saenz v. Roe established the right to travel as a fundamental right protected by the Fourteenth Amendment with three distinct components."
+    },
+    {
+      "id": "zivotofsky_kerry_establishes_presidential_recognition_power",
+      "source_id": "zivotofsky_v_kerry_2015",
+      "target_id": "presidential_recognition_power",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2015-06-08",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ],
+      "notes": "Zivotofsky v. Kerry established the doctrine of exclusive presidential recognition power derived from Article II."
+    },
+    {
+      "id": "zivotofsky_kerry_applies_separation_of_powers",
+      "source_id": "zivotofsky_v_kerry_2015",
+      "target_id": "separation_of_powers_foreign_affairs",
+      "edge_type": "APPLIES",
+      "valid_from": "2015-06-08",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ],
+      "notes": "The Court applied separation of powers principles to allocate foreign affairs powers, distinguishing between Executive passport regulation and Congressional naturalization powers."
+    },
+    {
+      "id": "williamson_applies_rational_basis_due_process",
+      "source_id": "williamson_v_lee_optical_of_oklahoma_1955",
+      "target_id": "rational_basis_due_process",
+      "edge_type": "APPLIES",
+      "valid_from": "1955-03-28",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "The Court applied rational basis review to uphold Oklahoma's licensing and practice restrictions for optometrists and optical services."
+    },
+    {
+      "id": "troxel_establishes_parental_right_interference_test",
+      "source_id": "troxel_v_granville_2000",
+      "target_id": "parental_right_interference_test",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2000-06-05",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Troxel v. Granville established the parental right interference test to evaluate whether state action violates a parent's fundamental right to direct the care, custody, and control of children."
+    },
+    {
+      "id": "snyder_establishes_funeral_protest_first_amendment",
+      "source_id": "snyder_v_phelps_2011",
+      "target_id": "funeral_protest_first_amendment",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2011-03-02",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Snyder v. Phelps established the doctrine that First Amendment protections extend to funeral protests."
+    },
+    {
+      "id": "stevens_establishes_categorical_approach",
+      "source_id": "united_states_v_stevens_2010",
+      "target_id": "categorical_approach_unprotected_speech",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2010-04-20",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "morrison_grounded_in_separation_of_powers",
+      "source_id": "morrison_v_olson_1988",
+      "target_id": "separation_of_powers",
+      "edge_type": "GROUNDED_IN",
+      "valid_from": "1988-06-29",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ]
+    },
+    {
+      "id": "washington_davis_intellectually_precedes_arlington_heights",
+      "source_id": "washington_v_davis_1976",
+      "target_id": "village_of_arlington_heights_v_metropolitan_housing_development_corp_1977",
+      "edge_type": "INTELLECTUALLY_PRECEDES",
+      "valid_from": "1977-06-28",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Arlington Heights built on Washington v. Davis by elaborating the multi-factor test for proving discriminatory purpose.",
+      "opinion_ref": {
+        "opinion_type": "majority",
+        "author": null
+      }
+    },
+    {
+      "id": "frontiero_intellectually_precedes_craig",
+      "source_id": "frontiero_v_richardson_1973",
+      "target_id": "craig_v_boren_1976",
+      "edge_type": "INTELLECTUALLY_PRECEDES",
+      "valid_from": "1976-12-20",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Craig built on Frontiero's fractured plurality to establish intermediate scrutiny as the majority standard for sex classifications.",
+      "opinion_ref": {
+        "opinion_type": "majority",
+        "author": null
+      }
     }
   ],
   "schema_issues_found": [
