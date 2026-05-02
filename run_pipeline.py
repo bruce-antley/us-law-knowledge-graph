@@ -534,14 +534,17 @@ def run_pipeline(cases_file, model=DEFAULT_MODEL):
                 _wrong_case = False
                 if _syllabus_path and Path(_syllabus_path).exists():
                     _syllabus_text = open(_syllabus_path).read().lower()
+                    # Strip all non-alpha for comparison (handles J.E.B. -> jeb)
+                    _syllabus_alpha = re.sub(r'[^a-z]', '', _syllabus_text)
                     _parts = re.split(r'\s+v\.?\s+', _case_name, maxsplit=1, flags=re.IGNORECASE)
                     if len(_parts) == 2:
                         _p1 = re.sub(r'[^a-z]', '', _parts[0].split(',')[0].strip().lower().split()[0] if _parts[0].strip() else '')
                         _p2 = re.sub(r'[^a-z]', '', _parts[1].split(',')[0].strip().lower().split()[0] if _parts[1].strip() else '')
                         _common = {'united', 'state', 'states', 'people', 'county', 'city', 'board'}
-                        if _p1 not in _common and _p1 not in _syllabus_text:
+                        # Check both original text and alpha-only (for J.E.B. -> jeb matching)
+                        if _p1 not in _common and _p1 not in _syllabus_text and _p1 not in _syllabus_alpha:
                             _wrong_case = True
-                        if _p2 not in _common and _p2 not in _syllabus_text:
+                        if _p2 not in _common and _p2 not in _syllabus_text and _p2 not in _syllabus_alpha:
                             _wrong_case = True
                 if _wrong_case:
                     result['overall_status'] = 'failed'
