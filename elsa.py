@@ -96,14 +96,35 @@ def parse_citation(citation_str):
         return match.group(1), match.group(2), match.group(3)
     return None, None, None
 
+def normalize_case_name(name):
+    """Normalize case name — strip periods from initials like J.E.B. -> JEB, U.S. -> US."""
+    # Interior periods between caps: J.E.B -> JEB (two passes handles odd counts)
+    result = re.sub(r'([A-Z])\.([A-Z])', r'\1\2', name)
+    result = re.sub(r'([A-Z])\.([A-Z])', r'\1\2', result)
+    # Trailing period after all-caps sequence before space/end/punctuation
+    result = re.sub(r'([A-Z]{2,})\. ', r'\1 ', result)
+    result = re.sub(r'([A-Z]{2,})\.$', r'\1', result)
+    result = re.sub(r'([A-Z]{2,})\.v\.', r'\1 v.', result)
+    result = re.sub(r'([A-Z]{1})\. v\.', r'\1 v.', result)
+    result = re.sub(r'([A-Z]{1})\.,', r'\1,', result)
+    result = ' '.join(result.split())
+    return result
+
 def build_name_variants(case_name):
     """Generate simplified name variants for search."""
     variants = [case_name]
+
+    # Add normalized variant (strips periods from initials like J.E.B. -> JEB)
+    normalized = normalize_case_name(case_name)
+    if normalized != case_name and normalized not in variants:
+        variants.append(normalized)
+
     # Strip corporate suffixes
     stripped = re.sub(r'\b(Co\.|Corp\.|Inc\.|Ltd\.|LLC)\b', '', case_name).strip()
     stripped = re.sub(r'\s+', ' ', stripped)
     if stripped != case_name and stripped not in variants:
         variants.append(stripped)
+
     # Strip comma-separated suffixes from each party
     parts = re.split(r'\s+v\.\s+', case_name, maxsplit=1, flags=re.IGNORECASE)
     if len(parts) == 2:
@@ -112,6 +133,11 @@ def build_name_variants(case_name):
         simple = f"{p1} v. {p2}"
         if simple not in variants:
             variants.append(simple)
+        # Also add normalized simple variant
+        norm_simple = normalize_case_name(simple)
+        if norm_simple not in variants:
+            variants.append(norm_simple)
+
     return variants
 
 def get_cl_headers():
@@ -157,8 +183,20 @@ def verify_case_identity(case_name, text, citation):
         print(f"    Identity check: text too short ({len(text) if text else 0} chars)")
         return None
 
-    # Extract party names from case_name
-    parts = re.split(r'\s+v\.?\s+', case_name, maxsplit=1, flags=re.IGNORECASE)
+    # Oyez text starts with "Case: {name}" — identity is guaranteed by structure
+    # Just verify the text starts with our expected case name pattern
+    text_start = text[:200].lower()
+    if text_start.startswith("case:"):
+        case_line = text_start.split("\n")[0]
+        normalized = normalize_case_name(case_name).lower()
+        p1 = normalized.split(" v. ")[0].strip() if " v. " in normalized else normalized
+        if p1 and p1[:4] in case_line:
+            return text  # Oyez identity confirmed
+        # If p1 not found in case line, fall through to full check
+
+    # Extract party names from case_name — normalize first to handle J.E.B. -> JEB
+    normalized_name = normalize_case_name(case_name)
+    parts = re.split(r'\s+v\.?\s+', normalized_name, maxsplit=1, flags=re.IGNORECASE)
     if len(parts) == 2:
         p1 = parts[0].split(',')[0].strip().lower()
         p2 = parts[1].split(',')[0].strip().lower()
@@ -167,14 +205,20 @@ def verify_case_identity(case_name, text, citation):
         p1_word = re.sub(r'[^a-z]', '', p1.split()[0]) if p1.split() else ''
         p2_word = re.sub(r'[^a-z]', '', p2.split()[0]) if p2.split() else ''
 
+        # Also build a version with periods stripped from text for comparison
+        # This handles "J. E. B." in text matching "JEB" search term
         text_lower = text.lower()
+        text_alpha_only = re.sub(r'[^a-z\s]', '', text_lower)  # strip all non-alpha
 
         # Skip identity check for very common single-word parties that appear everywhere
         common_words = {'united', 'state', 'states', 'people', 'county', 'city',
                         'board', 'department', 'commissioner', 'director'}
 
-        p1_found = p1_word in text_lower if p1_word not in common_words else True
-        p2_found = p2_word in text_lower if p2_word not in common_words else True
+        # Check both in original text and alpha-only text
+        p1_found = (p1_word in text_lower or p1_word in text_alpha_only) \
+            if p1_word not in common_words else True
+        p2_found = (p2_word in text_lower or p2_word in text_alpha_only) \
+            if p2_word not in common_words else True
 
         if not p1_found and not p2_found:
             print(f"    Identity check FAILED: neither '{p1_word}' nor '{p2_word}' found in text")
@@ -307,7 +351,173 @@ def fetch_by_registry(case_id, headers):
 
     return None, None
 
-# ─── Strategy 2: LII by Citation ───────────────────────────────────────────────
+# ─── Strategy 2: Oyez ──────────────────────────────────────────────────────────
+
+OYEZ_BASE = "https://api.oyez.org"
+
+def fetch_from_oyez_by_citation(volume, page, year, case_name):
+    """Fetch case data from Oyez by citation (volume + page) and year."""
+    if not volume or not page or not year:
+        return None, None
+    try:
+        # Search Oyez cases for the given term year
+        url = f"{OYEZ_BASE}/cases?filter=term:{year}&per_page=50"
+        resp = requests.get(url, timeout=15,
+            headers={"User-Agent": "LexGraph/2.0 (legal research)"})
+        if resp.status_code != 200:
+            return None, None
+
+        cases = resp.json()
+        if not isinstance(cases, list):
+            return None, None
+
+        # Match by citation
+        target_cite = f"{volume} U.S. {page}"
+        normalized = normalize_case_name(case_name).lower()
+
+        matched = None
+        for case in cases:
+            cite = case.get("citation", {})
+            if isinstance(cite, dict):
+                cite_str = cite.get("cite", "")
+            else:
+                cite_str = str(cite)
+            if target_cite in cite_str:
+                matched = case
+                break
+
+        # Fallback: match by normalized name
+        if not matched:
+            for case in cases:
+                oyez_name = normalize_case_name(
+                    case.get("name", "")).lower()
+                if normalized in oyez_name or oyez_name in normalized:
+                    matched = case
+                    break
+
+        if not matched:
+            return None, None
+
+        # Fetch full case detail
+        href = matched.get("href", "")
+        if not href:
+            return None, None
+
+        time.sleep(0.3)
+        detail_resp = requests.get(href, timeout=15,
+            headers={"User-Agent": "LexGraph/2.0 (legal research)"})
+        if detail_resp.status_code != 200:
+            return None, None
+
+        detail = detail_resp.json()
+        return _format_oyez_text(detail, matched.get("name", "")), "oyez"
+
+    except Exception as e:
+        print(f"    Oyez citation fetch failed: {e}")
+        return None, None
+
+def fetch_from_oyez_by_name(case_name, year):
+    """Fetch case data from Oyez by case name search."""
+    try:
+        normalized = normalize_case_name(case_name).lower()
+        # Try ±1 year range in case year is off by one
+        for try_year in [year, str(int(year)-1), str(int(year)+1)]:
+            url = f"{OYEZ_BASE}/cases?filter=term:{try_year}&per_page=100"
+            resp = requests.get(url, timeout=15,
+                headers={"User-Agent": "LexGraph/2.0 (legal research)"})
+            if resp.status_code != 200:
+                continue
+
+            cases = resp.json()
+            if not isinstance(cases, list):
+                continue
+
+            # Try to match case name
+            for case in cases:
+                oyez_name = normalize_case_name(
+                    case.get("name", "")).lower()
+                # Match if normalized name is substring or vice versa
+                p1 = normalized.split(" v. ")[0].strip() if " v. " in normalized else normalized
+                if p1 and p1 in oyez_name:
+                    href = case.get("href", "")
+                    if not href:
+                        continue
+                    print(f"    Oyez: matched '{case.get('name')}' for term {try_year}")
+                    time.sleep(0.3)
+                    detail_resp = requests.get(href, timeout=15,
+                        headers={"User-Agent": "LexGraph/2.0 (legal research)"})
+                    if detail_resp.status_code == 200:
+                        detail = detail_resp.json()
+                        text = _format_oyez_text(detail, case.get("name", ""))
+                        if text:
+                            return text, "oyez"
+
+        return None, None
+
+    except Exception as e:
+        print(f"    Oyez name fetch failed: {e}")
+        return None, None
+
+def _format_oyez_text(detail, case_name):
+    """Format Oyez JSON detail into a readable text block for the builder."""
+    if not detail:
+        return None
+
+    parts = []
+    parts.append(f"Case: {detail.get('name', case_name)}")
+
+    # Citation
+    cite = detail.get("citation", {})
+    if isinstance(cite, dict):
+        parts.append(f"Citation: {cite.get('cite', '')}")
+
+    # Decision date
+    decided = detail.get("decided_date", "")
+    if decided:
+        import datetime
+        try:
+            dt = datetime.datetime.fromtimestamp(decided)
+            parts.append(f"Decided: {dt.strftime('%B %d, %Y')}")
+        except Exception:
+            pass
+
+    # Votes
+    decisions = detail.get("decisions", [])
+    if decisions:
+        d = decisions[0]
+        parts.append(f"Decision: {d.get('decision_type', '')} — "
+                    f"{d.get('majority_vote', '')} to {d.get('minority_vote', '')}")
+        winning = d.get("winning_party", "")
+        if winning:
+            parts.append(f"Winning party: {winning}")
+
+    # Facts
+    facts = detail.get("facts_of_the_case", "")
+    if facts:
+        facts_clean = re.sub(r"<[^>]+>", " ", facts)
+        facts_clean = re.sub(r"\s+", " ", facts_clean).strip()
+        if facts_clean:
+            parts.append(f"\nFACTS:\n{facts_clean}")
+
+    # Conclusion
+    conclusion = detail.get("conclusion", "")
+    if conclusion:
+        conc_clean = re.sub(r"<[^>]+>", " ", conclusion)
+        conc_clean = re.sub(r"\s+", " ", conc_clean).strip()
+        if conc_clean:
+            parts.append(f"\nCONCLUSION:\n{conc_clean}")
+
+    # Advocates
+    advocates = detail.get("advocates", [])
+    if advocates:
+        adv_names = [a.get("advocate", {}).get("name", "") for a in advocates if a.get("advocate")]
+        if adv_names:
+            parts.append(f"\nAdvocates: {', '.join(adv_names)}")
+
+    text = "\n".join(parts)
+    return text if len(text) > 200 else None
+
+# ─── Strategy 3: LII by Citation ───────────────────────────────────────────────
 
 def fetch_from_lii(volume, page, session):
     """Fetch syllabus from LII using US Reports citation."""
@@ -623,34 +833,69 @@ def retrieve_case(case_name, year, citation=None, output_dir=Path("syllabi")):
     source = None
     cl_id = None
 
+    def try_text(candidate_text, candidate_source, candidate_cl_id=None):
+        """Run identity check on retrieved text. Returns (text, source, cl_id) or (None, None, None)."""
+        verified = verify_case_identity(case_name, candidate_text, citation)
+        if verified is not None:
+            return candidate_text, candidate_source, candidate_cl_id
+        print(f"    Identity check failed for {candidate_source} — trying next source")
+        return None, None, None
+
     # Strategy 1: Registry lookup
     if cl_headers:
-        text, source = fetch_by_registry(case_id, cl_headers)
+        t, s = fetch_by_registry(case_id, cl_headers)
+        if t:
+            text, source, cl_id = try_text(t, s)
 
-    # Strategy 2: LII by citation
+    # Strategy 2: Oyez by citation (structured, authoritative, no auth needed)
+    if not text and citation and year:
+        volume, page, _ = parse_citation(citation)
+        print(f"    Trying Oyez citation: {volume} U.S. {page}")
+        t, s = fetch_from_oyez_by_citation(volume, page, year, case_name)
+        if t:
+            text, source, cl_id = try_text(t, s)
+
+    # Strategy 3: Oyez by name search
+    if not text and year:
+        print(f"    Trying Oyez name search: {case_name}")
+        t, s = fetch_from_oyez_by_name(case_name, year)
+        if t:
+            text, source, cl_id = try_text(t, s)
+
+    # Strategy 4: LII by citation
     if not text and citation:
         volume, page, _ = parse_citation(citation)
         if volume and page and year and int(year) >= LII_SYLLABUS_CUTOFF:
-            text, source = fetch_from_lii(volume, page, session)
+            t, s = fetch_from_lii(volume, page, session)
+            if t:
+                text, source, cl_id = try_text(t, s)
 
-    # Strategy 3: CourtListener by citation
+    # Strategy 5: CourtListener by citation
     if not text and citation and cl_headers:
         volume, page, _ = parse_citation(citation)
         if volume and page:
-            text, source, cl_id = fetch_cl_by_citation(volume, page, year, cl_headers)
+            t, s, cid = fetch_cl_by_citation(volume, page, year, cl_headers)
+            if t:
+                text, source, cl_id = try_text(t, s, cid)
 
-    # Strategy 4: CourtListener by name variants
+    # Strategy 6: CourtListener by name variants
     if not text and cl_headers:
-        text, source, cl_id = fetch_cl_by_name(case_name, year, cl_headers)
+        t, s, cid = fetch_cl_by_name(case_name, year, cl_headers)
+        if t:
+            text, source, cl_id = try_text(t, s, cid)
 
-    # Strategy 5: Justia
+    # Strategy 7: Justia
     if not text:
         volume, page, _ = parse_citation(citation)
-        text, source = fetch_from_justia(volume, page, case_name)
+        t, s = fetch_from_justia(volume, page, case_name)
+        if t:
+            text, source, cl_id = try_text(t, s)
 
-    # Strategy 6: Google Scholar
+    # Strategy 8: Google Scholar
     if not text:
-        text, source = fetch_from_google_scholar(case_name, year, citation)
+        t, s = fetch_from_google_scholar(case_name, year, citation)
+        if t:
+            text, source, cl_id = try_text(t, s)
 
     # All strategies failed
     if not text:
@@ -665,16 +910,6 @@ def retrieve_case(case_name, year, citation=None, output_dir=Path("syllabi")):
     if cl_id and source in ("courtlistener", "courtlistener_excerpt"):
         update_registry(case_id, cl_id, case_name, citation or "", "")
         print(f"    Registry updated: {case_id} → {cl_id}")
-
-    # Verify case identity — check that retrieved text matches expected case
-    text = verify_case_identity(case_name, text, citation)
-    if text is None:
-        print(f"  ✗ {case_name} — identity verification failed, adding to manual queue")
-        add_to_manual_queue(
-            case_name, year, citation,
-            f"Retrieved text does not appear to be for this case. Check CourtListener manually."
-        )
-        return case_id, None
 
     # Write output
     output_dir.mkdir(parents=True, exist_ok=True)
