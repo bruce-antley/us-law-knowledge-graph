@@ -17,8 +17,8 @@
     "created": "2026-03-15",
     "status": "draft",
     "schema_version": "0.2",
-    "node_count": 511,
-    "edge_count": 748,
+    "node_count": 513,
+    "edge_count": 752,
     "schema_issue_count": 41,
     "fixes_applied": [
       "FIX 1: ConstitutionalProvision labels changed to citation form (amendment_1, amendment_14_section_1) to disambiguate from Area nodes with same common-name labels",
@@ -2854,6 +2854,21 @@
         "valid_from": "2010-04-20",
         "valid_until": null,
         "notes": "Established in United States v. Stevens. The categorical approach requires longstanding historical tradition, not judicial cost-benefit balancing, to justify excluding speech from First Amendment protection."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "eyewitness_identification_due_process",
+        "label": "Eyewitness Identification and Due Process",
+        "description": "The constitutional requirement that eyewitness identification procedures must not be so suggestive as to create a substantial likelihood of misidentification, evaluated under the totality of the circumstances.",
+        "area_id": "criminal_procedure",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1972-12-06",
+        "valid_until": null,
+        "notes": "Established in Neil v. Biggers. Refined into the five-factor test in Manson v. Brathwaite (1977)."
       }
     ],
     "areas": [
@@ -9829,18 +9844,18 @@
         "binding_scope": "federal_all",
         "decided_date": "1972-12-06",
         "opinion_form": "signed_majority",
-        "procedural_disposition": "remanded",
-        "holding": "The totality of the circumstances surrounding an eyewitness identification procedure must be examined to determine whether the identification is sufficiently reliable to be admitted, even if the identification procedure employed was unnecessarily suggestive.",
+        "procedural_disposition": "reversed",
+        "holding": "An eyewitness identification obtained through a suggestive show-up procedure does not violate due process when, under the totality of the circumstances, there is no substantial likelihood of misidentification.",
         "holding_type": "affirmative",
         "majority_author": "Powell",
         "per_curiam": false,
-        "vote": "7-2",
+        "vote": "5-3",
         "status": "good_law",
         "precedential_weight": "binding",
         "valid_from": "1972-12-06",
         "valid_until": null,
         "opinions": [],
-        "notes": "Pre-Manson case establishing the totality of circumstances framework for eyewitness identification. Manson v. Brathwaite later refined this test.",
+        "notes": "Establishes the totality of circumstances test for eyewitness identification. Justice Marshall did not participate. Manson v. Brathwaite (1977) later refined the Neil factors into the explicit five-factor reliability test.",
         "courtlistener_id": "8987110"
       },
       {
@@ -13769,6 +13784,43 @@
         "valid_from": "2000-06-05",
         "valid_until": null,
         "notes": "Established in Troxel v. Granville as a plurality opinion. The test reflects the Court's conclusion that Washington's statute violated the Due Process Clause because it failed to accord deference to the fit parent's decision and was overbroad in permitting any person to petition for visitation at any time. The Court did not decide whether harm is a required element in all nonparental visitation statutes."
+      },
+      {
+        "@type": "DoctrinalTest",
+        "id": "neil_biggers_eyewitness_test",
+        "label": "Eyewitness Identification Totality of Circumstances Test",
+        "description": "A test for evaluating whether an eyewitness identification procedure violates due process: (1) whether the procedure was suggestive, and (2) if so, whether under the totality of circumstances there is a substantial likelihood of misidentification.",
+        "area_id": "criminal_procedure",
+        "source_case_id": "neil_v_biggers_1972",
+        "scrutiny_level": "balancing",
+        "burden": "government",
+        "test_form": "threshold_then_conjunctive",
+        "prongs": [
+          {
+            "number": 1,
+            "label": "Suggestiveness",
+            "description": "Whether the identification procedure was unnecessarily suggestive.",
+            "burden_note": "Challenger shows procedure was suggestive.",
+            "valid_from": "1972-12-06",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 2,
+            "label": "Totality of Circumstances",
+            "description": "Whether, under the totality of circumstances, there is a substantial likelihood of misidentification.",
+            "burden_note": "Government shows no substantial likelihood of misidentification.",
+            "valid_from": "1972-12-06",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          }
+        ],
+        "status": "active",
+        "valid_from": "1972-12-06",
+        "valid_until": null,
+        "notes": "Later refined in Manson v. Brathwaite into five specific reliability factors."
       }
     ]
   },
@@ -23591,6 +23643,64 @@
         "opinion_type": "majority",
         "author": null
       }
+    },
+    {
+      "id": "neil_biggers_establishes_eyewitness_doctrine",
+      "source_id": "neil_v_biggers_1972",
+      "target_id": "eyewitness_identification_due_process",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1972-12-06",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "neil_biggers_establishes_eyewitness_test",
+      "source_id": "neil_v_biggers_1972",
+      "target_id": "neil_biggers_eyewitness_test",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1972-12-06",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "neil_biggers_intellectually_precedes_manson",
+      "source_id": "neil_v_biggers_1972",
+      "target_id": "manson_v_brathwaite_1977",
+      "edge_type": "INTELLECTUALLY_PRECEDES",
+      "opinion_ref": {
+        "opinion_type": "majority",
+        "author": "Powell"
+      },
+      "valid_from": "1977-06-16",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Manson v. Brathwaite refined the Neil totality test into the explicit five-factor reliability framework."
+    },
+    {
+      "id": "neil_biggers_test_precedes_manson_test",
+      "source_id": "neil_biggers_eyewitness_test",
+      "target_id": "manson_eyewitness_reliability_test",
+      "edge_type": "INTELLECTUALLY_PRECEDES",
+      "opinion_ref": {
+        "opinion_type": "majority",
+        "author": "Blackmun"
+      },
+      "valid_from": "1977-06-16",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Manson formalized Neil's totality approach into five specific reliability factors."
     }
   ],
   "schema_issues_found": [
