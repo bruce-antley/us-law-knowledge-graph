@@ -159,7 +159,10 @@ def clean_text(text):
 # ─── Text Extraction ───────────────────────────────────────────────────────────
 
 def extract_syllabus_section(text):
-    """Extract the syllabus portion from opinion text."""
+    """Extract the syllabus portion from opinion text.
+    Falls back to opening opinion text if no syllabus found.
+    Extends to 5000 chars to capture more doctrinal content for thin sources.
+    """
     patterns = [
         r'(?:SYLLABUS|Syllabus)\s*\n+(.*?)(?=\n+(?:OPINION|Opinion|CHIEF JUSTICE|JUSTICE|Justice|MR\. JUSTICE|PER CURIAM))',
         r'(?:^|\n)Syllabus\s*\n+(.*?)(?=\n+(?:Opinion|JUSTICE|Justice))',
@@ -167,9 +170,29 @@ def extract_syllabus_section(text):
     for pattern in patterns:
         match = re.search(pattern, text, re.DOTALL | re.IGNORECASE)
         if match:
-            return clean_text(match.group(1))
-    # Return first 3000 chars if no syllabus found
-    return clean_text(text[:3000])
+            extracted = clean_text(match.group(1))
+            if len(extracted) > 300:
+                return extracted
+
+    # No syllabus section found — extract opening of majority opinion
+    # Try to find where the majority opinion starts and take more content
+    opinion_start_patterns = [
+        r'(?:CHIEF JUSTICE|JUSTICE|Justice|MR\. JUSTICE)\s+\w+\s+delivered the opinion',
+        r'(?:CHIEF JUSTICE|JUSTICE|Justice)\s+\w+\s+announced the judgment',
+        r'PER CURIAM',
+        r'Opinion of the Court',
+    ]
+    for pattern in opinion_start_patterns:
+        match = re.search(pattern, text, re.IGNORECASE)
+        if match:
+            # Take from opinion start up to 5000 chars
+            opinion_text = text[match.start():match.start() + 5000]
+            extracted = clean_text(opinion_text)
+            if len(extracted) > 300:
+                return extracted
+
+    # Last resort: first 5000 chars
+    return clean_text(text[:5000])
 
 # ─── Strategy 1: Case Registry ─────────────────────────────────────────────────
 
@@ -179,8 +202,8 @@ def verify_case_identity(case_name, text, citation):
     Returns text if valid, None if identity check fails.
     Checks for party names and basic content length.
     """
-    if not text or len(text) < 200:
-        print(f"    Identity check: text too short ({len(text) if text else 0} chars)")
+    if not text or len(text) < 400:
+        print(f"    Identity check: text too short ({len(text) if text else 0} chars) — likely docket entry or order")
         return None
 
     # Oyez text starts with "Case: {name}" — identity is guaranteed by structure
@@ -912,7 +935,10 @@ def retrieve_case(case_name, year, citation=None, output_dir=Path("syllabi")):
         print(f"    Registry updated: {case_id} → {cl_id}")
 
     # Write output
-    output_dir.mkdir(parents=True, exist_ok=True)
+    if not text or len(text) < 400:
+        # If we get here with thin content it means all strategies returned thin results
+        # Save what we have with a warning rather than failing entirely
+        print(f"    Warning: thin content ({len(text) if text else 0} chars) — saving anyway")
     header = f"""Case: {case_name}
 Year: {year or 'unknown'}
 Citation: {citation or 'unknown'}

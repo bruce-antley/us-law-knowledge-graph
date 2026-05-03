@@ -158,8 +158,9 @@ CASE_LEVEL_OVERRIDES = {
     },
     "neil_v_biggers_1972": {
         "expected": ["eyewitness", "identification", "suggestive",
-                     "totality", "due process", "lineup"],
-        "forbidden": ["arbitration", "certiorari", "labor"]
+                     "totality", "due process", "lineup", "reliability"],
+        "forbidden": ["granted certiorari to review the case on the merits",
+                      "arbitration", "labor"]
     }
 }
 

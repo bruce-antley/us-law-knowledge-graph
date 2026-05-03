@@ -246,9 +246,11 @@
     "citation": "373 U.S. 83"
   },
   "manson_v_brathwaite_1977": {
-    "courtlistener_id": "9004132",
+    "courtlistener_id": null,
     "short_name": "Manson v. Brathwaite",
-    "citation": "432 U.S. 98"
+    "citation": "432 U.S. 98 (1977)",
+    "status": "manually_added",
+    "note": "Already in master graph. CourtListener returns only docket entry for this case."
   },
   "neil_v_biggers_1972": {
     "courtlistener_id": "8979169",
@@ -264,5 +266,90 @@
     "courtlistener_id": "108471",
     "short_name": "Giglio v. United States",
     "citation": "405 U.S. 150"
+  },
+  "chavez_v_martinez_2003": {
+    "courtlistener_id": "9434450",
+    "short_name": "Chavez v. Martinez",
+    "citation": "538 U.S. 760"
+  },
+  "gall_v_united_states_2007": {
+    "courtlistener_id": "9435287",
+    "short_name": "Gall v. United States",
+    "citation": "552 U.S. 38"
+  },
+  "board_of_regents_v_roth_1972": {
+    "courtlistener_id": "9425009",
+    "short_name": "Board of Regents v. Roth",
+    "citation": "408 U.S. 564"
+  },
+  "cleveland_board_of_education_v_loudermill_1985": {
+    "courtlistener_id": "9429945",
+    "short_name": "Cleveland Board of Education v. Loudermill",
+    "citation": "470 U.S. 532"
+  },
+  "mcculloch_v_maryland_1819": {
+    "courtlistener_id": "1320585",
+    "short_name": "McCulloch v. Maryland",
+    "citation": "17 U.S. 316"
+  },
+  "gibbons_v_ogden_1824": {
+    "courtlistener_id": "85412",
+    "short_name": "Gibbons v. Ogden",
+    "citation": "22 U.S. 1"
+  },
+  "heart_of_atlanta_motel_v_united_states_1964": {
+    "courtlistener_id": "106951",
+    "short_name": "Heart of Atlanta Motel v. United States",
+    "citation": "379 U.S. 241"
+  },
+  "united_states_v_morrison_2000": {
+    "courtlistener_id": "9433947",
+    "short_name": "United States v. Morrison",
+    "citation": "529 U.S. 598"
+  },
+  "new_york_v_united_states_1992": {
+    "courtlistener_id": "9432622",
+    "short_name": "New York v. United States",
+    "citation": "505 U.S. 144"
+  },
+  "herring_v_united_states_2009": {
+    "courtlistener_id": "9435413",
+    "short_name": "Herring v. United States",
+    "citation": "555 U.S. 135"
+  },
+  "hudson_v_michigan_2006": {
+    "courtlistener_id": "9434934",
+    "short_name": "Hudson v. Michigan",
+    "citation": "547 U.S. 586"
+  },
+  "utah_v_strieff_2016": {
+    "courtlistener_id": "3214776",
+    "short_name": "Utah v. Strieff",
+    "citation": "579 U.S. 232"
+  },
+  "kansas_v_glover_2020": {
+    "courtlistener_id": "4522733",
+    "short_name": "Kansas v. Glover",
+    "citation": "589 U.S. 376"
+  },
+  "national_federation_of_independent_business_v_sebelius_2012": {
+    "courtlistener_id": "626745",
+    "short_name": "NFIB v. Sebelius",
+    "citation": "567 U.S. 519 (2012)"
+  },
+  "lucas_v_south_carolina_coastal_council_1992": {
+    "courtlistener_id": "9432685",
+    "short_name": "Lucas v. South Carolina Coastal Council",
+    "citation": "505 U.S. 1003"
+  },
+  "loretto_v_teleprompter_manhattan_catv_corp_1982": {
+    "courtlistener_id": "9428911",
+    "short_name": "Loretto v. Teleprompter Manhattan CATV Corp.",
+    "citation": "458 U.S. 419"
+  },
+  "village_of_arlington_heights_v_metropolitan_housing_development_corp_1977": {
+    "courtlistener_id": "9426633",
+    "short_name": "Village of Arlington Heights v. Metropolitan Housing Development Corp.",
+    "citation": "429 U.S. 252"
   }
 }
