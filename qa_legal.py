@@ -35,6 +35,7 @@ import argparse
 from pathlib import Path
 from dotenv import load_dotenv
 from openai import OpenAI
+from qa_legal_precheck import precheck_draft, run_precheck_batch
 
 # ─── Configuration ─────────────────────────────────────────────────────────────
 
@@ -239,12 +240,47 @@ def reconcile_verdicts(verdict_a, verdict_b):
 
 # ─── Main Review Function ──────────────────────────────────────────────────────
 
-def review_case(client, case_node, draft_data, combined_data=None):
+def review_case(client, case_node, draft_data, combined_data=None, draft_path=None):
     """Run both judges on a single case node."""
     case_id = case_node.get('id')
     print(f"  Reviewing: {case_node.get('short_name', case_id)}")
 
     context = build_review_context(case_node, draft_data, combined_data)
+
+    # Pre-check: identity and domain validation before calling judges
+    precheck = precheck_draft(draft_path) if draft_path else {"status": "pass", "details": []}
+    if precheck["status"] == "fail":
+        print(f"    ✗ PRE-CHECK FAIL — skipping judges: {precheck['reason']}")
+        for d in precheck["details"]:
+            print(f"      {d}")
+        return {
+            "case_id": case_id,
+            "short_name": case_node.get("short_name"),
+            "outcome": "fail",
+            "outcome_note": f"Identity pre-check failed: {precheck['reason']}",
+            "verdict_a": {"verdict": "fail", "confidence": 1.0, "judge": "PreCheck",
+                         "findings": [{"severity": "high", "field": "identity",
+                                       "issue": precheck["reason"],
+                                       "suggestion": "Delete syllabus and re-run pipeline"}],
+                         "overall_assessment": precheck["reason"]},
+            "verdict_b": {"verdict": "fail", "confidence": 1.0, "judge": "PreCheck",
+                         "findings": [], "overall_assessment": "Pre-check failed"},
+            "all_findings": [{"severity": "high", "field": "identity",
+                              "issue": precheck["reason"], "judge": "PreCheck",
+                              "suggestion": "Delete syllabus and re-run pipeline"}],
+            "finding_counts": {"high": 1, "medium": 0, "low": 0},
+            "precheck_status": "fail"
+        }
+
+    if precheck["status"] == "stub":
+        print(f"    ⚠ PRE-CHECK STUB — thin extraction, adjusting judge prompt")
+        context += (
+            "\n\n## THIN EXTRACTION ALERT\n"
+            "This case has NO connected doctrine nodes (1 node, 0 edges). "
+            "In addition to normal legal review, please identify: "
+            "what doctrine nodes SHOULD exist based on this holding? "
+            "List them as 'missing' findings with field='missing'."
+        )
 
     # Judge A
     print(f"    Judge A ({JUDGE_A['name']})...")
@@ -320,7 +356,7 @@ def run_qa_legal(draft_path, combined_path=None, case_filter=None):
 
     results = []
     for case_node in cases:
-        result = review_case(client, case_node, draft_data, combined_data)
+        result = review_case(client, case_node, draft_data, combined_data, draft_path=args.draft)
         results.append(result)
         print()
 

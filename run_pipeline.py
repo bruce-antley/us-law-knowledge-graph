@@ -31,6 +31,8 @@ import re
 import json
 import time
 import subprocess
+sys.path.insert(0, str(PIPELINE_DIR))
+from qa_legal_precheck import precheck_draft
 import argparse
 from pathlib import Path
 from datetime import datetime
@@ -390,7 +392,9 @@ def generate_report(run_results, cases, run_start, run_end):
             if r.get('elsa_status') in ('failed', 'error'):
                 lines.append(f"- **Elsa failed:** {r.get('elsa_error', 'unknown error')}")
 
-            if r.get('wrong_case'):
+            if r.get('wrong_case_precheck'):
+                lines.append(f"- **WRONG CASE (pre-check):** {r.get('precheck_reason','Identity check failed')} — delete syllabus and re-run.")
+            elif r.get('wrong_case'):
                 lines.append(f"- **WRONG CASE:** Party names not found in holding — source text is for a different case. Delete syllabus and re-run.")
             elif r.get('stub_detected'):
                 lines.append(f"- **STUB DETECTED:** Only {r.get('draft_nodes', 1)} node(s) and 0 edges extracted — source text is likely wrong or too thin.")
@@ -504,6 +508,27 @@ def run_pipeline(cases_file, model=DEFAULT_MODEL):
                 run_results.append(result)
                 time.sleep(REQUEST_DELAY)
                 continue
+
+        # Step 2b: Pre-check identity and domain (fast, no LLM)
+        if result.get('draft_path') and Path(result['draft_path']).exists():
+            _precheck = precheck_draft(result['draft_path'])
+            result['precheck_status'] = _precheck['status']
+            result['precheck_reason'] = _precheck['reason']
+            if _precheck['status'] == 'fail':
+                result['overall_status'] = 'failed'
+                result['wrong_case_precheck'] = True
+                print(f"  ✗ Pre-check FAIL: {_precheck['reason']}")
+                for _d in _precheck.get('details', []):
+                    print(f"    {_d}")
+                import shutil as _sh
+                _sh.copy(result['draft_path'],
+                        NEEDS_ATTENTION_DIR / Path(result['draft_path']).name)
+                run_results.append(result)
+                time.sleep(REQUEST_DELAY)
+                continue
+            elif _precheck['status'] == 'stub':
+                result['thin_extraction'] = True
+                print(f"  ⚠ Pre-check STUB: thin extraction — proceeding")
 
         # Step 3: Validate
         print("  Step 3: Validate — checking schema...")
