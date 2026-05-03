@@ -29,10 +29,9 @@ Requires: ANTHROPIC_API_KEY and COURTLISTENER_API_KEY in .env
 import os
 import re
 import json
+import sys
 import time
 import subprocess
-sys.path.insert(0, str(PIPELINE_DIR))
-from qa_legal_precheck import precheck_draft
 import argparse
 from pathlib import Path
 from datetime import datetime
@@ -47,6 +46,8 @@ TEMPERATURE = 0.0
 REQUEST_DELAY = 2.0  # seconds between Graph Builder calls
 
 PIPELINE_DIR = Path(__file__).parent
+sys.path.insert(0, str(PIPELINE_DIR))
+from qa_legal_precheck import precheck_draft
 SYLLABUS_DIR = PIPELINE_DIR / "syllabi"
 DRAFTS_DIR = PIPELINE_DIR / "drafts"
 REVIEW_QUEUE_DIR = PIPELINE_DIR / "review_queue"
