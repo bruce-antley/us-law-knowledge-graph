@@ -48,6 +48,7 @@ REQUEST_DELAY = 2.0  # seconds between Graph Builder calls
 PIPELINE_DIR = Path(__file__).parent
 sys.path.insert(0, str(PIPELINE_DIR))
 from qa_legal_precheck import precheck_draft
+from qa_doctrinal import step_qa_doctrinal
 SYLLABUS_DIR = PIPELINE_DIR / "syllabi"
 DRAFTS_DIR = PIPELINE_DIR / "drafts"
 REVIEW_QUEUE_DIR = PIPELINE_DIR / "review_queue"
@@ -377,6 +378,10 @@ def generate_report(run_results, cases, run_start, run_end):
                 lines.append(f"- **QA Legal:** {r['legal_review']} mandatory review (judges disagree)")
             elif r.get('legal_warn', 0) > 0:
                 lines.append(f"- **QA Legal:** {r['legal_warn']} warnings")
+            if r.get('qa_doctrinal_high', 0) > 0:
+                lines.append(f"- **QA Doctrinal:** {r['qa_doctrinal_high']} high / {r.get('qa_doctrinal_medium',0)} medium — fix before merging")
+            elif r.get('qa_doctrinal_medium', 0) > 0:
+                lines.append(f"- **QA Doctrinal:** {r.get('qa_doctrinal_medium',0)} medium findings — review recommended")
             lines.append("")
     else:
         lines.append("_No cases passed QA._")
@@ -611,6 +616,19 @@ def run_pipeline(cases_file, model=DEFAULT_MODEL):
             print(f"  ⟳ Legal: {result['legal_review']} mandatory review, {result['legal_warn']} warn")
         else:
             print(f"  ✓ Legal: pass, {result['legal_warn']} warn")
+
+        # Step 7: QA Doctrinal
+        print("  Step 7: QA Doctrinal — completeness and structural review...")
+        step_qa_doctrinal(result, combined_path=str(MASTER_GRAPH))
+        d_high = result.get('qa_doctrinal_high', 0)
+        d_med = result.get('qa_doctrinal_medium', 0)
+        d_low = result.get('qa_doctrinal_low', 0)
+        if d_high > 0:
+            print(f"  ✗ Doctrinal: {d_high} high / {d_med} medium / {d_low} low")
+        elif d_med > 0:
+            print(f"  ⚠ Doctrinal: {d_med} medium / {d_low} low")
+        else:
+            print(f"  ✓ Doctrinal: clean ({d_low} low)")
 
         if qa_ok:
             result['overall_status'] = 'passed'
