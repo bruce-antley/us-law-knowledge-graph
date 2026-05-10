@@ -191,7 +191,12 @@ const canvas=document.getElementById('graph-canvas');
 const svg=d3.select('#graph-canvas').append('svg')
   .style('width','100%').style('height','100%')
   .attr('width',cw()).attr('height',ch());
-zoom=d3.zoom().scaleExtent([.04,8]).on('zoom',e=>d3.select('#zg').attr('transform',e.transform));
+zoom=d3.zoom().scaleExtent([.04,8]).on('zoom',e=>{
+  d3.select('#zg').attr('transform',e.transform);
+  const k=e.transform.k;
+  d3.selectAll('.case-label').attr('opacity',k>2?0.85:k>1.2?0.5:0);
+  d3.selectAll('.doctrine-label').attr('opacity',k>2?0.75:k>1.5?0.4:0);
+});
 svg.call(zoom);
 const zg=svg.append('g').attr('id','zg');
 window.addEventListener('resize',()=>svg.attr('width',cw()).attr('height',ch()));
@@ -285,13 +290,7 @@ nodeSel.filter(d=>d._type==='Doctrine'||d._type==='DoctrinalTest').append('text'
   .attr('class','doctrine-label')
   .text(d=>d.label||d.id);
 
-// Show labels based on zoom level
-svg.call(zoom.on('zoom',e=>{
-  d3.select('#zg').attr('transform',e.transform);
-  const k=e.transform.k;
-  d3.selectAll('.case-label').attr('opacity',k>2?0.85:k>1.2?0.5:0);
-  d3.selectAll('.doctrine-label').attr('opacity',k>3?0.75:0);
-}));
+// Label opacity handled in zoom handler above
 
 // Tick
 sim.on('tick',()=>{
