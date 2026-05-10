@@ -1,6 +1,6 @@
 {
   "meta": {
-    "version": "0.2",
+    "version": "0.5",
     "slices": [
       "conlaw > 1st_amendment > free_speech > commercial_speech",
       "conlaw > 1st_amendment > free_speech > core_political_speech",
@@ -16,7 +16,7 @@
     "description": "Combined MVP graph \u2014 two First Amendment free speech slices. Commercial speech data updated to v0.2 schema (holding_type on cases, overrule_type on OVERRULES edges, direction on MODIFIES edges, APPLIES+MODIFIES deduplication). Core political speech slice is native v0.2.",
     "created": "2026-03-15",
     "status": "draft",
-    "schema_version": "0.2",
+    "schema_version": "0.5",
     "node_count": 515,
     "edge_count": 977,
     "schema_issue_count": 41,
