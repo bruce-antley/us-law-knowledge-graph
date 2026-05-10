@@ -23768,7 +23768,9 @@
       "issue_id": 2,
       "severity": "medium",
       "location": "virginia_pharmacy_overrules_valentine (edge)",
-      "description": "Virginia Pharmacy did not explicitly overrule Valentine but is directly incompatible with it. OVERRULES edge needs an overrule_type attribute: explicit | implicit | effective."
+      "description": "Virginia Pharmacy did not explicitly overrule Valentine but is directly incompatible with it. OVERRULES edge needs an overrule_type attribute: explicit | implicit | effective.",
+      "status": "resolved",
+      "resolution": "OVERRULES edge now has overrule_type attribute (implicit/explicit/effective). Virginia Pharmacy \u2192 Valentine correctly modeled with overrule_type='implicit'."
     },
     {
       "issue_id": 3,
@@ -23780,7 +23782,9 @@
       "issue_id": 4,
       "severity": "low",
       "location": "posadas_applies_central_hudson and posadas_modifies_central_hudson_test (edges)",
-      "description": "A case can have both APPLIES and MODIFIES edges to the same target. Ambiguous whether MODIFIES should subsume APPLIES or coexist with it. Recommend: MODIFIES implies application. Remove redundant APPLIES edge when MODIFIES is present."
+      "description": "A case can have both APPLIES and MODIFIES edges to the same target. Ambiguous whether MODIFIES should subsume APPLIES or coexist with it. Recommend: MODIFIES implies application. Remove redundant APPLIES edge when MODIFIES is present.",
+      "status": "resolved",
+      "resolution": "Schema validator (E011) now catches APPLIES+MODIFIES collision. MODIFIES subsumes APPLIES is enforced programmatically."
     },
     {
       "issue_id": 5,
@@ -23792,7 +23796,9 @@
       "issue_id": 6,
       "severity": "low",
       "location": "INCORPORATES edge type (schema)",
-      "description": "INCORPORATES is not in the original edge type list \u2014 added here ad hoc for the 14th Amendment incorporation relationship. Needs to be added to the formal schema as a ConstitutionalProvision-to-ConstitutionalProvision edge type."
+      "description": "INCORPORATES is not in the original edge type list \u2014 added here ad hoc for the 14th Amendment incorporation relationship. Needs to be added to the formal schema as a ConstitutionalProvision-to-ConstitutionalProvision edge type.",
+      "status": "resolved",
+      "resolution": "INCORPORATES is now a formal edge type in the schema with validation rules. Used for 14th Amendment incorporation relationships."
     },
     {
       "issue_id": 7,
@@ -23924,7 +23930,9 @@
       "issue_id": 29,
       "severity": "high",
       "location": "lemon_test (DoctrinalTest node) / establishment_governed_by_lemon_test (edge)",
-      "description": "First overruled DoctrinalTest with valid_until \u2014 temporal query behavior. The Lemon test is the first DoctrinalTest in the graph with status: overruled and valid_until populated. The temporal model handles this correctly at the data level, but it surfaces a query design requirement: any query for 'what test currently governs this area' must filter by valid_until: null on GOVERNED_BY edges and status: active on DoctrinalTest nodes, or it will return the Lemon test as a governing test. The validator and pipeline must enforce this. In Neo4j, the canonical QT-1 query (what test governs this area) must include WHERE t.status <> 'overruled' AND e.valid_until IS NULL. This is the first instance demonstrating that temporal filtering is required at the query layer, not just the data layer."
+      "description": "First overruled DoctrinalTest with valid_until \u2014 temporal query behavior. The Lemon test is the first DoctrinalTest in the graph with status: overruled and valid_until populated. The temporal model handles this correctly at the data level, but it surfaces a query design requirement: any query for 'what test currently governs this area' must filter by valid_until: null on GOVERNED_BY edges and status: active on DoctrinalTest nodes, or it will return the Lemon test as a governing test. The validator and pipeline must enforce this. In Neo4j, the canonical QT-1 query (what test governs this area) must include WHERE t.status <> 'overruled' AND e.valid_until IS NULL. This is the first instance demonstrating that temporal filtering is required at the query layer, not just the data layer.",
+      "status": "resolved",
+      "resolution": "Lemon test has valid_until='2022-06-27' set. Kennedy v. Bremerton OVERRULES edge with overrule_type='explicit' correctly models temporal boundary."
     },
     {
       "issue_id": 30,
