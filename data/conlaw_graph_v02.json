@@ -17,8 +17,8 @@
     "created": "2026-03-15",
     "status": "draft",
     "schema_version": "0.2",
-    "node_count": 513,
-    "edge_count": 752,
+    "node_count": 515,
+    "edge_count": 754,
     "schema_issue_count": 41,
     "fixes_applied": [
       "FIX 1: ConstitutionalProvision labels changed to citation form (amendment_1, amendment_14_section_1) to disambiguate from Area nodes with same common-name labels",
@@ -1079,7 +1079,7 @@
         "id": "stare_decisis_doctrine",
         "label": "Stare Decisis",
         "description": "The doctrine that courts should respect and follow precedent, though it is not an inexorable command and is weakest when interpreting the Constitution.",
-        "area_id": "constitutional_law",
+        "area_id": "federalism",
         "jurisdiction": [
           "federal",
           "state"
@@ -1229,7 +1229,7 @@
         "id": "police_power",
         "label": "Police Power",
         "description": "The inherent sovereign power of states to enact legislation to protect the safety, health, morals, and general welfare of the public. However, this power is not unlimited and must be exercised in a manner that does not arbitrarily or unreasonably interfere with individual liberty and freedom of contract protected by the Fourteenth Amendment.",
-        "area_id": "constitutional_law",
+        "area_id": "federalism",
         "jurisdiction": [
           "federal",
           "state"
@@ -1437,7 +1437,7 @@
         "id": "remedy_flexibility_doctrine",
         "label": "Flexibility in Remedies for Constitutional Violations",
         "description": "When a fundamental right is incorporated against the states, the specific remedy for enforcing that right is not necessarily fixed by the federal constitutional requirement. States may employ alternative remedies such as private actions for damages, internal police discipline, and public opinion, provided such remedies are consistently enforced and equally effective.",
-        "area_id": "constitutional_law",
+        "area_id": "federalism",
         "jurisdiction": [
           "federal",
           "state"
@@ -2124,7 +2124,7 @@
         "id": "implied_powers_doctrine",
         "label": "Implied Powers Doctrine",
         "description": "Congress possesses implied powers beyond those explicitly enumerated in the Constitution, derived from the Necessary and Proper Clause, to carry into execution the enumerated powers.",
-        "area_id": "constitutional_law",
+        "area_id": "federalism",
         "jurisdiction": [
           "federal"
         ],
@@ -2138,7 +2138,7 @@
         "id": "federal_supremacy_doctrine",
         "label": "Federal Supremacy and State Tax Immunity",
         "description": "A state may not tax an instrumentality of the federal government, as such taxation would interfere with federal powers and violate the supremacy of federal law.",
-        "area_id": "constitutional_law",
+        "area_id": "federalism",
         "jurisdiction": [
           "federal",
           "state"
@@ -2153,7 +2153,7 @@
         "id": "commerce_clause_supremacy",
         "label": "Commerce Clause Supremacy",
         "description": "State laws that regulate commerce in a manner that conflicts with federal regulation or the exercise of federal commerce power are repugnant to the Commerce Clause and invalid.",
-        "area_id": "constitutional_law",
+        "area_id": "federalism",
         "jurisdiction": [
           "federal",
           "state"
@@ -2168,7 +2168,7 @@
         "id": "commerce_clause_aggregation",
         "label": "Commerce Clause Aggregation Doctrine",
         "description": "Congress may regulate intrastate economic activity that, in the aggregate, substantially affects interstate commerce, even if individual instances of such activity have only an indirect effect on interstate commerce.",
-        "area_id": "constitutional_law",
+        "area_id": "federalism",
         "jurisdiction": [
           "federal"
         ],
@@ -2196,7 +2196,7 @@
         "id": "commerce_clause_limits",
         "label": "Commerce Clause Limits on Federal Legislative Authority",
         "description": "The Commerce Clause grants Congress authority to regulate interstate commerce, but this authority has limits. Congress cannot regulate activity that neither constitutes a commercial activity nor is connected to interstate commerce.",
-        "area_id": "constitutional_law",
+        "area_id": "federalism",
         "jurisdiction": [
           "federal"
         ],
@@ -2210,7 +2210,7 @@
         "id": "commerce_clause_authority",
         "label": "Commerce Clause Authority",
         "description": "The constitutional authority of Congress to regulate interstate commerce under the Commerce Clause, including limitations on Congress's power to regulate non-economic activity.",
-        "area_id": "constitutional_law",
+        "area_id": "federalism",
         "jurisdiction": [
           "federal"
         ],
@@ -2224,7 +2224,7 @@
         "id": "fourteenth_amendment_section_5_authority",
         "label": "Fourteenth Amendment Section 5 Authority",
         "description": "The constitutional authority of Congress under Section 5 of the Fourteenth Amendment to enforce the substantive rights guaranteed by the Amendment.",
-        "area_id": "constitutional_law",
+        "area_id": "federalism",
         "jurisdiction": [
           "federal"
         ],
@@ -2238,7 +2238,7 @@
         "id": "anti_commandeering_doctrine",
         "label": "Anti-Commandeering Doctrine",
         "description": "The constitutional principle that Congress cannot compel States to enact or administer a federal regulatory program or commandeer state legislative or executive officials to implement federal law.",
-        "area_id": "constitutional_law",
+        "area_id": "federalism",
         "jurisdiction": [
           "federal",
           "state"
@@ -2253,7 +2253,7 @@
         "id": "tenth_amendment_state_sovereignty",
         "label": "Tenth Amendment State Sovereignty",
         "description": "The constitutional principle that the Tenth Amendment reserves to the States powers not delegated to the Federal Government, protecting state sovereignty from federal commandeering.",
-        "area_id": "constitutional_law",
+        "area_id": "federalism",
         "jurisdiction": [
           "federal",
           "state"
@@ -2297,7 +2297,7 @@
         "id": "spending_power_doctrine",
         "label": "Spending Power Doctrine",
         "description": "The constitutional authority of Congress to condition the receipt of federal funds on a state's adoption of specified policies, subject to constitutional limitations.",
-        "area_id": "constitutional_law",
+        "area_id": "federalism",
         "jurisdiction": [
           "federal",
           "state"
@@ -2312,7 +2312,7 @@
         "id": "twenty_first_amendment_state_control",
         "label": "Twenty-first Amendment State Control Over Alcoholic Beverages",
         "description": "The Twenty-first Amendment grants states broad control over the regulation of alcoholic beverages, including the power to impose restrictions on sale and distribution, but does not confer power to permit sales that Congress seeks to prohibit through conditional spending.",
-        "area_id": "constitutional_law",
+        "area_id": "federalism",
         "jurisdiction": [
           "federal",
           "state"
@@ -2574,10 +2574,10 @@
       },
       {
         "@type": "Doctrine",
-        "id": "dormant_commerce_clause",
+        "id": "dormant_commerce_clause_doctrine",
         "label": "Dormant Commerce Clause",
         "description": "The constitutional principle that state laws imposing substantial burdens on interstate commerce are unconstitutional unless the burden is clearly excessive in relation to putative local benefits.",
-        "area_id": "constitutional_law",
+        "area_id": "dormant_commerce_clause",
         "jurisdiction": [
           "federal",
           "state"
@@ -2592,7 +2592,7 @@
         "id": "commerce_clause_discrimination",
         "label": "Commerce Clause Discrimination Doctrine",
         "description": "A state law that discriminates against interstate commerce violates the Commerce Clause, even if justified by legitimate local concerns such as health and environmental protection.",
-        "area_id": "constitutional_law",
+        "area_id": "dormant_commerce_clause",
         "jurisdiction": [
           "federal",
           "state"
@@ -2607,7 +2607,7 @@
         "id": "twenty_first_amendment_scope",
         "label": "21st Amendment Scope in Commerce Clause Context",
         "description": "The 21st Amendment grants states authority to regulate alcohol importation, but this authority does not extend to economic discrimination favoring in-state businesses over out-of-state businesses in violation of the dormant Commerce Clause.",
-        "area_id": "constitutional_law",
+        "area_id": "dormant_commerce_clause",
         "jurisdiction": [
           "federal",
           "state"
@@ -2622,7 +2622,7 @@
         "id": "state_sovereign_immunity",
         "label": "State Sovereign Immunity",
         "description": "The doctrine that states are sovereign entities protected by the Eleventh Amendment from suit in federal court by private parties and Indian tribes without state consent, even when Congress purports to authorize such suits.",
-        "area_id": "constitutional_law",
+        "area_id": "federalism",
         "jurisdiction": [
           "federal",
           "state"
@@ -2637,7 +2637,7 @@
         "id": "congressional_abrogation_power",
         "label": "Congressional Power to Abrogate State Sovereign Immunity",
         "description": "The doctrine defining the scope of Congress's constitutional authority to abrogate state sovereign immunity. The Indian Commerce Clause does not grant Congress power to abrogate state sovereign immunity.",
-        "area_id": "constitutional_law",
+        "area_id": "federalism",
         "jurisdiction": [
           "federal",
           "state"
@@ -2697,7 +2697,7 @@
         "id": "sovereign_immunity_abrogation",
         "label": "Sovereign Immunity Abrogation Under the Fourteenth Amendment",
         "description": "Congress may abrogate state sovereign immunity under the Fourteenth Amendment when it enacts legislation that is a reasonable prophylactic measure reasonably targeted to a legitimate end, supported by sufficient evidence of constitutional violations by the states.",
-        "area_id": "constitutional_law",
+        "area_id": "federalism",
         "jurisdiction": [
           "federal",
           "state"
@@ -2727,7 +2727,7 @@
         "id": "section_5_fourteenth_amendment_abrogation",
         "label": "Section 5 of the Fourteenth Amendment \u2014 Congressional Abrogation of State Sovereign Immunity",
         "description": "Congress may abrogate state sovereign immunity under the Fourteenth Amendment Section 5 by enacting prophylactic legislation that addresses documented patterns of unconstitutional state conduct, even if the legislation extends beyond the precise scope of the underlying constitutional violation.",
-        "area_id": "constitutional_law",
+        "area_id": "federalism",
         "jurisdiction": [
           "federal",
           "state"
@@ -2742,7 +2742,7 @@
         "id": "eleventh_amendment_abrogation",
         "label": "Eleventh Amendment \u2014 Congressional Abrogation of State Sovereign Immunity",
         "description": "Congress may abrogate a state's Eleventh Amendment immunity from suit in federal court when it clearly states its intention to do so and acts within its constitutional authority, such as under Section 5 of the Fourteenth Amendment.",
-        "area_id": "constitutional_law",
+        "area_id": "federalism",
         "jurisdiction": [
           "federal",
           "state"
@@ -3247,6 +3247,36 @@
         "tier": 2,
         "status": "active",
         "valid_from": "1788-06-21",
+        "valid_until": null
+      },
+      {
+        "@type": "Area",
+        "id": "federalism",
+        "label": "Federalism \u203a Doctrine",
+        "description": "Constitutional doctrine governing the division of powers between federal and state governments, including commerce clause, spending power, sovereign immunity, and anti-commandeering principles.",
+        "parent_id": "constitutional_law",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "tier": 2,
+        "status": "active",
+        "valid_from": "1788-06-21",
+        "valid_until": null
+      },
+      {
+        "@type": "Area",
+        "id": "dormant_commerce_clause",
+        "label": "Dormant Commerce Clause \u203a Doctrine",
+        "description": "Constitutional doctrine limiting state laws that discriminate against or unduly burden interstate commerce, even absent federal legislation.",
+        "parent_id": "federalism",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "tier": 3,
+        "status": "active",
+        "valid_from": "1824-03-02",
         "valid_until": null
       }
     ],
@@ -13313,7 +13343,7 @@
         "id": "spending_power_condition_test",
         "label": "Spending Power Condition Test",
         "description": "A test for determining whether Congress may constitutionally condition the receipt of federal funds on a state's adoption of specified policies. The test examines whether the condition is reasonably related to the federal interest in the funds and whether the condition is not prohibited by another constitutional provision.",
-        "area_id": "constitutional_law",
+        "area_id": "federalism",
         "source_case_id": "south_dakota_v_dole_1987",
         "scrutiny_level": "rational_basis",
         "burden": "challenger",
@@ -13575,7 +13605,7 @@
         "id": "pike_balancing_test",
         "label": "Pike Balancing Test",
         "description": "A balancing test for evaluating state laws that burden interstate commerce. The test requires courts to weigh the burden imposed on interstate commerce against the putative local benefits of the state law.",
-        "area_id": "constitutional_law",
+        "area_id": "dormant_commerce_clause",
         "source_case_id": "pike_v_bruce_church_inc_1970",
         "scrutiny_level": "balancing",
         "burden": "shared",
@@ -13696,7 +13726,7 @@
         "id": "congruence_proportionality_test",
         "label": "Congruence and Proportionality Test",
         "description": "Congress may abrogate state sovereign immunity under the Fourteenth Amendment if the legislation is congruent and proportional to the constitutional violation it seeks to remedy. The test requires: (1) sufficient evidence of constitutional violations by the states; (2) remedies that are reasonable prophylactic measures; and (3) measures reasonably targeted to a legitimate end.",
-        "area_id": "constitutional_law",
+        "area_id": "separation_of_powers",
         "source_case_id": "tennessee_v_lane_2004",
         "scrutiny_level": "heightened",
         "burden": "government",
@@ -23254,7 +23284,7 @@
     {
       "id": "pike_applies_dormant_commerce_clause",
       "source_id": "pike_v_bruce_church_inc_1970",
-      "target_id": "dormant_commerce_clause",
+      "target_id": "dormant_commerce_clause_doctrine",
       "edge_type": "APPLIES",
       "valid_from": "1970-03-02",
       "valid_until": null,
@@ -23280,7 +23310,7 @@
     {
       "id": "philadelphia_applies_dormant_commerce_clause",
       "source_id": "philadelphia_v_new_jersey_1978",
-      "target_id": "dormant_commerce_clause",
+      "target_id": "dormant_commerce_clause_doctrine",
       "edge_type": "APPLIES",
       "valid_from": "1978-06-23",
       "valid_until": null,
@@ -23293,7 +23323,7 @@
     {
       "id": "granholm_applies_dormant_commerce_clause",
       "source_id": "granholm_v_heald_2005",
-      "target_id": "dormant_commerce_clause",
+      "target_id": "dormant_commerce_clause_doctrine",
       "edge_type": "APPLIES",
       "valid_from": "2005-05-16",
       "valid_until": null,
@@ -23701,6 +23731,30 @@
         "state"
       ],
       "notes": "Manson formalized Neil's totality approach into five specific reliability factors."
+    },
+    {
+      "id": "federalism_child_of_constitutional_law",
+      "source_id": "federalism",
+      "target_id": "constitutional_law",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1788-06-21",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "dormant_commerce_child_of_federalism",
+      "source_id": "dormant_commerce_clause",
+      "target_id": "federalism",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1824-03-02",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
     }
   ],
   "schema_issues_found": [
