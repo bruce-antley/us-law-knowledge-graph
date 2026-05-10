@@ -18,7 +18,7 @@
     "status": "draft",
     "schema_version": "0.2",
     "node_count": 515,
-    "edge_count": 754,
+    "edge_count": 977,
     "schema_issue_count": 41,
     "fixes_applied": [
       "FIX 1: ConstitutionalProvision labels changed to citation form (amendment_1, amendment_14_section_1) to disambiguate from Area nodes with same common-name labels",
@@ -23750,6 +23750,2661 @@
       "target_id": "federalism",
       "edge_type": "CHILD_OF",
       "valid_from": "1824-03-02",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "commercial_speech_doctrine_child_of_commercial_speech",
+      "source_id": "commercial_speech_doctrine",
+      "target_id": "commercial_speech",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1976-05-24",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "commercial_speech_no_protection_child_of_commercial_speech",
+      "source_id": "commercial_speech_no_protection",
+      "target_id": "commercial_speech",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1942-02-23",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "core_political_speech_doctrine_child_of_core_political_speech",
+      "source_id": "core_political_speech_doctrine",
+      "target_id": "core_political_speech",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1969-06-09",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "incitement_doctrine_child_of_core_political_speech",
+      "source_id": "incitement_doctrine",
+      "target_id": "core_political_speech",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1969-06-09",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "true_threats_doctrine_child_of_core_political_speech",
+      "source_id": "true_threats_doctrine",
+      "target_id": "core_political_speech",
+      "edge_type": "CHILD_OF",
+      "valid_from": "2003-04-07",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "public_concern_doctrine_child_of_core_political_speech",
+      "source_id": "public_concern_doctrine",
+      "target_id": "core_political_speech",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1983-04-20",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "prior_restraint_doctrine_child_of_prior_restraint",
+      "source_id": "prior_restraint_doctrine",
+      "target_id": "prior_restraint",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1931-06-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "injunction_speech_doctrine_child_of_prior_restraint",
+      "source_id": "injunction_speech_doctrine",
+      "target_id": "prior_restraint",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1994-06-30",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "actual_malice_doctrine_child_of_freedom_of_press",
+      "source_id": "actual_malice_doctrine",
+      "target_id": "freedom_of_press",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1964-03-09",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "press_defamation_private_figure_doctrine_child_of_freedom_of_press",
+      "source_id": "press_defamation_private_figure_doctrine",
+      "target_id": "freedom_of_press",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1974-06-25",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "opinion_fact_doctrine_child_of_freedom_of_press",
+      "source_id": "opinion_fact_doctrine",
+      "target_id": "freedom_of_press",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1990-06-21",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "reporters_privilege_doctrine_child_of_freedom_of_press",
+      "source_id": "reporters_privilege_doctrine",
+      "target_id": "freedom_of_press",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1972-06-29",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "free_exercise_doctrine_child_of_free_exercise",
+      "source_id": "free_exercise_doctrine",
+      "target_id": "free_exercise",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1940-05-20",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "belief_conduct_distinction_child_of_free_exercise",
+      "source_id": "belief_conduct_distinction",
+      "target_id": "free_exercise",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1940-05-20",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "neutrality_general_applicability_doctrine_child_of_free_exercise",
+      "source_id": "neutrality_general_applicability_doctrine",
+      "target_id": "free_exercise",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1990-04-17",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "establishment_clause_doctrine_child_of_establishment_clause",
+      "source_id": "establishment_clause_doctrine",
+      "target_id": "establishment_clause",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1947-02-10",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "no_establishment_core_child_of_establishment_clause",
+      "source_id": "no_establishment_core",
+      "target_id": "establishment_clause",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1947-02-10",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "historical_practices_doctrine_child_of_establishment_clause",
+      "source_id": "historical_practices_doctrine",
+      "target_id": "establishment_clause",
+      "edge_type": "CHILD_OF",
+      "valid_from": "2022-06-27",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "expressive_association_doctrine_child_of_freedom_of_association",
+      "source_id": "expressive_association_doctrine",
+      "target_id": "freedom_of_association",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1984-07-03",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "compelled_disclosure_doctrine_child_of_freedom_of_association",
+      "source_id": "compelled_disclosure_doctrine",
+      "target_id": "freedom_of_association",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1958-06-30",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "intimate_association_doctrine_child_of_freedom_of_association",
+      "source_id": "intimate_association_doctrine",
+      "target_id": "freedom_of_association",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1984-07-03",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "petition_clause_doctrine_child_of_freedom_of_petition",
+      "source_id": "petition_clause_doctrine",
+      "target_id": "freedom_of_petition",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1963-02-25",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "noerr_pennington_doctrine_child_of_freedom_of_petition",
+      "source_id": "noerr_pennington_doctrine",
+      "target_id": "freedom_of_petition",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1961-02-20",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ]
+    },
+    {
+      "id": "student_speech_doctrine_child_of_core_political_speech",
+      "source_id": "student_speech_doctrine",
+      "target_id": "core_political_speech",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1969-02-24",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "fighting_words_doctrine_child_of_core_political_speech",
+      "source_id": "fighting_words_doctrine",
+      "target_id": "core_political_speech",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1942-03-09",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "symbolic_speech_doctrine_child_of_core_political_speech",
+      "source_id": "symbolic_speech_doctrine",
+      "target_id": "core_political_speech",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1968-05-27",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "obscenity_doctrine_child_of_core_political_speech",
+      "source_id": "obscenity_doctrine",
+      "target_id": "core_political_speech",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1973-06-21",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "hate_speech_doctrine_child_of_core_political_speech",
+      "source_id": "hate_speech_doctrine",
+      "target_id": "core_political_speech",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1992-06-22",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "campaign_finance_doctrine_child_of_core_political_speech",
+      "source_id": "campaign_finance_doctrine",
+      "target_id": "core_political_speech",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1976-01-30",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "public_forum_doctrine_child_of_core_political_speech",
+      "source_id": "public_forum_doctrine",
+      "target_id": "core_political_speech",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1939-03-06",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "reporter_shield_doctrine_child_of_freedom_of_press",
+      "source_id": "reporter_shield_doctrine",
+      "target_id": "freedom_of_press",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1972-06-29",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "establishment_aid_doctrine_child_of_establishment_clause",
+      "source_id": "establishment_aid_doctrine",
+      "target_id": "establishment_clause",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1947-02-10",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "hostile_audience_doctrine_child_of_core_political_speech",
+      "source_id": "hostile_audience_doctrine",
+      "target_id": "core_political_speech",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1949-05-16",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "government_speech_doctrine_child_of_core_political_speech",
+      "source_id": "government_speech_doctrine",
+      "target_id": "core_political_speech",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1991-05-23",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "broadcast_regulation_doctrine_child_of_freedom_of_press",
+      "source_id": "broadcast_regulation_doctrine",
+      "target_id": "freedom_of_press",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1969-06-09",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ]
+    },
+    {
+      "id": "secondary_effects_doctrine_child_of_core_political_speech",
+      "source_id": "secondary_effects_doctrine",
+      "target_id": "core_political_speech",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1986-02-25",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "press_access_doctrine_child_of_freedom_of_press",
+      "source_id": "press_access_doctrine",
+      "target_id": "freedom_of_press",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1980-07-02",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "suspect_classification_doctrine_child_of_equal_protection",
+      "source_id": "suspect_classification_doctrine",
+      "target_id": "equal_protection",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1944-12-18",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "quasi_suspect_classification_doctrine_child_of_equal_protection",
+      "source_id": "quasi_suspect_classification_doctrine",
+      "target_id": "equal_protection",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1976-12-20",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "rational_basis_doctrine_child_of_equal_protection",
+      "source_id": "rational_basis_doctrine",
+      "target_id": "equal_protection",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1938-04-25",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "discriminatory_intent_doctrine_child_of_equal_protection",
+      "source_id": "discriminatory_intent_doctrine",
+      "target_id": "equal_protection",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1976-06-07",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "affirmative_action_doctrine_child_of_equal_protection",
+      "source_id": "affirmative_action_doctrine",
+      "target_id": "equal_protection",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1995-06-12",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "fundamental_rights_ep_doctrine_child_of_equal_protection",
+      "source_id": "fundamental_rights_ep_doctrine",
+      "target_id": "equal_protection",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1964-06-15",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "substantive_due_process_doctrine_child_of_substantive_due_process",
+      "source_id": "substantive_due_process_doctrine",
+      "target_id": "substantive_due_process",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1868-07-28",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "stare_decisis_doctrine_child_of_federalism",
+      "source_id": "stare_decisis_doctrine",
+      "target_id": "federalism",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1800-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "rational_basis_review_doctrine_child_of_substantive_due_process",
+      "source_id": "rational_basis_review_doctrine",
+      "target_id": "substantive_due_process",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1900-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "substantive_due_process_marriage_child_of_substantive_due_process",
+      "source_id": "substantive_due_process_marriage",
+      "target_id": "substantive_due_process",
+      "edge_type": "CHILD_OF",
+      "valid_from": "2015-06-26",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "equal_protection_marriage_child_of_equal_protection",
+      "source_id": "equal_protection_marriage",
+      "target_id": "equal_protection",
+      "edge_type": "CHILD_OF",
+      "valid_from": "2015-06-26",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "marital_privacy_doctrine_child_of_individual_rights",
+      "source_id": "marital_privacy_doctrine",
+      "target_id": "individual_rights",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1965-06-07",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "substantive_due_process_liberty_child_of_substantive_due_process",
+      "source_id": "substantive_due_process_liberty",
+      "target_id": "substantive_due_process",
+      "edge_type": "CHILD_OF",
+      "valid_from": "2003-06-26",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "private_consensual_conduct_protection_child_of_substantive_due_process",
+      "source_id": "private_consensual_conduct_protection",
+      "target_id": "substantive_due_process",
+      "edge_type": "CHILD_OF",
+      "valid_from": "2003-06-26",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "right_to_refuse_medical_treatment_child_of_substantive_due_process",
+      "source_id": "right_to_refuse_medical_treatment",
+      "target_id": "substantive_due_process",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1990-06-25",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "parental_rights_education_child_of_substantive_due_process",
+      "source_id": "parental_rights_education",
+      "target_id": "substantive_due_process",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1923-06-04",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "liberty_of_contract_child_of_substantive_due_process",
+      "source_id": "liberty_of_contract",
+      "target_id": "substantive_due_process",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1905-04-17",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "police_power_child_of_federalism",
+      "source_id": "police_power",
+      "target_id": "federalism",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1905-04-17",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "ordered_liberty_doctrine_child_of_substantive_due_process",
+      "source_id": "ordered_liberty_doctrine",
+      "target_id": "substantive_due_process",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1937-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "selective_incorporation_doctrine_child_of_substantive_due_process",
+      "source_id": "selective_incorporation_doctrine",
+      "target_id": "substantive_due_process",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1937-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "fundamental_right_to_procreation_child_of_substantive_due_process",
+      "source_id": "fundamental_right_to_procreation",
+      "target_id": "substantive_due_process",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1942",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "strict_scrutiny_equal_protection_child_of_equal_protection",
+      "source_id": "strict_scrutiny_equal_protection",
+      "target_id": "equal_protection",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1942",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "strict_scrutiny_racial_classifications_child_of_equal_protection",
+      "source_id": "strict_scrutiny_racial_classifications",
+      "target_id": "equal_protection",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1967-06-12",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "fundamental_right_to_marry_child_of_substantive_due_process",
+      "source_id": "fundamental_right_to_marry",
+      "target_id": "substantive_due_process",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1967-06-12",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "family_living_arrangements_sdp_child_of_substantive_due_process",
+      "source_id": "family_living_arrangements_sdp",
+      "target_id": "substantive_due_process",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1977-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "parental_fundamental_right_child_of_substantive_due_process",
+      "source_id": "parental_fundamental_right",
+      "target_id": "substantive_due_process",
+      "edge_type": "CHILD_OF",
+      "valid_from": "2000-06-05",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "equal_protection_discriminatory_purpose_child_of_equal_protection",
+      "source_id": "equal_protection_discriminatory_purpose",
+      "target_id": "equal_protection",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1976-06-07",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "double_jeopardy_incorporation_child_of_individual_rights",
+      "source_id": "double_jeopardy_incorporation",
+      "target_id": "individual_rights",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1969-06-23",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "exclusionary_rule_federal_child_of_criminal_procedure",
+      "source_id": "exclusionary_rule_federal",
+      "target_id": "criminal_procedure",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1914-02-24",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ]
+    },
+    {
+      "id": "fourth_amendment_protection_child_of_criminal_procedure",
+      "source_id": "fourth_amendment_protection",
+      "target_id": "criminal_procedure",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1914-02-24",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ]
+    },
+    {
+      "id": "fourth_amendment_privacy_protection_child_of_individual_rights",
+      "source_id": "fourth_amendment_privacy_protection",
+      "target_id": "individual_rights",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1949-06-27",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "remedy_flexibility_doctrine_child_of_federalism",
+      "source_id": "remedy_flexibility_doctrine",
+      "target_id": "federalism",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1949-06-27",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "exclusionary_rule_child_of_criminal_procedure",
+      "source_id": "exclusionary_rule",
+      "target_id": "criminal_procedure",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1961-06-19",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "fourth_amendment_privacy_child_of_individual_rights",
+      "source_id": "fourth_amendment_privacy",
+      "target_id": "individual_rights",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1961-06-19",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "right_to_counsel_doctrine_child_of_criminal_procedure",
+      "source_id": "right_to_counsel_doctrine",
+      "target_id": "criminal_procedure",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1963-03-18",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "sixth_amendment_right_to_counsel_pretrial_child_of_criminal_procedure",
+      "source_id": "sixth_amendment_right_to_counsel_pretrial",
+      "target_id": "criminal_procedure",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1964-06-22",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "accusatory_vs_investigatory_stage_child_of_criminal_procedure",
+      "source_id": "accusatory_vs_investigatory_stage",
+      "target_id": "criminal_procedure",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1964-06-22",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "miranda_doctrine_child_of_criminal_procedure",
+      "source_id": "miranda_doctrine",
+      "target_id": "criminal_procedure",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1966-06-13",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "reasonable_expectation_of_privacy_doctrine_child_of_criminal_procedure",
+      "source_id": "reasonable_expectation_of_privacy_doctrine",
+      "target_id": "criminal_procedure",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1967-12-18",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "stop_and_frisk_doctrine_child_of_criminal_procedure",
+      "source_id": "stop_and_frisk_doctrine",
+      "target_id": "criminal_procedure",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1968-06-10",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "probable_cause_informant_tip_child_of_criminal_procedure",
+      "source_id": "probable_cause_informant_tip",
+      "target_id": "criminal_procedure",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1983-06-08",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "sixth_amendment_right_to_counsel_post_indictment_child_of_criminal_procedure",
+      "source_id": "sixth_amendment_right_to_counsel_post_indictment",
+      "target_id": "criminal_procedure",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1964-05-18",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "right_to_effective_assistance_of_counsel_child_of_criminal_procedure",
+      "source_id": "right_to_effective_assistance_of_counsel",
+      "target_id": "criminal_procedure",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1984-05-14",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "search_incident_to_arrest_child_of_criminal_procedure",
+      "source_id": "search_incident_to_arrest",
+      "target_id": "criminal_procedure",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1969-06-23",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "good_faith_exception_exclusionary_rule_child_of_criminal_procedure",
+      "source_id": "good_faith_exception_exclusionary_rule",
+      "target_id": "criminal_procedure",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1984-07-05",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "automobile_exception_fourth_amendment_child_of_criminal_procedure",
+      "source_id": "automobile_exception_fourth_amendment",
+      "target_id": "criminal_procedure",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1925-03-02",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "probable_cause_doctrine_child_of_criminal_procedure",
+      "source_id": "probable_cause_doctrine",
+      "target_id": "criminal_procedure",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1925-03-02",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "fourth_amendment_home_privacy_child_of_criminal_procedure",
+      "source_id": "fourth_amendment_home_privacy",
+      "target_id": "criminal_procedure",
+      "edge_type": "CHILD_OF",
+      "valid_from": "2001-06-11",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "fourth_amendment_digital_privacy_child_of_criminal_procedure",
+      "source_id": "fourth_amendment_digital_privacy",
+      "target_id": "criminal_procedure",
+      "edge_type": "CHILD_OF",
+      "valid_from": "2018-06-22",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "fourth_amendment_traffic_stop_doctrine_child_of_criminal_procedure",
+      "source_id": "fourth_amendment_traffic_stop_doctrine",
+      "target_id": "criminal_procedure",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1996-06-10",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "fourth_amendment_warrant_requirement_child_of_criminal_procedure",
+      "source_id": "fourth_amendment_warrant_requirement",
+      "target_id": "criminal_procedure",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1791-12-15",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "cell_phone_privacy_protection_child_of_criminal_procedure",
+      "source_id": "cell_phone_privacy_protection",
+      "target_id": "criminal_procedure",
+      "edge_type": "CHILD_OF",
+      "valid_from": "2014-06-25",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "sixth_amendment_right_to_counsel_lineup_child_of_criminal_procedure",
+      "source_id": "sixth_amendment_right_to_counsel_lineup",
+      "target_id": "criminal_procedure",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1967-06-12",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "vehicle_search_incident_to_arrest_child_of_criminal_procedure",
+      "source_id": "vehicle_search_incident_to_arrest",
+      "target_id": "criminal_procedure",
+      "edge_type": "CHILD_OF",
+      "valid_from": "2009-04-21",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "consent_search_doctrine_child_of_criminal_procedure",
+      "source_id": "consent_search_doctrine",
+      "target_id": "criminal_procedure",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1991-06-20",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "reasonable_person_refusal_doctrine_child_of_criminal_procedure",
+      "source_id": "reasonable_person_refusal_doctrine",
+      "target_id": "criminal_procedure",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1991-06-20",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "protective_sweep_doctrine_child_of_criminal_procedure",
+      "source_id": "protective_sweep_doctrine",
+      "target_id": "criminal_procedure",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1990-02-03",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "anonymous_tip_reliability_doctrine_child_of_criminal_procedure",
+      "source_id": "anonymous_tip_reliability_doctrine",
+      "target_id": "criminal_procedure",
+      "edge_type": "CHILD_OF",
+      "valid_from": "2000-03-28",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "custodial_interrogation_doctrine_child_of_criminal_procedure",
+      "source_id": "custodial_interrogation_doctrine",
+      "target_id": "criminal_procedure",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1966-06-13",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "apprendi_rule_child_of_criminal_procedure",
+      "source_id": "apprendi_rule",
+      "target_id": "criminal_procedure",
+      "edge_type": "CHILD_OF",
+      "valid_from": "2000-06-26",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "fifth_amendment_express_invocation_requirement_child_of_criminal_procedure",
+      "source_id": "fifth_amendment_express_invocation_requirement",
+      "target_id": "criminal_procedure",
+      "edge_type": "CHILD_OF",
+      "valid_from": "2013-06-17",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "sixth_amendment_jury_trial_right_child_of_criminal_procedure",
+      "source_id": "sixth_amendment_jury_trial_right",
+      "target_id": "criminal_procedure",
+      "edge_type": "CHILD_OF",
+      "valid_from": "2004-06-24",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "federal_sentencing_guidelines_advisory_child_of_criminal_procedure",
+      "source_id": "federal_sentencing_guidelines_advisory",
+      "target_id": "criminal_procedure",
+      "edge_type": "CHILD_OF",
+      "valid_from": "2005-01-12",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ]
+    },
+    {
+      "id": "equal_protection_peremptory_challenges_child_of_equal_protection",
+      "source_id": "equal_protection_peremptory_challenges",
+      "target_id": "equal_protection",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1986-04-30",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "equal_protection_gender_peremptory_challenges_child_of_equal_protection",
+      "source_id": "equal_protection_gender_peremptory_challenges",
+      "target_id": "equal_protection",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1994-04-19",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "prosecutorial_duty_disclose_exculpatory_evidence_child_of_criminal_procedure",
+      "source_id": "prosecutorial_duty_disclose_exculpatory_evidence",
+      "target_id": "criminal_procedure",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1963-05-13",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "speedy_trial_right_child_of_criminal_procedure",
+      "source_id": "speedy_trial_right",
+      "target_id": "criminal_procedure",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1972-06-22",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "fifth_amendment_self_incrimination_child_of_criminal_procedure",
+      "source_id": "fifth_amendment_self_incrimination",
+      "target_id": "criminal_procedure",
+      "edge_type": "CHILD_OF",
+      "valid_from": "2003-05-27",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "appellate_review_sentencing_child_of_criminal_procedure",
+      "source_id": "appellate_review_sentencing",
+      "target_id": "criminal_procedure",
+      "edge_type": "CHILD_OF",
+      "valid_from": "2007-12-10",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ]
+    },
+    {
+      "id": "plain_view_doctrine_child_of_criminal_procedure",
+      "source_id": "plain_view_doctrine",
+      "target_id": "criminal_procedure",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1987-03-03",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "plain_feel_doctrine_child_of_criminal_procedure",
+      "source_id": "plain_feel_doctrine",
+      "target_id": "criminal_procedure",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1993-06-07",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "procedural_due_process_welfare_termination_child_of_procedural_due_process",
+      "source_id": "procedural_due_process_welfare_termination",
+      "target_id": "procedural_due_process",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1970-03-23",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "property_interest_doctrine_child_of_procedural_due_process",
+      "source_id": "property_interest_doctrine",
+      "target_id": "procedural_due_process",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1972-06-29",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "liberty_interest_doctrine_child_of_procedural_due_process",
+      "source_id": "liberty_interest_doctrine",
+      "target_id": "procedural_due_process",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1972-06-29",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "property_interest_continued_employment_child_of_procedural_due_process",
+      "source_id": "property_interest_continued_employment",
+      "target_id": "procedural_due_process",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1985-03-19",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "pretermination_due_process_child_of_procedural_due_process",
+      "source_id": "pretermination_due_process",
+      "target_id": "procedural_due_process",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1985-03-19",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "enemy_combatant_due_process_child_of_procedural_due_process",
+      "source_id": "enemy_combatant_due_process",
+      "target_id": "procedural_due_process",
+      "edge_type": "CHILD_OF",
+      "valid_from": "2004-06-28",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ]
+    },
+    {
+      "id": "implied_powers_doctrine_child_of_federalism",
+      "source_id": "implied_powers_doctrine",
+      "target_id": "federalism",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1819-03-07",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ]
+    },
+    {
+      "id": "federal_supremacy_doctrine_child_of_federalism",
+      "source_id": "federal_supremacy_doctrine",
+      "target_id": "federalism",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1819-03-07",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "commerce_clause_supremacy_child_of_federalism",
+      "source_id": "commerce_clause_supremacy",
+      "target_id": "federalism",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1824-03-02",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "commerce_clause_aggregation_child_of_federalism",
+      "source_id": "commerce_clause_aggregation",
+      "target_id": "federalism",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1942-11-09",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ]
+    },
+    {
+      "id": "civil_rights_act_1964_title_ii_child_of_equal_protection",
+      "source_id": "civil_rights_act_1964_title_ii",
+      "target_id": "equal_protection",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1964-12-14",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ]
+    },
+    {
+      "id": "commerce_clause_limits_child_of_federalism",
+      "source_id": "commerce_clause_limits",
+      "target_id": "federalism",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1995-04-26",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ]
+    },
+    {
+      "id": "commerce_clause_authority_child_of_federalism",
+      "source_id": "commerce_clause_authority",
+      "target_id": "federalism",
+      "edge_type": "CHILD_OF",
+      "valid_from": "2000-05-15",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ]
+    },
+    {
+      "id": "fourteenth_amendment_section_5_authority_child_of_federalism",
+      "source_id": "fourteenth_amendment_section_5_authority",
+      "target_id": "federalism",
+      "edge_type": "CHILD_OF",
+      "valid_from": "2000-05-15",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ]
+    },
+    {
+      "id": "anti_commandeering_doctrine_child_of_federalism",
+      "source_id": "anti_commandeering_doctrine",
+      "target_id": "federalism",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1992-06-19",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "tenth_amendment_state_sovereignty_child_of_federalism",
+      "source_id": "tenth_amendment_state_sovereignty",
+      "target_id": "federalism",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1992-06-19",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "voting_rights_act_section_5_preclearance_child_of_equal_protection",
+      "source_id": "voting_rights_act_section_5_preclearance",
+      "target_id": "equal_protection",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1965-08-06",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ]
+    },
+    {
+      "id": "voting_rights_act_section_2_child_of_equal_protection",
+      "source_id": "voting_rights_act_section_2",
+      "target_id": "equal_protection",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1965-08-06",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "spending_power_doctrine_child_of_federalism",
+      "source_id": "spending_power_doctrine",
+      "target_id": "federalism",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1987-06-23",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "twenty_first_amendment_state_control_child_of_federalism",
+      "source_id": "twenty_first_amendment_state_control",
+      "target_id": "federalism",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1987-06-23",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "fourth_amendment_unreasonable_search_child_of_criminal_procedure",
+      "source_id": "fourth_amendment_unreasonable_search",
+      "target_id": "criminal_procedure",
+      "edge_type": "CHILD_OF",
+      "valid_from": "2009-01-14",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "knock_and_announce_rule_child_of_criminal_procedure",
+      "source_id": "knock_and_announce_rule",
+      "target_id": "criminal_procedure",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1995-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "attenuation_doctrine_child_of_criminal_procedure",
+      "source_id": "attenuation_doctrine",
+      "target_id": "criminal_procedure",
+      "edge_type": "CHILD_OF",
+      "valid_from": "2016-06-20",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "independent_source_doctrine_child_of_criminal_procedure",
+      "source_id": "independent_source_doctrine",
+      "target_id": "criminal_procedure",
+      "edge_type": "CHILD_OF",
+      "valid_from": "2016-06-20",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "inevitable_discovery_doctrine_child_of_criminal_procedure",
+      "source_id": "inevitable_discovery_doctrine",
+      "target_id": "criminal_procedure",
+      "edge_type": "CHILD_OF",
+      "valid_from": "2016-06-20",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "fourth_amendment_trespass_doctrine_child_of_criminal_procedure",
+      "source_id": "fourth_amendment_trespass_doctrine",
+      "target_id": "criminal_procedure",
+      "edge_type": "CHILD_OF",
+      "valid_from": "2012-01-23",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "exigency_exception_warrant_child_of_criminal_procedure",
+      "source_id": "exigency_exception_warrant",
+      "target_id": "criminal_procedure",
+      "edge_type": "CHILD_OF",
+      "valid_from": "2013-04-17",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "takings_clause_doctrine_child_of_takings_clause",
+      "source_id": "takings_clause_doctrine",
+      "target_id": "takings_clause",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1978-06-26",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "historic_preservation_doctrine_child_of_takings_clause",
+      "source_id": "historic_preservation_doctrine",
+      "target_id": "takings_clause",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1978-06-26",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "takings_clause_total_deprivation_child_of_takings_clause",
+      "source_id": "takings_clause_total_deprivation",
+      "target_id": "takings_clause",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1992-06-29",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "takings_clause_public_use_child_of_takings_clause",
+      "source_id": "takings_clause_public_use",
+      "target_id": "takings_clause",
+      "edge_type": "CHILD_OF",
+      "valid_from": "2005-06-23",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "physical_occupation_taking_child_of_takings_clause",
+      "source_id": "physical_occupation_taking",
+      "target_id": "takings_clause",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1982-06-30",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "presidential_power_separation_of_powers_child_of_separation_of_powers",
+      "source_id": "presidential_power_separation_of_powers",
+      "target_id": "separation_of_powers",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1952-06-02",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ]
+    },
+    {
+      "id": "appointments_clause_child_of_separation_of_powers",
+      "source_id": "appointments_clause",
+      "target_id": "separation_of_powers",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1988-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ]
+    },
+    {
+      "id": "article_iii_judicial_power_child_of_separation_of_powers",
+      "source_id": "article_iii_judicial_power",
+      "target_id": "separation_of_powers",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1988-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ]
+    },
+    {
+      "id": "legislative_veto_doctrine_child_of_separation_of_powers",
+      "source_id": "legislative_veto_doctrine",
+      "target_id": "separation_of_powers",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1983-06-23",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ]
+    },
+    {
+      "id": "line_item_veto_doctrine_child_of_separation_of_powers",
+      "source_id": "line_item_veto_doctrine",
+      "target_id": "separation_of_powers",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1998-06-25",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ]
+    },
+    {
+      "id": "dormant_commerce_clause_doctrine_child_of_dormant_commerce_clause",
+      "source_id": "dormant_commerce_clause_doctrine",
+      "target_id": "dormant_commerce_clause",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1970-03-02",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "commerce_clause_discrimination_child_of_dormant_commerce_clause",
+      "source_id": "commerce_clause_discrimination",
+      "target_id": "dormant_commerce_clause",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1978-06-23",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "twenty_first_amendment_scope_child_of_dormant_commerce_clause",
+      "source_id": "twenty_first_amendment_scope",
+      "target_id": "dormant_commerce_clause",
+      "edge_type": "CHILD_OF",
+      "valid_from": "2005-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "state_sovereign_immunity_child_of_federalism",
+      "source_id": "state_sovereign_immunity",
+      "target_id": "federalism",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1996-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "congressional_abrogation_power_child_of_federalism",
+      "source_id": "congressional_abrogation_power",
+      "target_id": "federalism",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1996-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "discriminatory_purpose_doctrine_child_of_equal_protection",
+      "source_id": "discriminatory_purpose_doctrine",
+      "target_id": "equal_protection",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1977-06-28",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "sex_based_equal_protection_child_of_equal_protection",
+      "source_id": "sex_based_equal_protection",
+      "target_id": "equal_protection",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1973-05-14",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "gender_based_classification_doctrine_child_of_equal_protection",
+      "source_id": "gender_based_classification_doctrine",
+      "target_id": "equal_protection",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1976-12-20",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "sovereign_immunity_abrogation_child_of_federalism",
+      "source_id": "sovereign_immunity_abrogation",
+      "target_id": "federalism",
+      "edge_type": "CHILD_OF",
+      "valid_from": "2004-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "fundamental_right_to_court_access_child_of_individual_rights",
+      "source_id": "fundamental_right_to_court_access",
+      "target_id": "individual_rights",
+      "edge_type": "CHILD_OF",
+      "valid_from": "2004-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "section_5_fourteenth_amendment_abrogation_child_of_federalism",
+      "source_id": "section_5_fourteenth_amendment_abrogation",
+      "target_id": "federalism",
+      "edge_type": "CHILD_OF",
+      "valid_from": "2003-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "eleventh_amendment_abrogation_child_of_federalism",
+      "source_id": "eleventh_amendment_abrogation",
+      "target_id": "federalism",
+      "edge_type": "CHILD_OF",
+      "valid_from": "2003-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "gender_based_discrimination_equal_protection_child_of_equal_protection",
+      "source_id": "gender_based_discrimination_equal_protection",
+      "target_id": "equal_protection",
+      "edge_type": "CHILD_OF",
+      "valid_from": "2003-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "right_to_travel_child_of_individual_rights",
+      "source_id": "right_to_travel",
+      "target_id": "individual_rights",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1999-05-17",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "presidential_recognition_power_child_of_separation_of_powers",
+      "source_id": "presidential_recognition_power",
+      "target_id": "separation_of_powers",
+      "edge_type": "CHILD_OF",
+      "valid_from": "2015-06-08",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ]
+    },
+    {
+      "id": "separation_of_powers_foreign_affairs_child_of_separation_of_powers",
+      "source_id": "separation_of_powers_foreign_affairs",
+      "target_id": "separation_of_powers",
+      "edge_type": "CHILD_OF",
+      "valid_from": "2015-06-08",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ]
+    },
+    {
+      "id": "rational_basis_due_process_child_of_individual_rights",
+      "source_id": "rational_basis_due_process",
+      "target_id": "individual_rights",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1955-03-28",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "funeral_protest_first_amendment_child_of_free_speech",
+      "source_id": "funeral_protest_first_amendment",
+      "target_id": "free_speech",
+      "edge_type": "CHILD_OF",
+      "valid_from": "2011-03-02",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "categorical_approach_unprotected_speech_child_of_free_speech",
+      "source_id": "categorical_approach_unprotected_speech",
+      "target_id": "free_speech",
+      "edge_type": "CHILD_OF",
+      "valid_from": "2010-04-20",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "eyewitness_identification_due_process_child_of_criminal_procedure",
+      "source_id": "eyewitness_identification_due_process",
+      "target_id": "criminal_procedure",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1972-12-06",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "central_hudson_test_child_of_commercial_speech",
+      "source_id": "central_hudson_test",
+      "target_id": "commercial_speech",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1980-06-20",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "brandenburg_test_child_of_core_political_speech",
+      "source_id": "brandenburg_test",
+      "target_id": "core_political_speech",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1969-06-09",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "true_threats_test_child_of_core_political_speech",
+      "source_id": "true_threats_test",
+      "target_id": "core_political_speech",
+      "edge_type": "CHILD_OF",
+      "valid_from": "2023-06-27",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "prior_restraint_test_child_of_prior_restraint",
+      "source_id": "prior_restraint_test",
+      "target_id": "prior_restraint",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1931-06-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "madsen_injunction_test_child_of_prior_restraint",
+      "source_id": "madsen_injunction_test",
+      "target_id": "prior_restraint",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1994-06-30",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "actual_malice_test_child_of_freedom_of_press",
+      "source_id": "actual_malice_test",
+      "target_id": "freedom_of_press",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1964-03-09",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "public_figure_classification_test_child_of_freedom_of_press",
+      "source_id": "public_figure_classification_test",
+      "target_id": "freedom_of_press",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1974-06-25",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "sherbert_test_child_of_free_exercise",
+      "source_id": "sherbert_test",
+      "target_id": "free_exercise",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1963-06-17",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "smith_test_child_of_free_exercise",
+      "source_id": "smith_test",
+      "target_id": "free_exercise",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1990-04-17",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "lemon_test_child_of_establishment_clause",
+      "source_id": "lemon_test",
+      "target_id": "establishment_clause",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1971-06-28",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "coercion_test_child_of_establishment_clause",
+      "source_id": "coercion_test",
+      "target_id": "establishment_clause",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1992-06-24",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "expressive_association_test_child_of_freedom_of_association",
+      "source_id": "expressive_association_test",
+      "target_id": "freedom_of_association",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1984-07-03",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "compelled_disclosure_test_child_of_freedom_of_association",
+      "source_id": "compelled_disclosure_test",
+      "target_id": "freedom_of_association",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1958-06-30",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "tinker_substantial_disruption_test_child_of_core_political_speech",
+      "source_id": "tinker_substantial_disruption_test",
+      "target_id": "core_political_speech",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1969-02-24",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "miller_obscenity_test_child_of_core_political_speech",
+      "source_id": "miller_obscenity_test",
+      "target_id": "core_political_speech",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1973-06-21",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "obrien_expressive_conduct_test_child_of_core_political_speech",
+      "source_id": "obrien_expressive_conduct_test",
+      "target_id": "core_political_speech",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1968-05-27",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "buckley_campaign_finance_test_child_of_core_political_speech",
+      "source_id": "buckley_campaign_finance_test",
+      "target_id": "core_political_speech",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1976-01-30",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "strict_scrutiny_ep_test_child_of_equal_protection",
+      "source_id": "strict_scrutiny_ep_test",
+      "target_id": "equal_protection",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1944-12-18",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "intermediate_scrutiny_ep_test_child_of_equal_protection",
+      "source_id": "intermediate_scrutiny_ep_test",
+      "target_id": "equal_protection",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1976-12-20",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "rational_basis_ep_test_child_of_equal_protection",
+      "source_id": "rational_basis_ep_test",
+      "target_id": "equal_protection",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1938-04-25",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "cruzan_clear_convincing_evidence_test_child_of_substantive_due_process",
+      "source_id": "cruzan_clear_convincing_evidence_test",
+      "target_id": "substantive_due_process",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1990-06-25",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "meyer_sdp_rationality_test_child_of_substantive_due_process",
+      "source_id": "meyer_sdp_rationality_test",
+      "target_id": "substantive_due_process",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1923-06-04",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "lochner_police_power_test_child_of_substantive_due_process",
+      "source_id": "lochner_police_power_test",
+      "target_id": "substantive_due_process",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1905-04-17",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "palko_ordered_liberty_test_child_of_substantive_due_process",
+      "source_id": "palko_ordered_liberty_test",
+      "target_id": "substantive_due_process",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1937-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "troxel_parental_right_test_child_of_substantive_due_process",
+      "source_id": "troxel_parental_right_test",
+      "target_id": "substantive_due_process",
+      "edge_type": "CHILD_OF",
+      "valid_from": "2000-06-05",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "escobedo_pretrial_counsel_test_child_of_individual_rights",
+      "source_id": "escobedo_pretrial_counsel_test",
+      "target_id": "individual_rights",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1964-06-22",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "miranda_warnings_test_child_of_criminal_procedure",
+      "source_id": "miranda_warnings_test",
+      "target_id": "criminal_procedure",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1966-06-13",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "terry_stop_frisk_test_child_of_criminal_procedure",
+      "source_id": "terry_stop_frisk_test",
+      "target_id": "criminal_procedure",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1968-06-10",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "gates_totality_circumstances_test_child_of_criminal_procedure",
+      "source_id": "gates_totality_circumstances_test",
+      "target_id": "criminal_procedure",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1983-06-08",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "strickland_ineffective_assistance_test_child_of_criminal_procedure",
+      "source_id": "strickland_ineffective_assistance_test",
+      "target_id": "criminal_procedure",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1984-05-14",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "leon_good_faith_test_child_of_criminal_procedure",
+      "source_id": "leon_good_faith_test",
+      "target_id": "criminal_procedure",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1984-07-05",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "carroll_automobile_search_test_child_of_criminal_procedure",
+      "source_id": "carroll_automobile_search_test",
+      "target_id": "criminal_procedure",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1925-03-02",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "kyllo_sense_enhancing_tech_test_child_of_criminal_procedure",
+      "source_id": "kyllo_sense_enhancing_tech_test",
+      "target_id": "criminal_procedure",
+      "edge_type": "CHILD_OF",
+      "valid_from": "2001-06-11",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "riley_cell_phone_warrant_test_child_of_criminal_procedure",
+      "source_id": "riley_cell_phone_warrant_test",
+      "target_id": "criminal_procedure",
+      "edge_type": "CHILD_OF",
+      "valid_from": "2014-06-25",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "wade_independent_source_test_child_of_criminal_procedure",
+      "source_id": "wade_independent_source_test",
+      "target_id": "criminal_procedure",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1967-06-12",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "gant_vehicle_search_test_child_of_criminal_procedure",
+      "source_id": "gant_vehicle_search_test",
+      "target_id": "criminal_procedure",
+      "edge_type": "CHILD_OF",
+      "valid_from": "2009-04-21",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "buie_protective_sweep_test_child_of_criminal_procedure",
+      "source_id": "buie_protective_sweep_test",
+      "target_id": "criminal_procedure",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1990-02-03",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "blakely_sentencing_test_child_of_criminal_procedure",
+      "source_id": "blakely_sentencing_test",
+      "target_id": "criminal_procedure",
+      "edge_type": "CHILD_OF",
+      "valid_from": "2004-06-24",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "batson_peremptory_challenge_test_child_of_equal_protection",
+      "source_id": "batson_peremptory_challenge_test",
+      "target_id": "equal_protection",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1986-04-30",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "manson_eyewitness_reliability_test_child_of_criminal_procedure",
+      "source_id": "manson_eyewitness_reliability_test",
+      "target_id": "criminal_procedure",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1977-06-16",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "barker_speedy_trial_test_child_of_criminal_procedure",
+      "source_id": "barker_speedy_trial_test",
+      "target_id": "criminal_procedure",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1972-06-22",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "gall_abuse_of_discretion_test_child_of_criminal_procedure",
+      "source_id": "gall_abuse_of_discretion_test",
+      "target_id": "criminal_procedure",
+      "edge_type": "CHILD_OF",
+      "valid_from": "2007-12-10",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "dickerson_plain_feel_test_child_of_criminal_procedure",
+      "source_id": "dickerson_plain_feel_test",
+      "target_id": "criminal_procedure",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1993-06-07",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "mathews_balancing_test_child_of_procedural_due_process",
+      "source_id": "mathews_balancing_test",
+      "target_id": "procedural_due_process",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1976-02-24",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "loudermill_pretermination_test_child_of_procedural_due_process",
+      "source_id": "loudermill_pretermination_test",
+      "target_id": "procedural_due_process",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1985-03-19",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "hamdi_enemy_combatant_test_child_of_procedural_due_process",
+      "source_id": "hamdi_enemy_combatant_test",
+      "target_id": "procedural_due_process",
+      "edge_type": "CHILD_OF",
+      "valid_from": "2004-06-28",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "spending_power_condition_test_child_of_federalism",
+      "source_id": "spending_power_condition_test",
+      "target_id": "federalism",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1987-06-23",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "herring_exclusionary_rule_test_child_of_criminal_procedure",
+      "source_id": "herring_exclusionary_rule_test",
+      "target_id": "criminal_procedure",
+      "edge_type": "CHILD_OF",
+      "valid_from": "2009-01-14",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "brown_attenuation_test_child_of_criminal_procedure",
+      "source_id": "brown_attenuation_test",
+      "target_id": "criminal_procedure",
+      "edge_type": "CHILD_OF",
+      "valid_from": "2016-06-20",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "penn_central_balancing_test_child_of_takings_clause",
+      "source_id": "penn_central_balancing_test",
+      "target_id": "takings_clause",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1978-06-26",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "lucas_total_deprivation_test_child_of_takings_clause",
+      "source_id": "lucas_total_deprivation_test",
+      "target_id": "takings_clause",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1992-06-29",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "youngstown_jackson_framework_child_of_separation_of_powers",
+      "source_id": "youngstown_jackson_framework",
+      "target_id": "separation_of_powers",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1952-06-02",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "pike_balancing_test_child_of_dormant_commerce_clause",
+      "source_id": "pike_balancing_test",
+      "target_id": "dormant_commerce_clause",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1970-03-02",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "arlington_heights_discriminatory_purpose_test_child_of_equal_protection",
+      "source_id": "arlington_heights_discriminatory_purpose_test",
+      "target_id": "equal_protection",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1977-06-28",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "craig_intermediate_scrutiny_gender_test_child_of_equal_protection",
+      "source_id": "craig_intermediate_scrutiny_gender_test",
+      "target_id": "equal_protection",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1976-12-20",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "congruence_proportionality_test_child_of_separation_of_powers",
+      "source_id": "congruence_proportionality_test",
+      "target_id": "separation_of_powers",
+      "edge_type": "CHILD_OF",
+      "valid_from": "2004-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "parental_right_interference_test_child_of_substantive_due_process",
+      "source_id": "parental_right_interference_test",
+      "target_id": "substantive_due_process",
+      "edge_type": "CHILD_OF",
+      "valid_from": "2000-06-05",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "neil_biggers_eyewitness_test_child_of_criminal_procedure",
+      "source_id": "neil_biggers_eyewitness_test",
+      "target_id": "criminal_procedure",
+      "edge_type": "CHILD_OF",
+      "valid_from": "1972-12-06",
       "valid_until": null,
       "jurisdiction": [
         "federal",
