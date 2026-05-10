@@ -60,9 +60,22 @@ VALID_SCRUTINY_LEVELS = {
 
 VALID_IP_OPINION_TYPES = {'dissent', 'concurrence', 'plurality', 'majority'}
 
+VALID_RELATED_TO_TYPES = {
+    'overlapping_doctrine',       # two doctrines share cases and concepts
+    'constitutional_tension',     # inherent tension between two constitutional values (e.g. Religion Clauses)
+    'cross_clause_interaction',   # doctrines from different constitutional clauses interact
+    'parallel_development',       # developed separately but converge on similar rules
+    'doctrinal_ancestor',         # one area historically preceded and influenced the other
+}
+
 # Edge type compatibility: source_type -> {valid target types}
 EDGE_COMPATIBILITY = {
-    'CHILD_OF':                {'Area': {'Area'}},
+    'CHILD_OF':                {
+        'Area': {'Area'},
+        'Doctrine': {'Area'},          # v0.5: doctrine belongs to area
+        'DoctrinalTest': {'Area'},     # v0.5: test belongs to area
+        'ConstitutionalProvision': {'ConstitutionalProvision'},  # incorporation
+    },
     'RELATED_TO':              {'Area': {'Area'}},
     'INCORPORATES':            {'ConstitutionalProvision': {'ConstitutionalProvision'}},
     'GROUNDED_IN':             {'Area': {'ConstitutionalProvision'}, 'Doctrine': {'ConstitutionalProvision'}},
@@ -297,6 +310,32 @@ def validate_edges(edges, nodes, node_types, cross_slice_ok, r):
                 oref = e['opinion_ref']
                 if oref.get('opinion_type') not in VALID_IP_OPINION_TYPES:
                     r.error('E006', f"opinion_ref.opinion_type '{oref.get('opinion_type')}' not in valid enum", loc)
+
+        # v0.5: GROUNDED_IN theory attribute (optional)
+        # If present, must be a non-empty string describing the legal theory
+        if etype == 'GROUNDED_IN':
+            theory = e.get('theory')
+            if theory is not None and not isinstance(theory, str):
+                r.error('E001', "GROUNDED_IN 'theory' attribute must be a string", loc)
+            elif theory is not None and len(theory.strip()) == 0:
+                r.warning('W005', "GROUNDED_IN 'theory' attribute is empty — omit or provide value", loc)
+
+        # v0.5: RELATED_TO relationship_type attribute (optional)
+        if etype == 'RELATED_TO':
+            rt = e.get('relationship_type')
+            if rt is not None and rt not in VALID_RELATED_TO_TYPES:
+                r.warning('W005', f"RELATED_TO relationship_type '{rt}' not in recommended enum — consider: {sorted(VALID_RELATED_TO_TYPES)}", loc)
+
+        # v0.5: GOVERNED_BY condition_note attribute (optional)
+        if etype == 'GOVERNED_BY':
+            cn = e.get('condition_note')
+            if cn is not None and not isinstance(cn, str):
+                r.error('E001', "GOVERNED_BY 'condition_note' must be a string", loc)
+
+        # PRECONDITION_TO: condition_note required
+        if etype == 'PRECONDITION_TO':
+            if 'condition_note' not in e or not e.get('condition_note'):
+                r.error('E001', "PRECONDITION_TO missing required 'condition_note' attribute", loc)
 
         # W003: historical GOVERNED_BY without termination note
         if etype == 'GOVERNED_BY' and e.get('valid_until'):

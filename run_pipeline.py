@@ -464,7 +464,7 @@ def run_pipeline(cases_file, model=DEFAULT_MODEL):
         d.mkdir(parents=True, exist_ok=True)
 
     client = Anthropic(api_key=os.getenv("ANTHROPIC_API_KEY"))
-    prompt_text = load_file(PIPELINE_DIR / "graph_builder_prompt_v1_5.txt")
+    prompt_text = load_file(PIPELINE_DIR / "graph_builder_prompt_v1_6.txt")
     cases = parse_cases_file(cases_file)
 
     run_start = datetime.now()

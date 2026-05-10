@@ -13892,7 +13892,8 @@
         "state"
       ],
       "citation": "Gitlow v. New York, 268 U.S. 652 (1925)",
-      "notes": "The 1st Amendment applies to state governments via the 14th Amendment's Due Process Clause."
+      "notes": "The 1st Amendment applies to state governments via the 14th Amendment's Due Process Clause.",
+      "theory": "selective incorporation via Due Process Clause"
     },
     {
       "id": "free_speech_child_of_first_amendment",
@@ -14570,7 +14571,8 @@
         "state"
       ],
       "citation": null,
-      "notes": null
+      "notes": null,
+      "condition_note": "General test for prior restraint validity; Madsen applies specifically to injunctions"
     },
     {
       "id": "prior_restraint_governed_by_madsen_test",
@@ -14584,7 +14586,8 @@
         "state"
       ],
       "citation": null,
-      "notes": "SCHEMA ISSUE E: This GOVERNED_BY edge is conditionally applicable \u2014 the Madsen test governs only when the government instrument is a content-neutral injunction against specific parties. The prior_restraint_test governs classic prior restraints (licensing schemes, administrative censorship). The schema cannot express this conditionality on edge type. A future edge attribute \u2014 'condition' or 'instrument_type' \u2014 would be needed."
+      "notes": "SCHEMA ISSUE E: This GOVERNED_BY edge is conditionally applicable \u2014 the Madsen test governs only when the government instrument is a content-neutral injunction against specific parties. The prior_restraint_test governs classic prior restraints (licensing schemes, administrative censorship). The schema cannot express this conditionality on edge type. A future edge attribute \u2014 'condition' or 'instrument_type' \u2014 would be needed.",
+      "condition_note": "Applies only when the prior restraint instrument is a judicial injunction, not a statute or licensing scheme"
     },
     {
       "id": "prior_restraint_related_to_core_political_speech",
@@ -14598,7 +14601,8 @@
         "state"
       ],
       "citation": null,
-      "notes": "Prior restraint doctrine and core political speech doctrine are closely related: prior restraint is the procedural mechanism by which core political speech is most severely threatened. Near v. Minnesota involved a political newspaper. Pentagon Papers involved political speech (government conduct of the Vietnam War). The RELATED_TO edge here is the first use of this edge type in the graph \u2014 per schema Issue #12, the editorial criteria for RELATED_TO need to be defined. This edge is justified by: (1) shared constitutional text (both GROUNDED_IN amendment_1), (2) overlapping case law (political speech cases often invoke prior restraint analysis), and (3) the doctrines operate as complementary protections \u2014 prior restraint is the 'how it's suppressed' dimension of the same protection that core political speech doctrine addresses from the 'what is protected' dimension."
+      "notes": "Prior restraint doctrine and core political speech doctrine are closely related: prior restraint is the procedural mechanism by which core political speech is most severely threatened. Near v. Minnesota involved a political newspaper. Pentagon Papers involved political speech (government conduct of the Vietnam War). The RELATED_TO edge here is the first use of this edge type in the graph \u2014 per schema Issue #12, the editorial criteria for RELATED_TO need to be defined. This edge is justified by: (1) shared constitutional text (both GROUNDED_IN amendment_1), (2) overlapping case law (political speech cases often invoke prior restraint analysis), and (3) the doctrines operate as complementary protections \u2014 prior restraint is the 'how it's suppressed' dimension of the same protection that core political speech doctrine addresses from the 'what is protected' dimension.",
+      "relationship_type": "overlapping_doctrine"
     },
     {
       "id": "near_establishes_prior_restraint_doctrine",
@@ -14836,7 +14840,8 @@
         "state"
       ],
       "citation": null,
-      "notes": "RELATED_TO criteria satisfied: (1) Shared constitutional grounding \u2014 both GROUNDED_IN amendment_1, specifically the Press Clause. (2) Overlapping case law \u2014 Near v. Minnesota (1931) and NYT v. United States (1971) appear in both doctrinal lineages; Near is the foundational prior restraint case and the foundational press freedom case. (3) Complementary not hierarchical \u2014 prior restraint addresses the mechanism of pre-publication suppression; freedom of the press addresses post-publication liability and press-specific constitutional protections. Different analytical mechanisms protecting the same press freedom interest."
+      "notes": "RELATED_TO criteria satisfied: (1) Shared constitutional grounding \u2014 both GROUNDED_IN amendment_1, specifically the Press Clause. (2) Overlapping case law \u2014 Near v. Minnesota (1931) and NYT v. United States (1971) appear in both doctrinal lineages; Near is the foundational prior restraint case and the foundational press freedom case. (3) Complementary not hierarchical \u2014 prior restraint addresses the mechanism of pre-publication suppression; freedom of the press addresses post-publication liability and press-specific constitutional protections. Different analytical mechanisms protecting the same press freedom interest.",
+      "relationship_type": "cross_clause_interaction"
     },
     {
       "id": "freedom_of_press_related_to_core_political_speech",
@@ -14850,7 +14855,8 @@
         "state"
       ],
       "citation": null,
-      "notes": "RELATED_TO criteria satisfied: (1) Shared constitutional grounding \u2014 both GROUNDED_IN amendment_1. (2) Overlapping case law \u2014 Sullivan's public concern analysis imports reasoning from the core political speech tradition; Snyder v. Phelps (core_political_speech slice) applies public concern doctrine in a press-adjacent context. (3) Complementary not hierarchical \u2014 core political speech doctrine governs what speech is protected; freedom of the press doctrine governs how press defendants are treated in defamation and related torts. Overlapping but not hierarchical \u2014 press freedom is not a sub-category of core political speech."
+      "notes": "RELATED_TO criteria satisfied: (1) Shared constitutional grounding \u2014 both GROUNDED_IN amendment_1. (2) Overlapping case law \u2014 Sullivan's public concern analysis imports reasoning from the core political speech tradition; Snyder v. Phelps (core_political_speech slice) applies public concern doctrine in a press-adjacent context. (3) Complementary not hierarchical \u2014 core political speech doctrine governs what speech is protected; freedom of the press doctrine governs how press defendants are treated in defamation and related torts. Overlapping but not hierarchical \u2014 press freedom is not a sub-category of core political speech.",
+      "relationship_type": "overlapping_doctrine"
     },
     {
       "id": "freedom_of_press_governed_by_actual_malice_doctrine",
@@ -15324,7 +15330,8 @@
         "state"
       ],
       "citation": null,
-      "notes": "RELATED_TO criteria: (1) Shared constitutional grounding \u2014 both GROUNDED_IN amendment_1. (2) Overlapping case law \u2014 Cantwell v. Connecticut (1940) involved a licensing scheme for religious solicitation that is simultaneously a prior restraint case and a Free Exercise case. (3) Complementary not hierarchical \u2014 prior restraint governs the mechanism of pre-publication suppression; free exercise governs government targeting of religious practice. Different analytical frameworks protecting related First Amendment interests."
+      "notes": "RELATED_TO criteria: (1) Shared constitutional grounding \u2014 both GROUNDED_IN amendment_1. (2) Overlapping case law \u2014 Cantwell v. Connecticut (1940) involved a licensing scheme for religious solicitation that is simultaneously a prior restraint case and a Free Exercise case. (3) Complementary not hierarchical \u2014 prior restraint governs the mechanism of pre-publication suppression; free exercise governs government targeting of religious practice. Different analytical frameworks protecting related First Amendment interests.",
+      "relationship_type": "cross_clause_interaction"
     },
     {
       "id": "cantwell_establishes_free_exercise_doctrine",
@@ -15656,7 +15663,8 @@
         "state"
       ],
       "citation": null,
-      "notes": "RELATED_TO criteria satisfied: (1) Shared constitutional grounding \u2014 both clauses appear in the same sentence of the First Amendment and are GROUNDED_IN amendment_1. (2) Overlapping case law \u2014 Cantwell v. Connecticut (1940) implicated both; Kennedy v. Bremerton (2022) decided both Free Exercise and Establishment Clause claims; RFRA cases raise both. (3) Complementary but structurally tensioned \u2014 the two clauses protect the same interest (religious liberty) but through opposing commands: Establishment Clause prohibits government promotion of religion; Free Exercise Clause prohibits government suppression of religion. Laws that accommodate religion risk Establishment Clause challenge; laws that are neutral toward religion risk Free Exercise challenge. This structural tension is unique to the Religion Clauses \u2014 no other RELATED_TO pair has this opposing-commands relationship. SCHEMA ISSUE D: The Religion Clauses' structural tension is different from the complementary relationship between prior restraint and core political speech. Consider adding a relationship_type attribute to RELATED_TO edges: complementary | structurally_tensioned | historically_linked. relationship_type: structurally_tensioned \u2014 the two clauses protect the same interest through opposing commands, creating genuine constitutional tension rather than mere doctrinal overlap."
+      "notes": "RELATED_TO criteria satisfied: (1) Shared constitutional grounding \u2014 both clauses appear in the same sentence of the First Amendment and are GROUNDED_IN amendment_1. (2) Overlapping case law \u2014 Cantwell v. Connecticut (1940) implicated both; Kennedy v. Bremerton (2022) decided both Free Exercise and Establishment Clause claims; RFRA cases raise both. (3) Complementary but structurally tensioned \u2014 the two clauses protect the same interest (religious liberty) but through opposing commands: Establishment Clause prohibits government promotion of religion; Free Exercise Clause prohibits government suppression of religion. Laws that accommodate religion risk Establishment Clause challenge; laws that are neutral toward religion risk Free Exercise challenge. This structural tension is unique to the Religion Clauses \u2014 no other RELATED_TO pair has this opposing-commands relationship. SCHEMA ISSUE D: The Religion Clauses' structural tension is different from the complementary relationship between prior restraint and core political speech. Consider adding a relationship_type attribute to RELATED_TO edges: complementary | structurally_tensioned | historically_linked. relationship_type: structurally_tensioned \u2014 the two clauses protect the same interest through opposing commands, creating genuine constitutional tension rather than mere doctrinal overlap.",
+      "relationship_type": "constitutional_tension"
     },
     {
       "id": "establishment_governed_by_doctrine",
@@ -16106,7 +16114,8 @@
         "state"
       ],
       "citation": null,
-      "notes": "Doctrine-level GROUNDED_IN edge for intimate association, which is grounded in the 14th Amendment Due Process Clause, not the First Amendment. This is the first use of a Doctrine-level GROUNDED_IN edge in the graph \u2014 the schema permits GROUNDED_IN from Area or Doctrine to ConstitutionalProvision."
+      "notes": "Doctrine-level GROUNDED_IN edge for intimate association, which is grounded in the 14th Amendment Due Process Clause, not the First Amendment. This is the first use of a Doctrine-level GROUNDED_IN edge in the graph \u2014 the schema permits GROUNDED_IN from Area or Doctrine to ConstitutionalProvision.",
+      "theory": "substantive due process liberty interest"
     },
     {
       "id": "freedom_of_association_governed_by_expressive_doctrine",
@@ -16162,7 +16171,8 @@
         "state"
       ],
       "citation": null,
-      "notes": "RELATED_TO criteria: (1) Shared constitutional grounding \u2014 both GROUNDED_IN amendment_1. (2) Overlapping case law \u2014 Hurley v. Irish-American Gay Group (1995) is simultaneously a compelled speech case (core political speech) and a compelled association case; Dale's expressive association analysis imports compelled speech reasoning. (3) Complementary not hierarchical \u2014 core political speech protects expression; freedom of association protects the right to join with others in expressive activity. Compelled association doctrine often merges with compelled speech doctrine. SCHEMA ISSUE B: The overlap between compelled association and compelled speech (Hurley, Dale) means some cases are simultaneously in both doctrinal lines. The schema models this correctly through edges but the conceptual boundary between the two areas is genuinely porous."
+      "notes": "RELATED_TO criteria: (1) Shared constitutional grounding \u2014 both GROUNDED_IN amendment_1. (2) Overlapping case law \u2014 Hurley v. Irish-American Gay Group (1995) is simultaneously a compelled speech case (core political speech) and a compelled association case; Dale's expressive association analysis imports compelled speech reasoning. (3) Complementary not hierarchical \u2014 core political speech protects expression; freedom of association protects the right to join with others in expressive activity. Compelled association doctrine often merges with compelled speech doctrine. SCHEMA ISSUE B: The overlap between compelled association and compelled speech (Hurley, Dale) means some cases are simultaneously in both doctrinal lines. The schema models this correctly through edges but the conceptual boundary between the two areas is genuinely porous.",
+      "relationship_type": "overlapping_doctrine"
     },
     {
       "id": "naacp_establishes_compelled_disclosure_doctrine",
@@ -16344,7 +16354,8 @@
         "state"
       ],
       "citation": null,
-      "notes": "RELATED_TO criteria: (1) Shared constitutional grounding \u2014 both GROUNDED_IN amendment_1. (2) Overlapping case law \u2014 Button (1963) recognized litigation as political expression, connecting petition and speech doctrine; Brandenburg's protections for political advocacy extend to petitioning activity. (3) Complementary not hierarchical \u2014 core political speech protects expression of political views; freedom of petition protects the right to direct that expression at government. Petitioning is a specific form of political expression directed at government action."
+      "notes": "RELATED_TO criteria: (1) Shared constitutional grounding \u2014 both GROUNDED_IN amendment_1. (2) Overlapping case law \u2014 Button (1963) recognized litigation as political expression, connecting petition and speech doctrine; Brandenburg's protections for political advocacy extend to petitioning activity. (3) Complementary not hierarchical \u2014 core political speech protects expression of political views; freedom of petition protects the right to direct that expression at government. Petitioning is a specific form of political expression directed at government action.",
+      "relationship_type": "overlapping_doctrine"
     },
     {
       "id": "freedom_of_petition_related_to_freedom_of_association",
@@ -16358,7 +16369,8 @@
         "state"
       ],
       "citation": null,
-      "notes": "RELATED_TO criteria: (1) Shared constitutional grounding \u2014 both GROUNDED_IN amendment_1. (2) Overlapping case law \u2014 NAACP v. Button (1963) is simultaneously a petition case and an association case \u2014 the NAACP's litigation activity is both petitioning government and expressive association; NAACP v. Alabama (1958, association slice) and Button (petition slice) are companion cases from the same civil rights context. (3) Complementary not hierarchical \u2014 freedom of association protects the right to join together; freedom of petition protects the right to direct collective action at government. Group petitioning is the intersection."
+      "notes": "RELATED_TO criteria: (1) Shared constitutional grounding \u2014 both GROUNDED_IN amendment_1. (2) Overlapping case law \u2014 NAACP v. Button (1963) is simultaneously a petition case and an association case \u2014 the NAACP's litigation activity is both petitioning government and expressive association; NAACP v. Alabama (1958, association slice) and Button (petition slice) are companion cases from the same civil rights context. (3) Complementary not hierarchical \u2014 freedom of association protects the right to join together; freedom of petition protects the right to direct collective action at government. Group petitioning is the intersection.",
+      "relationship_type": "overlapping_doctrine"
     },
     {
       "id": "freedom_of_association_governed_by_compelled_test",
@@ -19388,7 +19400,8 @@
       "valid_until": null,
       "jurisdiction": [
         "state"
-      ]
+      ],
+      "theory": "equal protection of the laws"
     },
     {
       "id": "suspect_class_governed_by_ep",
@@ -20879,7 +20892,8 @@
       "jurisdiction": [
         "state"
       ],
-      "notes": "Substantive due process is grounded in the Due Process Clause of Section 1 of the Fourteenth Amendment."
+      "notes": "Substantive due process is grounded in the Due Process Clause of Section 1 of the Fourteenth Amendment.",
+      "theory": "substantive due process liberty interest"
     },
     {
       "id": "sdp_governed_by_sdp_doctrine",
