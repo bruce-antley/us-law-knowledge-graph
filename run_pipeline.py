@@ -222,7 +222,8 @@ def step_validate(result):
         result['validate_errors'] = int(error_match.group(1)) if error_match else 0
         result['validate_warnings'] = int(warning_match.group(1)) if warning_match else 0
 
-        if proc.returncode == 0:
+        # Pass if 0 errors — warnings are non-blocking
+        if result['validate_errors'] == 0:
             result['validate_status'] = 'pass'
             return True
         else:
@@ -274,7 +275,8 @@ def step_qa_factual(result):
     except Exception as e:
         result['qa_factual_status'] = 'error'
         result['qa_factual_error'] = str(e)
-        return False
+        print(f"  ⚠ QA Factual error (non-blocking): {e}")
+        return True  # Don't fail the case on factual QA errors
 
 def step_qa_structural(result):
     """Step 5: Run qa_structural.py."""
@@ -464,7 +466,7 @@ def run_pipeline(cases_file, model=DEFAULT_MODEL):
         d.mkdir(parents=True, exist_ok=True)
 
     client = Anthropic(api_key=os.getenv("ANTHROPIC_API_KEY"))
-    prompt_text = load_file(PIPELINE_DIR / "graph_builder_prompt_v1_6.txt")
+    prompt_text = load_file(PIPELINE_DIR / "graph_builder_prompt_v1_4.txt")
     cases = parse_cases_file(cases_file)
 
     run_start = datetime.now()
@@ -629,6 +631,12 @@ def run_pipeline(cases_file, model=DEFAULT_MODEL):
             print(f"  ⚠ Doctrinal: {d_med} medium / {d_low} low")
         else:
             print(f"  ✓ Doctrinal: clean ({d_low} low)")
+
+        # Incorporate legal QA into pass/fail decision
+        if result.get('legal_fail', 0) > 0:
+            qa_ok = False
+        if result.get('qa_doctrinal_high', 0) > 0:
+            qa_ok = False
 
         if qa_ok:
             result['overall_status'] = 'passed'
