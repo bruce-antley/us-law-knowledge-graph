@@ -251,6 +251,26 @@ nodeSel.filter(d=>d._type==='Area').append('text')
   .attr('font-size','8px').attr('fill','#818cf8').attr('opacity',.8)
   .text(d=>(d.label||d.id).replace(' › Doctrine','').replace(' › doctrine',''));
 
+// Labels for ConstitutionalProvision nodes (always visible)
+nodeSel.filter(d=>d._type==='ConstitutionalProvision').append('text')
+  .attr('dy','2em').attr('text-anchor','middle')
+  .attr('font-size','7px').attr('fill','#2dd4bf').attr('opacity',.85)
+  .text(d=>d.label||d.id);
+
+// Labels for DoctrinalTest nodes (visible at zoom >1.5)
+nodeSel.filter(d=>d._type==='DoctrinalTest').append('text')
+  .attr('dy','1.8em').attr('text-anchor','middle')
+  .attr('font-size','6.5px').attr('fill','#facc15').attr('opacity',0)
+  .attr('class','doctrine-label')
+  .text(d=>(d.label||d.id).replace(' Test','').replace(' test',''));
+
+// Labels for Doctrine nodes (visible at zoom >2)
+nodeSel.filter(d=>d._type==='Doctrine').append('text')
+  .attr('dy','1.6em').attr('text-anchor','middle')
+  .attr('font-size','6px').attr('fill','#fb923c').attr('opacity',0)
+  .attr('class','doctrine-label')
+  .text(d=>d.label||d.id);
+
 // Labels for Case nodes (visible when zoomed in)
 nodeSel.filter(d=>d._type==='Case').append('text')
   .attr('dy','1.6em').attr('text-anchor','middle')
