@@ -17,8 +17,8 @@
     "created": "2026-03-15",
     "status": "draft",
     "schema_version": "0.5",
-    "node_count": 515,
-    "edge_count": 977,
+    "node_count": 575,
+    "edge_count": 1029,
     "schema_issue_count": 41,
     "fixes_applied": [
       "FIX 1: ConstitutionalProvision labels changed to citation form (amendment_1, amendment_14_section_1) to disambiguate from Area nodes with same common-name labels",
@@ -2869,6 +2869,428 @@
         "valid_from": "1972-12-06",
         "valid_until": null,
         "notes": "Established in Neil v. Biggers. Refined into the five-factor test in Manson v. Brathwaite (1977)."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "regulatory_takings_compensation",
+        "label": "Regulatory Takings Compensation Doctrine",
+        "description": "The doctrine that when a land-use regulation is determined to constitute a taking of property under the Fifth and Fourteenth Amendments, compensation must be provided for the period during which the regulation was in effect before such determination.",
+        "area_id": "takings_clause",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1987-06-09",
+        "valid_until": null,
+        "secondary_area_ids": [],
+        "notes": "Established in First English to address the timing of compensation in regulatory takings cases. Rejects the prior California rule that compensation was unavailable until after a regulation was declared excessive."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "permit_exaction_doctrine",
+        "label": "Permit Exaction Doctrine",
+        "description": "The doctrine governing when government may condition development permits on exactions or dedications of property. Requires that exactions substantially advance legitimate government interests that would justify denial of the permit.",
+        "area_id": "takings_clause",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1987-06-26",
+        "valid_until": null,
+        "secondary_area_ids": [],
+        "notes": "Established in Nollan v. California Coastal Commission as a constraint on the government's conditional permitting power."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "takings_exactions_doctrine",
+        "label": "Takings Exactions Doctrine",
+        "description": "The doctrine governing when a city may condition approval of a development permit on the dedication of property or payment of fees for public use, requiring both an essential nexus between the exaction and a legitimate state interest, and rough proportionality between the exaction and the impact of the proposed development.",
+        "area_id": "takings_clause",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1994-06-24",
+        "valid_until": null,
+        "secondary_area_ids": [],
+        "notes": "Developed from Nollan v. California Coastal Comm'n and refined in Dolan v. City of Tigard to establish a two-part test for permit condition exactions."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "physical_takings_doctrine",
+        "label": "Physical Takings Doctrine",
+        "description": "The doctrine that physical appropriations of private property by the government constitute per se takings requiring just compensation under the Fifth Amendment's Takings Clause, without need for case-by-case balancing.",
+        "area_id": "takings_clause",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "2021-06-23",
+        "valid_until": null,
+        "secondary_area_ids": [],
+        "notes": "Cedar Point Nursery established that appropriation of the right to exclude third parties from private property constitutes a physical taking triggering per se compensation requirement."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "right_to_exclude_doctrine",
+        "label": "Right to Exclude Doctrine",
+        "description": "The doctrine recognizing the right to exclude third parties from private property as a fundamental and treasured attribute of property ownership, the appropriation of which constitutes a physical taking.",
+        "area_id": "takings_clause",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "2021-06-23",
+        "valid_until": null,
+        "secondary_area_ids": [],
+        "notes": "Cedar Point Nursery characterized the right to exclude as 'one of the most treasured rights' of property ownership and held that appropriating this right constitutes a physical taking."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "regulatory_takings_doctrine",
+        "label": "Regulatory Takings Doctrine",
+        "description": "The doctrine governing when governmental regulation of property constitutes a compensable taking under the Fifth Amendment, requiring courts to balance property ownership rights against the government's power to regulate for the public good through a fact-intensive inquiry.",
+        "area_id": "takings_clause",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "2017-06-23",
+        "valid_until": null,
+        "secondary_area_ids": [],
+        "notes": "Established in Murr v. Wisconsin. The doctrine requires defining the scope of relevant property before analyzing whether regulation constitutes a taking."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "presidential_removal_power",
+        "label": "Presidential Removal Power",
+        "description": "The constitutional doctrine that the President retains broad power to supervise and remove executive officers, and Congress may not restrict this power except in narrow circumstances involving multimember bodies with quasi-legislative/quasi-judicial functions or inferior officers with limited duties.",
+        "area_id": "separation_of_powers",
+        "jurisdiction": [
+          "federal"
+        ],
+        "status": "active",
+        "valid_from": "2020-06-29",
+        "valid_until": null,
+        "secondary_area_ids": [],
+        "notes": "Clarified and narrowed by Seila Law. The doctrine recognizes two exceptions to the general rule that Congress cannot restrict presidential removal power, but declines to extend these exceptions to single-director agencies with substantial executive power."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "executive_power_concentration",
+        "label": "Executive Power Concentration Doctrine",
+        "description": "The constitutional principle that the structure of the Constitution scrupulously avoids concentrating substantial executive power in the hands of any single individual save the President, and that single-director agencies exercising substantial executive power are incompatible with this structural principle.",
+        "area_id": "separation_of_powers",
+        "jurisdiction": [
+          "federal"
+        ],
+        "status": "active",
+        "valid_from": "2020-06-29",
+        "valid_until": null,
+        "secondary_area_ids": [],
+        "notes": "Established by Seila Law as a constraint on independent agency structure. The Court emphasized that the CFPB's single-director configuration has no foothold in history or tradition."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "appointments_clause_inferior_officers",
+        "label": "Appointments Clause \u2014 Inferior Officers",
+        "description": "The constitutional doctrine that inferior officers may be appointed by the head of a department rather than by the President with Senate confirmation, as permitted by the Appointments Clause.",
+        "area_id": "separation_of_powers",
+        "jurisdiction": [
+          "federal"
+        ],
+        "status": "active",
+        "valid_from": "2010-06-28",
+        "valid_until": null,
+        "secondary_area_ids": [],
+        "notes": "In Free Enterprise Fund, the Court held that PCAOB members qualify as inferior officers and may be appointed by the SEC as head of a department."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "dormant_commerce_clause_market_access",
+        "label": "Dormant Commerce Clause Market Access Doctrine",
+        "description": "A state or local law that discriminates against interstate commerce by depriving out-of-state competitors of access to a local market violates the Commerce Clause, even when the law serves legitimate local purposes such as environmental protection or cost recovery.",
+        "area_id": "dormant_commerce_clause",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1994",
+        "valid_until": null,
+        "secondary_area_ids": [],
+        "notes": "Established in C&A Carbone as applied to flow control ordinances. The doctrine prohibits protectionist measures that facially discriminate against interstate commerce or have the practical effect of excluding out-of-state competitors."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "dormant_commerce_clause_nondiscrimination",
+        "label": "Dormant Commerce Clause Nondiscrimination Principle",
+        "description": "The dormant Commerce Clause prevents states from discriminating against out-of-state goods or nonresident economic actors, even when regulating under the Twenty-First Amendment. Protectionism is not a legitimate local purpose.",
+        "area_id": "dormant_commerce_clause",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "2019-06-26",
+        "valid_until": null,
+        "secondary_area_ids": [],
+        "notes": "This case clarifies that the Twenty-First Amendment does not override the nondiscrimination principle of the dormant Commerce Clause, viewing both as part of a unified constitutional scheme."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "market_participant_doctrine",
+        "label": "Market Participant Doctrine",
+        "description": "The doctrine that only a state's actions as a regulator are subject to the dormant Commerce Clause. Actions undertaken as a market participant, such as the issuance of bonds, are not subject to dormant Commerce Clause scrutiny.",
+        "area_id": "dormant_commerce_clause",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "2008",
+        "valid_until": null,
+        "secondary_area_ids": [],
+        "notes": ""
+      },
+      {
+        "@type": "Doctrine",
+        "id": "public_employee_speech_doctrine",
+        "label": "Public Employee Speech Doctrine",
+        "description": "A public employee retains First Amendment rights to comment on matters of public concern, but the government as employer may regulate employee speech to protect the efficiency of public services. The doctrine requires balancing the employee's interest in free expression against the government's interest in effective government operations.",
+        "area_id": "free_speech",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1968-01-01",
+        "valid_until": null,
+        "secondary_area_ids": [],
+        "notes": "Established in Pickering v. Board of Education (1968) and refined in Connick v. Myers (1983). The doctrine distinguishes between speech on matters of public concern (which receives protection) and speech on matters of private or internal concern (which does not)."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "press_search_and_seizure_doctrine",
+        "label": "Press Search and Seizure Doctrine",
+        "description": "The First Amendment does not categorically prohibit valid warrant-based searches of newsrooms. The Fourth Amendment's warrant requirement applies to newsrooms, but a warrant must be based on probable cause and the magistrate should consider First Amendment interests when evaluating warrant applications targeting press organizations.",
+        "area_id": "freedom_of_press",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1978-05-31",
+        "valid_until": null,
+        "notes": "Zurcher v. Stanford Daily. Congress responded by enacting the Privacy Protection Act of 1980 which provides greater protection for press materials than the constitutional minimum."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "special_tax_on_press_doctrine",
+        "label": "Special Tax on Press Doctrine",
+        "description": "A state may not impose a special tax on the press or press materials that, through its structure and exemptions, effectively targets and burdens only a small number of newspapers or publishers, as this violates the freedom of the press guarantee of the First Amendment.",
+        "area_id": "freedom_of_press",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1983-01-01",
+        "valid_until": null,
+        "secondary_area_ids": [],
+        "notes": "Established in Minneapolis Star and Tribune Co. v. Minnesota Commissioner of Revenue. The doctrine prohibits discriminatory taxation of the press, particularly when the tax structure results in disproportionate burden on a few publishers."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "expressive_association",
+        "label": "Freedom of Expressive Association",
+        "description": "The First Amendment protects the right of individuals and organizations to associate for the advancement of beliefs and ideas, and protects against compelled expression or forced association that would require an organization to express messages inconsistent with its stated values.",
+        "area_id": "freedom_of_association",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "2000-06-28",
+        "valid_until": null,
+        "secondary_area_ids": [
+          "first_amendment"
+        ],
+        "notes": "Established and applied in Boy Scouts of America v. Dale to protect private organizations' associational rights against state public accommodations laws."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "compelled_speech_doctrine",
+        "label": "Compelled Speech Doctrine",
+        "description": "The government may not compel individuals or organizations to express a message they disagree with. However, requiring an organization to provide a forum for a speaker does not constitute compelled speech when the organization can clearly disassociate itself from the speaker's message.",
+        "area_id": "free_speech",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "2006-03-06",
+        "valid_until": null,
+        "notes": "Rumsfeld v. FAIR held that providing access to military recruiters did not compel law schools to speak because schools remained free to disassociate themselves from the recruiters' message."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "exceedingly_persuasive_justification",
+        "label": "Exceedingly Persuasive Justification Standard",
+        "description": "The governing formulation of intermediate scrutiny for sex-based classifications. The government must demonstrate an exceedingly persuasive justification \u2014 the classification must serve important governmental objectives and the discriminatory means must be substantially related to those objectives.",
+        "area_id": "equal_protection",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1996-06-26",
+        "valid_until": null,
+        "notes": "United States v. Virginia (VMI). Ginsburg's formulation tightened intermediate scrutiny language from Craig v. Boren."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "gender_based_classification_equal_protection",
+        "label": "Gender-Based Classification Equal Protection Doctrine",
+        "description": "Framework for evaluating gender-based classifications under the Equal Protection Clause, requiring that such classifications serve important governmental objectives and that the discriminatory means employed are substantially related to achieving those objectives.",
+        "area_id": "equal_protection",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "2001-01-01",
+        "valid_until": null,
+        "secondary_area_ids": [],
+        "notes": "Applied in Nguyen to uphold differential citizenship requirements based on parental gender."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "rational_basis_review",
+        "label": "Rational Basis Review (Cleburne)",
+        "description": "The most deferential level of constitutional scrutiny under the Equal Protection Clause, requiring only that a law be rationally related to a legitimate governmental interest. A law fails rational basis review if it is based on irrational prejudice or animus rather than a rational relationship to a legitimate purpose.",
+        "area_id": "equal_protection",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1985-01-01",
+        "valid_until": null,
+        "secondary_area_ids": [],
+        "notes": "Cleburne established that even rational basis review provides meaningful protection against classifications based on irrational prejudice, though the Court did not elevate mental disability to quasi-suspect status."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "religious_freedom_restoration_act",
+        "label": "Religious Freedom Restoration Act (RFRA)",
+        "description": "Federal statute enacted in 1993 that prohibited government from substantially burdening a person's exercise of religion unless the burden serves a compelling governmental interest and is the least restrictive means of furthering that interest. Held unconstitutional as applied to state and local governments in City of Boerne v. Flores.",
+        "area_id": "free_exercise",
+        "jurisdiction": [
+          "federal"
+        ],
+        "status": "invalid",
+        "valid_from": "1993-11-16",
+        "valid_until": "1997-06-25",
+        "notes": "RFRA was invalidated as exceeding Congress' enforcement power under Section 5 of the Fourteenth Amendment. The statute attempted to override the holding in Employment Division v. Smith."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "congressional_enforcement_power",
+        "label": "Congressional Enforcement Power Under Section 5 of the Fourteenth Amendment",
+        "description": "Congress' power to enforce the Fourteenth Amendment is limited to remedying and preventing constitutional violations, not to substantively redefining constitutional rights. Legislation must be proportionate and congruent to the constitutional injury it seeks to remedy.",
+        "area_id": "federalism",
+        "jurisdiction": [
+          "federal"
+        ],
+        "status": "active",
+        "valid_from": "1997-06-25",
+        "valid_until": null,
+        "notes": "City of Boerne established that RFRA was not a valid exercise of Section 5 enforcement power because it was not proportionate and congruent to preventing violations of free exercise rights."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "free_exercise_protection_against_persecution",
+        "label": "Free Exercise Protection Against Religious Persecution",
+        "description": "The fundamental principle that government may not enact laws that suppress religious belief or practice, grounded in the First Amendment's protection of religious freedom.",
+        "area_id": "free_exercise",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1993-06-11",
+        "valid_until": null,
+        "secondary_area_ids": [],
+        "notes": "Reaffirmed in Church of the Lukumi Babalu Aye as a fundamental nonpersecution principle of the First Amendment."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "general_applicability_doctrine",
+        "label": "General Applicability Doctrine",
+        "description": "A law violates the Free Exercise Clause if the government pursues secular ends only with respect to conduct motivated by religious beliefs, failing to apply the law generally to all similarly situated conduct.",
+        "area_id": "free_exercise",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1993-06-11",
+        "valid_until": null,
+        "secondary_area_ids": [],
+        "notes": "Established in Church of the Lukumi Babalu Aye as a principle requiring that if a law pursues secular ends, it must do so with respect to all conduct, not merely conduct motivated by religious beliefs."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "legislative_prayer_doctrine",
+        "label": "Legislative Prayer Doctrine",
+        "description": "The Establishment Clause permits legislative prayer as part of a longstanding tradition, even when sectarian in content, because such prayer is directed at the legislative body and does not coerce public religious observance.",
+        "area_id": "establishment_clause",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "2014-01-01",
+        "valid_until": null,
+        "secondary_area_ids": [],
+        "notes": "Established in Town of Greece v. Galloway. Permits sectarian legislative prayer without requiring non-sectarian content or active recruitment of diverse clergy."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "seizure_by_force_doctrine",
+        "label": "Seizure by Force Doctrine",
+        "description": "The application of physical force to a person's body with intent to restrain constitutes a Fourth Amendment seizure, even if the person does not submit and successfully flees. A seizure can occur through force or through submission to a show of authority.",
+        "area_id": "criminal_procedure",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "2021-03-25",
+        "valid_until": null,
+        "notes": "Torres v. Madrid resolved a circuit split on whether force alone \u2014 without submission \u2014 constitutes a seizure."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "viewpoint_discrimination",
+        "label": "Viewpoint Discrimination Doctrine",
+        "description": "Government regulation that discriminates based on the viewpoint expressed in speech violates the First Amendment. This includes regulations that target messages deemed offensive or contrary to conventional moral standards.",
+        "area_id": "free_speech",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "2017-06-19",
+        "valid_until": null,
+        "notes": "Established in Matal v. Tam (2017) as applied to trademark disparagement clause. Extended in Iancu v. Brunetti (2019) to immoral/scandalous marks."
       }
     ],
     "areas": [
@@ -7642,41 +8064,6 @@
       },
       {
         "@type": "Case",
-        "id": "city_of_cleburne_v_cleburne_living_center_1985",
-        "short_name": "City of Cleburne v. Cleburne Living Center",
-        "full_name": "City of Cleburne, Texas v. Cleburne Living Center, Inc.",
-        "citation": "473 U.S. 432 (1985)",
-        "court_level": "scotus",
-        "court_name": "Supreme Court of the United States",
-        "binding_scope": "federal_all",
-        "decided_date": "1985-07-01",
-        "opinion_form": "signed_majority",
-        "procedural_disposition": "affirmed",
-        "holding": "Mental disability is not a quasi-suspect classification requiring intermediate scrutiny under the Equal Protection Clause. However, Cleburne's denial of a special use permit for a group home for intellectually disabled persons violates rational basis review because it was based on irrational prejudice and fear. The city's asserted justifications \u2014 concerns about the reaction of neighbors, fears about students from a nearby school, and the location near a flood plain \u2014 were not legitimate rational bases but reflected nothing more than an irrational prejudice against the disabled.",
-        "holding_type": "affirmative",
-        "majority_author": "White",
-        "per_curiam": false,
-        "vote": "9-0",
-        "opinions": [
-          {
-            "type": "concurrence",
-            "author": "Marshall",
-            "joined_by": [
-              "Brennan",
-              "Blackmun"
-            ],
-            "doctrinal_significance": "Marshall argued the majority was applying something more demanding than ordinary rational basis review \u2014 effectively a sliding scale of scrutiny \u2014 and that the Court should acknowledge that disability warrants intermediate scrutiny rather than pretending to apply rational basis.",
-            "adopted_in": []
-          }
-        ],
-        "status": "good_law",
-        "precedential_weight": "binding",
-        "valid_from": "1985-07-01",
-        "valid_until": null,
-        "notes": "Cleburne is the most important rational basis with bite decision \u2014 striking a zoning decision on rational basis grounds while explicitly declining to make disability a quasi-suspect classification. The Court's application of rational basis was notably more searching than typical, leading Marshall to accuse the majority of covert heightened review. The case establishes that animus and irrational prejudice are not legitimate government interests even under the most deferential standard. The judgment was unanimous in result, but the reasoning reflected important differences \u2014 Marshall argued the Court was applying something more demanding than ordinary rational basis, while the majority insisted it was not."
-      },
-      {
-        "@type": "Case",
         "id": "romer_v_evans_1996",
         "short_name": "Romer v. Evans",
         "full_name": "Romer v. Evans",
@@ -11290,6 +11677,760 @@
         "opinions": [],
         "notes": "Struck down 18 U.S.C. \u00a7 48. The Court rejected the government's argument that courts could balance the value of speech against its societal costs to create new categories of unprotected speech.",
         "courtlistener_id": "7340372"
+      },
+      {
+        "@type": "Case",
+        "id": "first_english_evangelical_lutheran_church_v_county_of_los_angeles_1987",
+        "short_name": "First English Evangelical Lutheran Church v. County of Los Angeles",
+        "full_name": "First English Evangelical Lutheran Church v. County of Los Angeles",
+        "citation": "482 U.S. 304 (1987)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1987-06-09",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "When a land-use regulation is determined to constitute a taking of property under the Fifth and Fourteenth Amendments, the government must provide compensation for the period during which the regulation was in effect before such determination, not merely prospective relief.",
+        "holding_type": "affirmative",
+        "majority_author": "Rehnquist",
+        "per_curiam": false,
+        "vote": "6-3",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1987-06-09",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "The Court rejected the California Court of Appeal's holding that damages for the period before final determination of a taking are unavailable. The opinion establishes that compensation must be available for the interim period when a regulation is later found to be a taking.",
+        "courtlistener_id": "111912"
+      },
+      {
+        "@type": "Case",
+        "id": "nollan_v_california_coastal_commission_1987",
+        "short_name": "Nollan v. California Coastal Commission",
+        "full_name": "Nollan v. California Coastal Commission",
+        "citation": "483 U.S. 825 (1987)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1987-06-26",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "A government may condition development permits on exactions only where the exaction substantially advances a legitimate government interest that would justify denial of the permit entirely; an exaction that does not substantially advance such an interest constitutes a regulatory taking requiring just compensation under the Fifth Amendment.",
+        "holding_type": "affirmative",
+        "majority_author": "Scalia",
+        "per_curiam": false,
+        "vote": "5-4",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1987-06-26",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "The Court held that the California Coastal Commission's condition requiring public beach access as a condition of a building permit was an uncompensated taking because it did not substantially advance the government's stated interest in overcoming psychological barriers to beach access.",
+        "courtlistener_id": "111958"
+      },
+      {
+        "@type": "Case",
+        "id": "dolan_v_city_of_tigard_1994",
+        "short_name": "Dolan v. City of Tigard",
+        "full_name": "Florence Dolan v. City of Tigard",
+        "citation": "512 U.S. 374 (1994)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1994-06-24",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "A city may not condition approval of a building permit on the dedication of property for public use unless there is an essential nexus between the legitimate state interest and the permit condition, and the degree of the exaction is roughly proportional to the impact of the proposed development.",
+        "holding_type": "affirmative",
+        "majority_author": "Rehnquist",
+        "per_curiam": false,
+        "vote": "5-4",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1994-06-24",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "Resolves the question left open by Nollan v. California Coastal Comm'n regarding the required degree of connection between exactions imposed by a city and the projected impacts of proposed development."
+      },
+      {
+        "@type": "Case",
+        "id": "cedar_point_nursery_v_hassid_2021",
+        "short_name": "Cedar Point Nursery v. Hassid",
+        "full_name": "Cedar Point Nursery v. Hassid",
+        "citation": "594 U.S. 139 (2021)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "2021-06-23",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "A state regulation granting labor organizations a right to take access to an agricultural employer's property to solicit unionization constitutes a per se physical taking under the Fifth Amendment's Takings Clause, requiring just compensation, because it appropriates the property owner's right to exclude third parties from their land.",
+        "holding_type": "affirmative",
+        "majority_author": "Roberts",
+        "per_curiam": false,
+        "vote": "6-3",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "2021-06-23",
+        "valid_until": null,
+        "opinions": [
+          {
+            "type": "concurrence",
+            "author": "Kavanaugh"
+          },
+          {
+            "type": "dissent",
+            "author": "Breyer"
+          }
+        ],
+        "notes": "Majority opinion by Chief Justice Roberts (6-3). Justice Kavanaugh concurred, offering an alternative rationale. Justice Breyer dissented, joined by Justices Sotomayor and Kagan, arguing the regulation temporarily regulates the right to exclude rather than physically appropriating property and should be subject to Penn Central balancing test.",
+        "courtlistener_id": "4894056"
+      },
+      {
+        "@type": "Case",
+        "id": "murr_v_wisconsin_2017",
+        "short_name": "Murr v. Wisconsin",
+        "full_name": "Murr v. Wisconsin",
+        "citation": "582 U.S. 383 (2017)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "2017-06-23",
+        "opinion_form": "plurality",
+        "procedural_disposition": "affirmed",
+        "holding": "In regulatory takings analysis, two legally distinct but commonly owned contiguous parcels should be evaluated as a single unit; courts must determine the relevant property parcel by considering state and local law treatment, physical characteristics, and prospective value, applying an objective inquiry into the landowner's reasonable expectations about whether the property would be treated as one parcel or separate ones.",
+        "holding_type": "affirmative",
+        "majority_author": "Kennedy (plurality)",
+        "per_curiam": false,
+        "vote": "5-3",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "2017-06-23",
+        "valid_until": null,
+        "opinions": [
+          "dissent",
+          "dissent"
+        ],
+        "notes": "Plurality opinion. Justice Kennedy delivered the opinion for the 5-3 majority. Chief Justice Roberts wrote a dissent joined by Justices Thomas and Alito. Justice Thomas wrote a separate dissent. Justice Gorsuch did not participate.",
+        "courtlistener_id": "8430747"
+      },
+      {
+        "@type": "Case",
+        "id": "seila_law_llc_v_consumer_financial_protection_bureau_2020",
+        "short_name": "Seila Law LLC v. CFPB",
+        "full_name": "Seila Law LLC v. Consumer Financial Protection Bureau",
+        "citation": "591 U.S. 197 (2020)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "2020-06-29",
+        "opinion_form": "plurality",
+        "procedural_disposition": "reversed",
+        "holding": "The Consumer Financial Protection Bureau's structure, which vests substantial executive power in a single Director removable only for cause, violates the separation of powers and is not saved by existing exceptions for multimember bodies or inferior officers with limited duties.",
+        "holding_type": "affirmative",
+        "majority_author": "Roberts (plurality)",
+        "per_curiam": false,
+        "vote": "7-2",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "2020-06-29",
+        "valid_until": null,
+        "opinions": [
+          {
+            "type": "concurrence",
+            "author": "Thomas",
+            "joined_by": [
+              "Gorsuch"
+            ],
+            "summary": "Concurred with the separation of powers violation but dissented on severability, arguing the first exception should be repudiated entirely and severability doctrine is unfounded."
+          },
+          {
+            "type": "dissent",
+            "author": "Kagan",
+            "joined_by": [
+              "Ginsburg",
+              "Breyer",
+              "Sotomayor"
+            ],
+            "summary": "Concurred with severability but dissented on the separation of powers violation, arguing for-cause removal restrictions serve legitimate independence interests and are supported by text, history, precedent, and governance needs."
+          }
+        ],
+        "notes": "Plurality opinion. Chief Justice Roberts authored the plurality opinion joined by Alito and Kavanaugh on the merits and severability. Justice Thomas concurred in the judgment on the merits but dissented on severability. Justice Kagan dissented on the merits but concurred on severability. The holding reflects what commanded a majority: that the CFPB's structure violates separation of powers (7 justices) and that the removal restriction is severable (5 justices: Roberts, Alito, Kavanaugh, Kagan, Ginsburg, Breyer, Sotomayor).",
+        "courtlistener_id": "9365252"
+      },
+      {
+        "@type": "Case",
+        "id": "free_enterprise_fund_v_public_company_accounting_oversight_board_2010",
+        "short_name": "Free Enterprise Fund v. PCAOB",
+        "full_name": "Free Enterprise Fund v. Public Company Accounting Oversight Board",
+        "citation": "561 U.S. 477 (2010)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "2010-06-28",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "A statutory restriction limiting the President's removal power over officers of an executive agency to removal only for cause violates the separation of powers by depriving the President of adequate control over executive officers and their accountability.",
+        "holding_type": "affirmative",
+        "majority_author": "Roberts",
+        "per_curiam": false,
+        "vote": "5-4",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "2010-06-28",
+        "valid_until": null,
+        "opinions": [
+          {
+            "type": "dissent",
+            "author": "Breyer",
+            "joined_by": [
+              "Stevens",
+              "Ginsburg",
+              "Sotomayor"
+            ]
+          }
+        ],
+        "notes": "The Court held that the for-cause removal restriction on PCAOB members was unconstitutional, but severed only that provision rather than invalidating the entire Board. The Court upheld the Board's appointment as consistent with the Appointments Clause, finding Board members to be inferior officers whose appointment may be vested in the head of a department (the SEC).",
+        "courtlistener_id": "9054281"
+      },
+      {
+        "@type": "Case",
+        "id": "collins_v_yellen_2021",
+        "short_name": "Collins v. Yellen",
+        "full_name": "Collins v. Yellen",
+        "citation": "594 U.S. 220 (2021)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "2021-06-30",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "remanded",
+        "holding": "The structure of the Housing and Economic Recovery Act of 2008, which restricts the President's power to remove the Federal Housing Finance Agency Director, violates the separation of powers principle; the anti-injunction provision of the Recovery Act bars shareholders' statutory claims when the FHFA acts within its conservatorship authority.",
+        "holding_type": "affirmative",
+        "majority_author": "Alito",
+        "per_curiam": false,
+        "vote": "9-0",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "2021-06-30",
+        "valid_until": null,
+        "opinions": [
+          "concurrence",
+          "concurrence_in_judgment"
+        ],
+        "notes": "Unanimous on the constitutional holding regarding removal restrictions. Justice Thomas concurred in full with separate opinion on retrospective relief. Justice Gorsuch concurred except on retrospective relief. Justice Kagan concurred in part and concurred in judgment (joined by Breyer and Sotomayor). Justice Sotomayor concurred in part and dissented in part (joined by Breyer), arguing Seila Law should not control because FHFA lacks regulatory/enforcement authority comparable to CFPB.",
+        "courtlistener_id": "4903413"
+      },
+      {
+        "@type": "Case",
+        "id": "hunt_v_washington_state_apple_advertising_commission_1977",
+        "short_name": "Hunt v. Washington State Apple Advertising Commission",
+        "full_name": "Hunt v. Washington State Apple Advertising Commission",
+        "citation": "432 U.S. 333 (1977)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1977-06-24",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "A state regulation that is facially neutral but has a discriminatory impact on interstate commerce by removing the competitive advantage of out-of-state producers and shielding local producers from the same burden places an unreasonable burden on interstate commerce and violates the dormant Commerce Clause.",
+        "holding_type": "affirmative",
+        "majority_author": "Burger",
+        "per_curiam": false,
+        "vote": "8-0",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1977-06-24",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "Unanimous decision. The Court rejected North Carolina's police power justification (uniformity and fraud prevention) as insufficient to justify the discriminatory burden on interstate commerce.",
+        "courtlistener_id": "109703"
+      },
+      {
+        "@type": "Case",
+        "id": "c_a_carbone_inc_v_town_of_clarkstown_1994",
+        "short_name": "C&A Carbone Inc. v. Town of Clarkstown",
+        "full_name": "C&A Carbone Inc. v. Town of Clarkstown",
+        "citation": "511 U.S. 383 (1994)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1994-05-16",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "A municipal flow control ordinance that requires all solid waste to be processed at a designated transfer station before leaving the municipality violates the Commerce Clause when it achieves its purpose of retaining processing fees by depriving competitors, including out-of-state firms, of access to a local market.",
+        "holding_type": "affirmative",
+        "majority_author": "Kennedy",
+        "per_curiam": false,
+        "vote": "5-4",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1994-05-16",
+        "valid_until": null,
+        "opinions": [
+          {
+            "type": "concurrence",
+            "author": "O'Connor"
+          },
+          {
+            "type": "dissent",
+            "author": "Souter"
+          }
+        ],
+        "notes": "Justice Kennedy delivered the opinion of the Court, joined by Stevens, Scalia, Thomas, and Ginsburg. O'Connor filed a concurrence in the judgment. Souter filed a dissent, joined by Rehnquist and Blackmun. The case involves a flow control ordinance requiring all nonhazardous solid waste within the town to be deposited at a designated transfer station."
+      },
+      {
+        "@type": "Case",
+        "id": "tennessee_wine_and_spirits_retailers_association_v_thomas_2019",
+        "short_name": "Tennessee Wine and Spirits Retailers Association v. Thomas",
+        "full_name": "Tennessee Wine and Spirits Retailers Association v. Thomas",
+        "citation": "588 U.S. 504 (2019)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "2019-06-26",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "affirmed",
+        "holding": "The dormant Commerce Clause forbids a state from regulating liquor sales by granting licenses only to individuals or entities that have met state residency requirements, notwithstanding the Twenty-First Amendment, because such durational-residency requirements discriminate against nonresidents and protectionism is not a legitimate local purpose under the nondiscrimination principle that applied when the Twenty-First Amendment was ratified.",
+        "holding_type": "affirmative",
+        "majority_author": "Alito",
+        "per_curiam": false,
+        "vote": "7-2",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "2019-06-26",
+        "valid_until": null,
+        "opinions": [
+          {
+            "type": "dissent",
+            "author": "Gorsuch",
+            "joined_by": [
+              "Thomas"
+            ],
+            "summary": "The original meaning of the Twenty-First Amendment was to allow states broad authority to regulate alcohol within their borders, which encompassed the authority to impose residency requirements on those seeking to sell alcohol."
+          }
+        ],
+        "notes": "7-2 decision. Justice Gorsuch filed a dissenting opinion joined by Justice Clarence Thomas."
+      },
+      {
+        "@type": "Case",
+        "id": "department_of_revenue_of_kentucky_v_davis_2008",
+        "short_name": "Department of Revenue of Kentucky v. Davis",
+        "full_name": "Department of Revenue of Kentucky v. Davis",
+        "citation": "553 U.S. 328 (2008)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "2008-04-22",
+        "opinion_form": "plurality",
+        "procedural_disposition": "reversed",
+        "holding": "A state's differential tax scheme that exempts interest on in-state bonds while taxing interest on out-of-state bonds does not violate the dormant Commerce Clause when the bonds are a quintessentially public function and the tax is motivated by legitimate state objectives other than economic protectionism.",
+        "holding_type": "affirmative",
+        "majority_author": null,
+        "per_curiam": false,
+        "vote": "7-2",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "2008-04-22",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "Fractured decision \u2014 no single opinion commanded a majority. The Court held 7-2 that Kentucky's tax policy was constitutional, but the reasoning was not unified across the seven justices in the majority.",
+        "courtlistener_id": "145809"
+      },
+      {
+        "@type": "Case",
+        "id": "connick_v_myers_1983",
+        "short_name": "Connick v. Myers",
+        "full_name": "Harry Connick v. Sheila Myers",
+        "citation": "461 U.S. 138 (1983)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1983-04-20",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "A public employee's speech on matters of internal office affairs, such as office transfer policy and internal grievances, is not protected by the First Amendment when the employee's primary motivation is personal grievance rather than public concern, and the government employer may discharge the employee for such speech without violating the First Amendment.",
+        "holding_type": "by_negation",
+        "majority_author": "White",
+        "per_curiam": false,
+        "vote": "5-4",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1983-04-20",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "The Court applied the Pickering balancing test and held that Myers' questionnaire did not address matters of public concern because it focused on internal office grievances and transfer policy rather than matters of public interest. The Court reversed the lower courts' findings and held that Connick's termination of Myers did not violate the First Amendment."
+      },
+      {
+        "@type": "Case",
+        "id": "iancu_v_brunetti_2019",
+        "short_name": "Iancu v. Brunetti",
+        "full_name": "Iancu v. Brunetti",
+        "citation": "588 U.S. 388 (2019)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "2019-06-24",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "affirmed",
+        "holding": "A prohibition on the registration of trademarks that are immoral or scandalous under Section 2(a) of the Lanham Act violates the First Amendment because it constitutes viewpoint-based discrimination.",
+        "holding_type": "affirmative",
+        "majority_author": "Kagan",
+        "per_curiam": false,
+        "vote": "6-3",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "2019-06-24",
+        "valid_until": null,
+        "opinions": [
+          {
+            "type": "concurrence",
+            "author": "Alito"
+          },
+          {
+            "type": "concurrence_in_judgment",
+            "author": "Roberts"
+          },
+          {
+            "type": "concurrence_in_judgment",
+            "author": "Breyer"
+          },
+          {
+            "type": "dissent",
+            "author": "Sotomayor"
+          }
+        ],
+        "notes": "The Court applied the viewpoint discrimination doctrine established in Matal v. Tam (2017). Justice Alito's concurrence emphasized the principle against viewpoint discrimination. Chief Justice Roberts and Justice Breyer filed opinions concurring in part and dissenting in part, disagreeing on whether the 'scandalous' portion of the statute could be narrowly construed. Justice Sotomayor, joined by Justice Breyer, dissented, arguing for a narrowing construction of 'scandalous' to obscenity, vulgarity, and profanity.",
+        "courtlistener_id": "9339247"
+      },
+      {
+        "@type": "Case",
+        "id": "zurcher_v_stanford_daily_1978",
+        "short_name": "Zurcher v. Stanford Daily",
+        "full_name": "Zurcher v. Stanford Daily",
+        "citation": "436 U.S. 547 (1978)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1978-05-31",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "affirmed",
+        "holding": "A warrant-based search of a third party's newsroom does not violate the Fourth Amendment when the magistrate has been satisfactorily demonstrated that fruits, instrumentalities, or evidence of crime is located on the premises, and the Framers of the Constitution did not forbid warrants where the press was involved.",
+        "holding_type": "affirmative",
+        "majority_author": "White",
+        "per_curiam": false,
+        "vote": "5-3",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1978-05-31",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "Decided together with Bergna v. Stanford Daily. The source text does not identify the majority author by name.",
+        "courtlistener_id": "9019625"
+      },
+      {
+        "@type": "Case",
+        "id": "minneapolis_star_and_tribune_co_v_minnesota_commissioner_of_revenue_1983",
+        "short_name": "Minneapolis Star and Tribune Co. v. Minnesota Commissioner of Revenue",
+        "full_name": "Minneapolis Star and Tribune Co. v. Minnesota Commissioner of Revenue",
+        "citation": "460 U.S. 575 (1983)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1983-03-29",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "A state may not impose a special use tax on ink and paper consumed in newspaper production that, through its exemption structure, effectively taxes only a small number of newspapers, as this violates the freedom of the press guarantee of the First Amendment.",
+        "holding_type": "affirmative",
+        "majority_author": "O'Connor",
+        "per_curiam": false,
+        "vote": "8-1",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1983-03-29",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "The opinion is identified as 'opinion of the Court' but the author is not named in the provided text. The case involves a special tax on press materials (ink and paper) that disproportionately burdened a few large newspapers, raising First Amendment concerns."
+      },
+      {
+        "@type": "Case",
+        "id": "boy_scouts_of_america_v_dale_2000",
+        "short_name": "Boy Scouts of America v. Dale",
+        "full_name": "Boy Scouts of America v. James Dale",
+        "citation": "530 U.S. 640 (2000)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "2000-06-28",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "Applying a state public accommodations law to require a private organization to admit a member violates the organization's First Amendment right of expressive association when the member's presence would compel the organization to express a message inconsistent with its stated values.",
+        "holding_type": "affirmative",
+        "majority_author": "Rehnquist",
+        "per_curiam": false,
+        "vote": "5-4",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "2000-06-28",
+        "valid_until": null,
+        "opinions": [
+          {
+            "type": "dissent"
+          }
+        ],
+        "notes": "5-4 decision. Chief Justice Rehnquist delivered the majority opinion. The Court reversed the New Jersey Supreme Court's decision that application of New Jersey's public accommodations law did not violate the Boy Scouts' First Amendment right of expressive association."
+      },
+      {
+        "@type": "Case",
+        "id": "rumsfeld_v_forum_for_academic_and_institutional_rights_2006",
+        "short_name": "Rumsfeld v. FAIR",
+        "full_name": "Rumsfeld v. Forum for Academic and Institutional Rights",
+        "citation": "547 U.S. 47 (2006)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "2006-03-06",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "The Solomon Amendment, which conditions federal funding on law schools providing military recruiters equal access to students, does not violate the First Amendment. Congress may use its spending power to require universities to provide military recruiters access without triggering First Amendment scrutiny because the compelled speech doctrine does not apply to hosting a speaker whose message the school disagrees with.",
+        "holding_type": "by_negation",
+        "majority_author": "Roberts",
+        "per_curiam": false,
+        "vote": "8-0",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "2006-03-06",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "Unanimous. Roberts' first major First Amendment opinion as Chief Justice."
+      },
+      {
+        "@type": "Case",
+        "id": "personnel_administrator_of_massachusetts_v_feeney_1979",
+        "short_name": "Personnel Administrator v. Feeney",
+        "full_name": "Personnel Administrator of Massachusetts v. Feeney",
+        "citation": "442 U.S. 256 (1979)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1979-06-05",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "affirmed",
+        "holding": "A facially neutral law that grants hiring preference to honorably discharged veterans does not violate the Equal Protection Clause even if it has a disparate impact on women, because the law was enacted to serve legitimate purposes and the classification is between veterans and nonveterans, not between men and women.",
+        "holding_type": "affirmative",
+        "majority_author": "Stewart",
+        "per_curiam": false,
+        "vote": "7-2",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1979-06-05",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "The Court rejected the argument that the law violated equal protection despite its disparate impact on women. The decision established that discriminatory intent, not merely discriminatory effect, is required to trigger heightened scrutiny under the Equal Protection Clause.",
+        "courtlistener_id": "9021116"
+      },
+      {
+        "@type": "Case",
+        "id": "nguyen_v_ins_2001",
+        "short_name": "Nguyen v. INS",
+        "full_name": "Tuan Anh Nguyen v. Immigration and Naturalization Service",
+        "citation": "533 U.S. 53 (2001)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "2001-06-11",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "affirmed",
+        "holding": "A gender-based classification in 8 U.S.C. \u00a7 1409(a) governing citizenship acquisition by children born abroad out of wedlock to a citizen father and noncitizen mother comports with equal protection because it serves important governmental objectives and the discriminatory means are substantially related to achieving those objectives.",
+        "holding_type": "affirmative",
+        "majority_author": "Kennedy",
+        "per_curiam": false,
+        "vote": "5-4",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "2001-06-11",
+        "valid_until": null,
+        "opinions": [
+          {
+            "type": "dissent",
+            "author": "O'Connor",
+            "joined_by": [
+              "Souter",
+              "Ginsburg",
+              "Breyer"
+            ]
+          }
+        ],
+        "notes": "5-4 decision. Dissent argued the majority failed to carefully apply equal protection jurisprudence concerning sex-based classifications."
+      },
+      {
+        "@type": "Case",
+        "id": "cleburne_v_cleburne_living_center_1985",
+        "short_name": "City of Cleburne v. Cleburne Living Center",
+        "full_name": "City of Cleburne, Texas v. Cleburne Living Center, Inc.",
+        "citation": "473 U.S. 432 (1985)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1985-07-01",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "A city's denial of a special use permit to operate a home for the mentally retarded, based on irrational prejudice against the mentally retarded, violates the Equal Protection Clause of the Fourteenth Amendment even under rational basis review.",
+        "holding_type": "affirmative",
+        "majority_author": "White",
+        "per_curiam": false,
+        "vote": "9-0",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1985-07-01",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "Unanimous decision. The Court applied rational basis review but found the city's action failed even that deferential standard because it was based on irrational prejudice rather than legitimate governmental interests. The Court declined to elevate mental disability to quasi-suspect class status.",
+        "courtlistener_id": "9054496"
+      },
+      {
+        "@type": "Case",
+        "id": "city_of_boerne_v_flores_1997",
+        "short_name": "City of Boerne v. Flores",
+        "full_name": "City of Boerne v. Flores, Archbishop of San Antonio",
+        "citation": "521 U.S. 507 (1997)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1997-06-25",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "The Religious Freedom Restoration Act of 1993 exceeds Congress' power under the Fourteenth Amendment and is unconstitutional as applied to state and local governments.",
+        "holding_type": "by_negation",
+        "majority_author": "Kennedy",
+        "per_curiam": false,
+        "vote": "6-3",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1997-06-25",
+        "valid_until": null,
+        "opinions": [
+          {
+            "type": "concurrence",
+            "author": "Stevens",
+            "doctrinal_significance": "Joined majority opinion",
+            "joined_by": [],
+            "adopted_in": []
+          },
+          {
+            "type": "concurrence",
+            "author": "Scalia",
+            "doctrinal_significance": "Concurred in part, disagreed with Part III-A-1 of majority opinion",
+            "joined_by": [
+              "Stevens"
+            ],
+            "adopted_in": []
+          },
+          {
+            "type": "dissent",
+            "author": "O'Connor",
+            "doctrinal_significance": "Disagreed with invalidation of RFRA",
+            "joined_by": [
+              "Breyer"
+            ],
+            "adopted_in": []
+          },
+          {
+            "type": "dissent",
+            "author": "Souter",
+            "doctrinal_significance": "Disagreed with invalidation of RFRA",
+            "joined_by": [],
+            "adopted_in": []
+          },
+          {
+            "type": "dissent",
+            "author": "Breyer",
+            "doctrinal_significance": "Disagreed with invalidation of RFRA",
+            "joined_by": [],
+            "adopted_in": []
+          }
+        ],
+        "notes": "Majority consisted of Kennedy, Rehnquist, Stevens, Thomas, and Ginsburg, with Scalia joining all but Part III-A-1. Vote was 6-3 on the core holding that RFRA exceeds Congress' power.",
+        "courtlistener_id": "9284719"
+      },
+      {
+        "@type": "Case",
+        "id": "church_of_the_lukumi_babalu_aye_v_city_of_hialeah_1993",
+        "short_name": "Church of the Lukumi Babalu Aye v. City of Hialeah",
+        "full_name": "Church of the Lukumi Babalu Aye, Inc. v. City of Hialeah",
+        "citation": "508 U.S. 520 (1993)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1993-06-11",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "A government may not enact laws that suppress religious belief or practice, and laws that target religious conduct while exempting secular conduct with the same harmful effects violate the Free Exercise Clause even if facially neutral, because they lack a permissible object and fail the principle of general applicability.",
+        "holding_type": "affirmative",
+        "majority_author": "Kennedy",
+        "per_curiam": false,
+        "vote": "9-0",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1993-06-11",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "Justice Kennedy delivered the opinion of the Court except as to Part II-A-2. The Court invalidated challenged municipal ordinances targeting animal sacrifice in Santer\u00eda religious practices.",
+        "courtlistener_id": "112881"
+      },
+      {
+        "@type": "Case",
+        "id": "town_of_greece_v_galloway_2014",
+        "short_name": "Town of Greece v. Galloway",
+        "full_name": "Town of Greece v. Galloway",
+        "citation": "572 U.S. 565 (2014)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "2014-05-05",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "Legislative prayer at town board meetings does not violate the Establishment Clause when the prayer is offered as part of a longstanding tradition of legislative prayer, even if the prayer is sectarian in content, because such prayer is directed at the legislative body rather than the public and does not coerce religious observance.",
+        "holding_type": "affirmative",
+        "majority_author": "Kennedy",
+        "per_curiam": false,
+        "vote": "5-4",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "2014-05-05",
+        "valid_until": null,
+        "opinions": [
+          "concurrence",
+          "concurrence_in_judgment",
+          "dissent",
+          "dissent"
+        ],
+        "notes": "Justice Scalia and Justice Thomas did not join the portion of Kennedy's majority opinion distinguishing between offense and coercion. Justice Alito wrote a concurrence. Justice Thomas wrote a separate concurrence in part and concurrence in the judgment. Justices Breyer and Kagan each wrote separate dissents, joined by Ginsburg, Sotomayor, and Breyer.",
+        "courtlistener_id": "2672525"
+      },
+      {
+        "@type": "Case",
+        "id": "torres_v_madrid_2021",
+        "short_name": "Torres v. Madrid",
+        "full_name": "Torres v. Madrid",
+        "citation": "592 U.S. 306 (2021)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "2021-03-25",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "The application of physical force to the body of a person with intent to restrain constitutes a seizure under the Fourth Amendment even if the person does not submit and successfully flees.",
+        "holding_type": "affirmative",
+        "majority_author": "Roberts",
+        "per_curiam": false,
+        "vote": "5-3",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "2021-03-25",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "Justice Barrett did not participate. Gorsuch dissented joined by Thomas and Alito."
       }
     ],
     "doctrinal_tests": [
@@ -13851,6 +14992,359 @@
         "valid_from": "1972-12-06",
         "valid_until": null,
         "notes": "Later refined in Manson v. Brathwaite into five specific reliability factors."
+      },
+      {
+        "@type": "DoctrinalTest",
+        "id": "nollan_exaction_test",
+        "label": "Nollan Exaction Test",
+        "description": "A two-part test for evaluating whether a government-imposed condition on a development permit constitutes a taking. The condition must: (1) substantially advance a legitimate government interest, and (2) that interest must be one that would justify denial of the permit entirely.",
+        "area_id": "takings_clause",
+        "source_case_id": "nollan_v_california_coastal_commission_1987",
+        "scrutiny_level": "heightened",
+        "burden": "government",
+        "test_form": "conjunctive",
+        "prongs": [
+          {
+            "number": 1,
+            "label": "Substantial Advancement",
+            "description": "The exaction must substantially advance a legitimate government interest.",
+            "burden_note": "Government must demonstrate substantial advancement; mere speculation or generalized assertions are insufficient.",
+            "valid_from": "1987-06-26",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 2,
+            "label": "Permit Denial Justification",
+            "description": "The government interest advanced must be one that would justify denial of the permit entirely.",
+            "burden_note": "Government must show the interest is sufficiently important to warrant complete denial of the development right.",
+            "valid_from": "1987-06-26",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          }
+        ],
+        "status": "active",
+        "valid_from": "1987-06-26",
+        "valid_until": null,
+        "notes": "If the exaction fails either prong, it constitutes an uncompensated taking in violation of the Fifth Amendment."
+      },
+      {
+        "@type": "DoctrinalTest",
+        "id": "dolan_exactions_test",
+        "label": "Dolan Exactions Test",
+        "description": "A two-part test for determining whether a city may condition approval of a development permit on the dedication of property for public use. The test requires: (1) an essential nexus between the exaction and a legitimate state interest, and (2) rough proportionality between the degree of the exaction and the impact of the proposed development.",
+        "area_id": "takings_clause",
+        "source_case_id": "dolan_v_city_of_tigard_1994",
+        "scrutiny_level": "heightened",
+        "burden": "government",
+        "test_form": "conjunctive",
+        "prongs": [
+          {
+            "number": 1,
+            "label": "Essential Nexus",
+            "description": "There must be an essential nexus between the exaction imposed by the city and a legitimate state interest.",
+            "burden_note": "Government must establish a connection between the permit condition and a legitimate public purpose.",
+            "valid_from": "1994-06-24",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 2,
+            "label": "Rough Proportionality",
+            "description": "The degree of the exaction must be roughly proportional to the impact of the proposed development on the city's ability to serve the legitimate state interest.",
+            "burden_note": "Government must demonstrate that the exaction is roughly proportional to the projected impacts of the proposed development.",
+            "valid_from": "1994-06-24",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          }
+        ],
+        "status": "active",
+        "valid_from": "1994-06-24",
+        "valid_until": null,
+        "notes": "This test refines and clarifies the essential nexus requirement from Nollan by adding a proportionality component. The test applies to permit conditions that require dedication of property for public use."
+      },
+      {
+        "@type": "DoctrinalTest",
+        "id": "murr_parcel_definition_test",
+        "label": "Murr Parcel Definition Test",
+        "description": "A test for determining the relevant property parcel in regulatory takings analysis by examining state and local law treatment of the land, physical characteristics, and prospective value, applying an objective inquiry into the landowner's reasonable expectations about whether the property would be treated as a single parcel or separate ones.",
+        "area_id": "takings_clause",
+        "source_case_id": "murr_v_wisconsin_2017",
+        "scrutiny_level": "balancing",
+        "burden": "shared",
+        "test_form": "balancing",
+        "prongs": [
+          {
+            "number": 1,
+            "label": "State and Local Law Treatment",
+            "description": "Consider how the land is treated under applicable state and local law, including zoning ordinances and property regulations.",
+            "burden_note": "Objective inquiry",
+            "valid_from": "2017-06-23",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 2,
+            "label": "Physical Characteristics",
+            "description": "Examine the physical characteristics of the land, including size, contiguity, and geographic features.",
+            "burden_note": "Objective inquiry",
+            "valid_from": "2017-06-23",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 3,
+            "label": "Prospective Value",
+            "description": "Consider the prospective value of the regulated land and the landowner's reasonable expectations about treatment as a single or separate parcel.",
+            "burden_note": "Objective inquiry",
+            "valid_from": "2017-06-23",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          }
+        ],
+        "status": "active",
+        "valid_from": "2017-06-23",
+        "valid_until": null,
+        "notes": "Plurality opinion establishing the test. Rejects both the approach of defining property as only the portion targeted by regulation and the approach of allowing state law alone to define property. The test applies an objective, fact-intensive inquiry."
+      },
+      {
+        "@type": "DoctrinalTest",
+        "id": "seila_removal_exception_test",
+        "label": "Seila Law Removal Exception Test",
+        "description": "A test identifying the two narrow exceptions to the general rule that Congress cannot restrict the President's removal power over executive officers.",
+        "area_id": "separation_of_powers",
+        "source_case_id": "seila_law_llc_v_consumer_financial_protection_bureau_2020",
+        "scrutiny_level": "categorical",
+        "burden": "government",
+        "test_form": "disjunctive",
+        "prongs": [
+          {
+            "number": 1,
+            "label": "Multimember Body Exception",
+            "description": "Congress may grant for-cause removal protection to a multimember body of experts who are balanced along partisan lines, appointed to staggered terms, and perform only quasi-legislative and quasi-judicial functions without exercising executive power.",
+            "burden_note": "Government must demonstrate the agency meets all criteria: multimember composition, partisan balance, staggered terms, and quasi-legislative/quasi-judicial functions only.",
+            "valid_from": "2020-06-29",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 2,
+            "label": "Inferior Officer Exception",
+            "description": "Congress may grant for-cause removal protection to an inferior officer with limited duties and no policymaking or administrative authority.",
+            "burden_note": "Government must demonstrate the officer is inferior and has limited duties with no policymaking or administrative authority.",
+            "valid_from": "2020-06-29",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          }
+        ],
+        "status": "active",
+        "valid_from": "2020-06-29",
+        "valid_until": null,
+        "notes": "The Court declined to extend these exceptions to single-director agencies with substantial executive power. The test is disjunctive: an agency structure must fit within one of these two exceptions to survive constitutional scrutiny, or it violates the separation of powers."
+      },
+      {
+        "@type": "DoctrinalTest",
+        "id": "dormant_commerce_discriminatory_impact_test",
+        "label": "Dormant Commerce Clause Discriminatory Impact Test",
+        "description": "A state regulation that is facially neutral but has a discriminatory impact on interstate commerce by removing competitive advantages of out-of-state producers or shielding local producers from equivalent burdens violates the dormant Commerce Clause as an unreasonable burden on interstate commerce.",
+        "area_id": "dormant_commerce_clause",
+        "source_case_id": "hunt_v_washington_state_apple_advertising_commission_1977",
+        "scrutiny_level": "balancing",
+        "burden": "government",
+        "test_form": "balancing",
+        "prongs": [
+          {
+            "number": 1,
+            "label": "Facial Neutrality",
+            "description": "The regulation must be facially neutral on its face, not explicitly discriminating against out-of-state commerce.",
+            "burden_note": "Challenger must show the regulation is facially neutral.",
+            "valid_from": "1977-01-01",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 2,
+            "label": "Discriminatory Impact",
+            "description": "The regulation must have a discriminatory impact on interstate commerce by removing competitive advantages of out-of-state producers or shielding local producers from equivalent burdens.",
+            "burden_note": "Challenger must demonstrate the discriminatory effect on out-of-state commerce.",
+            "valid_from": "1977-01-01",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 3,
+            "label": "Unreasonable Burden",
+            "description": "The burden on interstate commerce must be unreasonable in relation to the putative local benefits, even if the state asserts a legitimate police power justification.",
+            "burden_note": "Government must justify the regulation; if burden is unreasonable, the regulation violates the dormant Commerce Clause.",
+            "valid_from": "1977-01-01",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          }
+        ],
+        "status": "active",
+        "valid_from": "1977-01-01",
+        "valid_until": null,
+        "notes": "This test applies to facially neutral regulations with discriminatory effects. Police power justifications (such as fraud prevention or uniformity) are insufficient to overcome the unreasonable burden on interstate commerce."
+      },
+      {
+        "@type": "DoctrinalTest",
+        "id": "dormant_commerce_clause_discrimination_test",
+        "label": "Dormant Commerce Clause Discrimination Test",
+        "description": "A state law that discriminates against out-of-state goods or nonresident economic actors can be sustained only on a showing that it is narrowly tailored to advance a legitimate local purpose.",
+        "area_id": "dormant_commerce_clause",
+        "source_case_id": "tennessee_wine_and_spirits_retailers_association_v_thomas_2019",
+        "scrutiny_level": "strict",
+        "burden": "government",
+        "test_form": "conjunctive",
+        "prongs": [
+          {
+            "number": 1,
+            "label": "Discrimination Against Out-of-State Actors",
+            "description": "The law must discriminate against out-of-state goods or nonresident economic actors.",
+            "burden_note": "Challenger must establish discriminatory effect or purpose.",
+            "valid_from": "2019-06-26",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 2,
+            "label": "Narrow Tailoring to Legitimate Local Purpose",
+            "description": "The state must show the law is narrowly tailored to advance a legitimate local purpose. Protectionism is not a legitimate local purpose.",
+            "burden_note": "Government must justify the discrimination through narrow tailoring to a legitimate purpose.",
+            "valid_from": "2019-06-26",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          }
+        ],
+        "status": "active",
+        "valid_from": "2019-06-26",
+        "valid_until": null,
+        "notes": "This test applies even when a state invokes the Twenty-First Amendment. The Court held that Tennessee's residency requirement failed this test because it had at best a highly attenuated relationship to public health or safety."
+      },
+      {
+        "@type": "DoctrinalTest",
+        "id": "pickering_balancing_test",
+        "label": "Pickering Balancing Test",
+        "description": "A two-step test for determining whether a public employee's speech is protected by the First Amendment. First, the court must determine whether the employee's speech addresses a matter of public concern. If so, the court must balance the employee's interest in commenting on matters of public concern against the government's interest as an employer in promoting efficiency of public services.",
+        "area_id": "free_speech",
+        "source_case_id": "connick_v_myers_1983",
+        "scrutiny_level": "balancing",
+        "burden": "shared",
+        "test_form": "threshold_then_conjunctive",
+        "prongs": [
+          {
+            "number": 1,
+            "label": "Matter of Public Concern",
+            "description": "The employee's speech must address a matter of public concern rather than a matter of purely private or internal office interest. Speech concerning internal office grievances, transfer policies, and personnel matters does not constitute speech on matters of public concern.",
+            "burden_note": "Employee bears burden of demonstrating speech addresses public concern",
+            "valid_from": "1983-01-01",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 2,
+            "label": "Balancing of Interests",
+            "description": "If the speech addresses a matter of public concern, the court must balance the employee's interest in commenting on matters of public concern against the government's interest as an employer in promoting the efficiency of public services. The government may restrict or penalize the speech if its interest in efficiency substantially outweighs the employee's speech interest.",
+            "burden_note": "Government must demonstrate substantial interference with operations or efficiency",
+            "valid_from": "1983-01-01",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          }
+        ],
+        "status": "active",
+        "valid_from": "1983-01-01",
+        "valid_until": null,
+        "notes": "The Pickering balancing test was established in Pickering v. Board of Education (1968) and applied and refined in Connick v. Myers (1983). In Connick, the Court clarified that speech on internal office matters does not constitute speech on matters of public concern and therefore does not trigger the balancing analysis."
+      },
+      {
+        "@type": "DoctrinalTest",
+        "id": "expressive_association_compelled_message_test",
+        "label": "Expressive Association Compelled Message Test",
+        "description": "A state law violates the First Amendment right of expressive association when applied to require a private organization to admit a member if the member's presence would compel the organization to express a message inconsistent with its stated values and mission.",
+        "area_id": "freedom_of_association",
+        "source_case_id": "boy_scouts_of_america_v_dale_2000",
+        "scrutiny_level": "strict",
+        "burden": "government",
+        "test_form": "conjunctive",
+        "prongs": [
+          {
+            "number": 1,
+            "label": "Organization Has Expressive Purpose",
+            "description": "The organization must have a clearly articulated set of values or message it seeks to express or advance.",
+            "burden_note": "Organization must demonstrate its expressive purpose",
+            "valid_from": "2000-06-28",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 2,
+            "label": "Forced Inclusion Would Compel Expression",
+            "description": "Requiring the organization to admit the member would force the organization to express a message, either to members or to the public, that is inconsistent with its stated values.",
+            "burden_note": "Government must show that forced inclusion would not compel expression, or organization must show that it would",
+            "valid_from": "2000-06-28",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          }
+        ],
+        "status": "active",
+        "valid_from": "2000-06-28",
+        "valid_until": null,
+        "notes": "Established in Boy Scouts of America v. Dale as a test for when state public accommodations laws violate First Amendment expressive association rights. The Court found that the Boy Scouts' assertion that homosexual conduct is inconsistent with its values, combined with the compelled message that would result from admitting Dale, satisfied both prongs."
+      },
+      {
+        "@type": "DoctrinalTest",
+        "id": "lukumi_free_exercise_test",
+        "label": "Free Exercise Clause Validity Test",
+        "description": "A law regulating conduct must satisfy two requirements: (1) it must have a permissible object (not suppressing religious belief or practice), and (2) it must satisfy the principle of general applicability (pursuing any asserted secular ends with respect to all similarly situated conduct, not merely conduct motivated by religious beliefs).",
+        "area_id": "free_exercise",
+        "source_case_id": "church_of_the_lukumi_babalu_aye_v_city_of_hialeah_1993",
+        "scrutiny_level": "heightened",
+        "burden": "government",
+        "test_form": "conjunctive",
+        "prongs": [
+          {
+            "number": 1,
+            "label": "Permissible Object",
+            "description": "The law must not have an impermissible object of suppressing religious belief or practice.",
+            "burden_note": "Government must demonstrate the law does not target religious conduct.",
+            "valid_from": "1993-06-11",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 2,
+            "label": "General Applicability",
+            "description": "The law must apply generally to all similarly situated conduct. If the government asserts secular ends, those ends must be pursued with respect to all conduct that poses the same harm, not merely conduct motivated by religious beliefs.",
+            "burden_note": "Government must show the law applies equally to secular and religious conduct with equivalent effects.",
+            "valid_from": "1993-06-11",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          }
+        ],
+        "status": "active",
+        "valid_from": "1993-06-11",
+        "valid_until": null,
+        "notes": "This test applies to laws of general applicability that incidentally burden religious practice. The Court emphasized that even facially neutral laws can violate the Free Exercise Clause if they selectively target religious conduct while exempting secular conduct with equivalent harmful effects."
       }
     ]
   },
@@ -20117,7 +21611,7 @@
     },
     {
       "id": "cleburne_applies_rational_basis_bite",
-      "source_id": "city_of_cleburne_v_cleburne_living_center_1985",
+      "source_id": "cleburne_v_cleburne_living_center_1985",
       "target_id": "rational_basis_doctrine",
       "edge_type": "MODIFIES",
       "direction": "clarifies",
@@ -20131,7 +21625,7 @@
     },
     {
       "id": "cleburne_interprets_a14",
-      "source_id": "city_of_cleburne_v_cleburne_living_center_1985",
+      "source_id": "cleburne_v_cleburne_living_center_1985",
       "target_id": "amendment_14_section_1",
       "edge_type": "INTERPRETS",
       "valid_from": "1985-07-01",
@@ -26419,6 +27913,663 @@
       "target_id": "criminal_procedure",
       "edge_type": "CHILD_OF",
       "valid_from": "1972-12-06",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "first_english_establishes_regulatory_takings_compensation",
+      "source_id": "first_english_evangelical_lutheran_church_v_county_of_los_angeles_1987",
+      "target_id": "regulatory_takings_compensation",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1987-06-09",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "First English established the doctrine that compensation for regulatory takings must be available for the interim period before final determination."
+    },
+    {
+      "id": "nollan_establishes_nollan_exaction_test",
+      "source_id": "nollan_v_california_coastal_commission_1987",
+      "target_id": "nollan_exaction_test",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1987-06-26",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Nollan established the exaction test as the governing standard for permit conditions."
+    },
+    {
+      "id": "nollan_establishes_permit_exaction_doctrine",
+      "source_id": "nollan_v_california_coastal_commission_1987",
+      "target_id": "permit_exaction_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1987-06-26",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Nollan established the doctrine that government exactions on development permits are subject to takings scrutiny."
+    },
+    {
+      "id": "dolan_establishes_dolan_exactions_test",
+      "source_id": "dolan_v_city_of_tigard_1994",
+      "target_id": "dolan_exactions_test",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1994-06-24",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Dolan v. City of Tigard establishes the two-part exactions test requiring essential nexus and rough proportionality."
+    },
+    {
+      "id": "dolan_establishes_takings_exactions_doctrine",
+      "source_id": "dolan_v_city_of_tigard_1994",
+      "target_id": "takings_exactions_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1994-06-24",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Dolan v. City of Tigard refines and establishes the takings exactions doctrine by resolving the question left open in Nollan regarding the degree of connection required between exactions and development impacts."
+    },
+    {
+      "id": "dolan_modifies_nollan_exaction_test",
+      "source_id": "dolan_v_city_of_tigard_1994",
+      "target_id": "nollan_exaction_test",
+      "edge_type": "MODIFIES",
+      "direction": "expands",
+      "valid_from": "1994-06-24",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Dolan added rough proportionality as a second requirement to Nollan's nexus test."
+    },
+    {
+      "id": "cedar_point_applies_penn_central",
+      "source_id": "cedar_point_nursery_v_hassid_2021",
+      "target_id": "penn_central_balancing_test",
+      "edge_type": "APPLIES",
+      "valid_from": "2021-06-23",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Cedar Point distinguished physical takings from regulatory takings under Penn Central."
+    },
+    {
+      "id": "cedar_point_establishes_physical_takings_doctrine",
+      "source_id": "cedar_point_nursery_v_hassid_2021",
+      "target_id": "physical_takings_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2021-06-23",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Cedar Point Nursery clarified and reinforced the per se physical takings doctrine by holding that appropriation of the right to exclude constitutes a physical taking."
+    },
+    {
+      "id": "cedar_point_establishes_right_to_exclude_doctrine",
+      "source_id": "cedar_point_nursery_v_hassid_2021",
+      "target_id": "right_to_exclude_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2021-06-23",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Cedar Point Nursery established that the right to exclude third parties from private property is a fundamental attribute of property ownership, and appropriating this right constitutes a physical taking."
+    },
+    {
+      "id": "murr_establishes_murr_parcel_definition_test",
+      "source_id": "murr_v_wisconsin_2017",
+      "target_id": "murr_parcel_definition_test",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2017-06-23",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Murr v. Wisconsin established the parcel definition test for regulatory takings analysis."
+    },
+    {
+      "id": "murr_applies_regulatory_takings_doctrine",
+      "source_id": "murr_v_wisconsin_2017",
+      "target_id": "regulatory_takings_doctrine",
+      "edge_type": "APPLIES",
+      "valid_from": "2017-06-23",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Murr applies and clarifies the regulatory takings doctrine by establishing the proper method for defining the relevant property parcel."
+    },
+    {
+      "id": "seila_law_establishes_presidential_removal_power",
+      "source_id": "seila_law_llc_v_consumer_financial_protection_bureau_2020",
+      "target_id": "presidential_removal_power",
+      "edge_type": "MODIFIES",
+      "direction": "clarifies",
+      "valid_from": "2020-06-29",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ],
+      "notes": "Seila Law clarifies and narrows the presidential removal power doctrine by establishing that Congress cannot restrict removal of single-director agencies with substantial executive power, even if such restrictions might serve independence interests."
+    },
+    {
+      "id": "seila_law_establishes_executive_power_concentration",
+      "source_id": "seila_law_llc_v_consumer_financial_protection_bureau_2020",
+      "target_id": "executive_power_concentration",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2020-06-29",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ],
+      "notes": "Seila Law establishes the principle that the Constitution's structure scrupulously avoids concentrating substantial executive power in single individuals other than the President."
+    },
+    {
+      "id": "seila_law_establishes_seila_removal_exception_test",
+      "source_id": "seila_law_llc_v_consumer_financial_protection_bureau_2020",
+      "target_id": "seila_removal_exception_test",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2020-06-29",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ],
+      "notes": "Seila Law establishes the test identifying the two narrow exceptions to the presidential removal power restriction."
+    },
+    {
+      "id": "presidential_removal_power_precondition_to_seila_removal_exception_test",
+      "source_id": "presidential_removal_power",
+      "target_id": "seila_removal_exception_test",
+      "edge_type": "PRECONDITION_TO",
+      "valid_from": "2020-06-29",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ],
+      "condition_note": "An agency structure must first be evaluated under the general rule that Congress cannot restrict presidential removal power. Only if the structure falls within one of the two exceptions identified by the Seila test can Congress restrict removal; otherwise, the restriction violates separation of powers."
+    },
+    {
+      "id": "seila_applies_youngstown_framework",
+      "source_id": "seila_law_llc_v_consumer_financial_protection_bureau_2020",
+      "target_id": "youngstown_jackson_framework",
+      "edge_type": "APPLIES",
+      "valid_from": "2020-06-29",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ],
+      "notes": "Seila Law applied Youngstown Category 3 analysis \u2014 CFPB structure impermissibly restricted presidential removal power."
+    },
+    {
+      "id": "fef_applies_presidential_removal_power",
+      "source_id": "free_enterprise_fund_v_public_company_accounting_oversight_board_2010",
+      "target_id": "presidential_removal_power",
+      "edge_type": "APPLIES",
+      "valid_from": "2010-06-28",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ]
+    },
+    {
+      "id": "free_enterprise_fund_applies_appointments_clause",
+      "source_id": "free_enterprise_fund_v_public_company_accounting_oversight_board_2010",
+      "target_id": "appointments_clause_inferior_officers",
+      "edge_type": "APPLIES",
+      "valid_from": "2010-06-28",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ],
+      "notes": "The Court applied the Appointments Clause doctrine to uphold the appointment of PCAOB members by the SEC as head of a department."
+    },
+    {
+      "id": "collins_applies_presidential_removal_power",
+      "source_id": "collins_v_yellen_2021",
+      "target_id": "presidential_removal_power",
+      "edge_type": "APPLIES",
+      "valid_from": "2021-06-30",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ],
+      "notes": "Collins applied removal power doctrine to strike down FHFA single-director removal restriction."
+    },
+    {
+      "id": "hunt_applies_dormant_commerce_clause_doctrine",
+      "source_id": "hunt_v_washington_state_apple_advertising_commission_1977",
+      "target_id": "dormant_commerce_clause_doctrine",
+      "edge_type": "APPLIES",
+      "valid_from": "1977-06-24",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "hunt_establishes_dormant_commerce_discriminatory_impact_test",
+      "source_id": "hunt_v_washington_state_apple_advertising_commission_1977",
+      "target_id": "dormant_commerce_discriminatory_impact_test",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1977-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Hunt establishes the test for evaluating facially neutral state regulations with discriminatory effects on interstate commerce."
+    },
+    {
+      "id": "carbone_establishes_dormant_commerce_clause_market_access",
+      "source_id": "c_a_carbone_inc_v_town_of_clarkstown_1994",
+      "target_id": "dormant_commerce_clause_market_access",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1994",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "The Court established that flow control ordinances violating the dormant Commerce Clause by excluding out-of-state competitors from local waste processing markets."
+    },
+    {
+      "id": "tennessee_wine_establishes_dormant_commerce_nondiscrimination",
+      "source_id": "tennessee_wine_and_spirits_retailers_association_v_thomas_2019",
+      "target_id": "dormant_commerce_clause_nondiscrimination",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2019-06-26",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "The case clarifies and reinforces the nondiscrimination principle of the dormant Commerce Clause in the context of Twenty-First Amendment alcohol regulation."
+    },
+    {
+      "id": "tennessee_wine_establishes_dormant_commerce_test",
+      "source_id": "tennessee_wine_and_spirits_retailers_association_v_thomas_2019",
+      "target_id": "dormant_commerce_clause_discrimination_test",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2019-06-26",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "The case articulates the test for evaluating state laws that discriminate against nonresident economic actors under the dormant Commerce Clause."
+    },
+    {
+      "id": "tennessee_wine_applies_dormant_commerce_clause",
+      "source_id": "tennessee_wine_and_spirits_retailers_association_v_thomas_2019",
+      "target_id": "dormant_commerce_clause_doctrine",
+      "edge_type": "APPLIES",
+      "valid_from": "2019-06-26",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "davis_applies_dormant_commerce_clause",
+      "source_id": "department_of_revenue_of_kentucky_v_davis_2008",
+      "target_id": "dormant_commerce_clause_doctrine",
+      "edge_type": "APPLIES",
+      "valid_from": "2008-04-22",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "davis_applies_market_participant_doctrine",
+      "source_id": "department_of_revenue_of_kentucky_v_davis_2008",
+      "target_id": "market_participant_doctrine",
+      "edge_type": "APPLIES",
+      "valid_from": "2008",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "The case considers whether the market participant doctrine applies to state bond issuance and taxation, ultimately holding that bond proceeds are a quintessentially public function."
+    },
+    {
+      "id": "connick_applies_public_employee_speech_doctrine",
+      "source_id": "connick_v_myers_1983",
+      "target_id": "public_employee_speech_doctrine",
+      "edge_type": "APPLIES",
+      "valid_from": "1983-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Connick v. Myers applied the public employee speech doctrine established in Pickering v. Board of Education."
+    },
+    {
+      "id": "connick_establishes_pickering_balancing_test",
+      "source_id": "connick_v_myers_1983",
+      "target_id": "pickering_balancing_test",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1983-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Connick v. Myers refined and clarified the Pickering balancing test by establishing that speech on internal office matters does not constitute speech on matters of public concern."
+    },
+    {
+      "id": "virginia_black_establishes_true_threats",
+      "source_id": "virginia_v_black_2003",
+      "target_id": "true_threats_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2003-04-07",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "zurcher_establishes_press_search_doctrine",
+      "source_id": "zurcher_v_stanford_daily_1978",
+      "target_id": "press_search_and_seizure_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1978-05-31",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "minneapolis_star_establishes_special_tax_on_press_doctrine",
+      "source_id": "minneapolis_star_and_tribune_co_v_minnesota_commissioner_of_revenue_1983",
+      "target_id": "special_tax_on_press_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1983-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "The Court established that special taxes on press materials that disproportionately burden a small number of newspapers violate the First Amendment freedom of the press."
+    },
+    {
+      "id": "boy_scouts_establishes_expressive_association",
+      "source_id": "boy_scouts_of_america_v_dale_2000",
+      "target_id": "expressive_association",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2000-06-28",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Boy Scouts of America v. Dale established the modern framework for expressive association doctrine in the context of state public accommodations laws."
+    },
+    {
+      "id": "boy_scouts_establishes_expressive_association_test",
+      "source_id": "boy_scouts_of_america_v_dale_2000",
+      "target_id": "expressive_association_compelled_message_test",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2000-06-28",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "The Court established a two-prong test for determining when state public accommodations laws violate the First Amendment right of expressive association."
+    },
+    {
+      "id": "expressive_association_child_of_first_amendment",
+      "source_id": "expressive_association",
+      "target_id": "first_amendment",
+      "edge_type": "CHILD_OF",
+      "valid_from": "2000-06-28",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Freedom of expressive association is grounded in First Amendment protections for freedom of association and freedom from compelled speech."
+    },
+    {
+      "id": "rumsfeld_fair_applies_compelled_speech",
+      "source_id": "rumsfeld_v_forum_for_academic_and_institutional_rights_2006",
+      "target_id": "compelled_speech_doctrine",
+      "edge_type": "APPLIES",
+      "valid_from": "2006-03-06",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "feeney_applies_discriminatory_intent",
+      "source_id": "personnel_administrator_of_massachusetts_v_feeney_1979",
+      "target_id": "discriminatory_purpose_doctrine",
+      "edge_type": "APPLIES",
+      "valid_from": "1979-06-05",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Feeney applied discriminatory intent doctrine to facially neutral veterans preference."
+    },
+    {
+      "id": "usv_establishes_exceedingly_persuasive",
+      "source_id": "united_states_v_virginia_1996",
+      "target_id": "exceedingly_persuasive_justification",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1996-06-26",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "usv_modifies_intermediate_scrutiny_gender",
+      "source_id": "united_states_v_virginia_1996",
+      "target_id": "craig_intermediate_scrutiny_gender_test",
+      "edge_type": "MODIFIES",
+      "direction": "clarifies",
+      "valid_from": "1996-06-26",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "VMI tightened Craig's intermediate scrutiny formulation to 'exceedingly persuasive justification'."
+    },
+    {
+      "id": "nguyen_applies_intermediate_scrutiny_gender",
+      "source_id": "nguyen_v_ins_2001",
+      "target_id": "craig_intermediate_scrutiny_gender_test",
+      "edge_type": "APPLIES",
+      "valid_from": "2001-06-11",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "nguyen_applies_gender_based_classification_equal_protection",
+      "source_id": "nguyen_v_ins_2001",
+      "target_id": "gender_based_classification_equal_protection",
+      "edge_type": "APPLIES",
+      "valid_from": "2001-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Nguyen applies gender-based classification equal protection doctrine to evaluate citizenship statute."
+    },
+    {
+      "id": "cleburne_applies_rational_basis_review",
+      "source_id": "cleburne_v_cleburne_living_center_1985",
+      "target_id": "rational_basis_review",
+      "edge_type": "APPLIES",
+      "valid_from": "1985-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "The Court applied rational basis review to the city's zoning ordinance and found it failed because it was based on irrational prejudice rather than a rational relationship to legitimate governmental interests."
+    },
+    {
+      "id": "city_of_boerne_grounded_in_free_exercise",
+      "source_id": "city_of_boerne_v_flores_1997",
+      "target_id": "free_exercise",
+      "edge_type": "GROUNDED_IN",
+      "valid_from": "1997-06-25",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ],
+      "notes": "Case involved challenge to local zoning decision under RFRA, implicating free exercise of religion."
+    },
+    {
+      "id": "city_of_boerne_establishes_enforcement_power",
+      "source_id": "city_of_boerne_v_flores_1997",
+      "target_id": "congressional_enforcement_power",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1997-06-25",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ],
+      "notes": "Case established the proportionality and congruence requirement for Section 5 enforcement legislation."
+    },
+    {
+      "id": "lukumi_establishes_lukumi_free_exercise_test",
+      "source_id": "church_of_the_lukumi_babalu_aye_v_city_of_hialeah_1993",
+      "target_id": "lukumi_free_exercise_test",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1993-06-11",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Church of the Lukumi Babalu Aye established the two-prong test for Free Exercise Clause validity: permissible object and general applicability."
+    },
+    {
+      "id": "lukumi_establishes_free_exercise_protection",
+      "source_id": "church_of_the_lukumi_babalu_aye_v_city_of_hialeah_1993",
+      "target_id": "free_exercise_protection_against_persecution",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1993-06-11",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Reaffirmed the fundamental nonpersecution principle of the First Amendment as a core Free Exercise protection."
+    },
+    {
+      "id": "lukumi_establishes_general_applicability",
+      "source_id": "church_of_the_lukumi_babalu_aye_v_city_of_hialeah_1993",
+      "target_id": "general_applicability_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1993-06-11",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Established the principle that secular ends must be pursued uniformly with respect to all similarly situated conduct, not selectively with respect to religiously motivated conduct."
+    },
+    {
+      "id": "fulton_applies_lukumi_general_applicability",
+      "source_id": "fulton_v_city_of_philadelphia_2021",
+      "target_id": "general_applicability_doctrine",
+      "edge_type": "APPLIES",
+      "valid_from": "2021-06-17",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Fulton applied the general applicability doctrine from Lukumi to strike down Philadelphia's conditional contract policy."
+    },
+    {
+      "id": "town_of_greece_v_galloway_2014_establishes_legislative_prayer_doctrine",
+      "source_id": "town_of_greece_v_galloway_2014",
+      "target_id": "legislative_prayer_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2014-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Town of Greece established the legislative prayer doctrine permitting sectarian prayer in legislative settings."
+    },
+    {
+      "id": "torres_establishes_seizure_by_force",
+      "source_id": "torres_v_madrid_2021",
+      "target_id": "seizure_by_force_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2021-03-25",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "city_of_boerne_establishes_rfra_doctrine_node",
+      "source_id": "city_of_boerne_v_flores_1997",
+      "target_id": "religious_freedom_restoration_act",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1997-06-25",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ],
+      "notes": "City of Boerne v. Flores held RFRA unconstitutional as applied to states."
+    },
+    {
+      "id": "iancu_brunetti_applies_viewpoint_discrimination_v2",
+      "source_id": "iancu_v_brunetti_2019",
+      "target_id": "viewpoint_discrimination",
+      "edge_type": "APPLIES",
+      "valid_from": "2019-06-24",
       "valid_until": null,
       "jurisdiction": [
         "federal",
