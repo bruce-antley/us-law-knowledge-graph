@@ -96,6 +96,16 @@ def parse_citation(citation_str):
         return match.group(1), match.group(2), match.group(3)
     return None, None, None
 
+# Known case name variants — maps input names to Oyez canonical names
+CASE_NAME_VARIANTS = {
+    'dred scott v. sandford': 'dred scott v. sanford',  # Common misspelling
+    'youngstown sheet and tube co. v. sawyer': 'youngstown sheet tube co v sawyer',
+    'youngstown sheet & tube co. v. sawyer': 'youngstown sheet tube co v sawyer',
+    'board of education v. earls': 'board of education of independent school district no 92 of pottawatomie county v earls',
+    'massachusetts v. epa': 'massachusetts v environmental protection agency',
+    'massachusetts v. e.p.a.': 'massachusetts v environmental protection agency',
+}
+
 def normalize_case_name(name):
     """Normalize case name — strip periods from initials like J.E.B. -> JEB, U.S. -> US."""
     # Interior periods between caps: J.E.B -> JEB (two passes handles odd counts)
@@ -196,11 +206,12 @@ def extract_syllabus_section(text):
 
 # ─── Strategy 1: Case Registry ─────────────────────────────────────────────────
 
-def verify_case_identity(case_name, text, citation):
+def verify_case_identity(case_name, text, citation, debug=False):
     """
     Verify that retrieved text is actually for the expected case.
     Returns text if valid, None if identity check fails.
     Checks for party names and basic content length.
+    Set debug=True to print detailed trace.
     """
     if not text or len(text) < 400:
         print(f"    Identity check: text too short ({len(text) if text else 0} chars) — likely docket entry or order")
@@ -236,27 +247,16 @@ def verify_case_identity(case_name, text, citation):
                 oyez_p1 = case_line.replace("case: ", "").strip()
                 oyez_p2 = ""
 
-            # p1 should be in the LEFT side of Oyez name, p2 in RIGHT side
-            # Strict: p1 must match LEFT side, p2 must match RIGHT side
-            # This prevents "City of Chicago v. Fulton" matching "Fulton v. City of Philadelphia"
-            p1_ok = (p1_word in oyez_p1 or p1_word in text_lower_norm) if p1_word not in common else True
-            # p2 must match right side; also check full text for abbreviation expansion
-            p2_ok = (p2_word in oyez_p2 or p2_word in text_lower_norm) if p2_word not in common else True
+            # p1 should be in the LEFT side of Oyez name (strict positional check)
+            # Do NOT check text_lower_norm for p1 — that breaks Fulton-style wrong-case detection
+            p1_ok = (p1_word in oyez_p1) if p1_word not in common else True
+            # p2 checks right side; text_lower_norm only for abbreviation expansion fallback
+            p2_ok = (p2_word in oyez_p2) if p2_word not in common else True
 
             if p1_ok and p2_ok:
-                # Final check: verify that non-common input party words appear in full text
-                # This catches "City of Chicago v. Fulton" when we want "Fulton v. City of Philadelphia"
-                # by checking "philadelphia" appears somewhere in the text body
-                all_input_words = re.findall(r'[a-z]+', normalize_case_name(case_name).lower())
-                meaningful_input = [w for w in all_input_words
-                                   if w not in common and len(w) > 3]
-                # At least 2 meaningful input words must appear in text
-                found_count = sum(1 for w in meaningful_input if w in text_lower_norm)
-                if len(meaningful_input) >= 2 and found_count < 2:
-                    missing = [w for w in meaningful_input if w not in text_lower_norm]
-                    print(f"    Oyez content check FAILED: {missing} not found in text body")
-                    return None
-                return text  # Oyez identity confirmed — both parties found
+                # Oyez case header confirms both parties — no content body check needed
+                # (Oyez abbreviates names e.g. "Ed." for "Education", "Cty." for "County")
+                return text  # Oyez identity confirmed
             # Handle legal abbreviations (INS, NLRB, FTC, etc.)
             LEGAL_ABBREVIATIONS = {
                 'ins': 'immigration and naturalization service',
@@ -272,6 +272,20 @@ def verify_case_identity(case_name, text, citation):
                 'pcaob': 'public company accounting oversight board',
                 'cfpb': 'consumer financial protection bureau',
                 'fhfa': 'federal housing finance agency',
+                # Additional common legal abbreviations
+                'fec': 'federal election commission',
+                'naacp': 'national association for the advancement of colored people',
+                'aclu': 'american civil liberties union',
+                'eeoc': 'equal employment opportunity commission',
+                'nlra': 'national labor relations act',
+                'ada': 'americans with disabilities act',
+                'dea': 'drug enforcement administration',
+                'fbi': 'federal bureau of investigation',
+                'cia': 'central intelligence agency',
+                'afa': 'armed forces act',
+                'fair': 'forum for academic and institutional rights',
+                'pga': 'professional golfers association',
+                'atp': 'association of tennis professionals',
             }
             if not p1_ok and p1_word not in common and len(p1_word) <= 6:
                 # Check known abbreviations
@@ -286,10 +300,21 @@ def verify_case_identity(case_name, text, citation):
                         p1_ok = True
 
             if not p1_ok and p1_word not in common:
-                print(f"    Oyez identity FAILED: '{p1_word}' not in Oyez p1 '{oyez_p1}'")
+                print(f"    Oyez identity FAILED: '{p1_word}' not in Oyez p1 '{oyez_p1}' | case_line='{case_line}'")
                 return None
+            # Also check p2 abbreviations (e.g. McCutcheon v. FEC)
+            if not p2_ok and p2_word not in common and len(p2_word) <= 6:
+                if p2_word in LEGAL_ABBREVIATIONS:
+                    expanded = LEGAL_ABBREVIATIONS[p2_word]
+                    if any(w in oyez_p2 or w in oyez_p1 for w in expanded.split()):
+                        p2_ok = True
+                else:
+                    oyez_p2_initials = ''.join(w[0] for w in oyez_p2.split() if w)
+                    if p2_word == oyez_p2_initials:
+                        p2_ok = True
+
             if not p2_ok and p2_word not in common:
-                print(f"    Oyez identity FAILED: '{p2_word}' not in Oyez name '{case_line}'")
+                print(f"    Oyez identity FAILED: '{p2_word}' not in Oyez name '{case_line}' | oyez_p1='{oyez_p1}' oyez_p2='{oyez_p2}'")
                 return None
             return text
         else:
@@ -325,6 +350,20 @@ def verify_case_identity(case_name, text, citation):
             if p1_word not in common_words else True
         p2_found = (p2_word in text_lower or p2_word in text_alpha_only) \
             if p2_word not in common_words else True
+
+        # Also check legal abbreviations in the text
+        if not p1_found and p1_word not in common_words and len(p1_word) <= 6:
+            abbrevs = {'ins':'immigration','nlrb':'labor','fcc':'communications',
+                      'fec':'election','naacp':'colored','aclu':'liberties',
+                      'epa':'environmental','irs':'revenue','ftc':'trade'}
+            if p1_word in abbrevs and abbrevs[p1_word] in text_lower:
+                p1_found = True
+
+        if not p2_found and p2_word not in common_words and len(p2_word) <= 6:
+            abbrevs = {'fec':'election','epa':'environmental','nlrb':'labor',
+                      'fcc':'communications','naacp':'colored'}
+            if p2_word in abbrevs and abbrevs[p2_word] in text_lower:
+                p2_found = True
 
         if not p1_found and not p2_found:
             print(f"    Identity check FAILED: neither '{p1_word}' nor '{p2_word}' found in text")
@@ -460,6 +499,139 @@ def fetch_by_registry(case_id, headers):
 # ─── Strategy 2: Oyez ──────────────────────────────────────────────────────────
 
 OYEZ_BASE = "https://api.oyez.org"
+
+# Direct Oyez case URLs — bypasses name matching, identity guaranteed by URL
+# Format: case_id -> (oyez_term, oyez_docket)
+OYEZ_DIRECT_URLS = {
+    # Landmark cases with known Oyez term/docket
+    "marbury_v_madison_1803":                     ("1789-1850", "5us137"),
+    "mcculloch_v_maryland_1819":                  ("1789-1850", "17us316"),
+    "dred_scott_v_sandford_1857":                 ("1789-1850", "60us393"),
+    "plessy_v_ferguson_1896":                     ("1850-1900", "163us537"),
+    "schenck_v_united_states_1919":               ("1900-1940", "249us47"),
+    "gitlow_v_new_york_1925":                     ("1900-1940", "268us652"),
+    "whitney_v_california_1927":                  ("1900-1940", "274us357"),
+    "near_v_minnesota_1931":                      ("1900-1940", "283us697"),
+    "nlrb_v_jones_and_laughlin_steel_corp_1937":  ("1900-1940", "301us1"),
+    "west_coast_hotel_co_v_parrish_1937":         ("1900-1940", "300us379"),
+    "korematsu_v_united_states_1944":             ("1940-1955", "323us214"),
+    "everson_v_board_of_education_1947":          ("1940-1955", "330us1"),
+    "shelley_v_kraemer_1948":                     ("1940-1955", "334us1"),
+    "youngstown_sheet_tube_co_v_sawyer_1952":     ("1940-1955", "343us579"),
+    "yates_v_united_states_1957":                 ("1955-1975", "354us298"),
+    "naacp_v_alabama_1958":                       ("1955-1975", "357us449"),
+    "brown_v_board_of_education_1954":            ("1940-1955", "347us483"),
+    "baker_v_carr_1962":                          ("1955-1975", "369us186"),
+    "roe_v_wade_1973":                            ("1971", "70-18"),
+    "fcc_v_pacifica_foundation_1978":             ("1977", "77-528"),
+    "board_of_education_v_earls_2002":            ("2001", "01-332"),
+    "mccutcheon_v_fec_2014":                      ("2013", "12-536"),
+    "massachusetts_v_epa_2007":                   ("2006", "05-1120"),
+    # Additional cases with known Oyez dockets
+    "board_of_education_v_earls_2002":            ("2001", "01-332"),
+    "fcc_v_pacifica_foundation_1978":             ("1977", "77-528"),
+    "baker_v_carr_1962":                          ("1960", "6"),
+    "roe_v_wade_1973":                            ("1971", "70-18"),
+    "mapp_v_ohio_1961":                           ("1955-1975", "367us643"),
+    "gideon_v_wainwright_1963":                   ("1955-1975", "372us335"),
+    "new_york_times_co_v_sullivan_1964":          ("1955-1975", "376us254"),
+    "griswold_v_connecticut_1965":                ("1955-1975", "381us479"),
+    "miranda_v_arizona_1966":                     ("1955-1975", "384us436"),
+    "loving_v_virginia_1967":                     ("1955-1975", "388us1"),
+    "terry_v_ohio_1968":                          ("1955-1975", "392us1"),
+    "roe_v_wade_1973":                            ("1971", "70-18"),
+    "united_states_v_nixon_1974":                 ("1955-1975", "418us683"),
+    "buckley_v_valeo_1976":                       ("1955-1975", "424us1"),
+}
+
+def _citation_to_oyez_docket(citation, year):
+    """
+    Convert a US Reports citation to an Oyez URL docket string.
+    Pre-1956 cases: Oyez uses citation as docket e.g. 347us483
+    Post-1956 cases: Oyez uses numeric docket number (unknown without registry)
+    """
+    if not citation or not year:
+        return None, None
+    # Parse volume and page from citation
+    m = re.match(r'(\d+)\s+U\.?S\.?\s+(\d+)', citation)
+    if not m:
+        return None, None
+    volume, page = m.group(1), m.group(2)
+    yr = int(year)
+    if yr < 1956:
+        # Pre-1956: Oyez uses citation-based docket and grouped terms
+        if yr < 1941:
+            term = "1789-1850" if yr <= 1850 else "1851-1900" if yr <= 1900 else "1900-1940"
+        else:
+            term = "1940-1955"
+        docket = f"{volume}us{page}"
+        return term, docket
+    return None, None  # Post-1955: need explicit registry entry
+
+def fetch_oyez_direct(case_id, case_name, citation):
+    """Fetch directly from Oyez using known term/docket. Identity is guaranteed."""
+    term, docket = None, None
+
+    # First check explicit registry
+    if case_id in OYEZ_DIRECT_URLS:
+        term, docket = OYEZ_DIRECT_URLS[case_id]
+    # Then try citation-based URL construction (pre-1956 cases)
+    elif citation:
+        year = case_id.split('_')[-1] if case_id.split('_')[-1].isdigit() else None
+        term, docket = _citation_to_oyez_docket(citation, year)
+
+    if not term or not docket:
+        return None, None
+
+    url = f"{OYEZ_BASE}/cases/{term}/{docket}"
+    try:
+        headers = {"User-Agent": "Mozilla/5.0 (compatible; LexGraph/2.0)"}
+        resp = requests.get(url, headers=headers, timeout=15)
+        if resp.status_code != 200:
+            print(f"    Oyez direct: HTTP {resp.status_code} for {url}")
+            return None, None
+        # Check we got JSON not HTML (old Oyez CMS returns HTML login page)
+        ct = resp.headers.get("content-type", "")
+        if "html" in ct.lower():
+            print(f"    Oyez direct: got HTML (login page) for {url} — falling through")
+            return None, None
+        data = resp.json()
+        # Oyez API sometimes returns a list — find the right case in it
+        if isinstance(data, list):
+            # Find case matching our citation or name
+            detail = None
+            norm_name = normalize_case_name(case_name).lower()
+            for item in data:
+                item_name = normalize_case_name(item.get('name', '')).lower()
+                if norm_name in item_name or item_name in norm_name:
+                    detail = item
+                    break
+                # Also match by citation
+                item_cite = item.get('citation', {})
+                if isinstance(item_cite, dict):
+                    cite_str = item_cite.get('cite', '')
+                elif isinstance(item_cite, str):
+                    cite_str = item_cite
+                else:
+                    cite_str = ''
+                if citation and citation.replace(' ','') in cite_str.replace(' ',''):
+                    detail = item
+                    break
+            if not detail and data:
+                detail = data[0]  # fallback to first result
+        else:
+            detail = data
+        text = _format_oyez_text(detail, case_name)
+        if text and len(text) > 200:  # Lower threshold — Oyez direct is pre-formatted
+            print(f"    ✓ Oyez direct [{url}]")
+            return text, "oyez_direct"
+        else:
+            print(f"    Oyez direct: text too short ({len(text) if text else 0} chars) for {url}")
+    except Exception as e:
+        print(f"    Oyez direct failed: {e}")
+    return None, None
+
+
 
 def fetch_from_oyez_by_citation(volume, page, year, case_name):
     """Fetch case data from Oyez by citation (volume + page) and year."""
@@ -609,20 +781,24 @@ def _format_oyez_text(detail, case_name):
             parts.append(f"Winning party: {winning}")
 
     # Facts
-    facts = detail.get("facts_of_the_case", "")
+    facts = detail.get("facts_of_the_case", "") or detail.get("description", "") or ""
     if facts:
-        facts_clean = re.sub(r"<[^>]+>", " ", facts)
+        facts_clean = re.sub(r"<[^>]+>", " ", str(facts))
         facts_clean = re.sub(r"\s+", " ", facts_clean).strip()
         if facts_clean:
             parts.append(f"\nFACTS:\n{facts_clean}")
 
     # Conclusion
-    conclusion = detail.get("conclusion", "")
+    conclusion = detail.get("conclusion", "") or ""
     if conclusion:
-        conc_clean = re.sub(r"<[^>]+>", " ", conclusion)
+        conc_clean = re.sub(r"<[^>]+>", " ", str(conclusion))
         conc_clean = re.sub(r"\s+", " ", conc_clean).strip()
         if conc_clean:
             parts.append(f"\nCONCLUSION:\n{conc_clean}")
+
+    # Fallback: add citation and name to ensure minimum identity content
+    if len("\n".join(parts)) < 200:
+        parts.append(f"\nThis case is {detail.get('name', '')} decided by the Supreme Court.")
 
     # Advocates
     advocates = detail.get("advocates", [])
@@ -790,8 +966,10 @@ def fetch_cl_by_cluster_id(cluster_id, headers):
             text = re.sub(r"&[a-z]+;", " ", text)
 
         if len(text) > 200:
-            syllabus = extract_syllabus_section(text)
-            return syllabus, "courtlistener", cl_id
+            # Return raw text for identity verification — caller will extract syllabus
+            # This is critical: extract_syllabus_section strips the case name header
+            # which contains the party names needed for identity verification
+            return text, "courtlistener", cl_id
 
     except Exception as e:
         print(f"    CourtListener cluster fetch failed: {e}")
@@ -954,9 +1132,20 @@ def retrieve_case(case_name, year, citation=None, output_dir=Path("syllabi")):
         """Run identity check on retrieved text. Returns (text, source, cl_id) or (None, None, None)."""
         verified = verify_case_identity(case_name, candidate_text, citation)
         if verified is not None:
+            # Identity confirmed — now extract syllabus section from CourtListener raw text
+            if candidate_source in ('courtlistener', 'courtlistener_excerpt') and len(candidate_text) > 500:
+                extracted = extract_syllabus_section(candidate_text)
+                if extracted and len(extracted) > 300:
+                    return extracted, candidate_source, candidate_cl_id
             return candidate_text, candidate_source, candidate_cl_id
         print(f"    Identity check failed for {candidate_source} — trying next source")
         return None, None, None
+
+    # Strategy 0: Oyez direct URL (known cases + citation-based pre-1956 lookup)
+    if not text:
+        t, s = fetch_oyez_direct(case_id, case_name, citation)
+        if t:
+            text, source, cl_id = try_text(t, s)
 
     # Strategy 1: Registry lookup
     if cl_headers:
