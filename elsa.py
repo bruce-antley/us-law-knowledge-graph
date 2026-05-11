@@ -206,16 +206,99 @@ def verify_case_identity(case_name, text, citation):
         print(f"    Identity check: text too short ({len(text) if text else 0} chars) — likely docket entry or order")
         return None
 
-    # Oyez text starts with "Case: {name}" — identity is guaranteed by structure
-    # Just verify the text starts with our expected case name pattern
-    text_start = text[:200].lower()
+    # Pre-compute normalized text for abbreviation expansion checks (INS, JEB, etc.)
+    text_lower_norm = normalize_case_name(text[:500]).lower()
+
+    # Oyez text starts with "Case: {name}" — compare full name, not just 4 chars
+    text_start = text[:300].lower()
     if text_start.startswith("case:"):
-        case_line = text_start.split("\n")[0]
-        normalized = normalize_case_name(case_name).lower()
-        p1 = normalized.split(" v. ")[0].strip() if " v. " in normalized else normalized
-        if p1 and p1[:4] in case_line:
-            return text  # Oyez identity confirmed
-        # If p1 not found in case line, fall through to full check
+        case_line_raw = text_start.split("\n")[0]
+        # Normalize the Oyez case line (strip periods from initials) for comparison
+        case_line = normalize_case_name(case_line_raw).lower().replace("case: ", "").strip()
+        case_line = "case: " + case_line  # put prefix back for split logic
+        normalized_input = normalize_case_name(case_name).lower()
+
+        # Extract both party names from input and check they appear in the Oyez case line
+        if " v. " in normalized_input:
+            input_p1 = normalized_input.split(" v. ")[0].strip()
+            input_p2 = normalized_input.split(" v. ", 1)[1].strip()
+            # Get first meaningful word of each party
+            p1_word = re.sub(r'[^a-z]', '', input_p1.split()[0]) if input_p1.split() else ''
+            p2_word = re.sub(r'[^a-z]', '', input_p2.split()[0]) if input_p2.split() else ''
+            common = {'united', 'state', 'states', 'city', 'county', 'board',
+                      'department', 'commissioner', 'director', 'people'}
+            # Split Oyez case line at " v. " for positional matching
+            if " v. " in case_line or " v " in case_line:
+                sep = " v. " if " v. " in case_line else " v "
+                oyez_p1 = case_line.split(sep)[0].replace("case: ", "").strip()
+                oyez_p2 = case_line.split(sep, 1)[1].strip() if sep in case_line else ""
+            else:
+                oyez_p1 = case_line.replace("case: ", "").strip()
+                oyez_p2 = ""
+
+            # p1 should be in the LEFT side of Oyez name, p2 in RIGHT side
+            # Strict: p1 must match LEFT side, p2 must match RIGHT side
+            # This prevents "City of Chicago v. Fulton" matching "Fulton v. City of Philadelphia"
+            p1_ok = (p1_word in oyez_p1 or p1_word in text_lower_norm) if p1_word not in common else True
+            # p2 must match right side; also check full text for abbreviation expansion
+            p2_ok = (p2_word in oyez_p2 or p2_word in text_lower_norm) if p2_word not in common else True
+
+            if p1_ok and p2_ok:
+                # Final check: verify that non-common input party words appear in full text
+                # This catches "City of Chicago v. Fulton" when we want "Fulton v. City of Philadelphia"
+                # by checking "philadelphia" appears somewhere in the text body
+                all_input_words = re.findall(r'[a-z]+', normalize_case_name(case_name).lower())
+                meaningful_input = [w for w in all_input_words
+                                   if w not in common and len(w) > 3]
+                # At least 2 meaningful input words must appear in text
+                found_count = sum(1 for w in meaningful_input if w in text_lower_norm)
+                if len(meaningful_input) >= 2 and found_count < 2:
+                    missing = [w for w in meaningful_input if w not in text_lower_norm]
+                    print(f"    Oyez content check FAILED: {missing} not found in text body")
+                    return None
+                return text  # Oyez identity confirmed — both parties found
+            # Handle legal abbreviations (INS, NLRB, FTC, etc.)
+            LEGAL_ABBREVIATIONS = {
+                'ins': 'immigration and naturalization service',
+                'nlrb': 'national labor relations board',
+                'ftc': 'federal trade commission',
+                'fcc': 'federal communications commission',
+                'sec': 'securities and exchange commission',
+                'epa': 'environmental protection agency',
+                'irs': 'internal revenue service',
+                'doj': 'department of justice',
+                'dhs': 'department of homeland security',
+                'hhs': 'department of health and human services',
+                'pcaob': 'public company accounting oversight board',
+                'cfpb': 'consumer financial protection bureau',
+                'fhfa': 'federal housing finance agency',
+            }
+            if not p1_ok and p1_word not in common and len(p1_word) <= 6:
+                # Check known abbreviations
+                if p1_word in LEGAL_ABBREVIATIONS:
+                    expanded = LEGAL_ABBREVIATIONS[p1_word]
+                    if any(w in oyez_p1 for w in expanded.split()):
+                        p1_ok = True
+                # Check if it could be an acronym matching the Oyez p1 words
+                else:
+                    oyez_p1_initials = ''.join(w[0] for w in oyez_p1.split() if w)
+                    if p1_word == oyez_p1_initials:
+                        p1_ok = True
+
+            if not p1_ok and p1_word not in common:
+                print(f"    Oyez identity FAILED: '{p1_word}' not in Oyez p1 '{oyez_p1}'")
+                return None
+            if not p2_ok and p2_word not in common:
+                print(f"    Oyez identity FAILED: '{p2_word}' not in Oyez name '{case_line}'")
+                return None
+            return text
+        else:
+            # Single-party name — check it appears
+            p1_word = re.sub(r'[^a-z]', '', normalized_input.split()[0]) if normalized_input.split() else ''
+            if p1_word and p1_word in case_line:
+                return text
+            print(f"    Oyez identity FAILED: '{p1_word}' not in Oyez case line")
+            return None
 
     # Extract party names from case_name — normalize first to handle J.E.B. -> JEB
     normalized_name = normalize_case_name(case_name)
@@ -461,7 +544,18 @@ def fetch_from_oyez_by_name(case_name, year):
                     case.get("name", "")).lower()
                 # Match if normalized name is substring or vice versa
                 p1 = normalized.split(" v. ")[0].strip() if " v. " in normalized else normalized
-                if p1 and p1 in oyez_name:
+                # Check BOTH parties in the Oyez name, not just first party
+                input_norm = normalize_case_name(case_name).lower()
+                if " v. " in input_norm:
+                    _p1 = input_norm.split(" v. ")[0].split()[0] if input_norm.split(" v. ")[0].split() else ''
+                    _p2 = input_norm.split(" v. ", 1)[1].split()[0] if input_norm.split(" v. ", 1)[1].split() else ''
+                    _common = {'united', 'state', 'states', 'city', 'county', 'board', 'department'}
+                    _p1_ok = (_p1 in oyez_name) if _p1 not in _common else True
+                    _p2_ok = (_p2 in oyez_name) if _p2 not in _common else True
+                    _name_match = _p1_ok and _p2_ok
+                else:
+                    _name_match = p1 and p1 in oyez_name
+                if _name_match:
                     href = case.get("href", "")
                     if not href:
                         continue
