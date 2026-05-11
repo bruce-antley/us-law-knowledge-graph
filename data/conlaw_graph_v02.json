@@ -17,8 +17,8 @@
     "created": "2026-03-15",
     "status": "draft",
     "schema_version": "0.5",
-    "node_count": 575,
-    "edge_count": 1029,
+    "node_count": 601,
+    "edge_count": 1053,
     "schema_issue_count": 41,
     "fixes_applied": [
       "FIX 1: ConstitutionalProvision labels changed to citation form (amendment_1, amendment_14_section_1) to disambiguate from Area nodes with same common-name labels",
@@ -3291,6 +3291,171 @@
         "valid_from": "2017-06-19",
         "valid_until": null,
         "notes": "Established in Matal v. Tam (2017) as applied to trademark disparagement clause. Extended in Iancu v. Brunetti (2019) to immoral/scandalous marks."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "student_free_speech_rights",
+        "label": "Student Free Speech Rights in Schools",
+        "description": "Students retain First Amendment rights to freedom of speech while on school property, subject to the material and substantial interference standard.",
+        "area_id": "free_speech",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1969-02-24",
+        "valid_until": null,
+        "notes": "Established in Tinker v. Des Moines. School officials may suppress student speech only upon demonstrating material and substantial interference with school operations."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "right_to_refuse_ideological_expression",
+        "label": "Right to Refuse Ideological Expression",
+        "description": "The First Amendment protects an individual's right to refuse to display, endorse, or foster ideological messages, including state-mandated messages on private property such as vehicle license plates.",
+        "area_id": "free_speech",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1977-01-01",
+        "valid_until": null,
+        "notes": "Established in Wooley v. Maynard as a corollary to free speech protections, protecting the right to hold and maintain a point of view different from the majority."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "freedom_of_association_ballot_access",
+        "label": "Freedom of Association in Ballot Access",
+        "description": "The constitutional right of political parties and candidates to associate and appear on ballots, subject to reasonable state regulations that serve compelling interests in ballot integrity and political stability.",
+        "area_id": "freedom_of_association",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1997",
+        "valid_until": null,
+        "notes": "Established in Timmons v. Twin Cities Area New Party as a qualified right subject to state regulation."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "political_party_associational_rights",
+        "label": "Political Party Right of Association",
+        "description": "A political party's First Amendment right to associate and to determine its own nominees and leadership without forced association with nonmembers.",
+        "area_id": "freedom_of_association",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "2000-06-26",
+        "valid_until": null,
+        "notes": "Established in California Democratic Party v. Jones as protecting a party's basic function to choose its own leaders."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "freedom_of_association_electoral",
+        "label": "Freedom of Association in Electoral Context",
+        "description": "The First Amendment protects freedom of association in the electoral context, but not every electoral law burdening associational rights is subject to strict scrutiny. Minimal burdens justified by legitimate state interests may be permissible.",
+        "area_id": "freedom_of_association",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "2005",
+        "valid_until": null,
+        "notes": "Established in Clingman v. Beaver. The doctrine recognizes that states have legitimate interests in preserving parties as viable and identifiable interest groups."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "limited_public_forum_doctrine",
+        "label": "Limited Public Forum Doctrine",
+        "description": "A doctrine governing speech rights in forums that the government has opened for expressive activity by some portion of the public, where the government may impose reasonable, viewpoint-neutral restrictions on access and use.",
+        "area_id": "free_speech",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "2010-06-28",
+        "valid_until": null,
+        "notes": "Applied in Christian Legal Society v. Martinez to evaluate a public university's all-comers policy for student organizations."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "freedom_of_association_right",
+        "label": "Freedom of Association",
+        "description": "The First Amendment protects the right of individuals to associate with others for the advancement of beliefs and ideas, including the right to exclude members based on organizational principles.",
+        "area_id": "freedom_of_association",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "2010-06-28",
+        "valid_until": null,
+        "notes": "At issue in Christian Legal Society v. Martinez, where the Court balanced associational rights against the university's interest in enforcing a nondiscrimination policy."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "establishment_clause_school_prayer_prohibition",
+        "label": "Establishment Clause Prohibition on School-Sponsored Prayer",
+        "description": "The government may not authorize, draft, or facilitate recitation of official prayers in public schools, even if participation is voluntary and the prayer is not tied to a particular religion. This doctrine reflects the constitutional wall of separation between church and state and prohibits government involvement in religious exercises in public educational settings.",
+        "area_id": "establishment_clause",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1962-06-25",
+        "valid_until": null,
+        "notes": "Established in Engel v. Vitale as a foundational principle of Establishment Clause jurisprudence."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "free_exercise_protection_personal_religious_observance",
+        "label": "Free Exercise Protection for Personal Religious Observance",
+        "description": "The Free Exercise Clause protects individuals engaging in personal religious observance from government reprisal, even when employed by the government, provided the religious expression occurs outside the scope of official duties.",
+        "area_id": "free_exercise",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "2022-06-27",
+        "valid_until": null,
+        "notes": "Established in Kennedy v. Bremerton School District. Protects coach's personal prayer outside scope of official coaching duties."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "establishment_clause_historical_practices_test",
+        "label": "Establishment Clause Historical Practices and Understandings Framework",
+        "description": "The Establishment Clause is analyzed by reference to historical practices and understandings rather than the Lemon test or endorsement test. The government may not suppress religious expression based on Establishment Clause concerns when the expression is personal, occurs outside official duties, and does not involve coercion of students.",
+        "area_id": "establishment_clause",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "2022-06-27",
+        "valid_until": null,
+        "notes": "Replaces the Lemon test and endorsement test. Focuses on whether historical practices and understandings support the challenged government action."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "free_speech_protection_personal_expression_government_employee",
+        "label": "Free Speech Protection for Personal Expression by Government Employees",
+        "description": "The Free Speech Clause protects government employees' personal expression that occurs outside the scope of their official duties, even when the expression is religious in character.",
+        "area_id": "free_speech",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "2022-06-27",
+        "valid_until": null,
+        "notes": "Established in Kennedy v. Bremerton School District. Protects coach's personal prayer during postgame period when not acting within scope of coaching duties."
       }
     ],
     "areas": [
@@ -5144,39 +5309,6 @@
       },
       {
         "@type": "Case",
-        "id": "tinker_v_des_moines_1969",
-        "short_name": "Tinker v. Des Moines",
-        "full_name": "Tinker v. Des Moines Independent Community School District",
-        "citation": "393 U.S. 503 (1969)",
-        "court_level": "scotus",
-        "court_name": "Supreme Court of the United States",
-        "binding_scope": "federal_all",
-        "decided_date": "1969-02-24",
-        "opinion_form": "signed_majority",
-        "procedural_disposition": "reversed",
-        "holding": "Public school students who wore black armbands to protest the Vietnam War engaged in constitutionally protected symbolic speech. School officials may not suppress student expression unless they can demonstrate facts that reasonably support a forecast that the expression will substantially disrupt or materially interfere with school activities. Students do not shed their constitutional rights at the schoolhouse gate.",
-        "holding_type": "affirmative",
-        "majority_author": "Fortas",
-        "per_curiam": false,
-        "vote": "7-2",
-        "opinions": [
-          {
-            "type": "dissent",
-            "author": "Black",
-            "joined_by": [],
-            "doctrinal_significance": "Justice Black argued that the Constitution does not guarantee students the right to use schools as platforms for political expression \u2014 schools are for education, not political activity. His dissent anticipated later decisions narrowing Tinker in specific contexts (Bethel, Hazelwood, Morse).",
-            "adopted_in": []
-          }
-        ],
-        "status": "good_law",
-        "precedential_weight": "binding",
-        "valid_from": "1969-02-24",
-        "valid_until": null,
-        "courtlistener_id": null,
-        "notes": "Tinker is the foundational student speech case and one of the most cited First Amendment decisions ever issued. The armband facts make it a particularly clean precedent \u2014 silent, passive, political expression with no evidence of disruption. Three subsequent cases (Bethel, Hazelwood, Morse) carved out specific exceptions to Tinker's substantial-disruption test, but the core rule remains good law. The Court's 2021 decision in Mahanoy Area School District v. B.L. reaffirmed Tinker while declining to set a comprehensive rule for off-campus speech."
-      },
-      {
-        "@type": "Case",
         "id": "bethel_school_district_v_fraser_1986",
         "short_name": "Bethel School District v. Fraser",
         "full_name": "Bethel School District No. 403 v. Fraser",
@@ -6517,30 +6649,6 @@
         "valid_from": "1938-03-28",
         "valid_until": null,
         "notes": "Lovell v. City of Griffin is one of the earliest prior restraint cases and established the foundational principle that licensing systems granting officials broad discretion to permit or prohibit the distribution of literature are unconstitutional prior restraints. The case involved a Jehovah's Witness and reflects the mid-20th century pattern of prior restraint cases arising from municipal attempts to suppress religious proselytizing."
-      },
-      {
-        "@type": "Case",
-        "id": "nebraska_press_assn_v_stuart_1976",
-        "short_name": "Nebraska Press Association v. Stuart",
-        "full_name": "Nebraska Press Association v. Stuart",
-        "citation": "427 U.S. 539 (1976)",
-        "court_level": "scotus",
-        "court_name": "Supreme Court of the United States",
-        "binding_scope": "federal_all",
-        "decided_date": "1976-06-30",
-        "opinion_form": "signed_majority",
-        "procedural_disposition": "reversed",
-        "holding": "A trial court's order restraining the press from publishing accounts of confessions and other evidence in a murder case was an unconstitutional prior restraint. Gag orders imposed on the press to protect a defendant's fair trial right face a heavy presumption of unconstitutionality. Before imposing such an order, a court must find that the danger to a fair trial is clear and present, that less restrictive alternatives will not adequately protect the right, and that the order will effectively prevent the threatened harm.",
-        "holding_type": "affirmative",
-        "majority_author": "Burger",
-        "per_curiam": false,
-        "vote": "9-0",
-        "opinions": [],
-        "status": "good_law",
-        "precedential_weight": "binding",
-        "valid_from": "1976-06-30",
-        "valid_until": null,
-        "notes": "Nebraska Press Association established the framework for evaluating gag orders \u2014 court orders restraining the press from publishing information about pending criminal cases. The case is a major prior restraint precedent and effectively ended the practice of prior restraints in criminal cases except in extraordinary circumstances. The three-part test it articulated (clear danger, no adequate alternatives, effectiveness) is extremely difficult to satisfy."
       },
       {
         "@type": "Case",
@@ -12431,6 +12539,459 @@
         "valid_until": null,
         "opinions": [],
         "notes": "Justice Barrett did not participate. Gorsuch dissented joined by Thomas and Alito."
+      },
+      {
+        "@type": "Case",
+        "id": "pickering_v_board_of_education_1968",
+        "short_name": "Pickering v. Board of Education",
+        "full_name": "Marvin Pickering v. Board of Education of Township High School District 205",
+        "citation": "391 U.S. 563 (1968)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1968-01-01",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "A public school teacher's dismissal for writing a letter to the editor criticizing the school board's fiscal and educational policies violates the First Amendment when the statements are not knowingly or recklessly false.",
+        "holding_type": "affirmative",
+        "majority_author": "Marshall",
+        "per_curiam": false,
+        "vote": "8-1",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1968-01-01",
+        "valid_until": null,
+        "opinions": [
+          {
+            "type": "concurrence",
+            "author": "Douglas",
+            "doctrinal_significance": "Took a broader view of protected free speech than the majority",
+            "joined_by": [
+              "Black"
+            ],
+            "adopted_in": []
+          },
+          {
+            "type": "dissent",
+            "author": "White",
+            "doctrinal_significance": "Agreed letter may be protected speech but preferred remand to determine whether statements were knowingly or recklessly false",
+            "joined_by": [],
+            "adopted_in": []
+          }
+        ],
+        "notes": "The majority opinion established that public employee speech on matters of public concern receives First Amendment protection unless the statements are knowingly or recklessly false."
+      },
+      {
+        "@type": "Case",
+        "id": "garcetti_v_ceballos_2006",
+        "short_name": "Garcetti v. Ceballos",
+        "full_name": "Gil Garcetti, et al. v. Richard Ceballos",
+        "citation": "547 U.S. 410 (2006)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "2006-01-01",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "Speech by a public official is not protected by the First Amendment when it is expressed as part of the official's public duties, rather than as a private citizen.",
+        "holding_type": "by_negation",
+        "majority_author": "Kennedy",
+        "per_curiam": false,
+        "vote": "5-4",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "2006-01-01",
+        "valid_until": null,
+        "opinions": [
+          {
+            "type": "dissent",
+            "author": "Stevens",
+            "doctrinal_significance": "Disagreed with the majority's restriction of First Amendment protection for public employee speech on matters of public concern.",
+            "joined_by": [
+              "Souter",
+              "Ginsburg",
+              "Breyer"
+            ],
+            "adopted_in": []
+          }
+        ],
+        "notes": "The Ninth Circuit had reversed the district court's grant of qualified immunity to the defendants, holding that Ceballos's speech addressing matters of public concern was protected by the First Amendment. The Supreme Court reversed the Ninth Circuit, holding that public employee speech made pursuant to official duties receives no First Amendment protection."
+      },
+      {
+        "@type": "Case",
+        "id": "tinker_v_des_moines_independent_community_school_district_1969",
+        "short_name": "Tinker v. Des Moines",
+        "full_name": "Tinker v. Des Moines Independent Community School District",
+        "citation": "393 U.S. 503 (1969)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1969-02-24",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "Students do not lose their First Amendment right to freedom of speech when on school property, and school officials may suppress student speech only if they can demonstrate that the speech would materially and substantially interfere with the operation of the school.",
+        "holding_type": "affirmative",
+        "majority_author": "Fortas",
+        "per_curiam": false,
+        "vote": "7-2",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1969-02-24",
+        "valid_until": null,
+        "opinions": [
+          {
+            "type": "concurrence",
+            "author": "Stewart",
+            "doctrinal_significance": "Argued that children are not necessarily guaranteed the full extent of First Amendment rights.",
+            "joined_by": [],
+            "adopted_in": []
+          },
+          {
+            "type": "concurrence",
+            "author": "White",
+            "doctrinal_significance": "Noted the majority's reliance on a distinction between communication through words and communication through action.",
+            "joined_by": [],
+            "adopted_in": []
+          },
+          {
+            "type": "dissent",
+            "author": "Black",
+            "doctrinal_significance": "Argued that the First Amendment does not provide the right to express any opinion at any time, and that the armbands distracted students and detracted from school officials' ability to perform their duties.",
+            "joined_by": [],
+            "adopted_in": []
+          },
+          {
+            "type": "dissent",
+            "author": "Harlan",
+            "doctrinal_significance": "Argued that school officials should be afforded wide authority to maintain order unless their actions stem from motivation other than a legitimate school interest.",
+            "joined_by": [],
+            "adopted_in": []
+          }
+        ],
+        "notes": "The Court held that the armbands constituted pure speech entirely separate from conduct. The majority rejected the school district's justification based on fear of possible disruption, requiring instead proof of material and substantial interference.",
+        "courtlistener_id": "107841"
+      },
+      {
+        "@type": "Case",
+        "id": "wooley_v_maynard_1977",
+        "short_name": "Wooley v. Maynard",
+        "full_name": "Wooley v. Maynard",
+        "citation": "430 U.S. 705 (1977)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1977-01-01",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "A state may not constitutionally require citizens to display an ideological message on their vehicle license plates, as such a requirement violates the First Amendment right to refuse to foster or display ideas one finds morally objectionable.",
+        "holding_type": "affirmative",
+        "majority_author": null,
+        "per_curiam": false,
+        "vote": "6-3",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1977-01-01",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "The Court recognized a First Amendment right to refuse to display or endorse ideological messages. The case involved a Jehovah's Witness who objected to New Hampshire's mandatory state motto 'Live Free or Die' on license plates on religious and political grounds.",
+        "courtlistener_id": "109638"
+      },
+      {
+        "@type": "Case",
+        "id": "hurley_v_irish_american_gay_group_of_boston_1995",
+        "short_name": "Hurley v. Irish-American Gay Group of Boston",
+        "full_name": "Hurley v. Irish-American Gay Group of Boston",
+        "citation": "515 U.S. 557 (1995)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1995-06-19",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "A state may not require private citizens who organize a parade to include among the marchers a group imparting a message the organizers do not wish to convey, as such a mandate violates the First Amendment.",
+        "holding_type": "affirmative",
+        "majority_author": "Souter",
+        "per_curiam": false,
+        "vote": null,
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1995-06-19",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "The case addresses compelled speech in the context of private parade organization. The Court held that Massachusetts' public accommodations law, as applied to require inclusion of GLIB in the St. Patrick's Day parade, violated the First Amendment right not to speak."
+      },
+      {
+        "@type": "Case",
+        "id": "timmons_v_twin_cities_area_new_party_1997",
+        "short_name": "Timmons v. Twin Cities Area New Party",
+        "full_name": "Timmons v. Twin Cities Area New Party",
+        "citation": "520 U.S. 351 (1997)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1997-01-01",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "A state may prohibit candidates from appearing on more than one party's ballot without violating the freedom of association, as such restrictions do not overly burden association rights when political parties remain free to endorse another party's candidate, and the state's interests in ballot integrity and political stability justify the restriction.",
+        "holding_type": "affirmative",
+        "majority_author": "Chief Justice Rehnquist",
+        "per_curiam": false,
+        "vote": "6-3",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1997-01-01",
+        "valid_until": null,
+        "opinions": [
+          {
+            "type": "dissent",
+            "author": null,
+            "doctrinal_significance": "Disagreed with the majority's balancing of association rights against state interests in ballot integrity",
+            "joined_by": [],
+            "adopted_in": []
+          }
+        ],
+        "notes": "The Court reversed the Minnesota Court of Appeals and upheld the District Court's decision. The case involved anti-fusion ballot laws and their constitutionality under the freedom of association.",
+        "courtlistener_id": "118102"
+      },
+      {
+        "@type": "Case",
+        "id": "california_democratic_party_v_jones_2000",
+        "short_name": "California Democratic Party v. Jones",
+        "full_name": "California Democratic Party v. Bill Jones",
+        "citation": "530 U.S. 567 (2000)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "2000-06-26",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "California's blanket primary violates a political party's First Amendment right of association because it forces parties to associate with and have their nominees determined by nonmembers, thereby impairing the party's basic function to choose its own leaders.",
+        "holding_type": "affirmative",
+        "majority_author": "Scalia",
+        "per_curiam": false,
+        "vote": "7-2",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "2000-06-26",
+        "valid_until": null,
+        "opinions": [
+          {
+            "type": "dissent",
+            "author": "Stevens",
+            "doctrinal_significance": "Argued that invalidating blanket primary schemes of multiple states constitutes extraordinary intrusion into state election law.",
+            "joined_by": [
+              "Ginsburg"
+            ],
+            "adopted_in": []
+          }
+        ],
+        "notes": "Proposition 198 changed California's primary from closed to blanket. District Court and Court of Appeals had upheld the blanket primary; Supreme Court reversed."
+      },
+      {
+        "@type": "Case",
+        "id": "clingman_v_beaver_2005",
+        "short_name": "Clingman v. Beaver",
+        "full_name": "Michael Clingman, Secretary, Oklahoma State Election Board, et al. v. Beaver",
+        "citation": "544 U.S. 581 (2005)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "2005-01-01",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "A state's semiclosed primary system that requires voters to register with a party before participating in its primary does not violate the First Amendment right to freedom of association when the burden on associational rights is minimal and justified by legitimate state interests, including the preservation of parties as viable and identifiable interest groups.",
+        "holding_type": "affirmative",
+        "majority_author": "Thomas",
+        "per_curiam": false,
+        "vote": "6-3",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "2005-01-01",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "The Court held that not every electoral law burdening associational rights is subject to strict scrutiny. The Tenth Circuit had reversed the district court's ruling for Oklahoma."
+      },
+      {
+        "@type": "Case",
+        "id": "christian_legal_society_v_martinez_2010",
+        "short_name": "Christian Legal Society v. Martinez",
+        "full_name": "Christian Legal Society Chapter v. Martinez",
+        "citation": "561 U.S. 661 (2010)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "2010-06-28",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "affirmed",
+        "holding": "A public university's all-comers policy requiring registered student organizations to allow any student to participate, become a member, or seek leadership positions regardless of status or beliefs is a reasonable, viewpoint-neutral condition on access to a limited public forum and does not violate the First Amendment.",
+        "holding_type": "affirmative",
+        "majority_author": "Ginsburg",
+        "per_curiam": false,
+        "vote": "5-4",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "2010-06-28",
+        "valid_until": null,
+        "opinions": [
+          {
+            "type": "concurrence",
+            "author": "Stevens",
+            "doctrinal_significance": "Agreed with the majority holding and addressed CLS's argument regarding the university's nondiscrimination policy, clarifying that while the First Amendment may protect discriminatory practices off campus, it does not require a public university to validate or support such practices.",
+            "joined_by": [],
+            "adopted_in": []
+          },
+          {
+            "type": "concurrence",
+            "author": "Kennedy",
+            "doctrinal_significance": "Noted that a limited forum may exclude some speakers based on their affiliation, as occurred in this case.",
+            "joined_by": [],
+            "adopted_in": []
+          },
+          {
+            "type": "dissent",
+            "author": "Alito",
+            "doctrinal_significance": "Argued that the majority's approach arms public institutions with a weapon for suppressing unpopular speech and criticized the principle that there is no freedom for expression that offends prevailing standards of political correctness in higher education.",
+            "joined_by": [
+              "Roberts",
+              "Scalia",
+              "Thomas"
+            ],
+            "adopted_in": []
+          }
+        ],
+        "notes": "The case involves First Amendment protections for student organizations in the limited public forum context of a public university. The majority applied a less restrictive level of scrutiny appropriate to limited public forums."
+      },
+      {
+        "@type": "Case",
+        "id": "nebraska_press_association_v_stuart_1976",
+        "short_name": "Nebraska Press Association v. Stuart",
+        "full_name": "Nebraska Press Association v. Stuart",
+        "citation": "427 U.S. 539 (1976)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1976-06-30",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "affirmed",
+        "holding": "A trial court may not impose a prior restraint on press publication of information about a criminal case, even to protect the accused's right to a fair trial, absent a showing that the restraint would effectively serve that interest and that less restrictive alternatives would not suffice.",
+        "holding_type": "affirmative",
+        "majority_author": "Burger",
+        "per_curiam": false,
+        "vote": "9-0",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1976-06-30",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "Unanimous decision. The Court held that while pretrial publicity concerns are legitimate, prior restraints on the press are not a permissible remedy. Chief Justice Burger emphasized that a community cannot be restrained from discussing matters intimately affecting life within it."
+      },
+      {
+        "@type": "Case",
+        "id": "engel_v_vitale_1962",
+        "short_name": "Engel v. Vitale",
+        "full_name": "Engel v. Vitale",
+        "citation": "370 U.S. 421 (1962)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1962-06-25",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "A state cannot authorize or facilitate recitation of an official prayer in public schools, even if participation is voluntary and the prayer is not tied to a particular religion, because such a practice violates the Establishment Clause of the First Amendment.",
+        "holding_type": "affirmative",
+        "majority_author": "Black",
+        "per_curiam": false,
+        "vote": "6-1",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1962-06-25",
+        "valid_until": null,
+        "opinions": [
+          {
+            "type": "concurrence",
+            "author": "Douglas",
+            "doctrinal_significance": "Argued that state financing of a religious exercise violated the First Amendment.",
+            "joined_by": [],
+            "adopted_in": []
+          },
+          {
+            "type": "dissent",
+            "author": "Stewart",
+            "doctrinal_significance": "Argued that permitting voluntary prayer did not establish an official religion.",
+            "joined_by": [],
+            "adopted_in": []
+          }
+        ],
+        "notes": "Vote was 6-1 with one Justice not participating. The decision established that government-sponsored prayer in public schools violates the Establishment Clause regardless of voluntariness or religious neutrality.",
+        "courtlistener_id": "8951813"
+      },
+      {
+        "@type": "Case",
+        "id": "abington_school_district_v_schempp_1963",
+        "short_name": "Abington School District v. Schempp",
+        "full_name": "School District of Abington Township, Pennsylvania v. Schempp",
+        "citation": "374 U.S. 203 (1963)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1963-06-17",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "affirmed_in_part",
+        "holding": "Public schools cannot sponsor Bible readings and recitations of the Lord's Prayer because such mandatory religious exercises violate the First Amendment's Establishment Clause.",
+        "holding_type": "by_negation",
+        "majority_author": "Clark",
+        "per_curiam": false,
+        "vote": "8-1",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1963-06-17",
+        "valid_until": null,
+        "opinions": [
+          {
+            "type": "dissent",
+            "author": "Stewart",
+            "doctrinal_significance": "Argued that the Establishment Clause had not necessarily been violated on the records and would remand for further hearings.",
+            "joined_by": [],
+            "adopted_in": []
+          }
+        ],
+        "notes": "Consolidated case involving Pennsylvania and Maryland school prayer practices. Pennsylvania decision affirmed; Maryland decision reversed and remanded. Vote was 8-1 with Justice Stewart dissenting."
+      },
+      {
+        "@type": "Case",
+        "id": "santa_fe_independent_school_district_v_doe_2000",
+        "short_name": "Santa Fe v. Doe",
+        "full_name": "Santa Fe Independent School District v. Doe",
+        "citation": "530 U.S. 290 (2000)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "2000-06-19",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "affirmed",
+        "holding": "A school district policy permitting student-led, student-initiated prayer at football games violates the Establishment Clause because the prayers constitute public speech authorized by government policy on government property at government-sponsored school events, involving both perceived and actual government endorsement of prayer.",
+        "holding_type": "affirmative",
+        "majority_author": "Stevens",
+        "per_curiam": false,
+        "vote": "6-3",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "2000-06-19",
+        "valid_until": null,
+        "opinions": [
+          {
+            "type": "dissent",
+            "author": "Rehnquist",
+            "doctrinal_significance": "Argued that the majority opinion displayed hostility to religion in public life and that student-led prayer should be characterized as private student speech.",
+            "joined_by": [
+              "Scalia",
+              "Thomas"
+            ],
+            "adopted_in": []
+          }
+        ],
+        "notes": "The District Court initially enjoined the policy, then modified it to permit only nonsectarian, nonproselytizing prayer. The Court of Appeals held the modified policy invalid. The Supreme Court affirmed, rejecting the District's characterization of the prayers as private student speech.",
+        "courtlistener_id": "118377"
       }
     ],
     "doctrinal_tests": [
@@ -15345,6 +15906,154 @@
         "valid_from": "1993-06-11",
         "valid_until": null,
         "notes": "This test applies to laws of general applicability that incidentally burden religious practice. The Court emphasized that even facially neutral laws can violate the Free Exercise Clause if they selectively target religious conduct while exempting secular conduct with equivalent harmful effects."
+      },
+      {
+        "@type": "DoctrinalTest",
+        "id": "tinker_material_substantial_interference_test",
+        "label": "Material and Substantial Interference Test",
+        "description": "School officials may suppress student speech only if they can demonstrate that the speech would materially and substantially interfere with the operation of the school or the rights of others.",
+        "area_id": "free_speech",
+        "source_case_id": "tinker_v_des_moines_independent_community_school_district_1969",
+        "scrutiny_level": "balancing",
+        "burden": "government",
+        "test_form": "threshold_then_conjunctive",
+        "prongs": [
+          {
+            "number": 1,
+            "label": "Material Interference",
+            "description": "The school must prove that the student speech would materially interfere with the operation of the school.",
+            "burden_note": "Government bears burden of proof.",
+            "valid_from": "1969-02-24",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 2,
+            "label": "Substantial Interference",
+            "description": "The school must prove that the student speech would substantially interfere with the operation of the school.",
+            "burden_note": "Government bears burden of proof.",
+            "valid_from": "1969-02-24",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          }
+        ],
+        "status": "active",
+        "valid_from": "1969-02-24",
+        "valid_until": null,
+        "notes": "Mere fear of possible disruption is insufficient; actual material and substantial interference must be demonstrated. Applies to student speech in school settings."
+      },
+      {
+        "@type": "DoctrinalTest",
+        "id": "timmons_ballot_access_test",
+        "label": "Anti-Fusion Ballot Law Test",
+        "description": "A balancing test that weighs the character and magnitude of the burden imposed by anti-fusion laws on freedom of association against the state's interests in ballot integrity and political stability.",
+        "area_id": "freedom_of_association",
+        "source_case_id": "timmons_v_twin_cities_area_new_party_1997",
+        "scrutiny_level": "balancing",
+        "burden": "shared",
+        "test_form": "balancing",
+        "prongs": [
+          {
+            "number": 1,
+            "label": "Burden on Association Rights",
+            "description": "Assess the character and magnitude of the burden imposed by the anti-fusion law on the freedom of association of political parties and candidates.",
+            "burden_note": "The challenger must demonstrate that the burden is substantial.",
+            "valid_from": "1997",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 2,
+            "label": "State Interest",
+            "description": "Evaluate whether the state has a legitimate interest in ballot integrity and political stability that justifies the restriction.",
+            "burden_note": "The state must demonstrate a legitimate interest.",
+            "valid_from": "1997",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          }
+        ],
+        "status": "active",
+        "valid_from": "1997",
+        "valid_until": null,
+        "notes": "The test applies a balancing approach rather than strict scrutiny. The Court found that prohibiting fusion does not overly burden association rights because parties remain free to endorse another party's candidate."
+      },
+      {
+        "@type": "DoctrinalTest",
+        "id": "party_associational_burden_test",
+        "label": "Political Party Associational Rights Burden Test",
+        "description": "A test to determine whether a primary election scheme violates a political party's First Amendment right of association by forcing the party to associate with nonmembers in selecting nominees.",
+        "area_id": "freedom_of_association",
+        "source_case_id": "california_democratic_party_v_jones_2000",
+        "scrutiny_level": "strict",
+        "burden": "government",
+        "test_form": "conjunctive",
+        "prongs": [
+          {
+            "number": 1,
+            "label": "Severity of Burden",
+            "description": "Whether the primary scheme imposes a severe burden on the party's associational rights by forcing association with nonmembers in nominee selection.",
+            "burden_note": "Government must justify any severe burden on party associational rights.",
+            "valid_from": "2000-06-26",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 2,
+            "label": "Necessity of Burden",
+            "description": "Whether any burden imposed is necessary to serve a compelling state interest.",
+            "burden_note": "Government must demonstrate necessity; burden found to be unnecessary if it impairs the party's basic function.",
+            "valid_from": "2000-06-26",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          }
+        ],
+        "status": "active",
+        "valid_from": "2000-06-26",
+        "valid_until": null,
+        "notes": "The Court found that Proposition 198's blanket primary was both severe and unnecessary, violating the party's basic function to choose its own leaders."
+      },
+      {
+        "@type": "DoctrinalTest",
+        "id": "nebraska_press_prior_restraint_test",
+        "label": "Nebraska Press Prior Restraint Test",
+        "description": "A test for evaluating whether a prior restraint on press publication in the context of criminal proceedings is constitutionally permissible. The test requires consideration of whether the restraint would effectively serve the accused's right to a fair trial and whether less restrictive alternatives would be inadequate.",
+        "area_id": "prior_restraint",
+        "source_case_id": "nebraska_press_association_v_stuart_1976",
+        "scrutiny_level": "strict",
+        "burden": "government",
+        "test_form": "balancing",
+        "prongs": [
+          {
+            "number": 1,
+            "label": "Necessity and Effectiveness",
+            "description": "The government must demonstrate that the prior restraint would effectively serve the accused's right to a fair trial.",
+            "burden_note": "Government bears burden of showing effectiveness",
+            "valid_from": "1976-06-30",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 2,
+            "label": "Absence of Less Restrictive Alternatives",
+            "description": "The government must show that less restrictive alternatives would not adequately protect the accused's fair trial rights.",
+            "burden_note": "Government bears burden of showing inadequacy of alternatives",
+            "valid_from": "1976-06-30",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          }
+        ],
+        "status": "active",
+        "valid_from": "1976-06-30",
+        "valid_until": null,
+        "notes": "This test applies specifically to prior restraints on press publication in criminal proceedings. The Court emphasized that practical problems with implementation and the fundamental principle that a community cannot be restrained from discussing matters affecting it weigh heavily against such restraints."
       }
     ]
   },
@@ -18185,7 +18894,7 @@
     },
     {
       "id": "tinker_establishes_student_speech_doctrine",
-      "source_id": "tinker_v_des_moines_1969",
+      "source_id": "tinker_v_des_moines_independent_community_school_district_1969",
       "target_id": "student_speech_doctrine",
       "edge_type": "ESTABLISHES",
       "valid_from": "1969-02-24",
@@ -18199,7 +18908,7 @@
     },
     {
       "id": "tinker_establishes_tinker_test",
-      "source_id": "tinker_v_des_moines_1969",
+      "source_id": "tinker_v_des_moines_independent_community_school_district_1969",
       "target_id": "tinker_substantial_disruption_test",
       "edge_type": "ESTABLISHES",
       "valid_from": "1969-02-24",
@@ -18213,7 +18922,7 @@
     },
     {
       "id": "tinker_interprets_amendment_1",
-      "source_id": "tinker_v_des_moines_1969",
+      "source_id": "tinker_v_des_moines_independent_community_school_district_1969",
       "target_id": "amendment_1",
       "edge_type": "INTERPRETS",
       "valid_from": "1969-02-24",
@@ -19741,7 +20450,7 @@
     },
     {
       "id": "nebraska_press_applies_prior_restraint",
-      "source_id": "nebraska_press_assn_v_stuart_1976",
+      "source_id": "nebraska_press_association_v_stuart_1976",
       "target_id": "prior_restraint_doctrine",
       "edge_type": "APPLIES",
       "valid_from": "1976-06-30",
@@ -19753,7 +20462,7 @@
     },
     {
       "id": "nebraska_press_interprets_a1",
-      "source_id": "nebraska_press_assn_v_stuart_1976",
+      "source_id": "nebraska_press_association_v_stuart_1976",
       "target_id": "amendment_1",
       "edge_type": "INTERPRETS",
       "valid_from": "1976-06-30",
@@ -28570,6 +29279,326 @@
       "target_id": "viewpoint_discrimination",
       "edge_type": "APPLIES",
       "valid_from": "2019-06-24",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "pickering_applies_public_employee_speech_doctrine",
+      "source_id": "pickering_v_board_of_education_1968",
+      "target_id": "public_employee_speech_doctrine",
+      "edge_type": "APPLIES",
+      "valid_from": "1968-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Pickering established the foundational doctrine protecting public employee speech on matters of public concern."
+    },
+    {
+      "id": "tinker_establishes_tinker_material_substantial_interference_test",
+      "source_id": "tinker_v_des_moines_independent_community_school_district_1969",
+      "target_id": "tinker_material_substantial_interference_test",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1969-02-24",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "tinker_establishes_student_free_speech_rights",
+      "source_id": "tinker_v_des_moines_independent_community_school_district_1969",
+      "target_id": "student_free_speech_rights",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1969-02-24",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "wooley_establishes_right_to_refuse_ideological_expression",
+      "source_id": "wooley_v_maynard_1977",
+      "target_id": "right_to_refuse_ideological_expression",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1977-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Wooley v. Maynard established the constitutional right to refuse to display or endorse ideological messages on private property."
+    },
+    {
+      "id": "hurley_applies_compelled_speech_doctrine",
+      "source_id": "hurley_v_irish_american_gay_group_of_boston_1995",
+      "target_id": "compelled_speech_doctrine",
+      "edge_type": "APPLIES",
+      "valid_from": "1995-06-19",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Hurley establishes that the compelled speech doctrine applies to private parade organizers and protects their right to exclude messages they do not wish to convey."
+    },
+    {
+      "id": "timmons_establishes_timmons_ballot_access_test",
+      "source_id": "timmons_v_twin_cities_area_new_party_1997",
+      "target_id": "timmons_ballot_access_test",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1997",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Timmons established the balancing test for evaluating anti-fusion ballot laws."
+    },
+    {
+      "id": "timmons_applies_freedom_of_association_ballot_access",
+      "source_id": "timmons_v_twin_cities_area_new_party_1997",
+      "target_id": "freedom_of_association_ballot_access",
+      "edge_type": "APPLIES",
+      "valid_from": "1997",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "The case applies and clarifies the doctrine of freedom of association in the context of ballot access and anti-fusion laws."
+    },
+    {
+      "id": "california_democratic_party_v_associational_burden_test",
+      "source_id": "california_democratic_party_v_jones_2000",
+      "target_id": "party_associational_burden_test",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2000-06-26",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "The Court established a test for evaluating whether primary election schemes violate political party associational rights."
+    },
+    {
+      "id": "california_democratic_party_v_party_associational_rights",
+      "source_id": "california_democratic_party_v_jones_2000",
+      "target_id": "political_party_associational_rights",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2000-06-26",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "The Court recognized and articulated the political party's First Amendment right to associate and select its own nominees without forced association with nonmembers."
+    },
+    {
+      "id": "clingman_establishes_freedom_of_association_electoral",
+      "source_id": "clingman_v_beaver_2005",
+      "target_id": "freedom_of_association_electoral",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2005",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Clingman v. Beaver established the principle that not all electoral laws burdening associational rights require strict scrutiny, and that minimal burdens justified by legitimate state interests are permissible."
+    },
+    {
+      "id": "cls_v_martinez_applies_limited_public_forum",
+      "source_id": "christian_legal_society_v_martinez_2010",
+      "target_id": "limited_public_forum_doctrine",
+      "edge_type": "APPLIES",
+      "valid_from": "2010-06-28",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "The Court applied limited public forum doctrine to evaluate the university's all-comers policy for student organizations, holding that less restrictive scrutiny applies in such forums."
+    },
+    {
+      "id": "cls_v_martinez_applies_freedom_of_association",
+      "source_id": "christian_legal_society_v_martinez_2010",
+      "target_id": "freedom_of_association_right",
+      "edge_type": "APPLIES",
+      "valid_from": "2010-06-28",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "The case addressed the tension between the Christian Legal Society's freedom of association and the university's nondiscrimination policy, ultimately holding that the all-comers policy does not violate the First Amendment."
+    },
+    {
+      "id": "nebraska_press_establishes_nebraska_press_prior_restraint_test",
+      "source_id": "nebraska_press_association_v_stuart_1976",
+      "target_id": "nebraska_press_prior_restraint_test",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1976-06-30",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Nebraska Press Association v. Stuart established the framework for evaluating prior restraints on press publication in criminal proceedings."
+    },
+    {
+      "id": "engel_establishes_establishment_clause_school_prayer_prohibition",
+      "source_id": "engel_v_vitale_1962",
+      "target_id": "establishment_clause_school_prayer_prohibition",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1962-06-25",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Engel v. Vitale established the doctrine that government-sponsored prayer in public schools violates the Establishment Clause."
+    },
+    {
+      "id": "abington_applies_establishment_clause_school_prayer_prohibition",
+      "source_id": "abington_school_district_v_schempp_1963",
+      "target_id": "establishment_clause_school_prayer_prohibition",
+      "edge_type": "APPLIES",
+      "valid_from": "1963-06-17",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Abington established the doctrine that public schools cannot sponsor mandatory religious exercises including Bible readings and prayer recitations."
+    },
+    {
+      "id": "santa_fe_establishes_establishment_clause_school_prayer",
+      "source_id": "santa_fe_independent_school_district_v_doe_2000",
+      "target_id": "establishment_clause_school_prayer_prohibition",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2000-06-19",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Santa Fe established the principle that student-led prayer policies at school-sponsored events violate the Establishment Clause when they involve government authorization and endorsement."
+    },
+    {
+      "id": "connick_modifies_pickering_balancing_test",
+      "source_id": "connick_v_myers_1983",
+      "target_id": "pickering_balancing_test",
+      "edge_type": "MODIFIES",
+      "direction": "clarifies",
+      "valid_from": "1983-04-20",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Connick clarified Pickering by adding public concern threshold"
+    },
+    {
+      "id": "garcetti_modifies_public_employee_speech_doctrine",
+      "source_id": "garcetti_v_ceballos_2006",
+      "target_id": "public_employee_speech_doctrine",
+      "edge_type": "MODIFIES",
+      "direction": "narrows",
+      "valid_from": "2006-05-30",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Garcetti narrowed Pickering/Connick: no protection for speech made pursuant to official duties"
+    },
+    {
+      "id": "tinker_v_precedes_bethel_s",
+      "source_id": "tinker_v_des_moines_independent_community_school_district_1969",
+      "target_id": "bethel_school_district_v_fraser_1986",
+      "edge_type": "INTELLECTUALLY_PRECEDES",
+      "opinion_ref": {
+        "opinion_type": "majority",
+        "author": "Fortas"
+      },
+      "valid_from": "1969-02-24",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "tinker_v_precedes_hazelwoo",
+      "source_id": "tinker_v_des_moines_independent_community_school_district_1969",
+      "target_id": "hazelwood_school_district_v_kuhlmeier_1988",
+      "edge_type": "INTELLECTUALLY_PRECEDES",
+      "opinion_ref": {
+        "opinion_type": "majority",
+        "author": "Fortas"
+      },
+      "valid_from": "1969-02-24",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "tinker_v_precedes_morse_v_",
+      "source_id": "tinker_v_des_moines_independent_community_school_district_1969",
+      "target_id": "morse_v_frederick_2007",
+      "edge_type": "INTELLECTUALLY_PRECEDES",
+      "opinion_ref": {
+        "opinion_type": "majority",
+        "author": "Fortas"
+      },
+      "valid_from": "1969-02-24",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "kennedy_est_free_exercise_protection_",
+      "source_id": "kennedy_v_bremerton_2022",
+      "target_id": "free_exercise_protection_personal_religious_observance",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2022-06-27",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "kennedy_est_establishment_clause_hist",
+      "source_id": "kennedy_v_bremerton_2022",
+      "target_id": "establishment_clause_historical_practices_test",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2022-06-27",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "kennedy_est_free_speech_protection_pe",
+      "source_id": "kennedy_v_bremerton_2022",
+      "target_id": "free_speech_protection_personal_expression_government_employee",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2022-06-27",
       "valid_until": null,
       "jurisdiction": [
         "federal",
