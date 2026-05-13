@@ -17,8 +17,8 @@
     "created": "2026-03-15",
     "status": "draft",
     "schema_version": "0.5",
-    "node_count": 611,
-    "edge_count": 1062,
+    "node_count": 671,
+    "edge_count": 1133,
     "schema_issue_count": 41,
     "fixes_applied": [
       "FIX 1: ConstitutionalProvision labels changed to citation form (amendment_1, amendment_14_section_1) to disambiguate from Area nodes with same common-name labels",
@@ -3530,6 +3530,504 @@
         "valid_from": "1983-01-01",
         "valid_until": null,
         "notes": "Established in Power Systems, Inc., 239 N.L.R.B. 445 (1978) and applied in this case. The doctrine addresses the intersection of state court civil litigation and federal labor law protections."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "concurrent_sentence_doctrine",
+        "label": "Concurrent Sentence Doctrine",
+        "description": "A doctrine addressing whether appellate courts must consider challenges to convictions when concurrent sentences have been imposed. The doctrine has been applied inconsistently as either a jurisdictional bar or a rule of judicial convenience.",
+        "area_id": "individual_rights",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1813-01-01",
+        "valid_until": null,
+        "notes": "Traced to Locke v. United States (1813) and Hirabayashi v. United States (1943). Benton clarifies that the doctrine does not create a jurisdictional bar but may survive as a rule of judicial convenience. The Court held that collateral consequences of convictions are sufficient to create a justiciable case or controversy."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "student_vulgar_speech_doctrine",
+        "label": "Student Vulgar and Lewd Speech Prohibition",
+        "description": "Schools may prohibit vulgar, lewd, and obscene speech by students as inconsistent with fundamental values of public school education, distinguishable from protected political speech.",
+        "area_id": "free_speech",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1986",
+        "valid_until": null,
+        "notes": "Established in Bethel School District v. Fraser as a limitation on student First Amendment rights in school settings."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "right_to_counsel",
+        "label": "Right to Counsel",
+        "description": "The constitutional right of a criminal defendant to have legal representation in criminal proceedings.",
+        "area_id": "criminal_procedure",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1942-06-01",
+        "valid_until": null,
+        "notes": "Established in Betts v. Brady as a case-by-case right dependent on circumstances. Later expanded to an absolute right in all felony cases by Gideon v. Wainwright (1963)."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "petition_clause_public_concern_doctrine",
+        "label": "Petition Clause Public Concern Doctrine",
+        "description": "A government employer's retaliatory actions against an employee do not give rise to liability under the Petition Clause unless the employee's petition relates to a matter of public concern.",
+        "area_id": "freedom_of_petition",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "2011-01-01",
+        "valid_until": null,
+        "notes": "Established in Borough of Duryea v. Guarnieri to clarify the scope of Petition Clause protection for public employees."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "executive_power",
+        "label": "Executive Power",
+        "description": "The constitutional authority vested in the President to execute the laws, including the power to make determinations regarding budget sequestration and spending reductions.",
+        "area_id": "separation_of_powers",
+        "jurisdiction": [
+          "federal"
+        ],
+        "status": "active",
+        "valid_from": "1986-06-26",
+        "valid_until": null,
+        "notes": "In Bowsher, the Court recognized that the Comptroller General's role in making binding deficit reduction determinations constitutes an exercise of executive power that cannot be vested in a legislative agent."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "reporter_privilege",
+        "label": "Reporter's Privilege",
+        "description": "The claimed privilege of journalists to refuse to disclose confidential sources and information to grand juries and courts.",
+        "area_id": "freedom_of_the_press",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1972-06-29",
+        "valid_until": null,
+        "secondary_area_ids": [
+          "first_amendment"
+        ],
+        "notes": "Branzburg v. Hayes rejected an absolute reporter's privilege, holding that reporters must disclose confidential sources when grand juries have a compelling interest in the information."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "medicaid_abortion_funding_doctrine",
+        "label": "Medicaid Abortion Funding Doctrine",
+        "description": "The doctrine that the federal government and participating states may restrict Medicaid funding for abortions without violating constitutional protections, even when funding is available for childbirth-related services.",
+        "area_id": "substantive_due_process",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1980-06-30",
+        "valid_until": null,
+        "notes": "Established in Harris v. McRae; addresses the intersection of due process liberty interests and equal protection in the context of public funding discrimination."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "right_to_abortion_funding",
+        "label": "Right to Abortion Funding",
+        "description": "The doctrine that individuals do not possess a constitutional right to have the government fund abortion services, even when abortion itself is constitutionally protected.",
+        "area_id": "substantive_due_process",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1980-06-30",
+        "valid_until": null,
+        "notes": "Distinguishes between the right to obtain an abortion and the right to have it funded by the government."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "takings_clause_personal_property",
+        "label": "Takings Clause Application to Personal Property",
+        "description": "The Fifth Amendment Takings Clause applies with equal force to personal property as well as real property, requiring just compensation when the government takes personal property.",
+        "area_id": "individual_rights",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "2015-06-22",
+        "valid_until": null,
+        "notes": "Established in Horne v. Department of Agriculture, overturning prior Ninth Circuit precedent that distinguished between real and personal property for Takings Clause purposes."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "per_se_taking_market_participation",
+        "label": "Per Se Taking for Market Participation Conditions",
+        "description": "A government requirement to reserve or surrender personal property as a condition of legal participation in a regulated market constitutes a per se taking requiring just compensation, and cannot be characterized as a voluntary exchange for a governmental benefit.",
+        "area_id": "individual_rights",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "2015-06-22",
+        "valid_until": null,
+        "notes": "Established in Horne; applies to conditions imposed on market participation that require surrender of property rights."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "just_compensation_proceeds_insufficient",
+        "label": "Just Compensation Cannot Be Satisfied by Returning Net Proceeds",
+        "description": "When a physical taking of property occurs, returning the net proceeds from the sale of the taken property does not satisfy the Fifth Amendment requirement of just compensation for the taking itself.",
+        "area_id": "individual_rights",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "2015-06-22",
+        "valid_until": null,
+        "notes": "Established in Horne; clarifies that compensation must account for the taking itself, not merely the proceeds from disposition."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "exclusionary_rule_fourth_amendment",
+        "label": "Exclusionary Rule (Fourth Amendment)",
+        "description": "The doctrine that evidence obtained in violation of Fourth Amendment rights may be suppressed in criminal proceedings. Hudson v. Michigan holds that not all Fourth Amendment violations automatically trigger suppression.",
+        "area_id": "criminal_procedure",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "2006-01-01",
+        "valid_until": null,
+        "notes": "Hudson v. Michigan clarifies that knock-and-announce violations do not automatically require suppression of evidence, limiting the scope of the exclusionary rule in this context."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "for_cause_removal_restriction",
+        "label": "For-Cause Removal Restriction",
+        "description": "A statutory limitation on the President's removal power requiring that removal of certain federal officers be based on specified causes such as inefficiency, neglect of duty, or malfeasance in office.",
+        "area_id": "separation_of_powers",
+        "jurisdiction": [
+          "federal"
+        ],
+        "status": "active",
+        "valid_from": "1935-01-01",
+        "valid_until": null,
+        "notes": "Established as constitutionally valid for officers exercising quasi-legislative or quasi-judicial functions, as exemplified by Federal Trade Commissioners."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "exclusionary_rule_civil_proceedings",
+        "label": "Exclusionary Rule in Civil Proceedings",
+        "description": "The exclusionary rule, which bars illegally obtained evidence from criminal trials, does not apply in civil deportation proceedings. The rule does not apply because the body or identity of a defendant is not suppressible as fruit of an illegal arrest, and the deterrent purpose of the exclusionary rule is not adequately served in civil deportation contexts where alternative oversight mechanisms exist and the social costs of suppression are high.",
+        "area_id": "criminal_procedure",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1983-01-01",
+        "valid_until": null,
+        "notes": "This doctrine establishes the scope limitation of the exclusionary rule to criminal proceedings and articulates the cost-benefit analysis that precludes its application in civil deportation proceedings."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "section_5_enforcement_power",
+        "label": "Section 5 Enforcement Power of Congress",
+        "description": "Congress possesses broad power under Section 5 of the Fourteenth Amendment to enact legislation that enforces the substantive provisions of the Amendment, including legislation that prohibits state laws without requiring prior judicial determination that those state laws violate the Amendment.",
+        "area_id": "equal_protection",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1966-06-13",
+        "valid_until": null,
+        "notes": "This doctrine establishes that Congress has independent authority to interpret and enforce the Fourteenth Amendment, not merely to codify judicial determinations of unconstitutionality."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "right_to_vote_equal_protection",
+        "label": "Right to Vote Protected by Equal Protection Clause",
+        "description": "The Equal Protection Clause of the Fourteenth Amendment protects the right to vote and forbids state laws that restrict voting rights on conditions forbidden by the Constitution.",
+        "area_id": "equal_protection",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1966-06-13",
+        "valid_until": null,
+        "notes": "The Court recognizes that while states establish voting qualifications, those qualifications cannot violate the Fourteenth Amendment or other constitutional provisions."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "establishment_clause_coercion_doctrine",
+        "label": "Establishment Clause Coercion Doctrine",
+        "description": "The Establishment Clause prohibits government-sponsored religious exercises in public schools, including prayer at graduation ceremonies, because such conduct creates subtle and indirect coercive pressure on students to participate in state-directed religious programs, even absent explicit compulsion.",
+        "area_id": "establishment_clause",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1992-06-24",
+        "valid_until": null,
+        "notes": "This doctrine extends Establishment Clause protections to address subtle coercion in the context of public school religious exercises, particularly graduation ceremonies where student attendance is effectively mandatory."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "commercial_speech_regulation",
+        "label": "Commercial Speech Regulation Doctrine",
+        "description": "Government regulation of commercial speech must be narrowly drawn to serve a substantial interest to be constitutional.",
+        "area_id": "commercial_speech",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "2017-06-19",
+        "valid_until": null,
+        "secondary_area_ids": [],
+        "notes": "Matal v. Tam held that the Disparagement Clause was not narrowly drawn to serve a substantial interest, and that avoiding offense does not constitute a permissible government interest under the First Amendment."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "school_anti_drug_mission",
+        "label": "School Anti-Drug Mission",
+        "description": "The doctrine that schools have a significant governmental interest in preventing drug use among students, which may justify restrictions on student speech that promotes illegal drug use.",
+        "area_id": "free_speech",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "2007-06-25",
+        "valid_until": null,
+        "notes": "Recognized in Morse v. Frederick as a basis for restricting student speech."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "parental_liberty_education",
+        "label": "Parental Liberty to Direct Education",
+        "description": "Parents and guardians have a fundamental liberty interest, protected by the Due Process Clause of the Fourteenth Amendment, to direct the upbringing and education of children under their control, including the right to choose private schools and alternative educational arrangements.",
+        "area_id": "substantive_due_process",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1925-06-01",
+        "valid_until": null,
+        "notes": "Established in Pierce v. Society of Sisters. The Court grounded this doctrine in the fundamental theory of liberty underlying all governments in the Union, rejecting the notion that the state may standardize children by forcing them to accept instruction from public teachers only."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "content_based_discrimination_doctrine",
+        "label": "Content-Based Discrimination in Speech Regulation",
+        "description": "Government regulations of speech that are content-based\u2014that target expression based on the subject matter or ideas expressed\u2014are presumptively invalid under the First Amendment. Such regulations must satisfy strict scrutiny and cannot discriminate on the basis of viewpoint.",
+        "area_id": "free_speech",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1992-06-22",
+        "valid_until": null,
+        "notes": "R.A.V. establishes that content-based discrimination is unconstitutional even when applied to traditionally unprotected categories of speech such as fighting words, obscenity, or defamation."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "categorical_speech_exceptions",
+        "label": "Categorical Exceptions to First Amendment Protection",
+        "description": "Certain narrow categories of speech have traditionally been recognized as falling outside First Amendment protection because they are of such slight social value as a step to truth that any benefit is clearly outweighed by the social interest in order and morality. These include obscenity, defamation, and fighting words.",
+        "area_id": "free_speech",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1942-03-09",
+        "valid_until": null,
+        "notes": "Derived from Chaplinsky v. New Hampshire. R.A.V. clarifies that while these categories may be regulated, content-based discrimination within them is unconstitutional."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "affirmative_action_in_higher_education",
+        "label": "Affirmative Action in Higher Education",
+        "description": "The constitutional framework governing the use of race and ethnicity as factors in university admissions decisions, permitting consideration of race as one factor in a holistic review to achieve educational diversity while prohibiting rigid racial quotas.",
+        "area_id": "equal_protection",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1978-06-28",
+        "valid_until": null,
+        "notes": "Established in Regents v. Bakke as a framework permitting race-conscious admissions policies within constitutional bounds."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "viewpoint_neutral_funding",
+        "label": "Viewpoint-Neutral Funding Doctrine",
+        "description": "When a government entity chooses to subsidize or fund speech through a program, it must do so on a viewpoint-neutral basis. If the government funds some categories of speech, it cannot exclude other categories based on the viewpoint they express, even if the excluded speech is religious in nature.",
+        "area_id": "free_speech",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1995",
+        "valid_until": null,
+        "notes": "Rosenberger establishes that viewpoint-neutral funding principles apply to student activity funds at public universities."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "race_conscious_redistricting",
+        "label": "Race-Conscious Redistricting Doctrine",
+        "description": "The constitutional principle that congressional reapportionment plans that use race as a predominant factor in drawing district lines are subject to strict equal protection scrutiny, regardless of whether the plan is facially race-neutral or motivated by remedial purposes.",
+        "area_id": "equal_protection",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1993-06-28",
+        "valid_until": null,
+        "notes": "Established in Shaw v. Reno. The doctrine applies when district shape and other evidence suggest race was the predominant factor in redistricting decisions."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "fourth_amendment_exclusionary_rule",
+        "label": "Fourth Amendment Exclusionary Rule",
+        "description": "The judicially created remedy that bars the use of evidence obtained in violation of the Fourth Amendment in the prosecution's case in chief, designed to deter police misconduct through its deterrent effect rather than to punish judicial error.",
+        "area_id": "criminal_procedure",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1984-01-01",
+        "valid_until": null,
+        "notes": "Modified by United States v. Leon to permit introduction of evidence obtained by officers reasonably relying on a warrant issued by a detached and neutral magistrate, even if the warrant is ultimately found to be invalid."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "tenth_amendment_reserved_powers",
+        "label": "Tenth Amendment Reserved Powers",
+        "description": "The Tenth Amendment reserves to the States powers not delegated to the federal government. A defendant has standing to challenge federal legislation on the ground that it violates the Tenth Amendment by interfering with powers reserved to the States.",
+        "area_id": "individual_rights",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "2010",
+        "valid_until": null,
+        "notes": "Established in Bond v. United States as a basis for individual standing to challenge federal statutes."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "individual_standing_constitutional_challenge",
+        "label": "Individual Standing to Challenge Constitutionality of Federal Statute",
+        "description": "An individual defendant has a personal constitutional right not to be convicted under a constitutionally invalid law and has standing to challenge the constitutionality of a federal statute that affects their liberty interests.",
+        "area_id": "substantive_due_process",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "2010",
+        "valid_until": null,
+        "notes": "Articulated in Justice Ginsburg's concurrence in Bond v. United States."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "interstate_compact_interpretation",
+        "label": "Interstate Compact Interpretation",
+        "description": "The doctrine governing how courts interpret agreements between states regarding shared natural resources and state sovereignty.",
+        "area_id": "federalism",
+        "jurisdiction": [
+          "federal"
+        ],
+        "status": "active",
+        "valid_from": "2003",
+        "valid_until": null,
+        "secondary_area_ids": [],
+        "notes": "Established in Virginia v. Maryland regarding interpretation of the 1785 Potomac River Compact."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "substantive_due_process_fundamental_rights",
+        "label": "Substantive Due Process Fundamental Rights Doctrine",
+        "description": "The doctrine that the Due Process Clause of the Fourteenth Amendment protects certain fundamental rights and liberties that are objectively deeply rooted in the Nation's history and tradition, requiring careful description of the asserted interest and application of heightened scrutiny.",
+        "area_id": "substantive_due_process",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1997-06-26",
+        "valid_until": null,
+        "notes": "Established in Washington v. Glucksberg as the governing framework for identifying and protecting fundamental liberty interests under the Due Process Clause."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "procedural_due_process_prisoners",
+        "label": "Procedural Due Process Rights of Prisoners",
+        "description": "The constitutional requirement that states provide procedurally fair processes before depriving prisoners of liberty interests, including placement in supermaximum security facilities, with protections necessarily limited by the penological context and state interests in security and resource management.",
+        "area_id": "substantive_due_process",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "2005-01-01",
+        "valid_until": null,
+        "notes": "Established in the context of prisoner classification and supermaximum security placement decisions."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "selective_incorporation_due_process",
+        "label": "Selective Incorporation via Due Process Clause",
+        "description": "The Fourteenth Amendment's Due Process Clause incorporates fundamental rights from the Bill of Rights on a case-by-case basis, applying only those rights that are implicit in the concept of ordered liberty and essential to a free society, rather than wholesale incorporation of all Bill of Rights protections.",
+        "area_id": "substantive_due_process",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1949-06-27",
+        "valid_until": null,
+        "notes": "Wolf reaffirmed the selective incorporation approach from Palko v. Connecticut, rejecting total incorporation of the Bill of Rights."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "private_choice_doctrine",
+        "label": "Private Choice Doctrine",
+        "description": "Under the Establishment Clause, government aid to religious institutions does not violate the clause when the aid is distributed to a broad class of beneficiaries defined by neutral criteria and reaches religious institutions only as a result of the genuine independent choices of individual recipients, not government direction.",
+        "area_id": "establishment_clause",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "2002-06-27",
+        "valid_until": null,
+        "secondary_area_ids": [],
+        "notes": "Established in Zelman as a framework for evaluating whether aid programs that benefit religious institutions comply with the Establishment Clause."
       }
     ],
     "areas": [
@@ -5665,42 +6163,6 @@
         "valid_from": "1982-07-02",
         "valid_until": null,
         "notes": "Ferber created a new categorical exception to First Amendment protection \u2014 child pornography \u2014 that operates independently of the Miller obscenity test. The Court's reasoning focused on the harm to actual children in the production process. Ashcroft v. Free Speech Coalition (2002) limited Ferber by striking down a federal statute prohibiting virtual child pornography (computer-generated images not involving actual children), holding that Ferber's rationale does not extend to images that do not involve the abuse of real children."
-      },
-      {
-        "@type": "Case",
-        "id": "rav_v_city_of_st_paul_1992",
-        "short_name": "R.A.V. v. City of St. Paul",
-        "full_name": "R.A.V. v. City of St. Paul",
-        "citation": "505 U.S. 377 (1992)",
-        "court_level": "scotus",
-        "court_name": "Supreme Court of the United States",
-        "binding_scope": "federal_all",
-        "decided_date": "1992-06-22",
-        "opinion_form": "signed_majority",
-        "procedural_disposition": "reversed",
-        "holding": "A St. Paul ordinance prohibiting the display of symbols that one knows or has reason to know arouses anger, alarm, or resentment in others on the basis of race, color, creed, religion, or gender \u2014 applied to a teenager who burned a cross on a Black family's lawn \u2014 violated the First Amendment. Even within categories of unprotected speech like fighting words, government may not prohibit speech based on the viewpoint or subject matter of the expression. The ordinance was unconstitutional because it selectively prohibited fighting words that communicated messages of racial, religious, or gender-based hatred while permitting fighting words on other topics.",
-        "holding_type": "affirmative",
-        "majority_author": "Scalia",
-        "per_curiam": false,
-        "vote": "9-0",
-        "opinions": [
-          {
-            "type": "concurrence",
-            "author": "White",
-            "joined_by": [
-              "Blackmun",
-              "O'Connor",
-              "Stevens"
-            ],
-            "doctrinal_significance": "White's concurrence agreed the ordinance was unconstitutional on overbreadth grounds but rejected Scalia's majority reasoning that content discrimination within unprotected categories is presumptively invalid. White argued the majority's reasoning was unnecessarily broad and would create doctrinal confusion.",
-            "adopted_in": []
-          }
-        ],
-        "status": "good_law",
-        "precedential_weight": "binding",
-        "valid_from": "1992-06-22",
-        "valid_until": null,
-        "notes": "R.A.V. is the foundational case establishing that government may not discriminate based on viewpoint even within categories of unprotected speech. Scalia's majority opinion articulated the principle that a legislature cannot 'license one side of a debate to fight freestyle while requiring the other to follow the Marquis of Queensberry rules.' Wisconsin v. Mitchell (1993) upheld bias-motivated crime sentence enhancements the following year, distinguishing R.A.V. on the ground that Mitchell targeted conduct rather than expression."
       },
       {
         "@type": "Case",
@@ -13165,6 +13627,673 @@
         "opinions": [],
         "notes": "The case addresses whether the NLRB must find lack of reasonable basis in fact or law before issuing a cease-and-desist order against retaliatory civil litigation. The text indicates the Court reversed the Board's approach requiring such a finding.",
         "courtlistener_id": "9043408"
+      },
+      {
+        "@type": "Case",
+        "id": "bowsher_v_synar_1986",
+        "short_name": "Bowsher v. Synar",
+        "full_name": "Bowsher v. Synar",
+        "citation": "478 U.S. 714 (1986)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1986-06-26",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "affirmed",
+        "holding": "Congress may not assign executive functions to the Comptroller General, an officer removable only by Congress, because such assignment violates the separation of powers doctrine by impermissibly vesting executive power in a legislative agent.",
+        "holding_type": "affirmative",
+        "majority_author": "Burger",
+        "per_curiam": false,
+        "vote": null,
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1986-06-26",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "The case addresses the constitutionality of the Gramm-Rudman-Hollings Act's assignment of deficit reduction reporting functions to the Comptroller General. The District Court had invalidated the reporting provisions under the separation of powers doctrine.",
+        "courtlistener_id": "9058927"
+      },
+      {
+        "@type": "Case",
+        "id": "cruzan_v_director_missouri_department_of_health_1990",
+        "short_name": "Cruzan v. Director Missouri Department of Health",
+        "full_name": "Cruzan v. Director, Missouri Department of Health",
+        "citation": "497 U.S. 261 (1990)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1990-06-25",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "affirmed",
+        "holding": "A competent person has a liberty interest under the Due Process Clause of the Fourteenth Amendment to refuse unwanted medical treatment, but a state may require clear and convincing evidence of an incompetent person's wishes before permitting withdrawal of life-sustaining treatment.",
+        "holding_type": "affirmative",
+        "majority_author": "Rehnquist",
+        "per_curiam": false,
+        "vote": null,
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1990-06-25",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "The Court affirmed the Missouri Supreme Court's decision requiring clear and convincing evidence of an incompetent person's desire to refuse life-sustaining treatment. The opinion recognizes a liberty interest in refusing unwanted medical treatment but upholds the state's procedural requirement.",
+        "courtlistener_id": "112478"
+      },
+      {
+        "@type": "Case",
+        "id": "harriss_v_mcrae_1980",
+        "short_name": "Harris v. McRae",
+        "full_name": "Harris v. McRae",
+        "citation": "448 U.S. 297 (1980)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1980-06-30",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "affirmed",
+        "holding": "The Hyde Amendment, which restricts federal Medicaid funding for abortions to those necessary to preserve the life of the mother, does not violate the Due Process Clause of the Fifth Amendment or the Religion Clauses of the First Amendment, and Title XIX does not require states to fund abortions when federal reimbursement is unavailable.",
+        "holding_type": "affirmative",
+        "majority_author": "Stewart",
+        "per_curiam": false,
+        "vote": null,
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1980-06-30",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "The case presents both statutory and constitutional questions regarding public funding of abortions under Medicaid and the Hyde Amendment. The source text is a syllabus and opinion excerpt; full vote count and complete opinion information not provided in excerpt.",
+        "courtlistener_id": "9025145"
+      },
+      {
+        "@type": "Case",
+        "id": "heart_of_atlanta_motel_v_united_states_1964",
+        "short_name": "Heart of Atlanta Motel v. United States",
+        "full_name": "Heart of Atlanta Motel, Inc. v. United States",
+        "citation": "379 U.S. 241 (1964)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1964-12-14",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "Title II of the Civil Rights Act of 1964 is constitutional as applied to restaurants and other public accommodations engaged in interstate commerce.",
+        "holding_type": "affirmative",
+        "majority_author": "Clark",
+        "per_curiam": false,
+        "vote": null,
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1964-12-14",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "This case upheld the constitutionality of Title II of the Civil Rights Act of 1964 as applied to a restaurant. The Court reversed the three-judge District Court's issuance of an injunction restraining enforcement of the Act. The companion case Heart of Atlanta Motel v. United States (No. 515) addressed the same Act as applied to hotels and motels.",
+        "courtlistener_id": "8959787"
+      },
+      {
+        "@type": "Case",
+        "id": "horne_v_department_of_agriculture_2015",
+        "short_name": "Horne v. Department of Agriculture",
+        "full_name": "Marvin Horne v. Department of Agriculture",
+        "citation": "576 U.S. 350 (2015)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "2015-06-22",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "The Takings Clause of the Fifth Amendment applies with equal force to personal property as well as real property; a government requirement to reserve personal property as a condition of market participation constitutes a per se taking requiring just compensation, and returning net proceeds from the sale does not satisfy the compensation requirement.",
+        "holding_type": "affirmative",
+        "majority_author": "Roberts",
+        "per_curiam": false,
+        "vote": "8-1",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "2015-06-22",
+        "valid_until": null,
+        "opinions": [
+          {
+            "type": "concurrence",
+            "author": "Thomas",
+            "doctrinal_significance": "Argued that Takings Clause only requires compensation when taking results in public legal right to property; questioned whether such right exists in reserve requirement context.",
+            "joined_by": [],
+            "adopted_in": []
+          },
+          {
+            "type": "concurrence_in_judgment",
+            "author": "Breyer",
+            "doctrinal_significance": "Argued case should be remanded to calculate just compensation; contended that if compensation accounts for market benefits conferred by reserve requirement, no Takings Clause violation occurs.",
+            "joined_by": [
+              "Ginsburg",
+              "Kagan"
+            ],
+            "adopted_in": []
+          },
+          {
+            "type": "dissent",
+            "author": "Sotomayor",
+            "doctrinal_significance": "Argued per se taking only occurs when government deprives individual of every property right; contended reserve requirement allowing retention of net proceeds does not constitute per se taking; asserted government may condition property rights on regulated commerce participation.",
+            "joined_by": [],
+            "adopted_in": []
+          }
+        ],
+        "notes": "8-1 decision. Chief Justice Roberts delivered majority opinion. Justice Thomas concurred. Justice Breyer concurred in part and dissented in part, joined by Justices Ginsburg and Kagan. Justice Sotomayor dissented."
+      },
+      {
+        "@type": "Case",
+        "id": "humphreys_executor_v_united_states_1935",
+        "short_name": "Humphrey's Executor v. United States",
+        "full_name": "Humphrey's Executor v. United States",
+        "citation": "295 U.S. 602 (1935)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1935-01-01",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "affirmed",
+        "holding": "The Federal Trade Commission Act's restriction limiting presidential removal of commissioners to removal for cause\u2014inefficiency, neglect of duty, or malfeasance in office\u2014is valid under the Constitution and restricts the President's removal power beyond the scope of Myers v. United States.",
+        "holding_type": "affirmative",
+        "majority_author": "Sutherland",
+        "per_curiam": false,
+        "vote": null,
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1935-01-01",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "Court of Claims certified two questions regarding the President's power to remove a Federal Trade Commissioner. The Court upheld the statutory restriction on removal, distinguishing the FTC as a quasi-legislative and quasi-judicial body from the purely executive officers at issue in Myers.",
+        "courtlistener_id": "102475"
+      },
+      {
+        "@type": "Case",
+        "id": "ins_v_lopez_mendoza_1983",
+        "short_name": "INS v. Lopez-Mendoza",
+        "full_name": "Immigration and Naturalization Service v. Lopez-Mendoza",
+        "citation": "462 U.S. 919 (1983)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1983-01-01",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "The exclusionary rule does not apply in civil deportation proceedings because the body or identity of a defendant is not suppressible as fruit of an illegal arrest, and the deterrent purpose of the exclusionary rule is not served in the deportation context where the INS has comprehensive internal oversight and the social cost of releasing an alien in continued violation of law outweighs minimal benefits.",
+        "holding_type": "affirmative",
+        "majority_author": null,
+        "per_curiam": false,
+        "vote": "5-4",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1983-01-01",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "The case involved two respondents (Lopez-Mendoza and Sandoval-Sanchez) in separate deportation proceedings. The Court held that deportation proceedings are civil actions and the exclusionary rule does not apply. The majority author is not identified in the source text."
+      },
+      {
+        "@type": "Case",
+        "id": "johanns_v_livestock_marketing_association_2005",
+        "short_name": "Johanns v. Livestock Marketing Association",
+        "full_name": "Mike Johanns, Secretary of Agriculture, et al. v. Livestock Marketing Association",
+        "citation": "544 U.S. 550 (2005)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "2005-01-01",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "Compelled funding of government speech does not violate the First Amendment, and a mandatory beef promotion and research fund financed by cattle producers constitutes government speech immune from First Amendment challenge.",
+        "holding_type": "affirmative",
+        "majority_author": "Scalia",
+        "per_curiam": false,
+        "vote": "6-3",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "2005-01-01",
+        "valid_until": null,
+        "opinions": [
+          {
+            "type": "dissent",
+            "author": null,
+            "doctrinal_significance": "Disagreed with the characterization of the beef advertisements as government speech.",
+            "joined_by": [],
+            "adopted_in": []
+          }
+        ],
+        "notes": "The Court reversed the Eighth Circuit's holding that the advertising was compelled private speech in violation of the First Amendment. The decision established that compelled funding of government speech, as opposed to private speech, does not raise First Amendment concerns."
+      },
+      {
+        "@type": "Case",
+        "id": "katzenbach_v_morgan_1966",
+        "short_name": "Katzenbach v. Morgan",
+        "full_name": "Katzenbach v. Morgan",
+        "citation": "384 U.S. 641 (1966)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1966-06-13",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "Congress has broad power under Section 5 of the Fourteenth Amendment to enact legislation that prohibits state laws, even if the judiciary has not yet determined those state laws violate the Amendment itself; Section 4(e) of the Voting Rights Act of 1965, which prohibits enforcement of English literacy requirements for voting, is a proper exercise of congressional power under Section 5 and supersedes conflicting state law by the Supremacy Clause.",
+        "holding_type": "affirmative",
+        "majority_author": "Brennan",
+        "per_curiam": false,
+        "vote": null,
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1966-06-13",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "The opinion discusses the scope of congressional enforcement power under Section 5 of the Fourteenth Amendment, establishing that Congress need not await judicial determination of unconstitutionality before enacting remedial legislation.",
+        "courtlistener_id": "8963220"
+      },
+      {
+        "@type": "Case",
+        "id": "kennedy_v_bremerton_school_district_2022",
+        "short_name": "Kennedy v. Bremerton School District",
+        "full_name": "Joseph Kennedy v. Bremerton School District",
+        "citation": "597 U.S. 507 (2022)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "2022-06-27",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "The Free Exercise and Free Speech Clauses of the First Amendment protect an individual engaging in personal religious observance from government reprisal; a school district cannot suppress such religious expression based on Establishment Clause concerns when the expression occurs outside the scope of official duties and does not involve coercion of students.",
+        "holding_type": "affirmative",
+        "majority_author": "Gorsuch",
+        "per_curiam": false,
+        "vote": "6-3",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "2022-06-27",
+        "valid_until": null,
+        "opinions": [
+          {
+            "type": "concurrence",
+            "author": "Thomas",
+            "doctrinal_significance": "Separate concurring opinion",
+            "joined_by": [],
+            "adopted_in": []
+          },
+          {
+            "type": "concurrence",
+            "author": "Alito",
+            "doctrinal_significance": "Separate concurring opinion",
+            "joined_by": [],
+            "adopted_in": []
+          },
+          {
+            "type": "dissent",
+            "author": "Sotomayor",
+            "doctrinal_significance": "Dissent from majority's abandonment of Lemon test and reframing of Establishment Clause doctrine",
+            "joined_by": [
+              "Breyer",
+              "Kagan"
+            ],
+            "adopted_in": []
+          }
+        ],
+        "notes": "Overrules the Lemon test and endorsement test for Establishment Clause analysis. Replaces them with a historical practices and understandings framework. The Court held that Kennedy's prayers occurred outside the scope of his official duties as a coach and therefore did not constitute government speech or coercion of students."
+      },
+      {
+        "@type": "Case",
+        "id": "pleasant_grove_city_v_summum_2009",
+        "short_name": "Pleasant Grove City v. Summum",
+        "full_name": "Pleasant Grove City, Utah v. Summum",
+        "citation": "555 U.S. 460 (2009)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "2009-01-01",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "The placement of a monument in a public park is government speech, not private speech subject to Free Speech Clause scrutiny, when the government retains final authority over which monuments are displayed.",
+        "holding_type": "affirmative",
+        "majority_author": "Alito",
+        "per_curiam": false,
+        "vote": "9-0",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "2009-01-01",
+        "valid_until": null,
+        "opinions": [
+          {
+            "type": "concurrence",
+            "author": "Stevens",
+            "doctrinal_significance": "Embraced the majority's government speech reasoning",
+            "joined_by": [
+              "Ginsburg"
+            ],
+            "adopted_in": []
+          },
+          {
+            "type": "concurrence",
+            "author": "Scalia",
+            "doctrinal_significance": "Agreed with government speech reasoning and noted no Establishment Clause violation, citing the historical meaning of Ten Commandments displays",
+            "joined_by": [
+              "Thomas"
+            ],
+            "adopted_in": []
+          },
+          {
+            "type": "concurrence",
+            "author": "Breyer",
+            "doctrinal_significance": "Cautioned that government speech should be a rule of thumb, not a rigid category, and proposed a balancing test for disproportionate speech burdens",
+            "joined_by": [],
+            "adopted_in": []
+          },
+          {
+            "type": "concurrence_in_judgment",
+            "author": "Souter",
+            "doctrinal_significance": "Warned against categorical treatment of public monuments as government speech",
+            "joined_by": [],
+            "adopted_in": []
+          }
+        ],
+        "notes": "Unanimous judgment (9-0) with multiple concurring opinions. The majority opinion commanded 8 justices (Alito, Roberts, Stevens, Scalia, Kennedy, Thomas, Ginsburg, Breyer). Stevens and Ginsburg wrote separately but joined the majority reasoning. Scalia and Thomas wrote separately. Breyer wrote separately. Souter concurred in judgment only with a cautionary note."
+      },
+      {
+        "@type": "Case",
+        "id": "r_a_v_v_city_of_st_paul_1992",
+        "short_name": "R.A.V. v. City of St. Paul",
+        "full_name": "R.A.V. v. City of St. Paul",
+        "citation": "505 U.S. 377 (1992)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1992-06-22",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "A content-based regulation of speech that targets expression based on the subject matter it addresses is facially unconstitutional under the First Amendment, even if the speech falls within a traditionally unprotected category such as fighting words, unless the regulation is narrowly tailored to serve a compelling government interest and does not discriminate on the basis of viewpoint.",
+        "holding_type": "affirmative",
+        "majority_author": "Scalia",
+        "per_curiam": false,
+        "vote": "9-0",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1992-06-22",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "The Court reversed the Minnesota Supreme Court's decision upholding the St. Paul Bias-Motivated Crime Ordinance. Although the ordinance targeted fighting words (a category of unprotected speech), the Court held that content-based discrimination within an unprotected category violates the First Amendment.",
+        "courtlistener_id": "112774"
+      },
+      {
+        "@type": "Case",
+        "id": "regents_of_the_university_of_california_v_bakke_1978",
+        "short_name": "Regents v. Bakke",
+        "full_name": "Regents of the University of California v. Bakke",
+        "citation": "438 U.S. 265 (1978)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1978-06-28",
+        "opinion_form": "plurality",
+        "procedural_disposition": "affirmed_in_part",
+        "holding": "A university may not employ a rigid racial quota in admissions, but race may be considered as one factor among many in a holistic review to achieve educational diversity.",
+        "holding_type": "affirmative",
+        "majority_author": "Powell (plurality)",
+        "per_curiam": false,
+        "vote": null,
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1978-06-28",
+        "valid_until": null,
+        "opinions": [
+          {
+            "type": "concurrence",
+            "author": "Brennan",
+            "doctrinal_significance": "Concurred in judgment that race may be considered in admissions; disagreed with Powell on the permissibility of race-conscious remedies.",
+            "joined_by": [
+              "White",
+              "Marshall",
+              "Blackmun"
+            ],
+            "adopted_in": []
+          },
+          {
+            "type": "concurrence",
+            "author": "Chief Justice Burger",
+            "doctrinal_significance": "Concurred in judgment that the special admissions program was unlawful and respondent must be admitted.",
+            "joined_by": [
+              "Stewart",
+              "Rehnquist",
+              "Stevens"
+            ],
+            "adopted_in": []
+          }
+        ],
+        "notes": "Fractured decision. Powell announced the judgment but no single rationale commanded a majority. Powell's view that race may be considered as one factor (supported by Brennan group on this point) represents the holding on permissibility of race in admissions. The Court was divided on whether race-conscious remedies are permissible and on the proper standard of review.",
+        "courtlistener_id": "9018471"
+      },
+      {
+        "@type": "Case",
+        "id": "rosenberger_v_rector_and_visitors_of_university_of_virginia_1995",
+        "short_name": "Rosenberger v. Rector and Visitors of University of Virginia",
+        "full_name": "Ronald W. Rosenberger v. Rector and Visitors of the University of Virginia",
+        "citation": "515 U.S. 819 (1995)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1995-01-01",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "A public university may not deny funding from a student activities fund to a student religious publication based on the religious viewpoint of its content when the university funds other student publications on a viewpoint-neutral basis, as such denial constitutes viewpoint discrimination in violation of the Free Speech Clause and does not violate the Establishment Clause.",
+        "holding_type": "affirmative",
+        "majority_author": "Kennedy",
+        "per_curiam": false,
+        "vote": "5-4",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1995-01-01",
+        "valid_until": null,
+        "opinions": [
+          {
+            "type": "dissent",
+            "author": null,
+            "doctrinal_significance": "Disagreed with the majority's viewpoint discrimination analysis and Establishment Clause conclusion",
+            "joined_by": [],
+            "adopted_in": []
+          }
+        ],
+        "notes": "5-4 decision. The Court held that viewpoint discrimination in the allocation of student activity funds violates the Free Speech Clause and that funding religious student publications does not violate the Establishment Clause when funding is allocated on a viewpoint-neutral basis."
+      },
+      {
+        "@type": "Case",
+        "id": "shaw_v_reno_1993",
+        "short_name": "Shaw v. Reno",
+        "full_name": "Shaw v. Reno",
+        "citation": "509 U.S. 630 (1993)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1993-06-28",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "remanded",
+        "holding": "A congressional reapportionment plan that creates bizarrely shaped districts based on race, even if facially race-neutral and motivated by remedial purposes, raises an equal protection challenge and must be justified by a compelling governmental interest.",
+        "holding_type": "affirmative",
+        "majority_author": "O'Connor",
+        "per_curiam": false,
+        "vote": "5-4",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1993-06-28",
+        "valid_until": null,
+        "opinions": [
+          {
+            "type": "dissent",
+            "author": null,
+            "doctrinal_significance": "Disagreed with the majority's recognition of an equal protection claim based on district shape and racial motivation.",
+            "joined_by": [],
+            "adopted_in": []
+          }
+        ],
+        "notes": "5-4 decision. The Court held that bizarrely shaped districts can trigger equal protection scrutiny when race appears to be the predominant factor, even absent explicit racial classifications. The case established that race-conscious redistricting, even for remedial purposes, must satisfy strict scrutiny.",
+        "courtlistener_id": "112905"
+      },
+      {
+        "@type": "Case",
+        "id": "torres_v_texas_dps_2021",
+        "short_name": "Torres v. Texas Department of Public Safety",
+        "full_name": "Leroy Torres v. Texas Department of Public Safety",
+        "citation": "592 U.S. 306",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "2021-01-01",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "Congress properly exercised its power to raise and support the Armed Forces when it authorized private damages suits against nonconsenting States under the Uniformed Services Employment and Reemployment Rights Act of 1994, as States implicitly consented to the exercise of this federal power upon joining the Union.",
+        "holding_type": "affirmative",
+        "majority_author": "Breyer",
+        "per_curiam": false,
+        "vote": null,
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "2021-01-01",
+        "valid_until": null,
+        "opinions": [
+          "concurrence",
+          "dissent"
+        ],
+        "notes": "Justice Elena Kagan authored a concurring opinion. Justice Clarence Thomas authored a dissenting opinion, joined by Justices Samuel Alito, Neil Gorsuch, and Amy Coney Barrett."
+      },
+      {
+        "@type": "Case",
+        "id": "united_haulers_v_oneida_herkimer_2007",
+        "short_name": "United Haulers Ass'n v. Oneida-Herkimer",
+        "full_name": "United Haulers Association, Inc. v. Oneida-Herkimer Solid Waste Management Authority",
+        "citation": "550 U.S. 330 (2007)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "2007-01-01",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "affirmed",
+        "holding": "A local flow control ordinance requiring waste to be delivered to publicly-owned facilities does not violate the dormant Commerce Clause when it does not discriminate against out-of-state private businesses and imposes only an incidental burden on interstate commerce that is outweighed by local public benefits.",
+        "holding_type": "affirmative",
+        "majority_author": "Roberts",
+        "per_curiam": false,
+        "vote": "6-3",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "2007-01-01",
+        "valid_until": null,
+        "opinions": [
+          {
+            "type": "dissent",
+            "author": "Alito",
+            "doctrinal_significance": "Would have held that the ordinance discriminated against commerce and was unconstitutional.",
+            "joined_by": [],
+            "adopted_in": []
+          }
+        ],
+        "notes": "The majority distinguished this ordinance from previously struck-down ordinances by emphasizing that the favored facilities were publicly operated. The Court applied a balancing test rather than rigorous scrutiny of economic effects."
+      },
+      {
+        "@type": "Case",
+        "id": "bond_v_united_states_2010",
+        "short_name": "Bond v. United States",
+        "full_name": "Carol Anne Bond v. United States",
+        "citation": "559 U.S. 460",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "2010-01-01",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "A defendant has standing to challenge the constitutionality of a federal statute on the ground that it violates the Tenth Amendment and interferes with powers reserved to the States.",
+        "holding_type": "affirmative",
+        "majority_author": "Kennedy",
+        "per_curiam": false,
+        "vote": "9-0",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "2010-01-01",
+        "valid_until": null,
+        "opinions": [
+          {
+            "type": "concurrence",
+            "author": "Ginsburg",
+            "doctrinal_significance": "Emphasized that a defendant has a personal constitutional right not to be convicted under a constitutionally invalid law.",
+            "joined_by": [
+              "Breyer"
+            ],
+            "adopted_in": []
+          }
+        ],
+        "notes": "Unanimous decision. The Court held that Bond has standing to challenge the federal Chemical Weapons Convention Implementation Act on Tenth Amendment grounds, reversing the Third Circuit's holding that she lacked such standing.",
+        "courtlistener_id": "7340372"
+      },
+      {
+        "@type": "Case",
+        "id": "virginia_v_maryland_2003",
+        "short_name": "Virginia v. Maryland",
+        "full_name": "Virginia v. Maryland",
+        "citation": "538 U.S. 343 (2003)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "2003-01-01",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "affirmed",
+        "holding": "A state retains sovereign authority to build improvements to its shore and withdraw water from a shared river under an interstate compact, absent explicit language in the compact divesting that authority.",
+        "holding_type": "affirmative",
+        "majority_author": "Rehnquist",
+        "per_curiam": false,
+        "vote": "7-2",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "2003-01-01",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "Case concerns interpretation of the 1785 Compact between Virginia and Maryland regarding the Potomac River and the Black-Jenkins arbitration agreement.",
+        "courtlistener_id": "131193"
+      },
+      {
+        "@type": "Case",
+        "id": "washington_v_glucksberg_1997",
+        "short_name": "Washington v. Glucksberg",
+        "full_name": "Washington v. Glucksberg",
+        "citation": "521 U.S. 702 (1997)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1997-06-26",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "A state's prohibition on assisting suicide does not violate the Due Process Clause of the Fourteenth Amendment because the asserted right to physician-assisted suicide is not a fundamental liberty interest deeply rooted in the Nation's history and tradition.",
+        "holding_type": "by_negation",
+        "majority_author": "Rehnquist",
+        "per_curiam": false,
+        "vote": null,
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1997-06-26",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "The Court established a two-part method for substantive due process analysis: (1) the asserted right must be objectively deeply rooted in the Nation's history and tradition, and (2) the Court must carefully describe the asserted fundamental liberty interest. The Court rejected respondents' various formulations of the interest and held that the right to physician-assisted suicide has no place in the Nation's traditions. The Court also applied rational basis review to uphold the state's legitimate interests in prohibiting intentional killing, preserving human life, preventing suicide, protecting medical ethics, and protecting vulnerable groups.",
+        "courtlistener_id": "9284574"
+      },
+      {
+        "@type": "Case",
+        "id": "wilkinson_v_austin_2005",
+        "short_name": "Wilkinson v. Austin",
+        "full_name": "Reginald A. Wilkinson, Director, Ohio Department of Rehabilitation and Correction, et al. v. Austin",
+        "citation": "545 U.S. 209 (2005)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "2005-01-01",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "affirmed",
+        "holding": "Procedural protections provided by Ohio's New Policy for classifying prisoners for placement at a supermaximum security facility satisfy the Due Process Clause of the Fourteenth Amendment when the procedures sufficiently minimize the risk of erroneous placement and account for the state's legitimate interests in prison security and resource allocation.",
+        "holding_type": "affirmative",
+        "majority_author": "Kennedy",
+        "per_curiam": false,
+        "vote": "9-0",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "2005-01-01",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "Unanimous decision. The Court affirmed the Sixth Circuit's reversal of the district court's substantive modifications to Ohio's prison placement policy, holding that the procedural protections in the New Policy were constitutionally sufficient."
       }
     ],
     "doctrinal_tests": [
@@ -16264,6 +17393,275 @@
         "valid_from": "1985",
         "valid_until": null,
         "notes": "This test applies to attorney advertising specifically and reflects heightened protection for commercial speech involving professional services."
+      },
+      {
+        "@type": "DoctrinalTest",
+        "id": "petition_clause_public_concern_test",
+        "label": "Petition Clause Public Concern Test",
+        "description": "A threshold test determining whether a public employee's petition claim under the Petition Clause is actionable. The employee must demonstrate that the petition relates to a matter of public concern.",
+        "area_id": "freedom_of_petition",
+        "source_case_id": "borough_of_duryea_v_guarnieri_2011",
+        "scrutiny_level": "rational_basis",
+        "burden": "challenger",
+        "test_form": "threshold_then_conjunctive",
+        "prongs": [
+          {
+            "number": 1,
+            "label": "Petition Requirement",
+            "description": "The employee must have engaged in conduct constituting a petition to the government.",
+            "burden_note": "Challenger must establish that the conduct qualifies as petition.",
+            "valid_from": "2011-01-01",
+            "valid_until": null,
+            "contested": true,
+            "contest_note": "Justice Scalia expressed doubt whether a lawsuit constitutes constitutionally protected petition."
+          },
+          {
+            "number": 2,
+            "label": "Public Concern Requirement",
+            "description": "The petition must relate to a matter of public concern.",
+            "burden_note": "Challenger must demonstrate the petition addresses a matter of public concern.",
+            "valid_from": "2011-01-01",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          }
+        ],
+        "status": "active",
+        "valid_from": "2011-01-01",
+        "valid_until": null,
+        "notes": "The Court rejected the Third Circuit's conclusion that the public concern test does not limit public employees' Petition Clause claims."
+      },
+      {
+        "@type": "DoctrinalTest",
+        "id": "hazelwood_pedagogical_test",
+        "label": "Hazelwood Pedagogical Concerns Test",
+        "description": "Schools may exercise editorial control over student speech disseminated under their auspices if their actions are reasonably related to legitimate pedagogical concerns.",
+        "area_id": "free_speech",
+        "source_case_id": "hazelwood_school_district_v_kuhlmeier_1988",
+        "scrutiny_level": "rational_basis",
+        "burden": "challenger",
+        "test_form": "conjunctive",
+        "prongs": [
+          {
+            "number": 1,
+            "label": "School Sponsorship or Auspices",
+            "description": "The student speech must be disseminated under the school's auspices (e.g., school-sponsored newspaper, yearbook, or similar publication).",
+            "burden_note": "Challenger must establish that speech was disseminated under school auspices.",
+            "valid_from": "1988-01-13",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 2,
+            "label": "Reasonable Relationship to Legitimate Pedagogical Concerns",
+            "description": "School action restricting or refusing to sponsor the speech must be reasonably related to legitimate pedagogical concerns, including maintaining high standards for student speech and refusing speech inconsistent with shared values of a civilized social order.",
+            "burden_note": "School must demonstrate reasonable relationship between restriction and legitimate pedagogical concern.",
+            "valid_from": "1988-01-13",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          }
+        ],
+        "status": "active",
+        "valid_from": "1988-01-13",
+        "valid_until": null,
+        "notes": "Applies specifically to school-sponsored student speech. Does not apply to student speech on matters of public concern outside the school-sponsored context."
+      },
+      {
+        "@type": "DoctrinalTest",
+        "id": "shaw_race_redistricting_test",
+        "label": "Shaw Race-Conscious Redistricting Test",
+        "description": "A test to determine whether a reapportionment plan violates equal protection by using race as a predominant factor in drawing district lines. The test examines whether the district shape and circumstances suggest that race, rather than traditional redistricting principles, was the predominant factor motivating the plan.",
+        "area_id": "equal_protection",
+        "source_case_id": "shaw_v_reno_1993",
+        "scrutiny_level": "strict",
+        "burden": "government",
+        "test_form": "threshold_then_conjunctive",
+        "prongs": [
+          {
+            "number": 1,
+            "label": "Predominant Factor Analysis",
+            "description": "Whether race was the predominant factor in drawing the district lines, as evidenced by the district's bizarre shape and other circumstances.",
+            "burden_note": "Challenger must establish that race was predominant; government must then justify the plan.",
+            "valid_from": "1993-06-28",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 2,
+            "label": "Compelling Interest Justification",
+            "description": "If race was the predominant factor, the government must demonstrate a compelling governmental interest for the race-conscious plan.",
+            "burden_note": "Government bears burden of justifying the race-conscious redistricting.",
+            "valid_from": "1993-06-28",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          }
+        ],
+        "status": "active",
+        "valid_from": "1993-06-28",
+        "valid_until": null,
+        "notes": "The test applies strict scrutiny to race-conscious redistricting. The Court remanded for the District Court to determine whether a compelling governmental interest justified North Carolina's plan."
+      },
+      {
+        "@type": "DoctrinalTest",
+        "id": "structural_waiver_test",
+        "label": "Structural Waiver Test for Sovereign Immunity Abrogation",
+        "description": "Congress may abrogate state sovereign immunity when the federal power is complete in itself and the States consented to the exercise of that power\u2014in its entirety\u2014in the plan of the Convention.",
+        "area_id": "individual_rights",
+        "source_case_id": "torres_v_texas_dps_2021",
+        "scrutiny_level": "none",
+        "burden": "government",
+        "test_form": "conjunctive",
+        "prongs": [
+          {
+            "number": 1,
+            "label": "Federal Power is Complete in Itself",
+            "description": "The federal power at issue must be complete and self-contained, not dependent on state cooperation.",
+            "burden_note": "Government must demonstrate the federal power is complete in itself.",
+            "valid_from": "2021",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 2,
+            "label": "States Consented to the Exercise of That Power in Its Entirety",
+            "description": "The States must have implicitly consented to the exercise of that federal power in its entirety upon joining the Union and adopting the plan of the Convention.",
+            "burden_note": "Government must demonstrate States consented to the federal power in the plan of the Convention.",
+            "valid_from": "2021",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          }
+        ],
+        "status": "active",
+        "valid_from": "2021",
+        "valid_until": null,
+        "notes": "This test applies to determine whether Congress may abrogate state sovereign immunity in the exercise of enumerated federal powers. The Court applied this test to Congress's power to raise and support the Armed Forces."
+      },
+      {
+        "@type": "DoctrinalTest",
+        "id": "dormant_commerce_clause_balancing_test",
+        "label": "Dormant Commerce Clause Balancing Test for Local Ordinances",
+        "description": "A test for evaluating whether a local ordinance violates the dormant Commerce Clause by balancing the burden on interstate commerce against local public benefits, applied when the ordinance does not discriminate against out-of-state commerce.",
+        "area_id": "dormant_commerce_clause",
+        "source_case_id": "united_haulers_association_v_oneida_herkimer_solid_waste_management_authority_2007",
+        "scrutiny_level": "rational_basis",
+        "burden": "challenger",
+        "test_form": "balancing",
+        "prongs": [
+          {
+            "number": 1,
+            "label": "Nondiscrimination",
+            "description": "The ordinance must not discriminate against out-of-state private businesses; it may favor publicly-operated facilities.",
+            "burden_note": "Challenger must show discrimination against out-of-state commerce.",
+            "valid_from": "2007-01-01",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 2,
+            "label": "Burden on Interstate Commerce",
+            "description": "Assess whether the ordinance imposes more than an incidental burden on interstate commerce.",
+            "burden_note": "Challenger must demonstrate the burden; government may show it is incidental.",
+            "valid_from": "2007-01-01",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 3,
+            "label": "Balance Against Local Benefits",
+            "description": "Balance any burden on interstate commerce against the ordinance's financial, health, and environmental benefits to the local community.",
+            "burden_note": "Government must demonstrate legitimate local benefits that outweigh any incidental burden.",
+            "valid_from": "2007-01-01",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          }
+        ],
+        "status": "active",
+        "valid_from": "2007-01-01",
+        "valid_until": null,
+        "notes": "This test applies to local ordinances that do not discriminate against out-of-state commerce. The Court declined to apply rigorous scrutiny, instead deferring to local policy analysis."
+      },
+      {
+        "@type": "DoctrinalTest",
+        "id": "glucksberg_sdp_test",
+        "label": "Glucksberg Substantive Due Process Test",
+        "description": "A two-part test for determining whether an asserted liberty interest is a fundamental right protected by the Due Process Clause: (1) the interest must be objectively deeply rooted in the Nation's history and tradition, and (2) the Court must carefully describe the asserted fundamental liberty interest with specificity rather than at a high level of generality.",
+        "area_id": "substantive_due_process",
+        "source_case_id": "washington_v_glucksberg_1997",
+        "scrutiny_level": "rational_basis",
+        "burden": "challenger",
+        "test_form": "conjunctive",
+        "prongs": [
+          {
+            "number": 1,
+            "label": "History and Tradition",
+            "description": "The asserted liberty interest must be objectively deeply rooted in this Nation's history and tradition.",
+            "burden_note": "Challenger must demonstrate that the interest is deeply rooted in history and tradition.",
+            "valid_from": "1997-06-26",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 2,
+            "label": "Careful Description",
+            "description": "The Court must carefully describe the asserted fundamental liberty interest with appropriate specificity, not at a high level of generality.",
+            "burden_note": "The interest must be narrowly and specifically defined, not broadly characterized.",
+            "valid_from": "1997-06-26",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          }
+        ],
+        "status": "active",
+        "valid_from": "1997-06-26",
+        "valid_until": null,
+        "notes": "If an asserted interest fails either prong, it is not a fundamental liberty interest protected by the Due Process Clause. If the interest is not fundamental, rational basis review applies to the state regulation. The test requires that interests be described narrowly; broad formulations such as 'the right to die' or 'liberty to choose how to die' are rejected in favor of precise characterization of the actual liberty at stake."
+      },
+      {
+        "@type": "DoctrinalTest",
+        "id": "prisoner_placement_due_process_test",
+        "label": "Prisoner Supermaximum Placement Due Process Test",
+        "description": "A procedural due process test for evaluating whether state procedures for classifying and placing prisoners in supermaximum security facilities comply with the Fourteenth Amendment. The test requires procedures that sufficiently minimize the risk of erroneous placement while accounting for legitimate state interests in prison security and resource allocation.",
+        "area_id": "substantive_due_process",
+        "source_case_id": "wilkinson_v_austin_2005",
+        "scrutiny_level": "rational_basis",
+        "burden": "government",
+        "test_form": "balancing",
+        "prongs": [
+          {
+            "number": 1,
+            "label": "Risk Minimization",
+            "description": "The procedures must sufficiently minimize the risk of erroneous placement in the supermaximum facility.",
+            "burden_note": "Government must demonstrate that procedures adequately reduce erroneous placement risk.",
+            "valid_from": "2005-01-01",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 2,
+            "label": "State Interest Accommodation",
+            "description": "The procedures must account for and accommodate legitimate state interests in prison security (including gang prevention) and preservation of scarce resources.",
+            "burden_note": "Government may rely on its penological interests to justify limited procedural protections.",
+            "valid_from": "2005-01-01",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          }
+        ],
+        "status": "active",
+        "valid_from": "2005-01-01",
+        "valid_until": null,
+        "notes": "This test applies a balancing approach that recognizes necessarily limited procedural protections in the prison context. The test does not require elaborate procedures but rather sufficient safeguards including notice, opportunity for rebuttal, and multi-tier review."
       }
     ]
   },
@@ -19363,7 +20761,7 @@
     },
     {
       "id": "rav_modifies_fighting_words",
-      "source_id": "rav_v_city_of_st_paul_1992",
+      "source_id": "r_a_v_v_city_of_st_paul_1992",
       "target_id": "fighting_words_doctrine",
       "edge_type": "MODIFIES",
       "direction": "narrows",
@@ -19377,7 +20775,7 @@
     },
     {
       "id": "rav_establishes_hate_speech_doctrine",
-      "source_id": "rav_v_city_of_st_paul_1992",
+      "source_id": "r_a_v_v_city_of_st_paul_1992",
       "target_id": "hate_speech_doctrine",
       "edge_type": "ESTABLISHES",
       "valid_from": "1992-06-22",
@@ -19389,7 +20787,7 @@
     },
     {
       "id": "rav_interprets_a1",
-      "source_id": "rav_v_city_of_st_paul_1992",
+      "source_id": "r_a_v_v_city_of_st_paul_1992",
       "target_id": "amendment_1",
       "edge_type": "INTERPRETS",
       "valid_from": "1992-06-22",
@@ -19402,7 +20800,7 @@
     {
       "id": "virginia_black_distinguishes_rav",
       "source_id": "virginia_v_black_2003",
-      "target_id": "rav_v_city_of_st_paul_1992",
+      "target_id": "r_a_v_v_city_of_st_paul_1992",
       "edge_type": "DISTINGUISHES",
       "valid_from": "2003-04-07",
       "valid_until": null,
@@ -19427,7 +20825,7 @@
     {
       "id": "wisconsin_mitchell_distinguishes_rav",
       "source_id": "wisconsin_v_mitchell_1993",
-      "target_id": "rav_v_city_of_st_paul_1992",
+      "target_id": "r_a_v_v_city_of_st_paul_1992",
       "edge_type": "DISTINGUISHES",
       "valid_from": "1993-06-11",
       "valid_until": null,
@@ -20769,7 +22167,7 @@
     },
     {
       "id": "rav_distinguishes_beauharnais",
-      "source_id": "rav_v_city_of_st_paul_1992",
+      "source_id": "r_a_v_v_city_of_st_paul_1992",
       "target_id": "beauharnais_v_illinois_1952",
       "edge_type": "DISTINGUISHES",
       "valid_from": "1992-06-22",
@@ -29929,6 +31327,922 @@
         "federal"
       ],
       "notes": "BE&K addresses scope of Petition Clause protection for retaliatory litigation"
+    },
+    {
+      "id": "abington_establishes_establishment_clause_school_prayer_prohibition",
+      "source_id": "abington_school_district_v_schempp_1963",
+      "target_id": "establishment_clause_school_prayer_prohibition",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1963-06-17",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Abington established the doctrine that public schools cannot sponsor mandatory religious exercises including Bible readings and prayer recitations."
+    },
+    {
+      "id": "alden_establishes_state_sovereign_immunity",
+      "source_id": "alden_v_maine_1999",
+      "target_id": "state_sovereign_immunity",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1999-06-23",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Alden established that states retain sovereign immunity in their own courts, extending the doctrine beyond federal court."
+    },
+    {
+      "id": "benton_applies_concurrent_sentence_doctrine",
+      "source_id": "benton_v_maryland_1969",
+      "target_id": "concurrent_sentence_doctrine",
+      "edge_type": "APPLIES",
+      "valid_from": "1969-06-23",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Benton applied and clarified the concurrent sentence doctrine, holding that it does not create a jurisdictional bar to appellate review but may survive as a rule of judicial convenience."
+    },
+    {
+      "id": "bethel_establishes_student_vulgar_speech_doctrine",
+      "source_id": "bethel_school_district_v_fraser_1986",
+      "target_id": "student_vulgar_speech_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1986",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "betts_establishes_right_to_counsel",
+      "source_id": "betts_v_brady_1942",
+      "target_id": "right_to_counsel",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1942-06-01",
+      "valid_until": "1963-03-18",
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Betts established the right to counsel as a circumstance-dependent right, later superseded by Gideon's absolute right rule."
+    },
+    {
+      "id": "borough_of_duryea_establishes_petition_clause_public_concern_doctrine",
+      "source_id": "borough_of_duryea_v_guarnieri_2011",
+      "target_id": "petition_clause_public_concern_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2011-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "The Court established the doctrine that Petition Clause protection requires a matter of public concern."
+    },
+    {
+      "id": "borough_of_duryea_establishes_petition_clause_public_concern_test",
+      "source_id": "borough_of_duryea_v_guarnieri_2011",
+      "target_id": "petition_clause_public_concern_test",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2011-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "The Court established a threshold test requiring that a public employee's petition relate to a matter of public concern."
+    },
+    {
+      "id": "bowsher_applies_executive_power",
+      "source_id": "bowsher_v_synar_1986",
+      "target_id": "executive_power",
+      "edge_type": "APPLIES",
+      "valid_from": "1986-06-26",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ],
+      "notes": "Bowsher applies the doctrine of executive power to determine that the Comptroller General's deficit reduction functions are inherently executive in nature."
+    },
+    {
+      "id": "branzburg_applies_reporter_privilege",
+      "source_id": "branzburg_v_hayes_1972",
+      "target_id": "reporter_privilege",
+      "edge_type": "APPLIES",
+      "valid_from": "1972-06-29",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Branzburg applied and rejected the claimed reporter's privilege doctrine, holding no absolute privilege exists under the First Amendment."
+    },
+    {
+      "id": "brewer_establishes_right_to_counsel",
+      "source_id": "brewer_v_williams_1977",
+      "target_id": "right_to_counsel",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1977-03-23",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Brewer v. Williams establishes that statements obtained in violation of the right to counsel are inadmissible, even absent interrogation."
+    },
+    {
+      "id": "cruzan_applies_right_to_refuse_medical_treatment",
+      "source_id": "cruzan_v_director_missouri_department_of_health_1990",
+      "target_id": "right_to_refuse_medical_treatment",
+      "edge_type": "APPLIES",
+      "valid_from": "1990-06-25",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Cruzan established the constitutional liberty interest in refusing unwanted medical treatment as a matter of substantive due process."
+    },
+    {
+      "id": "dolan_exactions_test_governed_by_takings_exactions_doctrine",
+      "source_id": "dolan_exactions_test",
+      "target_id": "takings_exactions_doctrine",
+      "edge_type": "GOVERNED_BY",
+      "valid_from": "1994-06-24",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "The Dolan exactions test is the operative mechanism for applying the takings exactions doctrine."
+    },
+    {
+      "id": "garcetti_establishes_public_employee_speech_doctrine",
+      "source_id": "garcetti_v_ceballos_2006",
+      "target_id": "public_employee_speech_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2006",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Garcetti v. Ceballos established the principle that public employee speech made pursuant to official duties is not protected by the First Amendment."
+    },
+    {
+      "id": "georgia_v_mccollum_establishes_equal_protection_peremptory_challenges",
+      "source_id": "georgia_v_mccollum_1992",
+      "target_id": "equal_protection_peremptory_challenges",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1992-06-18",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Georgia v. McCollum established that the Equal Protection Clause prohibits criminal defendants from engaging in purposeful racial discrimination in the exercise of peremptory challenges."
+    },
+    {
+      "id": "harriss_v_mcrae_establishes_medicaid_abortion_funding_doctrine",
+      "source_id": "harriss_v_mcrae_1980",
+      "target_id": "medicaid_abortion_funding_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1980-06-30",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Harris v. McRae establishes the doctrine that restrictions on Medicaid funding for abortion do not violate the Due Process Clause or Religion Clauses."
+    },
+    {
+      "id": "harriss_v_mcrae_establishes_right_to_abortion_funding",
+      "source_id": "harriss_v_mcrae_1980",
+      "target_id": "right_to_abortion_funding",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1980-06-30",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Harris v. McRae establishes that there is no constitutional right to government funding of abortion services."
+    },
+    {
+      "id": "hazelwood_establishes_hazelwood_pedagogical_test",
+      "source_id": "hazelwood_school_district_v_kuhlmeier_1988",
+      "target_id": "hazelwood_pedagogical_test",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1988-01-13",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Hazelwood established the test for evaluating school editorial control over school-sponsored student speech."
+    },
+    {
+      "id": "hazelwood_establishes_student_speech_doctrine",
+      "source_id": "hazelwood_school_district_v_kuhlmeier_1988",
+      "target_id": "student_speech_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1988-01-13",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Hazelwood established the foundational doctrine distinguishing school-sponsored student speech from other student speech contexts."
+    },
+    {
+      "id": "heart_of_atlanta_applies_civil_rights_act",
+      "source_id": "heart_of_atlanta_motel_v_united_states_1964",
+      "target_id": "civil_rights_act_1964_title_ii",
+      "edge_type": "APPLIES",
+      "valid_from": "1964-12-14",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ],
+      "notes": "The Court upheld the constitutionality of Title II as applied to restaurants and public accommodations."
+    },
+    {
+      "id": "horne_establishes_takings_clause_personal_property",
+      "source_id": "horne_v_department_of_agriculture_2015",
+      "target_id": "takings_clause_personal_property",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2015-06-22",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Horne established that Takings Clause applies equally to personal and real property."
+    },
+    {
+      "id": "horne_establishes_per_se_taking_market_participation",
+      "source_id": "horne_v_department_of_agriculture_2015",
+      "target_id": "per_se_taking_market_participation",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2015-06-22",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Horne established that market participation conditions requiring property surrender constitute per se takings."
+    },
+    {
+      "id": "horne_establishes_just_compensation_proceeds_insufficient",
+      "source_id": "horne_v_department_of_agriculture_2015",
+      "target_id": "just_compensation_proceeds_insufficient",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2015-06-22",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Horne established that returning net proceeds does not satisfy just compensation requirement for a taking."
+    },
+    {
+      "id": "hudson_modifies_exclusionary_rule_fourth_amendment",
+      "source_id": "hudson_v_michigan_2006",
+      "target_id": "exclusionary_rule_fourth_amendment",
+      "edge_type": "MODIFIES",
+      "valid_from": "2006-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "direction": "narrows",
+      "notes": "Hudson narrows the exclusionary rule by holding that knock-and-announce violations do not automatically require suppression of evidence."
+    },
+    {
+      "id": "humphreys_executor_applies_presidential_removal_power",
+      "source_id": "humphreys_executor_v_united_states_1935",
+      "target_id": "presidential_removal_power",
+      "edge_type": "APPLIES",
+      "valid_from": "1935-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ],
+      "notes": "Humphrey's Executor clarified and limited the presidential removal power established in Myers v. United States by recognizing that statutory for-cause restrictions are constitutional when applied to officers exercising quasi-legislative or quasi-judicial functions."
+    },
+    {
+      "id": "humphreys_executor_establishes_for_cause_removal",
+      "source_id": "humphreys_executor_v_united_states_1935",
+      "target_id": "for_cause_removal_restriction",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1935-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ],
+      "notes": "The Court upheld the Federal Trade Commission Act's provision restricting removal to cases of inefficiency, neglect of duty, or malfeasance in office as a valid constitutional limitation on presidential removal power."
+    },
+    {
+      "id": "hurley_establishes_compelled_speech_doctrine",
+      "source_id": "hurley_v_irish_american_gay_group_of_boston_1995",
+      "target_id": "compelled_speech_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1995-06-19",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Hurley establishes that the compelled speech doctrine applies to private parade organizers and protects their right to exclude messages they do not wish to convey."
+    },
+    {
+      "id": "ins_v_lopez_mendoza_establishes_exclusionary_rule_civil",
+      "source_id": "ins_v_lopez_mendoza_1983",
+      "target_id": "exclusionary_rule_civil_proceedings",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1983-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "The Court established that the exclusionary rule does not apply in civil deportation proceedings based on a cost-benefit analysis specific to that context."
+    },
+    {
+      "id": "johanns_applies_government_speech_doctrine",
+      "source_id": "johanns_v_livestock_marketing_association_2005",
+      "target_id": "government_speech_doctrine",
+      "edge_type": "APPLIES",
+      "valid_from": "2005-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Johanns established the government speech doctrine as a framework distinguishing compelled funding of government speech from compelled funding of private speech."
+    },
+    {
+      "id": "katzenbach_establishes_section_5_enforcement_power",
+      "source_id": "katzenbach_v_morgan_1966",
+      "target_id": "section_5_enforcement_power",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1966-06-13",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Katzenbach establishes the doctrine that Congress has independent enforcement power under Section 5 of the Fourteenth Amendment to prohibit state laws without awaiting judicial determination of unconstitutionality."
+    },
+    {
+      "id": "katzenbach_applies_right_to_vote_equal_protection",
+      "source_id": "katzenbach_v_morgan_1966",
+      "target_id": "right_to_vote_equal_protection",
+      "edge_type": "APPLIES",
+      "valid_from": "1966-06-13",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "The Court applies the principle that the Equal Protection Clause protects voting rights and limits state power to impose voting qualifications."
+    },
+    {
+      "id": "kennedy_overrules_lemon_test",
+      "source_id": "kennedy_v_bremerton_school_district_2022",
+      "target_id": "lemon_v_kurtzman_1971",
+      "edge_type": "OVERRULES",
+      "overrule_type": "explicit",
+      "valid_from": "2022-06-27",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Kennedy explicitly abandons the Lemon test for Establishment Clause analysis, replacing it with a historical practices and understandings framework."
+    },
+    {
+      "id": "kennedy_applies_free_exercise_personal_observance",
+      "source_id": "kennedy_v_bremerton_school_district_2022",
+      "target_id": "free_exercise_protection_personal_religious_observance",
+      "edge_type": "APPLIES",
+      "valid_from": "2022-06-27",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Kennedy establishes that the Free Exercise Clause protects personal religious observance from government reprisal outside the scope of official duties."
+    },
+    {
+      "id": "kennedy_applies_establishment_clause_historical_framework",
+      "source_id": "kennedy_v_bremerton_school_district_2022",
+      "target_id": "establishment_clause_historical_practices_test",
+      "edge_type": "APPLIES",
+      "valid_from": "2022-06-27",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Kennedy establishes the historical practices and understandings framework as the new standard for Establishment Clause analysis."
+    },
+    {
+      "id": "kennedy_applies_free_speech_personal_expression",
+      "source_id": "kennedy_v_bremerton_school_district_2022",
+      "target_id": "free_speech_protection_personal_expression_government_employee",
+      "edge_type": "APPLIES",
+      "valid_from": "2022-06-27",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Kennedy establishes that the Free Speech Clause protects personal expression by government employees outside the scope of official duties."
+    },
+    {
+      "id": "lee_v_weisman_establishes_establishment_clause_coercion_doctrine",
+      "source_id": "lee_v_weisman_1992",
+      "target_id": "establishment_clause_coercion_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1992-06-24",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Lee v. Weisman established the principle that the Establishment Clause is violated by government-sponsored prayer at public school graduations based on both direct state involvement and subtle coercive effects on student participation."
+    },
+    {
+      "id": "matal_v_tam_applies_viewpoint_discrimination",
+      "source_id": "matal_v_tam_2017",
+      "target_id": "viewpoint_discrimination",
+      "edge_type": "APPLIES",
+      "valid_from": "2017-06-19",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "The Court applied viewpoint discrimination doctrine to strike down the Disparagement Clause, finding that it discriminated based on viewpoint by targeting messages deemed offensive."
+    },
+    {
+      "id": "matal_v_tam_applies_government_speech_doctrine",
+      "source_id": "matal_v_tam_2017",
+      "target_id": "government_speech_doctrine",
+      "edge_type": "APPLIES",
+      "valid_from": "2017-06-19",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "The Court considered and rejected the government speech doctrine as a basis for upholding the Disparagement Clause, holding that PTO approval of trademarks does not constitute government speech."
+    },
+    {
+      "id": "matal_v_tam_applies_commercial_speech_regulation",
+      "source_id": "matal_v_tam_2017",
+      "target_id": "commercial_speech_regulation",
+      "edge_type": "APPLIES",
+      "valid_from": "2017-06-19",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "The Court applied commercial speech regulation doctrine and found the Disparagement Clause was not narrowly drawn to serve a substantial interest."
+    },
+    {
+      "id": "meyer_establishes_substantive_due_process_liberty",
+      "source_id": "meyer_v_nebraska_1923",
+      "target_id": "substantive_due_process_liberty",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1923-06-04",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Meyer articulated and applied the doctrine of substantive due process liberty, defining the scope of liberty protected by the Fourteenth Amendment to include occupational freedom and parental rights."
+    },
+    {
+      "id": "morse_establishes_student_free_speech_rights",
+      "source_id": "morse_v_frederick_2007",
+      "target_id": "student_free_speech_rights",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2007-06-25",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Morse v. Frederick established the doctrine that student free speech rights are more limited than adult speech rights and do not extend to pro-drug messages."
+    },
+    {
+      "id": "morse_establishes_school_anti_drug_mission",
+      "source_id": "morse_v_frederick_2007",
+      "target_id": "school_anti_drug_mission",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2007-06-25",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Morse v. Frederick recognized schools' significant interest in preventing drug use as a basis for restricting student speech."
+    },
+    {
+      "id": "nguyen_establishes_intermediate_scrutiny_gender_test",
+      "source_id": "nguyen_v_ins_2001",
+      "target_id": "craig_intermediate_scrutiny_gender_test",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2001-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Nguyen articulates the intermediate scrutiny standard for gender-based classifications in the citizenship context."
+    },
+    {
+      "id": "personnel_administrator_v_feeney_establishes_discriminatory_intent_doctrine",
+      "source_id": "personnel_administrator_of_massachusetts_v_feeney_1979",
+      "target_id": "discriminatory_intent_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1979-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "The Court established that discriminatory intent, not disparate impact alone, is required to trigger heightened scrutiny under equal protection analysis."
+    },
+    {
+      "id": "pickering_establishes_public_employee_speech_doctrine",
+      "source_id": "pickering_v_board_of_education_1968",
+      "target_id": "public_employee_speech_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1968-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Pickering established the foundational doctrine protecting public employee speech on matters of public concern."
+    },
+    {
+      "id": "pierce_establishes_parental_liberty_education",
+      "source_id": "pierce_v_society_of_sisters_1925",
+      "target_id": "parental_liberty_education",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1925-06-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Pierce v. Society of Sisters established the doctrine of parental liberty to direct children's education as a fundamental liberty interest protected by the Fourteenth Amendment's Due Process Clause."
+    },
+    {
+      "id": "pleasant_grove_city_v_summum_2009_applies_government_speech_doctrine",
+      "source_id": "pleasant_grove_city_v_summum_2009",
+      "target_id": "government_speech_doctrine",
+      "edge_type": "APPLIES",
+      "valid_from": "2009",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "The Court established the government speech doctrine as a framework for analyzing monument placement in public parks."
+    },
+    {
+      "id": "r_a_v_establishes_content_based_discrimination_doctrine",
+      "source_id": "r_a_v_v_city_of_st_paul_1992",
+      "target_id": "content_based_discrimination_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1992-06-22",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "R.A.V. establishes the principle that content-based discrimination in speech regulation is unconstitutional even when applied to traditionally unprotected categories."
+    },
+    {
+      "id": "r_a_v_applies_categorical_speech_exceptions",
+      "source_id": "r_a_v_v_city_of_st_paul_1992",
+      "target_id": "categorical_speech_exceptions",
+      "edge_type": "APPLIES",
+      "valid_from": "1992-06-22",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "R.A.V. applies the categorical exceptions doctrine but clarifies that content-based discrimination within these categories is unconstitutional."
+    },
+    {
+      "id": "regents_bakke_establishes_affirmative_action_higher_ed",
+      "source_id": "regents_of_the_university_of_california_v_bakke_1978",
+      "target_id": "affirmative_action_in_higher_education",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1978-06-28",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Bakke established the constitutional framework for affirmative action in higher education, permitting race as a factor in admissions while prohibiting rigid quotas."
+    },
+    {
+      "id": "rosenberger_applies_viewpoint_discrimination",
+      "source_id": "rosenberger_v_rector_and_visitors_of_university_of_virginia_1995",
+      "target_id": "viewpoint_discrimination",
+      "edge_type": "APPLIES",
+      "valid_from": "1995",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Rosenberger established viewpoint discrimination as a violation of the Free Speech Clause in the context of public university funding decisions."
+    },
+    {
+      "id": "rosenberger_applies_viewpoint_neutral_funding",
+      "source_id": "rosenberger_v_rector_and_visitors_of_university_of_virginia_1995",
+      "target_id": "viewpoint_neutral_funding",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1995",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Rosenberger established the principle that government funding programs must operate on a viewpoint-neutral basis."
+    },
+    {
+      "id": "shaw_v_reno_establishes_race_conscious_redistricting",
+      "source_id": "shaw_v_reno_1993",
+      "target_id": "race_conscious_redistricting",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1993-06-28",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Shaw v. Reno established the doctrine that race-conscious redistricting is subject to equal protection scrutiny."
+    },
+    {
+      "id": "shaw_v_reno_establishes_shaw_race_redistricting_test",
+      "source_id": "shaw_v_reno_1993",
+      "target_id": "shaw_race_redistricting_test",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1993-06-28",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Shaw v. Reno established the test for identifying race-conscious redistricting that violates equal protection."
+    },
+    {
+      "id": "skinner_establishes_strict_scrutiny_equal_protection",
+      "source_id": "skinner_v_oklahoma_1942",
+      "target_id": "strict_scrutiny_equal_protection",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1942",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Skinner establishes that strict scrutiny applies to equal protection challenges involving fundamental rights, requiring the state to justify arbitrary classifications affecting such rights."
+    },
+    {
+      "id": "dormant_commerce_nondiscrimination_grounded_in_commerce_clause",
+      "source_id": "dormant_commerce_clause_nondiscrimination",
+      "target_id": "dormant_commerce_clause",
+      "edge_type": "GOVERNED_BY",
+      "valid_from": "2019-06-26",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "The nondiscrimination principle is a core component of dormant Commerce Clause doctrine."
+    },
+    {
+      "id": "torres_applies_sovereign_immunity_abrogation",
+      "source_id": "torres_v_texas_dps_2021",
+      "target_id": "sovereign_immunity_abrogation",
+      "edge_type": "APPLIES",
+      "valid_from": "2021",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ],
+      "notes": "Torres established the doctrine that Congress may abrogate state sovereign immunity when exercising the power to raise and support the Armed Forces."
+    },
+    {
+      "id": "torres_establishes_structural_waiver_test",
+      "source_id": "torres_v_texas_dps_2021",
+      "target_id": "structural_waiver_test",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2021",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ],
+      "notes": "Torres applied and clarified the structural waiver test from PennEast in the context of federal war powers."
+    },
+    {
+      "id": "sovereign_immunity_abrogation_governed_by_structural_waiver_test",
+      "source_id": "sovereign_immunity_abrogation",
+      "target_id": "structural_waiver_test",
+      "edge_type": "GOVERNED_BY",
+      "valid_from": "2021",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ],
+      "notes": "The doctrine of sovereign immunity abrogation via federal war powers is governed by the structural waiver test."
+    },
+    {
+      "id": "united_haulers_establishes_dormant_commerce_clause_balancing_test",
+      "source_id": "united_haulers_v_oneida_herkimer_2007",
+      "target_id": "dormant_commerce_clause_balancing_test",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2007-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "The Court established a balancing test for evaluating nondiscriminatory local ordinances under the dormant Commerce Clause."
+    },
+    {
+      "id": "united_states_v_carolene_products_1938_applies_rational_basis_review",
+      "source_id": "united_states_v_carolene_products_1938",
+      "target_id": "rational_basis_review",
+      "edge_type": "APPLIES",
+      "valid_from": "1938-04-25",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "The Court applied rational basis review to uphold the Filled Milk Act as a valid exercise of the commerce power, establishing that regulatory legislation affecting ordinary commercial transactions is presumed constitutional and will be upheld if it rests upon some rational basis."
+    },
+    {
+      "id": "bond_applies_tenth_amendment_reserved_powers",
+      "source_id": "bond_v_united_states_2010",
+      "target_id": "tenth_amendment_reserved_powers",
+      "edge_type": "APPLIES",
+      "valid_from": "2010",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Bond applies the Tenth Amendment doctrine by recognizing standing to challenge federal legislation on reserved powers grounds."
+    },
+    {
+      "id": "bond_establishes_individual_standing_constitutional_challenge",
+      "source_id": "bond_v_united_states_2010",
+      "target_id": "individual_standing_constitutional_challenge",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2010",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Bond establishes the doctrine that an individual defendant has standing to challenge the constitutionality of a federal statute."
+    },
+    {
+      "id": "virginia_v_maryland_establishes_interstate_compact_interpretation",
+      "source_id": "virginia_v_maryland_2003",
+      "target_id": "interstate_compact_interpretation",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2003",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ],
+      "notes": "Virginia v. Maryland established the doctrine that states retain sovereign authority under interstate compacts absent explicit divestment language."
+    },
+    {
+      "id": "washington_v_glucksberg_establishes_glucksberg_sdp_test",
+      "source_id": "washington_v_glucksberg_1997",
+      "target_id": "glucksberg_sdp_test",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1997-06-26",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Washington v. Glucksberg established the two-part test for identifying fundamental liberty interests protected by the Due Process Clause."
+    },
+    {
+      "id": "washington_v_glucksberg_establishes_sdp_fundamental_rights",
+      "source_id": "washington_v_glucksberg_1997",
+      "target_id": "substantive_due_process_fundamental_rights",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1997-06-26",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "The case articulated the governing framework for substantive due process analysis of fundamental rights, emphasizing the requirement that rights be deeply rooted in history and tradition."
+    },
+    {
+      "id": "wilkinson_establishes_procedural_due_process_prisoners",
+      "source_id": "wilkinson_v_austin_2005",
+      "target_id": "procedural_due_process_prisoners",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2005-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Wilkinson establishes the doctrine that procedural due process protections for prisoners in supermaximum placement decisions must be balanced against legitimate state penological interests."
+    },
+    {
+      "id": "wilkinson_establishes_prisoner_placement_due_process_test",
+      "source_id": "wilkinson_v_austin_2005",
+      "target_id": "prisoner_placement_due_process_test",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2005-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Wilkinson establishes the specific test for evaluating procedural due process compliance in prisoner supermaximum security placement decisions."
+    },
+    {
+      "id": "williamson_applies_rational_basis_review",
+      "source_id": "williamson_v_lee_optical_of_oklahoma_1955",
+      "target_id": "rational_basis_review",
+      "edge_type": "APPLIES",
+      "valid_from": "1955-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Williamson applies rational basis review to uphold state economic regulation of optometry."
+    },
+    {
+      "id": "wolf_applies_selective_incorporation",
+      "source_id": "wolf_v_colorado_1949",
+      "target_id": "selective_incorporation_due_process",
+      "edge_type": "APPLIES",
+      "valid_from": "1949-06-27",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Wolf applies the selective incorporation framework established in Palko v. Connecticut, reaffirming that the Fourteenth Amendment incorporates only those rights implicit in ordered liberty."
+    },
+    {
+      "id": "zelman_establishes_private_choice_doctrine",
+      "source_id": "zelman_v_simmons_harris_2002",
+      "target_id": "private_choice_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2002-06-27",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Zelman established the private choice doctrine as the governing framework for Establishment Clause analysis of aid programs benefiting religious institutions."
+    },
+    {
+      "id": "mapp_establishes_fourth_amendment_exclusionary_rule",
+      "source_id": "mapp_v_ohio_1961",
+      "target_id": "fourth_amendment_exclusionary_rule",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1961-06-19",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
     }
   ],
   "schema_issues_found": [
