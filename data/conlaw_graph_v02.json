@@ -17,8 +17,8 @@
     "created": "2026-03-15",
     "status": "draft",
     "schema_version": "0.5",
-    "node_count": 601,
-    "edge_count": 1053,
+    "node_count": 611,
+    "edge_count": 1062,
     "schema_issue_count": 41,
     "fixes_applied": [
       "FIX 1: ConstitutionalProvision labels changed to citation form (amendment_1, amendment_14_section_1) to disambiguate from Area nodes with same common-name labels",
@@ -3456,6 +3456,80 @@
         "valid_from": "2022-06-27",
         "valid_until": null,
         "notes": "Established in Kennedy v. Bremerton School District. Protects coach's personal prayer during postgame period when not acting within scope of coaching duties."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "excessive_entanglement_doctrine",
+        "label": "Excessive Entanglement Doctrine",
+        "description": "A doctrine under the Establishment Clause holding that government programs that create excessive entanglement between government and religion are unconstitutional, even if they do not directly advance religion.",
+        "area_id": "establishment_clause",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1971-06-28",
+        "valid_until": null,
+        "notes": "Established in Lemon v. Kurtzman as a key component of Establishment Clause analysis."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "content_neutral_injunction_doctrine",
+        "label": "Content-Neutral Injunction Doctrine",
+        "description": "A doctrine governing the permissibility of content-neutral injunctions that restrict First Amendment activity. Such injunctions must be narrowly tailored to serve a significant government interest and must not burden substantially more speech than necessary to achieve that interest.",
+        "area_id": "prior_restraint",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1994",
+        "valid_until": null,
+        "notes": "Established in Madsen v. Women's Health Center as the governing standard for evaluating content-neutral injunctions affecting First Amendment rights."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "attorney_advertising_protection",
+        "label": "Protection of Truthful Attorney Advertising",
+        "description": "Attorneys have a First Amendment right to engage in truthful, non-misleading advertising. States may not discipline attorneys for such advertising absent a substantial state interest that cannot be served by less restrictive means.",
+        "area_id": "free_speech",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1985",
+        "valid_until": null,
+        "notes": "Established in Zauderer v. Office of Disciplinary Counsel."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "content_neutral_time_place_manner_restriction",
+        "label": "Content-Neutral Time, Place, and Manner Restrictions",
+        "description": "A doctrine permitting government regulation of speech that is content-neutral and serves a significant government interest through means narrowly tailored to achieve that interest without imposing an excessive burden on free speech.",
+        "area_id": "free_speech",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1997-01-01",
+        "valid_until": null,
+        "notes": "Applied in Schenck to distinguish between permissible fixed buffer zones and impermissible floating buffer zones around abortion clinics."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "retaliatory_litigation_doctrine",
+        "label": "Retaliatory Litigation Doctrine",
+        "description": "The doctrine that an employer's filing and prosecution of a civil lawsuit against employees for the purpose of penalizing or discouraging them from filing charges with the NLRB or seeking access to the Board's processes constitutes an unfair labor practice under the National Labor Relations Act.",
+        "area_id": "individual_rights",
+        "jurisdiction": [
+          "federal"
+        ],
+        "status": "active",
+        "valid_from": "1983-01-01",
+        "valid_until": null,
+        "notes": "Established in Power Systems, Inc., 239 N.L.R.B. 445 (1978) and applied in this case. The doctrine addresses the intersection of state court civil litigation and federal labor law protections."
       }
     ],
     "areas": [
@@ -12992,6 +13066,105 @@
         ],
         "notes": "The District Court initially enjoined the policy, then modified it to permit only nonsectarian, nonproselytizing prayer. The Court of Appeals held the modified policy invalid. The Supreme Court affirmed, rejecting the District's characterization of the prayers as private student speech.",
         "courtlistener_id": "118377"
+      },
+      {
+        "@type": "Case",
+        "id": "organization_for_a_better_austin_v_keefe_1971",
+        "short_name": "Organization for a Better Austin v. Keefe",
+        "full_name": "Organization for a Better Austin v. Keefe",
+        "citation": "402 U.S. 415 (1971)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1971-01-01",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "A state court injunction prohibiting the distribution of handbills and leaflets constitutes an impermissible prior restraint on free speech.",
+        "holding_type": "affirmative",
+        "majority_author": null,
+        "per_curiam": false,
+        "vote": "8-1",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1971-01-01",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "Majority opinion with 8-1 vote. Author not specified in source text.",
+        "courtlistener_id": "108334"
+      },
+      {
+        "@type": "Case",
+        "id": "schenck_v_pro_choice_network_of_western_new_york_1997",
+        "short_name": "Schenck v. Pro-Choice Network",
+        "full_name": "Schenck v. Pro-Choice Network of Western New York",
+        "citation": "519 U.S. 357 (1997)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1997-01-01",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "affirmed_in_part",
+        "holding": "Fixed buffer zones prohibiting demonstrations within fifteen feet of clinic entrances, parking lots, and driveways are constitutional as content-neutral time, place, and manner restrictions that serve the government's interest in public safety and access without imposing an excessive burden on free speech. Floating buffer zones prohibiting demonstrators from coming within fifteen feet of people or vehicles seeking clinic access are unconstitutional because they impose a greater burden on free speech than necessary to serve the government's interests.",
+        "holding_type": "affirmative",
+        "majority_author": null,
+        "per_curiam": false,
+        "vote": "6-3",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1997-01-01",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "The Court distinguished between fixed and floating buffer zones, upholding the former while striking down the latter based on a content-neutral time, place, and manner analysis."
+      },
+      {
+        "@type": "Case",
+        "id": "be_k_construction_co_v_nlrb_2002",
+        "short_name": "BE&K Construction Co. v. NLRB",
+        "full_name": "BE&K Construction Co. v. National Labor Relations Board",
+        "citation": "536 U.S. 516 (2002)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "2002-01-01",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "The National Labor Relations Board lacked authority to assess liability for prosecution of an unsuccessful suit based solely on a retaliatory motive standard.",
+        "holding_type": "by_negation",
+        "majority_author": null,
+        "per_curiam": false,
+        "vote": null,
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "2002-01-01",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "The text indicates this is an opinion of the Court but does not identify the majority author by name in the provided excerpt. The Court reversed the Board's decision and the Court of Appeals' affirmance, finding the Board lacked authority to use the retaliatory motive standard to assess liability under federal labor law.",
+        "courtlistener_id": "9268775"
+      },
+      {
+        "@type": "Case",
+        "id": "bill_johnsons_restaurants_v_nlrb_1983",
+        "short_name": "Bill Johnson's Restaurants v. NLRB",
+        "full_name": "Bill Johnson's Restaurants, Inc. v. National Labor Relations Board",
+        "citation": "461 U.S. 731 (1983)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1983-01-01",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "The National Labor Relations Board may issue a cease-and-desist order to halt prosecution of a state-court civil suit brought by an employer to retaliate against employees for exercising federally protected labor rights without first finding that the suit lacks a reasonable basis in fact or law.",
+        "holding_type": "affirmative",
+        "majority_author": "White",
+        "per_curiam": false,
+        "vote": null,
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1983-01-01",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "The case addresses whether the NLRB must find lack of reasonable basis in fact or law before issuing a cease-and-desist order against retaliatory civil litigation. The text indicates the Court reversed the Board's approach requiring such a finding.",
+        "courtlistener_id": "9043408"
       }
     ],
     "doctrinal_tests": [
@@ -16054,6 +16227,43 @@
         "valid_from": "1976-06-30",
         "valid_until": null,
         "notes": "This test applies specifically to prior restraints on press publication in criminal proceedings. The Court emphasized that practical problems with implementation and the fundamental principle that a community cannot be restrained from discussing matters affecting it weigh heavily against such restraints."
+      },
+      {
+        "@type": "DoctrinalTest",
+        "id": "zauderer_attorney_advertising_test",
+        "label": "Zauderer Attorney Advertising Test",
+        "description": "A state may regulate attorney advertising only if: (1) the advertising is truthful and not misleading, and (2) the state has a substantial interest that cannot be served by less restrictive means.",
+        "area_id": "free_speech",
+        "source_case_id": "zauderer_v_office_of_disciplinary_counsel_1985",
+        "scrutiny_level": "heightened",
+        "burden": "government",
+        "test_form": "conjunctive",
+        "prongs": [
+          {
+            "number": 1,
+            "label": "Truthfulness and Non-Misleading Character",
+            "description": "The advertising must be truthful and not misleading.",
+            "burden_note": "Burden on state to show advertising is false or misleading to justify discipline.",
+            "valid_from": "1985",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 2,
+            "label": "Substantial State Interest and Narrow Tailoring",
+            "description": "The state must demonstrate a substantial interest that cannot be served by less restrictive means.",
+            "burden_note": "Burden on state to justify regulation by substantial interest and narrow tailoring.",
+            "valid_from": "1985",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          }
+        ],
+        "status": "active",
+        "valid_from": "1985",
+        "valid_until": null,
+        "notes": "This test applies to attorney advertising specifically and reflects heightened protection for commercial speech involving professional services."
       }
     ]
   },
@@ -29604,6 +29814,121 @@
         "federal",
         "state"
       ]
+    },
+    {
+      "id": "lemon_establishes_excessive_entanglement",
+      "source_id": "lemon_v_kurtzman_1971",
+      "target_id": "excessive_entanglement_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1971-06-28",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Lemon v. Kurtzman established the excessive entanglement doctrine as a key component of Establishment Clause jurisprudence."
+    },
+    {
+      "id": "madsen_establishes_content_neutral_injunction_doctrine",
+      "source_id": "madsen_v_womens_health_center_1994",
+      "target_id": "content_neutral_injunction_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1994",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Madsen established the doctrine governing content-neutral injunctions affecting First Amendment activity."
+    },
+    {
+      "id": "zauderer_establishes_attorney_advertising_protection",
+      "source_id": "zauderer_v_office_of_disciplinary_counsel_1985",
+      "target_id": "attorney_advertising_protection",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1985",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Zauderer established the doctrine protecting truthful attorney advertising from state discipline."
+    },
+    {
+      "id": "zauderer_establishes_zauderer_attorney_advertising_test",
+      "source_id": "zauderer_v_office_of_disciplinary_counsel_1985",
+      "target_id": "zauderer_attorney_advertising_test",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1985",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Zauderer established the two-part test for evaluating state regulation of attorney advertising."
+    },
+    {
+      "id": "organization_for_a_better_austin_v_keefe_1971_applies_prior_restraint_doctrine",
+      "source_id": "organization_for_a_better_austin_v_keefe_1971",
+      "target_id": "prior_restraint_doctrine",
+      "edge_type": "APPLIES",
+      "valid_from": "1971-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "The Court applied prior restraint doctrine to invalidate an injunction against distribution of handbills."
+    },
+    {
+      "id": "schenck_applies_madsen_injunction_test",
+      "source_id": "schenck_v_pro_choice_network_of_western_new_york_1997",
+      "target_id": "madsen_injunction_test",
+      "edge_type": "APPLIES",
+      "valid_from": "1997-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Schenck applies the content-neutral injunction standard to evaluate the constitutionality of buffer zones around abortion clinics."
+    },
+    {
+      "id": "schenck_applies_content_neutral_tpm",
+      "source_id": "schenck_v_pro_choice_network_of_western_new_york_1997",
+      "target_id": "content_neutral_time_place_manner_restriction",
+      "edge_type": "APPLIES",
+      "valid_from": "1997-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Schenck applies content-neutral time, place, and manner doctrine to distinguish between fixed and floating buffer zones."
+    },
+    {
+      "id": "bill_johnsons_applies_retaliatory_litigation_doctrine",
+      "source_id": "bill_johnsons_restaurants_v_nlrb_1983",
+      "target_id": "retaliatory_litigation_doctrine",
+      "edge_type": "APPLIES",
+      "valid_from": "1983-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ],
+      "notes": "The Court applied the retaliatory litigation doctrine established in Power Systems to determine whether the employer's state-court civil suit violated the NLRA."
+    },
+    {
+      "id": "be_k_applies_petition_clause_doctrine",
+      "source_id": "be_k_construction_co_v_nlrb_2002",
+      "target_id": "petition_clause_doctrine",
+      "edge_type": "APPLIES",
+      "valid_from": "2002-06-24",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ],
+      "notes": "BE&K addresses scope of Petition Clause protection for retaliatory litigation"
     }
   ],
   "schema_issues_found": [
