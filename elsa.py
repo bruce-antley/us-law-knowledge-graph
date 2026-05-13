@@ -1104,6 +1104,44 @@ def fetch_from_google_scholar(case_name, year, citation):
 
 # ─── Main Retrieval Function ───────────────────────────────────────────────────
 
+# ─── LLM Identity Verification ──────────────────────────────────────────────────
+
+def verify_case_identity_llm(case_name, citation, text):
+    """
+    LLM-based identity verification using Claude Haiku.
+    Binary YES/NO — more robust than heuristics for edge cases.
+    Returns True if confirmed, False if rejected, None if API error.
+    """
+    try:
+        import anthropic
+        client = anthropic.Anthropic()
+        preview = text[:600].strip()
+        prompt = (
+            f"I retrieved text that should be from this Supreme Court case:\n"
+            f"Case: {case_name}\n"
+            f"Citation: {citation or 'unknown'}\n\n"
+            f"Here is the beginning of the retrieved text:\n"
+            f"{preview}\n\n"
+            f"Is this text from that specific case? "
+            f"Answer YES if it is clearly from {case_name}, "
+            f"NO if it is from a different case. "
+            f"Answer with one word only: YES or NO."
+        )
+        response = client.messages.create(
+            model="claude-haiku-4-5-20251001",
+            max_tokens=5,
+            temperature=0.0,
+            messages=[{"role": "user", "content": prompt}]
+        )
+        answer = response.content[0].text.strip().upper()
+        confirmed = answer.startswith("YES")
+        print(f"    LLM identity: {answer} — {'✓' if confirmed else '✗'}")
+        return confirmed
+    except Exception as e:
+        print(f"    LLM identity error: {e} — using heuristic result")
+        return None
+
+
 def retrieve_case(case_name, year, citation=None, output_dir=Path("syllabi")):
     """
     Retrieve syllabus/opinion text for a SCOTUS case.
@@ -1130,16 +1168,40 @@ def retrieve_case(case_name, year, citation=None, output_dir=Path("syllabi")):
 
     def try_text(candidate_text, candidate_source, candidate_cl_id=None):
         """Run identity check on retrieved text. Returns (text, source, cl_id) or (None, None, None)."""
-        verified = verify_case_identity(case_name, candidate_text, citation)
-        if verified is not None:
-            # Identity confirmed — now extract syllabus section from CourtListener raw text
-            if candidate_source in ('courtlistener', 'courtlistener_excerpt') and len(candidate_text) > 500:
-                extracted = extract_syllabus_section(candidate_text)
-                if extracted and len(extracted) > 300:
-                    return extracted, candidate_source, candidate_cl_id
-            return candidate_text, candidate_source, candidate_cl_id
-        print(f"    Identity check failed for {candidate_source} — trying next source")
-        return None, None, None
+        heuristic_ok = verify_case_identity(case_name, candidate_text, citation)
+        
+        # Oyez direct URL is identity-guaranteed — skip LLM check
+        if candidate_source == 'oyez_direct':
+            if heuristic_ok is not None:
+                return candidate_text, candidate_source, candidate_cl_id
+            print(f"    Identity check failed for {candidate_source} — trying next source")
+            return None, None, None
+        
+        # For all other sources: use LLM as second opinion
+        if heuristic_ok is not None:
+            # Heuristic passed — LLM confirms or overrides
+            llm_result = verify_case_identity_llm(case_name, citation, candidate_text)
+            if llm_result is False:
+                # LLM overrides heuristic — reject this source
+                print(f"    LLM overrode heuristic — rejecting {candidate_source}")
+                return None, None, None
+            # llm_result is True or None (error) — accept heuristic result
+        else:
+            # Heuristic failed — give LLM a chance to rescue it
+            llm_result = verify_case_identity_llm(case_name, citation, candidate_text)
+            if llm_result is not True:
+                # LLM also rejects (or error) — skip this source
+                print(f"    Identity check failed for {candidate_source} — trying next source")
+                return None, None, None
+            # LLM rescued it — log and continue
+            print(f"    LLM rescued failed heuristic for {candidate_source}")
+        
+        # Identity confirmed — extract syllabus from CourtListener raw text
+        if candidate_source in ('courtlistener', 'courtlistener_excerpt') and len(candidate_text) > 500:
+            extracted = extract_syllabus_section(candidate_text)
+            if extracted and len(extracted) > 300:
+                return extracted, candidate_source, candidate_cl_id
+        return candidate_text, candidate_source, candidate_cl_id
 
     # Strategy 0: Oyez direct URL (known cases + citation-based pre-1956 lookup)
     if not text:
