@@ -17,8 +17,8 @@
     "created": "2026-03-15",
     "status": "draft",
     "schema_version": "0.5",
-    "node_count": 671,
-    "edge_count": 1133,
+    "node_count": 727,
+    "edge_count": 1175,
     "schema_issue_count": 41,
     "fixes_applied": [
       "FIX 1: ConstitutionalProvision labels changed to citation form (amendment_1, amendment_14_section_1) to disambiguate from Area nodes with same common-name labels",
@@ -4028,6 +4028,450 @@
         "valid_until": null,
         "secondary_area_ids": [],
         "notes": "Established in Zelman as a framework for evaluating whether aid programs that benefit religious institutions comply with the Establishment Clause."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "private_concern_speech_doctrine",
+        "label": "Private Concern Speech Doctrine",
+        "description": "The doctrine that false and defamatory statements involving matters of private concern, particularly when made by non-media defendants, are not entitled to the same First Amendment protections as statements on matters of public concern, and may be subject to presumed and punitive damages without a showing of actual malice.",
+        "area_id": "free_speech",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1985-06-26",
+        "valid_until": null,
+        "notes": "Established in Dun & Bradstreet as a limitation on the Gertz doctrine. Distinguishes between public and private concern speech in defamation law."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "non_media_defendant_doctrine",
+        "label": "Non-Media Defendant Doctrine",
+        "description": "The doctrine that non-media defendants, such as credit reporting agencies, may be treated differently under First Amendment defamation law than traditional media defendants, and may not receive the same protections established in New York Times Co. v. Sullivan and Gertz.",
+        "area_id": "free_speech",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1985-06-26",
+        "valid_until": null,
+        "notes": "Established in Dun & Bradstreet. The Court recognized that credit reporting agencies, which sell financial information to limited subscribers for fees, may be distinguished from traditional media for First Amendment purposes."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "expressive_conduct_doctrine",
+        "label": "Expressive Conduct Doctrine",
+        "description": "The doctrine that conduct may constitute protected expression under the First Amendment when it is intended to communicate a particularized message and the likelihood is great that the message will be understood by those viewing it.",
+        "area_id": "free_speech",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1989-06-21",
+        "valid_until": null,
+        "notes": "Established in Texas v. Johnson as applicable to flag burning as political protest."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "government_symbol_designation_prohibition",
+        "label": "Government Symbol Designation Prohibition",
+        "description": "The doctrine that state officials do not have the authority to designate symbols to be used to communicate only limited sets of messages, as this violates the First Amendment.",
+        "area_id": "free_speech",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1989-06-21",
+        "valid_until": null,
+        "notes": "Established in Texas v. Johnson; reflects the principle that the government may not prohibit expression of an idea simply because society finds it offensive."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "private_speech_in_funding_doctrine",
+        "label": "Private Speech in Funding Programs Doctrine",
+        "description": "A First Amendment doctrine holding that when a government funding program is designed to facilitate private speech (rather than to promote a governmental message), the government cannot restrict the content or viewpoint of that private speech through funding conditions.",
+        "area_id": "free_speech",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "2001-01-01",
+        "valid_until": null,
+        "notes": "Established in Legal Services Corp. v. Velazquez. The Court distinguished between funding programs designed to promote government speech (where restrictions are permissible) and programs designed to facilitate private speech (where viewpoint-based restrictions violate the First Amendment)."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "material_support_doctrine",
+        "label": "Material Support to Designated Foreign Terrorist Organizations",
+        "description": "The legal framework governing the provision of material support or resources to designated foreign terrorist organizations under the Antiterrorism and Effective Death Penalty Act, as amended by the Intelligence Reform and Terrorism Prevention Act. The doctrine prohibits knowingly providing training, expert advice or assistance, service, and personnel to such organizations.",
+        "area_id": "separation_of_powers",
+        "jurisdiction": [
+          "federal"
+        ],
+        "status": "active",
+        "valid_from": "2010-06-21",
+        "valid_until": null,
+        "notes": "Established in Holder v. Humanitarian Law Project. The statute requires a state of mind element that individuals act 'knowingly' to violate the provision."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "vagueness_doctrine",
+        "label": "Vagueness Doctrine",
+        "description": "The constitutional principle that a statute is unconstitutionally vague if it fails to provide fair notice of prohibited conduct or invites arbitrary and discriminatory enforcement. A statute need not be clear in every respect but must be sufficiently clear as applied to the conduct at issue.",
+        "area_id": "separation_of_powers",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "2010-06-21",
+        "valid_until": null,
+        "notes": "In Holder, the Court applied this doctrine to uphold the material support statute as not unconstitutionally vague as applied to the plaintiffs' proposed conduct."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "true_threat_doctrine",
+        "label": "True Threat Doctrine",
+        "description": "The doctrine that 'true threats' fall outside the scope of First Amendment speech protections. Under this doctrine, speech constituting a true threat may be criminalized. The doctrine requires proof of subjective intent to threaten, not merely an objective reasonable person standard.",
+        "area_id": "free_speech",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "2015-06-01",
+        "valid_until": null,
+        "notes": "Elonis v. United States clarified that the true threat doctrine requires subjective intent to threaten as the mens rea element, rejecting an objective standard."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "first_amendment_narrow_tailoring",
+        "label": "First Amendment Narrow Tailoring Doctrine",
+        "description": "A content-neutral regulation of speech must be narrowly tailored to serve a significant government interest and cannot burden substantially more speech than necessary to advance the government's legitimate interest.",
+        "area_id": "free_speech",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "2017-06-19",
+        "valid_until": null,
+        "notes": "Reaffirmed in Packingham as the applicable standard for content-neutral speech restrictions."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "free_exercise_right",
+        "label": "Right to Free Exercise of Religion",
+        "description": "A First Amendment right protecting individuals from state compulsion to choose between exercising sincere religious beliefs and participation in otherwise available public programs or benefits.",
+        "area_id": "free_exercise",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1981-01-01",
+        "valid_until": null,
+        "notes": "Established in Thomas v. Review Board that denial of unemployment benefits based on religious refusal to work violates this right."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "free_exercise_clause_general_applicability",
+        "label": "Free Exercise Clause and Generally Applicable Laws",
+        "description": "Under the Free Exercise Clause of the First Amendment, the government may burden religious practices through generally applicable laws without violating the Constitution, as established in Employment Division v. Smith.",
+        "area_id": "free_exercise",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1990-04-17",
+        "valid_until": null,
+        "notes": "Established in Employment Division v. Smith, 494 U.S. 872 (1990), which rejected the Sherbert v. Verner test requiring case-by-case assessment of religious burdens."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "free_exercise_neutral_application",
+        "label": "Free Exercise Clause Neutral Application Doctrine",
+        "description": "State anti-discrimination laws must be applied in a neutral manner with respect to religion; government cannot display hostility toward religion or religious viewpoints in the application of generally applicable laws.",
+        "area_id": "free_exercise",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "2018-06-04",
+        "valid_until": null,
+        "notes": "Established in Masterpiece Cakeshop as a requirement that civil rights commissions apply anti-discrimination statutes with religious neutrality and without displaying hostility toward sincere religious objections."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "artistic_expression_religious_belief",
+        "label": "Artistic Expression as Religious Belief",
+        "description": "The creation of cakes and similar artistic works can constitute a form of artistic expression and a component of sincere religious beliefs, entitled to protection under the Free Exercise Clause and First Amendment.",
+        "area_id": "free_exercise",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "2018-06-04",
+        "valid_until": null,
+        "notes": "Recognized in Masterpiece Cakeshop as the Court acknowledged that from Phillips' perspective, creating cakes was a form of artistic expression and a component of his sincere religious beliefs."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "expressive_design_speech",
+        "label": "Expressive Design as Protected Speech",
+        "description": "Custom website design for weddings, including the selection of images, text, and layout to convey a particular message about the couple and their celebration, constitutes protected First Amendment speech.",
+        "area_id": "free_speech",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "2023-06-30",
+        "valid_until": null,
+        "notes": "Established in 303 Creative LLC v. Elenis as a category of expressive conduct protected by the First Amendment."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "rfra_remedy_doctrine",
+        "label": "RFRA Remedies Against Individual Federal Officials",
+        "description": "Under the Religious Freedom Restoration Act of 1993, persons whose religious exercise has been substantially burdened by federal government action may assert that violation as a claim or defense in a judicial proceeding and obtain appropriate relief, including money damages, against individual federal officials in their individual capacities.",
+        "area_id": "free_exercise",
+        "jurisdiction": [
+          "federal"
+        ],
+        "status": "active",
+        "valid_from": "2020-01-01",
+        "valid_until": null,
+        "notes": "Establishes that RFRA's reference to 'government' encompasses individual federal officials and that 'appropriate relief' includes monetary damages."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "establishment_clause_endorsement",
+        "label": "Establishment Clause Endorsement Doctrine",
+        "description": "The Establishment Clause prohibits government displays or actions that have the effect of endorsing religion. A display violates this doctrine when it endorses religion through its effect, considering factors such as the display's prominence, isolation from secular context, and overall message conveyed to the public.",
+        "area_id": "establishment_clause",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1989-01-01",
+        "valid_until": null,
+        "notes": "Applied in Allegheny County to evaluate whether holiday religious displays on public property violate the Establishment Clause. The Court distinguished between a creche displayed alone (endorsement violation) and a menorah displayed with secular holiday symbols (no violation)."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "establishment_clause_entanglement",
+        "label": "Establishment Clause Entanglement Doctrine",
+        "description": "The doctrine that policies generating excessive entanglement or conflict between church and state violate the Establishment Clause, rather than all entanglements having a distinctly positive or negative impact on religion.",
+        "area_id": "establishment_clause",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1997-01-01",
+        "valid_until": null,
+        "notes": "Refined by Agostini v. Felton to focus on excessive entanglement rather than presumptive harm from all church-state contact."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "establishment_clause_neutrality",
+        "label": "Establishment Clause Neutrality Principle",
+        "description": "Under the Establishment Clause, a government aid program does not violate the Clause simply because religiously affiliated institutions are eligible to receive aid on a neutral, non-discriminatory basis. The critical inquiry is whether the aid is distributed according to neutral criteria without regard to the religious character of the recipient.",
+        "area_id": "establishment_clause",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "2000-06-28",
+        "valid_until": null,
+        "notes": "Articulated by Justice Thomas in Mitchell v. Helms plurality opinion. This principle emphasizes that neutrality in the distribution of aid is a key factor in Establishment Clause analysis, distinguishing between indoctrination attributable to the State and that conducted by private recipients."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "establishment_clause_longstanding_monument_doctrine",
+        "label": "Longstanding Monument Doctrine",
+        "description": "Religious monuments, symbols, and practices that have been established for a long time and have acquired historical significance and secular meaning are treated differently from newly erected ones under the Establishment Clause. The passage of time creates a strong presumption of constitutionality, and removal may not appear neutral to the community.",
+        "area_id": "establishment_clause",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "2019-06-20",
+        "valid_until": null,
+        "notes": "Established in American Legion v. American Humanist Assn. as a distinct doctrinal framework for evaluating longstanding religious monuments on public property."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "establishment_clause_historical_practice_doctrine",
+        "label": "Historical Practice Doctrine",
+        "description": "Monuments, symbols, and practices with a longstanding history that follow in the tradition of the First Congress in respecting and tolerating different views, endeavoring to achieve inclusivity and nondiscrimination, and recognizing the important role religion plays in the lives of many Americans are constitutional under the Establishment Clause.",
+        "area_id": "establishment_clause",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "2019-06-20",
+        "valid_until": null,
+        "notes": "Endorsed by Justice Alito (joined by Chief Justice Roberts, Justice Breyer, and Justice Kavanaugh) as a more modest approach to Establishment Clause analysis than Lemon."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "free_exercise_clause_nondiscrimination",
+        "label": "Free Exercise Clause Nondiscrimination Doctrine",
+        "description": "The Free Exercise Clause prohibits the state from discriminating against otherwise eligible recipients by disqualifying them from a public benefit solely because of their religious character.",
+        "area_id": "free_exercise",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "2022-06-21",
+        "valid_until": null,
+        "notes": "Established in Carson v. Makin as an application of principles from Trinity Lutheran Church of Columbia, Inc. v. Comer and Espinoza v. Montana Department of Revenue."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "undue_burden_doctrine",
+        "label": "Undue Burden Doctrine",
+        "description": "A state regulation of abortion is unconstitutional if it places a substantial obstacle in the path of someone seeking to obtain an abortion before viability, or if it does not adequately protect the health of the mother when the abortion procedure is necessary to preserve her health.",
+        "area_id": "substantive_due_process",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1992-06-29",
+        "valid_until": null,
+        "notes": "Established in Planned Parenthood v. Casey (1992). Applied in Stenberg v. Carhart to strike down Nebraska's partial birth abortion statute for lacking a health exception."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "undue_burden_standard",
+        "label": "Undue Burden Standard for Abortion Restrictions",
+        "description": "A legal standard established in Planned Parenthood v. Casey that abortion restrictions are unconstitutional if they place a substantial obstacle in the path of someone seeking an abortion before viability. In Gonzales v. Carhart, the Court held that a ban on a specific abortion procedure (intact D&E) does not impose an undue burden when the ban is narrowly tailored to that procedure and does not prevent access to other abortion methods.",
+        "area_id": "substantive_due_process",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1992-06-29",
+        "valid_until": null,
+        "notes": "Applied in Gonzales v. Carhart to uphold the Partial-Birth Abortion Ban Act. The Court found no undue burden because the Act applies only to a specific procedure and does not prevent access to other abortion methods."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "health_exception_requirement",
+        "label": "Health Exception Requirement for Abortion Bans",
+        "description": "A doctrine requiring that bans on abortion procedures include an exception when the procedure is necessary to preserve the health of the mother. Established in Stenberg v. Carhart. In Gonzales v. Carhart, the Court held that Congress may omit a health exception when it determines the banned procedure is never medically necessary, even if some medical uncertainty exists.",
+        "area_id": "substantive_due_process",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "2000-06-28",
+        "valid_until": null,
+        "notes": "Modified by Gonzales v. Carhart to permit omission of health exception when Congress makes a finding that the procedure is never medically necessary. The Court rejected the standard that medical uncertainty alone requires a health exception."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "fundamental_right_to_parental_relationship",
+        "label": "Fundamental Right to Parental Relationship",
+        "description": "The constitutional right of a parent to maintain the parental relationship with one's natural child, recognized as a fundamental interest protected by the Due Process and Equal Protection Clauses of the Fourteenth Amendment.",
+        "area_id": "substantive_due_process",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1996",
+        "valid_until": null,
+        "notes": "Established in M.L.B. v. S.L.J. as a fundamental right that cannot be conditioned on ability to pay for appellate review."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "appellate_access_indigent_litigants",
+        "label": "Appellate Access for Indigent Litigants",
+        "description": "The constitutional principle that states may not deny indigent litigants access to appellate review based on inability to pay court fees when fundamental rights are at stake, derived from equal protection and due process principles.",
+        "area_id": "equal_protection",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1996",
+        "valid_until": null,
+        "notes": "M.L.B. extends the principle from Mayer v. Chicago to parental termination cases, holding that fundamental rights to parental relationship cannot be conditioned on ability to pay record preparation fees."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "presidential_immigration_authority",
+        "label": "Presidential Authority Over Immigration",
+        "description": "The president possesses broad discretion under Section 1182(f) of the Immigration and Nationality Act to suspend the entry of non-citizens into the United States when determined to be detrimental to the interests of the United States. This authority is not limited by Section 1152(a)(1)(A)'s prohibition on nationality-based discrimination in visa issuance.",
+        "area_id": "separation_of_powers",
+        "jurisdiction": [
+          "federal"
+        ],
+        "status": "active",
+        "valid_from": "2018-06-26",
+        "valid_until": null,
+        "notes": "The Court found the Proclamation was the result of a worldwide, multi-agency review and did not exceed the president's statutory authority."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "presidential_immunity_doctrine",
+        "label": "Presidential Immunity from Criminal Prosecution",
+        "description": "A former President is absolutely immune from criminal prosecution for actions within his conclusive and preclusive constitutional authority, and is entitled to at least presumptive immunity from prosecution for all other official acts. There is no immunity for unofficial acts.",
+        "area_id": "separation_of_powers",
+        "jurisdiction": [
+          "federal"
+        ],
+        "status": "active",
+        "valid_from": "2024-07-01",
+        "valid_until": null,
+        "notes": "Established in Trump v. United States (2024). Applies to both sitting and former Presidents. Rooted in separation of powers principles and the need to protect the independence and effective functioning of the Executive Branch."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "exclusive_constitutional_authority_doctrine",
+        "label": "Exclusive Constitutional Authority",
+        "description": "When the President exercises authority that is conclusive and preclusive under the Constitution, Congress cannot act on and courts cannot examine the President's actions in that sphere. An Act of Congress may not criminalize the President's actions within his exclusive constitutional power, nor may courts adjudicate a criminal prosecution examining such actions.",
+        "area_id": "separation_of_powers",
+        "jurisdiction": [
+          "federal"
+        ],
+        "status": "active",
+        "valid_from": "2024-07-01",
+        "valid_until": null,
+        "notes": "Derived from Youngstown Sheet & Tube Co. v. Sawyer (Jackson, J., concurring). Applied in Trump v. United States to establish absolute immunity for actions within the President's exclusive sphere of constitutional authority."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "official_vs_unofficial_conduct_doctrine",
+        "label": "Official Versus Unofficial Conduct Distinction",
+        "description": "Presidential immunity applies only to official acts taken pursuant to constitutional and statutory authority within the outer perimeter of the President's official responsibilities. Unofficial acts receive no immunity protection. Courts may not inquire into the President's motives to determine whether conduct is official, nor may they deem an action unofficial merely because it allegedly violates a generally applicable law.",
+        "area_id": "separation_of_powers",
+        "jurisdiction": [
+          "federal"
+        ],
+        "status": "active",
+        "valid_from": "2024-07-01",
+        "valid_until": null,
+        "notes": "Established in Trump v. United States (2024). The distinction is critical to determining the scope of Presidential immunity. Courts must perform fact-specific analysis to differentiate official from unofficial actions."
       }
     ],
     "areas": [
@@ -6574,30 +7018,6 @@
         "valid_from": "1963-01-14",
         "valid_until": null,
         "notes": "NAACP v. Button is significant for recognizing litigation as a form of protected political expression and for establishing that the NAACP's pattern of civil rights litigation constituted expressive association. The case is in the Freedom of Petition slice as well as Freedom of Association \u2014 it bridges the two doctrinal areas and established that coordinated legal advocacy is constitutionally protected activity."
-      },
-      {
-        "@type": "Case",
-        "id": "dun_bradstreet_v_greenmoss_builders_1985",
-        "short_name": "Dun & Bradstreet v. Greenmoss Builders",
-        "full_name": "Dun & Bradstreet, Inc. v. Greenmoss Builders, Inc.",
-        "citation": "472 U.S. 749 (1985)",
-        "court_level": "scotus",
-        "court_name": "Supreme Court of the United States",
-        "binding_scope": "federal_all",
-        "decided_date": "1985-06-26",
-        "opinion_form": "plurality",
-        "procedural_disposition": "affirmed",
-        "holding": "When a defamatory statement does not involve a matter of public concern, the First Amendment does not restrict the award of presumed and punitive damages even without proof of actual malice. Gertz v. Robert Welch imposed First Amendment limits on defamation law only when the speech involves matters of public concern. Speech on purely private matters \u2014 such as a credit reporting agency's erroneous report of a business's bankruptcy \u2014 does not implicate the same First Amendment interests and states may apply traditional common law defamation standards.",
-        "holding_type": "affirmative",
-        "majority_author": "Powell",
-        "per_curiam": false,
-        "vote": "5-4",
-        "opinions": [],
-        "status": "good_law",
-        "precedential_weight": "binding",
-        "valid_from": "1985-06-26",
-        "valid_until": null,
-        "notes": "Dun & Bradstreet established that the First Amendment's limits on defamation law \u2014 established in New York Times v. Sullivan and Gertz \u2014 apply only to speech on matters of public concern. For purely private speech (like a credit report), states may apply common law defamation standards including presumed and punitive damages without proof of actual malice. The public concern/private matter distinction is now a critical threshold in defamation analysis."
       },
       {
         "@type": "Case",
@@ -14294,6 +14714,847 @@
         "valid_until": null,
         "opinions": [],
         "notes": "Unanimous decision. The Court affirmed the Sixth Circuit's reversal of the district court's substantive modifications to Ohio's prison placement policy, holding that the procedural protections in the New Policy were constitutionally sufficient."
+      },
+      {
+        "@type": "Case",
+        "id": "dun_and_bradstreet_v_greenmoss_builders_1985",
+        "short_name": "Dun & Bradstreet v. Greenmoss Builders",
+        "full_name": "Dun and Bradstreet, Inc. v. Greenmoss Builders, Inc.",
+        "citation": "472 U.S. 749 (1985)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1985-06-26",
+        "opinion_form": "plurality",
+        "procedural_disposition": "reversed",
+        "holding": "When false and defamatory statements do not involve matters of public concern, the First Amendment does not prohibit awards of presumed and punitive damages absent a showing of actual malice, and the Gertz rule limiting such damages does not apply to non-media defendants such as credit reporting agencies.",
+        "holding_type": "affirmative",
+        "majority_author": "Powell (plurality)",
+        "per_curiam": false,
+        "vote": null,
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1985-06-26",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "Plurality opinion. Justice Powell announced the judgment joined by Justices Rehnquist and O'Connor. The holding reflects the plurality's position that Gertz does not apply to speech on matters of private concern, particularly by non-media defendants. The case does not command a majority on all points but establishes that the Gertz actual malice requirement does not extend to private-concern speech by non-media speakers."
+      },
+      {
+        "@type": "Case",
+        "id": "texas_v_johnson_1989",
+        "short_name": "Texas v. Johnson",
+        "full_name": "Texas v. Johnson",
+        "citation": "491 U.S. 397 (1989)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1989-06-21",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "Burning an American flag as political protest constitutes expressive conduct protected by the First Amendment, and the government may not prohibit the expression of an idea simply because society finds the idea offensive or disagreeable.",
+        "holding_type": "affirmative",
+        "majority_author": "Brennan",
+        "per_curiam": false,
+        "vote": "5-4",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1989-06-21",
+        "valid_until": null,
+        "opinions": [
+          {
+            "type": "dissent",
+            "author": null,
+            "doctrinal_significance": "Four justices dissented from the majority's holding that flag burning is protected expressive conduct.",
+            "joined_by": [],
+            "adopted_in": []
+          }
+        ],
+        "notes": "Texas Court of Criminal Appeals had reversed Johnson's conviction under Texas flag desecration statute before Supreme Court review.",
+        "courtlistener_id": "112304"
+      },
+      {
+        "@type": "Case",
+        "id": "legal_services_corp_v_velazquez_2001",
+        "short_name": "Legal Services Corp. v. Velazquez",
+        "full_name": "Legal Services Corporation v. Velazquez",
+        "citation": "531 U.S. 533 (2001)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "2001-01-01",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "A federal funding restriction that prohibits legal services attorneys from making arguments challenging or amending existing welfare law violates the First Amendment because it regulates private speech and insulates federal law from legitimate judicial challenge.",
+        "holding_type": "affirmative",
+        "majority_author": "Kennedy",
+        "per_curiam": false,
+        "vote": "5-4",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "2001-01-01",
+        "valid_until": null,
+        "opinions": [
+          {
+            "type": "dissent",
+            "author": "Scalia",
+            "doctrinal_significance": "Argued that the Appropriations Act does not directly regulate speech, does not establish a public forum, and does not discriminate on the basis of viewpoint.",
+            "joined_by": [
+              "Rehnquist",
+              "O'Connor",
+              "Thomas"
+            ],
+            "adopted_in": []
+          }
+        ],
+        "notes": "5-4 decision. The Court held that the LSC program was designed to facilitate private speech, not to promote a governmental message, and therefore funding restrictions that limit the arguments attorneys could make violated the First Amendment.",
+        "courtlistener_id": "2621077"
+      },
+      {
+        "@type": "Case",
+        "id": "holder_v_humanitarian_law_project_2010",
+        "short_name": "Holder v. Humanitarian Law Project",
+        "full_name": "Eric H. Holder, Jr., Attorney General, et al. v. Humanitarian Law Project",
+        "citation": "561 U.S. 1 (2010)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "2010-06-21",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "The material support provision of the Antiterrorism and Effective Death Penalty Act, as amended by the Intelligence Reform and Terrorism Prevention Act, is not unconstitutionally vague as applied to the provision of training, expert advice or assistance, service, and personnel to designated foreign terrorist organizations.",
+        "holding_type": "affirmative",
+        "majority_author": "Roberts",
+        "per_curiam": false,
+        "vote": "6-3",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "2010-06-21",
+        "valid_until": null,
+        "opinions": [
+          {
+            "type": "dissent",
+            "author": "Breyer",
+            "doctrinal_significance": "Disagreed with the majority's conclusion that the statute permits prosecution for coordinated teaching and advocacy furthering designated organizations' lawful political objectives; argued the government had not met its burden to show the speech prohibition served a compelling governmental interest.",
+            "joined_by": [
+              "Ginsburg",
+              "Sotomayor"
+            ],
+            "adopted_in": []
+          }
+        ],
+        "notes": "The Court reversed the Ninth Circuit's holding that the terms 'service,' 'training,' 'other specialized knowledge,' and related provisions were unconstitutionally vague as applied to the plaintiffs. The majority reasoned that the statutory terms are sufficiently clear as applied to the particular forms of support at issue, distinguishing them from terms like 'annoying' and 'indecent' previously struck down as vague."
+      },
+      {
+        "@type": "Case",
+        "id": "elonis_v_united_states_2015",
+        "short_name": "Elonis v. United States",
+        "full_name": "Anthony Douglas Elonis v. United States",
+        "citation": "575 U.S. 723 (2015)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "2015-06-01",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "A prosecution under 18 U.S.C. \u00a7875(c) for transmitting threats in interstate commerce must prove that the defendant acted with subjective intent to threaten; an objective reasonable person standard is insufficient to satisfy the mens rea requirement.",
+        "holding_type": "affirmative",
+        "majority_author": "Roberts",
+        "per_curiam": false,
+        "vote": "8-1",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "2015-06-01",
+        "valid_until": null,
+        "opinions": [
+          {
+            "type": "concurrence_in_judgment",
+            "author": "Alito",
+            "doctrinal_significance": "Agreed that subjective intent is required but argued the majority should have specified whether knowledge or recklessness is the appropriate standard, and contended recklessness should be the standard.",
+            "joined_by": [],
+            "adopted_in": []
+          },
+          {
+            "type": "dissent",
+            "author": "Thomas",
+            "doctrinal_significance": "Argued that nine circuit courts had already resolved this issue with a general intent standard, and that knowledge of posting the threats is sufficient to establish the intent element.",
+            "joined_by": [],
+            "adopted_in": []
+          }
+        ],
+        "notes": "The Court reversed the Third Circuit's affirmance of Elonis' conviction. The majority held that subjective intent to threaten is required under \u00a7875(c), rejecting the objective reasonable person standard applied by the district court. Justice Alito's concurrence-in-part-dissent-in-part indicates fractured reasoning on the precise mens rea standard (knowledge vs. recklessness), though the majority opinion does not resolve this question."
+      },
+      {
+        "@type": "Case",
+        "id": "packingham_v_north_carolina_2017",
+        "short_name": "Packingham v. North Carolina",
+        "full_name": "Lester Packingham v. State of North Carolina",
+        "citation": "582 U.S. 98 (2017)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "2017-06-19",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "A state law prohibiting registered sex offenders from accessing social media websites violates the First Amendment because it is not narrowly tailored to serve the government's significant interest in protecting children from sexual abuse; the law burdens substantially more speech than necessary to advance that interest.",
+        "holding_type": "affirmative",
+        "majority_author": "Kennedy",
+        "per_curiam": false,
+        "vote": "8-0",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "2017-06-19",
+        "valid_until": null,
+        "opinions": [
+          {
+            "type": "concurrence_in_judgment",
+            "author": "Alito",
+            "doctrinal_significance": "Argued that the majority erred in equating the entire internet with a traditionally public forum; contended that states should be able to regulate sex offenders' use of certain websites, but agreed the North Carolina law was overbroad because it encompassed websites unlikely to facilitate sex crimes against children.",
+            "joined_by": [
+              "Roberts",
+              "Thomas"
+            ],
+            "adopted_in": []
+          }
+        ],
+        "notes": "Justice Gorsuch did not participate. The opinion form is signed_majority reflecting Kennedy's majority opinion, though Alito, Roberts, and Thomas concurred only in the judgment on narrower grounds. The vote is 8-0 because only 8 justices participated (Gorsuch recused)."
+      },
+      {
+        "@type": "Case",
+        "id": "thomas_v_review_board_1981",
+        "short_name": "Thomas v. Review Board",
+        "full_name": "Eddie C. Thomas v. Review Board of the Indiana Employment Security Division",
+        "citation": "450 U.S. 707 (1981)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1981-01-01",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "A state may not deny unemployment benefits to an individual solely because the individual's refusal to work violates a sincere religious belief, as such denial burdens the individual's First Amendment right to free exercise of religion without satisfying strict scrutiny.",
+        "holding_type": "affirmative",
+        "majority_author": "Burger",
+        "per_curiam": false,
+        "vote": "8-1",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1981-01-01",
+        "valid_until": null,
+        "opinions": [
+          {
+            "type": "dissent",
+            "author": "Rehnquist",
+            "doctrinal_significance": "Argued that the Free Exercise Clause does not require a state to provide direct financial assistance to persons solely on the basis of their religious beliefs.",
+            "joined_by": [],
+            "adopted_in": []
+          }
+        ],
+        "notes": "The Court applied the principle established in Sherbert v. Verner that a person may not be compelled to choose between exercising a First Amendment right and participation in an otherwise available public program."
+      },
+      {
+        "@type": "Case",
+        "id": "gonzales_v_o_centro_espirita_beneficente_uniao_do_vegetal_2006",
+        "short_name": "Gonzales v. O Centro Espirita Beneficente Uniao do Vegetal",
+        "full_name": "Alberto R. Gonzales, Attorney General of the United States v. O Centro Espirita Beneficente Uniao do Vegetal",
+        "citation": "546 U.S. 418 (2006)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "2006-04-19",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "affirmed",
+        "holding": "Under the Religious Freedom Restoration Act, the Federal Government must satisfy the compelling interest test\u2014demonstrating that a substantial burden on religious practice is in furtherance of a compelling government interest and is the least restrictive means of furthering that interest\u2014and the Government did not carry this burden regarding the uniform application of the Controlled Substances Act to prohibit sacramental use of a hallucinogenic tea.",
+        "holding_type": "affirmative",
+        "majority_author": "Roberts",
+        "per_curiam": false,
+        "vote": null,
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "2006-04-19",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "Chief Justice Roberts delivered the opinion of the Court. The case applies the Religious Freedom Restoration Act of 1993 (RFRA) to a federal statute (Controlled Substances Act). The Court affirmed the grant of a preliminary injunction."
+      },
+      {
+        "@type": "Case",
+        "id": "masterpiece_cakeshop_v_colorado_civil_rights_commission_2018",
+        "short_name": "Masterpiece Cakeshop v. Colorado Civil Rights Commission",
+        "full_name": "Masterpiece Cakeshop, Ltd. v. Colorado Civil Rights Commission",
+        "citation": "584 U.S. 617 (2018)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "2018-06-04",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "A state civil rights commission must apply anti-discrimination laws in a neutral manner with respect to religion; the Commission's application of Colorado's anti-discrimination statute violated the Free Exercise Clause where commissioners displayed clear and impermissible hostility toward the cake shop owner's sincere religious objections to creating cakes for same-sex weddings.",
+        "holding_type": "affirmative",
+        "majority_author": "Kennedy",
+        "per_curiam": false,
+        "vote": "7-2",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "2018-06-04",
+        "valid_until": null,
+        "opinions": [
+          {
+            "type": "dissent",
+            "author": "Ginsburg",
+            "doctrinal_significance": "Argued that neither the Commission's comments regarding Phillips' religious views nor disparate treatment of bakers objecting to anti-gay messages justified ruling in favor of Phillips.",
+            "joined_by": [
+              "Sotomayor"
+            ],
+            "adopted_in": []
+          },
+          {
+            "type": "concurrence",
+            "author": "Kagan",
+            "doctrinal_significance": "Agreed that the Commission failed to give neutral treatment to Phillips' religious views but declined to assign significance to disparate treatment of bakers refusing to create cakes with anti-gay messages.",
+            "joined_by": [
+              "Breyer"
+            ],
+            "adopted_in": []
+          },
+          {
+            "type": "concurrence",
+            "author": "Gorsuch",
+            "doctrinal_significance": "Argued that Phillips' case and cases of bakers objecting to anti-gay messages were similar and the Commission acted inappropriately in treating them differently.",
+            "joined_by": [
+              "Alito"
+            ],
+            "adopted_in": []
+          },
+          {
+            "type": "concurrence_in_judgment",
+            "author": "Thomas",
+            "doctrinal_significance": "Argued that an order requiring Phillips to bake a wedding cake for a same-sex couple would violate his First Amendment rights.",
+            "joined_by": [
+              "Gorsuch"
+            ],
+            "adopted_in": []
+          }
+        ],
+        "notes": "The majority opinion was authored by Justice Kennedy. The case involved tension between free exercise of religion and anti-discrimination protections. The Court emphasized the particular hostility shown by the Commission toward Phillips' religious beliefs and the disparate treatment compared to other bakers with objections to anti-gay messages."
+      },
+      {
+        "@type": "Case",
+        "id": "303_creative_llc_v_elenis_2023",
+        "short_name": "303 Creative LLC v. Elenis",
+        "full_name": "303 Creative LLC v. Jena Griswold, in her official capacity as Colorado Secretary of State, et al.",
+        "citation": "600 U.S. 570 (2023)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "2023-06-30",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "The First Amendment prohibits a state from compelling a website designer to create expressive designs conveying messages with which the designer disagrees, even when enforcing a public accommodations law that prohibits discrimination based on sexual orientation.",
+        "holding_type": "affirmative",
+        "majority_author": "Gorsuch",
+        "per_curiam": false,
+        "vote": "6-3",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "2023-06-30",
+        "valid_until": null,
+        "opinions": [
+          {
+            "type": "dissent",
+            "author": "Sotomayor",
+            "doctrinal_significance": "Argued that the majority improperly granted a business open to the public a constitutional right to refuse service to members of a protected class, marking a departure from established public accommodations doctrine.",
+            "joined_by": [
+              "Kagan",
+              "Jackson"
+            ],
+            "adopted_in": []
+          }
+        ],
+        "notes": "The case involved a challenge to Colorado's Anti-Discrimination Act (CADA) as applied to compelled speech. The majority held that expressive design of wedding websites constitutes protected First Amendment speech that cannot be compelled by the state, even in the context of public accommodations law. The dissent emphasized the tension between First Amendment compelled speech doctrine and civil rights protections."
+      },
+      {
+        "@type": "Case",
+        "id": "tanzin_v_tanvir_2020",
+        "short_name": "Tanzin v. Tanvir",
+        "full_name": "Tanzin v. Tanvir",
+        "citation": "592 U.S. 43 (2020)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "2020-01-01",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "The Religious Freedom Restoration Act permits individuals to obtain money damages against federal officials in their individual capacities for violations of RFRA, as the statute's reference to obtaining 'appropriate relief against a government' encompasses individual federal officials and monetary damages constitute appropriate relief.",
+        "holding_type": "affirmative",
+        "majority_author": "Thomas",
+        "per_curiam": false,
+        "vote": "8-0",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "2020-01-01",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "Justice Amy Coney Barrett took no part in the consideration or decision of this case. The Second Circuit panel reversed the District Court's dismissal of claims against the agents.",
+        "courtlistener_id": "4837663"
+      },
+      {
+        "@type": "Case",
+        "id": "allegheny_county_v_aclu_1989",
+        "short_name": "Allegheny County v. ACLU",
+        "full_name": "Allegheny County v. American Civil Liberties Union",
+        "citation": "492 U.S. 573 (1989)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1989-01-01",
+        "opinion_form": "plurality",
+        "procedural_disposition": "affirmed_in_part",
+        "holding": "A creche displayed alone on the Grand Staircase of a county courthouse violates the Establishment Clause because it has the impermissible effect of endorsing religion, but a menorah displayed outside a city-county building next to a Christmas tree and liberty sign does not violate the Establishment Clause.",
+        "holding_type": "affirmative",
+        "majority_author": "Blackmun (plurality)",
+        "per_curiam": false,
+        "vote": null,
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1989-01-01",
+        "valid_until": null,
+        "opinions": [
+          {
+            "type": "concurrence",
+            "author": "Stevens",
+            "doctrinal_significance": "Joined Blackmun on Parts I, II, and III-B regarding Establishment Clause analysis of holiday displays",
+            "joined_by": [],
+            "adopted_in": []
+          },
+          {
+            "type": "concurrence",
+            "author": "O'Connor",
+            "doctrinal_significance": "Joined Blackmun on Parts I, II, V, and VII regarding Establishment Clause endorsement analysis",
+            "joined_by": [],
+            "adopted_in": []
+          }
+        ],
+        "notes": "Fractured decision. Justice Blackmun announced the judgment and delivered opinions in multiple parts with different coalitions joining different sections. The holding reflects what the Court agreed upon: the creche display violated the Establishment Clause, but the menorah display did not. The decision applies the endorsement test to holiday religious displays on public property."
+      },
+      {
+        "@type": "Case",
+        "id": "aguilar_v_felton_1985",
+        "short_name": "Aguilar v. Felton",
+        "full_name": "Aguilar v. Felton",
+        "citation": "473 U.S. 402 (1985)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1985-01-01",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "affirmed",
+        "holding": "Public school teachers may not provide instruction in parochial schools because such presence violates the Establishment Clause by creating an impermissible entanglement between church and state.",
+        "holding_type": "affirmative",
+        "majority_author": null,
+        "per_curiam": false,
+        "vote": null,
+        "status": "overruled",
+        "precedential_weight": "none",
+        "valid_from": "1985-01-01",
+        "valid_until": "1997-01-01",
+        "opinions": [],
+        "notes": "Stub node \u2014 overruled by agostini_v_felton_1997. Full node to be added when this case is modeled.",
+        "courtlistener_id": "111506"
+      },
+      {
+        "@type": "Case",
+        "id": "agostini_v_felton_1997",
+        "short_name": "Agostini v. Felton",
+        "full_name": "Agostini v. Felton",
+        "citation": "521 U.S. 203 (1997)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1997-01-01",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "Public school teachers may provide remedial instruction to students in parochial schools without violating the Establishment Clause, as there is no presumption that such presence inevitably leads to state-sponsored religious indoctrination, and only policies generating excessive entanglement between church and state violate the Establishment Clause.",
+        "holding_type": "affirmative",
+        "majority_author": null,
+        "per_curiam": false,
+        "vote": "5-4",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1997-01-01",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "Overruled Aguilar v. Felton (473 U.S. 402). The Court rejected the presumption that public school teachers in parochial schools inevitably lead to religious indoctrination.",
+        "courtlistener_id": "9168004"
+      },
+      {
+        "@type": "Case",
+        "id": "mitchell_v_helms_2000",
+        "short_name": "Mitchell v. Helms",
+        "full_name": "Mitchell v. Helms",
+        "citation": "530 U.S. 793 (2000)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "2000-06-28",
+        "opinion_form": "plurality",
+        "procedural_disposition": "reversed",
+        "holding": "A federal education aid program providing secular materials and equipment to both public and private schools, including religiously affiliated schools, does not violate the Establishment Clause when aid is distributed on a neutral basis without regard to the religious character of recipient institutions.",
+        "holding_type": "affirmative",
+        "majority_author": "Thomas (plurality)",
+        "per_curiam": false,
+        "vote": "6-3",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "2000-06-28",
+        "valid_until": null,
+        "opinions": [
+          {
+            "type": "dissent",
+            "author": null,
+            "doctrinal_significance": "Disagreed with the plurality's neutrality-based approach to Establishment Clause analysis",
+            "joined_by": [],
+            "adopted_in": []
+          }
+        ],
+        "notes": "Plurality opinion (6-3). Justice Thomas wrote for a plurality of the Court. The holding reflects the neutrality principle articulated by the plurality: that neutral aid programs do not violate the Establishment Clause merely because religiously affiliated institutions are eligible recipients on the same terms as secular institutions.",
+        "courtlistener_id": "118386"
+      },
+      {
+        "@type": "Case",
+        "id": "american_legion_v_american_humanist_association_2019",
+        "short_name": "American Legion v. American Humanist Assn.",
+        "full_name": "American Legion et al. v. American Humanist Association et al.",
+        "citation": "588 U.S. 29 (2019)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "2019-06-20",
+        "opinion_form": "plurality",
+        "procedural_disposition": "reversed",
+        "holding": "A longstanding, religiously expressive monument, symbol, or practice on public property does not violate the Establishment Clause when the passage of time has imbued it with historical significance and secular meaning, and when removing it would not appear neutral to the community.",
+        "holding_type": "affirmative",
+        "majority_author": "Alito (plurality)",
+        "per_curiam": false,
+        "vote": null,
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "2019-06-20",
+        "valid_until": null,
+        "opinions": [
+          {
+            "type": "concurrence",
+            "author": "Thomas",
+            "doctrinal_significance": "Argued that the Establishment Clause should not be incorporated against the States and that actual coercion is the sine qua non of an establishment of religion.",
+            "joined_by": [],
+            "adopted_in": []
+          }
+        ],
+        "notes": "Fractured decision. Justice Alito delivered the opinion of the Court with respect to Parts I, II\u2013B, II\u2013C, III, and IV (the core holding on the Bladensburg Cross). Justice Alito, joined by Chief Justice Roberts, Justice Breyer, and Justice Kavanaugh, concluded in Parts II\u2013A and II\u2013D regarding Lemon and historical practice. Justice Thomas concurred separately on incorporation and coercion grounds. The holding reflects what commanded a majority on the core issue: the Bladensburg Cross does not violate the Establishment Clause."
+      },
+      {
+        "@type": "Case",
+        "id": "carson_v_makin_2022",
+        "short_name": "Carson v. Makin",
+        "full_name": "Carson v. Makin",
+        "citation": "596 U.S. 767 (2022)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "2022-06-21",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "Maine's nonsectarian requirement for otherwise generally available tuition assistance payments violates the Free Exercise Clause of the First Amendment because the state may not discriminate against otherwise eligible recipients by disqualifying them from a public benefit solely on the basis of religious character.",
+        "holding_type": "affirmative",
+        "majority_author": "Roberts",
+        "per_curiam": false,
+        "vote": null,
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "2022-06-21",
+        "valid_until": null,
+        "opinions": [
+          {
+            "type": "dissent",
+            "author": "Breyer",
+            "doctrinal_significance": "Argues that the majority gives almost exclusive attention to the Free Exercise Clause while paying almost no attention to the Establishment Clause, and that Maine's nonsectarian requirement strikes the correct balance between the two clauses.",
+            "joined_by": [
+              "Sotomayor",
+              "Kagan"
+            ],
+            "adopted_in": []
+          },
+          {
+            "type": "dissent",
+            "author": "Sotomayor",
+            "doctrinal_significance": "Highlights the Court's increasingly expansive view of the Free Exercise Clause that risks swallowing the space between the Religion Clauses.",
+            "joined_by": [],
+            "adopted_in": []
+          }
+        ],
+        "notes": "The majority applied precedents from Trinity Lutheran Church of Columbia, Inc. v. Comer and Espinoza v. Montana Department of Revenue to hold that Maine may not subsidize some private schools but not others on the basis of religious character.",
+        "courtlistener_id": "6479298"
+      },
+      {
+        "@type": "Case",
+        "id": "shurtleff_v_city_of_boston_2022",
+        "short_name": "Shurtleff v. City of Boston",
+        "full_name": "Shurtleff v. City of Boston",
+        "citation": "596 U.S. 243 (2022)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "2022-06-17",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "A city's flag-raising program that is not government speech cannot exclude a private organization's flag based on religious viewpoint, as such exclusion violates the Free Speech Clause of the First Amendment.",
+        "holding_type": "affirmative",
+        "majority_author": "Breyer",
+        "per_curiam": false,
+        "vote": "9-0",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "2022-06-17",
+        "valid_until": null,
+        "opinions": [
+          {
+            "type": "concurrence",
+            "author": "Kavanaugh",
+            "doctrinal_significance": "Clarifies that government does not violate the Establishment Clause when treating religious and secular persons or organizations equally, but does violate the Free Speech Clause when excluding religious persons or organizations.",
+            "joined_by": [],
+            "adopted_in": []
+          },
+          {
+            "type": "concurrence_in_judgment",
+            "author": "Alito",
+            "doctrinal_significance": "Proposes alternative test for government speech: whether the government is actually expressing its own views or the real speaker is a private party and the government is regulating private speech.",
+            "joined_by": [
+              "Thomas",
+              "Gorsuch"
+            ],
+            "adopted_in": []
+          },
+          {
+            "type": "concurrence_in_judgment",
+            "author": "Gorsuch",
+            "doctrinal_significance": "Criticizes the Lemon test for Establishment Clause analysis and argues Boston erroneously relied on the abandoned Lemon test.",
+            "joined_by": [
+              "Thomas"
+            ],
+            "adopted_in": []
+          }
+        ],
+        "notes": "Unanimous decision (9-0) with fractured reasoning on the government speech test. Majority applies a three-factor holistic inquiry; Alito concurrence proposes alternative test; Gorsuch concurrence criticizes Lemon test."
+      },
+      {
+        "@type": "Case",
+        "id": "stenberg_v_carhart_2000",
+        "short_name": "Stenberg v. Carhart",
+        "full_name": "Stenberg v. Carhart",
+        "citation": "530 U.S. 914 (2000)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "2000-06-28",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "affirmed",
+        "holding": "A state statute prohibiting partial birth abortion without an exception for cases where the procedure is necessary to preserve the health of the mother places an undue burden on a woman's right to obtain an abortion and violates the Constitution as interpreted in Casey and Roe.",
+        "holding_type": "affirmative",
+        "majority_author": "Breyer",
+        "per_curiam": false,
+        "vote": "5-4",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "2000-06-28",
+        "valid_until": null,
+        "opinions": [
+          {
+            "type": "dissent",
+            "author": "Scalia",
+            "doctrinal_significance": "Argued that the Constitution does not prohibit states from banning partial birth abortion procedures.",
+            "joined_by": [],
+            "adopted_in": []
+          }
+        ],
+        "notes": "5-4 decision. Affirmed the District Court and Court of Appeals decisions striking down Nebraska's partial birth abortion statute. The majority held that the statute violated the undue burden standard established in Planned Parenthood v. Casey by failing to include a health exception.",
+        "courtlistener_id": "9189734"
+      },
+      {
+        "@type": "Case",
+        "id": "gonzales_v_carhart_2007",
+        "short_name": "Gonzales v. Carhart",
+        "full_name": "Alberto R. Gonzales, Attorney General v. Leroy Carhart",
+        "citation": "550 U.S. 124 (2007)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "2007-04-18",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "Congress may ban a specific abortion procedure (intact D&E or partial-birth abortion) without an exception for the health of the mother when Congress determines the procedure is never medically necessary, provided the ban is limited to cases where the physician intends to perform that specific procedure and delivers the fetus past anatomical landmarks, and the ban does not impose an undue burden on the right to abortion.",
+        "holding_type": "affirmative",
+        "majority_author": "Kennedy",
+        "per_curiam": false,
+        "vote": "5-4",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "2007-04-18",
+        "valid_until": null,
+        "opinions": [
+          {
+            "type": "dissent",
+            "author": "Ginsburg",
+            "doctrinal_significance": "Disputed the majority's consistency with Casey and Stenberg precedents and argued the opinion reflected hostility to the right to abortion.",
+            "joined_by": [],
+            "adopted_in": []
+          }
+        ],
+        "notes": "5-4 decision. The majority held that the Partial-Birth Abortion Ban Act of 2003 applies only to the intact D&E method and does not impose an undue burden on the right to abortion. The Court upheld the Act's omission of a health exception based on Congress's finding that the procedure is never medically necessary. Justice Ginsburg's dissent indicated significant doctrinal disagreement about consistency with prior precedent."
+      },
+      {
+        "@type": "Case",
+        "id": "zablocki_v_redhail_1978",
+        "short_name": "Zablocki v. Redhail",
+        "full_name": "Zablocki v. Redhail",
+        "citation": "434 U.S. 374 (1978)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1978-01-01",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "A state statute that conditions the right to marry on payment of child support obligations violates the Equal Protection Clause and infringes the fundamental right to marry protected by the Fourteenth Amendment.",
+        "holding_type": "affirmative",
+        "majority_author": "Marshall",
+        "per_curiam": false,
+        "vote": "8-1",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1978-01-01",
+        "valid_until": null,
+        "opinions": [
+          {
+            "type": "dissent",
+            "author": null,
+            "doctrinal_significance": "One justice dissented from the majority's holding that marriage is a fundamental right.",
+            "joined_by": [],
+            "adopted_in": []
+          }
+        ],
+        "notes": "The Court reaffirmed marriage as a fundamental right rooted in the right to privacy identified in Griswold v. Connecticut and the principle established in Loving v. Virginia. The majority rejected the state's interest in ensuring child support compliance as a sufficient justification for restricting the fundamental right to marry.",
+        "courtlistener_id": "109768"
+      },
+      {
+        "@type": "Case",
+        "id": "m_l_b_v_s_l_j_1996",
+        "short_name": "M.L.B. v. S.L.J.",
+        "full_name": "M.L.B. v. S.L.J.",
+        "citation": "519 U.S. 102 (1996)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1996-01-01",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "A state may not condition appellate review of a trial court decree terminating parental rights on the affected parent's ability to pay record preparation fees, as such conditioning violates the Due Process and Equal Protection Clauses of the Fourteenth Amendment when applied to indigent parents.",
+        "holding_type": "affirmative",
+        "majority_author": "Ginsburg",
+        "per_curiam": false,
+        "vote": null,
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1996-01-01",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "The Court held that just as a state may not block an indigent petty offender's access to appeal, so too may a state not deny appellate review based on inability to pay record preparation fees in parental termination cases. The case involves fundamental rights to parental relationship and equal protection concerns.",
+        "courtlistener_id": "9281247"
+      },
+      {
+        "@type": "Case",
+        "id": "trump_v_hawaii_2018",
+        "short_name": "Trump v. Hawaii",
+        "full_name": "Trump v. Hawaii",
+        "citation": "585 U.S. 667 (2018)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "2018-06-26",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "The Proclamation restricting travel by citizens from eight countries does not violate the president's statutory authority under the Immigration and Nationality Act or the Establishment Clause, and the president possesses broad discretion under Section 1182(f) of the INA to suspend entry of non-citizens when determined to be detrimental to United States interests.",
+        "holding_type": "affirmative",
+        "majority_author": "Roberts",
+        "per_curiam": false,
+        "vote": "5-4",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "2018-06-26",
+        "valid_until": null,
+        "opinions": [
+          {
+            "type": "concurrence",
+            "author": "Kennedy",
+            "doctrinal_significance": "Emphasized deference to executive authority and urged government officials to act in accordance with the Constitution.",
+            "joined_by": [],
+            "adopted_in": []
+          },
+          {
+            "type": "concurrence",
+            "author": "Thomas",
+            "doctrinal_significance": "Expressed concern over federal district courts issuing global or nationwide injunctions and called for the Court to address this trend.",
+            "joined_by": [],
+            "adopted_in": []
+          },
+          {
+            "type": "dissent",
+            "author": "Breyer",
+            "doctrinal_significance": "Questioned whether the government is actually applying exemption and waiver programs as claimed and would remand for further proceedings.",
+            "joined_by": [
+              "Kagan"
+            ],
+            "adopted_in": []
+          },
+          {
+            "type": "dissent",
+            "author": "Sotomayor",
+            "doctrinal_significance": "Argued the majority applied incorrect scrutiny standard to Establishment Clause claim and that the Proclamation fails even under rational basis review given the president's stated intent of a 'total and complete shutdown of Muslims.'",
+            "joined_by": [
+              "Ginsburg"
+            ],
+            "adopted_in": []
+          }
+        ],
+        "notes": "5-4 decision. The majority upheld the Proclamation on both statutory authority and Establishment Clause grounds. The case involved challenges to Executive Order 13,769 (EO-1), Executive Order 13,780 (EO-2), and the September 2017 Proclamation. The Court assumed without deciding that plaintiffs' claims were justiciable and did not resolve whether the district court's global injunction was impermissibly overbroad.",
+        "courtlistener_id": "9335670"
+      },
+      {
+        "@type": "Case",
+        "id": "trump_v_united_states_2024",
+        "short_name": "Trump v. United States",
+        "full_name": "Donald J. Trump v. United States of America",
+        "citation": "603 U.S. 593 (2024)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "2024-07-01",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "vacated",
+        "holding": "A former President is absolutely immune from criminal prosecution for actions within his conclusive and preclusive constitutional authority, and is entitled to at least presumptive immunity from prosecution for all other official acts. There is no immunity for unofficial acts.",
+        "holding_type": "affirmative",
+        "majority_author": "Roberts",
+        "per_curiam": false,
+        "vote": "6-3",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "2024-07-01",
+        "valid_until": null,
+        "opinions": [
+          {
+            "type": "concurrence",
+            "author": "Thomas",
+            "doctrinal_significance": "Filed a concurring opinion",
+            "joined_by": [],
+            "adopted_in": []
+          }
+        ],
+        "notes": "Chief Justice Roberts delivered the opinion of the Court, joined in full by Thomas, Alito, Gorsuch, and Kavanaugh, JJ., and joined by Barrett, J., except as to Part III\u2013C. This is the first criminal prosecution in the Nation's history of a former President for actions taken during his Presidency. The Court vacated and remanded the D.C. Circuit's affirmance of the District Court's denial of Trump's motion to dismiss based on Presidential immunity."
       }
     ],
     "doctrinal_tests": [
@@ -17662,6 +18923,137 @@
         "valid_from": "2005-01-01",
         "valid_until": null,
         "notes": "This test applies a balancing approach that recognizes necessarily limited procedural protections in the prison context. The test does not require elaborate procedures but rather sufficient safeguards including notice, opportunity for rebuttal, and multi-tier review."
+      },
+      {
+        "@type": "DoctrinalTest",
+        "id": "rfra_compelling_interest_test",
+        "label": "RFRA Compelling Interest Test",
+        "description": "Under the Religious Freedom Restoration Act, when the Federal Government substantially burdens a person's exercise of religion, the Government must demonstrate that the burden is in furtherance of a compelling government interest and is the least restrictive means of furthering that interest.",
+        "area_id": "free_exercise",
+        "source_case_id": "gonzales_v_o_centro_espirita_beneficente_uniao_do_vegetal_2006",
+        "scrutiny_level": "strict",
+        "burden": "government",
+        "test_form": "conjunctive",
+        "prongs": [
+          {
+            "number": 1,
+            "label": "Compelling Government Interest",
+            "description": "The Government must demonstrate that the burden on religious practice is in furtherance of a compelling government interest.",
+            "burden_note": "Government bears the burden of proof",
+            "valid_from": "1993-11-16",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 2,
+            "label": "Least Restrictive Means",
+            "description": "The Government must demonstrate that the burden is the least restrictive means of furthering the compelling government interest.",
+            "burden_note": "Government bears the burden of proof",
+            "valid_from": "1993-11-16",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          }
+        ],
+        "status": "active",
+        "valid_from": "1993-11-16",
+        "valid_until": null,
+        "notes": "Codified in 42 U.S.C. \u00a7 2000bb-1(b). This test applies to federal government action. In this case, the Court found the Government failed to satisfy the test regarding uniform application of the Controlled Substances Act."
+      },
+      {
+        "@type": "DoctrinalTest",
+        "id": "government_speech_holistic_test",
+        "label": "Government Speech Holistic Inquiry Test",
+        "description": "A three-factor test to determine whether expression constitutes government speech. The test considers: (1) the history of the expression at issue; (2) the public's perception as to who is speaking; and (3) the extent to which the government has controlled the expression. The inquiry is holistic and no single factor is dispositive.",
+        "area_id": "free_speech",
+        "source_case_id": "shurtleff_v_city_of_boston_2022",
+        "scrutiny_level": "none",
+        "burden": "government",
+        "test_form": "balancing",
+        "prongs": [
+          {
+            "number": 1,
+            "label": "History of the Expression",
+            "description": "Whether there is a history of the government engaging in the type of expression at issue.",
+            "burden_note": "Government must demonstrate historical practice.",
+            "valid_from": "2022-06-17",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 2,
+            "label": "Public Perception",
+            "description": "Whether the public would perceive the expression as the government's own message or as private speech.",
+            "burden_note": "Government must show the public would associate the message with the government.",
+            "valid_from": "2022-06-17",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 3,
+            "label": "Government Control",
+            "description": "The extent to which the government has controlled the content and form of the expression.",
+            "burden_note": "Government must demonstrate meaningful control over the expression.",
+            "valid_from": "2022-06-17",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          }
+        ],
+        "status": "active",
+        "valid_from": "2022-06-17",
+        "valid_until": null,
+        "notes": "This test is applied holistically; no single factor is dispositive. In Shurtleff, although history favored the government, the other two factors (public perception and lack of control) outweighed it, resulting in a finding that the flag-raising program was not government speech."
+      },
+      {
+        "@type": "DoctrinalTest",
+        "id": "presidential_immunity_test",
+        "label": "Presidential Immunity Test",
+        "description": "A multi-step test to determine whether a former President is entitled to immunity from criminal prosecution. First, determine whether the conduct is official or unofficial. If official, determine whether it falls within the President's exclusive constitutional authority (absolute immunity) or shared authority (presumptive immunity). If unofficial, no immunity applies.",
+        "area_id": "separation_of_powers",
+        "source_case_id": "trump_v_united_states_2024",
+        "scrutiny_level": "none",
+        "burden": "government",
+        "test_form": "threshold_then_conjunctive",
+        "prongs": [
+          {
+            "number": 1,
+            "label": "Official Versus Unofficial Conduct",
+            "description": "Determine whether the alleged conduct is official or unofficial. Official conduct is undertaken pursuant to constitutional and statutory authority within the outer perimeter of the President's official responsibilities. Courts may not inquire into the President's motives and may not deem an action unofficial merely because it allegedly violates a generally applicable law.",
+            "burden_note": "Threshold determination; if unofficial, no immunity applies.",
+            "valid_from": "2024-07-01",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 2,
+            "label": "Exclusive Constitutional Authority",
+            "description": "If the conduct is official, determine whether it falls within the President's conclusive and preclusive constitutional authority. If so, absolute immunity applies.",
+            "burden_note": "If the President's authority is conclusive and preclusive, the President is absolutely immune.",
+            "valid_from": "2024-07-01",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 3,
+            "label": "Presumptive Immunity for Shared Authority",
+            "description": "If the conduct is official but does not fall within the President's exclusive constitutional authority, the President is entitled to at least presumptive immunity. The Government bears the burden of rebutting this presumption by showing that applying a criminal prohibition to the act would pose no dangers of intrusion on the authority and functions of the Executive Branch.",
+            "burden_note": "Government must rebut the presumption of immunity.",
+            "valid_from": "2024-07-01",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          }
+        ],
+        "status": "active",
+        "valid_from": "2024-07-01",
+        "valid_until": null,
+        "notes": "Established in Trump v. United States (2024). The test requires careful fact-specific analysis, particularly in distinguishing official from unofficial conduct. Courts must not inquire into Presidential motives and must recognize the outer perimeter of official responsibility."
       }
     ]
   },
@@ -21228,7 +22620,7 @@
     },
     {
       "id": "dun_bradstreet_modifies_actual_malice",
-      "source_id": "dun_bradstreet_v_greenmoss_builders_1985",
+      "source_id": "dun_and_bradstreet_v_greenmoss_builders_1985",
       "target_id": "actual_malice_doctrine",
       "edge_type": "MODIFIES",
       "direction": "narrows",
@@ -21242,7 +22634,7 @@
     },
     {
       "id": "dun_bradstreet_interprets_a1",
-      "source_id": "dun_bradstreet_v_greenmoss_builders_1985",
+      "source_id": "dun_and_bradstreet_v_greenmoss_builders_1985",
       "target_id": "amendment_1",
       "edge_type": "INTERPRETS",
       "valid_from": "1985-06-26",
@@ -32242,6 +33634,542 @@
       "jurisdiction": [
         "federal",
         "state"
+      ]
+    },
+    {
+      "id": "dun_and_bradstreet_establishes_private_concern_speech_doctrine",
+      "source_id": "dun_and_bradstreet_v_greenmoss_builders_1985",
+      "target_id": "private_concern_speech_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1985-06-26",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Dun & Bradstreet established the doctrine that private concern speech receives less First Amendment protection than public concern speech."
+    },
+    {
+      "id": "dun_and_bradstreet_establishes_non_media_defendant_doctrine",
+      "source_id": "dun_and_bradstreet_v_greenmoss_builders_1985",
+      "target_id": "non_media_defendant_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1985-06-26",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Dun & Bradstreet established the doctrine that non-media defendants may be treated differently under First Amendment defamation law."
+    },
+    {
+      "id": "texas_v_johnson_establishes_expressive_conduct_doctrine",
+      "source_id": "texas_v_johnson_1989",
+      "target_id": "expressive_conduct_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1989-06-21",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Texas v. Johnson established that flag burning constitutes expressive conduct protected by the First Amendment."
+    },
+    {
+      "id": "texas_v_johnson_establishes_symbol_designation_prohibition",
+      "source_id": "texas_v_johnson_1989",
+      "target_id": "government_symbol_designation_prohibition",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1989-06-21",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Texas v. Johnson established that the government cannot restrict the use of symbols to communicate only limited messages."
+    },
+    {
+      "id": "legal_services_corp_v_velazquez_2001_applies_viewpoint_discrimination_doctrine",
+      "source_id": "legal_services_corp_v_velazquez_2001",
+      "target_id": "viewpoint_discrimination",
+      "edge_type": "APPLIES",
+      "valid_from": "2001-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "The Court applied viewpoint discrimination doctrine to strike down the LSC funding restriction."
+    },
+    {
+      "id": "lsc_v_velazquez_establishes_private_speech_funding",
+      "source_id": "legal_services_corp_v_velazquez_2001",
+      "target_id": "private_speech_in_funding_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2001-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "The Court established the principle that funding programs designed to facilitate private speech cannot restrict that speech through viewpoint-based conditions."
+    },
+    {
+      "id": "holder_applies_material_support_doctrine",
+      "source_id": "holder_v_humanitarian_law_project_2010",
+      "target_id": "material_support_doctrine",
+      "edge_type": "APPLIES",
+      "valid_from": "2010-06-21",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ],
+      "notes": "The Court applied the material support doctrine to uphold the constitutionality of the AEDPA material support provision as amended."
+    },
+    {
+      "id": "holder_applies_vagueness_doctrine",
+      "source_id": "holder_v_humanitarian_law_project_2010",
+      "target_id": "vagueness_doctrine",
+      "edge_type": "APPLIES",
+      "valid_from": "2010-06-21",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ],
+      "notes": "The Court applied the vagueness doctrine to evaluate whether the material support statute provided fair notice and was sufficiently clear as applied to the plaintiffs' conduct."
+    },
+    {
+      "id": "elonis_applies_true_threat_doctrine",
+      "source_id": "elonis_v_united_states_2015",
+      "target_id": "true_threat_doctrine",
+      "edge_type": "MODIFIES",
+      "direction": "clarifies",
+      "valid_from": "2015-06-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Elonis clarified the true threat doctrine by establishing that subjective intent to threaten is required, rejecting the objective reasonable person standard previously applied."
+    },
+    {
+      "id": "packingham_applies_narrow_tailoring",
+      "source_id": "packingham_v_north_carolina_2017",
+      "target_id": "first_amendment_narrow_tailoring",
+      "edge_type": "APPLIES",
+      "valid_from": "2017-06-19",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Packingham applies the narrow tailoring doctrine to strike down North Carolina's sex offender social media access restriction."
+    },
+    {
+      "id": "thomas_review_board_applies_free_exercise_right",
+      "source_id": "thomas_v_review_board_1981",
+      "target_id": "free_exercise_right",
+      "edge_type": "APPLIES",
+      "valid_from": "1981-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "The Court applied the free exercise doctrine to strike down the state's denial of unemployment benefits."
+    },
+    {
+      "id": "gonzales_establishes_rfra_compelling_interest_test",
+      "source_id": "gonzales_v_o_centro_espirita_beneficente_uniao_do_vegetal_2006",
+      "target_id": "rfra_compelling_interest_test",
+      "edge_type": "APPLIES",
+      "valid_from": "2006-04-19",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ],
+      "notes": "The Court applied the RFRA compelling interest test to evaluate whether the Government's burden on the religious practice satisfied the statutory requirements."
+    },
+    {
+      "id": "gonzales_applies_rfra_doctrine",
+      "source_id": "gonzales_v_o_centro_espirita_beneficente_uniao_do_vegetal_2006",
+      "target_id": "religious_freedom_restoration_act",
+      "edge_type": "APPLIES",
+      "valid_from": "2006-04-19",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ],
+      "notes": "The Court applied the Religious Freedom Restoration Act to determine whether the Federal Government's enforcement of the Controlled Substances Act substantially burdened the sect's religious practice."
+    },
+    {
+      "id": "masterpiece_applies_free_exercise_neutral_application",
+      "source_id": "masterpiece_cakeshop_v_colorado_civil_rights_commission_2018",
+      "target_id": "free_exercise_neutral_application",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2018-06-04",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "The Court established that state civil rights commissions must apply anti-discrimination laws neutrally with respect to religion."
+    },
+    {
+      "id": "masterpiece_establishes_artistic_expression_religious",
+      "source_id": "masterpiece_cakeshop_v_colorado_civil_rights_commission_2018",
+      "target_id": "artistic_expression_religious_belief",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2018-06-04",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "The Court recognized that artistic creation can constitute sincere religious expression entitled to First Amendment and Free Exercise Clause protection."
+    },
+    {
+      "id": "303_creative_applies_compelled_speech_doctrine",
+      "source_id": "303_creative_llc_v_elenis_2023",
+      "target_id": "compelled_speech_doctrine",
+      "edge_type": "APPLIES",
+      "valid_from": "2023-06-30",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "The Court established that compelled speech doctrine applies to public accommodations law enforcement, prohibiting states from compelling expressive services that convey messages contrary to the service provider's beliefs."
+    },
+    {
+      "id": "303_creative_establishes_expressive_design_speech",
+      "source_id": "303_creative_llc_v_elenis_2023",
+      "target_id": "expressive_design_speech",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2023-06-30",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "The Court established that custom website design for weddings constitutes protected First Amendment speech."
+    },
+    {
+      "id": "tanzin_establishes_rfra_remedy_doctrine",
+      "source_id": "tanzin_v_tanvir_2020",
+      "target_id": "rfra_remedy_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2020-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ],
+      "notes": "Tanzin establishes that RFRA permits money damages against individual federal officials."
+    },
+    {
+      "id": "allegheny_county_v_aclu_applies_establishment_clause_endorsement",
+      "source_id": "allegheny_county_v_aclu_1989",
+      "target_id": "establishment_clause_endorsement",
+      "edge_type": "APPLIES",
+      "valid_from": "1989-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "The Court applied the endorsement doctrine to evaluate whether the creche and menorah displays violated the Establishment Clause, examining the effect of each display in its specific context."
+    },
+    {
+      "id": "agostini_overrules_aguilar",
+      "source_id": "agostini_v_felton_1997",
+      "target_id": "aguilar_v_felton_1985",
+      "edge_type": "OVERRULES",
+      "overrule_type": "explicit",
+      "valid_from": "1997-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Agostini explicitly overruled Aguilar's presumption that public school teachers in parochial schools inevitably lead to religious indoctrination."
+    },
+    {
+      "id": "agostini_modifies_establishment_clause_entanglement",
+      "source_id": "agostini_v_felton_1997",
+      "target_id": "establishment_clause_entanglement",
+      "edge_type": "MODIFIES",
+      "direction": "clarifies",
+      "valid_from": "1997-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Agostini clarified that only excessive entanglement violates the Establishment Clause, rejecting the prior presumption that all church-state contact has a distinctly positive or negative impact on religion."
+    },
+    {
+      "id": "mitchell_v_helms_2000_establishes_establishment_clause_neutrality",
+      "source_id": "mitchell_v_helms_2000",
+      "target_id": "establishment_clause_neutrality",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2000-06-28",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "The plurality opinion articulated the neutrality principle as a framework for analyzing Establishment Clause challenges to neutral aid programs."
+    },
+    {
+      "id": "american_legion_establishes_longstanding_monument_doctrine",
+      "source_id": "american_legion_v_american_humanist_association_2019",
+      "target_id": "establishment_clause_longstanding_monument_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2019-06-20",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "American Legion established the doctrine that longstanding religious monuments receive different Establishment Clause treatment than newly erected ones."
+    },
+    {
+      "id": "american_legion_establishes_historical_practice_doctrine",
+      "source_id": "american_legion_v_american_humanist_association_2019",
+      "target_id": "establishment_clause_historical_practice_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2019-06-20",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "American Legion established the doctrine that historical practice and tradition guide Establishment Clause analysis, moving away from the Lemon test framework."
+    },
+    {
+      "id": "carson_establishes_free_exercise_nondiscrimination",
+      "source_id": "carson_v_makin_2022",
+      "target_id": "free_exercise_clause_nondiscrimination",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2022-06-21",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "shurtleff_establishes_government_speech_holistic_test",
+      "source_id": "shurtleff_v_city_of_boston_2022",
+      "target_id": "government_speech_holistic_test",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2022-06-17",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Shurtleff establishes the three-factor holistic inquiry test for determining government speech."
+    },
+    {
+      "id": "shurtleff_applies_government_speech_doctrine",
+      "source_id": "shurtleff_v_city_of_boston_2022",
+      "target_id": "government_speech_doctrine",
+      "edge_type": "APPLIES",
+      "valid_from": "2022-06-17",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Shurtleff applies the government speech doctrine to determine that Boston's flag-raising program is not government speech."
+    },
+    {
+      "id": "shurtleff_applies_viewpoint_discrimination_doctrine",
+      "source_id": "shurtleff_v_city_of_boston_2022",
+      "target_id": "viewpoint_discrimination",
+      "edge_type": "APPLIES",
+      "valid_from": "2022-06-17",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Shurtleff applies the viewpoint discrimination doctrine to hold that Boston violated the Free Speech Clause by excluding the religious flag based on religious viewpoint."
+    },
+    {
+      "id": "stenberg_applies_undue_burden_doctrine",
+      "source_id": "stenberg_v_carhart_2000",
+      "target_id": "undue_burden_doctrine",
+      "edge_type": "APPLIES",
+      "valid_from": "2000-06-28",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Stenberg applied the undue burden standard from Casey to evaluate Nebraska's partial birth abortion statute and found it unconstitutional for lacking a health exception."
+    },
+    {
+      "id": "gonzales_applies_undue_burden_standard",
+      "source_id": "gonzales_v_carhart_2007",
+      "target_id": "undue_burden_standard",
+      "edge_type": "APPLIES",
+      "valid_from": "2007-04-18",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "The Court applied the undue burden standard from Planned Parenthood v. Casey and held that the Partial-Birth Abortion Ban Act does not impose an undue burden because it applies only to a specific procedure."
+    },
+    {
+      "id": "gonzales_modifies_health_exception_requirement",
+      "source_id": "gonzales_v_carhart_2007",
+      "target_id": "health_exception_requirement",
+      "edge_type": "MODIFIES",
+      "direction": "narrows",
+      "valid_from": "2007-04-18",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "The Court narrowed the health exception requirement by holding that Congress may omit a health exception when it determines the banned procedure is never medically necessary, rejecting the requirement that medical uncertainty alone necessitates a health exception."
+    },
+    {
+      "id": "zablocki_applies_fundamental_right_to_marry",
+      "source_id": "zablocki_v_redhail_1978",
+      "target_id": "fundamental_right_to_marry",
+      "edge_type": "APPLIES",
+      "valid_from": "1978-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Zablocki applies and reaffirms the fundamental right to marry as a constitutional protection under the Fourteenth Amendment."
+    },
+    {
+      "id": "m_l_b_establishes_fundamental_right_to_parental_relationship",
+      "source_id": "m_l_b_v_s_l_j_1996",
+      "target_id": "fundamental_right_to_parental_relationship",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1996",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "M.L.B. establishes that the parental relationship is a fundamental right protected by the Fourteenth Amendment."
+    },
+    {
+      "id": "m_l_b_establishes_appellate_access_indigent_litigants",
+      "source_id": "m_l_b_v_s_l_j_1996",
+      "target_id": "appellate_access_indigent_litigants",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1996",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "M.L.B. establishes that states cannot condition appellate access on ability to pay when fundamental rights are at stake."
+    },
+    {
+      "id": "trump_v_hawaii_applies_establishment_clause",
+      "source_id": "trump_v_hawaii_2018",
+      "target_id": "establishment_clause_doctrine",
+      "edge_type": "APPLIES",
+      "valid_from": "2018-06-26",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ],
+      "notes": "The Court applied Establishment Clause doctrine to evaluate whether the Proclamation violated the constitutional prohibition on laws respecting an establishment of religion."
+    },
+    {
+      "id": "trump_v_hawaii_applies_presidential_immigration",
+      "source_id": "trump_v_hawaii_2018",
+      "target_id": "presidential_immigration_authority",
+      "edge_type": "APPLIES",
+      "valid_from": "2018-06-26",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ],
+      "notes": "The Court applied and affirmed the president's broad discretionary authority under Section 1182(f) of the Immigration and Nationality Act."
+    },
+    {
+      "id": "trump_establishes_presidential_immunity_doctrine",
+      "source_id": "trump_v_united_states_2024",
+      "target_id": "presidential_immunity_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2024-07-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ],
+      "notes": "Trump v. United States (2024) established the doctrine of Presidential immunity from criminal prosecution for official acts."
+    },
+    {
+      "id": "trump_establishes_exclusive_authority_doctrine",
+      "source_id": "trump_v_united_states_2024",
+      "target_id": "exclusive_constitutional_authority_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2024-07-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ],
+      "notes": "Trump v. United States (2024) established the doctrine that the President's exclusive constitutional authority is beyond criminal prosecution."
+    },
+    {
+      "id": "trump_establishes_official_unofficial_doctrine",
+      "source_id": "trump_v_united_states_2024",
+      "target_id": "official_vs_unofficial_conduct_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2024-07-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ],
+      "notes": "Trump v. United States (2024) established the doctrine distinguishing official from unofficial Presidential conduct for immunity purposes."
+    },
+    {
+      "id": "trump_establishes_presidential_immunity_test",
+      "source_id": "trump_v_united_states_2024",
+      "target_id": "presidential_immunity_test",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2024-07-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ],
+      "notes": "Trump v. United States (2024) established the Presidential immunity test for determining whether a former President is entitled to immunity from criminal prosecution."
+    },
+    {
+      "id": "smith_establishes_free_exercise_general_applicability",
+      "source_id": "employment_division_v_smith_1990",
+      "target_id": "free_exercise_clause_general_applicability",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1990-04-17",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "gonzales_o_centro_establishes_rfra_test",
+      "source_id": "gonzales_v_o_centro_espirita_beneficente_uniao_do_vegetal_2006",
+      "target_id": "rfra_compelling_interest_test",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2006-04-19",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
       ]
     }
   ],
