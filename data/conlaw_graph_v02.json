@@ -17,8 +17,8 @@
     "created": "2026-03-15",
     "status": "draft",
     "schema_version": "0.5",
-    "node_count": 826,
-    "edge_count": 1253,
+    "node_count": 883,
+    "edge_count": 1296,
     "schema_issue_count": 41,
     "fixes_applied": [
       "FIX 1: ConstitutionalProvision labels changed to citation form (amendment_1, amendment_14_section_1) to disambiguate from Area nodes with same common-name labels",
@@ -233,30 +233,6 @@
         "valid_from": "1964-03-09",
         "valid_until": null,
         "notes": "SCHEMA ISSUE A: The actual malice standard applies differently based on plaintiff category \u2014 public official, all-purpose public figure, limited-purpose public figure, private figure. This four-category taxonomy is central to the doctrine's application but the schema has no way to represent it structurally. It functions like a sub-test within the doctrine but doesn't fit the DoctrinalTest model cleanly because it's a classification framework, not a sequential multi-prong test. Candidate for promotion to a first-class node type or a structured sub-schema."
-      },
-      {
-        "@type": "Doctrine",
-        "id": "press_defamation_private_figure_doctrine",
-        "label": "Private Figure Defamation Doctrine",
-        "description": "When a private figure plaintiff sues a media defendant for defamation on a matter of public concern, the First Amendment requires at minimum that the plaintiff prove the defendant was at fault \u2014 negligence or higher \u2014 and limits recovery to actual damages unless the plaintiff proves actual malice. States may set the standard above negligence but may not impose strict liability. When the matter is not of public concern, the constitutional floor is lower and states have more latitude. This doctrine creates a federal constitutional minimum above which state defamation law operates.",
-        "area_id": "freedom_of_press",
-        "scrutiny_level": "intermediate",
-        "elements": [
-          "For matters of public concern: plaintiff must prove at minimum that defendant was at fault (negligence standard)",
-          "States may impose a higher standard (actual malice) but may not impose strict liability",
-          "Recovery limited to actual damages unless plaintiff proves actual malice",
-          "For matters not of public concern: states have greater latitude; constitutional floor is lower",
-          "Presumed and punitive damages require proof of actual malice regardless of plaintiff's status"
-        ],
-        "burden": "challenger",
-        "jurisdiction": [
-          "federal",
-          "state"
-        ],
-        "status": "active",
-        "valid_from": "1974-06-25",
-        "valid_until": null,
-        "notes": "SCHEMA ISSUE E: This doctrine creates a federal constitutional floor with state law operating above it. The schema is scoped to federal constitutional law, but this doctrine is meaningless without reference to the state law it constrains. Gertz explicitly declined to impose the actual malice standard on private figure plaintiffs and left the standard to the states above the constitutional minimum. The graph needs a way to represent a doctrine that sets a floor for state law without fully occupying the field. This is a Phase 2 boundary condition \u2014 it requires the statute/state law layer to model completely."
       },
       {
         "@type": "Doctrine",
@@ -5101,6 +5077,380 @@
         "valid_from": "2018-05-14",
         "valid_until": null,
         "notes": "Established in New York v. United States (1992) and Printz v. United States (1997); clarified and extended in Murphy v. NCAA to apply to prohibitions on state legislative action, not merely affirmative commands."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "freedom_of_speech_assembly",
+        "label": "Freedom of Speech and Assembly",
+        "description": "The constitutional right to engage in peaceful speech and assembly, protected by the First and Fourteenth Amendments. Statutes regulating such conduct must not be unconstitutionally vague or grant unbridled discretion to law enforcement.",
+        "area_id": "free_speech",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1965-01-01",
+        "valid_until": null,
+        "notes": "Established in Cox v. Louisiana as protecting peaceful protest and demonstration."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "symbolic_conduct_doctrine",
+        "label": "Symbolic Conduct Doctrine",
+        "description": "The doctrine governing when non-verbal conduct qualifies for First Amendment protection and the standards for regulating such conduct.",
+        "area_id": "free_speech",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1984-06-29",
+        "valid_until": null,
+        "notes": "Established in Clark v. Community for Creative Non-Violence as the framework for analyzing whether sleeping in tents as part of a demonstration constitutes expressive conduct protected by the First Amendment."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "residential_privacy_doctrine",
+        "label": "Residential Privacy Protection",
+        "description": "The government has a significant interest in protecting the sanctity of the home and the residential privacy of its citizens, which may justify restrictions on First Amendment activity in residential areas.",
+        "area_id": "criminal_procedure",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1988-01-01",
+        "valid_until": null,
+        "notes": "Established in Frisby v. Schultz as a basis for upholding residential picketing bans."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "freedom_of_petition_right",
+        "label": "Right to Petition for Redress of Grievances",
+        "description": "The constitutional right to petition the government for redress of grievances, which includes the right to solicit funds for expressive purposes in public places, subject to reasonable time, place, and manner restrictions.",
+        "area_id": "freedom_of_petition",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1992",
+        "valid_until": null,
+        "notes": "ISKCON v. Lee addressed the scope of this right in non-public forums such as airport terminals."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "unwilling_listener_doctrine",
+        "label": "Unwilling Listener Doctrine",
+        "description": "The principle that an unwilling listener's interest in avoiding unwanted communication is a legitimate government interest that may justify restrictions on speech-related conduct, particularly in contexts involving approaches to persons at sensitive locations such as medical facilities.",
+        "area_id": "free_speech",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "2000",
+        "valid_until": null,
+        "notes": "Established in Hill v. Colorado as a basis for upholding content-neutral restrictions on speech-related conduct near health care facilities."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "time_place_manner_restriction",
+        "label": "Time, Place, and Manner Restrictions on Speech",
+        "description": "A content-neutral regulation that restricts the time, place, or manner of speech is subject to intermediate scrutiny and must be narrowly tailored to serve a significant government interest while leaving open ample alternative channels for communication.",
+        "area_id": "free_speech",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "2014-06-26",
+        "valid_until": null,
+        "notes": "McCullen clarified that even content-neutral time, place, and manner restrictions must not substantially burden core political speech on traditional public forums when less restrictive alternatives exist."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "narrow_tailoring_requirement",
+        "label": "Narrow Tailoring Requirement for Speech Restrictions",
+        "description": "A speech restriction must be narrowly tailored to achieve its stated purpose and cannot impose an undue burden on First Amendment rights when less restrictive alternatives are available to serve the same government interest.",
+        "area_id": "free_speech",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "2014-06-26",
+        "valid_until": null,
+        "notes": "McCullen held that a 35-foot buffer zone around abortion clinics failed narrow tailoring because it prevented core political speech on public streets and sidewalks despite availability of less restrictive alternatives."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "private_figure_defamation_doctrine",
+        "label": "Private Figure Defamation Doctrine",
+        "description": "The constitutional framework governing defamation actions brought by private figures, requiring proof of fault and falsity regarding statements of public concern, as established in Gertz v. Robert Welch, Inc. and refined in Philadelphia Newspapers v. Hepps.",
+        "area_id": "free_speech",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1974-06-25",
+        "valid_until": null,
+        "notes": "This doctrine allocates the burden of proving falsity to the private-figure plaintiff when the statements concern matters of public concern."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "falsity_burden_public_concern",
+        "label": "Burden of Proving Falsity in Public Concern Defamation",
+        "description": "A private-figure plaintiff in a defamation action must bear the burden of proving that statements of public concern are false, rather than the defendant bearing the burden of proving truth.",
+        "area_id": "free_speech",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1986-06-25",
+        "valid_until": null,
+        "notes": "This doctrine was established in Philadelphia Newspapers v. Hepps and represents a constitutional requirement that supersedes common law presumptions of falsity."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "content_based_speech_restriction",
+        "label": "Content-Based Speech Restriction Doctrine",
+        "description": "Government restrictions on speech that are based on the content of the expression are subject to heightened constitutional scrutiny and are presumptively unconstitutional unless narrowly tailored to serve a compelling government interest.",
+        "area_id": "free_speech",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1990-06-11",
+        "valid_until": null,
+        "notes": "Applied in Eichman to strike down the Flag Protection Act, which prohibited flag burning in political protest while allowing flag burning in disposal ceremonies, thereby targeting the content and viewpoint of the expression."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "ministerial_exception",
+        "label": "Ministerial Exception",
+        "description": "A doctrine under the First Amendment's Establishment and Free Exercise Clauses that permits religious institutions to control employment decisions regarding ministers without state interference, preventing employment discrimination claims by ministerial employees.",
+        "area_id": "freedom_of_association",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "2012-01-11",
+        "valid_until": null,
+        "notes": "Established and clarified by Hosanna-Tabor. The exception applies based on the employee's functional role and status as a minister, not limited to hiring and firing decisions made for explicitly religious reasons."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "rfra_substantial_burden_doctrine",
+        "label": "RFRA Substantial Burden Doctrine",
+        "description": "Under the Religious Freedom Restoration Act, a law that substantially burdens a person's exercise of religion is invalid unless the government demonstrates that the burden furthers a compelling governmental interest and is the least restrictive means of furthering that interest.",
+        "area_id": "free_exercise",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "2014-06-30",
+        "valid_until": null,
+        "notes": "As applied in Burwell v. Hobby Lobby Stores, this doctrine extends to for-profit corporations whose owners hold sincere religious beliefs."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "corporate_religious_exercise_doctrine",
+        "label": "Corporate Religious Exercise Doctrine",
+        "description": "For-profit corporations composed of individuals with sincere religious beliefs may assert claims under the Free Exercise Clause and RFRA, as corporations are persons capable of exercising religion through their owners' beliefs.",
+        "area_id": "free_exercise",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "2014-06-30",
+        "valid_until": null,
+        "notes": "Established in Burwell v. Hobby Lobby Stores; applies to closely held for-profit corporations."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "free_exercise_protection_against_discrimination",
+        "label": "Free Exercise Protection Against Religious Discrimination",
+        "description": "The Free Exercise Clause protects religious observers against unequal treatment and against laws that impose special disabilities on the basis of religious status. Laws that discriminate against religious schools or families based on religious status are subject to strict scrutiny.",
+        "area_id": "free_exercise",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "2020-07-01",
+        "valid_until": null,
+        "notes": "Established in Espinoza v. Montana Department of Revenue. The doctrine holds that neutral laws of general applicability that incidentally burden religion are distinct from laws that discriminate based on religious status."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "constitutional_right_to_abortion",
+        "label": "Constitutional Right to Abortion",
+        "description": "A woman has a constitutional right to abortion before viability of the fetus, protected by the Due Process Clause of the Fourteenth Amendment.",
+        "area_id": "substantive_due_process",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "2016-06-27",
+        "valid_until": null,
+        "notes": "Reaffirmed in Whole Woman's Health v. Hellerstedt as the foundational right against which abortion regulations are measured."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "racial_gerrymandering_doctrine",
+        "label": "Racial Gerrymandering Doctrine",
+        "description": "A reapportionment plan that is so highly irregular and bizarre in shape that it rationally cannot be understood as anything other than an effort to segregate voters based on race violates the Equal Protection Clause and is subject to strict scrutiny.",
+        "area_id": "equal_protection",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1995-06-29",
+        "valid_until": null,
+        "notes": "Established in Miller v. Johnson as an application and extension of Shaw v. Reno."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "nondelegation_doctrine",
+        "label": "Nondelegation Doctrine",
+        "description": "The constitutional principle that Congress cannot delegate its legislative power to another branch of government, except where an intelligible principle and specific directives govern the delegated authority.",
+        "area_id": "federalism",
+        "jurisdiction": [
+          "federal"
+        ],
+        "status": "active",
+        "valid_from": "1989-01-18",
+        "valid_until": null,
+        "notes": "As articulated in Mistretta, the nondelegation doctrine permits delegation to coordinate branches when sufficiently detailed and specific directives are provided."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "two_stage_interrogation_doctrine",
+        "label": "Two-Stage Interrogation and Curative Measures",
+        "description": "When police deliberately employ a two-stage interrogation strategy\u2014obtaining an initial unwarned confession followed by a post-warning confession\u2014curative measures (adequate warning and break) are required to render the post-warning confession admissible, unless the strategy was unintentional.",
+        "area_id": "criminal_procedure",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "2004-01-01",
+        "valid_until": null,
+        "notes": "Established by Missouri v. Seibert as a modification of Oregon v. Elstad's approach. The scope of this doctrine is limited by Justice Kennedy's concurrence to intentional two-stage strategies."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "fourth_amendment_standing",
+        "label": "Fourth Amendment Standing Doctrine",
+        "description": "The doctrine that Fourth Amendment rights are personal rights that may be asserted only by the person whose own constitutional rights were violated by the search or seizure, not vicariously by third parties or those merely present at the location searched.",
+        "area_id": "criminal_procedure",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1978-01-01",
+        "valid_until": null,
+        "notes": "Established in Rakas v. Illinois; reaffirms and clarifies the holding of Jones v. United States (1960). The doctrine rejects the 'target theory' which would have allowed any defendant at whom a search was directed to challenge it."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "warrantless_home_arrest_doctrine",
+        "label": "Warrantless Home Arrest Doctrine",
+        "description": "The Fourth Amendment prohibits police from making warrantless and nonconsensual entries into a suspect's home to make a routine felony arrest absent exigent circumstances or consent.",
+        "area_id": "criminal_procedure",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1980-04-15",
+        "valid_until": null,
+        "notes": "Established in Payton v. New York. Applies the Fourth Amendment protection of the home against warrantless arrests."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "school_search_doctrine",
+        "label": "Public School Search Doctrine",
+        "description": "The Fourth Amendment applies to searches conducted by public school officials, but school searches are subject to a modified standard that does not require a warrant or probable cause. Instead, school officials may conduct searches based on reasonable suspicion that the search will uncover evidence of a violation of school rules or the law.",
+        "area_id": "criminal_procedure",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1985-01-01",
+        "valid_until": null,
+        "notes": "Established in New Jersey v. TLO as a departure from the traditional warrant and probable cause requirements of the Fourth Amendment in the school context."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "fourth_amendment_home_curtilage",
+        "label": "Fourth Amendment Protection of the Home and Curtilage",
+        "description": "The front porch of a home is part of the home itself for Fourth Amendment purposes. Police officers cannot conduct searches on a home's porch without a warrant or a broader license than the one commonly given to the general public. The scope of the public license to approach a home's entrance is limited to ordinary citizens invited to communicate with occupants.",
+        "area_id": "criminal_procedure",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "2013-03-26",
+        "valid_until": null,
+        "notes": "Established in Florida v. Jardines; addresses the scope of Fourth Amendment protection for residential curtilage and the limits of the public license to approach a home's entrance."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "fourth_amendment_privacy_expectation_home",
+        "label": "Heightened Privacy Expectation in the Home",
+        "description": "People have a heightened expectation of privacy in their homes and the areas immediately surrounding their homes. The use of devices not in public use to learn details about the home violates this privacy expectation and constitutes a search under the Fourth Amendment.",
+        "area_id": "criminal_procedure",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "2013-03-26",
+        "valid_until": null,
+        "notes": "Articulated in Justice Kagan's concurrence in Florida v. Jardines; emphasizes privacy-based rationale for Fourth Amendment protection of the home."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "student_athlete_drug_testing",
+        "label": "Student Athlete Drug Testing",
+        "description": "The doctrine permitting random urinalysis drug testing of high school student athletes based on balancing Fourth Amendment privacy interests against governmental interests in student safety and the reduced privacy expectations of students in school settings.",
+        "area_id": "criminal_procedure",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1995-06-26",
+        "valid_until": null,
+        "notes": "Established in Vernonia School District v. Acton as a specific application of Fourth Amendment reasonableness balancing in the school context."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "reasonable_expectation_of_privacy",
+        "label": "Reasonable Expectation of Privacy",
+        "description": "A foundational Fourth Amendment doctrine establishing that the Constitution protects only those privacy interests for which a person has a reasonable expectation of privacy, not merely a subjective expectation.",
+        "area_id": "criminal_procedure",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1988-01-01",
+        "valid_until": null,
+        "notes": "As applied in California v. Greenwood, there is no reasonable expectation of privacy in garbage placed at the curbside for public pickup."
       }
     ],
     "areas": [
@@ -17658,6 +18008,796 @@
           }
         ],
         "notes": "Consolidated cases Nos. 16-476 and 16-477. Majority opinion joined by Roberts, Kennedy, Thomas, Kagan, and Gorsuch; Breyer joined all but Part VI-B. Ginsburg's dissent joined by Sotomayor and Breyer in part."
+      },
+      {
+        "@type": "Case",
+        "id": "cox_v_louisiana_1965",
+        "short_name": "Cox v. Louisiana",
+        "full_name": "B. Elton Cox v. State of Louisiana",
+        "citation": "379 U.S. 536 (1965)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1965-01-01",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "Louisiana's disturbing the peace statute is unconstitutionally vague on its face, and enforcement of the obstructing public passages statute with unbridled discretion violates the First and Fourteenth Amendment rights to freedom of speech and assembly.",
+        "holding_type": "affirmative",
+        "majority_author": "Goldberg",
+        "per_curiam": false,
+        "vote": "9-0",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1965-01-01",
+        "valid_until": null,
+        "opinions": [
+          {
+            "type": "concurrence",
+            "author": "Black",
+            "doctrinal_significance": "Concurred as to the disturbing the peace statute and the obstructing public passages conviction.",
+            "joined_by": [],
+            "adopted_in": []
+          },
+          {
+            "type": "concurrence",
+            "author": "Clark",
+            "doctrinal_significance": "Concurred as to the disturbing the peace statute and the obstructing public passages conviction.",
+            "joined_by": [],
+            "adopted_in": []
+          },
+          {
+            "type": "dissent",
+            "author": "White",
+            "doctrinal_significance": "Dissented as to the obstructing public passages conviction.",
+            "joined_by": [
+              "Harlan"
+            ],
+            "adopted_in": []
+          }
+        ],
+        "notes": "The case involved two separate issues: the disturbing the peace statute (No. 24) and the courthouse picketing statute (No. 49). The Court was unanimous (9-0) on the disturbing the peace statute being unconstitutionally vague. On the obstructing public passages issue, a 7-2 majority found the conviction violated First and Fourteenth Amendment rights, with Justices White and Harlan dissenting."
+      },
+      {
+        "@type": "Case",
+        "id": "clark_v_community_for_creative_non_violence_1984",
+        "short_name": "Clark v. Community for Creative Non-Violence",
+        "full_name": "Clark v. Community for Creative Non-Violence",
+        "citation": "468 U.S. 288 (1984)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1984-06-29",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "A National Park Service regulation prohibiting camping in certain parks does not violate the First Amendment when applied to prohibit demonstrators from sleeping in Lafayette Park and the Mall in connection with a demonstration about the plight of the homeless.",
+        "holding_type": "by_negation",
+        "majority_author": "White",
+        "per_curiam": false,
+        "vote": null,
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1984-06-29",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "Court of Appeals was fractured with 6 judges believing the regulation violated the First Amendment and 5 judges disagreeing. The Supreme Court reversed the Court of Appeals.",
+        "courtlistener_id": "111245"
+      },
+      {
+        "@type": "Case",
+        "id": "frisby_v_schultz_1988",
+        "short_name": "Frisby v. Schultz",
+        "full_name": "Frisby v. Schultz",
+        "citation": "487 U.S. 474 (1988)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1988-01-01",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "affirmed",
+        "holding": "A municipality may enact a complete ban on picketing before or about any residence to protect the sanctity of the home and residential privacy, even though such a ban restricts First Amendment speech in a public forum, because the government has a significant interest in protecting residential privacy and the ban is narrowly tailored to serve that interest.",
+        "holding_type": "affirmative",
+        "majority_author": null,
+        "per_curiam": false,
+        "vote": null,
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1988-01-01",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "The text provided is an excerpt from the opinion of the Court. The full opinion and vote count are not included in the source material. The holding reflects the Court's affirmation of the ordinance's constitutionality based on the government's interest in protecting residential privacy.",
+        "courtlistener_id": "9073897"
+      },
+      {
+        "@type": "Case",
+        "id": "international_society_for_krishna_consciousness_v_lee_1992",
+        "short_name": "ISKCON v. Lee",
+        "full_name": "International Society for Krishna Consciousness, Inc. v. Lee",
+        "citation": "505 U.S. 672 (1992)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1992-01-01",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "An airport terminal is not a public forum, and a regulation banning repetitive solicitation of money within airline terminals need only satisfy a reasonableness standard, which the regulation satisfies because solicitation may slow contributors, cause duress, or facilitate fraud.",
+        "holding_type": "affirmative",
+        "majority_author": null,
+        "per_curiam": false,
+        "vote": "6-3",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1992-01-01",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "The Court reversed the district court's grant of an injunction. In a related case, the Court held invalid the airport authority's ban on literature distribution in airport terminals."
+      },
+      {
+        "@type": "Case",
+        "id": "hill_v_colorado_2000",
+        "short_name": "Hill v. Colorado",
+        "full_name": "Leila Hill v. State of Colorado",
+        "citation": "530 U.S. 703 (2000)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "2000-01-01",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "affirmed",
+        "holding": "A content-neutral statute regulating the places where speech may occur, rather than the speech itself, that restricts unwanted approaches within 100 feet of a health care facility entrance to protect the unwilling listener's interest in avoiding unwanted communication is constitutional under the First Amendment.",
+        "holding_type": "affirmative",
+        "majority_author": "Stevens",
+        "per_curiam": false,
+        "vote": "6-3",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "2000-01-01",
+        "valid_until": null,
+        "opinions": [
+          {
+            "type": "dissent",
+            "author": "Scalia",
+            "doctrinal_significance": "Disagreed with the majority's characterization of the statute as a regulation of conduct rather than speech.",
+            "joined_by": [
+              "Thomas",
+              "Kennedy"
+            ],
+            "adopted_in": []
+          }
+        ],
+        "notes": "The Court held that the statute is a regulation of the places where speech may occur, not a regulation of speech content. The statute does not require standing speakers to move away from passersby and does not restrict the content of messages, but makes it more difficult to give unwanted advice in the form of handbills or leaflets to persons entering or leaving medical facilities."
+      },
+      {
+        "@type": "Case",
+        "id": "mccullen_v_coakley_2014",
+        "short_name": "McCullen v. Coakley",
+        "full_name": "McCullen v. Coakley",
+        "citation": "573 U.S. 464 (2014)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "2014-06-26",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "A content-neutral time, place, and manner restriction on speech outside abortion clinics that substantially burdens First Amendment rights by preventing core political speech on public streets and sidewalks is not sufficiently narrowly tailored to serve a significant government interest when less restrictive alternatives are available.",
+        "holding_type": "affirmative",
+        "majority_author": "Roberts",
+        "per_curiam": false,
+        "vote": "9-0",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "2014-06-26",
+        "valid_until": null,
+        "opinions": [
+          {
+            "type": "concurrence_in_judgment",
+            "author": "Scalia",
+            "doctrinal_significance": "Argued the law is content-based and subject to strict scrutiny; advocated for overruling Hill v. Colorado as inconsistent with First Amendment jurisprudence.",
+            "joined_by": [
+              "Kennedy",
+              "Thomas"
+            ],
+            "adopted_in": []
+          },
+          {
+            "type": "concurrence_in_judgment",
+            "author": "Alito",
+            "doctrinal_significance": "Argued the law's exemption for clinic employees and volunteers constitutes viewpoint discrimination.",
+            "joined_by": [],
+            "adopted_in": []
+          }
+        ],
+        "notes": "Unanimous judgment (9-0) but fractured reasoning. Majority applied content-neutral time, place, and manner analysis without strict scrutiny. Justice Scalia's concurrence argued for content-based analysis and strict scrutiny, joined by Kennedy and Thomas. Justice Alito wrote separately on viewpoint discrimination. The majority did not address whether Hill v. Colorado should be limited or overruled.",
+        "courtlistener_id": "2680591"
+      },
+      {
+        "@type": "Case",
+        "id": "philadelphia_newspapers_v_hepps_1986",
+        "short_name": "Philadelphia Newspapers v. Hepps",
+        "full_name": "Philadelphia Newspapers, Inc. v. Maurice S. Hepps",
+        "citation": "475 U.S. 767 (1986)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1986-06-25",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "In a defamation action brought by a private figure against a newspaper publisher concerning matters of public concern, the private-figure plaintiff bears the burden of proving that the statements at issue are false, not the defendant.",
+        "holding_type": "affirmative",
+        "majority_author": "White",
+        "per_curiam": false,
+        "vote": null,
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1986-06-25",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "The Court clarified the allocation of burden of proof for falsity in private-figure defamation cases involving matters of public concern, building on Gertz v. Robert Welch, Inc., 418 U.S. 323 (1974)."
+      },
+      {
+        "@type": "Case",
+        "id": "spence_v_washington_1974",
+        "short_name": "Spence v. Washington",
+        "full_name": "Spence v. Washington",
+        "citation": "418 U.S. 405 (1974)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1974-01-01",
+        "opinion_form": "per_curiam",
+        "procedural_disposition": "reversed",
+        "holding": "A state statute prohibiting the display of a United States flag with attached or superimposed figures, symbols, or extraneous material, as applied to the display of a privately owned flag with a peace symbol affixed as political protest, impermissibly infringes protected expression under the First Amendment.",
+        "holding_type": "affirmative",
+        "majority_author": null,
+        "per_curiam": true,
+        "vote": null,
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1974-01-01",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "Per curiam opinion. The Court reversed the Washington Supreme Court's affirmance of appellant's conviction under Wash. Rev. Code \u00a7 9.86.020 (improper use statute). The case involved symbolic speech\u2014the display of a privately owned flag with a peace symbol affixed as protest against the Cambodia invasion and Kent State killings.",
+        "courtlistener_id": "109092"
+      },
+      {
+        "@type": "Case",
+        "id": "united_states_v_eichman_1990",
+        "short_name": "United States v. Eichman",
+        "full_name": "United States v. Eichman",
+        "citation": "496 U.S. 310 (1990)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1990-06-11",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "A statute that prohibits flag burning as a form of political protest violates the First Amendment because it is content-based and suppresses free expression.",
+        "holding_type": "affirmative",
+        "majority_author": "Brennan",
+        "per_curiam": false,
+        "vote": "5-4",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1990-06-11",
+        "valid_until": null,
+        "opinions": [
+          {
+            "type": "dissent",
+            "author": null,
+            "doctrinal_significance": "Four justices dissented from the majority's First Amendment analysis.",
+            "joined_by": [],
+            "adopted_in": []
+          }
+        ],
+        "notes": "Decided shortly after Texas v. Johnson (1989), which reached a similar conclusion regarding flag burning as protected speech. The Flag Protection Act was struck down as content-based suppression of free expression. Eichman burned a flag on the steps of the U.S. Capitol in political protest.",
+        "courtlistener_id": "9097376"
+      },
+      {
+        "@type": "Case",
+        "id": "memoirs_v_massachusetts_1966",
+        "short_name": "Memoirs v. Massachusetts",
+        "full_name": "A Book Named \"John Cleland's Memoirs of a Woman of Pleasure\" v. Attorney General of Massachusetts",
+        "citation": "383 U.S. 413 (1966)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1966-01-01",
+        "opinion_form": "plurality",
+        "procedural_disposition": "reversed",
+        "holding": "A book cannot be deemed obscene under the Roth test unless it is utterly without redeeming social value; the presence of prurient appeal and patent offensiveness alone is insufficient to establish obscenity if the work possesses some redeeming social value.",
+        "holding_type": "affirmative",
+        "majority_author": "Brennan (plurality)",
+        "per_curiam": false,
+        "vote": "6-3",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1966-01-01",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "Plurality opinion. The Court applied and clarified the Roth v. United States obscenity test by establishing that redeeming social value is a necessary component of the obscenity analysis."
+      },
+      {
+        "@type": "Case",
+        "id": "hosanna_tabor_evangelical_lutheran_church_v_eeoc_2012",
+        "short_name": "Hosanna-Tabor v. EEOC",
+        "full_name": "Hosanna-Tabor Evangelical Lutheran Church and School v. Equal Employment Opportunity Commission",
+        "citation": "565 U.S. 171 (2012)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "2012-01-11",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "A religious institution may invoke the ministerial exception under the First Amendment to prevent an employee from bringing an employment discrimination claim when the employee functions as a minister, regardless of whether the employment decision was made for religious reasons or involved secular duties.",
+        "holding_type": "affirmative",
+        "majority_author": "Roberts",
+        "per_curiam": false,
+        "vote": "9-0",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "2012-01-11",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "Unanimous decision. Chief Justice Roberts held that the ministerial exception applies based on the employee's status and role as a minister, not solely on whether the employer's reason for termination was religious. The Court rejected a narrow construction of the exception and affirmed its applicability to prevent state interference with religious governance."
+      },
+      {
+        "@type": "Case",
+        "id": "burwell_v_hobby_lobby_stores_2014",
+        "short_name": "Burwell v. Hobby Lobby Stores",
+        "full_name": "Burwell v. Hobby Lobby Stores, Inc.",
+        "citation": "573 U.S. 682 (2014)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "2014-06-30",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "The Religious Freedom Restoration Act applies to for-profit corporations, and the contraception mandate substantially burdens the religious exercise of such corporations without using the least restrictive means of furthering the government's interests, as a less restrictive accommodation exists in the form of the exemption already available to non-profit religious organizations.",
+        "holding_type": "affirmative",
+        "majority_author": "Alito",
+        "per_curiam": false,
+        "vote": "5-4",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "2014-06-30",
+        "valid_until": null,
+        "opinions": [
+          {
+            "type": "concurrence",
+            "author": "Kennedy",
+            "doctrinal_significance": "Argued that the government failed to meet its burden to show a meaningful difference between non-profit religious institutions and for-profit religious corporations under RFRA.",
+            "joined_by": [],
+            "adopted_in": []
+          },
+          {
+            "type": "dissent",
+            "author": "Ginsburg",
+            "doctrinal_significance": "Argued that the majority misconstrued RFRA and that Employment Division v. Smith precludes the holding; religious beliefs must not impinge on third-party rights.",
+            "joined_by": [
+              "Sotomayor",
+              "Breyer",
+              "Kagan"
+            ],
+            "adopted_in": []
+          },
+          {
+            "type": "dissent",
+            "author": "Breyer",
+            "doctrinal_significance": "Argued that the Court need not decide whether for-profit corporations or their owners may sue under RFRA.",
+            "joined_by": [
+              "Kagan"
+            ],
+            "adopted_in": []
+          }
+        ],
+        "notes": "5-4 decision. The majority held that RFRA applies to for-profit corporations and that the contraception mandate substantially burdens religious exercise without using the least restrictive means. The Court limited its holding to the contraceptive mandate and did not address other potential religious objections to the ACA.",
+        "courtlistener_id": "2681317"
+      },
+      {
+        "@type": "Case",
+        "id": "espinoza_v_montana_department_of_revenue_2020",
+        "short_name": "Espinoza v. Montana Department of Revenue",
+        "full_name": "Kendra Espinoza, et al. v. Montana Department of Revenue",
+        "citation": "591 U.S. 464 (2020)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "2020-07-01",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "A state constitutional provision that excludes religious schools from a generally available tax-credit scholarship program violates the Free Exercise Clause because it discriminates against religious schools and families based on religious status, and such discrimination is subject to strict scrutiny, which the state's interest in greater church-state separation does not satisfy.",
+        "holding_type": "affirmative",
+        "majority_author": "Roberts",
+        "per_curiam": false,
+        "vote": "5-4",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "2020-07-01",
+        "valid_until": null,
+        "opinions": [
+          {
+            "type": "concurrence",
+            "author": "Thomas",
+            "doctrinal_significance": "Argues that the Court's interpretation of the Establishment Clause hampers free exercise rights.",
+            "joined_by": [
+              "Gorsuch"
+            ],
+            "adopted_in": []
+          },
+          {
+            "type": "concurrence",
+            "author": "Alito",
+            "doctrinal_significance": "Argues that original motivation should not bear on present constitutionality of a provision, but the majority reached the correct conclusion.",
+            "joined_by": [],
+            "adopted_in": []
+          },
+          {
+            "type": "concurrence",
+            "author": "Gorsuch",
+            "doctrinal_significance": "Questions the characterization of the Montana Constitution as discriminating based on religious status rather than religious use.",
+            "joined_by": [],
+            "adopted_in": []
+          },
+          {
+            "type": "dissent",
+            "author": "Ginsburg",
+            "doctrinal_significance": "Argues that neutral government action is not unconstitutional solely because it fails to benefit religious exercise, and the Montana decision does not burden religious exercise.",
+            "joined_by": [
+              "Kagan"
+            ],
+            "adopted_in": []
+          },
+          {
+            "type": "dissent",
+            "author": "Breyer",
+            "doctrinal_significance": "Argues that the majority's approach risks entanglement and conflict that the Religion Clauses prevent, and that Locke v. Davey controlled the outcome.",
+            "joined_by": [
+              "Kagan"
+            ],
+            "adopted_in": []
+          },
+          {
+            "type": "dissent",
+            "author": "Sotomayor",
+            "doctrinal_significance": "Argues that the Court resolved a constitutional question not presented and violated Article III principles.",
+            "joined_by": [],
+            "adopted_in": []
+          }
+        ],
+        "notes": "5-4 decision. The majority held that Montana's no-aid provision, as applied to exclude religious schools from a tax-credit scholarship program, violates the Free Exercise Clause. The Court applied strict scrutiny to the state's discriminatory exclusion based on religious status."
+      },
+      {
+        "@type": "Case",
+        "id": "whole_womans_health_v_hellerstedt_2016",
+        "short_name": "Whole Woman's Health v. Hellerstedt",
+        "full_name": "Whole Woman's Health v. Cole Hellerstedt",
+        "citation": "579 U.S. 582 (2016)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "2016-06-27",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "State abortion regulations that place a substantial obstacle in the path of someone seeking to exercise their constitutional right to abortion before viability impose an undue burden and are unconstitutional; courts must weigh the extent to which laws serve stated government interests against the burdens they impose, and such review need not be wholly deferential to legislative fact-finding.",
+        "holding_type": "affirmative",
+        "majority_author": "Breyer",
+        "per_curiam": false,
+        "vote": "5-3",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "2016-06-27",
+        "valid_until": null,
+        "opinions": [
+          {
+            "type": "concurrence",
+            "author": "Ginsburg",
+            "doctrinal_significance": "Argued that modern abortions are so safe relative to other medical procedures, including childbirth, that laws making abortion access more difficult in the name of safety cannot pass judicial review.",
+            "joined_by": [],
+            "adopted_in": []
+          },
+          {
+            "type": "dissent",
+            "author": "Thomas",
+            "doctrinal_significance": "Argued that the majority misapplied judicial scrutiny standards, that third-party standing was improper, and that the undue burden test was being applied with strict scrutiny-like rigor without precedential support.",
+            "joined_by": [],
+            "adopted_in": []
+          },
+          {
+            "type": "dissent",
+            "author": "Alito",
+            "doctrinal_significance": "Argued that claims were barred by claim preclusion doctrine, that petitioners failed to show provisions affected a large fraction of women, and that the Court should have upheld provisions in areas where they did not impose undue burden.",
+            "joined_by": [
+              "Roberts",
+              "Thomas"
+            ],
+            "adopted_in": []
+          }
+        ],
+        "notes": "5-3 decision. Justice Kagan did not participate. The majority applied the undue burden standard from Planned Parenthood v. Casey, weighing the burden on abortion access against the asserted state interests in women's health and fetal life."
+      },
+      {
+        "@type": "Case",
+        "id": "miller_v_johnson_1995",
+        "short_name": "Miller v. Johnson",
+        "full_name": "Miller v. Johnson",
+        "citation": "515 U.S. 900 (1995)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1995-06-29",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "A reapportionment plan that is so highly irregular and bizarre in shape that it rationally cannot be understood as anything other than an effort to segregate voters based on race is subject to strict scrutiny under the Equal Protection Clause, applying the rule from Shaw v. Reno that race cannot be the overriding, predominant force in the redistricting process.",
+        "holding_type": "affirmative",
+        "majority_author": "Kennedy",
+        "per_curiam": false,
+        "vote": "5-4",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1995-06-29",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "The case applies and extends the Shaw v. Reno framework to hold that bizarrely shaped districts designed to segregate voters by race trigger strict scrutiny under equal protection.",
+        "courtlistener_id": "9150042"
+      },
+      {
+        "@type": "Case",
+        "id": "mistretta_v_united_states_1989",
+        "short_name": "Mistretta v. United States",
+        "full_name": "John Mistretta v. United States",
+        "citation": "488 U.S. 361 (1989)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1989-01-18",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "affirmed",
+        "holding": "Congress may delegate legislative power to an executive or judicial agency provided the delegation includes an intelligible principle and specific directives that govern the delegated authority's exercise of discretion.",
+        "holding_type": "affirmative",
+        "majority_author": "Blackmun",
+        "per_curiam": false,
+        "vote": "8-1",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1989-01-18",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "The Court upheld the Sentencing Reform Act of 1984 and the creation of the United States Sentencing Commission as a valid delegation of legislative power. The Commission was established as part of the judicial branch with members appointed by the President and approved by the Senate."
+      },
+      {
+        "@type": "Case",
+        "id": "oregon_v_elstad_1985",
+        "short_name": "Oregon v. Elstad",
+        "full_name": "Oregon v. Elstad",
+        "citation": "470 U.S. 298 (1985)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1985-01-01",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "affirmed",
+        "holding": "An initial unwarned confession does not render a defendant incapable of voluntarily waiving Miranda rights and confessing again after proper warnings.",
+        "holding_type": "affirmative",
+        "majority_author": null,
+        "per_curiam": false,
+        "vote": null,
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1985-01-01",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "Stub node \u2014 cited and distinguished in Missouri v. Seibert. Full node to be added when this case is modeled.",
+        "courtlistener_id": "111364"
+      },
+      {
+        "@type": "Case",
+        "id": "missouri_v_seibert_2004",
+        "short_name": "Missouri v. Seibert",
+        "full_name": "Missouri v. Seibert",
+        "citation": "542 U.S. 600 (2004)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "2004-01-01",
+        "opinion_form": "plurality",
+        "procedural_disposition": "reversed",
+        "holding": "When police intentionally employ a two-stage interrogation strategy\u2014obtaining an initial confession without Miranda warnings and then, after a break and Miranda warnings, obtaining a second confession\u2014the post-warning confession is admissible only if the Miranda warning and accompanying break are sufficient to give the suspect reasonable belief that she has the right not to speak with police.",
+        "holding_type": "affirmative",
+        "majority_author": "Souter (plurality)",
+        "per_curiam": false,
+        "vote": "5-4",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "2004-01-01",
+        "valid_until": null,
+        "opinions": [
+          {
+            "type": "concurrence",
+            "author": "Kennedy",
+            "doctrinal_significance": "Provided the fifth vote; would limit the plurality's rule to intentional two-stage strategies, leaving Elstad's principles to govern unintentional sequential confessions.",
+            "joined_by": [],
+            "adopted_in": []
+          },
+          {
+            "type": "dissent",
+            "author": null,
+            "doctrinal_significance": "Four justices dissented, presumably defending the application of Elstad's principles to the facts.",
+            "joined_by": [],
+            "adopted_in": []
+          }
+        ],
+        "notes": "Fractured decision. The plurality (Souter, J.) announced a rule requiring curative measures when deliberate two-step interrogation is employed. Justice Kennedy's concurrence provided the fifth vote but would apply a narrower rule limited to intentional strategies. No single rationale commanded a majority of the Court.",
+        "courtlistener_id": "137002"
+      },
+      {
+        "@type": "Case",
+        "id": "rakas_v_illinois_1978",
+        "short_name": "Rakas v. Illinois",
+        "full_name": "Rakas v. Illinois",
+        "citation": "439 U.S. 128 (1978)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1978-01-01",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "affirmed",
+        "holding": "Fourth Amendment rights are personal rights that may not be asserted vicariously; a person seeking to suppress evidence must demonstrate that he was himself the victim of the search or seizure, not merely that a search was directed at someone else or that he was present at the location searched.",
+        "holding_type": "affirmative",
+        "majority_author": "Rehnquist",
+        "per_curiam": false,
+        "vote": null,
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1978-01-01",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "The Court reaffirmed the holding of Jones v. United States (1960) that Fourth Amendment rights are personal and cannot be asserted vicariously. The opinion indicates the Court was reconsidering the 'standing' terminology but the holding is clear on the substantive rule.",
+        "courtlistener_id": "9018203"
+      },
+      {
+        "@type": "Case",
+        "id": "payton_v_new_york_1980",
+        "short_name": "Payton v. New York",
+        "full_name": "Payton v. New York",
+        "citation": "445 U.S. 573",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1980-04-15",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "The Fourth Amendment, made applicable to the States by the Fourteenth Amendment, prohibits police from making a warrantless and nonconsensual entry into a suspect's home to make a routine felony arrest absent exigent circumstances or consent.",
+        "holding_type": "affirmative",
+        "majority_author": "Stevens",
+        "per_curiam": false,
+        "vote": null,
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1980-04-15",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "The Court reversed the New York Court of Appeals. The opinion addresses the constitutional question left open in United States v. Watson regarding warrantless arrests in the home.",
+        "courtlistener_id": "110235"
+      },
+      {
+        "@type": "Case",
+        "id": "new_jersey_v_tlo_1985",
+        "short_name": "New Jersey v. TLO",
+        "full_name": "New Jersey v. T.L.O.",
+        "citation": "469 U.S. 325 (1985)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1985-01-01",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "Public school officials may conduct searches of students without a warrant if they have reasonable suspicion that the search will uncover evidence of a violation of school rules or the law, and the search is not excessively intrusive in light of the age and sex of the student and the nature of the infraction.",
+        "holding_type": "affirmative",
+        "majority_author": "White",
+        "per_curiam": false,
+        "vote": null,
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1985-01-01",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "The Court held that the Fourth Amendment applies to searches conducted by public school officials, but established a modified standard for such searches that does not require a warrant or probable cause. The search at issue did not violate the Fourth Amendment under this standard.",
+        "courtlistener_id": "111301"
+      },
+      {
+        "@type": "Case",
+        "id": "florida_v_jardines_2013",
+        "short_name": "Florida v. Jardines",
+        "full_name": "State of Florida v. Joelis Jardines",
+        "citation": "569 U.S. 1 (2013)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "2013-03-26",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "affirmed",
+        "holding": "The front porch of a home is part of the home itself for Fourth Amendment purposes, and police officers cannot conduct a search on a home's porch without a warrant or broader license than the one commonly given to the general public, as using a drug-detection dog to detect narcotics at the front door constitutes an unlawful search in violation of the Fourth Amendment.",
+        "holding_type": "affirmative",
+        "majority_author": "Scalia",
+        "per_curiam": false,
+        "vote": "5-4",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "2013-03-26",
+        "valid_until": null,
+        "opinions": [
+          {
+            "type": "concurrence",
+            "author": "Kagan",
+            "doctrinal_significance": "Argued that the case involved privacy expectations in addition to property rights; emphasized heightened expectation of privacy in homes and surrounding areas, and that use of a non-public device (drug-sniffing dog) to learn details about the home constitutes an illegal search.",
+            "joined_by": [
+              "Ginsburg",
+              "Sotomayor"
+            ],
+            "adopted_in": []
+          },
+          {
+            "type": "dissent",
+            "author": "Alito",
+            "doctrinal_significance": "Argued that the majority's interpretation of the public license to approach a front door is too narrow and should extend to police officers collecting evidence; contended that common law of trespass does not limit the public license to a particular category of visitors or specific purposes.",
+            "joined_by": [
+              "Roberts",
+              "Kennedy",
+              "Breyer"
+            ],
+            "adopted_in": []
+          }
+        ],
+        "notes": "5-4 decision. Majority opinion by Justice Scalia affirmed the Florida Supreme Court's decision that the drug dog's sniff at the front porch constituted a Fourth Amendment search."
+      },
+      {
+        "@type": "Case",
+        "id": "vernonia_school_district_v_acton_1995",
+        "short_name": "Vernonia School District v. Acton",
+        "full_name": "Vernonia School District 47J v. Acton",
+        "citation": "515 U.S. 646 (1995)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1995-06-26",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "affirmed",
+        "holding": "Random urinalysis drug testing of high school student athletes is reasonable under the Fourth Amendment when the school district has legitimate governmental interests in student safety and the intrusion on privacy is minimal, particularly given students' reduced expectation of privacy in school settings.",
+        "holding_type": "affirmative",
+        "majority_author": "Thomas",
+        "per_curiam": false,
+        "vote": "6-3",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1995-06-26",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "The Court applied a balancing test weighing the intrusion on Fourth Amendment interests against legitimate governmental interests. The decision emphasized the reduced privacy expectations of student athletes under state supervision during school hours.",
+        "courtlistener_id": "9151718"
+      },
+      {
+        "@type": "Case",
+        "id": "california_v_greenwood_1988",
+        "short_name": "California v. Greenwood",
+        "full_name": "California v. Greenwood",
+        "citation": "486 U.S. 35 (1988)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1988-01-01",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "affirmed",
+        "holding": "Garbage placed at the curbside for pickup is not protected by the Fourth Amendment because there is no reasonable expectation of privacy in trash that is readily accessible to the public.",
+        "holding_type": "affirmative",
+        "majority_author": null,
+        "per_curiam": false,
+        "vote": "6-2",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1988-01-01",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "The Court reasoned that trash left at the curb is readily accessible to animals, children, scavengers, snoops, and other members of the public, and police cannot be expected to ignore criminal activity observable by any member of the public.",
+        "courtlistener_id": "112067"
       }
     ],
     "doctrinal_tests": [
@@ -21721,40 +22861,403 @@
       },
       {
         "@type": "DoctrinalTest",
-        "id": "schechter_intelligible_principle_test",
-        "label": "Intelligible Principle Test",
-        "description": "A delegation of legislative authority is constitutional only if Congress establishes intelligible principles or standards that guide and limit the delegatee's discretion in implementing the delegated authority.",
-        "area_id": "separation_of_powers",
-        "source_case_id": "schechter_poultry_corp_v_united_states_1935",
-        "scrutiny_level": "per_se",
+        "id": "clark_symbolic_conduct_test",
+        "label": "Symbolic Conduct Protection Test",
+        "description": "A test for determining whether non-verbal conduct qualifies for First Amendment protection and whether a regulation of such conduct is constitutional. The test examines whether the conduct is sufficiently expressive and whether the government regulation is narrowly tailored to serve a significant government interest.",
+        "area_id": "free_speech",
+        "source_case_id": "clark_v_community_for_creative_non_violence_1984",
+        "scrutiny_level": "intermediate",
         "burden": "government",
-        "test_form": "threshold_then_conjunctive",
+        "test_form": "conjunctive",
         "prongs": [
           {
             "number": 1,
-            "label": "Intelligible Principle or Standard",
-            "description": "Congress must establish intelligible principles or standards that define the scope and limits of the delegated authority.",
-            "burden_note": "Government must demonstrate that Congress provided meaningful guidance.",
-            "valid_from": "1935-05-27",
+            "label": "Expressive Conduct Element",
+            "description": "The conduct must be sufficiently expressive to warrant First Amendment protection. The conduct must communicate a particularized message and there must be a great likelihood that the message would be understood by those viewing it.",
+            "burden_note": "Challenger must demonstrate the conduct is expressive.",
+            "valid_from": "1984-06-29",
             "valid_until": null,
             "contested": false,
             "contest_note": null
           },
           {
             "number": 2,
-            "label": "Absence of Unbridled Discretion",
-            "description": "The delegatee cannot be granted unbridled or unfettered discretion to make whatever laws or regulations it believes necessary to achieve a general goal.",
-            "burden_note": "Government must demonstrate that the delegatee's discretion is meaningfully constrained.",
-            "valid_from": "1935-05-27",
+            "label": "Government Interest and Narrow Tailoring",
+            "description": "If the conduct is expressive, the government regulation must further a significant government interest and must be narrowly tailored to serve that interest without suppressing the expressive element.",
+            "burden_note": "Government must demonstrate the regulation serves a significant interest and is narrowly tailored.",
+            "valid_from": "1984-06-29",
             "valid_until": null,
             "contested": false,
             "contest_note": null
           }
         ],
         "status": "active",
-        "valid_from": "1935-05-27",
+        "valid_from": "1984-06-29",
         "valid_until": null,
-        "notes": "This test articulates the constitutional requirement that delegations of legislative authority must be accompanied by intelligible principles or standards. The Court emphasized that the NIRA failed this test because it provided no rules or standards to evaluate industrial activity."
+        "notes": "This test applies to non-verbal conduct that may qualify for First Amendment protection. The Court held that sleeping in tents, while potentially expressive, could be regulated by the no-camping rule because the regulation served the significant government interest in maintaining the parks and was not aimed at suppressing the expressive element."
+      },
+      {
+        "@type": "DoctrinalTest",
+        "id": "iskcon_reasonableness_test",
+        "label": "Non-Public Forum Reasonableness Test",
+        "description": "A standard for evaluating restrictions on speech and expressive conduct in non-public forums such as airport terminals. The regulation need only be reasonable in light of the forum's purpose and the government's legitimate interests.",
+        "area_id": "free_speech",
+        "source_case_id": "international_society_for_krishna_consciousness_v_lee_1992",
+        "scrutiny_level": "rational_basis",
+        "burden": "challenger",
+        "test_form": "balancing",
+        "prongs": [
+          {
+            "number": 1,
+            "label": "Non-Public Forum Classification",
+            "description": "The forum must be classified as a non-public forum, not a traditional public forum or designated public forum.",
+            "burden_note": "Challenger must establish that the forum is a traditional or designated public forum to receive heightened protection.",
+            "valid_from": "1992",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 2,
+            "label": "Reasonableness of Restriction",
+            "description": "The regulation must be reasonable in light of the forum's purpose and the government's legitimate interests, such as preventing fraud, duress, or obstruction of passage.",
+            "burden_note": "Government must demonstrate that the restriction is reasonable; challenger must show it is unreasonable.",
+            "valid_from": "1992",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          }
+        ],
+        "status": "active",
+        "valid_from": "1992",
+        "valid_until": null,
+        "notes": "This test applies to non-public forums and uses rational basis scrutiny rather than strict scrutiny. The Court found the airport terminal ban on repetitive solicitation reasonable because solicitation may slow contributors, cause duress, or facilitate fraud."
+      },
+      {
+        "@type": "DoctrinalTest",
+        "id": "roth_memoirs_obscenity_test",
+        "label": "Roth-Memoirs Obscenity Test",
+        "description": "A three-part test for determining obscenity: (1) whether the dominant theme of the material taken as a whole appeals to prurient interest; (2) whether the material is patently offensive by contemporary community standards; and (3) whether the material is utterly without redeeming social value.",
+        "area_id": "free_speech",
+        "source_case_id": "memoirs_v_massachusetts_1966",
+        "scrutiny_level": "per_se",
+        "burden": "government",
+        "test_form": "conjunctive",
+        "prongs": [
+          {
+            "number": 1,
+            "label": "Prurient Interest",
+            "description": "Whether the dominant theme of the material taken as a whole appeals to prurient interest in sex.",
+            "burden_note": "Government must establish this element.",
+            "valid_from": "1966-01-01",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 2,
+            "label": "Patent Offensiveness",
+            "description": "Whether the material is patently offensive by contemporary community standards.",
+            "burden_note": "Government must establish this element.",
+            "valid_from": "1966-01-01",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 3,
+            "label": "Redeeming Social Value",
+            "description": "Whether the material is utterly without redeeming social value. The material cannot be deemed obscene if it possesses any redeeming social value, even if it appeals to prurient interest and is patently offensive.",
+            "burden_note": "Government must prove the material is utterly without redeeming social value; the defendant may establish redeeming social value as a defense.",
+            "valid_from": "1966-01-01",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          }
+        ],
+        "status": "active",
+        "valid_from": "1966-01-01",
+        "valid_until": null,
+        "notes": "Memoirs clarified the Roth test by emphasizing that redeeming social value is a necessary component and that materials cannot be obscene if they possess any such value. All three prongs must be satisfied for material to be deemed obscene."
+      },
+      {
+        "@type": "DoctrinalTest",
+        "id": "rfra_substantial_burden_test",
+        "label": "RFRA Substantial Burden Test",
+        "description": "A two-step test under the Religious Freedom Restoration Act: (1) whether a law substantially burdens a person's exercise of religion, and (2) if so, whether the government demonstrates that the burden furthers a compelling governmental interest and is the least restrictive means of furthering that interest.",
+        "area_id": "free_exercise",
+        "source_case_id": "burwell_v_hobby_lobby_stores_2014",
+        "scrutiny_level": "strict",
+        "burden": "government",
+        "test_form": "conjunctive",
+        "prongs": [
+          {
+            "number": 1,
+            "label": "Substantial Burden",
+            "description": "The law must substantially burden the person's exercise of religion.",
+            "burden_note": "Challenger must establish substantial burden.",
+            "valid_from": "2014-06-30",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 2,
+            "label": "Compelling Interest and Least Restrictive Means",
+            "description": "If substantial burden is established, the government must demonstrate that the burden furthers a compelling governmental interest and is the least restrictive means of furthering that interest.",
+            "burden_note": "Government must satisfy both prongs.",
+            "valid_from": "2014-06-30",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          }
+        ],
+        "status": "active",
+        "valid_from": "2014-06-30",
+        "valid_until": null,
+        "notes": "In Burwell, the Court applied this test to find that the contraception mandate substantially burdened Hobby Lobby's religious exercise and that the government failed to use the least restrictive means, as an exemption already existed for non-profit religious organizations."
+      },
+      {
+        "@type": "DoctrinalTest",
+        "id": "religious_status_discrimination_test",
+        "label": "Religious Status Discrimination Test",
+        "description": "When a law or regulation excludes religious schools or religious individuals from a generally available benefit or program based on their religious status (rather than religious use or conduct), the law must satisfy strict scrutiny. The government must demonstrate that the exclusion advances interests of the highest order and is narrowly tailored to those interests.",
+        "area_id": "free_exercise",
+        "source_case_id": "espinoza_v_montana_department_of_revenue_2020",
+        "scrutiny_level": "strict",
+        "burden": "government",
+        "test_form": "conjunctive",
+        "prongs": [
+          {
+            "number": 1,
+            "label": "Discrimination Based on Religious Status",
+            "description": "The law or regulation must discriminate against religious schools, religious individuals, or religious families based on their religious status rather than neutral criteria.",
+            "burden_note": "Challenger must demonstrate that the exclusion is based on religious status.",
+            "valid_from": "2020-07-01",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 2,
+            "label": "Compelling Interest",
+            "description": "The government must demonstrate that the discriminatory exclusion advances interests of the highest order.",
+            "burden_note": "Government bears the burden of proving a compelling interest.",
+            "valid_from": "2020-07-01",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 3,
+            "label": "Narrow Tailoring",
+            "description": "The discriminatory exclusion must be narrowly tailored in pursuit of the compelling interest.",
+            "burden_note": "Government bears the burden of proving narrow tailoring.",
+            "valid_from": "2020-07-01",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          }
+        ],
+        "status": "active",
+        "valid_from": "2020-07-01",
+        "valid_until": null,
+        "notes": "This test applies when a law or regulation facially or effectively excludes religious schools or individuals from a generally available government benefit or program based on religious status. The Court rejected the argument that Montana's interest in greater church-state separation than required by the federal Constitution satisfied strict scrutiny."
+      },
+      {
+        "@type": "DoctrinalTest",
+        "id": "undue_burden_balancing_test",
+        "label": "Undue Burden Balancing Test",
+        "description": "A test for evaluating abortion regulations that requires courts to weigh the extent to which the law serves stated government interests (such as protecting women's health or potential life) against the burden it imposes on women seeking to exercise their constitutional right to abortion before viability. The test requires meaningful judicial review of factual records and is not wholly deferential to legislative fact-finding.",
+        "area_id": "substantive_due_process",
+        "source_case_id": "whole_womans_health_v_hellerstedt_2016",
+        "scrutiny_level": "balancing",
+        "burden": "government",
+        "test_form": "balancing",
+        "prongs": [
+          {
+            "number": 1,
+            "label": "Burden on Abortion Access",
+            "description": "Assess the extent to which the regulation places a substantial obstacle in the path of someone seeking to exercise their constitutional right to abortion before viability.",
+            "burden_note": "Challenger must demonstrate substantial burden; courts examine actual effects on access, including clinic closures and capacity constraints.",
+            "valid_from": "2016-06-27",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 2,
+            "label": "Government Interest Served",
+            "description": "Determine whether and to what extent the regulation actually serves the state's asserted interests, such as protecting women's health or potential life.",
+            "burden_note": "Government must demonstrate that the regulation meaningfully advances its stated interests; courts review factual records and are not wholly deferential to legislative findings.",
+            "valid_from": "2016-06-27",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 3,
+            "label": "Proportionality",
+            "description": "Weigh whether the burden imposed is proportionate to the government interest served; regulations that impose substantial burdens without meaningfully advancing stated interests are unconstitutional.",
+            "burden_note": "If burden is substantial and government interest is not meaningfully served, the regulation is unconstitutional.",
+            "valid_from": "2016-06-27",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          }
+        ],
+        "status": "active",
+        "valid_from": "2016-06-27",
+        "valid_until": null,
+        "notes": "This test clarifies and applies the undue burden standard from Planned Parenthood v. Casey. The Court emphasized that judicial review must be meaningful and not wholly deferential to legislative fact-finding, particularly when the factual record contradicts legislative findings."
+      },
+      {
+        "@type": "DoctrinalTest",
+        "id": "miller_racial_gerrymandering_test",
+        "label": "Miller Racial Gerrymandering Test",
+        "description": "A test to determine whether a reapportionment plan constitutes racial gerrymandering subject to strict scrutiny. The test examines whether a district is so highly irregular and bizarre in shape that it rationally cannot be understood as anything other than an effort to segregate voters based on race, and whether race was the overriding, predominant force in the redistricting process.",
+        "area_id": "equal_protection",
+        "source_case_id": "miller_v_johnson_1995",
+        "scrutiny_level": "strict",
+        "burden": "government",
+        "test_form": "conjunctive",
+        "prongs": [
+          {
+            "number": 1,
+            "label": "Bizarre Shape",
+            "description": "The district must be so highly irregular and bizarre in shape that it rationally cannot be understood as anything other than an effort to segregate voters based on race.",
+            "burden_note": "Government must justify the irregular shape.",
+            "valid_from": "1995-06-29",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 2,
+            "label": "Race as Overriding, Predominant Force",
+            "description": "Race must be the overriding, predominant force in the redistricting process.",
+            "burden_note": "Government must demonstrate that race was not the predominant factor.",
+            "valid_from": "1995-06-29",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          }
+        ],
+        "status": "active",
+        "valid_from": "1995-06-29",
+        "valid_until": null,
+        "notes": "This test applies strict scrutiny to reapportionment plans where race is the overriding, predominant force, extending the framework from Shaw v. Reno."
+      },
+      {
+        "@type": "DoctrinalTest",
+        "id": "intelligible_principle_test",
+        "label": "Intelligible Principle Test",
+        "description": "A test for determining whether a delegation of legislative power is constitutional. The legislature must establish an intelligible principle, and the delegated agency must adhere to specific directives that govern its authority.",
+        "area_id": "federalism",
+        "source_case_id": "mistretta_v_united_states_1989",
+        "scrutiny_level": "rational_basis",
+        "burden": "government",
+        "test_form": "conjunctive",
+        "prongs": [
+          {
+            "number": 1,
+            "label": "Intelligible Principle",
+            "description": "The legislature must establish an intelligible principle that guides the delegated authority.",
+            "burden_note": "Government must demonstrate that Congress established a clear principle.",
+            "valid_from": "1989-01-18",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 2,
+            "label": "Specific Directives",
+            "description": "The delegated agency must be bound by specific directives that govern the scope and exercise of its delegated authority.",
+            "burden_note": "Government must show that Congress provided sufficiently detailed and specific directives.",
+            "valid_from": "1989-01-18",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          }
+        ],
+        "status": "active",
+        "valid_from": "1989-01-18",
+        "valid_until": null,
+        "notes": "Applied in Mistretta to uphold the delegation to the United States Sentencing Commission. The Commission was given substantial discretion in setting sentencing guidelines, but Congress established a classification hierarchy for federal crimes that constrained the Commission's authority."
+      },
+      {
+        "@type": "DoctrinalTest",
+        "id": "tlo_school_search_test",
+        "label": "TLO School Search Standard",
+        "description": "A two-part test for assessing the legality of searches conducted by public school officials. First, the search must be justified at its inception by reasonable suspicion that the search will uncover evidence of a violation of school rules or the law. Second, the search must not be excessively intrusive in light of the age and sex of the student and the nature of the infraction.",
+        "area_id": "criminal_procedure",
+        "source_case_id": "new_jersey_v_tlo_1985",
+        "scrutiny_level": "rational_basis",
+        "burden": "government",
+        "test_form": "conjunctive",
+        "prongs": [
+          {
+            "number": 1,
+            "label": "Justified at Inception",
+            "description": "The search must be justified at its inception by reasonable suspicion that the search will uncover evidence of a violation of school rules or the law.",
+            "burden_note": "School official must have reasonable suspicion.",
+            "valid_from": "1985-01-01",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 2,
+            "label": "Scope Reasonableness",
+            "description": "The search must not be excessively intrusive in light of the age and sex of the student and the nature of the infraction.",
+            "burden_note": "School official must ensure the search is not excessively intrusive given the circumstances.",
+            "valid_from": "1985-01-01",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          }
+        ],
+        "status": "active",
+        "valid_from": "1985-01-01",
+        "valid_until": null,
+        "notes": "This test represents a modification of traditional Fourth Amendment standards in the school context, replacing the warrant and probable cause requirements with a reasonable suspicion standard."
+      },
+      {
+        "@type": "DoctrinalTest",
+        "id": "fourth_amendment_balancing_test",
+        "label": "Fourth Amendment Reasonableness Balancing Test",
+        "description": "A test that evaluates the reasonableness of a search by balancing the intrusion on the individual's Fourth Amendment interests against the promotion of legitimate governmental interests.",
+        "area_id": "criminal_procedure",
+        "source_case_id": "vernonia_school_district_v_acton_1995",
+        "scrutiny_level": "balancing",
+        "burden": "shared",
+        "test_form": "balancing",
+        "prongs": [
+          {
+            "number": 1,
+            "label": "Intrusion on Fourth Amendment Interests",
+            "description": "Assessment of the degree of intrusion on the individual's privacy and Fourth Amendment interests, including consideration of the conditions of collection and who has access to results.",
+            "burden_note": "Government must justify the scope and manner of the search.",
+            "valid_from": "1995-06-26",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 2,
+            "label": "Promotion of Legitimate Governmental Interests",
+            "description": "Assessment of whether the search promotes legitimate governmental interests, such as student safety and the prevention of drug use among minors under state supervision.",
+            "burden_note": "Government must demonstrate a legitimate interest served by the search.",
+            "valid_from": "1995-06-26",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          }
+        ],
+        "status": "active",
+        "valid_from": "1995-06-26",
+        "valid_until": null,
+        "notes": "This balancing test applies in contexts where students have reduced expectations of privacy, such as during school hours and in school-sponsored activities. The test does not apply strict scrutiny but rather a context-specific reasonableness analysis."
       }
     ]
   },
@@ -22807,7 +24310,7 @@
     {
       "id": "freedom_of_press_governed_by_private_figure_doctrine",
       "source_id": "freedom_of_press",
-      "target_id": "press_defamation_private_figure_doctrine",
+      "target_id": "private_figure_defamation_doctrine",
       "edge_type": "GOVERNED_BY",
       "valid_from": "1974-06-25",
       "valid_until": null,
@@ -22966,7 +24469,7 @@
     {
       "id": "gertz_establishes_private_figure_doctrine",
       "source_id": "gertz_v_robert_welch_1974",
-      "target_id": "press_defamation_private_figure_doctrine",
+      "target_id": "private_figure_defamation_doctrine",
       "edge_type": "ESTABLISHES",
       "valid_from": "1974-06-25",
       "valid_until": null,
@@ -31784,7 +33287,7 @@
     },
     {
       "id": "press_defamation_private_figure_doctrine_child_of_freedom_of_press",
-      "source_id": "press_defamation_private_figure_doctrine",
+      "source_id": "private_figure_defamation_doctrine",
       "target_id": "freedom_of_press",
       "edge_type": "CHILD_OF",
       "valid_from": "1974-06-25",
@@ -37736,7 +39239,7 @@
     {
       "id": "schechter_establishes_intelligible_principle_test",
       "source_id": "schechter_poultry_corp_v_united_states_1935",
-      "target_id": "schechter_intelligible_principle_test",
+      "target_id": "intelligible_principle_test",
       "edge_type": "ESTABLISHES",
       "valid_from": "1935-05-27",
       "valid_until": null,
@@ -37908,6 +39411,563 @@
         "opinion_type": "majority",
         "author": null
       }
+    },
+    {
+      "id": "cox_louisiana_applies_freedom_speech_assembly",
+      "source_id": "cox_v_louisiana_1965",
+      "target_id": "freedom_of_speech_assembly",
+      "edge_type": "APPLIES",
+      "valid_from": "1965-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Cox v. Louisiana applies and reinforces the doctrine of freedom of speech and assembly by striking down statutes that impermissibly restrict these rights."
+    },
+    {
+      "id": "cox_louisiana_applies_vagueness_doctrine",
+      "source_id": "cox_v_louisiana_1965",
+      "target_id": "vagueness_doctrine",
+      "edge_type": "APPLIES",
+      "valid_from": "1965-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Cox v. Louisiana applies the vagueness doctrine to invalidate Louisiana's disturbing the peace statute and the unbridled discretion in the obstructing public passages statute."
+    },
+    {
+      "id": "clark_establishes_symbolic_conduct_doctrine",
+      "source_id": "clark_v_community_for_creative_non_violence_1984",
+      "target_id": "symbolic_conduct_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1984-06-29",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Clark v. Community for Creative Non-Violence established the symbolic conduct doctrine as the framework for analyzing First Amendment protection of non-verbal expressive conduct."
+    },
+    {
+      "id": "clark_establishes_clark_symbolic_conduct_test",
+      "source_id": "clark_v_community_for_creative_non_violence_1984",
+      "target_id": "clark_symbolic_conduct_test",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1984-06-29",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Clark v. Community for Creative Non-Violence established the test for determining whether non-verbal conduct qualifies for First Amendment protection and whether government regulations of such conduct are constitutional."
+    },
+    {
+      "id": "frisby_establishes_residential_privacy_doctrine",
+      "source_id": "frisby_v_schultz_1988",
+      "target_id": "residential_privacy_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1988-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Frisby v. Schultz establishes that residential privacy is a significant government interest that can justify First Amendment restrictions."
+    },
+    {
+      "id": "iskcon_establishes_iskcon_reasonableness_test",
+      "source_id": "international_society_for_krishna_consciousness_v_lee_1992",
+      "target_id": "iskcon_reasonableness_test",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1992",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "ISKCON v. Lee established the reasonableness standard for evaluating restrictions on speech in non-public forums."
+    },
+    {
+      "id": "iskcon_applies_public_forum_doctrine",
+      "source_id": "international_society_for_krishna_consciousness_v_lee_1992",
+      "target_id": "public_forum_doctrine",
+      "edge_type": "APPLIES",
+      "valid_from": "1992",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "ISKCON v. Lee applied the public forum doctrine to classify airport terminals as non-public forums."
+    },
+    {
+      "id": "iskcon_applies_freedom_of_petition",
+      "source_id": "international_society_for_krishna_consciousness_v_lee_1992",
+      "target_id": "freedom_of_petition_right",
+      "edge_type": "APPLIES",
+      "valid_from": "1992",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "ISKCON v. Lee addressed the right to petition through solicitation in public places, subject to reasonable restrictions in non-public forums."
+    },
+    {
+      "id": "hill_applies_content_neutral_time_place_manner",
+      "source_id": "hill_v_colorado_2000",
+      "target_id": "content_neutral_time_place_manner_restriction",
+      "edge_type": "APPLIES",
+      "valid_from": "2000",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "The Court applied the content-neutral time, place, and manner restriction framework to uphold the Colorado statute."
+    },
+    {
+      "id": "hill_establishes_unwilling_listener_doctrine",
+      "source_id": "hill_v_colorado_2000",
+      "target_id": "unwilling_listener_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2000",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Hill v. Colorado established that the unwilling listener's interest in avoiding unwanted communication is a legitimate government interest that may justify restrictions on speech-related conduct."
+    },
+    {
+      "id": "mccullen_applies_time_place_manner",
+      "source_id": "mccullen_v_coakley_2014",
+      "target_id": "time_place_manner_restriction",
+      "edge_type": "APPLIES",
+      "valid_from": "2014-06-26",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "McCullen applied the time, place, and manner doctrine to analyze the Massachusetts 35-foot buffer zone, holding it content-neutral on its face but failing narrow tailoring."
+    },
+    {
+      "id": "mccullen_applies_narrow_tailoring",
+      "source_id": "mccullen_v_coakley_2014",
+      "target_id": "narrow_tailoring_requirement",
+      "edge_type": "APPLIES",
+      "valid_from": "2014-06-26",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "McCullen applied the narrow tailoring requirement and found the buffer zone failed because it substantially burdened core political speech without adequate justification given available alternatives."
+    },
+    {
+      "id": "philadelphia_newspapers_applies_private_figure_defamation",
+      "source_id": "philadelphia_newspapers_v_hepps_1986",
+      "target_id": "private_figure_defamation_doctrine",
+      "edge_type": "APPLIES",
+      "valid_from": "1986-06-25",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "The Court applied and refined the private figure defamation framework established in Gertz."
+    },
+    {
+      "id": "philadelphia_newspapers_establishes_falsity_burden",
+      "source_id": "philadelphia_newspapers_v_hepps_1986",
+      "target_id": "falsity_burden_public_concern",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1986-06-25",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "The Court established that private-figure plaintiffs must bear the burden of proving falsity in defamation cases involving matters of public concern."
+    },
+    {
+      "id": "spence_applies_symbolic_speech_doctrine",
+      "source_id": "spence_v_washington_1974",
+      "target_id": "symbolic_speech_doctrine",
+      "edge_type": "APPLIES",
+      "valid_from": "1974-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Spence established that symbolic speech\u2014the display of a flag with an attached peace symbol as political protest\u2014receives First Amendment protection."
+    },
+    {
+      "id": "eichman_applies_content_based_speech",
+      "source_id": "united_states_v_eichman_1990",
+      "target_id": "content_based_speech_restriction",
+      "edge_type": "APPLIES",
+      "valid_from": "1990-06-11",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "The Court applied content-based speech restriction doctrine to invalidate the Flag Protection Act, finding that the statute's distinction between permitted flag disposal and prohibited flag burning in protest was content-based suppression of free expression."
+    },
+    {
+      "id": "memoirs_establishes_roth_memoirs_obscenity_test",
+      "source_id": "memoirs_v_massachusetts_1966",
+      "target_id": "roth_memoirs_obscenity_test",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1966-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Memoirs clarified and refined the Roth test by establishing the critical role of redeeming social value as a necessary component of obscenity analysis."
+    },
+    {
+      "id": "memoirs_applies_obscenity_doctrine",
+      "source_id": "memoirs_v_massachusetts_1966",
+      "target_id": "obscenity_doctrine",
+      "edge_type": "APPLIES",
+      "valid_from": "1966-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "The Court applied the obscenity doctrine to reverse the Massachusetts courts' finding that Memoirs of a Woman of Pleasure was obscene."
+    },
+    {
+      "id": "hosanna_tabor_establishes_ministerial_exception",
+      "source_id": "hosanna_tabor_evangelical_lutheran_church_v_eeoc_2012",
+      "target_id": "ministerial_exception",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2012-01-11",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Hosanna-Tabor clarified and affirmed the ministerial exception doctrine, establishing that it applies based on an employee's functional role and status as a minister."
+    },
+    {
+      "id": "burwell_establishes_corporate_religious_exercise_doctrine",
+      "source_id": "burwell_v_hobby_lobby_stores_2014",
+      "target_id": "corporate_religious_exercise_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2014-06-30",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Burwell established that for-profit corporations can assert religious exercise rights under RFRA and the Free Exercise Clause."
+    },
+    {
+      "id": "burwell_establishes_rfra_substantial_burden_test",
+      "source_id": "burwell_v_hobby_lobby_stores_2014",
+      "target_id": "rfra_substantial_burden_test",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2014-06-30",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Burwell clarified and applied the RFRA substantial burden test in the context of for-profit corporations."
+    },
+    {
+      "id": "burwell_applies_rfra_substantial_burden_doctrine",
+      "source_id": "burwell_v_hobby_lobby_stores_2014",
+      "target_id": "rfra_substantial_burden_doctrine",
+      "edge_type": "APPLIES",
+      "valid_from": "2014-06-30",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Burwell applied the RFRA substantial burden doctrine to the contraception mandate challenge."
+    },
+    {
+      "id": "espinoza_establishes_free_exercise_protection_against_discrimination",
+      "source_id": "espinoza_v_montana_department_of_revenue_2020",
+      "target_id": "free_exercise_protection_against_discrimination",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2020-07-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Espinoza established the doctrine that the Free Exercise Clause protects against laws that discriminate based on religious status."
+    },
+    {
+      "id": "espinoza_establishes_religious_status_discrimination_test",
+      "source_id": "espinoza_v_montana_department_of_revenue_2020",
+      "target_id": "religious_status_discrimination_test",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2020-07-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Espinoza established the test that laws discriminating based on religious status are subject to strict scrutiny."
+    },
+    {
+      "id": "whole_womans_health_establishes_undue_burden_balancing_test",
+      "source_id": "whole_womans_health_v_hellerstedt_2016",
+      "target_id": "undue_burden_balancing_test",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2016-06-27",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "The Court clarified and refined the application of the undue burden test, establishing the balancing framework that requires meaningful judicial review of factual records."
+    },
+    {
+      "id": "whole_womans_health_applies_undue_burden_doctrine",
+      "source_id": "whole_womans_health_v_hellerstedt_2016",
+      "target_id": "undue_burden_doctrine",
+      "edge_type": "APPLIES",
+      "valid_from": "2016-06-27",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "The Court applied the undue burden doctrine from Planned Parenthood v. Casey to evaluate the Texas H.B. 2 provisions."
+    },
+    {
+      "id": "whole_womans_health_applies_constitutional_right_to_abortion",
+      "source_id": "whole_womans_health_v_hellerstedt_2016",
+      "target_id": "constitutional_right_to_abortion",
+      "edge_type": "APPLIES",
+      "valid_from": "2016-06-27",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "The Court reaffirmed the constitutional right to abortion before viability as the foundational right against which the Texas regulations were measured."
+    },
+    {
+      "id": "miller_establishes_miller_racial_gerrymandering_test",
+      "source_id": "miller_v_johnson_1995",
+      "target_id": "miller_racial_gerrymandering_test",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1995-06-29",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Miller v. Johnson establishes the racial gerrymandering test for evaluating reapportionment plans under the Equal Protection Clause."
+    },
+    {
+      "id": "miller_establishes_racial_gerrymandering_doctrine",
+      "source_id": "miller_v_johnson_1995",
+      "target_id": "racial_gerrymandering_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1995-06-29",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Miller v. Johnson establishes the doctrine that bizarrely shaped districts designed to segregate voters by race are subject to strict scrutiny under equal protection."
+    },
+    {
+      "id": "mistretta_establishes_intelligible_principle_test",
+      "source_id": "mistretta_v_united_states_1989",
+      "target_id": "intelligible_principle_test",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1989-01-18",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ],
+      "notes": "Mistretta articulated the intelligible principle test as the standard for evaluating delegations of legislative power."
+    },
+    {
+      "id": "mistretta_applies_nondelegation_doctrine",
+      "source_id": "mistretta_v_united_states_1989",
+      "target_id": "nondelegation_doctrine",
+      "edge_type": "APPLIES",
+      "valid_from": "1989-01-18",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ],
+      "notes": "Mistretta applied the nondelegation doctrine and clarified that it does not prevent Congress from obtaining assistance from coordinate branches when proper safeguards are in place."
+    },
+    {
+      "id": "missouri_v_seibert_2004_establishes_two_stage_interrogation_doctrine",
+      "source_id": "missouri_v_seibert_2004",
+      "target_id": "two_stage_interrogation_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2004-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "The plurality opinion in Missouri v. Seibert established the doctrine requiring curative measures for deliberately employed two-stage interrogation strategies."
+    },
+    {
+      "id": "missouri_v_seibert_2004_applies_miranda_rights_doctrine",
+      "source_id": "missouri_v_seibert_2004",
+      "target_id": "miranda_rights_doctrine",
+      "edge_type": "APPLIES",
+      "valid_from": "2004-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Missouri v. Seibert applies and refines the Miranda doctrine in the context of two-stage interrogation."
+    },
+    {
+      "id": "missouri_v_seibert_2004_distinguishes_oregon_v_elstad_1985",
+      "source_id": "missouri_v_seibert_2004",
+      "target_id": "oregon_v_elstad_1985",
+      "edge_type": "DISTINGUISHES",
+      "valid_from": "2004-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Missouri v. Seibert distinguishes Oregon v. Elstad by imposing additional requirements (curative measures) when the two-stage interrogation strategy is deliberately employed, rather than merely unintentional as in Elstad."
+    },
+    {
+      "id": "rakas_establishes_fourth_amendment_standing",
+      "source_id": "rakas_v_illinois_1978",
+      "target_id": "fourth_amendment_standing",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1978-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Rakas establishes the doctrine that Fourth Amendment rights are personal and cannot be asserted vicariously, clarifying and reaffirming Jones v. United States."
+    },
+    {
+      "id": "payton_establishes_warrantless_home_arrest_doctrine",
+      "source_id": "payton_v_new_york_1980",
+      "target_id": "warrantless_home_arrest_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1980-04-15",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Payton v. New York established the doctrine that warrantless entries into the home for routine felony arrests violate the Fourth Amendment."
+    },
+    {
+      "id": "new_jersey_v_tlo_establishes_school_search_doctrine",
+      "source_id": "new_jersey_v_tlo_1985",
+      "target_id": "school_search_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1985-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "New Jersey v. TLO established the doctrine that the Fourth Amendment applies to public school searches but with a modified standard."
+    },
+    {
+      "id": "new_jersey_v_tlo_establishes_tlo_school_search_test",
+      "source_id": "new_jersey_v_tlo_1985",
+      "target_id": "tlo_school_search_test",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1985-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "New Jersey v. TLO established the two-part test for evaluating the legality of school searches."
+    },
+    {
+      "id": "florida_v_jardines_establishes_fourth_amendment_home_curtilage",
+      "source_id": "florida_v_jardines_2013",
+      "target_id": "fourth_amendment_home_curtilage",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2013-03-26",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "The majority opinion established the doctrine that the front porch is part of the home for Fourth Amendment purposes and that police cannot conduct searches there without a warrant or broader license."
+    },
+    {
+      "id": "florida_v_jardines_establishes_fourth_amendment_privacy_expectation",
+      "source_id": "florida_v_jardines_2013",
+      "target_id": "fourth_amendment_privacy_expectation_home",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2013-03-26",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Justice Kagan's concurrence articulated the privacy-based rationale for Fourth Amendment protection, emphasizing heightened privacy expectations in the home and surrounding areas."
+    },
+    {
+      "id": "vernonia_establishes_fourth_amendment_balancing_test",
+      "source_id": "vernonia_school_district_v_acton_1995",
+      "target_id": "fourth_amendment_balancing_test",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1995-06-26",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Vernonia School District v. Acton established the Fourth Amendment reasonableness balancing test as applied to student drug testing."
+    },
+    {
+      "id": "vernonia_establishes_student_athlete_drug_testing",
+      "source_id": "vernonia_school_district_v_acton_1995",
+      "target_id": "student_athlete_drug_testing",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1995-06-26",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Vernonia School District v. Acton established the doctrine permitting random urinalysis drug testing of high school student athletes."
+    },
+    {
+      "id": "california_v_greenwood_applies_reasonable_expectation_of_privacy",
+      "source_id": "california_v_greenwood_1988",
+      "target_id": "reasonable_expectation_of_privacy",
+      "edge_type": "APPLIES",
+      "valid_from": "1988-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "The Court applied the reasonable expectation of privacy doctrine to hold that curbside garbage is unprotected because it lacks a reasonable expectation of privacy."
     }
   ],
   "schema_issues_found": [
