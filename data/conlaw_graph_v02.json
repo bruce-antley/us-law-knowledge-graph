@@ -17,8 +17,8 @@
     "created": "2026-03-15",
     "status": "draft",
     "schema_version": "0.5",
-    "node_count": 883,
-    "edge_count": 1296,
+    "node_count": 915,
+    "edge_count": 1329,
     "schema_issue_count": 41,
     "fixes_applied": [
       "FIX 1: ConstitutionalProvision labels changed to citation form (amendment_1, amendment_14_section_1) to disambiguate from Area nodes with same common-name labels",
@@ -5451,6 +5451,216 @@
         "valid_from": "1988-01-01",
         "valid_until": null,
         "notes": "As applied in California v. Greenwood, there is no reasonable expectation of privacy in garbage placed at the curbside for public pickup."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "actual_malice_emotional_distress",
+        "label": "Actual Malice Standard for Emotional Distress Claims by Public Figures",
+        "description": "Public figures seeking to recover damages for intentional infliction of emotional distress must demonstrate that the offending publication contained a false statement of fact made with actual malice, consistent with First Amendment protections for parody and satire.",
+        "area_id": "free_speech",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1988-02-24",
+        "valid_until": null,
+        "notes": "Extends actual malice doctrine from defamation to emotional distress claims involving public figures and parody."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "parody_satire_first_amendment",
+        "label": "First Amendment Protection for Parody and Satire",
+        "description": "Parody and satire that cannot reasonably be construed to state actual facts about their subject are protected by the First Amendment, even when patently offensive, and the state's interest in protecting public figures from such speech is subordinate to free speech interests.",
+        "area_id": "free_speech",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1988-02-24",
+        "valid_until": null,
+        "notes": "Establishes that parody and satire receive First Amendment protection when they cannot reasonably be understood as factual assertions."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "opinion_privilege_defamation",
+        "label": "Opinion Privilege in Defamation Law",
+        "description": "The doctrine that statements of pure opinion are protected from defamation liability under the First Amendment, as distinguished from false statements of fact. Milkovich clarified that this protection is not absolute and does not shield false factual assertions merely because they are framed as opinion.",
+        "area_id": "free_speech",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1990-06-21",
+        "valid_until": null,
+        "notes": "Milkovich rejected an overly broad reading of the opinion privilege and established that the critical inquiry is whether a reasonable reader would understand the statement as asserting objective fact."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "actual_malice_defamation",
+        "label": "Actual Malice Standard in Defamation",
+        "description": "The standard established in New York Times Co. v. Sullivan requiring public figures and public officials to prove that a defamatory statement was made with knowledge of its falsity or with reckless disregard for the truth. Applied in Milkovich to determine whether a newspaper article accusing a public figure of perjury constitutes actionable libel.",
+        "area_id": "free_speech",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1964-03-09",
+        "valid_until": null,
+        "notes": "Milkovich applies the actual malice standard to defamation claims involving public figures such as a high school wrestling coach."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "commercial_speech_protection",
+        "label": "Commercial Speech Protection",
+        "description": "The First Amendment protects commercial speech, including price advertising and financial solicitations, even when sold for profit. Commercial speech receives the same protection as noncommercial speech.",
+        "area_id": "commercial_speech",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1976-01-01",
+        "valid_until": null,
+        "notes": "Established in Virginia State Board of Pharmacy v. Virginia Citizens Consumer Council. The doctrine protects willing speakers and willing listeners equally in the commercial context."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "twenty_first_amendment_limits",
+        "label": "Twenty-first Amendment Regulatory Power Limits",
+        "description": "Although the Twenty-first Amendment empowers states to regulate the sale of liquor, such regulatory power cannot be exercised in derogation of other constitutional obligations, including First Amendment protections.",
+        "area_id": "constitutional_law",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1996",
+        "valid_until": null,
+        "notes": "Established in 44 Liquormart that the Twenty-first Amendment does not authorize states to override First Amendment protections."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "federal_preemption_fclaa",
+        "label": "Federal Preemption Under the Federal Cigarette Labeling and Advertising Act",
+        "description": "The Federal Cigarette Labeling and Advertising Act preempts state and local regulations governing cigarette advertising and labeling, including outdoor and point-of-sale advertising restrictions.",
+        "area_id": "constitutional_law",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "2001-01-01",
+        "valid_until": null,
+        "notes": "Established in Lorillard that FCLAA preempts Massachusetts' cigarette advertising regulations but does not preempt regulations for smokeless tobacco and cigars."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "attorney_advertising_first_amendment",
+        "label": "Attorney Advertising and First Amendment Protection",
+        "description": "Truthful advertising by attorneys regarding the availability and terms of legal services is protected commercial speech under the First Amendment and cannot be categorically prohibited by state bar disciplinary rules.",
+        "area_id": "free_speech",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1977-06-27",
+        "valid_until": null,
+        "notes": "Established in Bates v. State Bar of Arizona. This doctrine protects attorney advertising of routine legal services and fee information as commercial speech."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "freedom_of_association_litigation",
+        "label": "Freedom of Association in Litigation Context",
+        "description": "The constitutional right of individuals and organizations to associate for the advancement of beliefs and ideas, including the right to finance and conduct litigation as a form of political expression and association, protected against state interference under the Fourteenth Amendment.",
+        "area_id": "freedom_of_association",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1963-01-14",
+        "valid_until": null,
+        "notes": "Established in NAACP v. Button as protecting organizational litigation financing and legal assistance programs from state regulation that infringes associational rights."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "freedom_from_compelled_expression",
+        "label": "Freedom from Compelled Expression",
+        "description": "The First Amendment protects individuals from being compelled by the government to express or affirm beliefs, opinions, or ideologies against their will. The government cannot mandate uniformity of opinion or force citizens to participate in symbolic speech that violates their conscience.",
+        "area_id": "free_speech",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1943-06-14",
+        "valid_until": null,
+        "notes": "Established in West Virginia State Board of Education v. Barnette as a core First Amendment protection."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "nuisance_exception_doctrine",
+        "label": "Nuisance Exception to Takings",
+        "description": "If a land use is itself noxious, dangerous, or causes a public nuisance, the legislature may regulate or prohibit that use without compensation under the police power, even though such regulation may cause substantial diminution in property value.",
+        "area_id": "takings_clause",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1922-01-01",
+        "valid_until": null,
+        "notes": "Articulated in Justice Brandeis's dissent in Pennsylvania Coal Co. v. Mahon; later adopted as a recognized exception to takings liability."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "equal_protection_sexual_orientation",
+        "label": "Equal Protection and Sexual Orientation",
+        "description": "The principle that laws and governmental actions that classify or discriminate based on sexual orientation are subject to equal protection review and must advance a legitimate governmental interest; a bare desire to harm a politically unpopular group based on sexual orientation cannot constitute a legitimate governmental interest.",
+        "area_id": "equal_protection",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1996-05-20",
+        "valid_until": null,
+        "notes": "Established in Romer v. Evans. This doctrine applies rational basis review but with teeth\u2014requiring that the government articulate a genuine, non-animus-based interest."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "establishment_clause_aid_to_sectarian_schools",
+        "label": "Establishment Clause Doctrine on Aid to Sectarian Schools",
+        "description": "The constitutional principle that government may provide certain forms of financial assistance to sectarian schools and their students without violating the Establishment Clause, provided the assistance is neutral on its face and in application and benefits a broad class of citizens, not limited to religious institutions.",
+        "area_id": "establishment_clause",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1983",
+        "valid_until": null,
+        "notes": "This doctrine reflects the Court's rejection of the argument that any program aiding an institution with religious affiliation violates the Establishment Clause. It encompasses permissible forms of assistance such as transportation reimbursement and secular textbook loans."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "first_amendment_right_to_access_criminal_trials",
+        "label": "First Amendment Right of Public Access to Criminal Trials",
+        "description": "The First Amendment protects a right of public access to criminal trials. This right encompasses not only the right to speak but also the freedom to listen and receive information and ideas. The right includes the right of assembly in public places such as courthouses. Certain unarticulated rights are implicit in enumerated First Amendment guarantees and are indispensable to the enjoyment of rights explicitly defined.",
+        "area_id": "free_speech",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1980-01-01",
+        "valid_until": null,
+        "notes": "Established in Richmond Newspapers v. Virginia as a foundational First Amendment doctrine protecting public access to judicial proceedings."
       }
     ],
     "areas": [
@@ -18798,6 +19008,353 @@
         "opinions": [],
         "notes": "The Court reasoned that trash left at the curb is readily accessible to animals, children, scavengers, snoops, and other members of the public, and police cannot be expected to ignore criminal activity observable by any member of the public.",
         "courtlistener_id": "112067"
+      },
+      {
+        "@type": "Case",
+        "id": "seila_law_v_consumer_financial_protection_bureau_2020",
+        "short_name": "Seila Law v. CFPB",
+        "full_name": "Seila Law LLC v. Consumer Financial Protection Bureau",
+        "citation": "591 U.S. 197 (2020)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "2020-06-29",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "The structure of the Consumer Financial Protection Bureau, which vests significant executive power in a single Director removable by the President only for cause, violates the separation of powers because it concentrates power in a unilateral actor insulated from Presidential control and lacks foundation in historical practice.",
+        "holding_type": "affirmative",
+        "majority_author": "Roberts",
+        "per_curiam": false,
+        "vote": null,
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "2020-06-29",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "Chief Justice Roberts delivered the opinion of the Court with respect to Parts I, II, and III. The decision addresses the constitutionality of the CFPB's structure under Article II separation of powers principles.",
+        "courtlistener_id": "9365252"
+      },
+      {
+        "@type": "Case",
+        "id": "illinois_v_wardlow_2000",
+        "short_name": "Illinois v. Wardlow",
+        "full_name": "Illinois v. Wardlow",
+        "citation": "528 U.S. 119 (2000)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "2000-01-01",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "Nervous, evasive behavior and flight in a high-crime area are pertinent factors in determining reasonable suspicion to justify a stop under the Fourth Amendment; sudden flight in a high-crime area may contribute to reasonable suspicion justifying a stop and frisk.",
+        "holding_type": "affirmative",
+        "majority_author": "Rehnquist",
+        "per_curiam": false,
+        "vote": "5-4",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "2000-01-01",
+        "valid_until": null,
+        "opinions": [
+          {
+            "type": "dissent",
+            "author": "Stevens",
+            "doctrinal_significance": "Dissented from the majority holding while concurring in avoiding a per se rule against considering flight as a factor in reasonable suspicion.",
+            "joined_by": [
+              "three other justices"
+            ],
+            "adopted_in": []
+          }
+        ],
+        "notes": "5-4 decision. Reversed Illinois Supreme Court's holding that sudden flight in a high-crime area does not create reasonable suspicion. Justice Stevens dissented from the majority's holding but joined in avoiding a categorical per se rule.",
+        "courtlistener_id": "118326"
+      },
+      {
+        "@type": "Case",
+        "id": "milkovich_v_lorain_journal_co_1990",
+        "short_name": "Milkovich v. Lorain Journal Co.",
+        "full_name": "Michael Milkovich v. Lorain Journal Co.",
+        "citation": "497 U.S. 1 (1990)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1990-06-21",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "The First Amendment does not provide a blanket exemption for statements of opinion from defamation liability; false statements of fact presented as opinion are actionable under state libel law, and the test for distinguishing protected opinion from actionable fact is whether a reasonable reader would understand the statement as asserting objective fact.",
+        "holding_type": "affirmative",
+        "majority_author": "Rehnquist",
+        "per_curiam": false,
+        "vote": null,
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1990-06-21",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "The Court rejected the lower courts' reliance on a categorical 'opinion privilege' under the First Amendment. The case clarifies that Gertz v. Robert Welch, Inc. did not establish an absolute opinion exemption from defamation liability."
+      },
+      {
+        "@type": "Case",
+        "id": "virginia_state_board_of_pharmacy_v_virginia_citizens_consumer_council_1976",
+        "short_name": "Virginia State Board of Pharmacy v. Virginia Citizens Consumer Council",
+        "full_name": "Virginia State Board of Pharmacy v. Virginia Citizens Consumer Council, Inc.",
+        "citation": "425 U.S. 748 (1976)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1976-01-01",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "The First Amendment protects commercial speech, including price advertising by pharmacists, and a state may not prohibit such speech merely to preserve professional standards when the speech concerns lawful competitive pricing.",
+        "holding_type": "affirmative",
+        "majority_author": null,
+        "per_curiam": false,
+        "vote": "7-1",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1976-01-01",
+        "valid_until": null,
+        "opinions": [
+          {
+            "type": "dissent",
+            "author": null,
+            "doctrinal_significance": "One justice dissented",
+            "joined_by": [],
+            "adopted_in": []
+          }
+        ],
+        "notes": "The Court held that commercial speech receives First Amendment protection. The majority author is not identified in the source text.",
+        "courtlistener_id": "109450"
+      },
+      {
+        "@type": "Case",
+        "id": "lorillard_tobacco_co_v_reilly_2001",
+        "short_name": "Lorillard Tobacco Co. v. Reilly",
+        "full_name": "Lorillard Tobacco Company v. Reilly",
+        "citation": "533 U.S. 525 (2001)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "2001-01-01",
+        "opinion_form": "plurality",
+        "procedural_disposition": "reversed",
+        "holding": "The Federal Cigarette Labeling and Advertising Act preempts Massachusetts' regulations governing outdoor and point-of-sale cigarette advertising; Massachusetts' outdoor and point-of-sale advertising regulations for smokeless tobacco and cigars violate the First Amendment; but sales practices regulations for all three tobacco products are constitutional.",
+        "holding_type": "affirmative",
+        "majority_author": "O'Connor (plurality)",
+        "per_curiam": false,
+        "vote": "5-4",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "2001-01-01",
+        "valid_until": null,
+        "opinions": [
+          {
+            "type": "plurality",
+            "author": "O'Connor",
+            "doctrinal_significance": "Announced the judgment and reasoning on preemption and First Amendment commercial speech issues",
+            "joined_by": [],
+            "adopted_in": []
+          }
+        ],
+        "notes": "Highly fractured decision. The Court was divided on the scope of preemption and the application of First Amendment commercial speech doctrine to tobacco advertising regulations. Justice O'Connor's plurality opinion held that FCLAA preempts cigarette advertising regulations but that smokeless tobacco and cigar regulations implicate First Amendment concerns. The sales practices regulations were upheld across the fractured Court."
+      },
+      {
+        "@type": "Case",
+        "id": "bates_v_state_bar_of_arizona_1977",
+        "short_name": "Bates v. State Bar of Arizona",
+        "full_name": "John B. Bates and Van O'Steen v. State Bar of Arizona",
+        "citation": "433 U.S. 350 (1977)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1977-06-27",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "State restrictions on attorney advertising that prohibit the publication of truthful information about the availability and terms of legal services violate the First Amendment.",
+        "holding_type": "affirmative",
+        "majority_author": "Blackmun",
+        "per_curiam": false,
+        "vote": null,
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1977-06-27",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "The case addresses whether Arizona's disciplinary rule restricting attorney advertising violates the First Amendment and the Sherman Act. The Court held that truthful advertising of legal services and fees is protected commercial speech under the First Amendment."
+      },
+      {
+        "@type": "Case",
+        "id": "minersville_school_district_v_gobitis_1940",
+        "short_name": "Minersville School District v. Gobitis",
+        "full_name": "Minersville School District v. Gobitis",
+        "citation": "310 U.S. 586 (1940)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1940-06-03",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "affirmed",
+        "holding": "States may require public schoolchildren to salute the flag as part of school activities.",
+        "holding_type": "affirmative",
+        "majority_author": null,
+        "per_curiam": false,
+        "vote": null,
+        "status": "overruled",
+        "precedential_weight": "none",
+        "valid_from": "1940-06-03",
+        "valid_until": "1943-06-14",
+        "opinions": [],
+        "notes": "Stub node \u2014 overruled by west_virginia_state_board_of_education_v_barnette_1943. Full node to be added when this case is modeled.",
+        "courtlistener_id": "8193266"
+      },
+      {
+        "@type": "Case",
+        "id": "west_virginia_state_board_of_education_v_barnette_1943",
+        "short_name": "West Virginia State Board of Education v. Barnette",
+        "full_name": "West Virginia State Board of Education v. Barnette",
+        "citation": "319 U.S. 624 (1943)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1943-06-14",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "Compelling public schoolchildren to salute the flag violates the First Amendment because the government cannot enforce uniformity of opinion on any topic, and constitutional protections cannot be subordinated to deference to national symbols.",
+        "holding_type": "affirmative",
+        "majority_author": "Jackson",
+        "per_curiam": false,
+        "vote": "6-3",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1943-06-14",
+        "valid_until": null,
+        "opinions": [
+          {
+            "type": "concurrence",
+            "author": "Black",
+            "doctrinal_significance": "Repudiated earlier First Amendment opinions",
+            "joined_by": [
+              "Douglas"
+            ],
+            "adopted_in": []
+          },
+          {
+            "type": "concurrence",
+            "author": "Douglas",
+            "doctrinal_significance": "Repudiated earlier First Amendment opinions",
+            "joined_by": [],
+            "adopted_in": []
+          },
+          {
+            "type": "dissent",
+            "author": "Frankfurter",
+            "doctrinal_significance": "Argued Court exceeded judicial role and usurped legislative function",
+            "joined_by": [],
+            "adopted_in": []
+          }
+        ],
+        "notes": "Overruled Minersville School District v. Gobitis. Jackson's majority opinion established that the First Amendment protects freedom from compelled expression and that the government cannot mandate uniformity of opinion.",
+        "courtlistener_id": "103870"
+      },
+      {
+        "@type": "Case",
+        "id": "pennsylvania_coal_co_v_mahon_1922",
+        "short_name": "Pennsylvania Coal Co. v. Mahon",
+        "full_name": "Pennsylvania Coal Company v. Mahon",
+        "citation": "260 U.S. 393 (1922)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1922-01-01",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "A state law that substantially diminishes the value of private property rights without a strong public interest justification violates the Takings Clause of the Fifth Amendment, even when enacted under the police power.",
+        "holding_type": "affirmative",
+        "majority_author": "Holmes",
+        "per_curiam": false,
+        "vote": "8-1",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1922-01-01",
+        "valid_until": null,
+        "opinions": [
+          {
+            "type": "dissent",
+            "author": "Brandeis",
+            "doctrinal_significance": "Articulated the nuisance exception to takings liability: if a land use is noxious or causes public nuisance, the legislature may regulate it without compensation under police power. Criticized the majority's diminution-of-value test as flawed because value is relative and cannot be objectively determined by courts.",
+            "joined_by": [],
+            "adopted_in": []
+          }
+        ],
+        "notes": "The majority applied a diminution-of-value test to evaluate whether the Kohler Act's restriction on subsurface coal mining constituted a taking. Justice Brandeis's dissent introduced what became known as the nuisance exception doctrine.",
+        "courtlistener_id": "100079"
+      },
+      {
+        "@type": "Case",
+        "id": "miami_herald_publishing_co_v_tornillo_1974",
+        "short_name": "Miami Herald Publishing Co. v. Tornillo",
+        "full_name": "Miami Herald Publishing Co. v. Tornillo",
+        "citation": "418 U.S. 241 (1974)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1974-06-25",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "A state statute requiring a newspaper to print a political candidate's reply to editorial criticism violates the First Amendment freedom of the press, as compelled publication of speech is as impermissible as censorship.",
+        "holding_type": "affirmative",
+        "majority_author": "Burger",
+        "per_curiam": false,
+        "vote": "9-0",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1974-06-25",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "The Florida Supreme Court had reversed the trial court and upheld the statute as enhancing free speech. The U.S. Supreme Court reversed, holding the statute unconstitutional as a compelled speech violation.",
+        "courtlistener_id": "8996387"
+      },
+      {
+        "@type": "Case",
+        "id": "c_a_carbone_v_town_of_clarkstown_1994",
+        "short_name": "C&A Carbone v. Town of Clarkstown",
+        "full_name": "C&A Carbone, Inc. v. Town of Clarkstown, New York",
+        "citation": "511 U.S. 383 (1994)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1994-01-01",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "A municipal flow control ordinance that requires all solid waste to be processed at a designated transfer station before leaving the municipality violates the Commerce Clause when it attains its purpose of retaining processing fees by depriving competitors, including out-of-state firms, of access to a local market.",
+        "holding_type": "affirmative",
+        "majority_author": "Kennedy",
+        "per_curiam": false,
+        "vote": "5-4",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1994-01-01",
+        "valid_until": null,
+        "opinions": [
+          {
+            "type": "concurrence",
+            "author": "O'Connor",
+            "doctrinal_significance": "Concurred in the judgment",
+            "joined_by": [],
+            "adopted_in": []
+          },
+          {
+            "type": "dissent",
+            "author": "Souter",
+            "doctrinal_significance": "Dissented from the majority's Commerce Clause analysis",
+            "joined_by": [
+              "Rehnquist",
+              "Blackmun"
+            ],
+            "adopted_in": []
+          }
+        ],
+        "notes": "Justice Kennedy delivered the opinion of the Court, joined by Stevens, Scalia, Thomas, and Ginsburg. O'Connor filed a concurrence in the judgment. Souter filed a dissent joined by Rehnquist and Blackmun. Vote was 5-4."
       }
     ],
     "doctrinal_tests": [
@@ -23258,6 +23815,295 @@
         "valid_from": "1995-06-26",
         "valid_until": null,
         "notes": "This balancing test applies in contexts where students have reduced expectations of privacy, such as during school hours and in school-sponsored activities. The test does not apply strict scrutiny but rather a context-specific reasonableness analysis."
+      },
+      {
+        "@type": "DoctrinalTest",
+        "id": "milkovich_opinion_test",
+        "label": "Milkovich Opinion-Fact Distinction Test",
+        "description": "A test to determine whether a statement is protected opinion or actionable fact in defamation law. The test examines whether a reasonable reader would understand the statement as asserting objective fact, considering the full context of the statement, the medium in which it appears, and whether the statement is verifiable.",
+        "area_id": "free_speech",
+        "source_case_id": "milkovich_v_lorain_journal_co_1990",
+        "scrutiny_level": "balancing",
+        "burden": "challenger",
+        "test_form": "balancing",
+        "prongs": [
+          {
+            "number": 1,
+            "label": "Reasonable Reader Understanding",
+            "description": "Whether a reasonable reader would understand the statement as asserting objective fact rather than pure opinion, considering the full context and medium of publication.",
+            "burden_note": "The plaintiff must demonstrate that a reasonable reader would interpret the statement as asserting verifiable fact.",
+            "valid_from": "1990-06-21",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 2,
+            "label": "Verifiability",
+            "description": "Whether the statement is capable of being proven true or false; statements that are not verifiable as fact are more likely to be protected opinion.",
+            "burden_note": "The plaintiff must show that the statement asserts a verifiable fact.",
+            "valid_from": "1990-06-21",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 3,
+            "label": "Literary or Social Context",
+            "description": "The full context of the statement, including the medium of publication, genre conventions, and surrounding language, to determine whether the statement is presented as fact or opinion.",
+            "burden_note": "Context is evaluated to determine the reasonable reader's understanding.",
+            "valid_from": "1990-06-21",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          }
+        ],
+        "status": "active",
+        "valid_from": "1990-06-21",
+        "valid_until": null,
+        "notes": "This test replaced an overly categorical approach that treated all statements labeled as 'opinion' as automatically protected. The test applies the actual malice standard to false factual assertions even when framed as opinion."
+      },
+      {
+        "@type": "DoctrinalTest",
+        "id": "44liquormart_commercial_speech_test",
+        "label": "Commercial Speech Restriction Test",
+        "description": "A government restriction on truthful commercial speech must: (1) directly advance a substantial state interest; and (2) be narrowly tailored to serve that interest. The government bears the burden of demonstrating both prongs. Paternalistic justifications for restricting truthful commercial messages receive heightened scrutiny.",
+        "area_id": "commercial_speech",
+        "source_case_id": "44_liquormart_v_rhode_island_1996",
+        "scrutiny_level": "heightened",
+        "burden": "government",
+        "test_form": "conjunctive",
+        "prongs": [
+          {
+            "number": 1,
+            "label": "Direct Advancement of Substantial State Interest",
+            "description": "The restriction must directly advance a substantial state interest. Speculative or indirect benefits are insufficient. The government must demonstrate a real connection between the restriction and the asserted interest.",
+            "burden_note": "Government must prove direct advancement",
+            "valid_from": "1996",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 2,
+            "label": "Narrow Tailoring",
+            "description": "The restriction must be narrowly tailored to serve the asserted interest. The government must show that the restriction will actually achieve the stated goal and that less restrictive alternatives are inadequate.",
+            "burden_note": "Government must prove narrow tailoring",
+            "valid_from": "1996",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          }
+        ],
+        "status": "active",
+        "valid_from": "1996",
+        "valid_until": null,
+        "notes": "Applied to commercial speech restrictions, particularly those claimed to protect consumers. Courts must take special care when evaluating paternalistic restrictions on truthful commercial speech."
+      },
+      {
+        "@type": "DoctrinalTest",
+        "id": "lorillard_tobacco_narrowly_tailored_test",
+        "label": "Narrow Tailoring Test for Tobacco Advertising Regulations",
+        "description": "For regulations of commercial speech concerning tobacco products, the government must demonstrate that the regulation directly advances a substantial state interest and is narrowly tailored to achieve that interest. The regulation must not be more extensive than necessary to serve the substantial interest.",
+        "area_id": "commercial_speech",
+        "source_case_id": "lorillard_tobacco_co_v_reilly_2001",
+        "scrutiny_level": "intermediate",
+        "burden": "government",
+        "test_form": "conjunctive",
+        "prongs": [
+          {
+            "number": 1,
+            "label": "Direct Advancement of Substantial State Interest",
+            "description": "The regulation must directly advance a substantial government interest, such as preventing underage tobacco use.",
+            "burden_note": "Government must demonstrate the regulation directly advances the interest",
+            "valid_from": "2001-01-01",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 2,
+            "label": "Narrow Tailoring",
+            "description": "The regulation must be narrowly tailored to achieve the substantial interest and not be more extensive than necessary.",
+            "burden_note": "Government must show the regulation is not more extensive than necessary to advance the interest",
+            "valid_from": "2001-01-01",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          }
+        ],
+        "status": "active",
+        "valid_from": "2001-01-01",
+        "valid_until": null,
+        "notes": "Applied to smokeless tobacco and cigar advertising regulations. The Court found that Massachusetts failed to show that outdoor advertising regulations for smokeless tobacco and cigars were not more extensive than necessary."
+      },
+      {
+        "@type": "DoctrinalTest",
+        "id": "roberts_associational_protection_test",
+        "label": "Associational Protection Test",
+        "description": "A two-part test to determine whether a private organization's membership restrictions receive constitutional protection under freedom of association. First, the organization must have distinctive characteristics that afford constitutional protection to its associational decisions. Second, if such protection applies, the state must demonstrate a compelling interest that justifies any burden on the organization's freedom of association.",
+        "area_id": "freedom_of_association",
+        "source_case_id": "roberts_v_united_states_jaycees_1984",
+        "scrutiny_level": "strict",
+        "burden": "government",
+        "test_form": "threshold_then_conjunctive",
+        "prongs": [
+          {
+            "number": 1,
+            "label": "Distinctive Associational Characteristics",
+            "description": "The organization must possess distinctive characteristics\u2014such as intimate association or expressive association\u2014that would afford constitutional protection to its membership decisions.",
+            "burden_note": "Organization bears burden of demonstrating distinctive characteristics warranting constitutional protection.",
+            "valid_from": "1984-01-01",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 2,
+            "label": "Compelling State Interest",
+            "description": "If the organization has distinctive associational characteristics, the state must demonstrate a compelling interest in regulating the organization's membership practices and that the regulation is narrowly tailored to serve that interest.",
+            "burden_note": "Government bears burden of demonstrating compelling interest and narrow tailoring.",
+            "valid_from": "1984-01-01",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          }
+        ],
+        "status": "active",
+        "valid_from": "1984-01-01",
+        "valid_until": null,
+        "notes": "This test applies when a state seeks to enforce anti-discrimination laws against private organizations. If an organization fails to demonstrate distinctive associational characteristics (prong 1), the state's anti-discrimination law may be enforced without satisfying strict scrutiny."
+      },
+      {
+        "@type": "DoctrinalTest",
+        "id": "pennsylvania_coal_diminution_test",
+        "label": "Diminution-of-Value Test for Takings",
+        "description": "A test evaluating whether government regulation constitutes a taking by examining whether the regulation substantially diminishes the economic value of property rights without sufficient public interest justification.",
+        "area_id": "takings_clause",
+        "source_case_id": "pennsylvania_coal_co_v_mahon_1922",
+        "scrutiny_level": "balancing",
+        "burden": "government",
+        "test_form": "balancing",
+        "prongs": [
+          {
+            "number": 1,
+            "label": "Substantial Diminution of Value",
+            "description": "Whether the government action significantly reduces the economic value of the property or property rights.",
+            "burden_note": "Government must justify the diminution.",
+            "valid_from": "1922-01-01",
+            "valid_until": null,
+            "contested": true,
+            "contest_note": "Justice Brandeis criticized this prong as flawed because value is relative and cannot be objectively determined by courts."
+          },
+          {
+            "number": 2,
+            "label": "Public Interest Justification",
+            "description": "Whether the government has a strong public interest reason for the regulation that justifies the diminution in property value.",
+            "burden_note": "Government must demonstrate sufficient public interest.",
+            "valid_from": "1922-01-01",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          }
+        ],
+        "status": "active",
+        "valid_from": "1922-01-01",
+        "valid_until": null,
+        "notes": "The majority applied this test to strike down the Kohler Act, finding that the state had not demonstrated a sufficiently strong public interest to justify the substantial diminution in the value of Pennsylvania Coal's mining rights."
+      },
+      {
+        "@type": "DoctrinalTest",
+        "id": "mueller_establishment_clause_tax_deduction_test",
+        "label": "Establishment Clause Tax Deduction Test",
+        "description": "A test for determining whether a tax deduction for educational expenses violates the Establishment Clause. The test examines whether the deduction is neutral on its face and in application, and whether it benefits a broad class of taxpayers rather than being limited to sectarian institutions.",
+        "area_id": "establishment_clause",
+        "source_case_id": "mueller_v_allen_1983",
+        "scrutiny_level": "balancing",
+        "burden": "challenger",
+        "test_form": "conjunctive",
+        "prongs": [
+          {
+            "number": 1,
+            "label": "Facial Neutrality",
+            "description": "The tax deduction must be neutral on its face, not expressly favoring sectarian schools or religious education.",
+            "burden_note": "Challenger must demonstrate facial discrimination.",
+            "valid_from": "1983",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 2,
+            "label": "Neutral Application",
+            "description": "The tax deduction must be neutral in its application, not administered in a manner that favors sectarian institutions.",
+            "burden_note": "Challenger must demonstrate discriminatory application.",
+            "valid_from": "1983",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 3,
+            "label": "Broad Class Benefit",
+            "description": "The deduction must benefit a broad class of Minnesota citizens, not be limited to or primarily benefiting those using sectarian schools.",
+            "burden_note": "Challenger must demonstrate the deduction is narrowly tailored to sectarian benefit.",
+            "valid_from": "1983",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          }
+        ],
+        "status": "active",
+        "valid_from": "1983",
+        "valid_until": null,
+        "notes": "This test applies the Lemon framework to tax deductions for educational expenses. The Court emphasized that the deduction's availability to a broad class of taxpayers, including those using public schools, distinguishes it from programs that directly subsidize sectarian institutions."
+      },
+      {
+        "@type": "DoctrinalTest",
+        "id": "lemon_test_applied",
+        "label": "Lemon Test (as applied in Lynch)",
+        "description": "The three-part test from Lemon v. Kurtzman for evaluating Establishment Clause challenges: (1) whether the government action has a secular purpose; (2) whether the primary effect is to advance or inhibit religion; and (3) whether the action creates excessive entanglement between government and religion.",
+        "area_id": "establishment_clause",
+        "source_case_id": "lynch_v_donnelly_1984",
+        "scrutiny_level": "balancing",
+        "burden": "challenger",
+        "test_form": "conjunctive",
+        "prongs": [
+          {
+            "number": 1,
+            "label": "Secular Purpose",
+            "description": "The government action must have a secular purpose.",
+            "burden_note": "Challenger must demonstrate lack of secular purpose.",
+            "valid_from": "1984-03-05",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 2,
+            "label": "Primary Effect",
+            "description": "The primary effect of the government action must not be to advance or inhibit religion.",
+            "burden_note": "Challenger must demonstrate that the primary effect advances or inhibits religion.",
+            "valid_from": "1984-03-05",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 3,
+            "label": "Excessive Entanglement",
+            "description": "The government action must not create excessive entanglement between government and religion.",
+            "burden_note": "Challenger must demonstrate excessive entanglement, including political divisiveness resulting from the government action.",
+            "valid_from": "1984-03-05",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          }
+        ],
+        "status": "active",
+        "valid_from": "1984-03-05",
+        "valid_until": null,
+        "notes": "Lynch applies the Lemon test to the creche display. The Court found that although the District Court identified excessive entanglement based on political divisiveness, the inclusion of the creche in a larger secular holiday display did not violate the Establishment Clause."
       }
     ]
   },
@@ -39968,6 +40814,435 @@
         "state"
       ],
       "notes": "The Court applied the reasonable expectation of privacy doctrine to hold that curbside garbage is unprotected because it lacks a reasonable expectation of privacy."
+    },
+    {
+      "id": "seila_law_applies_presidential_removal_power",
+      "source_id": "seila_law_v_consumer_financial_protection_bureau_2020",
+      "target_id": "presidential_removal_power",
+      "edge_type": "APPLIES",
+      "valid_from": "2020-06-29",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ],
+      "notes": "The Court applied the doctrine of presidential removal power to evaluate the CFPB's structure, holding that the Director's removal protection violates the President's constitutional authority."
+    },
+    {
+      "id": "illinois_v_wardlow_applies_reasonable_suspicion_doctrine",
+      "source_id": "illinois_v_wardlow_2000",
+      "target_id": "reasonable_suspicion_doctrine",
+      "edge_type": "APPLIES",
+      "valid_from": "2000-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "The Court established that nervous, evasive behavior and flight in a high-crime area are pertinent factors in determining reasonable suspicion to justify a stop."
+    },
+    {
+      "id": "hustler_establishes_actual_malice_emotional_distress",
+      "source_id": "hustler_magazine_v_falwell_1988",
+      "target_id": "actual_malice_emotional_distress",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1988-02-24",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Case establishes that actual malice standard applies to emotional distress claims by public figures."
+    },
+    {
+      "id": "hustler_establishes_parody_satire_protection",
+      "source_id": "hustler_magazine_v_falwell_1988",
+      "target_id": "parody_satire_first_amendment",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1988-02-24",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Case establishes First Amendment protection for parody and satire that cannot reasonably be construed as factual statements."
+    },
+    {
+      "id": "milkovich_establishes_milkovich_opinion_test",
+      "source_id": "milkovich_v_lorain_journal_co_1990",
+      "target_id": "milkovich_opinion_test",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1990-06-21",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Milkovich established the opinion-fact distinction test as the governing standard for determining whether statements are protected opinion or actionable fact in defamation cases."
+    },
+    {
+      "id": "milkovich_applies_actual_malice_defamation",
+      "source_id": "milkovich_v_lorain_journal_co_1990",
+      "target_id": "actual_malice_defamation",
+      "edge_type": "APPLIES",
+      "valid_from": "1990-06-21",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Milkovich applies the actual malice standard from New York Times Co. v. Sullivan to determine whether the newspaper's article about the wrestling coach constitutes actionable libel."
+    },
+    {
+      "id": "milkovich_modifies_opinion_privilege_defamation",
+      "source_id": "milkovich_v_lorain_journal_co_1990",
+      "target_id": "opinion_privilege_defamation",
+      "edge_type": "MODIFIES",
+      "direction": "narrows",
+      "valid_from": "1990-06-21",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Milkovich narrowed the opinion privilege by rejecting the notion that statements framed as opinion are categorically protected from defamation liability. False factual assertions remain actionable even when presented as opinion."
+    },
+    {
+      "id": "paris_adult_theatre_applies_obscenity_doctrine",
+      "source_id": "paris_adult_theatre_v_slaton_1973",
+      "target_id": "obscenity_doctrine",
+      "edge_type": "APPLIES",
+      "valid_from": "1973-06-21",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Court applies the obscenity doctrine to hold that commercial exhibition of obscene films to consenting adults is not protected by the First Amendment."
+    },
+    {
+      "id": "virginia_state_board_establishes_commercial_speech_protection",
+      "source_id": "virginia_state_board_of_pharmacy_v_virginia_citizens_consumer_council_1976",
+      "target_id": "commercial_speech_protection",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1976-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "The Court established that commercial speech, including price advertising, receives First Amendment protection."
+    },
+    {
+      "id": "44liquormart_establishes_commercial_speech_protection",
+      "source_id": "44_liquormart_v_rhode_island_1996",
+      "target_id": "commercial_speech_protection",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1996",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "44 Liquormart established the doctrine that commercial speech receives First Amendment protection and that paternalistic restrictions on truthful commercial messages are disfavored."
+    },
+    {
+      "id": "44liquormart_establishes_44liquormart_commercial_speech_test",
+      "source_id": "44_liquormart_v_rhode_island_1996",
+      "target_id": "44liquormart_commercial_speech_test",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1996",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Justice Stevens' plurality opinion established the test for evaluating commercial speech restrictions."
+    },
+    {
+      "id": "44liquormart_establishes_twenty_first_amendment_limits",
+      "source_id": "44_liquormart_v_rhode_island_1996",
+      "target_id": "twenty_first_amendment_limits",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1996",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "44 Liquormart established that the Twenty-first Amendment's grant of regulatory power to states does not permit states to override First Amendment protections."
+    },
+    {
+      "id": "lorillard_establishes_lorillard_tobacco_narrowly_tailored_test",
+      "source_id": "lorillard_tobacco_co_v_reilly_2001",
+      "target_id": "lorillard_tobacco_narrowly_tailored_test",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2001-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Lorillard established the narrow tailoring test for tobacco advertising regulations under the First Amendment."
+    },
+    {
+      "id": "lorillard_applies_commercial_speech_protection",
+      "source_id": "lorillard_tobacco_co_v_reilly_2001",
+      "target_id": "commercial_speech_protection",
+      "edge_type": "APPLIES",
+      "valid_from": "2001-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Lorillard applied commercial speech doctrine to evaluate Massachusetts tobacco advertising regulations."
+    },
+    {
+      "id": "lorillard_establishes_federal_preemption_fclaa",
+      "source_id": "lorillard_tobacco_co_v_reilly_2001",
+      "target_id": "federal_preemption_fclaa",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2001-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Lorillard established that the Federal Cigarette Labeling and Advertising Act preempts state cigarette advertising regulations."
+    },
+    {
+      "id": "bates_applies_commercial_speech_protection",
+      "source_id": "bates_v_state_bar_of_arizona_1977",
+      "target_id": "commercial_speech_protection",
+      "edge_type": "APPLIES",
+      "valid_from": "1977-06-27",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Bates applies commercial speech doctrine to attorney advertising, holding that truthful information about legal services and fees is protected commercial speech."
+    },
+    {
+      "id": "bates_establishes_attorney_advertising_first_amendment",
+      "source_id": "bates_v_state_bar_of_arizona_1977",
+      "target_id": "attorney_advertising_first_amendment",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1977-06-27",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Bates establishes the doctrine that attorney advertising of routine legal services and fees is protected commercial speech under the First Amendment."
+    },
+    {
+      "id": "roberts_establishes_roberts_associational_protection_test",
+      "source_id": "roberts_v_united_states_jaycees_1984",
+      "target_id": "roberts_associational_protection_test",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1984-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Roberts v. United States Jaycees established the framework for analyzing when private organizations' membership restrictions receive constitutional protection under freedom of association."
+    },
+    {
+      "id": "roberts_applies_freedom_of_association",
+      "source_id": "roberts_v_united_states_jaycees_1984",
+      "target_id": "freedom_of_association_ballot_access",
+      "edge_type": "APPLIES",
+      "valid_from": "1984-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Roberts applies and clarifies the doctrine of freedom of association by distinguishing between intimate and expressive association and establishing when membership restrictions receive constitutional protection."
+    },
+    {
+      "id": "naacp_v_button_establishes_freedom_of_association_litigation",
+      "source_id": "naacp_v_button_1963",
+      "target_id": "freedom_of_association_litigation",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1963-01-14",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "The Court established that freedom of association protects the NAACP's litigation financing and legal assistance activities from state interference under the Fourteenth Amendment."
+    },
+    {
+      "id": "barnette_overrules_gobitis",
+      "source_id": "west_virginia_state_board_of_education_v_barnette_1943",
+      "target_id": "minersville_school_district_v_gobitis_1940",
+      "edge_type": "OVERRULES",
+      "overrule_type": "explicit",
+      "valid_from": "1943-06-14",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Barnette explicitly overruled Gobitis, reversing the holding that states may compel flag salutes in public schools."
+    },
+    {
+      "id": "barnette_establishes_compelled_expression",
+      "source_id": "west_virginia_state_board_of_education_v_barnette_1943",
+      "target_id": "freedom_from_compelled_expression",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1943-06-14",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Jackson's majority opinion established the doctrine that the First Amendment protects freedom from compelled expression."
+    },
+    {
+      "id": "pennsylvania_coal_applies_takings_doctrine",
+      "source_id": "pennsylvania_coal_co_v_mahon_1922",
+      "target_id": "takings_clause_doctrine",
+      "edge_type": "APPLIES",
+      "valid_from": "1922-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Pennsylvania Coal Co. v. Mahon established the principle that the Takings Clause limits state police power when regulation substantially diminishes property value."
+    },
+    {
+      "id": "pennsylvania_coal_establishes_diminution_test",
+      "source_id": "pennsylvania_coal_co_v_mahon_1922",
+      "target_id": "pennsylvania_coal_diminution_test",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1922-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "The majority opinion articulated the diminution-of-value test as the framework for evaluating takings claims."
+    },
+    {
+      "id": "pennsylvania_coal_establishes_nuisance_exception",
+      "source_id": "pennsylvania_coal_co_v_mahon_1922",
+      "target_id": "nuisance_exception_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1922-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Justice Brandeis's dissent articulated the nuisance exception doctrine, which became a recognized exception to takings liability."
+    },
+    {
+      "id": "romer_establishes_equal_protection_sexual_orientation",
+      "source_id": "romer_v_evans_1996",
+      "target_id": "equal_protection_sexual_orientation",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1996-05-20",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Romer v. Evans established the doctrine that equal protection review applies to sexual orientation classifications and that governmental animus cannot justify such classifications."
+    },
+    {
+      "id": "mueller_establishes_mueller_establishment_clause_tax_deduction_test",
+      "source_id": "mueller_v_allen_1983",
+      "target_id": "mueller_establishment_clause_tax_deduction_test",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1983",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Mueller v. Allen established the test for evaluating tax deductions for educational expenses under the Establishment Clause."
+    },
+    {
+      "id": "mueller_applies_establishment_clause_aid_to_sectarian_schools",
+      "source_id": "mueller_v_allen_1983",
+      "target_id": "establishment_clause_aid_to_sectarian_schools",
+      "edge_type": "APPLIES",
+      "valid_from": "1983",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Mueller v. Allen applies and reinforces the doctrine that government may provide certain forms of financial assistance to sectarian schools without violating the Establishment Clause."
+    },
+    {
+      "id": "lynch_applies_lemon_test",
+      "source_id": "lynch_v_donnelly_1984",
+      "target_id": "lemon_test_applied",
+      "edge_type": "APPLIES",
+      "valid_from": "1984-03-05",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Lynch applies the Lemon test from Lemon v. Kurtzman to evaluate the constitutionality of the creche display under the Establishment Clause."
+    },
+    {
+      "id": "richmond_newspapers_establishes_first_amendment_right_to_access",
+      "source_id": "richmond_newspapers_v_virginia_1980",
+      "target_id": "first_amendment_right_to_access_criminal_trials",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1980-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Richmond Newspapers established the doctrine that the First Amendment protects a right of public access to criminal trials."
+    },
+    {
+      "id": "miami_herald_applies_compelled_speech_doctrine",
+      "source_id": "miami_herald_publishing_co_v_tornillo_1974",
+      "target_id": "compelled_speech_doctrine",
+      "edge_type": "APPLIES",
+      "valid_from": "1974-06-25",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "The Court established the compelled speech doctrine by holding that a statute requiring newspapers to publish replies to editorial criticism violates the First Amendment."
+    },
+    {
+      "id": "carbone_applies_commerce_clause_dormant",
+      "source_id": "c_a_carbone_v_town_of_clarkstown_1994",
+      "target_id": "dormant_commerce_clause_doctrine",
+      "edge_type": "APPLIES",
+      "valid_from": "1994",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "The Court applied dormant Commerce Clause principles to invalidate the flow control ordinance as discriminatory against interstate commerce."
+    },
+    {
+      "id": "lynch_establishes_lemon_test_applied",
+      "source_id": "lynch_v_donnelly_1984",
+      "target_id": "lemon_test_applied",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1984-03-05",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
     }
   ],
   "schema_issues_found": [
