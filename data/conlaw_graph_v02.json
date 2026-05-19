@@ -17,8 +17,8 @@
     "created": "2026-03-15",
     "status": "draft",
     "schema_version": "0.5",
-    "node_count": 727,
-    "edge_count": 1175,
+    "node_count": 826,
+    "edge_count": 1253,
     "schema_issue_count": 41,
     "fixes_applied": [
       "FIX 1: ConstitutionalProvision labels changed to citation form (amendment_1, amendment_14_section_1) to disambiguate from Area nodes with same common-name labels",
@@ -2589,21 +2589,6 @@
       },
       {
         "@type": "Doctrine",
-        "id": "commerce_clause_discrimination",
-        "label": "Commerce Clause Discrimination Doctrine",
-        "description": "A state law that discriminates against interstate commerce violates the Commerce Clause, even if justified by legitimate local concerns such as health and environmental protection.",
-        "area_id": "dormant_commerce_clause",
-        "jurisdiction": [
-          "federal",
-          "state"
-        ],
-        "status": "active",
-        "valid_from": "1978-06-23",
-        "valid_until": null,
-        "notes": "Established in Philadelphia v. New Jersey. The doctrine prohibits state laws that facially discriminate against interstate commerce unless the state can demonstrate that the law serves a legitimate local purpose and that there is no adequate nondiscriminatory alternative."
-      },
-      {
-        "@type": "Doctrine",
         "id": "twenty_first_amendment_scope",
         "label": "21st Amendment Scope in Commerce Clause Context",
         "description": "The 21st Amendment grants states authority to regulate alcohol importation, but this authority does not extend to economic discrimination favoring in-state businesses over out-of-state businesses in violation of the dormant Commerce Clause.",
@@ -4472,6 +4457,650 @@
         "valid_from": "2024-07-01",
         "valid_until": null,
         "notes": "Established in Trump v. United States (2024). The distinction is critical to determining the scope of Presidential immunity. Courts must perform fact-specific analysis to differentiate official from unofficial actions."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "regulatory_takings_total_deprivation",
+        "label": "Regulatory Takings \u2014 Total Economic Deprivation",
+        "description": "A regulatory taking claim based on total deprivation of economically beneficial use requires that the property retain no significant economic worth. If the property retains significant value for development or other use, the claim fails.",
+        "area_id": "takings_clause",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "2001-06-23",
+        "valid_until": null,
+        "notes": "Established in Palazzolo. The Court found that even though the salt marsh was heavily restricted, the upland parcel retained $200,000 in development value, defeating the total deprivation claim."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "unconstitutional_conditions_doctrine",
+        "label": "Unconstitutional Conditions Doctrine",
+        "description": "The government may not deny a benefit to a person on a basis that infringes constitutionally protected interests, especially freedom of speech. Even though a person has no right to a valuable governmental benefit and the government may deny it for many reasons, there are some reasons upon which the government may not rely.",
+        "area_id": "free_speech",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1972",
+        "valid_until": null,
+        "notes": "Applies to denials of tax exemptions, unemployment benefits, and other governmental benefits. The government cannot condition the receipt of a benefit on the waiver of a constitutional right."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "public_employee_free_speech_protection",
+        "label": "Public Employee Free Speech Protection",
+        "description": "A public employee may not be terminated or have employment benefits denied based on the exercise of constitutionally protected free speech, even absent a contractual or tenure right to re-employment.",
+        "area_id": "free_speech",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1972",
+        "valid_until": null,
+        "notes": "Protects public employees from retaliation for speech on matters of public concern, including criticism of government policies and public testimony before legislative committees."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "procedural_due_process_public_employment",
+        "label": "Procedural Due Process in Public Employment",
+        "description": "A public employee may have a constitutionally protected liberty or property interest in continued employment that triggers procedural due process protections, even without formal tenure, if the employee can demonstrate a legitimate claim of entitlement to re-employment based on existing rules, understandings, or mutually explicit understandings.",
+        "area_id": "substantive_due_process",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1972",
+        "valid_until": null,
+        "notes": "Requires that if a property or liberty interest exists, the government must provide notice and an opportunity for a hearing before terminating employment."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "property_interest_education",
+        "label": "Property Interest in Education",
+        "description": "When a state extends the right to education to its citizens, it creates a constitutionally protected property interest in that education under the Due Process Clause that cannot be withdrawn without fundamentally fair procedures.",
+        "area_id": "substantive_due_process",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1975-01-01",
+        "valid_until": null,
+        "notes": "Established in Goss v. Lopez; applies to student suspensions and other deprivations of educational entitlements."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "due_process_student_suspension",
+        "label": "Due Process Requirements for Student Suspension",
+        "description": "Students facing suspension from school must be afforded minimum procedural protections including notice of charges and some kind of hearing before deprivation of their educational interest.",
+        "area_id": "substantive_due_process",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1975-01-01",
+        "valid_until": null,
+        "notes": "Minimum procedures required by the Due Process Clause for student suspensions."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "property_interest_employment",
+        "label": "Property Interest in Public Employment",
+        "description": "A property interest in public employment can be created by ordinance or implied contract, but the sufficiency of a claim of entitlement must be decided by reference to state law. An enforceable expectation of continued public employment exists only if the employer has actually granted some form of guarantee through statute or contract.",
+        "area_id": "substantive_due_process",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1976-01-01",
+        "valid_until": null,
+        "notes": "Established in Bishop v. Wood; clarifies that state law determines whether a property interest in employment exists."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "procedural_due_process_liberty_deprivation",
+        "label": "Procedural Due Process Protection Against Liberty Deprivation",
+        "description": "The constitutional requirement that the state provide procedural safeguards before depriving a person of liberty, including the right to a hearing or other predeprivation process when the state has delegated authority to officials to make determinations affecting liberty interests.",
+        "area_id": "substantive_due_process",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1990",
+        "valid_until": null,
+        "notes": "Established in Zinermon v. Burch as applicable to mental hospital admissions where state officials have authority to determine competency and consent."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "parratt_rule",
+        "label": "Parratt Rule for Random, Unauthorized Deprivations",
+        "description": "The doctrine that a random, unauthorized deprivation of a constitutionally protected property interest caused by a state employee does not give rise to a procedural due process claim under \u00a7 1983 unless the state fails to provide an adequate postdeprivation remedy, based on the reasoning that the state cannot predict and guard in advance against such deprivations.",
+        "area_id": "substantive_due_process",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1981",
+        "valid_until": null,
+        "notes": "Established in Parratt v. Taylor (1981) and applied in Hudson v. Palmer (1984). Zinermon v. Burch limits the scope of this rule by holding it does not apply when predeprivation remedies were feasible."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "federal_marriage_recognition_doctrine",
+        "label": "Federal Marriage Recognition and Equal Protection",
+        "description": "Federal law cannot deny same-sex couples the rights and benefits of marriage that are available to opposite-sex couples whose marriages are recognized under state law, as such denial violates the Fifth Amendment's guarantee of equal protection by imposing disadvantage, separate status, and stigma.",
+        "area_id": "equal_protection",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "2013-06-26",
+        "valid_until": null,
+        "notes": "Established in United States v. Windsor. This doctrine addresses federal recognition of state-authorized same-sex marriages and the equal protection implications of denying federal benefits to such marriages."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "state_marriage_definition_authority",
+        "label": "State Authority to Define Marriage",
+        "description": "States have the authority to define marital relationships. Federal law cannot undermine this state authority by denying recognition to marriages validly entered under state law.",
+        "area_id": "equal_protection",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "2013-06-26",
+        "valid_until": null,
+        "notes": "Established in United States v. Windsor as a principle limiting federal power to override state marriage definitions."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "gender_based_classification_ep",
+        "label": "Gender-Based Classification Under Equal Protection",
+        "description": "The doctrine governing when a state may classify individuals on the basis of gender under the Equal Protection Clause of the Fourteenth Amendment, including consideration of whether similarly situated groups are treated differently and whether the state has a substantial interest justifying the classification.",
+        "area_id": "equal_protection",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1981-01-01",
+        "valid_until": null,
+        "notes": "Established in Michael M. v. Superior Court as a plurality decision. The case held that gender-based statutory rape laws may survive equal protection scrutiny when the sexes are not similarly situated with respect to the harms the law addresses."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "right_to_public_education",
+        "label": "Right to Public Education",
+        "description": "Undocumented school-age children have a constitutional right to free public K-12 education under the Equal Protection Clause of the Fourteenth Amendment.",
+        "area_id": "equal_protection",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1982-06-15",
+        "valid_until": null,
+        "notes": "Established in Plyler v. Doe as protection for undocumented children against state denial of public education."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "equal_protection_race_based_admissions",
+        "label": "Equal Protection Clause and Race-Based Admissions",
+        "description": "The Equal Protection Clause of the Fourteenth Amendment prohibits race-based admissions programs that fail to satisfy strict scrutiny. Race-based classifications must serve a compelling governmental interest and be narrowly tailored to achieve that interest. Universities may consider an applicant's discussion of how race affected the applicant's life only if that discussion is concretely tied to a quality of character or unique ability the applicant can contribute.",
+        "area_id": "equal_protection",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "2023-06-29",
+        "valid_until": null,
+        "notes": "Overrules the precedent established in Grutter v. Bollinger regarding the permissibility of race-based admissions under strict scrutiny. The doctrine requires measurable compelling interests, avoidance of racial stereotyping, and a logical endpoint for race-based programs."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "commerce_clause_regulatory_power",
+        "label": "Commerce Clause Regulatory Power",
+        "description": "Congress possesses constitutional authority under the Commerce Clause to regulate interstate commerce and to prohibit the shipment of goods in interstate commerce when such regulation addresses activities that have a significant effect on interstate commerce, including labor conditions and practices.",
+        "area_id": "dormant_commerce_clause",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1941",
+        "valid_until": null,
+        "notes": "Established in United States v. Darby as a broad affirmation of federal regulatory power under the Commerce Clause."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "state_immunity_commerce_clause",
+        "label": "State Immunity from Federal Commerce Clause Regulation",
+        "description": "The doctrine that states possess immunity from federal regulation under the Commerce Clause, particularly regarding labor and employment matters. Garcia v. San Antonio Metropolitan Transit Authority rejected the 'traditional governmental function' test as the basis for determining the scope of this immunity.",
+        "area_id": "dormant_commerce_clause",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1985-02-19",
+        "valid_until": null,
+        "notes": "This doctrine was substantially modified by Garcia, which overruled the 'traditional governmental function' standard from National League of Cities v. Usery."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "warrantless_arrest_minor_offense",
+        "label": "Warrantless Arrest for Minor Criminal Offense",
+        "description": "Under the Fourth Amendment, a police officer may make a warrantless arrest for a minor criminal offense, such as a misdemeanor punishable only by a fine, if the officer has probable cause to believe the individual committed the offense in the officer's presence.",
+        "area_id": "criminal_procedure",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "2001",
+        "valid_until": null,
+        "notes": "Established in Atwater v. City of Lago Vista. This doctrine permits warrantless arrests for minor offenses without requiring additional reasonableness analysis beyond probable cause."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "fourth_amendment_reasonableness",
+        "label": "Fourth Amendment Reasonableness Requirement",
+        "description": "The constitutional requirement that searches and seizures be reasonable under the Fourth Amendment, which includes consideration of whether police conduct comports with the reasonable expectations and objections of persons in shared spaces.",
+        "area_id": "criminal_procedure",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "2006",
+        "valid_until": null,
+        "notes": "Applied in Georgia v. Randolph to evaluate the reasonableness of consent searches in the presence of objecting co-occupants."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "reasonable_suspicion_doctrine",
+        "label": "Reasonable Suspicion Doctrine",
+        "description": "The constitutional standard permitting law enforcement to conduct a brief investigatory stop based on articulable facts that, taken together with rational inferences, warrant suspicion that a person is engaged in or about to engage in criminal activity. Under this doctrine, an officer may rely on information from sources beyond personal observation, including anonymous tips, if the information contains sufficient indicia of reliability.",
+        "area_id": "criminal_procedure",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "2014-04-22",
+        "valid_until": null,
+        "notes": "Navarette v. California clarified that reasonable suspicion may be based on an anonymous tip if the tip contains indicia of reliability such as eyewitness knowledge and temporal proximity to the reported incident."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "cruel_and_unusual_punishment_doctrine",
+        "label": "Cruel and Unusual Punishment Doctrine",
+        "description": "The Eighth Amendment prohibition on cruel and unusual punishment, as applied to the states through the Fourteenth Amendment, prohibits the imposition of the death penalty when administered in an arbitrary, capricious, or discriminatory manner.",
+        "area_id": "individual_rights",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1972-06-29",
+        "valid_until": null,
+        "notes": "Established in Furman v. Georgia. The doctrine requires that capital punishment statutes provide meaningful guidance to prevent arbitrary and capricious application, and must not be applied in a manner that reflects racial or other invidious discrimination."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "capital_punishment_doctrine",
+        "label": "Capital Punishment Doctrine",
+        "description": "The constitutional framework governing the imposition of capital punishment under the Eighth and Fourteenth Amendments, requiring procedural safeguards including bifurcated trials, consideration of aggravating and mitigating circumstances, and appellate review to ensure consistency and prevent arbitrary or capricious application of the death penalty.",
+        "area_id": "criminal_procedure",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1976-07-02",
+        "valid_until": null,
+        "notes": "Established in Gregg v. Georgia as the governing framework for constitutional capital punishment."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "bifurcated_capital_trial_doctrine",
+        "label": "Bifurcated Capital Trial Doctrine",
+        "description": "The requirement that capital cases proceed in two distinct stages: a guilt stage determining whether the defendant committed the charged offense, and a separate penalty stage at which the jury determines whether to impose death or life imprisonment, with consideration of aggravating and mitigating circumstances.",
+        "area_id": "criminal_procedure",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1976-07-02",
+        "valid_until": null,
+        "notes": "Core procedural safeguard upheld in Gregg to prevent arbitrary and capricious application of capital punishment."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "cruel_and_unusual_punishment_proportionality",
+        "label": "Cruel and Unusual Punishment \u2014 Proportionality Doctrine",
+        "description": "The Eighth Amendment prohibits punishments that are grossly disproportionate to the offense committed. The proportionality of a punishment is assessed by considering whether the penalty is excessive in relation to the crime, particularly whether the offense involves the taking of human life.",
+        "area_id": "individual_rights",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1977-06-29",
+        "valid_until": null,
+        "notes": "Established in Coker v. Georgia as a constraint on capital punishment. The doctrine requires consideration of the nature of the offense and whether it involves loss of life."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "eighth_amendment_proportionality",
+        "label": "Eighth Amendment Proportionality Doctrine",
+        "description": "The Eighth Amendment prohibits sentences that are grossly disproportionate to the offense committed, particularly where the defendant's prior offenses were non-violent and relatively minor.",
+        "area_id": "individual_rights",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1983-01-01",
+        "valid_until": null,
+        "notes": "Established in Solem v. Helm as a constitutional constraint on sentencing severity."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "eighth_amendment_mental_retardation_protection",
+        "label": "Eighth Amendment Protection Against Execution of Mentally Retarded Offenders",
+        "description": "The Eighth Amendment prohibits the execution of mentally retarded offenders as cruel and unusual punishment, based on their diminished culpability and the reduced applicability of retribution and deterrence rationales for capital punishment.",
+        "area_id": "individual_rights",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "2002-06-20",
+        "valid_until": null,
+        "notes": "Established that evolving standards of decency under the Eighth Amendment categorically exclude mentally retarded offenders from capital punishment."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "evolving_standards_of_decency",
+        "label": "Evolving Standards of Decency",
+        "description": "The Eighth Amendment's prohibition on cruel and unusual punishment must be interpreted according to evolving standards of decency that mark the progress of a maturing society, as reflected in state legislative consensus, public opinion, and international norms.",
+        "area_id": "individual_rights",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "2005-03-01",
+        "valid_until": null,
+        "notes": "Applied in Roper v. Simmons to determine that juvenile death penalty violates Eighth Amendment. Builds on reasoning from Atkins v. Virginia."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "juvenile_death_penalty_prohibition",
+        "label": "Prohibition on Juvenile Death Penalty",
+        "description": "The execution of individuals who were under 18 years old at the time of their crime constitutes cruel and unusual punishment prohibited by the Eighth Amendment.",
+        "area_id": "individual_rights",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "2005-03-01",
+        "valid_until": null,
+        "notes": "Established by Roper v. Simmons as a constitutional protection for minors in capital cases."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "eighth_amendment_capital_punishment_limitation",
+        "label": "Eighth Amendment Limitation on Capital Punishment",
+        "description": "The Eighth Amendment prohibits states from imposing the death penalty for crimes that do not result in, and were not intended to result in, the death of the victim, based on national consensus and excessiveness analysis.",
+        "area_id": "individual_rights",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "2008-06-25",
+        "valid_until": null,
+        "notes": "Established that capital punishment is limited not only by the nature of the offense but by national consensus regarding the proportionality of the punishment to the crime."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "juvenile_sentencing_eighth_amendment",
+        "label": "Juvenile Sentencing and the Eighth Amendment",
+        "description": "The constitutional principle that the Eighth Amendment's Cruel and Unusual Punishments Clause imposes categorical limits on sentences imposed on juvenile offenders, particularly prohibiting life imprisonment without parole for non-homicidal crimes.",
+        "area_id": "individual_rights",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "2010-05-17",
+        "valid_until": null,
+        "notes": "Established in Graham v. Florida as a categorical rule applying to an entire class of offenders (juveniles) rather than individualized sentencing analysis."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "categorical_eighth_amendment_analysis",
+        "label": "Categorical Analysis Under the Eighth Amendment",
+        "description": "The analytical framework for evaluating whether a particular type of sentence as applied to an entire class of offenders violates the Eighth Amendment, requiring consideration of objective indicia of society's standards and guidance from controlling constitutional precedents.",
+        "area_id": "individual_rights",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "2010-05-17",
+        "valid_until": null,
+        "notes": "Applied in Graham v. Florida to juvenile sentencing; builds on categorical approaches established in Atkins, Roper, and Kennedy."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "juvenile_sentencing_proportionality",
+        "label": "Juvenile Sentencing Proportionality Doctrine",
+        "description": "The constitutional principle that children are constitutionally different from adults for sentencing purposes, and that mandatory life sentences without the possibility of parole constitute unconstitutionally disproportionate punishment for juvenile homicide offenders under the Eighth Amendment.",
+        "area_id": "individual_rights",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "2012-06-25",
+        "valid_until": null,
+        "notes": "Established in Miller v. Alabama (2012). Reflects the principle that juvenile offenders have diminished culpability and greater capacity for rehabilitation compared to adults."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "miranda_rights_doctrine",
+        "label": "Miranda Rights and Waiver Doctrine",
+        "description": "The doctrine requiring law enforcement to inform suspects of their constitutional rights (right to remain silent, that statements can be used against them, right to counsel, and right to appointed counsel if indigent) prior to custodial interrogation, and the validity of waivers of those rights.",
+        "area_id": "criminal_procedure",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1966-06-13",
+        "valid_until": null,
+        "notes": "Established in Miranda v. Arizona, 384 U.S. 436 (1966). This case addresses the validity of waivers under Miranda."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "sixth_amendment_right_to_counsel",
+        "label": "Sixth Amendment Right to Counsel",
+        "description": "The constitutional guarantee that a defendant has the right to effective assistance of counsel, which includes an obligation for counsel to advise a client on collateral consequences of a guilty plea, including deportation risk.",
+        "area_id": "criminal_procedure",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "2010-01-01",
+        "valid_until": null,
+        "notes": "Padilla v. Kentucky established that advice regarding deportation consequences is not categorically removed from the scope of the Sixth Amendment right to counsel."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "bill_of_rights_non_incorporation",
+        "label": "Bill of Rights Non-Incorporation Doctrine",
+        "description": "The Bill of Rights (first ten amendments) applies only to the federal government and does not constrain state governments. States retain independent authority to regulate individual rights within their borders.",
+        "area_id": "substantive_due_process",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1833-01-01",
+        "valid_until": null,
+        "notes": "Established in Barron v. Baltimore. This doctrine was later substantially modified by the Fourteenth Amendment incorporation doctrine, which selectively applied most Bill of Rights protections to the states."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "just_compensation_clause",
+        "label": "Just Compensation Clause",
+        "description": "The Fifth Amendment provides that private property shall not be taken for public use without just compensation. In Barron, the Court held this clause applies only to the federal government.",
+        "area_id": "individual_rights",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1833-01-01",
+        "valid_until": null,
+        "notes": "The Fifth Amendment's just compensation requirement was held in Barron to apply only to federal takings, not state or local government action."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "right_to_jury_trial_criminal",
+        "label": "Right to Jury Trial in Criminal Cases",
+        "description": "The Sixth Amendment guarantee of trial by jury in criminal cases is fundamental to the American scheme of justice and is incorporated into the Fourteenth Amendment, obligating states to provide jury trials in criminal cases, except for petty crimes.",
+        "area_id": "criminal_procedure",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1968-01-01",
+        "valid_until": null,
+        "notes": "Established in Duncan v. Louisiana. Petty offenses (punishable by no more than six months in prison and a $500 fine) are excluded from this requirement."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "second_amendment_right_to_keep_and_bear_arms",
+        "label": "Second Amendment Right to Keep and Bear Arms",
+        "description": "The right of individuals to keep and bear arms for lawful purposes, including self-defense, protected by the Second Amendment and incorporated against the states through the Fourteenth Amendment's Due Process Clause.",
+        "area_id": "individual_rights",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "2010-06-28",
+        "valid_until": null,
+        "notes": "Established in McDonald v. City of Chicago as an individual right applicable to the states. The Court recognized this right as fundamental to the Nation's scheme of ordered liberty and deeply rooted in the Nation's history and tradition."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "fourteenth_amendment_incorporation",
+        "label": "Fourteenth Amendment Incorporation Doctrine",
+        "description": "The doctrine by which fundamental rights are incorporated against the states through the Due Process Clause of the Fourteenth Amendment when they are fundamental to the Nation's scheme of ordered liberty or deeply rooted in the Nation's history and tradition.",
+        "area_id": "substantive_due_process",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "2010-06-28",
+        "valid_until": null,
+        "notes": "McDonald applied the incorporation doctrine to the Second Amendment, holding that the Due Process Clause is the appropriate mechanism for incorporation."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "production_not_commerce",
+        "label": "Production-Commerce Distinction",
+        "description": "Production of goods is not commerce and therefore falls outside the scope of Congress's power to regulate interstate commerce. Only the shipment or movement of goods constitutes commerce subject to federal regulation.",
+        "area_id": "individual_rights",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1918-01-01",
+        "valid_until": null,
+        "notes": "This doctrine was used to distinguish production (a local activity reserved to states) from commerce (interstate movement of goods)."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "non_delegation_doctrine",
+        "label": "Non-Delegation Doctrine",
+        "description": "Congress cannot delegate its legislative authority to the President or other branches without establishing intelligible principles or standards to guide the exercise of that delegated authority.",
+        "area_id": "federalism",
+        "jurisdiction": [
+          "federal"
+        ],
+        "status": "active",
+        "valid_from": "1935-05-27",
+        "valid_until": null,
+        "notes": "Established in Schechter Poultry Corp. v. United States as a constitutional limit on Congress's power to delegate legislative functions."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "treaty_power_doctrine",
+        "label": "Treaty Power Doctrine",
+        "description": "The federal government possesses the power to enter into treaties with foreign nations, and such treaties, when implemented by Congress, constitute the supreme law of the land under the Supremacy Clause and may regulate matters within the national interest even if those matters would otherwise fall within state sovereignty.",
+        "area_id": "federalism",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1920-01-01",
+        "valid_until": null,
+        "notes": "Established in Missouri v. Holland. The doctrine recognizes that the treaty power is not limited by the enumerated powers of Congress and that treaties are not subject to state-level constitutional challenge under the Tenth Amendment."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "supremacy_clause_doctrine",
+        "label": "Supremacy Clause Doctrine",
+        "description": "The Supremacy Clause (Article VI, Clause 2) establishes that treaties made under the authority of the United States are the supreme law of the land, binding upon the states and superseding any conflicting state law or constitutional provision.",
+        "area_id": "federalism",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1920-01-01",
+        "valid_until": null,
+        "notes": "As applied in Missouri v. Holland, the Supremacy Clause renders treaty provisions not subject to questioning by the states through judicial review."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "anticommandeering_doctrine",
+        "label": "Anticommandeering Doctrine",
+        "description": "The constitutional principle, rooted in the Tenth Amendment and the structure of dual sovereignty, that Congress may not issue direct orders to state legislatures compelling them to enact or enforce federal regulatory programs, nor may Congress prohibit states from modifying or repealing their own laws in a manner that effectively commandeers the state legislative process.",
+        "area_id": "federalism",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "2018-05-14",
+        "valid_until": null,
+        "notes": "Established in New York v. United States (1992) and Printz v. United States (1997); clarified and extended in Murphy v. NCAA to apply to prohibitions on state legislative action, not merely affirmative commands."
       }
     ],
     "areas": [
@@ -8912,41 +9541,6 @@
         "valid_from": "2003-06-23",
         "valid_until": "2023-06-29",
         "notes": "Grutter v. Bollinger upheld holistic race-conscious admissions at the University of Michigan Law School, establishing student body diversity as a compelling interest under strict scrutiny. Companion case Gratz v. Bollinger (2003) struck the undergraduate point system. Students for Fair Admissions v. Harvard (2023) overruled Grutter, holding that race-conscious admissions programs are unconstitutional because they lack measurable objectives, use race as a negative, and are not limited in time."
-      },
-      {
-        "@type": "Case",
-        "id": "sffa_v_harvard_2023",
-        "short_name": "Students for Fair Admissions v. Harvard",
-        "full_name": "Students for Fair Admissions, Inc. v. President and Fellows of Harvard College",
-        "citation": "600 U.S. 181 (2023)",
-        "court_level": "scotus",
-        "court_name": "Supreme Court of the United States",
-        "binding_scope": "federal_all",
-        "decided_date": "2023-06-29",
-        "opinion_form": "signed_majority",
-        "procedural_disposition": "reversed",
-        "holding": "Race-conscious admissions programs at Harvard College and the University of North Carolina violate the Equal Protection Clause. The programs fail strict scrutiny because they lack sufficiently focused and measurable objectives that would allow for judicial review, unavoidably employ race in a negative manner, involve racial stereotyping, and have no logical endpoint. Grutter v. Bollinger is overruled. Universities may still consider how race affected an applicant's life through discrimination, inspiration, or otherwise \u2014 but race itself cannot be a factor in admissions decisions.",
-        "holding_type": "affirmative",
-        "majority_author": "Roberts",
-        "per_curiam": false,
-        "vote": "6-3 (UNC) / 6-2 (Harvard)",
-        "opinions": [
-          {
-            "type": "dissent",
-            "author": "Sotomayor",
-            "joined_by": [
-              "Kagan",
-              "Jackson"
-            ],
-            "doctrinal_significance": "Sotomayor argued the majority cements a superficial rule of colorblindness as a constitutional principle in an endemically segregated society and effectively overrules decades of precedent permitting narrowly tailored race-conscious admissions programs.",
-            "adopted_in": []
-          }
-        ],
-        "status": "good_law",
-        "precedential_weight": "binding",
-        "valid_from": "2023-06-29",
-        "valid_until": null,
-        "notes": "SFFA v. Harvard is the most significant equal protection decision since Grutter, effectively ending race-conscious admissions in higher education. The decision overrules Grutter v. Bollinger (2003) and Gratz v. Bollinger (2003) and marks a fundamental shift in affirmative action doctrine. Roberts's majority opinion preserves a narrow exception for applicants who discuss how race has affected their personal experiences."
       },
       {
         "@type": "Case",
@@ -15555,6 +16149,1515 @@
           }
         ],
         "notes": "Chief Justice Roberts delivered the opinion of the Court, joined in full by Thomas, Alito, Gorsuch, and Kavanaugh, JJ., and joined by Barrett, J., except as to Part III\u2013C. This is the first criminal prosecution in the Nation's history of a former President for actions taken during his Presidency. The Court vacated and remanded the D.C. Circuit's affirmance of the District Court's denial of Trump's motion to dismiss based on Presidential immunity."
+      },
+      {
+        "@type": "Case",
+        "id": "palazzolo_v_rhode_island_2001",
+        "short_name": "Palazzolo v. Rhode Island",
+        "full_name": "Anthony Palazzolo v. State of Rhode Island",
+        "citation": "533 U.S. 606 (2001)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "2001-06-23",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "A property owner may bring a takings claim under the Fifth and Fourteenth Amendments even if the owner acquired title to the property after the effective date of the challenged regulations, and the claim is not barred by the timing of the acquisition; however, a takings claim based on deprivation of all economic value fails if the property retains significant economic worth.",
+        "holding_type": "affirmative",
+        "majority_author": "Kennedy",
+        "per_curiam": false,
+        "vote": "5-4",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "2001-06-23",
+        "valid_until": null,
+        "opinions": [
+          {
+            "type": "dissent",
+            "author": null,
+            "doctrinal_significance": "Dissented from the majority's holding on post-acquisition ripeness and standing",
+            "joined_by": [],
+            "adopted_in": []
+          }
+        ],
+        "notes": "5-4 decision. The Court reversed the Rhode Island Supreme Court's finding that the takings claim was unripe and that post-regulation acquisition of title barred the claim. The Court affirmed the state court's finding that the owner failed to establish total deprivation of economic value."
+      },
+      {
+        "@type": "Case",
+        "id": "tahoe_sierra_preservation_council_v_tahoe_regional_planning_agency_2002",
+        "short_name": "Tahoe-Sierra Preservation Council v. TRPA",
+        "full_name": "Tahoe-Sierra Preservation Council, Inc. v. Tahoe Regional Planning Agency",
+        "citation": "535 U.S. 302 (2002)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "2002-01-01",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "A temporary moratorium on development does not constitute a per se taking of property requiring just compensation; whether a taking occurred depends on consideration of the landowners' reasonable expectations, the actual economic impact, the public interest, and the reasons for the moratorium.",
+        "holding_type": "by_negation",
+        "majority_author": "Stevens",
+        "per_curiam": false,
+        "vote": "6-3",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "2002-01-01",
+        "valid_until": null,
+        "opinions": [
+          {
+            "type": "dissent",
+            "author": "Rehnquist",
+            "doctrinal_significance": "Argued that temporary deprivation of all economic use constitutes a categorical taking",
+            "joined_by": [
+              "Scalia",
+              "Thomas"
+            ],
+            "adopted_in": []
+          },
+          {
+            "type": "dissent",
+            "author": "Thomas",
+            "doctrinal_significance": "Argued that temporary deprivation of all economic use constitutes a categorical taking",
+            "joined_by": [
+              "Scalia"
+            ],
+            "adopted_in": []
+          }
+        ],
+        "notes": "The Court rejected the categorical rule that any deprivation of all economic use, no matter how brief, constitutes a compensable taking, reasoning that such a rule would impose unreasonable financial obligations on governments for normal delays in processing land use applications.",
+        "courtlistener_id": "118498"
+      },
+      {
+        "@type": "Case",
+        "id": "arkansas_game_and_fish_commission_v_united_states_2012",
+        "short_name": "Arkansas Game & Fish Commission v. United States",
+        "full_name": "Arkansas Game & Fish Commission v. United States of America",
+        "citation": "568 U.S. 23 (2012)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "2012-01-01",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "A temporary interference with property, including temporary flooding caused by government action, can constitute a compensable taking under the Fifth Amendment Takings Clause; there is no categorical exception for temporary takings, and courts must consider multiple factors including duration, severity, intent, and foreseeability when determining whether a taking has occurred.",
+        "holding_type": "affirmative",
+        "majority_author": "Ginsburg",
+        "per_curiam": false,
+        "vote": "8-0",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "2012-01-01",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "Unanimous decision. The Court rejected the Federal Circuit's categorical rule that only permanent flooding constitutes a taking, establishing that temporary government interference with property can be compensable under the Fifth Amendment."
+      },
+      {
+        "@type": "Case",
+        "id": "knick_v_township_of_scott_2019",
+        "short_name": "Knick v. Township of Scott",
+        "full_name": "Knick v. Township of Scott, Pennsylvania",
+        "citation": "588 U.S. 180 (2019)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "2019-06-21",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "A property owner may bring a Fifth Amendment takings claim under 42 U.S.C. \u00a7 1983 in federal court without first exhausting state inverse-condemnation remedies; the state-litigation requirement established in Williamson County Regional Planning Commission v. Hamilton Bank of Johnson City is overruled.",
+        "holding_type": "affirmative",
+        "majority_author": "Roberts",
+        "per_curiam": false,
+        "vote": "5-4",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "2019-06-21",
+        "valid_until": null,
+        "opinions": [
+          {
+            "type": "concurrence",
+            "author": "Thomas",
+            "doctrinal_significance": "Emphasized opposition to the position that no constitutional violation occurs if a mechanism for compensation exists after the taking.",
+            "joined_by": [],
+            "adopted_in": []
+          },
+          {
+            "type": "dissent",
+            "author": "Kagan",
+            "doctrinal_significance": "Argued that the Takings Clause text includes the qualifying phrase 'without just compensation' and does not forbid all takings, only uncompensated ones; criticized departure from stare decisis.",
+            "joined_by": [
+              "Ginsburg",
+              "Breyer",
+              "Sotomayor"
+            ],
+            "adopted_in": []
+          }
+        ],
+        "notes": "The majority held that the right of compensation arises at the time of the taking, not after. The Court found that Williamson County's requirement to exhaust state remedies before federal court access imposes an unjustifiable burden on takings plaintiffs and conflicts with takings jurisprudence.",
+        "courtlistener_id": "4631843"
+      },
+      {
+        "@type": "Case",
+        "id": "city_of_philadelphia_v_new_jersey_1978",
+        "short_name": "City of Philadelphia v. New Jersey",
+        "full_name": "City of Philadelphia v. New Jersey",
+        "citation": "437 U.S. 617 (1978)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1978-01-01",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "A state law that prohibits the importation of most solid or liquid waste originating outside the state violates the Commerce Clause because it discriminates against interstate commerce, and such discrimination cannot be justified merely by advancing health and environmental objectives without economic discrimination.",
+        "holding_type": "affirmative",
+        "majority_author": "Stewart",
+        "per_curiam": false,
+        "vote": null,
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1978-01-01",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "The Court reversed the New Jersey Supreme Court's decision upholding the waste importation ban. The opinion addresses whether interstate movement of waste constitutes 'commerce' under the Commerce Clause and rejects the state court's attempt to apply a narrower definition of commerce when striking down state legislation.",
+        "courtlistener_id": "109916"
+      },
+      {
+        "@type": "Case",
+        "id": "west_lynn_creamery_v_healy_1994",
+        "short_name": "West Lynn Creamery v. Healy",
+        "full_name": "West Lynn Creamery, Inc. v. Healy",
+        "citation": "512 U.S. 186 (1994)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1994-01-01",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "A state pricing order that imposes a tax on all milk dealers but distributes the tax revenue exclusively to in-state dairy farmers violates the Commerce Clause because it discriminates against interstate commerce and functions as a tariff.",
+        "holding_type": "affirmative",
+        "majority_author": "Stevens",
+        "per_curiam": false,
+        "vote": "7-2",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1994-01-01",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "The Court found that although the pricing order applied to all dealers, the discriminatory effect\u2014reserving benefits exclusively for in-state producers\u2014rendered it unconstitutional under the Commerce Clause.",
+        "courtlistener_id": "117855"
+      },
+      {
+        "@type": "Case",
+        "id": "comptroller_of_treasury_v_wynne_2015",
+        "short_name": "Comptroller v. Wynne",
+        "full_name": "Comptroller of the Treasury of Maryland v. Wynne",
+        "citation": "575 U.S. 542 (2015)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "2015-06-01",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "A state tax scheme that discriminates against interstate commerce by failing the internal consistency test violates the dormant Commerce Clause, even absent facial discrimination, when the scheme would disadvantage interstate commerce if applied identically in every state.",
+        "holding_type": "affirmative",
+        "majority_author": "Alito",
+        "per_curiam": false,
+        "vote": "5-4",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "2015-06-01",
+        "valid_until": null,
+        "opinions": [
+          {
+            "type": "dissent",
+            "author": "Scalia",
+            "doctrinal_significance": "Argued that the dormant Commerce Clause lacks constitutional basis and that the tax should be upheld absent facial discrimination indistinguishable from previously invalidated taxes.",
+            "joined_by": [
+              "Thomas"
+            ],
+            "adopted_in": []
+          },
+          {
+            "type": "dissent",
+            "author": "Thomas",
+            "doctrinal_significance": "Argued that the majority's dormant Commerce Clause analysis would invalidate laws passed by the same legislators who ratified the Constitution, rendering the doctrine incorrect.",
+            "joined_by": [
+              "Scalia"
+            ],
+            "adopted_in": []
+          },
+          {
+            "type": "dissent",
+            "author": "Ginsburg",
+            "doctrinal_significance": "Argued that the dormant Commerce Clause does not prevent operation of a tax scheme when discriminatory effect results from combination of two otherwise-lawful tax schemes, and that the internal consistency test need not be rigidly enforced.",
+            "joined_by": [
+              "Scalia",
+              "Kagan"
+            ],
+            "adopted_in": []
+          }
+        ],
+        "notes": "5-4 decision with three separate dissents. The majority applied the internal consistency test to invalidate Maryland's county tax scheme as violating the dormant Commerce Clause."
+      },
+      {
+        "@type": "Case",
+        "id": "perry_v_sindermann_1972",
+        "short_name": "Perry v. Sindermann",
+        "full_name": "Perry v. Sindermann",
+        "citation": "408 U.S. 593 (1972)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1972-01-01",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "A public employee's lack of a contractual or tenure right to re-employment does not defeat a claim that nonrenewal of employment violated the First and Fourteenth Amendments, and the government may not deny a benefit to a person on a basis that infringes constitutionally protected interests, especially freedom of speech.",
+        "holding_type": "affirmative",
+        "majority_author": "Stewart",
+        "per_curiam": false,
+        "vote": null,
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1972-01-01",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "Case decided with Board of Regents v. Roth. Establishes that lack of tenure does not bar First Amendment retaliation claims and that procedural due process may apply to non-tenured public employees with legitimate claims of entitlement to re-employment.",
+        "courtlistener_id": "8986224"
+      },
+      {
+        "@type": "Case",
+        "id": "goss_v_lopez_1975",
+        "short_name": "Goss v. Lopez",
+        "full_name": "Goss v. Lopez",
+        "citation": "419 U.S. 565 (1975)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1975-01-01",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "affirmed",
+        "holding": "When a state extends the right to education to its citizens, it creates a property interest in that education protected by the Due Process Clause, and the state cannot deprive students of that interest on grounds of misconduct without providing fundamentally fair procedures, including at minimum notice and some kind of hearing.",
+        "holding_type": "affirmative",
+        "majority_author": "White",
+        "per_curiam": false,
+        "vote": "5-4",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1975-01-01",
+        "valid_until": null,
+        "opinions": [
+          {
+            "type": "dissent",
+            "author": null,
+            "doctrinal_significance": "Disagreed with the majority's recognition of a property interest in education and the procedural requirements imposed.",
+            "joined_by": [],
+            "adopted_in": []
+          }
+        ],
+        "notes": "5-4 decision. Students suspended from school without hearing challenged the constitutionality of the suspension procedures under the Due Process Clause.",
+        "courtlistener_id": "109136"
+      },
+      {
+        "@type": "Case",
+        "id": "bishop_v_wood_1976",
+        "short_name": "Bishop v. Wood",
+        "full_name": "Bishop v. Wood",
+        "citation": "426 U.S. 341 (1976)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1976-01-01",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "affirmed",
+        "holding": "A property interest in public employment is created only by state law through statute or contract, and absent an enforceable expectation of continued employment granted by the employer, an employee's discharge does not deprive him of a property interest protected by the Due Process Clause of the Fourteenth Amendment.",
+        "holding_type": "affirmative",
+        "majority_author": "Stevens",
+        "per_curiam": false,
+        "vote": null,
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1976-01-01",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "The opinion addresses two questions: (1) whether petitioner's employment status was a property interest protected by the Due Process Clause, and (2) whether a false explanation for discharge deprived him of an interest in liberty. The Court resolved the property interest question; the liberty interest analysis appears incomplete in the provided text.",
+        "courtlistener_id": "109476"
+      },
+      {
+        "@type": "Case",
+        "id": "zinermon_v_burch_1990",
+        "short_name": "Zinermon v. Burch",
+        "full_name": "Zinermon v. Burch",
+        "citation": "494 U.S. 113 (1990)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1990-01-01",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "A state employee's random, unauthorized deprivation of a constitutionally protected liberty interest does not preclude a procedural due process claim under 42 U.S.C. \u00a7 1983 when the state could have provided predeprivation safeguards; the Parratt rule limiting such claims to postdeprivation remedies does not apply when the state has delegated authority to the employee to determine whether to deprive the person of liberty.",
+        "holding_type": "affirmative",
+        "majority_author": "Blackmun",
+        "per_curiam": false,
+        "vote": null,
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1990-01-01",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "The Court reversed the District Court's dismissal and the panel's affirmance, adopting the Eleventh Circuit's en banc plurality reasoning that Parratt v. Taylor does not apply when predeprivation remedies were feasible. The case concerns the scope of the Parratt rule in the context of mental hospital admission procedures.",
+        "courtlistener_id": "2620710"
+      },
+      {
+        "@type": "Case",
+        "id": "united_states_v_windsor_2013",
+        "short_name": "United States v. Windsor",
+        "full_name": "United States v. Windsor",
+        "citation": "570 U.S. 744 (2013)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "2013-06-26",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "affirmed",
+        "holding": "The Defense of Marriage Act violates the Fifth Amendment's guarantee of equal protection by denying same-sex couples the federal rights and benefits of marriage that are available to opposite-sex couples whose marriages are recognized under state law, imposing a disadvantage, separate status, and stigma on same-sex married couples.",
+        "holding_type": "affirmative",
+        "majority_author": "Kennedy",
+        "per_curiam": false,
+        "vote": "5-4",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "2013-06-26",
+        "valid_until": null,
+        "opinions": [
+          {
+            "type": "dissent",
+            "author": "Roberts",
+            "doctrinal_significance": "Argued the Court lacked jurisdiction and that DOMA's uniformity and stability interests were justified; did not address state marriage definition issues.",
+            "joined_by": [
+              "Thomas"
+            ],
+            "adopted_in": []
+          },
+          {
+            "type": "dissent",
+            "author": "Scalia",
+            "doctrinal_significance": "Argued the Court lacked jurisdiction and power to invalidate democratically enacted legislation; criticized majority's assertion of Supreme Court supremacy.",
+            "joined_by": [
+              "Thomas",
+              "Roberts"
+            ],
+            "adopted_in": []
+          },
+          {
+            "type": "dissent",
+            "author": "Alito",
+            "doctrinal_significance": "Argued the Government lacked standing but BLAG had standing; contended the Constitution does not guarantee a right to same-sex marriage under the history-and-tradition test; marriage definition should be left to the people.",
+            "joined_by": [
+              "Thomas"
+            ],
+            "adopted_in": []
+          }
+        ],
+        "notes": "5-4 majority. The majority did not specify whether rational basis or strict scrutiny applied to DOMA. Justice Kennedy's majority opinion focused on the purpose and effect of DOMA as imposing stigma and disadvantage on same-sex couples under the Fifth Amendment's equal protection guarantee.",
+        "courtlistener_id": "9241721"
+      },
+      {
+        "@type": "Case",
+        "id": "michael_m_v_superior_court_1981",
+        "short_name": "Michael M. v. Superior Court",
+        "full_name": "Michael M. v. Superior Court of Sonoma County",
+        "citation": "450 U.S. 464 (1981)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1981-01-01",
+        "opinion_form": "plurality",
+        "procedural_disposition": "affirmed",
+        "holding": "A state may criminalize unlawful sexual intercourse by males but not females under age 18 without violating the Equal Protection Clause, because young men and women are not similarly situated with respect to the risks of sexual intercourse, and the state has a substantial interest in preventing illegitimate pregnancy.",
+        "holding_type": "affirmative",
+        "majority_author": null,
+        "per_curiam": false,
+        "vote": "5-4",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1981-01-01",
+        "valid_until": null,
+        "opinions": [
+          {
+            "type": "dissent",
+            "author": null,
+            "doctrinal_significance": "Disagreed with the plurality's equal protection analysis",
+            "joined_by": [],
+            "adopted_in": []
+          }
+        ],
+        "notes": "Plurality opinion (5-4). No single rationale commanded a majority. The holding reflects what the plurality announced, but the case's precedential effect on equal protection doctrine is limited by its fractured nature.",
+        "courtlistener_id": "110434"
+      },
+      {
+        "@type": "Case",
+        "id": "plyler_v_doe_1982",
+        "short_name": "Plyler v. Doe",
+        "full_name": "Plyler v. Doe",
+        "citation": "457 U.S. 202 (1982)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1982-06-15",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "affirmed",
+        "holding": "A state may not deny free public K-12 education to undocumented school-age children based on their immigration status, as such denial violates the Equal Protection Clause of the Fourteenth Amendment.",
+        "holding_type": "affirmative",
+        "majority_author": "Brennan",
+        "per_curiam": false,
+        "vote": null,
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1982-06-15",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "Class action challenging Texas Education Code \u00a7 21.031, which withheld state funding and authorized denial of enrollment to undocumented children. District Court found the statute violated Equal Protection Clause and was not supported by rational basis.",
+        "courtlistener_id": "110742"
+      },
+      {
+        "@type": "Case",
+        "id": "students_for_fair_admissions_v_harvard_2023",
+        "short_name": "Students for Fair Admissions v. Harvard",
+        "full_name": "Students for Fair Admissions v. President and Fellows of Harvard College",
+        "citation": "600 U.S. 181 (2023)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "2023-06-29",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "Race-based admissions programs at universities violate the Equal Protection Clause of the Fourteenth Amendment when they fail to satisfy strict scrutiny, including the requirements that the government demonstrate a compelling interest in a measurable way, avoid racial stereotyping, and provide a logical endpoint for when race-based admissions will cease.",
+        "holding_type": "affirmative",
+        "majority_author": "Roberts",
+        "per_curiam": false,
+        "vote": "6-3",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "2023-06-29",
+        "valid_until": null,
+        "opinions": [
+          {
+            "type": "concurrence",
+            "author": "Thomas",
+            "doctrinal_significance": "Separate concurring opinion",
+            "joined_by": [],
+            "adopted_in": []
+          },
+          {
+            "type": "concurrence",
+            "author": "Gorsuch",
+            "doctrinal_significance": "Separate concurring opinion",
+            "joined_by": [],
+            "adopted_in": []
+          },
+          {
+            "type": "concurrence",
+            "author": "Kavanaugh",
+            "doctrinal_significance": "Separate concurring opinion",
+            "joined_by": [],
+            "adopted_in": []
+          },
+          {
+            "type": "dissent",
+            "author": "Sotomayor",
+            "doctrinal_significance": "Dissent joined by Kagan and Jackson (Jackson did not participate in the Harvard portion)",
+            "joined_by": [
+              "Kagan",
+              "Jackson"
+            ],
+            "adopted_in": []
+          }
+        ],
+        "notes": "6-3 majority. Chief Justice Roberts authored the majority opinion. The case was originally consolidated with a similar case challenging University of North Carolina admissions policies but was severed. The holding reflects the majority's application of strict scrutiny to race-based admissions."
+      },
+      {
+        "@type": "Case",
+        "id": "united_states_v_darby_1941",
+        "short_name": "United States v. Darby",
+        "full_name": "United States v. Darby",
+        "citation": "312 U.S. 100 (1941)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1941-01-01",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "affirmed",
+        "holding": "Congress has constitutional authority under the Commerce Clause to regulate interstate commerce and to prohibit the shipment in interstate commerce of goods produced under substandard labor conditions, including those involving minimum wages, maximum hours, and child labor, because such conditions have a significant effect on interstate commerce.",
+        "holding_type": "affirmative",
+        "majority_author": "Stone",
+        "per_curiam": false,
+        "vote": "8-0",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1941-01-01",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "The Court upheld the Fair Labor Standards Act of 1938 against a Commerce Clause challenge. The decision relied heavily on Gibbons v. Ogden (1824) and established that Congress's commerce power cannot be enlarged or diminished by state action.",
+        "courtlistener_id": "8194253"
+      },
+      {
+        "@type": "Case",
+        "id": "national_league_of_cities_v_usery_1976",
+        "short_name": "National League of Cities v. Usery",
+        "full_name": "National League of Cities v. Usery",
+        "citation": "426 U.S. 833 (1976)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1976-06-24",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "affirmed",
+        "holding": "The Commerce Clause does not empower Congress to enforce the minimum-wage and overtime provisions of the Fair Labor Standards Act against the States in areas of traditional governmental functions.",
+        "holding_type": "affirmative",
+        "majority_author": null,
+        "per_curiam": false,
+        "vote": null,
+        "status": "overruled",
+        "precedential_weight": "none",
+        "valid_from": "1976-06-24",
+        "valid_until": "1985-02-19",
+        "opinions": [],
+        "notes": "Stub node \u2014 overruled by garcia_v_san_antonio_metropolitan_transit_authority_1985. Full node to be added when this case is modeled.",
+        "courtlistener_id": "109499"
+      },
+      {
+        "@type": "Case",
+        "id": "garcia_v_san_antonio_metropolitan_transit_authority_1985",
+        "short_name": "Garcia v. San Antonio Metropolitan Transit Authority",
+        "full_name": "Garcia v. San Antonio Metropolitan Transit Authority",
+        "citation": "469 U.S. 528 (1985)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1985-02-19",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "The Commerce Clause empowers Congress to enforce the minimum-wage and overtime provisions of the Fair Labor Standards Act against the States, and state immunity from federal labor law cannot be determined by reference to whether a function is 'traditional' or 'nontraditional.'",
+        "holding_type": "affirmative",
+        "majority_author": "Blackmun",
+        "per_curiam": false,
+        "vote": null,
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1985-02-19",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "Overrules National League of Cities v. Usery, 426 U.S. 833 (1976). The Court held that the 'traditional governmental function' test is unworkable and inconsistent with federalism principles.",
+        "courtlistener_id": "111308"
+      },
+      {
+        "@type": "Case",
+        "id": "atwater_v_city_of_lago_vista_2001",
+        "short_name": "Atwater v. City of Lago Vista",
+        "full_name": "Gail Atwater v. City of Lago Vista",
+        "citation": "532 U.S. 318 (2001)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "2001-01-01",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "affirmed",
+        "holding": "The Fourth Amendment does not forbid a warrantless arrest for a minor criminal offense, such as a misdemeanor punishable only by a fine, if an officer has probable cause to believe that an individual has committed the offense in his presence.",
+        "holding_type": "affirmative",
+        "majority_author": "Souter",
+        "per_curiam": false,
+        "vote": "5-4",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "2001-01-01",
+        "valid_until": null,
+        "opinions": [
+          {
+            "type": "dissent",
+            "author": "O'Connor",
+            "doctrinal_significance": "Argued that the majority decision neglects the Fourth Amendment's express command in the name of administrative ease and cloaks unreasonable seizure with the mantle of reasonableness.",
+            "joined_by": [],
+            "adopted_in": []
+          }
+        ],
+        "notes": "5-4 decision. Justice O'Connor dissented, arguing the decision improperly prioritizes administrative convenience over Fourth Amendment protections."
+      },
+      {
+        "@type": "Case",
+        "id": "georgia_v_randolph_2006",
+        "short_name": "Georgia v. Randolph",
+        "full_name": "Georgia v. Randolph",
+        "citation": "547 U.S. 103 (2006)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "2006-01-01",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "When two co-occupants are present and one consents to a search while the other refuses, the search violates the Fourth Amendment because it is unreasonable for police to enter shared premises over the express objection of a present occupant, even with the consent of another co-occupant.",
+        "holding_type": "affirmative",
+        "majority_author": "Souter",
+        "per_curiam": false,
+        "vote": "5-3",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "2006-01-01",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "The Court reversed the trial court's judgment and affirmed the Georgia Supreme Court's decision. The majority reasoned that a reasonable person would not enter shared premises when one occupant explicitly refuses consent, even if another consents.",
+        "courtlistener_id": "145669"
+      },
+      {
+        "@type": "Case",
+        "id": "navarette_v_california_2014",
+        "short_name": "Navarette v. California",
+        "full_name": "Prado Navarette v. California",
+        "citation": "572 U.S. 393 (2014)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "2014-04-22",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "affirmed",
+        "holding": "An officer may conduct a traffic stop based on an anonymous tip reporting specific unsafe driving behavior if, under the totality of the circumstances, the tip contains sufficient indicia of reliability\u2014such as eyewitness knowledge and temporal proximity to the reported incident\u2014to establish reasonable suspicion that the driver is engaged in criminal conduct, even without independent police observation of the alleged behavior.",
+        "holding_type": "affirmative",
+        "majority_author": "Thomas",
+        "per_curiam": false,
+        "vote": "5-4",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "2014-04-22",
+        "valid_until": null,
+        "opinions": [
+          {
+            "type": "dissent",
+            "author": "Scalia",
+            "doctrinal_significance": "Argued that indicia of reliability in the anonymous tip were insufficient to establish reasonable suspicion without corroborating police observation of impaired driving behavior.",
+            "joined_by": [
+              "Ginsburg",
+              "Sotomayor",
+              "Kagan"
+            ],
+            "adopted_in": []
+          }
+        ],
+        "notes": "5-4 decision. Majority held that reasonable suspicion for a traffic stop may be based on an anonymous tip with sufficient indicia of reliability under the totality of the circumstances. Dissent argued that the tip lacked sufficient trustworthiness absent police observation of the reported behavior.",
+        "courtlistener_id": "8414100"
+      },
+      {
+        "@type": "Case",
+        "id": "williamson_county_v_hamilton_bank_1985",
+        "short_name": "Williamson County v. Hamilton Bank",
+        "full_name": "Williamson County Regional Planning Commission v. Hamilton Bank of Johnson City",
+        "citation": "473 U.S. 172 (1985)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1985-06-28",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "A takings claim is not ripe for federal adjudication until the state has had an opportunity to determine the amount of compensation through its own procedures.",
+        "holding_type": "affirmative",
+        "majority_author": "White",
+        "per_curiam": false,
+        "vote": "9-0",
+        "status": "overruled",
+        "precedential_weight": "none",
+        "valid_from": "1985-06-28",
+        "valid_until": "2019-06-21",
+        "notes": "Overruled by Knick v. Township of Scott (2019)."
+      },
+      {
+        "@type": "Case",
+        "id": "furman_v_georgia_1972",
+        "short_name": "Furman v. Georgia",
+        "full_name": "Furman v. Georgia",
+        "citation": "408 U.S. 238 (1972)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1972-06-29",
+        "opinion_form": "per_curiam",
+        "procedural_disposition": "reversed",
+        "holding": "The imposition of the death penalty under then-existing statutes constitutes cruel and unusual punishment in violation of the Eighth and Fourteenth Amendments when applied in an arbitrary and capricious manner.",
+        "holding_type": "affirmative",
+        "majority_author": null,
+        "per_curiam": true,
+        "vote": "5-4",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1972-06-29",
+        "valid_until": null,
+        "opinions": [
+          {
+            "type": "concurrence",
+            "author": "Brennan",
+            "doctrinal_significance": "Argued that the death penalty is unconstitutional in all instances.",
+            "joined_by": [
+              "Marshall"
+            ],
+            "adopted_in": []
+          },
+          {
+            "type": "concurrence",
+            "author": "Marshall",
+            "doctrinal_significance": "Argued that the death penalty is unconstitutional in all instances.",
+            "joined_by": [
+              "Brennan"
+            ],
+            "adopted_in": []
+          },
+          {
+            "type": "concurrence",
+            "author": "Unknown",
+            "doctrinal_significance": "Focused on the arbitrary and capricious nature of death sentence imposition, including racial bias against black defendants.",
+            "joined_by": [],
+            "adopted_in": []
+          },
+          {
+            "type": "dissent",
+            "author": "Unknown",
+            "doctrinal_significance": "Opposed the invalidation of existing death penalty statutes.",
+            "joined_by": [],
+            "adopted_in": []
+          }
+        ],
+        "notes": "Per curiam opinion with extensive concurrences and dissents spanning over two hundred pages. The decision was fractured: only Justices Brennan and Marshall believed the death penalty unconstitutional in all cases; other concurrences focused on arbitrary and discriminatory application. The decision effectively invalidated all then-existing death penalty statutes and forced states and Congress to revise capital punishment laws.",
+        "courtlistener_id": "8990295"
+      },
+      {
+        "@type": "Case",
+        "id": "gregg_v_georgia_1976",
+        "short_name": "Gregg v. Georgia",
+        "full_name": "Troy Gregg v. State of Georgia",
+        "citation": "428 U.S. 153 (1976)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1976-07-02",
+        "opinion_form": "plurality",
+        "procedural_disposition": "affirmed",
+        "holding": "The imposition of the death sentence for murder under Georgia's capital sentencing statute, which provides for a bifurcated trial with guilt and penalty stages and requires the jury to find at least one aggravating circumstance beyond a reasonable doubt before imposing death, does not violate the Eighth and Fourteenth Amendments.",
+        "holding_type": "affirmative",
+        "majority_author": "Stewart (plurality)",
+        "per_curiam": false,
+        "vote": null,
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1976-07-02",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "Plurality opinion announced by Justice Stewart and joined by Justices Powell and Stevens. This case upheld capital punishment as constitutional and established the framework for modern death penalty jurisprudence."
+      },
+      {
+        "@type": "Case",
+        "id": "coker_v_georgia_1977",
+        "short_name": "Coker v. Georgia",
+        "full_name": "Coker v. Georgia",
+        "citation": "433 U.S. 584 (1977)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1977-06-29",
+        "opinion_form": "plurality",
+        "procedural_disposition": "reversed",
+        "holding": "The death penalty constitutes cruel and unusual punishment under the Eighth Amendment when imposed for the rape of an adult woman, as it is grossly disproportionate to the offense and the vast majority of states do not authorize capital punishment for rape.",
+        "holding_type": "affirmative",
+        "majority_author": "White (plurality)",
+        "per_curiam": false,
+        "vote": "7-2",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1977-06-29",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "Plurality opinion. The holding reflects the position of the plurality that commanded the judgment. The Court found the death penalty excessive in severity and revocability for rape because it did not involve the taking of human life.",
+        "courtlistener_id": "109731"
+      },
+      {
+        "@type": "Case",
+        "id": "solem_v_helm_1983",
+        "short_name": "Solem v. Helm",
+        "full_name": "Solem v. Helm",
+        "citation": "463 U.S. 277 (1983)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1983-01-01",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "A sentence of life imprisonment without parole for a non-violent felony, when the defendant's prior offenses were relatively minor and not crimes against people, constitutes cruel and unusual punishment in violation of the Eighth Amendment.",
+        "holding_type": "affirmative",
+        "majority_author": "Powell",
+        "per_curiam": false,
+        "vote": "5-4",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1983-01-01",
+        "valid_until": null,
+        "opinions": [
+          {
+            "type": "dissent",
+            "author": null,
+            "doctrinal_significance": "Four justices dissented from the majority's proportionality analysis.",
+            "joined_by": [],
+            "adopted_in": []
+          }
+        ],
+        "notes": "5-4 decision. Justice Powell authored the majority opinion. The case establishes a proportionality test for Eighth Amendment cruel and unusual punishment claims in the context of sentencing.",
+        "courtlistener_id": "9042921"
+      },
+      {
+        "@type": "Case",
+        "id": "atkins_v_virginia_2002",
+        "short_name": "Atkins v. Virginia",
+        "full_name": "Daryl Renard Atkins v. Commonwealth of Virginia",
+        "citation": "536 U.S. 304 (2002)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "2002-06-20",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "Executions of mentally retarded offenders constitute cruel and unusual punishment prohibited by the Eighth Amendment because such offenders have diminished culpability and the traditional justifications for capital punishment\u2014retribution and deterrence\u2014do not apply with equal force to them.",
+        "holding_type": "affirmative",
+        "majority_author": "Stevens",
+        "per_curiam": false,
+        "vote": "6-3",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "2002-06-20",
+        "valid_until": null,
+        "opinions": [
+          {
+            "type": "dissent",
+            "author": "Rehnquist",
+            "doctrinal_significance": "Disagreed with the majority's application of evolving standards of decency to prohibit execution of mentally retarded offenders.",
+            "joined_by": [
+              "Thomas"
+            ],
+            "adopted_in": []
+          },
+          {
+            "type": "dissent",
+            "author": "Scalia",
+            "doctrinal_significance": "Criticized the decision as turning capital trial into a game and objected to the expansion of Eighth Amendment protections.",
+            "joined_by": [
+              "Thomas"
+            ],
+            "adopted_in": []
+          }
+        ],
+        "notes": "Overruled Penry v. Lynaugh's holding that the Eighth Amendment does not categorically prohibit execution of mentally retarded offenders. Virginia Supreme Court had relied on Penry in affirming the death sentence."
+      },
+      {
+        "@type": "Case",
+        "id": "stanford_v_kentucky_1989",
+        "short_name": "Stanford v. Kentucky",
+        "full_name": "Stanford v. Kentucky",
+        "citation": "492 U.S. 361 (1989)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1989-06-26",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "affirmed",
+        "holding": "Executing a minor does not violate the Eighth Amendment prohibition on cruel and unusual punishment because a majority of Americans do not consider such executions to be cruel and unusual.",
+        "holding_type": "affirmative",
+        "majority_author": null,
+        "per_curiam": false,
+        "vote": null,
+        "status": "overruled",
+        "precedential_weight": "none",
+        "valid_from": "1989-06-26",
+        "valid_until": "2005-03-01",
+        "opinions": [],
+        "notes": "Stub node \u2014 overruled by roper_v_simmons_2005. Full node to be added when this case is modeled.",
+        "courtlistener_id": "112326"
+      },
+      {
+        "@type": "Case",
+        "id": "roper_v_simmons_2005",
+        "short_name": "Roper v. Simmons",
+        "full_name": "Roper v. Simmons",
+        "citation": "543 U.S. 551 (2005)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "2005-03-01",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "Executing a minor constitutes cruel and unusual punishment prohibited by the Eighth Amendment because evolving standards of decency, reflected in state legislative consensus and international opinion, demonstrate that such executions are disproportionate punishment for juveniles.",
+        "holding_type": "affirmative",
+        "majority_author": "Kennedy",
+        "per_curiam": false,
+        "vote": "5-4",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "2005-03-01",
+        "valid_until": null,
+        "opinions": [
+          {
+            "type": "dissent",
+            "author": "Rehnquist",
+            "doctrinal_significance": "Disagreed with the majority's reliance on evolving standards of decency and international opinion to overturn precedent.",
+            "joined_by": [
+              "Scalia",
+              "O'Connor",
+              "Thomas"
+            ],
+            "adopted_in": []
+          }
+        ],
+        "notes": "Overrules Stanford v. Kentucky (1989) which held that executing minors was not unconstitutional. The majority relied on evolving standards of decency analysis similar to that used in Atkins v. Virginia.",
+        "courtlistener_id": "137749"
+      },
+      {
+        "@type": "Case",
+        "id": "kennedy_v_louisiana_2008",
+        "short_name": "Kennedy v. Louisiana",
+        "full_name": "Patrick Kennedy v. State of Louisiana",
+        "citation": "554 U.S. 407 (2008)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "2008-06-25",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "The Eighth Amendment bars states from imposing the death penalty for the rape of a child where the crime did not result, and was not intended to result, in the child's death, as such punishment constitutes cruel and unusual punishment in violation of a national consensus on the issue.",
+        "holding_type": "affirmative",
+        "majority_author": "Kennedy",
+        "per_curiam": false,
+        "vote": "5-4",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "2008-06-25",
+        "valid_until": null,
+        "opinions": [
+          {
+            "type": "dissent",
+            "author": "Alito",
+            "doctrinal_significance": "Argued that no national consensus existed prohibiting the death penalty for child rape and opposed the majority's blanket rule approach, contending that individual facts such as the child's age, the sadistic nature of the crime, and the number of rapes should be considered.",
+            "joined_by": [
+              "Roberts",
+              "Thomas",
+              "Scalia"
+            ],
+            "adopted_in": []
+          }
+        ],
+        "notes": "The Court applied a balancing test examining national consensus and excessiveness of punishment, drawing on methodology from Atkins v. Virginia and Roper v. Simmons. The majority distinguished Coker v. Georgia as applying to all rapes regardless of victim age."
+      },
+      {
+        "@type": "Case",
+        "id": "graham_v_florida_2010",
+        "short_name": "Graham v. Florida",
+        "full_name": "Terrance Jamar Graham v. State of Florida",
+        "citation": "560 U.S. 48 (2010)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "2010-05-17",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "The Eighth Amendment's Cruel and Unusual Punishments Clause prohibits sentencing a juvenile offender to life imprisonment without parole for a non-homicidal crime.",
+        "holding_type": "affirmative",
+        "majority_author": "Kennedy",
+        "per_curiam": false,
+        "vote": "6-3",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "2010-05-17",
+        "valid_until": null,
+        "opinions": [
+          {
+            "type": "concurrence_in_judgment",
+            "author": "Roberts",
+            "doctrinal_significance": "Chief Justice Roberts concurred in the judgment but disagreed with the majority's categorical approach, instead relying on narrow proportionality review of noncapital sentences and Roper's culpability analysis.",
+            "joined_by": [],
+            "adopted_in": []
+          },
+          {
+            "type": "dissent",
+            "author": "Thomas",
+            "doctrinal_significance": "Justice Thomas argued the majority improperly substituted its moral judgment for that of the people and their elected representatives regarding the appropriateness of the sentence.",
+            "joined_by": [
+              "Scalia"
+            ],
+            "adopted_in": []
+          },
+          {
+            "type": "dissent",
+            "author": "Alito",
+            "doctrinal_significance": "Justice Alito's separate dissent noted that the majority's holding does not affect sentences of a term of years without parole, and argued the Court should not have reached the as-applied question.",
+            "joined_by": [],
+            "adopted_in": []
+          }
+        ],
+        "notes": "The majority applied categorical analysis under Atkins, Roper, and Kennedy precedents, examining both objective indicia of society's standards and constitutional guidance from controlling precedents. The Court noted that life sentences without parole for juveniles in non-homicidal crimes have been rejected worldwide."
+      },
+      {
+        "@type": "Case",
+        "id": "miller_v_alabama_2012",
+        "short_name": "Miller v. Alabama",
+        "full_name": "Miller v. Alabama",
+        "citation": "567 U.S. 460 (2012)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "2012-06-25",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "The Eighth Amendment's prohibition against cruel and unusual punishment forbids the mandatory sentencing of life in prison without the possibility of parole for juvenile homicide offenders. Children are constitutionally different from adults for sentencing purposes, and a mandatory life sentence without parole constitutes an unconstitutionally disproportionate punishment for juveniles.",
+        "holding_type": "affirmative",
+        "majority_author": "Kagan",
+        "per_curiam": false,
+        "vote": "5-4",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "2012-06-25",
+        "valid_until": null,
+        "opinions": [
+          {
+            "type": "concurrence",
+            "author": "Breyer",
+            "doctrinal_significance": "Argued for additional requirement that offender actually killed or intended to kill the victim before mandatory life sentence could be imposed",
+            "joined_by": [
+              "Sotomayor"
+            ],
+            "adopted_in": []
+          },
+          {
+            "type": "dissent",
+            "author": "Roberts",
+            "doctrinal_significance": "Argued the Court exceeded its role by answering moral and policy questions; contended the punishment was not sufficiently characterized as unusual to violate the Eighth Amendment",
+            "joined_by": [
+              "Scalia",
+              "Thomas",
+              "Alito"
+            ],
+            "adopted_in": []
+          }
+        ],
+        "notes": "Companion cases: Miller v. Alabama and Jackson v. Hobbs (Kuntrell Jackson). Both involved mandatory life without parole sentences for juveniles convicted of homicide. The Court's holding applies to both cases.",
+        "courtlistener_id": "802973"
+      },
+      {
+        "@type": "Case",
+        "id": "moran_v_burbine_1986",
+        "short_name": "Moran v. Burbine",
+        "full_name": "Moran v. Burbine",
+        "citation": "475 U.S. 412 (1986)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1986-01-01",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "affirmed",
+        "holding": "A suspect's waiver of Miranda rights is valid even when the suspect is unaware that an attorney has attempted to contact him and even when police have misled an attorney about their interrogation plans, provided the suspect was informed of his Miranda rights and voluntarily waived them without police coercion.",
+        "holding_type": "affirmative",
+        "majority_author": null,
+        "per_curiam": false,
+        "vote": null,
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1986-01-01",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "The opinion addresses whether police conduct in misleading an attorney about interrogation plans, or a suspect's ignorance of an attorney's efforts to reach him, taints the validity of Miranda waivers. The text indicates this is an opinion of the Court but does not identify the majority author in the provided excerpt.",
+        "courtlistener_id": "111614"
+      },
+      {
+        "@type": "Case",
+        "id": "padilla_v_kentucky_2010",
+        "short_name": "Padilla v. Kentucky",
+        "full_name": "Jose Padilla v. Commonwealth of Kentucky",
+        "citation": "559 U.S. 356 (2010)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "2010-01-01",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "Defense counsel must inform a client whether a guilty plea carries a risk of deportation, as such advice falls within the scope of the Sixth Amendment right to counsel and counsel's failure to provide it may constitute ineffective assistance.",
+        "holding_type": "affirmative",
+        "majority_author": "Stevens",
+        "per_curiam": false,
+        "vote": "7-2",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "2010-01-01",
+        "valid_until": null,
+        "opinions": [
+          {
+            "type": "concurrence",
+            "author": "Alito",
+            "doctrinal_significance": "Criticized the majority for adopting a halfway standard regarding when counsel must advise on immigration consequences, predicting confusion and needless litigation.",
+            "joined_by": [
+              "Roberts"
+            ],
+            "adopted_in": []
+          },
+          {
+            "type": "dissent",
+            "author": "Scalia",
+            "doctrinal_significance": "Argued the majority improperly expanded the Sixth Amendment beyond providing counsel to requiring sound advice on collateral consequences of conviction.",
+            "joined_by": [
+              "Thomas"
+            ],
+            "adopted_in": []
+          }
+        ],
+        "notes": "The Court remanded to the Kentucky Supreme Court for proceedings consistent with the opinion but did not address whether Padilla was prejudiced by counsel's deficiency and entitled to relief."
+      },
+      {
+        "@type": "Case",
+        "id": "missouri_v_frye_2012",
+        "short_name": "Missouri v. Frye",
+        "full_name": "Missouri v. Galin Frye",
+        "citation": "566 U.S. 134 (2012)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "2012-03-21",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "The Sixth Amendment right to effective assistance of counsel extends to the negotiation and consideration of plea offers, including offers that lapse or are rejected, and a defendant need not show that the outcome of the trial would have been different to demonstrate prejudice from counsel's failure to communicate a plea offer.",
+        "holding_type": "affirmative",
+        "majority_author": "Kennedy",
+        "per_curiam": false,
+        "vote": null,
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "2012-03-21",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "The opinion addresses the scope of the Sixth Amendment right to effective assistance of counsel in the context of plea bargain negotiations. The Court clarifies that counsel's deficient performance in failing to communicate a lapsed plea offer can constitute ineffective assistance, and prejudice can be shown by demonstrating the defendant would have accepted the more favorable offer."
+      },
+      {
+        "@type": "Case",
+        "id": "lafler_v_cooper_2012",
+        "short_name": "Lafler v. Cooper",
+        "full_name": "Blaine Lafler, Warden v. Anthony Cooper",
+        "citation": "566 U.S. 156 (2012)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "2012-01-01",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "vacated",
+        "holding": "When a defendant receives ineffective assistance of counsel regarding a plea offer, the proper Strickland test is whether, absent the ineffective counsel, the defendant would have accepted the offered plea that was less severe than the eventual sentence, and whether the trial court would have accepted the plea terms; the remedy is not specific performance but rather the prosecution may re-offer the plea and, if accepted, the trial court may decide how to amend the sentence.",
+        "holding_type": "affirmative",
+        "majority_author": "Kennedy",
+        "per_curiam": false,
+        "vote": "5-4",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "2012-01-01",
+        "valid_until": null,
+        "opinions": [
+          {
+            "type": "dissent",
+            "author": "Scalia",
+            "doctrinal_significance": "Argued that there is no right to habeas relief when counsel's advice caused a defendant to have a full and fair trial, and that a criminal defendant has no right to a plea bargain.",
+            "joined_by": [
+              "Thomas"
+            ],
+            "adopted_in": []
+          },
+          {
+            "type": "dissent",
+            "author": "Roberts",
+            "doctrinal_significance": "Joined the Scalia dissent except for assertions that the majority's decision elevates the plea bargain to a constitutional right.",
+            "joined_by": [],
+            "adopted_in": []
+          },
+          {
+            "type": "dissent",
+            "author": "Alito",
+            "doctrinal_significance": "Criticized the majority's opaque discussion of the remedy.",
+            "joined_by": [],
+            "adopted_in": []
+          }
+        ],
+        "notes": "5-4 fractured decision. Majority opinion by Kennedy. Three separate dissents. The case addresses the application of Strickland v. Washington to ineffective assistance of counsel claims arising from deficient advice regarding plea offers."
+      },
+      {
+        "@type": "Case",
+        "id": "barron_v_baltimore_1833",
+        "short_name": "Barron v. Baltimore",
+        "full_name": "Barron ex rel. Tiernan v. Mayor of Baltimore",
+        "citation": "32 U.S. 243 (1833)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1833-01-01",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "dismissed",
+        "holding": "The Fifth Amendment's limitations on government, including the just compensation clause, apply only to the federal government and not to the states.",
+        "holding_type": "by_negation",
+        "majority_author": "Marshall",
+        "per_curiam": false,
+        "vote": "7-0",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1833-01-01",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "Chief Justice Marshall wrote for a unanimous Court. The decision established that the Bill of Rights was not applicable to the states, a principle that remained law until the Fourteenth Amendment incorporation doctrine developed in the twentieth century.",
+        "courtlistener_id": "85827"
+      },
+      {
+        "@type": "Case",
+        "id": "duncan_v_louisiana_1968",
+        "short_name": "Duncan v. Louisiana",
+        "full_name": "Duncan v. Louisiana",
+        "citation": "391 U.S. 145 (1968)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1968-01-01",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "The Sixth Amendment guarantee of trial by jury in criminal cases is fundamental to the American scheme of justice and is incorporated into the Fourteenth Amendment, obligating states to provide jury trials in criminal cases, except for petty crimes punishable by no more than six months in prison and a $500 fine.",
+        "holding_type": "affirmative",
+        "majority_author": null,
+        "per_curiam": false,
+        "vote": "7-2",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1968-01-01",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "The case established that the right to jury trial in criminal cases is incorporated against the states via the Fourteenth Amendment. Petty offenses are excluded from the jury trial requirement.",
+        "courtlistener_id": "107685"
+      },
+      {
+        "@type": "Case",
+        "id": "mcdonald_v_city_of_chicago_2010",
+        "short_name": "McDonald v. City of Chicago",
+        "full_name": "Otis McDonald, et al. v. City of Chicago",
+        "citation": "561 U.S. 742 (2010)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "2010-06-28",
+        "opinion_form": "plurality",
+        "procedural_disposition": "reversed",
+        "holding": "The Fourteenth Amendment incorporates the Second Amendment right to keep and bear arms for self-defense against the states through the Due Process Clause.",
+        "holding_type": "affirmative",
+        "majority_author": "Alito (plurality)",
+        "per_curiam": false,
+        "vote": "5-4",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "2010-06-28",
+        "valid_until": null,
+        "opinions": [
+          {
+            "type": "concurrence",
+            "author": "Scalia",
+            "doctrinal_significance": "Agreed with the plurality opinion but wrote separately to respond to Justice Stevens' dissent.",
+            "joined_by": [],
+            "adopted_in": []
+          },
+          {
+            "type": "concurrence_in_judgment",
+            "author": "Thomas",
+            "doctrinal_significance": "Agreed that the Fourteenth Amendment incorporates the Second Amendment but advocated for the Privileges or Immunities Clause as the appropriate incorporation mechanism rather than the Due Process Clause.",
+            "joined_by": [],
+            "adopted_in": []
+          },
+          {
+            "type": "dissent",
+            "author": "Stevens",
+            "doctrinal_significance": "Disagreed that the Fourteenth Amendment incorporates the Second Amendment, arguing that personal firearm ownership is not a liberty interest protected by the Due Process Clause.",
+            "joined_by": [],
+            "adopted_in": []
+          },
+          {
+            "type": "dissent",
+            "author": "Breyer",
+            "doctrinal_significance": "Argued that the Second Amendment's text, history, and rationale do not characterize it as a fundamental right warranting incorporation through the Fourteenth Amendment.",
+            "joined_by": [
+              "Ginsburg",
+              "Sotomayor"
+            ],
+            "adopted_in": []
+          }
+        ],
+        "notes": "Fractured decision. Justice Alito's plurality opinion commanded a majority on the incorporation of the Second Amendment through the Due Process Clause. Justice Thomas concurred in the judgment but would have used the Privileges or Immunities Clause. The holding reflects what commanded a majority (5 justices) on the incorporation question, though the mechanism was disputed."
+      },
+      {
+        "@type": "Case",
+        "id": "hammer_v_dagenhart_1918",
+        "short_name": "Hammer v. Dagenhart",
+        "full_name": "Hammer v. Dagenhart",
+        "citation": "247 U.S. 251 (1918)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1918-01-01",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "affirmed",
+        "holding": "The Keating-Owen Child Labor Act is unconstitutional because production is not commerce within the scope of Congress's interstate commerce power, and regulation of production is reserved to the states by the Tenth Amendment.",
+        "holding_type": "by_negation",
+        "majority_author": "Day",
+        "per_curiam": false,
+        "vote": "5-4",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1918-01-01",
+        "valid_until": null,
+        "opinions": [
+          {
+            "type": "dissent",
+            "author": null,
+            "doctrinal_significance": "Dissented from the majority's invalidation of the child labor statute",
+            "joined_by": [],
+            "adopted_in": []
+          }
+        ],
+        "notes": "The majority opinion revised the Tenth Amendment by adding the word 'expressly,' which does not appear in the constitutional text. The framers deliberately omitted 'expressly' from the amendment.",
+        "courtlistener_id": "99190"
+      },
+      {
+        "@type": "Case",
+        "id": "schechter_poultry_corp_v_united_states_1935",
+        "short_name": "Schechter Poultry Corp. v. United States",
+        "full_name": "A. L. A. Schechter Poultry Corporation v. United States",
+        "citation": "295 U.S. 495 (1935)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1935-05-27",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "Congress cannot delegate legislative authority to the President without establishing intelligible principles or standards to guide the President's exercise of that authority; the National Industrial Recovery Act violated the non-delegation doctrine by granting the President unbridled discretion to regulate industry without meaningful legislative standards.",
+        "holding_type": "affirmative",
+        "majority_author": "Hughes",
+        "per_curiam": false,
+        "vote": "9-0",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1935-05-27",
+        "valid_until": null,
+        "opinions": [
+          {
+            "type": "concurrence",
+            "author": "Cardozo",
+            "doctrinal_significance": "Agreed with the majority that the Act violated the non-delegation doctrine but emphasized the absence of intelligible principles and standards.",
+            "joined_by": [
+              "Stone"
+            ],
+            "adopted_in": []
+          }
+        ],
+        "notes": "Unanimous decision. Chief Justice Hughes authored the majority opinion. Justice Cardozo wrote a concurring opinion joined by Justice Stone."
+      },
+      {
+        "@type": "Case",
+        "id": "gonzales_v_raich_2005",
+        "short_name": "Gonzales v. Raich",
+        "full_name": "Alberto R. Gonzales, Attorney General, et al. v. Angel McClary Raich, et al.",
+        "citation": "545 U.S. 1 (2005)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "2005-06-06",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "Congress has authority under the Commerce Clause to prohibit the local cultivation and use of marijuana, even when such use is authorized by state law, because intrastate marijuana use is part of a class of activities that substantially affects interstate commerce in the national marijuana market.",
+        "holding_type": "affirmative",
+        "majority_author": "Stevens",
+        "per_curiam": false,
+        "vote": "6-3",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "2005-06-06",
+        "valid_until": null,
+        "opinions": [
+          {
+            "type": "dissent",
+            "author": "Unknown",
+            "doctrinal_significance": "Dissented from the majority's broad interpretation of Commerce Clause authority",
+            "joined_by": [],
+            "adopted_in": []
+          }
+        ],
+        "notes": "The Court distinguished this case from U.S. v. Lopez (1995) and U.S. v. Morrison (2000) on the ground that the CSA regulated economic activity as part of a valid statutory scheme, whereas those cases involved non-economic activity falling entirely outside Congress' commerce power."
+      },
+      {
+        "@type": "Case",
+        "id": "missouri_v_holland_1920",
+        "short_name": "Missouri v. Holland",
+        "full_name": "State of Missouri v. Holland",
+        "citation": "252 U.S. 416 (1920)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1920-01-01",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "affirmed",
+        "holding": "The treaty power, when exercised in conjunction with congressional legislation implementing a treaty, may regulate matters within the national interest that would otherwise fall within state sovereignty under the Tenth Amendment, and such treaty-based regulations are supreme law under the Supremacy Clause and not subject to state challenge.",
+        "holding_type": "affirmative",
+        "majority_author": "Holmes",
+        "per_curiam": false,
+        "vote": "7-2",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1920-01-01",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "The Court upheld the Migratory Bird Treaty Act as a valid exercise of the treaty power. The decision establishes that the treaty power, combined with the Supremacy Clause, permits federal regulation of matters that might otherwise be reserved to the states.",
+        "courtlistener_id": "99561"
+      },
+      {
+        "@type": "Case",
+        "id": "murphy_v_ncaa_2018",
+        "short_name": "Murphy v. NCAA",
+        "full_name": "Philip D. Murphy, Governor of New Jersey, et al. v. National Collegiate Athletic Association, et al.",
+        "citation": "584 U.S. 453 (2018)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "2018-05-14",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "The Professional and Amateur Sports Protection Act's provisions prohibiting states from authorizing or licensing sports gambling schemes violate the anticommandeering principle of the Tenth Amendment because they issue direct orders to state legislatures, and Congress lacks the constitutional power to regulate state legislative processes.",
+        "holding_type": "affirmative",
+        "majority_author": "Alito",
+        "per_curiam": false,
+        "vote": "6-3",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "2018-05-14",
+        "valid_until": null,
+        "opinions": [
+          {
+            "type": "concurrence",
+            "author": "Thomas",
+            "doctrinal_significance": "Separate concurring opinion",
+            "joined_by": [],
+            "adopted_in": []
+          },
+          {
+            "type": "concurrence_in_judgment",
+            "author": "Breyer",
+            "doctrinal_significance": "Concurred in part and dissented in part; joined majority on all but Part VI-B",
+            "joined_by": [],
+            "adopted_in": []
+          },
+          {
+            "type": "dissent",
+            "author": "Ginsburg",
+            "doctrinal_significance": "Dissented from the majority's anticommandeering analysis",
+            "joined_by": [
+              "Sotomayor"
+            ],
+            "adopted_in": []
+          }
+        ],
+        "notes": "Consolidated cases Nos. 16-476 and 16-477. Majority opinion joined by Roberts, Kennedy, Thomas, Kagan, and Gorsuch; Breyer joined all but Part VI-B. Ginsburg's dissent joined by Sotomayor and Breyer in part."
       }
     ],
     "doctrinal_tests": [
@@ -19054,6 +21157,604 @@
         "valid_from": "2024-07-01",
         "valid_until": null,
         "notes": "Established in Trump v. United States (2024). The test requires careful fact-specific analysis, particularly in distinguishing official from unofficial conduct. Courts must not inquire into Presidential motives and must recognize the outer perimeter of official responsibility."
+      },
+      {
+        "@type": "DoctrinalTest",
+        "id": "tahoe_sierra_takings_test",
+        "label": "Temporary Moratorium Takings Test",
+        "description": "A multi-factor test for determining whether a temporary moratorium on development constitutes a taking of property requiring just compensation, focusing on landowners' reasonable expectations, actual economic impact, public interest, and reasons for the moratorium.",
+        "area_id": "takings_clause",
+        "source_case_id": "tahoe_sierra_preservation_council_v_tahoe_regional_planning_agency_2002",
+        "scrutiny_level": "balancing",
+        "burden": "challenger",
+        "test_form": "balancing",
+        "prongs": [
+          {
+            "number": 1,
+            "label": "Landowners' Reasonable Expectations",
+            "description": "Whether the landowners had reasonable expectations regarding the use of their property at the time of acquisition.",
+            "burden_note": "Challenger must demonstrate unreasonable deprivation of expectations",
+            "valid_from": "2002-01-01",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 2,
+            "label": "Actual Economic Impact",
+            "description": "The actual economic impact of the moratorium on the landowners' property interests.",
+            "burden_note": "Challenger must demonstrate significant economic harm",
+            "valid_from": "2002-01-01",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 3,
+            "label": "Public Interest",
+            "description": "The public interest served by the moratorium and the government's land-use planning objectives.",
+            "burden_note": "Government may justify temporary restrictions through public interest considerations",
+            "valid_from": "2002-01-01",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 4,
+            "label": "Reasons for the Moratorium",
+            "description": "The reasons and justifications for imposing the temporary moratorium on development.",
+            "burden_note": "Government must articulate legitimate reasons for the temporary restriction",
+            "valid_from": "2002-01-01",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          }
+        ],
+        "status": "active",
+        "valid_from": "2002-01-01",
+        "valid_until": null,
+        "notes": "This test rejects categorical rules that any deprivation of all economic use, no matter how brief, constitutes a compensable taking. The test applies a balancing approach to temporary land-use restrictions."
+      },
+      {
+        "@type": "DoctrinalTest",
+        "id": "takings_multifactor_test",
+        "label": "Fifth Amendment Takings Multifactor Test",
+        "description": "A test for determining whether government action constitutes a compensable taking under the Fifth Amendment. Courts must consider multiple factors including the duration and severity of the interference, the intent behind the government action, and the degree to which the interference was a foreseeable result of an authorized government action. No single factor is dispositive, and temporary interference does not categorically exclude a finding of taking.",
+        "area_id": "takings_clause",
+        "source_case_id": "arkansas_game_and_fish_commission_v_united_states_2012",
+        "scrutiny_level": "balancing",
+        "burden": "shared",
+        "test_form": "balancing",
+        "prongs": [
+          {
+            "number": 1,
+            "label": "Duration and Severity of Interference",
+            "description": "The length and severity of the government's interference with property rights is one factor to consider, but is not dispositive and does not create a categorical exception for temporary takings.",
+            "burden_note": "Shared; courts weigh this factor among others",
+            "valid_from": "2012-01-01",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 2,
+            "label": "Intent Behind Government Action",
+            "description": "The intent or purpose of the government action is a relevant factor in determining whether a taking has occurred.",
+            "burden_note": "Shared; courts weigh this factor among others",
+            "valid_from": "2012-01-01",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 3,
+            "label": "Foreseeability of Interference",
+            "description": "The degree to which the interference was a foreseeable result of an authorized government action is a relevant factor in the takings analysis.",
+            "burden_note": "Shared; courts weigh this factor among others",
+            "valid_from": "2012-01-01",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          }
+        ],
+        "status": "active",
+        "valid_from": "2012-01-01",
+        "valid_until": null,
+        "notes": "This test rejects the Federal Circuit's categorical rule that only permanent takings are compensable. The Court emphasized that prior precedent clearly establishes that temporary interference can constitute a compensable taking, and courts must apply a multifactor balancing approach rather than categorical rules."
+      },
+      {
+        "@type": "DoctrinalTest",
+        "id": "internal_consistency_test",
+        "label": "Internal Consistency Test",
+        "description": "A test under the dormant Commerce Clause that asks whether a tax scheme would disadvantage interstate commerce if applied identically in every state. If so, the tax is unconstitutional.",
+        "area_id": "dormant_commerce_clause",
+        "source_case_id": "comptroller_of_treasury_v_wynne_2015",
+        "scrutiny_level": "per_se",
+        "burden": "government",
+        "test_form": "threshold_then_conjunctive",
+        "prongs": [
+          {
+            "number": 1,
+            "label": "Hypothetical Uniform Application",
+            "description": "Determine whether the tax scheme, if applied identically in every state, would disadvantage interstate commerce.",
+            "burden_note": "Government must demonstrate that the tax scheme does not create a discriminatory burden on interstate commerce under hypothetical uniform application.",
+            "valid_from": "2015-06-01",
+            "valid_until": null,
+            "contested": true,
+            "contest_note": "Justice Ginsburg argued in dissent that the internal consistency test need not be rigidly enforced and should not apply when discriminatory effect results from combination of two otherwise-lawful tax schemes."
+          },
+          {
+            "number": 2,
+            "label": "No Discriminatory Burden on Interstate Commerce",
+            "description": "The tax scheme must not impose a discriminatory burden on interstate commerce relative to intrastate commerce.",
+            "burden_note": "Government must show the scheme is non-discriminatory under uniform application.",
+            "valid_from": "2015-06-01",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          }
+        ],
+        "status": "active",
+        "valid_from": "2015-06-01",
+        "valid_until": null,
+        "notes": "Applied in Comptroller v. Wynne to invalidate Maryland's county tax scheme. The test focuses on the structural effect of the tax rather than facial discrimination."
+      },
+      {
+        "@type": "DoctrinalTest",
+        "id": "goss_suspension_test",
+        "label": "Goss Student Suspension Test",
+        "description": "A test for determining whether a student suspension complies with Due Process requirements. The test requires that before a student is suspended, the student must receive notice of the charges and be afforded some kind of hearing.",
+        "area_id": "substantive_due_process",
+        "source_case_id": "goss_v_lopez_1975",
+        "scrutiny_level": "none",
+        "burden": "government",
+        "test_form": "conjunctive",
+        "prongs": [
+          {
+            "number": 1,
+            "label": "Notice",
+            "description": "The student must be given notice of the charges against them.",
+            "burden_note": "Government must provide notice before suspension.",
+            "valid_from": "1975-01-01",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 2,
+            "label": "Hearing",
+            "description": "The student must be afforded some kind of hearing.",
+            "burden_note": "Government must provide an opportunity for a hearing before suspension.",
+            "valid_from": "1975-01-01",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          }
+        ],
+        "status": "active",
+        "valid_from": "1975-01-01",
+        "valid_until": null,
+        "notes": "Establishes minimum procedural protections for student suspensions under the Due Process Clause. The Court indicated these are minimum requirements; more extensive procedures may be required in other contexts."
+      },
+      {
+        "@type": "DoctrinalTest",
+        "id": "sffa_race_admissions_test",
+        "label": "Race-Based Admissions Strict Scrutiny Test",
+        "description": "A test for evaluating whether race-based admissions programs satisfy the Equal Protection Clause. The test requires that the government demonstrate: (1) a compelling interest in a measurable way; (2) that the program avoids racial stereotyping; and (3) a logical endpoint for when race-based admissions will cease. All three prongs must be satisfied for the program to survive strict scrutiny.",
+        "area_id": "equal_protection",
+        "source_case_id": "students_for_fair_admissions_v_harvard_2023",
+        "scrutiny_level": "strict",
+        "burden": "government",
+        "test_form": "conjunctive",
+        "prongs": [
+          {
+            "number": 1,
+            "label": "Measurable Compelling Interest",
+            "description": "The government must demonstrate a compelling interest in race-based admissions in a measurable way, not merely asserted or assumed.",
+            "burden_note": "Government must affirmatively demonstrate the compelling interest with measurable evidence.",
+            "valid_from": "2023-06-29",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 2,
+            "label": "Avoidance of Racial Stereotyping",
+            "description": "The race-based admissions program must not result in or rely upon racial stereotyping of applicants or groups.",
+            "burden_note": "Government must ensure the program does not stereotype based on race.",
+            "valid_from": "2023-06-29",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 3,
+            "label": "Logical Endpoint",
+            "description": "The race-based admissions program must have a logical endpoint or termination date, not continue indefinitely.",
+            "burden_note": "Government must establish when race-based admissions will cease.",
+            "valid_from": "2023-06-29",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          }
+        ],
+        "status": "active",
+        "valid_from": "2023-06-29",
+        "valid_until": null,
+        "notes": "This test refines and tightens the strict scrutiny standard as applied to race-based admissions. It builds on but supersedes the framework established in Grutter v. Bollinger and Regents v. Bakke by adding explicit requirements for measurability, non-stereotyping, and temporal limits."
+      },
+      {
+        "@type": "DoctrinalTest",
+        "id": "randolph_consent_search_test",
+        "label": "Randolph Co-Occupant Consent Search Test",
+        "description": "A test for determining the validity of a consent-based warrantless search when multiple co-occupants are present. The search is unconstitutional if one co-occupant expressly refuses consent while another consents, provided the refusing occupant is present and able to object.",
+        "area_id": "criminal_procedure",
+        "source_case_id": "georgia_v_randolph_2006",
+        "scrutiny_level": "rational_basis",
+        "burden": "government",
+        "test_form": "threshold_then_conjunctive",
+        "prongs": [
+          {
+            "number": 1,
+            "label": "Multiple Co-Occupants Present",
+            "description": "Two or more co-occupants must be present at the time of the search request.",
+            "burden_note": "Government must establish that the search involves multiple co-occupants.",
+            "valid_from": "2006",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 2,
+            "label": "Express Refusal by One Occupant",
+            "description": "One co-occupant must expressly refuse consent to the search.",
+            "burden_note": "Government must show that no co-occupant expressly refused consent.",
+            "valid_from": "2006",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 3,
+            "label": "Consent by Another Occupant",
+            "description": "Another co-occupant consents to the search.",
+            "burden_note": "Government may rely on consent from one co-occupant, but this is insufficient if another refuses.",
+            "valid_from": "2006",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          }
+        ],
+        "status": "active",
+        "valid_from": "2006",
+        "valid_until": null,
+        "notes": "If all three prongs are satisfied, the search is unconstitutional. The test reflects the principle that a reasonable person would not enter shared premises when one occupant explicitly refuses, even with another's consent."
+      },
+      {
+        "@type": "DoctrinalTest",
+        "id": "gregg_capital_sentencing_test",
+        "label": "Gregg Capital Sentencing Test",
+        "description": "The constitutional test for imposing capital punishment requiring: (1) a bifurcated trial with separate guilt and penalty stages; (2) the jury must find at least one aggravating circumstance beyond a reasonable doubt before death may be imposed; (3) the jury must be permitted to consider mitigating circumstances; and (4) appellate review to ensure consistency and prevent arbitrary application.",
+        "area_id": "criminal_procedure",
+        "source_case_id": "gregg_v_georgia_1976",
+        "scrutiny_level": "heightened",
+        "burden": "government",
+        "test_form": "conjunctive",
+        "prongs": [
+          {
+            "number": 1,
+            "label": "Bifurcated Trial Structure",
+            "description": "Capital cases must proceed in two stages: a guilt stage and a separate penalty stage.",
+            "burden_note": "Government must structure the trial to separate guilt determination from penalty determination.",
+            "valid_from": "1976-07-02",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 2,
+            "label": "Aggravating Circumstance Finding",
+            "description": "The jury must find at least one aggravating circumstance beyond a reasonable doubt before the death penalty may be imposed.",
+            "burden_note": "Government must prove at least one aggravating circumstance beyond a reasonable doubt.",
+            "valid_from": "1976-07-02",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 3,
+            "label": "Consideration of Mitigating Circumstances",
+            "description": "The jury must be permitted to consider any mitigating circumstances presented by the defendant.",
+            "burden_note": "Defendant may present mitigating evidence; jury must be free to consider it.",
+            "valid_from": "1976-07-02",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          }
+        ],
+        "status": "active",
+        "valid_from": "1976-07-02",
+        "valid_until": null,
+        "notes": "This test established the constitutional framework for capital sentencing that prevents arbitrary and capricious application of the death penalty while permitting states to impose capital punishment."
+      },
+      {
+        "@type": "DoctrinalTest",
+        "id": "solem_proportionality_test",
+        "label": "Solem Proportionality Test",
+        "description": "A three-part test for determining whether a sentence violates the Eighth Amendment's prohibition on cruel and unusual punishment by being grossly disproportionate to the offense.",
+        "area_id": "individual_rights",
+        "source_case_id": "solem_v_helm_1983",
+        "scrutiny_level": "heightened",
+        "burden": "government",
+        "test_form": "conjunctive",
+        "prongs": [
+          {
+            "number": 1,
+            "label": "Gravity of Offense and Harshness of Penalty",
+            "description": "Courts must examine the nature of the offense and the severity of the sentence imposed.",
+            "burden_note": "Government must justify the proportionality of the sentence to the offense.",
+            "valid_from": "1983-01-01",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 2,
+            "label": "Sentences Imposed on Other Criminals in the Same Jurisdiction",
+            "description": "Courts must compare the sentence imposed to sentences imposed for commission of other crimes in the same jurisdiction.",
+            "burden_note": "Government must justify why this defendant received a harsher sentence than others convicted of more serious crimes.",
+            "valid_from": "1983-01-01",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 3,
+            "label": "Sentences Imposed for Commission of the Same Crime in Other Jurisdictions",
+            "description": "Courts must consider sentences imposed for the same crime in other jurisdictions.",
+            "burden_note": "Government must justify why this jurisdiction imposes a significantly harsher sentence than other jurisdictions.",
+            "valid_from": "1983-01-01",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          }
+        ],
+        "status": "active",
+        "valid_from": "1983-01-01",
+        "valid_until": null,
+        "notes": "The test applies to sentences that may be grossly disproportionate to the offense. A sentence is unconstitutional under the Eighth Amendment if it is grossly disproportionate when measured against these three factors."
+      },
+      {
+        "@type": "DoctrinalTest",
+        "id": "eighth_amendment_capital_punishment_test",
+        "label": "Eighth Amendment Capital Punishment Test",
+        "description": "A two-part test for determining whether a particular crime may be punished by death under the Eighth Amendment: (1) whether there is a national consensus against the punishment, and (2) whether the punishment would be excessive in light of the crime and its circumstances.",
+        "area_id": "individual_rights",
+        "source_case_id": "kennedy_v_louisiana_2008",
+        "scrutiny_level": "heightened",
+        "burden": "government",
+        "test_form": "conjunctive",
+        "prongs": [
+          {
+            "number": 1,
+            "label": "National Consensus",
+            "description": "Examine whether there is a national consensus against imposing the death penalty for the particular crime, considering the number of states that have adopted similar laws and the direction of legislative and jury trends.",
+            "burden_note": "Government must demonstrate a national consensus supporting the punishment.",
+            "valid_from": "2008-06-25",
+            "valid_until": null,
+            "contested": true,
+            "contest_note": "The dissent argued that five states adopting similar laws constituted a national consensus; the majority disagreed."
+          },
+          {
+            "number": 2,
+            "label": "Excessiveness",
+            "description": "Determine whether the punishment would be excessive in relation to the crime, considering factors such as whether the crime resulted in or was intended to result in the victim's death.",
+            "burden_note": "Government must demonstrate that the punishment is not excessive.",
+            "valid_from": "2008-06-25",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          }
+        ],
+        "status": "active",
+        "valid_from": "2008-06-25",
+        "valid_until": null,
+        "notes": "This test builds on methodology established in Atkins v. Virginia and Roper v. Simmons. The dissent contended that individual facts of the case, including the age of the child, the sadistic nature of the crime, and the number of rapes, should be considered rather than applying a blanket rule."
+      },
+      {
+        "@type": "DoctrinalTest",
+        "id": "graham_categorical_eighth_amendment_test",
+        "label": "Graham Categorical Eighth Amendment Test",
+        "description": "A two-step categorical analysis for determining whether a sentence imposed on a class of offenders violates the Eighth Amendment: (1) consider objective indicia of society's standards, and (2) determine whether the punishment violates the Constitution guided by standards elaborated by controlling precedents.",
+        "area_id": "individual_rights",
+        "source_case_id": "graham_v_florida_2010",
+        "scrutiny_level": "heightened",
+        "burden": "government",
+        "test_form": "conjunctive",
+        "prongs": [
+          {
+            "number": 1,
+            "label": "Objective Indicia of Society's Standards",
+            "description": "Examine objective evidence of how society views the punishment in question, including domestic and international practice.",
+            "burden_note": "Government must demonstrate that the punishment reflects contemporary standards of decency.",
+            "valid_from": "2010-05-17",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 2,
+            "label": "Constitutional Guidance from Controlling Precedents",
+            "description": "Determine whether the punishment violates the Constitution as guided by standards elaborated in controlling Supreme Court precedents.",
+            "burden_note": "Government must show the punishment is consistent with constitutional principles established in prior cases.",
+            "valid_from": "2010-05-17",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          }
+        ],
+        "status": "active",
+        "valid_from": "2010-05-17",
+        "valid_until": null,
+        "notes": "This test applies when a case implicates a particular type of sentence as it applies to an entire class of offenders. The Court emphasized that life sentences without parole for juveniles in non-homicidal crimes fail both prongs."
+      },
+      {
+        "@type": "DoctrinalTest",
+        "id": "frye_plea_negotiation_test",
+        "label": "Sixth Amendment Effective Assistance in Plea Negotiations Test",
+        "description": "A defendant claiming ineffective assistance of counsel in the context of plea negotiations must demonstrate: (1) counsel's performance was deficient (e.g., failure to communicate a plea offer), and (2) the deficient performance caused prejudice. Prejudice in the plea context does not require showing the trial outcome would have been different, but rather that the defendant would have accepted the more favorable plea offer had counsel properly communicated it.",
+        "area_id": "criminal_procedure",
+        "source_case_id": "missouri_v_frye_2012",
+        "scrutiny_level": "none",
+        "burden": "challenger",
+        "test_form": "conjunctive",
+        "prongs": [
+          {
+            "number": 1,
+            "label": "Deficient Performance",
+            "description": "Counsel's performance must fall below an objective standard of reasonableness. In the plea negotiation context, this includes the duty to communicate plea offers to the defendant within the offer window.",
+            "burden_note": "Defendant must show counsel's conduct was objectively unreasonable.",
+            "valid_from": "2012-03-21",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 2,
+            "label": "Prejudice",
+            "description": "The defendant must demonstrate that counsel's deficient performance caused prejudice. In the plea context, prejudice is shown by evidence that the defendant would have accepted the more favorable plea offer had counsel communicated it, not by demonstrating a different trial outcome.",
+            "burden_note": "Defendant must show a reasonable probability that, but for counsel's deficient performance, the defendant would have accepted the plea offer.",
+            "valid_from": "2012-03-21",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          }
+        ],
+        "status": "active",
+        "valid_from": "2012-03-21",
+        "valid_until": null,
+        "notes": "This test applies the Strickland framework to the specific context of plea negotiations. The Court clarifies that prejudice in the plea context differs from prejudice at trial\u2014the defendant need not show the trial outcome would have been different."
+      },
+      {
+        "@type": "DoctrinalTest",
+        "id": "lafler_plea_ineffective_assistance_test",
+        "label": "Lafler Ineffective Assistance in Plea Context Test",
+        "description": "When a defendant claims ineffective assistance of counsel regarding a plea offer, the court must determine whether, absent the ineffective counsel, the defendant would have accepted the offered plea that was less severe than the eventual sentence, and whether the trial court would have accepted the plea terms.",
+        "area_id": "criminal_procedure",
+        "source_case_id": "lafler_v_cooper_2012",
+        "scrutiny_level": "none",
+        "burden": "challenger",
+        "test_form": "conjunctive",
+        "prongs": [
+          {
+            "number": 1,
+            "label": "Deficient Performance",
+            "description": "Counsel's advice regarding the plea offer was deficient, falling below an objective standard of reasonableness.",
+            "burden_note": "Defendant must show counsel's performance was deficient.",
+            "valid_from": "2012",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 2,
+            "label": "Defendant Would Have Accepted Plea",
+            "description": "Absent the ineffective counsel, the defendant would have accepted the offered plea that was less severe than the eventual sentence.",
+            "burden_note": "Defendant must show reasonable probability of acceptance.",
+            "valid_from": "2012",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 3,
+            "label": "Trial Court Would Have Accepted Plea",
+            "description": "The trial court would have accepted the terms of the plea offer.",
+            "burden_note": "Defendant must show reasonable probability of acceptance by trial court.",
+            "valid_from": "2012",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          }
+        ],
+        "status": "active",
+        "valid_from": "2012",
+        "valid_until": null,
+        "notes": "This test applies Strickland v. Washington to the specific context of ineffective assistance regarding plea offers. The remedy is not specific performance of the original plea, but rather the prosecution may re-offer the plea and, if accepted, the trial court may decide how to amend the sentence."
+      },
+      {
+        "@type": "DoctrinalTest",
+        "id": "mcdonald_incorporation_test",
+        "label": "McDonald Incorporation Test",
+        "description": "A test for determining whether a right should be incorporated against the states through the Fourteenth Amendment's Due Process Clause. A right qualifies for incorporation if it is fundamental to the Nation's scheme of ordered liberty or deeply rooted in the Nation's history and tradition.",
+        "area_id": "substantive_due_process",
+        "source_case_id": "mcdonald_v_city_of_chicago_2010",
+        "scrutiny_level": "rational_basis",
+        "burden": "challenger",
+        "test_form": "disjunctive",
+        "prongs": [
+          {
+            "number": 1,
+            "label": "Fundamental to the Nation's Scheme of Ordered Liberty",
+            "description": "The right must be fundamental to the Nation's scheme of ordered liberty.",
+            "burden_note": "Challenger must demonstrate the right is fundamental to ordered liberty.",
+            "valid_from": "2010-06-28",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 2,
+            "label": "Deeply Rooted in the Nation's History and Tradition",
+            "description": "The right must be deeply rooted in the Nation's history and tradition.",
+            "burden_note": "Challenger must demonstrate the right is deeply rooted in history and tradition.",
+            "valid_from": "2010-06-28",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          }
+        ],
+        "status": "active",
+        "valid_from": "2010-06-28",
+        "valid_until": null,
+        "notes": "This test is disjunctive \u2014 satisfaction of either prong suffices for incorporation. The Court applied this test to the Second Amendment right to keep and bear arms, finding it satisfied both prongs based on the reasoning in District of Columbia v. Heller."
+      },
+      {
+        "@type": "DoctrinalTest",
+        "id": "schechter_intelligible_principle_test",
+        "label": "Intelligible Principle Test",
+        "description": "A delegation of legislative authority is constitutional only if Congress establishes intelligible principles or standards that guide and limit the delegatee's discretion in implementing the delegated authority.",
+        "area_id": "separation_of_powers",
+        "source_case_id": "schechter_poultry_corp_v_united_states_1935",
+        "scrutiny_level": "per_se",
+        "burden": "government",
+        "test_form": "threshold_then_conjunctive",
+        "prongs": [
+          {
+            "number": 1,
+            "label": "Intelligible Principle or Standard",
+            "description": "Congress must establish intelligible principles or standards that define the scope and limits of the delegated authority.",
+            "burden_note": "Government must demonstrate that Congress provided meaningful guidance.",
+            "valid_from": "1935-05-27",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 2,
+            "label": "Absence of Unbridled Discretion",
+            "description": "The delegatee cannot be granted unbridled or unfettered discretion to make whatever laws or regulations it believes necessary to achieve a general goal.",
+            "burden_note": "Government must demonstrate that the delegatee's discretion is meaningfully constrained.",
+            "valid_from": "1935-05-27",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          }
+        ],
+        "status": "active",
+        "valid_from": "1935-05-27",
+        "valid_until": null,
+        "notes": "This test articulates the constitutional requirement that delegations of legislative authority must be accompanied by intelligible principles or standards. The Court emphasized that the NIRA failed this test because it provided no rules or standards to evaluate industrial activity."
       }
     ]
   },
@@ -25076,7 +27777,7 @@
     {
       "id": "thomas_grutter_precedes_sffa",
       "source_id": "grutter_v_bollinger_2003",
-      "target_id": "sffa_v_harvard_2023",
+      "target_id": "students_for_fair_admissions_v_harvard_2023",
       "edge_type": "INTELLECTUALLY_PRECEDES",
       "opinion_ref": {
         "opinion_type": "dissent",
@@ -25093,7 +27794,7 @@
     },
     {
       "id": "sffa_overrules_grutter",
-      "source_id": "sffa_v_harvard_2023",
+      "source_id": "students_for_fair_admissions_v_harvard_2023",
       "target_id": "grutter_v_bollinger_2003",
       "edge_type": "OVERRULES",
       "overrule_type": "explicit",
@@ -25106,7 +27807,7 @@
     },
     {
       "id": "sffa_modifies_affirmative_action",
-      "source_id": "sffa_v_harvard_2023",
+      "source_id": "students_for_fair_admissions_v_harvard_2023",
       "target_id": "affirmative_action_doctrine",
       "edge_type": "MODIFIES",
       "direction": "narrows",
@@ -25120,7 +27821,7 @@
     },
     {
       "id": "sffa_interprets_a14",
-      "source_id": "sffa_v_harvard_2023",
+      "source_id": "students_for_fair_admissions_v_harvard_2023",
       "target_id": "amendment_14_section_1",
       "edge_type": "INTERPRETS",
       "valid_from": "2023-06-29",
@@ -25644,7 +28345,7 @@
     {
       "id": "harlan_plessy_precedes_sffa",
       "source_id": "plessy_v_ferguson_1896",
-      "target_id": "sffa_v_harvard_2023",
+      "target_id": "students_for_fair_admissions_v_harvard_2023",
       "edge_type": "INTELLECTUALLY_PRECEDES",
       "opinion_ref": {
         "opinion_type": "dissent",
@@ -28514,7 +31215,7 @@
     {
       "id": "philadelphia_establishes_commerce_clause_discrimination",
       "source_id": "philadelphia_v_new_jersey_1978",
-      "target_id": "commerce_clause_discrimination",
+      "target_id": "dormant_commerce_clause_doctrine",
       "edge_type": "ESTABLISHES",
       "valid_from": "1978-06-23",
       "valid_until": null,
@@ -30700,18 +33401,6 @@
       "target_id": "dormant_commerce_clause",
       "edge_type": "CHILD_OF",
       "valid_from": "1970-03-02",
-      "valid_until": null,
-      "jurisdiction": [
-        "federal",
-        "state"
-      ]
-    },
-    {
-      "id": "commerce_clause_discrimination_child_of_dormant_commerce_clause",
-      "source_id": "commerce_clause_discrimination",
-      "target_id": "dormant_commerce_clause",
-      "edge_type": "CHILD_OF",
-      "valid_from": "1978-06-23",
       "valid_until": null,
       "jurisdiction": [
         "federal",
@@ -34171,6 +36860,1054 @@
       "jurisdiction": [
         "federal"
       ]
+    },
+    {
+      "id": "palazzolo_applies_takings_clause_doctrine",
+      "source_id": "palazzolo_v_rhode_island_2001",
+      "target_id": "takings_clause_doctrine",
+      "edge_type": "APPLIES",
+      "valid_from": "2001-06-23",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Palazzolo applies and clarifies the Takings Clause doctrine by establishing that post-regulation acquisition of title does not bar a takings claim."
+    },
+    {
+      "id": "palazzolo_establishes_regulatory_takings_total_deprivation",
+      "source_id": "palazzolo_v_rhode_island_2001",
+      "target_id": "regulatory_takings_total_deprivation",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2001-06-23",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Palazzolo establishes the principle that a total deprivation takings claim requires the property to retain no significant economic worth."
+    },
+    {
+      "id": "tahoe_sierra_establishes_tahoe_sierra_takings_test",
+      "source_id": "tahoe_sierra_preservation_council_v_tahoe_regional_planning_agency_2002",
+      "target_id": "tahoe_sierra_takings_test",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2002-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "The Court established a multi-factor balancing test for analyzing whether temporary moratoria constitute takings."
+    },
+    {
+      "id": "tahoe_sierra_applies_takings_clause_doctrine",
+      "source_id": "tahoe_sierra_preservation_council_v_tahoe_regional_planning_agency_2002",
+      "target_id": "takings_clause_doctrine",
+      "edge_type": "APPLIES",
+      "valid_from": "2002-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "The Court applied and clarified the Takings Clause doctrine by rejecting categorical rules for temporary moratoria."
+    },
+    {
+      "id": "arkansas_game_fish_establishes_takings_multifactor_test",
+      "source_id": "arkansas_game_and_fish_commission_v_united_states_2012",
+      "target_id": "takings_multifactor_test",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2012-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "The Court established the multifactor balancing test for Fifth Amendment takings claims, rejecting categorical rules based on permanence."
+    },
+    {
+      "id": "arkansas_game_fish_applies_takings_clause_doctrine",
+      "source_id": "arkansas_game_and_fish_commission_v_united_states_2012",
+      "target_id": "takings_clause_doctrine",
+      "edge_type": "APPLIES",
+      "valid_from": "2012-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "The Court applied and clarified the Fifth Amendment Takings Clause by rejecting the categorical exception for temporary takings."
+    },
+    {
+      "id": "knick_applies_takings_clause_doctrine",
+      "source_id": "knick_v_township_of_scott_2019",
+      "target_id": "takings_clause_doctrine",
+      "edge_type": "APPLIES",
+      "valid_from": "2019-06-21",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Knick established that property owners may bring Fifth Amendment takings claims in federal court under \u00a7 1983 without exhausting state remedies, overruling the Williamson County requirement."
+    },
+    {
+      "id": "city_philadelphia_applies_dormant_commerce",
+      "source_id": "city_of_philadelphia_v_new_jersey_1978",
+      "target_id": "dormant_commerce_clause_doctrine",
+      "edge_type": "APPLIES",
+      "valid_from": "1978-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "The Court applied dormant Commerce Clause doctrine to invalidate New Jersey's waste importation ban as discriminatory against interstate commerce."
+    },
+    {
+      "id": "west_lynn_creamery_applies_commerce_clause_discrimination",
+      "source_id": "west_lynn_creamery_v_healy_1994",
+      "target_id": "dormant_commerce_clause_doctrine",
+      "edge_type": "APPLIES",
+      "valid_from": "1994-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "The Court applied the principle that state measures discriminating against interstate commerce and functioning as tariffs violate the Commerce Clause."
+    },
+    {
+      "id": "comptroller_wynne_establishes_internal_consistency_test",
+      "source_id": "comptroller_of_treasury_v_wynne_2015",
+      "target_id": "internal_consistency_test",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2015-06-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "The Court articulated and applied the internal consistency test as the governing standard for dormant Commerce Clause analysis of state tax schemes."
+    },
+    {
+      "id": "perry_applies_unconstitutional_conditions",
+      "source_id": "perry_v_sindermann_1972",
+      "target_id": "unconstitutional_conditions_doctrine",
+      "edge_type": "APPLIES",
+      "valid_from": "1972",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Court applies the unconstitutional conditions doctrine to public employment, holding that government cannot deny re-employment based on protected speech."
+    },
+    {
+      "id": "perry_establishes_public_employee_speech",
+      "source_id": "perry_v_sindermann_1972",
+      "target_id": "public_employee_free_speech_protection",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1972",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Establishes that public employees have First Amendment protection against retaliation for speech even without tenure."
+    },
+    {
+      "id": "perry_establishes_due_process_employment",
+      "source_id": "perry_v_sindermann_1972",
+      "target_id": "procedural_due_process_public_employment",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1972",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Establishes that procedural due process may apply to non-tenured public employees if they have a legitimate claim of entitlement to re-employment."
+    },
+    {
+      "id": "goss_establishes_property_interest_education",
+      "source_id": "goss_v_lopez_1975",
+      "target_id": "property_interest_education",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1975-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Goss established that education is a property interest protected by the Due Process Clause when a state extends it to its citizens."
+    },
+    {
+      "id": "goss_establishes_due_process_student_suspension",
+      "source_id": "goss_v_lopez_1975",
+      "target_id": "due_process_student_suspension",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1975-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Goss established minimum due process requirements for student suspensions."
+    },
+    {
+      "id": "goss_establishes_goss_suspension_test",
+      "source_id": "goss_v_lopez_1975",
+      "target_id": "goss_suspension_test",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1975-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Goss established the procedural test requiring notice and hearing before student suspension."
+    },
+    {
+      "id": "bishop_establishes_property_interest_employment",
+      "source_id": "bishop_v_wood_1976",
+      "target_id": "property_interest_employment",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1976-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Bishop v. Wood establishes the doctrine that property interests in public employment are determined by state law and require an enforceable expectation of continued employment."
+    },
+    {
+      "id": "zinermon_applies_parratt_rule",
+      "source_id": "zinermon_v_burch_1990",
+      "target_id": "parratt_rule",
+      "edge_type": "MODIFIES",
+      "direction": "narrows",
+      "valid_from": "1990",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Zinermon narrows the Parratt rule by holding that it does not apply when the state has delegated authority to officials to make determinations affecting liberty interests and predeprivation safeguards were feasible."
+    },
+    {
+      "id": "zinermon_applies_procedural_due_process",
+      "source_id": "zinermon_v_burch_1990",
+      "target_id": "procedural_due_process_liberty_deprivation",
+      "edge_type": "APPLIES",
+      "valid_from": "1990",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Zinermon applies and clarifies the procedural due process doctrine in the context of mental hospital admissions."
+    },
+    {
+      "id": "windsor_establishes_federal_marriage_recognition",
+      "source_id": "united_states_v_windsor_2013",
+      "target_id": "federal_marriage_recognition_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2013-06-26",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Windsor established that federal law cannot deny same-sex couples federal marriage benefits available to opposite-sex couples under the Fifth Amendment's equal protection guarantee."
+    },
+    {
+      "id": "windsor_establishes_state_marriage_authority",
+      "source_id": "united_states_v_windsor_2013",
+      "target_id": "state_marriage_definition_authority",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2013-06-26",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Windsor established that states have authority to define marital relationships and that federal law cannot undermine this authority."
+    },
+    {
+      "id": "michael_m_applies_gender_based_classification_ep",
+      "source_id": "michael_m_v_superior_court_1981",
+      "target_id": "gender_based_classification_ep",
+      "edge_type": "APPLIES",
+      "valid_from": "1981-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "The plurality applied equal protection doctrine to gender-based statutory rape laws, holding that differential treatment of males and females does not violate equal protection when the sexes are not similarly situated with respect to the risks addressed by the law."
+    },
+    {
+      "id": "plyler_establishes_right_to_public_education",
+      "source_id": "plyler_v_doe_1982",
+      "target_id": "right_to_public_education",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1982-06-15",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Plyler established that undocumented children have a constitutional right to free public education under Equal Protection Clause."
+    },
+    {
+      "id": "sffa_establishes_sffa_race_admissions_test",
+      "source_id": "students_for_fair_admissions_v_harvard_2023",
+      "target_id": "sffa_race_admissions_test",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2023-06-29",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "The Court established a refined strict scrutiny test for race-based admissions that requires measurable compelling interests, avoidance of stereotyping, and a logical endpoint."
+    },
+    {
+      "id": "sffa_establishes_equal_protection_race_admissions",
+      "source_id": "students_for_fair_admissions_v_harvard_2023",
+      "target_id": "equal_protection_race_based_admissions",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2023-06-29",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "The Court established the doctrine that race-based admissions programs must satisfy strict scrutiny and cannot rely on race as a primary factor without meeting the three-prong test."
+    },
+    {
+      "id": "united_states_v_darby_1941_establishes_commerce_clause_regulatory_power",
+      "source_id": "united_states_v_darby_1941",
+      "target_id": "commerce_clause_regulatory_power",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1941",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Darby established the doctrine that Congress may regulate interstate commerce to address labor conditions affecting such commerce."
+    },
+    {
+      "id": "garcia_overrules_national_league_of_cities",
+      "source_id": "garcia_v_san_antonio_metropolitan_transit_authority_1985",
+      "target_id": "national_league_of_cities_v_usery_1976",
+      "edge_type": "OVERRULES",
+      "overrule_type": "explicit",
+      "valid_from": "1985-02-19",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ],
+      "notes": "Garcia explicitly overrules National League of Cities, holding that the 'traditional governmental function' test is unworkable and inconsistent with federalism principles."
+    },
+    {
+      "id": "garcia_modifies_state_immunity_commerce_clause",
+      "source_id": "garcia_v_san_antonio_metropolitan_transit_authority_1985",
+      "target_id": "state_immunity_commerce_clause",
+      "edge_type": "MODIFIES",
+      "direction": "repudiates",
+      "valid_from": "1985-02-19",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ],
+      "notes": "Garcia repudiates the 'traditional governmental function' standard as a basis for determining state immunity under the Commerce Clause."
+    },
+    {
+      "id": "atwater_establishes_warrantless_arrest_minor_offense",
+      "source_id": "atwater_v_city_of_lago_vista_2001",
+      "target_id": "warrantless_arrest_minor_offense",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2001",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Atwater established the doctrine permitting warrantless arrests for minor criminal offenses when probable cause exists."
+    },
+    {
+      "id": "georgia_v_randolph_establishes_randolph_consent_search_test",
+      "source_id": "georgia_v_randolph_2006",
+      "target_id": "randolph_consent_search_test",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2006",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Georgia v. Randolph established the co-occupant consent search test as a new Fourth Amendment protection."
+    },
+    {
+      "id": "georgia_v_randolph_applies_consent_search_doctrine",
+      "source_id": "georgia_v_randolph_2006",
+      "target_id": "consent_search_doctrine",
+      "edge_type": "APPLIES",
+      "valid_from": "2006",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Georgia v. Randolph applies and refines the consent search doctrine by establishing a co-occupant veto rule."
+    },
+    {
+      "id": "georgia_v_randolph_applies_fourth_amendment_reasonableness",
+      "source_id": "georgia_v_randolph_2006",
+      "target_id": "fourth_amendment_reasonableness",
+      "edge_type": "APPLIES",
+      "valid_from": "2006",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Georgia v. Randolph applies the Fourth Amendment reasonableness requirement to evaluate consent searches in the presence of objecting co-occupants."
+    },
+    {
+      "id": "navarette_applies_reasonable_suspicion_doctrine",
+      "source_id": "navarette_v_california_2014",
+      "target_id": "reasonable_suspicion_doctrine",
+      "edge_type": "APPLIES",
+      "valid_from": "2014-04-22",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Navarette applies and clarifies the reasonable suspicion doctrine by establishing that anonymous tips with sufficient indicia of reliability may support a traffic stop."
+    },
+    {
+      "id": "comptroller_wynne_applies_dcc_doctrine",
+      "source_id": "comptroller_of_treasury_v_wynne_2015",
+      "target_id": "dormant_commerce_clause_doctrine",
+      "edge_type": "APPLIES",
+      "valid_from": "2015-06-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "knick_overrules_williamson_county",
+      "source_id": "knick_v_township_of_scott_2019",
+      "target_id": "williamson_county_v_hamilton_bank_1985",
+      "edge_type": "OVERRULES",
+      "overrule_type": "explicit",
+      "valid_from": "2019-06-21",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Knick explicitly overruled Williamson County state-exhaustion requirement"
+    },
+    {
+      "id": "furman_establishes_cruel_and_unusual_punishment_doctrine",
+      "source_id": "furman_v_georgia_1972",
+      "target_id": "cruel_and_unusual_punishment_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1972-06-29",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Furman established that the Eighth Amendment, as applied to the states, prohibits arbitrary and capricious application of the death penalty."
+    },
+    {
+      "id": "gregg_establishes_capital_punishment_doctrine",
+      "source_id": "gregg_v_georgia_1976",
+      "target_id": "capital_punishment_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1976-07-02",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Gregg established the modern constitutional framework for capital punishment."
+    },
+    {
+      "id": "gregg_establishes_bifurcated_trial_doctrine",
+      "source_id": "gregg_v_georgia_1976",
+      "target_id": "bifurcated_capital_trial_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1976-07-02",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Gregg established the bifurcated trial requirement as a constitutional safeguard."
+    },
+    {
+      "id": "gregg_establishes_gregg_capital_sentencing_test",
+      "source_id": "gregg_v_georgia_1976",
+      "target_id": "gregg_capital_sentencing_test",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1976-07-02",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Gregg established the multi-part test for constitutional capital sentencing."
+    },
+    {
+      "id": "coker_establishes_proportionality_doctrine",
+      "source_id": "coker_v_georgia_1977",
+      "target_id": "cruel_and_unusual_punishment_proportionality",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1977-06-29",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Coker established the proportionality principle as a constraint on capital punishment under the Eighth Amendment."
+    },
+    {
+      "id": "solem_establishes_eighth_amendment_proportionality",
+      "source_id": "solem_v_helm_1983",
+      "target_id": "eighth_amendment_proportionality",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1983-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Solem v. Helm established the proportionality doctrine as a constitutional constraint on sentencing under the Eighth Amendment."
+    },
+    {
+      "id": "solem_establishes_solem_proportionality_test",
+      "source_id": "solem_v_helm_1983",
+      "target_id": "solem_proportionality_test",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1983-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Solem v. Helm established the three-part proportionality test for Eighth Amendment sentencing challenges."
+    },
+    {
+      "id": "atkins_establishes_eighth_amendment_mental_retardation_protection",
+      "source_id": "atkins_v_virginia_2002",
+      "target_id": "eighth_amendment_mental_retardation_protection",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2002-06-20",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Atkins established the categorical prohibition on executing mentally retarded offenders under the Eighth Amendment."
+    },
+    {
+      "id": "roper_overrules_stanford",
+      "source_id": "roper_v_simmons_2005",
+      "target_id": "stanford_v_kentucky_1989",
+      "edge_type": "OVERRULES",
+      "valid_from": "2005-03-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "overrule_type": "explicit",
+      "notes": "Roper explicitly overrules Stanford v. Kentucky's holding that executing minors does not violate the Eighth Amendment, based on changed evolving standards of decency."
+    },
+    {
+      "id": "roper_establishes_evolving_standards",
+      "source_id": "roper_v_simmons_2005",
+      "target_id": "evolving_standards_of_decency",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2005-03-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Roper applies and reinforces the evolving standards of decency doctrine in the context of juvenile capital punishment."
+    },
+    {
+      "id": "roper_establishes_juvenile_death_penalty",
+      "source_id": "roper_v_simmons_2005",
+      "target_id": "juvenile_death_penalty_prohibition",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2005-03-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Roper establishes the constitutional prohibition on executing juveniles under the Eighth Amendment."
+    },
+    {
+      "id": "kennedy_louisiana_establishes_eighth_amendment_capital_punishment_limitation",
+      "source_id": "kennedy_v_louisiana_2008",
+      "target_id": "eighth_amendment_capital_punishment_limitation",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2008-06-25",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Kennedy v. Louisiana established the doctrine that the Eighth Amendment limits capital punishment based on national consensus and excessiveness analysis."
+    },
+    {
+      "id": "kennedy_louisiana_establishes_eighth_amendment_capital_punishment_test",
+      "source_id": "kennedy_v_louisiana_2008",
+      "target_id": "eighth_amendment_capital_punishment_test",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2008-06-25",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Kennedy v. Louisiana established the two-part test for Eighth Amendment capital punishment analysis, building on prior precedent."
+    },
+    {
+      "id": "graham_establishes_graham_categorical_eighth_amendment_test",
+      "source_id": "graham_v_florida_2010",
+      "target_id": "graham_categorical_eighth_amendment_test",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2010-05-17",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Graham v. Florida established the categorical Eighth Amendment test for evaluating sentences imposed on classes of offenders."
+    },
+    {
+      "id": "graham_establishes_juvenile_sentencing_eighth_amendment",
+      "source_id": "graham_v_florida_2010",
+      "target_id": "juvenile_sentencing_eighth_amendment",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2010-05-17",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Graham v. Florida established the doctrine that the Eighth Amendment prohibits life sentences without parole for juveniles convicted of non-homicidal crimes."
+    },
+    {
+      "id": "graham_establishes_categorical_eighth_amendment_analysis",
+      "source_id": "graham_v_florida_2010",
+      "target_id": "categorical_eighth_amendment_analysis",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2010-05-17",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Graham v. Florida applied and refined the categorical analysis framework for Eighth Amendment challenges to sentences imposed on entire classes of offenders."
+    },
+    {
+      "id": "miller_v_alabama_2012_establishes_juvenile_sentencing_proportionality",
+      "source_id": "miller_v_alabama_2012",
+      "target_id": "juvenile_sentencing_proportionality",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2012-06-25",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Miller v. Alabama established the doctrine that mandatory life without parole sentences for juveniles violate the Eighth Amendment's prohibition on cruel and unusual punishment."
+    },
+    {
+      "id": "moran_applies_miranda_rights_doctrine",
+      "source_id": "moran_v_burbine_1986",
+      "target_id": "miranda_rights_doctrine",
+      "edge_type": "APPLIES",
+      "valid_from": "1986-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Moran applies the Miranda rights doctrine to determine the validity of waivers when a suspect is unaware of attorney contact efforts."
+    },
+    {
+      "id": "padilla_applies_sixth_amendment_right_to_counsel",
+      "source_id": "padilla_v_kentucky_2010",
+      "target_id": "sixth_amendment_right_to_counsel",
+      "edge_type": "APPLIES",
+      "valid_from": "2010-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Padilla applies and clarifies the scope of the Sixth Amendment right to counsel by requiring counsel to advise on deportation consequences."
+    },
+    {
+      "id": "missouri_v_frye_establishes_frye_plea_negotiation_test",
+      "source_id": "missouri_v_frye_2012",
+      "target_id": "frye_plea_negotiation_test",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2012-03-21",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Missouri v. Frye establishes the framework for evaluating ineffective assistance claims in the plea negotiation context."
+    },
+    {
+      "id": "missouri_v_frye_applies_right_to_effective_assistance",
+      "source_id": "missouri_v_frye_2012",
+      "target_id": "right_to_effective_assistance_of_counsel",
+      "edge_type": "APPLIES",
+      "valid_from": "2012-03-21",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Missouri v. Frye applies and extends the established right to effective assistance of counsel to the plea negotiation context."
+    },
+    {
+      "id": "lafler_establishes_lafler_plea_ineffective_assistance_test",
+      "source_id": "lafler_v_cooper_2012",
+      "target_id": "lafler_plea_ineffective_assistance_test",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2012",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Lafler v. Cooper established the specific test for evaluating ineffective assistance of counsel claims in the plea bargain context."
+    },
+    {
+      "id": "lafler_applies_right_to_effective_assistance_of_counsel",
+      "source_id": "lafler_v_cooper_2012",
+      "target_id": "right_to_effective_assistance_of_counsel",
+      "edge_type": "APPLIES",
+      "valid_from": "2012",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Lafler applies the doctrine of right to effective assistance of counsel to the context of plea bargain advice."
+    },
+    {
+      "id": "barron_establishes_bill_of_rights_non_incorporation",
+      "source_id": "barron_v_baltimore_1833",
+      "target_id": "bill_of_rights_non_incorporation",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1833-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Barron v. Baltimore established the foundational principle that the Bill of Rights does not apply to the states."
+    },
+    {
+      "id": "barron_applies_just_compensation_clause",
+      "source_id": "barron_v_baltimore_1833",
+      "target_id": "just_compensation_clause",
+      "edge_type": "APPLIES",
+      "valid_from": "1833-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "The case applied the Fifth Amendment's just compensation clause to determine its scope, holding it applicable only to federal government action."
+    },
+    {
+      "id": "duncan_establishes_right_to_jury_trial_criminal",
+      "source_id": "duncan_v_louisiana_1968",
+      "target_id": "right_to_jury_trial_criminal",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1968-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Duncan established the fundamental right to jury trial in criminal cases and its incorporation against the states."
+    },
+    {
+      "id": "mcdonald_establishes_second_amendment_right",
+      "source_id": "mcdonald_v_city_of_chicago_2010",
+      "target_id": "second_amendment_right_to_keep_and_bear_arms",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2010-06-28",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "McDonald established the Second Amendment right to keep and bear arms as an individual right applicable to the states."
+    },
+    {
+      "id": "mcdonald_applies_incorporation_doctrine",
+      "source_id": "mcdonald_v_city_of_chicago_2010",
+      "target_id": "fourteenth_amendment_incorporation",
+      "edge_type": "APPLIES",
+      "valid_from": "2010-06-28",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "McDonald applied the Fourteenth Amendment incorporation doctrine to the Second Amendment, holding that the Due Process Clause is the appropriate mechanism for incorporation."
+    },
+    {
+      "id": "mcdonald_establishes_incorporation_test",
+      "source_id": "mcdonald_v_city_of_chicago_2010",
+      "target_id": "mcdonald_incorporation_test",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2010-06-28",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "McDonald articulated the test for incorporation: a right must be fundamental to the Nation's scheme of ordered liberty or deeply rooted in the Nation's history and tradition."
+    },
+    {
+      "id": "hammer_applies_tenth_amendment_reserved_powers",
+      "source_id": "hammer_v_dagenhart_1918",
+      "target_id": "tenth_amendment_reserved_powers",
+      "edge_type": "APPLIES",
+      "valid_from": "1918-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "The Court applied the Tenth Amendment reserved powers doctrine to invalidate the Keating-Owen Child Labor Act."
+    },
+    {
+      "id": "hammer_applies_production_not_commerce",
+      "source_id": "hammer_v_dagenhart_1918",
+      "target_id": "production_not_commerce",
+      "edge_type": "APPLIES",
+      "valid_from": "1918-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "The Court applied the production-commerce distinction to hold that Congress lacked power to regulate the production of goods, even when those goods would be shipped in interstate commerce."
+    },
+    {
+      "id": "schechter_establishes_non_delegation_doctrine",
+      "source_id": "schechter_poultry_corp_v_united_states_1935",
+      "target_id": "non_delegation_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1935-05-27",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ],
+      "notes": "Schechter Poultry Corp. v. United States established the non-delegation doctrine as a constitutional limit on Congress's power to delegate legislative authority."
+    },
+    {
+      "id": "schechter_establishes_intelligible_principle_test",
+      "source_id": "schechter_poultry_corp_v_united_states_1935",
+      "target_id": "schechter_intelligible_principle_test",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1935-05-27",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ],
+      "notes": "The Court established the intelligible principle test as the standard for evaluating whether a delegation of legislative authority is constitutional."
+    },
+    {
+      "id": "gonzales_v_raich_applies_commerce_clause_authority",
+      "source_id": "gonzales_v_raich_2005",
+      "target_id": "commerce_clause_authority",
+      "edge_type": "APPLIES",
+      "valid_from": "2005-06-06",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "The Court established the principle that Congress may regulate intrastate economic activity as part of a class of activities substantially affecting interstate commerce."
+    },
+    {
+      "id": "missouri_v_holland_establishes_treaty_power_doctrine",
+      "source_id": "missouri_v_holland_1920",
+      "target_id": "treaty_power_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1920-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Missouri v. Holland established the treaty power doctrine by holding that the treaty power, combined with congressional implementation, may regulate matters within the national interest even if those matters would otherwise be reserved to the states."
+    },
+    {
+      "id": "missouri_v_holland_applies_supremacy_clause_doctrine",
+      "source_id": "missouri_v_holland_1920",
+      "target_id": "supremacy_clause_doctrine",
+      "edge_type": "APPLIES",
+      "valid_from": "1920-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "The Court applied the Supremacy Clause to establish that treaty provisions are the supreme law of the land and are not subject to state-level constitutional challenge."
+    },
+    {
+      "id": "murphy_ncaa_establishes_anticommandeering_doctrine",
+      "source_id": "murphy_v_ncaa_2018",
+      "target_id": "anticommandeering_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2018-05-14",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Murphy clarifies that the anticommandeering doctrine applies equally to prohibitions on state legislative action as to affirmative commands, establishing that the distinction between compelling a state to enact legislation and prohibiting a state from enacting new laws is empty."
+    },
+    {
+      "id": "furman_v_precedes_gregg_v_",
+      "source_id": "furman_v_georgia_1972",
+      "target_id": "gregg_v_georgia_1976",
+      "edge_type": "INTELLECTUALLY_PRECEDES",
+      "valid_from": "1972-06-29",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "opinion_ref": {
+        "opinion_type": "majority",
+        "author": null
+      }
+    },
+    {
+      "id": "gregg_v__precedes_coker_v_",
+      "source_id": "gregg_v_georgia_1976",
+      "target_id": "coker_v_georgia_1977",
+      "edge_type": "INTELLECTUALLY_PRECEDES",
+      "valid_from": "1972-06-29",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "opinion_ref": {
+        "opinion_type": "majority",
+        "author": null
+      }
+    },
+    {
+      "id": "coker_v__precedes_atkins_v",
+      "source_id": "coker_v_georgia_1977",
+      "target_id": "atkins_v_virginia_2002",
+      "edge_type": "INTELLECTUALLY_PRECEDES",
+      "valid_from": "1972-06-29",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "opinion_ref": {
+        "opinion_type": "majority",
+        "author": null
+      }
+    },
+    {
+      "id": "atkins_v_precedes_roper_v_",
+      "source_id": "atkins_v_virginia_2002",
+      "target_id": "roper_v_simmons_2005",
+      "edge_type": "INTELLECTUALLY_PRECEDES",
+      "valid_from": "1972-06-29",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "opinion_ref": {
+        "opinion_type": "majority",
+        "author": null
+      }
+    },
+    {
+      "id": "roper_v__precedes_kennedy_",
+      "source_id": "roper_v_simmons_2005",
+      "target_id": "kennedy_v_louisiana_2008",
+      "edge_type": "INTELLECTUALLY_PRECEDES",
+      "valid_from": "1972-06-29",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "opinion_ref": {
+        "opinion_type": "majority",
+        "author": null
+      }
+    },
+    {
+      "id": "kennedy__precedes_graham_v",
+      "source_id": "kennedy_v_louisiana_2008",
+      "target_id": "graham_v_florida_2010",
+      "edge_type": "INTELLECTUALLY_PRECEDES",
+      "valid_from": "1972-06-29",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "opinion_ref": {
+        "opinion_type": "majority",
+        "author": null
+      }
+    },
+    {
+      "id": "graham_v_precedes_miller_v",
+      "source_id": "graham_v_florida_2010",
+      "target_id": "miller_v_alabama_2012",
+      "edge_type": "INTELLECTUALLY_PRECEDES",
+      "valid_from": "1972-06-29",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "opinion_ref": {
+        "opinion_type": "majority",
+        "author": null
+      }
     }
   ],
   "schema_issues_found": [
