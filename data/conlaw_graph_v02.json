@@ -24654,10 +24654,10 @@
       "notes": null
     },
     {
-      "id": "brandenburg_establishes_incitement_doctrine",
+      "id": "brandenburg_modifies_incitement_doctrine",
       "source_id": "brandenburg_v_ohio_1969",
       "target_id": "incitement_doctrine",
-      "edge_type": "ESTABLISHES",
+      "edge_type": "MODIFIES",
       "valid_from": "1969-06-09",
       "valid_until": null,
       "jurisdiction": [
@@ -24665,7 +24665,8 @@
         "state"
       ],
       "citation": null,
-      "notes": null
+      "notes": null,
+      "direction": "repudiates"
     },
     {
       "id": "brandenburg_establishes_test",
@@ -27382,16 +27383,17 @@
       ]
     },
     {
-      "id": "miller_establishes_obscenity_doctrine",
+      "id": "miller_modifies_obscenity_doctrine",
       "source_id": "miller_v_california_1973",
       "target_id": "obscenity_doctrine",
-      "edge_type": "ESTABLISHES",
+      "edge_type": "MODIFIES",
       "valid_from": "1973-06-21",
       "valid_until": null,
       "jurisdiction": [
         "federal",
         "state"
-      ]
+      ],
+      "direction": "clarifies"
     },
     {
       "id": "miller_establishes_miller_test",
@@ -31229,10 +31231,10 @@
       "notes": "Griswold invokes the Fourteenth Amendment's Due Process Clause, particularly through Harlan's concurrence which grounds the right to marital privacy in substantive due process rather than the Bill of Rights penumbra."
     },
     {
-      "id": "lawrence_establishes_substantive_due_process_liberty",
+      "id": "lawrence_applies_substantive_due_process_liberty",
       "source_id": "lawrence_v_texas_2003",
       "target_id": "substantive_due_process_liberty",
-      "edge_type": "ESTABLISHES",
+      "edge_type": "APPLIES",
       "valid_from": "2003-06-26",
       "valid_until": null,
       "jurisdiction": [
@@ -33044,10 +33046,10 @@
       "notes": "Printz applied and extended the anti-commandeering doctrine to executive officials."
     },
     {
-      "id": "printz_establishes_anti_commandeering_doctrine",
+      "id": "printz_applies_anti_commandeering_doctrine",
       "source_id": "printz_v_united_states_1997",
       "target_id": "anti_commandeering_doctrine",
-      "edge_type": "ESTABLISHES",
+      "edge_type": "APPLIES",
       "valid_from": "1997-06-27",
       "valid_until": null,
       "jurisdiction": [
@@ -37537,10 +37539,10 @@
       "notes": "Abington established the doctrine that public schools cannot sponsor mandatory religious exercises including Bible readings and prayer recitations."
     },
     {
-      "id": "santa_fe_establishes_establishment_clause_school_prayer",
+      "id": "santa_fe_applies_establishment_clause_school_prayer",
       "source_id": "santa_fe_independent_school_district_v_doe_2000",
       "target_id": "establishment_clause_school_prayer_prohibition",
-      "edge_type": "ESTABLISHES",
+      "edge_type": "APPLIES",
       "valid_from": "2000-06-19",
       "valid_until": null,
       "jurisdiction": [
@@ -37777,10 +37779,10 @@
       "notes": "BE&K addresses scope of Petition Clause protection for retaliatory litigation"
     },
     {
-      "id": "abington_establishes_establishment_clause_school_prayer_prohibition",
+      "id": "abington_applies_establishment_clause_school_prayer_prohibition",
       "source_id": "abington_school_district_v_schempp_1963",
       "target_id": "establishment_clause_school_prayer_prohibition",
-      "edge_type": "ESTABLISHES",
+      "edge_type": "APPLIES",
       "valid_from": "1963-06-17",
       "valid_until": null,
       "jurisdiction": [
@@ -37893,10 +37895,10 @@
       "notes": "Branzburg applied and rejected the claimed reporter's privilege doctrine, holding no absolute privilege exists under the First Amendment."
     },
     {
-      "id": "brewer_establishes_right_to_counsel",
+      "id": "brewer_applies_right_to_counsel",
       "source_id": "brewer_v_williams_1977",
       "target_id": "right_to_counsel",
-      "edge_type": "ESTABLISHES",
+      "edge_type": "APPLIES",
       "valid_from": "1977-03-23",
       "valid_until": null,
       "jurisdiction": [
@@ -37932,10 +37934,10 @@
       "notes": "The Dolan exactions test is the operative mechanism for applying the takings exactions doctrine."
     },
     {
-      "id": "garcetti_establishes_public_employee_speech_doctrine",
+      "id": "garcetti_applies_public_employee_speech_doctrine",
       "source_id": "garcetti_v_ceballos_2006",
       "target_id": "public_employee_speech_doctrine",
-      "edge_type": "ESTABLISHES",
+      "edge_type": "APPLIES",
       "valid_from": "2006",
       "valid_until": null,
       "jurisdiction": [
@@ -37945,10 +37947,10 @@
       "notes": "Garcetti v. Ceballos established the principle that public employee speech made pursuant to official duties is not protected by the First Amendment."
     },
     {
-      "id": "georgia_v_mccollum_establishes_equal_protection_peremptory_challenges",
+      "id": "georgia_v_mccollum_applies_equal_protection_peremptory_challenges",
       "source_id": "georgia_v_mccollum_1992",
       "target_id": "equal_protection_peremptory_challenges",
-      "edge_type": "ESTABLISHES",
+      "edge_type": "APPLIES",
       "valid_from": "1992-06-18",
       "valid_until": null,
       "jurisdiction": [
@@ -37997,10 +37999,10 @@
       "notes": "Hazelwood established the test for evaluating school editorial control over school-sponsored student speech."
     },
     {
-      "id": "hazelwood_establishes_student_speech_doctrine",
+      "id": "hazelwood_applies_student_speech_doctrine",
       "source_id": "hazelwood_school_district_v_kuhlmeier_1988",
       "target_id": "student_speech_doctrine",
-      "edge_type": "ESTABLISHES",
+      "edge_type": "APPLIES",
       "valid_from": "1988-01-13",
       "valid_until": null,
       "jurisdiction": [
@@ -38282,10 +38284,10 @@
       "notes": "Meyer articulated and applied the doctrine of substantive due process liberty, defining the scope of liberty protected by the Fourteenth Amendment to include occupational freedom and parental rights."
     },
     {
-      "id": "morse_establishes_student_free_speech_rights",
+      "id": "morse_applies_student_free_speech_rights",
       "source_id": "morse_v_frederick_2007",
       "target_id": "student_free_speech_rights",
-      "edge_type": "ESTABLISHES",
+      "edge_type": "APPLIES",
       "valid_from": "2007-06-25",
       "valid_until": null,
       "jurisdiction": [
@@ -38308,10 +38310,10 @@
       "notes": "Morse v. Frederick recognized schools' significant interest in preventing drug use as a basis for restricting student speech."
     },
     {
-      "id": "nguyen_establishes_intermediate_scrutiny_gender_test",
+      "id": "nguyen_applies_intermediate_scrutiny_gender_test",
       "source_id": "nguyen_v_ins_2001",
       "target_id": "craig_intermediate_scrutiny_gender_test",
-      "edge_type": "ESTABLISHES",
+      "edge_type": "APPLIES",
       "valid_from": "2001-01-01",
       "valid_until": null,
       "jurisdiction": [
@@ -38321,10 +38323,10 @@
       "notes": "Nguyen articulates the intermediate scrutiny standard for gender-based classifications in the citizenship context."
     },
     {
-      "id": "personnel_administrator_v_feeney_establishes_discriminatory_intent_doctrine",
+      "id": "personnel_administrator_v_feeney_applies_discriminatory_intent_doctrine",
       "source_id": "personnel_administrator_of_massachusetts_v_feeney_1979",
       "target_id": "discriminatory_intent_doctrine",
-      "edge_type": "ESTABLISHES",
+      "edge_type": "APPLIES",
       "valid_from": "1979-01-01",
       "valid_until": null,
       "jurisdiction": [
@@ -40654,10 +40656,10 @@
       "notes": "Miller v. Johnson establishes the doctrine that bizarrely shaped districts designed to segregate voters by race are subject to strict scrutiny under equal protection."
     },
     {
-      "id": "mistretta_establishes_intelligible_principle_test",
+      "id": "mistretta_applies_intelligible_principle_test",
       "source_id": "mistretta_v_united_states_1989",
       "target_id": "intelligible_principle_test",
-      "edge_type": "ESTABLISHES",
+      "edge_type": "APPLIES",
       "valid_from": "1989-01-18",
       "valid_until": null,
       "jurisdiction": [
@@ -40951,10 +40953,10 @@
       "notes": "The Court established that commercial speech, including price advertising, receives First Amendment protection."
     },
     {
-      "id": "44liquormart_establishes_commercial_speech_protection",
+      "id": "44liquormart_applies_commercial_speech_protection",
       "source_id": "44_liquormart_v_rhode_island_1996",
       "target_id": "commercial_speech_protection",
-      "edge_type": "ESTABLISHES",
+      "edge_type": "APPLIES",
       "valid_from": "1996",
       "valid_until": null,
       "jurisdiction": [
