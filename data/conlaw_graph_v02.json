@@ -17,8 +17,8 @@
     "created": "2026-03-15",
     "status": "draft",
     "schema_version": "0.5",
-    "node_count": 915,
-    "edge_count": 1329,
+    "node_count": 922,
+    "edge_count": 1335,
     "schema_issue_count": 41,
     "fixes_applied": [
       "FIX 1: ConstitutionalProvision labels changed to citation form (amendment_1, amendment_14_section_1) to disambiguate from Area nodes with same common-name labels",
@@ -5661,6 +5661,51 @@
         "valid_from": "1980-01-01",
         "valid_until": null,
         "notes": "Established in Richmond Newspapers v. Virginia as a foundational First Amendment doctrine protecting public access to judicial proceedings."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "commerce_clause_prohibitory_power",
+        "label": "Commerce Clause Prohibitory Power",
+        "description": "Congress may use its Commerce Clause power not only to regulate the terms of interstate commerce but also to prohibit categories of goods or activities from moving in interstate commerce, establishing a broad federal police power.",
+        "area_id": "federalism",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1903-02-23",
+        "valid_until": null,
+        "notes": "Established in Champion v. Ames. The prohibitory power of the Commerce Clause became the basis for federal regulation of narcotics, obscene materials, and other items deemed harmful to public morals."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "substantial_effects_doctrine",
+        "label": "Substantial Effects Doctrine",
+        "description": "Congress may regulate intrastate activities that have a close and substantial relation to, or substantially affect, interstate commerce. The Commerce Clause power extends to local activities whose regulation is necessary and proper to effective regulation of interstate commerce.",
+        "area_id": "federalism",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1937-04-12",
+        "valid_until": null,
+        "notes": "Established in NLRB v. Jones & Laughlin Steel Corp. (1937). Became the foundation for the modern broad interpretation of the Commerce Clause upheld in Wickard v. Filburn and subsequent cases."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "compelled_public_employee_speech_doctrine",
+        "label": "Compelled Public Employee Speech Doctrine",
+        "description": "The First Amendment prohibits the government from compelling public employees to subsidize speech on matters of public concern, including through mandatory union agency fees. Public-sector collective bargaining inherently involves speech on matters of public concern that cannot be compelled.",
+        "area_id": "free_speech",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "2018-06-27",
+        "valid_until": null,
+        "notes": "Established in Janus v. AFSCME. Extends compelled speech doctrine to public-sector union fees. Overruled Abood."
       }
     ],
     "areas": [
@@ -19355,6 +19400,99 @@
           }
         ],
         "notes": "Justice Kennedy delivered the opinion of the Court, joined by Stevens, Scalia, Thomas, and Ginsburg. O'Connor filed a concurrence in the judgment. Souter filed a dissent joined by Rehnquist and Blackmun. Vote was 5-4."
+      },
+      {
+        "@type": "Case",
+        "id": "champion_v_ames_1903",
+        "short_name": "Champion v. Ames",
+        "full_name": "Champion v. Ames (The Lottery Case)",
+        "citation": "188 U.S. 321 (1903)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1903-02-23",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "affirmed",
+        "holding": "Congress has power under the Commerce Clause to prohibit the transportation of lottery tickets across state lines, establishing that the commerce power includes the power to prohibit as well as to regulate interstate commerce.",
+        "holding_type": "affirmative",
+        "majority_author": "Harlan",
+        "per_curiam": false,
+        "vote": "5-4",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1903-02-23",
+        "valid_until": null,
+        "notes": "The Lottery Case. First major case establishing the federal police power through the Commerce Clause. Upheld the Federal Lottery Act, establishing that Congress may prohibit items from interstate commerce as well as regulate them."
+      },
+      {
+        "@type": "Case",
+        "id": "nlrb_v_jones_laughlin_steel_1937",
+        "short_name": "NLRB v. Jones & Laughlin Steel Corp.",
+        "full_name": "National Labor Relations Board v. Jones & Laughlin Steel Corporation",
+        "citation": "301 U.S. 1 (1937)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1937-04-12",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "The National Labor Relations Act is a valid exercise of Congress's Commerce Clause power; labor relations at a large integrated steel manufacturer have a close and substantial relation to interstate commerce, and industrial strife affecting production substantially affects interstate commerce.",
+        "holding_type": "affirmative",
+        "majority_author": "Hughes",
+        "per_curiam": false,
+        "vote": "5-4",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1937-04-12",
+        "valid_until": null,
+        "notes": "The \"switch in time that saved nine.\" Upheld the NLRA and significantly expanded the Commerce Clause to cover labor relations that substantially affect interstate commerce. Marked the end of the Lochner era and overruled the restrictive interpretation from Carter Coal Co. and Schechter Poultry."
+      },
+      {
+        "@type": "Case",
+        "id": "janus_v_afscme_2018",
+        "short_name": "Janus v. AFSCME",
+        "full_name": "Janus v. American Federation of State, County, and Municipal Employees, Council 31",
+        "citation": "585 U.S. 878 (2018)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "2018-06-27",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "Compelling public employees to pay agency fees to a union as a condition of employment violates the First Amendment by compelling speech on matters of public concern; Abood v. Detroit Board of Education is overruled.",
+        "holding_type": "affirmative",
+        "majority_author": "Alito",
+        "per_curiam": false,
+        "vote": "5-4",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "2018-06-27",
+        "valid_until": null,
+        "courtlistener_id": "4429913",
+        "notes": "Overruled Abood v. Detroit Board of Education (1977). Held that the extraction of agency fees from nonconsenting public sector employees violates the First Amendment. Distinguished private-sector labor law from public-sector bargaining."
+      },
+      {
+        "@type": "Case",
+        "id": "abood_v_detroit_board_of_education_1977",
+        "short_name": "Abood v. Detroit Board of Education",
+        "full_name": "Abood v. Detroit Board of Education",
+        "citation": "431 U.S. 209 (1977)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1977-05-23",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "affirmed",
+        "holding": "Public employees may be required to pay agency fees to a union as a condition of employment, provided the fees are limited to collective bargaining activities and not used for political or ideological purposes unrelated to collective bargaining.",
+        "holding_type": "affirmative",
+        "majority_author": "Stewart",
+        "per_curiam": false,
+        "vote": null,
+        "status": "overruled",
+        "precedential_weight": "none",
+        "valid_from": "1977-05-23",
+        "valid_until": "2018-06-27",
+        "notes": "Stub node \u2014 overruled by janus_v_afscme_2018."
       }
     ],
     "doctrinal_tests": [
@@ -41238,6 +41376,79 @@
       "target_id": "lemon_test_applied",
       "edge_type": "ESTABLISHES",
       "valid_from": "1984-03-05",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "champion_establishes_commerce_prohibitory_power",
+      "source_id": "champion_v_ames_1903",
+      "target_id": "commerce_clause_prohibitory_power",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1903-02-23",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "nlrb_establishes_substantial_effects_doctrine",
+      "source_id": "nlrb_v_jones_laughlin_steel_1937",
+      "target_id": "substantial_effects_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1937-04-12",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "nlrb_applies_commerce_clause_regulatory_power",
+      "source_id": "nlrb_v_jones_laughlin_steel_1937",
+      "target_id": "commerce_clause_regulatory_power",
+      "edge_type": "APPLIES",
+      "valid_from": "1937-04-12",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "janus_overrules_abood",
+      "source_id": "janus_v_afscme_2018",
+      "target_id": "abood_v_detroit_board_of_education_1977",
+      "edge_type": "OVERRULES",
+      "overrule_type": "explicit",
+      "valid_from": "2018-06-27",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "janus_establishes_compelled_public_employee_speech",
+      "source_id": "janus_v_afscme_2018",
+      "target_id": "compelled_public_employee_speech_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2018-06-27",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "janus_applies_compelled_speech_doctrine",
+      "source_id": "janus_v_afscme_2018",
+      "target_id": "compelled_speech_doctrine",
+      "edge_type": "APPLIES",
+      "valid_from": "2018-06-27",
       "valid_until": null,
       "jurisdiction": [
         "federal",
