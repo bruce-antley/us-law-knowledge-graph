@@ -17,8 +17,8 @@
     "created": "2026-03-15",
     "status": "draft",
     "schema_version": "0.5",
-    "node_count": 922,
-    "edge_count": 1327,
+    "node_count": 907,
+    "edge_count": 1315,
     "schema_issue_count": 41,
     "fixes_applied": [
       "FIX 1: ConstitutionalProvision labels changed to citation form (amendment_1, amendment_14_section_1) to disambiguate from Area nodes with same common-name labels",
@@ -6186,30 +6186,6 @@
       },
       {
         "@type": "Case",
-        "id": "virginia_pharmacy_board_v_virginia_consumer_council_1976",
-        "citation": "425 U.S. 748 (1976)",
-        "short_name": "Virginia Pharmacy Board",
-        "full_name": "Virginia State Board of Pharmacy v. Virginia Citizens Consumer Council, Inc.",
-        "court": "scotus",
-        "decided_date": "1976-05-24",
-        "disposition": "affirmed",
-        "holding": "Truthful commercial speech proposing a lawful transaction is not wholly outside the protection of the First Amendment. A state may not categorically prohibit pharmacists from advertising prescription-drug prices.",
-        "majority_author": "Blackmun",
-        "vote": "8-1",
-        "status": "good_law",
-        "valid_from": "1976-05-24",
-        "valid_until": null,
-        "courtlistener_id": null,
-        "notes": "Landmark. First case to extend First Amendment protection to commercial speech. Rehnquist dissented alone. Established that listeners \u2014 not just speakers \u2014 have a First Amendment interest in receiving commercial information.",
-        "holding_type": "affirmative",
-        "court_level": "scotus",
-        "court_name": "Supreme Court of the United States",
-        "binding_scope": "federal_all",
-        "opinion_form": "signed_majority",
-        "procedural_disposition": "reversed"
-      },
-      {
-        "@type": "Case",
         "id": "central_hudson_gas_v_public_service_comm_1980",
         "citation": "447 U.S. 557 (1980)",
         "short_name": "Central Hudson",
@@ -6279,30 +6255,6 @@
         "binding_scope": "federal_all",
         "opinion_form": "signed_majority",
         "procedural_disposition": "reversed"
-      },
-      {
-        "@type": "Case",
-        "id": "lorillard_tobacco_v_reilly_2001",
-        "citation": "533 U.S. 525 (2001)",
-        "short_name": "Lorillard Tobacco",
-        "full_name": "Lorillard Tobacco Co. v. Reilly",
-        "court": "scotus",
-        "decided_date": "2001-06-28",
-        "disposition": "affirmed_in_part_reversed_in_part",
-        "holding": "Massachusetts regulations restricting outdoor and point-of-sale tobacco advertising near schools and playgrounds violate the First Amendment as applied to smokeless tobacco and cigar advertising. The regulations fail Central Hudson prong 4 \u2014 they are more extensive than necessary because they effectively prohibit advertising in a substantial portion of Massachusetts's major cities.",
-        "majority_author": "O'Connor",
-        "vote": "5-4",
-        "status": "good_law",
-        "valid_from": "2001-06-28",
-        "valid_until": null,
-        "courtlistener_id": null,
-        "notes": "Important application of Central Hudson prong 4. Court requires government to show a reasonable fit \u2014 not least restrictive means \u2014 but the Massachusetts regulations swept too broadly. Cigarette advertising regulations were preempted by federal law (FCLAA) and decided on those grounds.",
-        "holding_type": "affirmative",
-        "court_level": "scotus",
-        "court_name": "Supreme Court of the United States",
-        "binding_scope": "federal_all",
-        "opinion_form": "signed_majority",
-        "procedural_disposition": "affirmed_in_part"
       },
       {
         "@type": "Case",
@@ -6749,41 +6701,6 @@
       },
       {
         "@type": "Case",
-        "id": "milkovich_v_lorain_journal_1990",
-        "short_name": "Milkovich v. Lorain Journal",
-        "full_name": "Milkovich v. Lorain Journal Co.",
-        "citation": "497 U.S. 1 (1990)",
-        "court_level": "scotus",
-        "court_name": "Supreme Court of the United States",
-        "binding_scope": "federal_all",
-        "decided_date": "1990-06-21",
-        "opinion_form": "signed_majority",
-        "procedural_disposition": "reversed",
-        "holding": "The First Amendment does not require a separate categorical privilege for statements of opinion. However, statements that cannot reasonably be interpreted as stating actual facts are protected by existing First Amendment doctrine \u2014 including the requirement that a defamatory statement must be provably false. Rhetorical hyperbole and statements that no reasonable person would interpret as factual assertions are constitutionally protected without the need for a separate opinion privilege.",
-        "holding_type": "affirmative",
-        "majority_author": "Rehnquist",
-        "per_curiam": false,
-        "vote": "7-2",
-        "opinions": [
-          {
-            "type": "dissent",
-            "author": "Brennan",
-            "joined_by": [
-              "Marshall"
-            ],
-            "doctrinal_significance": "Brennan argued the majority's rejection of a formal opinion privilege left insufficient protection for opinion speech and that the Court should have recognized a broader constitutional protection for statements that a reasonable person would understand as opinion.",
-            "adopted_in": []
-          }
-        ],
-        "status": "good_law",
-        "precedential_weight": "binding",
-        "valid_from": "1990-06-21",
-        "valid_until": null,
-        "courtlistener_id": null,
-        "notes": "Milkovich settled the question of whether there is a separate First Amendment 'opinion privilege' \u2014 there is not. But the holding is less restrictive than it sounds: the falsity requirement and the actual malice standard together provide substantial protection for opinion speech without the need for a separate privilege. The case arose from a sports column accusing a wrestling coach of lying under oath \u2014 the Court held the statement was sufficiently factual to be actionable if false and made with actual malice."
-      },
-      {
-        "@type": "Case",
         "id": "cantwell_v_connecticut_1940",
         "short_name": "Cantwell v. Connecticut",
         "full_name": "Cantwell v. Connecticut",
@@ -6923,41 +6840,6 @@
         "valid_until": null,
         "courtlistener_id": null,
         "notes": "Smith is formally good law but the most contested Free Exercise precedent. The 5-4 split on reasoning (not just result) \u2014 Scalia joined by Rehnquist, White, Stevens, Kennedy; O'Connor concurring in judgment only \u2014 foreshadowed the decision's contested status. Congress responded with RFRA (1993), attempting to restore Sherbert by statute. The Court struck down RFRA as applied to states in City of Boerne v. Flores (1997) but it remains operative for federal law. In Fulton (2021), Barrett, Kavanaugh, and Thomas explicitly invited reconsideration of Smith; Alito wrote separately at length criticizing it. SCHEMA ISSUE C: status: disputed is correct but insufficient \u2014 the dispute is an intra-Court challenge by sitting justices to the validity of a majority precedent, which is categorically different from a circuit split or academic dispute. The schema's dispute_source enum proposed in Issue #24 would handle this."
-      },
-      {
-        "@type": "Case",
-        "id": "church_of_lukumi_v_hialeah_1993",
-        "short_name": "Church of Lukumi v. Hialeah",
-        "full_name": "Church of Lukumi Babalu Aye, Inc. v. City of Hialeah",
-        "citation": "508 U.S. 520 (1993)",
-        "court_level": "scotus",
-        "court_name": "Supreme Court of the United States",
-        "binding_scope": "federal_all",
-        "decided_date": "1993-06-11",
-        "opinion_form": "signed_majority",
-        "procedural_disposition": "reversed",
-        "holding": "Hialeah ordinances targeting Santeria animal sacrifice are neither neutral nor generally applicable and therefore cannot survive strict scrutiny. A law fails neutrality if its object is to infringe upon or restrict religious practice. A law fails general applicability if it prohibits religiously motivated conduct but permits comparable secular conduct. The ordinances here were gerrymandered to target Santeria while exempting comparable animal killing for secular purposes.",
-        "holding_type": "affirmative",
-        "majority_author": "Kennedy",
-        "per_curiam": false,
-        "vote": "9-0",
-        "opinions": [
-          {
-            "type": "concurrence",
-            "author": "Scalia",
-            "joined_by": [
-              "Rehnquist"
-            ],
-            "doctrinal_significance": "Scalia concurred separately to emphasize that the neutrality and general applicability framework flows directly from Smith \u2014 Lukumi is not an exception to Smith but an application of it.",
-            "adopted_in": []
-          }
-        ],
-        "status": "good_law",
-        "precedential_weight": "binding",
-        "valid_from": "1993-06-11",
-        "valid_until": null,
-        "courtlistener_id": null,
-        "notes": "Lukumi is the essential companion to Smith. Smith said neutral general laws don't require compelling interest; Lukumi said non-neutral non-general laws do. The unanimous judgment (with separate reasoning from various justices) gave the neutrality and general applicability framework its definitive statement. The Hialeah ordinances were so obviously targeted at Santeria that they provided an easy case; the harder questions about what counts as non-neutral or non-generally-applicable are still being worked out."
       },
       {
         "@type": "Case",
@@ -7208,42 +7090,6 @@
       },
       {
         "@type": "Case",
-        "id": "kennedy_v_bremerton_2022",
-        "short_name": "Kennedy v. Bremerton",
-        "full_name": "Kennedy v. Bremerton School District",
-        "citation": "597 U.S. 507 (2022)",
-        "court_level": "scotus",
-        "court_name": "Supreme Court of the United States",
-        "binding_scope": "federal_all",
-        "decided_date": "2022-06-27",
-        "opinion_form": "signed_majority",
-        "procedural_disposition": "reversed",
-        "holding": "A public school football coach has a First Amendment right to offer a brief, quiet, personal prayer at midfield after games. The school district violated his Free Exercise and Free Speech rights by prohibiting this practice. The Establishment Clause does not require the district to prohibit the coach's prayers. Courts must interpret the Establishment Clause by reference to historical practices and understandings, not the Lemon test, which is hereby abandoned.",
-        "holding_type": "affirmative",
-        "majority_author": "Gorsuch",
-        "per_curiam": false,
-        "vote": "6-3",
-        "opinions": [
-          {
-            "type": "dissent",
-            "author": "Sotomayor",
-            "joined_by": [
-              "Breyer",
-              "Kagan"
-            ],
-            "doctrinal_significance": "Sotomayor's dissent argued the majority mischaracterized the facts \u2014 the coach's prayers were not private but conspicuous and accompanied by players and parents \u2014 and that the majority dismantled 50 years of Establishment Clause precedent without grappling seriously with the coercive realities of the coach-player relationship. The dissent also accused the majority of overstating the historical record for its new standard.",
-            "adopted_in": []
-          }
-        ],
-        "status": "good_law",
-        "precedential_weight": "binding",
-        "valid_from": "2022-06-27",
-        "valid_until": null,
-        "courtlistener_id": null,
-        "notes": "Kennedy v. Bremerton is the most consequential Establishment Clause decision since Lemon itself. It simultaneously: (1) overruled the Lemon test and the endorsement test; (2) established historical practices and understandings as the governing interpretive framework; (3) found a First Amendment violation in the school district's prohibition of the coach's prayers. The 6-3 conservative-liberal split reflects the ideological stakes. The new historical standard is deliberately open-ended \u2014 Gorsuch wrote that courts should look to history rather than trying to apply a rigid formula. Lower courts are actively working out what this means in practice. The case raises significant questions: whose history counts? how much historical evidence is required? how do courts handle novel contexts with no direct historical analogue?"
-      },
-      {
-        "@type": "Case",
         "id": "naacp_v_alabama_1958",
         "short_name": "NAACP v. Alabama",
         "full_name": "NAACP v. Alabama ex rel. Patterson",
@@ -7266,68 +7112,6 @@
         "valid_until": null,
         "courtlistener_id": null,
         "notes": "NAACP v. Alabama is one of the most important civil rights era constitutional decisions. The unanimous decision recognized a constitutional right to associate privately for lawful purposes and applied it to prevent Alabama's attempt to destroy the NAACP by forcing disclosure of its membership. The case arose in the context of massive resistance to desegregation \u2014 Alabama was using disclosure as a weapon to expose NAACP members to retaliation. The right of association recognized here is foundational to all subsequent freedom of association doctrine."
-      },
-      {
-        "@type": "Case",
-        "id": "hurley_v_irish_american_gay_group_1995",
-        "short_name": "Hurley v. Irish-American Gay Group",
-        "full_name": "Hurley v. Irish-American Gay, Lesbian and Bisexual Group of Boston",
-        "citation": "515 U.S. 557 (1995)",
-        "court_level": "scotus",
-        "court_name": "Supreme Court of the United States",
-        "binding_scope": "federal_all",
-        "decided_date": "1995-06-19",
-        "opinion_form": "signed_majority",
-        "procedural_disposition": "reversed",
-        "holding": "The First Amendment prevents Massachusetts from applying its public accommodations law to require the organizers of the Boston St. Patrick's Day parade to include a group (GLIB) whose message the organizers do not wish to convey. A parade is an inherently expressive activity; compelling the parade organizers to include a group with a message they reject is unconstitutional compelled speech.",
-        "holding_type": "affirmative",
-        "majority_author": "Souter",
-        "per_curiam": false,
-        "vote": "9-0",
-        "opinions": [],
-        "status": "good_law",
-        "precedential_weight": "binding",
-        "valid_from": "1995-06-19",
-        "valid_until": null,
-        "courtlistener_id": null,
-        "notes": "Hurley is primarily a compelled speech case \u2014 the holding is that parades are expressive and the state cannot force an expressive event to carry a message it rejects. It connects the association doctrine to the core political speech doctrine (compelled speech) in a significant way. The unanimous decision was narrower than it appeared \u2014 the Court rested primarily on compelled speech rather than association, avoiding the harder question of when an anti-discrimination law unconstitutionally compels association."
-      },
-      {
-        "@type": "Case",
-        "id": "boy_scouts_v_dale_2000",
-        "short_name": "Boy Scouts v. Dale",
-        "full_name": "Boy Scouts of America v. Dale",
-        "citation": "530 U.S. 640 (2000)",
-        "court_level": "scotus",
-        "court_name": "Supreme Court of the United States",
-        "binding_scope": "federal_all",
-        "decided_date": "2000-06-28",
-        "opinion_form": "signed_majority",
-        "procedural_disposition": "reversed",
-        "holding": "The First Amendment right of expressive association bars New Jersey from applying its public accommodations law to require the Boy Scouts to retain Dale, an openly gay scoutmaster, as an assistant scoutmaster. The Boy Scouts engage in expressive activity that includes instilling values in young people, and their sincere view that homosexuality is inconsistent with those values is entitled to First Amendment protection from compelled inclusion.",
-        "holding_type": "affirmative",
-        "majority_author": "Rehnquist",
-        "per_curiam": false,
-        "vote": "5-4",
-        "opinions": [
-          {
-            "type": "dissent",
-            "author": "Stevens",
-            "joined_by": [
-              "Souter",
-              "Ginsburg",
-              "Breyer"
-            ],
-            "doctrinal_significance": "Stevens argued the majority gave too much deference to the Scouts' post-hoc characterization of their expressive mission and that the standard effectively gives any organization with any viewpoint a license to discriminate under the guise of expressive association. The dissent would have required the organization to demonstrate it had actually and consistently expressed the message that compelled inclusion would burden.",
-            "adopted_in": []
-          }
-        ],
-        "status": "good_law",
-        "precedential_weight": "binding",
-        "valid_from": "2000-06-28",
-        "valid_until": null,
-        "courtlistener_id": null,
-        "notes": "Dale significantly expanded expressive association protection \u2014 and significantly expanded the deference courts give to organizations' claims about their expressive purposes. The 5-4 split reflects the tension between anti-discrimination law and associational freedom. The decision has been controversial: it effectively permitted discrimination against gay persons in scouting for 15 years until the Boy Scouts changed their policy voluntarily in 2015."
       },
       {
         "@type": "Case",
@@ -8255,30 +8039,6 @@
       },
       {
         "@type": "Case",
-        "id": "miami_herald_v_tornillo_1974",
-        "short_name": "Miami Herald v. Tornillo",
-        "full_name": "Miami Herald Publishing Co. v. Tornillo",
-        "citation": "418 U.S. 241 (1974)",
-        "court_level": "scotus",
-        "court_name": "Supreme Court of the United States",
-        "binding_scope": "federal_all",
-        "decided_date": "1974-06-25",
-        "opinion_form": "signed_majority",
-        "procedural_disposition": "reversed",
-        "holding": "Florida's right-of-reply statute, requiring newspapers to publish replies from political candidates who have been attacked or criticized, violates the First Amendment. The Constitution prohibits government from commanding editors what must be printed. The choice of material to publish, treatment of public issues and officials, decisions about the content of the newspaper \u2014 these represent the exercise of editorial control and judgment that the First Amendment protects.",
-        "holding_type": "affirmative",
-        "majority_author": "Burger",
-        "per_curiam": false,
-        "vote": "9-0",
-        "opinions": [],
-        "status": "good_law",
-        "precedential_weight": "binding",
-        "valid_from": "1974-06-25",
-        "valid_until": null,
-        "notes": "Tornillo established that the First Amendment protects newspapers' editorial autonomy from government compelled-speech mandates. The decision was decided the same Term as Gertz v. Robert Welch and together they established the outer limits of government regulation of newspaper content. Tornillo is contrasted with Red Lion Broadcasting v. FCC (1969), which upheld the Fairness Doctrine for broadcast media \u2014 the Court distinguished newspapers from broadcasters based on spectrum scarcity."
-      },
-      {
-        "@type": "Case",
         "id": "braunfeld_v_brown_1961",
         "short_name": "Braunfeld v. Brown",
         "full_name": "Braunfeld v. Brown",
@@ -9098,30 +8858,6 @@
       },
       {
         "@type": "Case",
-        "id": "minneapolis_star_tribune_v_minnesota_1983",
-        "short_name": "Minneapolis Star & Tribune Co. v. Minnesota Commissioner of Revenue",
-        "full_name": "Minneapolis Star and Tribune Co. v. Minnesota Commissioner of Revenue",
-        "citation": "460 U.S. 575 (1983)",
-        "court_level": "scotus",
-        "court_name": "Supreme Court of the United States",
-        "binding_scope": "federal_all",
-        "decided_date": "1983-03-29",
-        "opinion_form": "signed_majority",
-        "procedural_disposition": "reversed",
-        "holding": "A Minnesota use tax on ink and paper used in publication, with an exemption for the first $100,000 of paper and ink consumed, violates the First Amendment by singling out the press for special taxation. A tax that targets the press and burdens a small number of publishers imposes a burden that raises serious concerns about government interference with a constitutionally protected activity.",
-        "holding_type": "affirmative",
-        "majority_author": "O'Connor",
-        "per_curiam": false,
-        "vote": "8-1",
-        "opinions": [],
-        "status": "good_law",
-        "precedential_weight": "binding",
-        "valid_from": "1983-03-29",
-        "valid_until": null,
-        "notes": "Minneapolis Star & Tribune established that government may not single out the press for special taxation that does not apply to other businesses. The decision reflects the principle that the press occupies a protected position under the First Amendment and that differential treatment \u2014 even in the form of taxation \u2014 raises constitutional concerns. Grosjean v. American Press Co. (1936) is the precursor case striking a Louisiana tax on newspaper advertising revenue."
-      },
-      {
-        "@type": "Case",
         "id": "landmark_communications_v_virginia_1978",
         "short_name": "Landmark Communications v. Virginia",
         "full_name": "Landmark Communications, Inc. v. Virginia",
@@ -9179,38 +8915,6 @@
         "valid_from": "1966-11-14",
         "valid_until": null,
         "notes": "Adderley v. Florida is foundational for the nonpublic forum category \u2014 government property that is not traditionally open to public expression may be closed to expressive activity. The case established that not all government property is a public forum and that the government may restrict access to property like jails, military bases, and similar facilities. Perry Education Association v. Perry (1983) systematized this principle into the three-category public forum framework."
-      },
-      {
-        "@type": "Case",
-        "id": "iskcon_v_lee_1992",
-        "short_name": "International Society for Krishna Consciousness v. Lee",
-        "full_name": "International Society for Krishna Consciousness, Inc. v. Lee",
-        "citation": "505 U.S. 672 (1992)",
-        "court_level": "scotus",
-        "court_name": "Supreme Court of the United States",
-        "binding_scope": "federal_all",
-        "decided_date": "1992-06-26",
-        "opinion_form": "signed_majority",
-        "procedural_disposition": "affirmed",
-        "holding": "Airport terminals operated by a public authority are not public forums. The Port Authority may prohibit the repetitive solicitation of money inside airport terminals. Airports are not traditional public forums \u2014 they have not historically been used for expressive activity and were not opened by the government for such purposes. Reasonable and viewpoint-neutral restrictions on expressive activity in nonpublic forums are constitutional.",
-        "holding_type": "affirmative",
-        "majority_author": "Rehnquist",
-        "per_curiam": false,
-        "vote": "5-4",
-        "opinions": [
-          {
-            "type": "concurrence",
-            "author": "Kennedy",
-            "joined_by": [],
-            "doctrinal_significance": "Kennedy argued that airports are functionally equivalent to traditional public forums because they serve as major hubs of public discourse, and that the majority's historical test for identifying public forums is too narrow.",
-            "adopted_in": []
-          }
-        ],
-        "status": "good_law",
-        "precedential_weight": "binding",
-        "valid_from": "1992-06-26",
-        "valid_until": null,
-        "notes": "ISKCON v. Lee held airports are nonpublic forums, permitting solicitation bans. On the same day the Court struck a ban on distribution of literature in the same airports (Lee v. ISKCON) \u2014 distinguishing solicitation (properly banned) from leafleting (protected even in nonpublic forums). The two cases together establish that not all expressive activities receive the same treatment even within the same forum."
       },
       {
         "@type": "Case",
@@ -10016,30 +9720,6 @@
         "valid_from": "1976-06-07",
         "valid_until": null,
         "notes": "Washington v. Davis is among the most consequential and criticized equal protection decisions. By requiring proof of discriminatory intent rather than allowing disparate impact alone to trigger strict scrutiny, the Court made it substantially more difficult to challenge systemic racial inequality embedded in facially neutral laws. The decision has been extensively criticized for insulating from constitutional scrutiny practices that perpetuate historic racial discrimination."
-      },
-      {
-        "@type": "Case",
-        "id": "village_of_arlington_heights_v_mhdc_1977",
-        "short_name": "Village of Arlington Heights v. MHDC",
-        "full_name": "Village of Arlington Heights v. Metropolitan Housing Development Corp.",
-        "citation": "429 U.S. 252 (1977)",
-        "court_level": "scotus",
-        "court_name": "Supreme Court of the United States",
-        "binding_scope": "federal_all",
-        "decided_date": "1977-01-11",
-        "opinion_form": "signed_majority",
-        "procedural_disposition": "reversed",
-        "holding": "A village's refusal to rezone property for low-income housing did not violate the Equal Protection Clause absent proof of racially discriminatory intent. Discriminatory intent need not be the only purpose behind official action, but it must be a motivating factor. Courts may consider the following factors in determining whether discriminatory purpose motivated an official decision: the discriminatory impact of the official action, the historical background, the sequence of events leading to the challenged decision, departures from normal procedural and substantive standards, and legislative or administrative history.",
-        "holding_type": "affirmative",
-        "majority_author": "Powell",
-        "per_curiam": false,
-        "vote": "5-3",
-        "opinions": [],
-        "status": "good_law",
-        "precedential_weight": "binding",
-        "valid_from": "1977-01-11",
-        "valid_until": null,
-        "notes": "Arlington Heights elaborated the Washington v. Davis discriminatory intent requirement by providing a multi-factor framework for proving intent from circumstantial evidence when direct evidence is unavailable. The Arlington Heights factors \u2014 impact, historical background, sequence of events, procedural departures, legislative history \u2014 have become the standard analytical framework for discriminatory intent claims involving facially neutral laws."
       },
       {
         "@type": "Case",
@@ -11051,62 +10731,6 @@
           }
         ],
         "notes": "Majority opinion joined by Clark, Harlan, Brennan, White, Goldberg, and Warren. Multiple concurrences reflect different constitutional grounds for the right to marital privacy."
-      },
-      {
-        "@type": "Case",
-        "id": "cruzan_v_director_1990",
-        "short_name": "Cruzan v. Director",
-        "full_name": "Cruzan v. Director, Missouri Department of Health",
-        "citation": "497 U.S. 261 (1990)",
-        "court_level": "scotus",
-        "court_name": "Supreme Court of the United States",
-        "binding_scope": "federal_all",
-        "decided_date": "1990-06-25",
-        "opinion_form": "signed_majority",
-        "procedural_disposition": "affirmed",
-        "holding": "The United States Constitution does not forbid a state from requiring that evidence of an incompetent person's wishes as to the withdrawal of life-sustaining treatment be proved by clear and convincing evidence, and a state may constitutionally apply such a standard as a procedural safeguard to protect the liberty interest in refusing unwanted medical treatment.",
-        "holding_type": "affirmative",
-        "majority_author": "Rehnquist",
-        "per_curiam": false,
-        "vote": "5-4",
-        "status": "good_law",
-        "precedential_weight": "binding",
-        "valid_from": "1990-06-25",
-        "valid_until": null,
-        "opinions": [
-          {
-            "type": "concurrence",
-            "author": "O'Connor",
-            "doctrinal_significance": "Grounded right to refuse treatment in liberty rather than privacy; emphasized importance of advance directives",
-            "joined_by": [],
-            "adopted_in": []
-          },
-          {
-            "type": "concurrence",
-            "author": "Scalia",
-            "doctrinal_significance": "Argued no constitutional right to refuse treatment exists; matter for states to decide",
-            "joined_by": [],
-            "adopted_in": []
-          },
-          {
-            "type": "dissent",
-            "author": "Brennan",
-            "doctrinal_significance": "Argued Missouri's clear and convincing standard was unconstitutional as applied; right to refuse treatment is fundamental",
-            "joined_by": [
-              "Marshall",
-              "Blackmun"
-            ],
-            "adopted_in": []
-          },
-          {
-            "type": "dissent",
-            "author": "Stevens",
-            "doctrinal_significance": "Argued Missouri's interest in preserving life could not override individual liberty interest",
-            "joined_by": [],
-            "adopted_in": []
-          }
-        ],
-        "notes": "The Court assumed for purposes of this case that a competent person has a constitutionally protected liberty interest under the Due Process Clause in refusing lifesaving hydration and nutrition, but held that an incompetent person does not necessarily possess the same right. The Court rejected the argument that close family members have a constitutional right to exercise substituted judgment for an incompetent patient absent substantial proof that their views reflect the patient's wishes."
       },
       {
         "@type": "Case",
@@ -13625,31 +13249,6 @@
       },
       {
         "@type": "Case",
-        "id": "philadelphia_v_new_jersey_1978",
-        "short_name": "Philadelphia v. New Jersey",
-        "full_name": "City of Philadelphia et al. v. New Jersey et al.",
-        "citation": "437 U.S. 617 (1978)",
-        "court_level": "scotus",
-        "court_name": "Supreme Court of the United States",
-        "binding_scope": "federal_all",
-        "decided_date": "1978-06-23",
-        "opinion_form": "signed_majority",
-        "procedural_disposition": "reversed",
-        "holding": "A state law that prohibits the importation of most solid or liquid waste originating outside the state violates the Commerce Clause when it discriminates against interstate commerce, even if justified by health and environmental concerns.",
-        "holding_type": "affirmative",
-        "majority_author": "Stewart",
-        "per_curiam": false,
-        "vote": "7-2",
-        "status": "good_law",
-        "precedential_weight": "binding",
-        "valid_from": "1978-06-23",
-        "valid_until": null,
-        "opinions": [],
-        "notes": "The New Jersey Supreme Court had reversed the trial court's judgment, finding the statute constitutional. The U.S. Supreme Court reversed the state court decision, holding the statute unconstitutional under the Commerce Clause.",
-        "courtlistener_id": "109916"
-      },
-      {
-        "@type": "Case",
         "id": "granholm_v_heald_2005",
         "short_name": "Granholm v. Heald",
         "full_name": "Granholm v. Heald",
@@ -15426,7 +15025,7 @@
         "id": "ins_v_lopez_mendoza_1983",
         "short_name": "INS v. Lopez-Mendoza",
         "full_name": "Immigration and Naturalization Service v. Lopez-Mendoza",
-        "citation": "462 U.S. 919 (1983)",
+        "citation": "468 U.S. 1032 (1984)",
         "court_level": "scotus",
         "court_name": "Supreme Court of the United States",
         "binding_scope": "federal_all",
@@ -15845,7 +15444,7 @@
         "id": "virginia_v_maryland_2003",
         "short_name": "Virginia v. Maryland",
         "full_name": "Virginia v. Maryland",
-        "citation": "538 U.S. 343 (2003)",
+        "citation": "540 U.S. 56 (2003)",
         "court_level": "scotus",
         "court_name": "Supreme Court of the United States",
         "binding_scope": "federal_all",
@@ -19056,31 +18655,6 @@
       },
       {
         "@type": "Case",
-        "id": "seila_law_v_consumer_financial_protection_bureau_2020",
-        "short_name": "Seila Law v. CFPB",
-        "full_name": "Seila Law LLC v. Consumer Financial Protection Bureau",
-        "citation": "591 U.S. 197 (2020)",
-        "court_level": "scotus",
-        "court_name": "Supreme Court of the United States",
-        "binding_scope": "federal_all",
-        "decided_date": "2020-06-29",
-        "opinion_form": "signed_majority",
-        "procedural_disposition": "reversed",
-        "holding": "The structure of the Consumer Financial Protection Bureau, which vests significant executive power in a single Director removable by the President only for cause, violates the separation of powers because it concentrates power in a unilateral actor insulated from Presidential control and lacks foundation in historical practice.",
-        "holding_type": "affirmative",
-        "majority_author": "Roberts",
-        "per_curiam": false,
-        "vote": null,
-        "status": "good_law",
-        "precedential_weight": "binding",
-        "valid_from": "2020-06-29",
-        "valid_until": null,
-        "opinions": [],
-        "notes": "Chief Justice Roberts delivered the opinion of the Court with respect to Parts I, II, and III. The decision addresses the constitutionality of the CFPB's structure under Article II separation of powers principles.",
-        "courtlistener_id": "9365252"
-      },
-      {
-        "@type": "Case",
         "id": "illinois_v_wardlow_2000",
         "short_name": "Illinois v. Wardlow",
         "full_name": "Illinois v. Wardlow",
@@ -19358,48 +18932,6 @@
         "opinions": [],
         "notes": "The Florida Supreme Court had reversed the trial court and upheld the statute as enhancing free speech. The U.S. Supreme Court reversed, holding the statute unconstitutional as a compelled speech violation.",
         "courtlistener_id": "8996387"
-      },
-      {
-        "@type": "Case",
-        "id": "c_a_carbone_v_town_of_clarkstown_1994",
-        "short_name": "C&A Carbone v. Town of Clarkstown",
-        "full_name": "C&A Carbone, Inc. v. Town of Clarkstown, New York",
-        "citation": "511 U.S. 383 (1994)",
-        "court_level": "scotus",
-        "court_name": "Supreme Court of the United States",
-        "binding_scope": "federal_all",
-        "decided_date": "1994-01-01",
-        "opinion_form": "signed_majority",
-        "procedural_disposition": "reversed",
-        "holding": "A municipal flow control ordinance that requires all solid waste to be processed at a designated transfer station before leaving the municipality violates the Commerce Clause when it attains its purpose of retaining processing fees by depriving competitors, including out-of-state firms, of access to a local market.",
-        "holding_type": "affirmative",
-        "majority_author": "Kennedy",
-        "per_curiam": false,
-        "vote": "5-4",
-        "status": "good_law",
-        "precedential_weight": "binding",
-        "valid_from": "1994-01-01",
-        "valid_until": null,
-        "opinions": [
-          {
-            "type": "concurrence",
-            "author": "O'Connor",
-            "doctrinal_significance": "Concurred in the judgment",
-            "joined_by": [],
-            "adopted_in": []
-          },
-          {
-            "type": "dissent",
-            "author": "Souter",
-            "doctrinal_significance": "Dissented from the majority's Commerce Clause analysis",
-            "joined_by": [
-              "Rehnquist",
-              "Blackmun"
-            ],
-            "adopted_in": []
-          }
-        ],
-        "notes": "Justice Kennedy delivered the opinion of the Court, joined by Stevens, Scalia, Thomas, and Ginsburg. O'Connor filed a concurrence in the judgment. Souter filed a dissent joined by Rehnquist and Blackmun. Vote was 5-4."
       },
       {
         "@type": "Case",
@@ -23849,7 +23381,7 @@
         "label": "Intelligible Principle Test",
         "description": "A test for determining whether a delegation of legislative power is constitutional. The legislature must establish an intelligible principle, and the delegated agency must adhere to specific directives that govern its authority.",
         "area_id": "federalism",
-        "source_case_id": "mistretta_v_united_states_1989",
+        "source_case_id": "schechter_poultry_corp_v_united_states_1935",
         "scrutiny_level": "rational_basis",
         "burden": "government",
         "test_form": "conjunctive",
@@ -24372,7 +23904,7 @@
     },
     {
       "id": "virginia_pharmacy_overrules_valentine",
-      "source_id": "virginia_pharmacy_board_v_virginia_consumer_council_1976",
+      "source_id": "virginia_state_board_of_pharmacy_v_virginia_citizens_consumer_council_1976",
       "target_id": "valentine_v_chrestensen_1942",
       "edge_type": "OVERRULES",
       "valid_from": "1976-05-24",
@@ -24387,7 +23919,7 @@
     },
     {
       "id": "virginia_pharmacy_establishes_commercial_speech_doctrine",
-      "source_id": "virginia_pharmacy_board_v_virginia_consumer_council_1976",
+      "source_id": "virginia_state_board_of_pharmacy_v_virginia_citizens_consumer_council_1976",
       "target_id": "commercial_speech_doctrine",
       "edge_type": "ESTABLISHES",
       "valid_from": "1976-05-24",
@@ -24401,7 +23933,7 @@
     },
     {
       "id": "virginia_pharmacy_interprets_amendment_1",
-      "source_id": "virginia_pharmacy_board_v_virginia_consumer_council_1976",
+      "source_id": "virginia_state_board_of_pharmacy_v_virginia_citizens_consumer_council_1976",
       "target_id": "amendment_1",
       "edge_type": "INTERPRETS",
       "valid_from": "1976-05-24",
@@ -24501,7 +24033,7 @@
     },
     {
       "id": "lorillard_applies_central_hudson",
-      "source_id": "lorillard_tobacco_v_reilly_2001",
+      "source_id": "lorillard_tobacco_co_v_reilly_2001",
       "target_id": "central_hudson_test",
       "edge_type": "APPLIES",
       "valid_from": "2001-06-28",
@@ -24883,7 +24415,7 @@
     },
     {
       "id": "virginia_pharmacy_modifies_no_protection_doctrine",
-      "source_id": "virginia_pharmacy_board_v_virginia_consumer_council_1976",
+      "source_id": "virginia_state_board_of_pharmacy_v_virginia_citizens_consumer_council_1976",
       "target_id": "commercial_speech_no_protection",
       "edge_type": "MODIFIES",
       "direction": "repudiates",
@@ -25494,7 +25026,7 @@
     },
     {
       "id": "milkovich_establishes_opinion_fact_doctrine",
-      "source_id": "milkovich_v_lorain_journal_1990",
+      "source_id": "milkovich_v_lorain_journal_co_1990",
       "target_id": "opinion_fact_doctrine",
       "edge_type": "ESTABLISHES",
       "valid_from": "1990-06-21",
@@ -25508,7 +25040,7 @@
     },
     {
       "id": "milkovich_modifies_actual_malice_test",
-      "source_id": "milkovich_v_lorain_journal_1990",
+      "source_id": "milkovich_v_lorain_journal_co_1990",
       "target_id": "actual_malice_test",
       "edge_type": "MODIFIES",
       "direction": "clarifies",
@@ -25523,7 +25055,7 @@
     },
     {
       "id": "milkovich_interprets_amendment_1",
-      "source_id": "milkovich_v_lorain_journal_1990",
+      "source_id": "milkovich_v_lorain_journal_co_1990",
       "target_id": "amendment_1",
       "edge_type": "INTERPRETS",
       "valid_from": "1990-06-21",
@@ -25870,7 +25402,7 @@
     },
     {
       "id": "lukumi_establishes_neutrality_doctrine",
-      "source_id": "church_of_lukumi_v_hialeah_1993",
+      "source_id": "church_of_the_lukumi_babalu_aye_v_city_of_hialeah_1993",
       "target_id": "neutrality_general_applicability_doctrine",
       "edge_type": "MODIFIES",
       "valid_from": "1993-06-11",
@@ -25885,7 +25417,7 @@
     },
     {
       "id": "lukumi_modifies_smith_test",
-      "source_id": "church_of_lukumi_v_hialeah_1993",
+      "source_id": "church_of_the_lukumi_babalu_aye_v_city_of_hialeah_1993",
       "target_id": "smith_test",
       "edge_type": "MODIFIES",
       "direction": "complicates",
@@ -25900,7 +25432,7 @@
     },
     {
       "id": "lukumi_interprets_amendment_1",
-      "source_id": "church_of_lukumi_v_hialeah_1993",
+      "source_id": "church_of_the_lukumi_babalu_aye_v_city_of_hialeah_1993",
       "target_id": "amendment_1",
       "edge_type": "INTERPRETS",
       "valid_from": "1993-06-11",
@@ -26200,7 +25732,7 @@
     {
       "id": "scalia_lee_dissent_precedes_kennedy_bremerton",
       "source_id": "lee_v_weisman_1992",
-      "target_id": "kennedy_v_bremerton_2022",
+      "target_id": "kennedy_v_bremerton_school_district_2022",
       "edge_type": "INTELLECTUALLY_PRECEDES",
       "opinion_ref": {
         "opinion_type": "dissent",
@@ -26275,7 +25807,7 @@
     {
       "id": "scalia_mccreary_dissent_precedes_kennedy_bremerton",
       "source_id": "mccreary_county_v_aclu_2005",
-      "target_id": "kennedy_v_bremerton_2022",
+      "target_id": "kennedy_v_bremerton_school_district_2022",
       "edge_type": "INTELLECTUALLY_PRECEDES",
       "opinion_ref": {
         "opinion_type": "dissent",
@@ -26305,23 +25837,8 @@
       "notes": null
     },
     {
-      "id": "kennedy_overrules_lemon",
-      "source_id": "kennedy_v_bremerton_2022",
-      "target_id": "lemon_v_kurtzman_1971",
-      "edge_type": "OVERRULES",
-      "overrule_type": "explicit",
-      "valid_from": "2022-06-27",
-      "valid_until": null,
-      "jurisdiction": [
-        "federal",
-        "state"
-      ],
-      "citation": "Kennedy v. Bremerton School District, 597 U.S. 507, 534 (2022)",
-      "notes": "Kennedy treated Lemon and the endorsement test as no longer governing and stated that the Court had abandoned them. This functions as an explicit repudiation of Lemon's governing force, even if the opinion did not use the simplest formulaic 'Lemon is overruled' phrasing."
-    },
-    {
       "id": "kennedy_modifies_lemon_test",
-      "source_id": "kennedy_v_bremerton_2022",
+      "source_id": "kennedy_v_bremerton_school_district_2022",
       "target_id": "lemon_test",
       "edge_type": "MODIFIES",
       "direction": "repudiates",
@@ -26336,7 +25853,7 @@
     },
     {
       "id": "kennedy_establishes_historical_practices",
-      "source_id": "kennedy_v_bremerton_2022",
+      "source_id": "kennedy_v_bremerton_school_district_2022",
       "target_id": "historical_practices_doctrine",
       "edge_type": "ESTABLISHES",
       "valid_from": "2022-06-27",
@@ -26350,7 +25867,7 @@
     },
     {
       "id": "kennedy_modifies_establishment_doctrine",
-      "source_id": "kennedy_v_bremerton_2022",
+      "source_id": "kennedy_v_bremerton_school_district_2022",
       "target_id": "establishment_clause_doctrine",
       "edge_type": "MODIFIES",
       "direction": "complicates",
@@ -26365,7 +25882,7 @@
     },
     {
       "id": "kennedy_modifies_coercion_test",
-      "source_id": "kennedy_v_bremerton_2022",
+      "source_id": "kennedy_v_bremerton_school_district_2022",
       "target_id": "coercion_test",
       "edge_type": "MODIFIES",
       "direction": "complicates",
@@ -26380,7 +25897,7 @@
     },
     {
       "id": "kennedy_interprets_amendment_1",
-      "source_id": "kennedy_v_bremerton_2022",
+      "source_id": "kennedy_v_bremerton_school_district_2022",
       "target_id": "amendment_1",
       "edge_type": "INTERPRETS",
       "valid_from": "2022-06-27",
@@ -26520,7 +26037,7 @@
     },
     {
       "id": "hurley_applies_expressive_association_doctrine",
-      "source_id": "hurley_v_irish_american_gay_group_1995",
+      "source_id": "hurley_v_irish_american_gay_group_of_boston_1995",
       "target_id": "expressive_association_doctrine",
       "edge_type": "MODIFIES",
       "direction": "expands",
@@ -26535,7 +26052,7 @@
     },
     {
       "id": "hurley_interprets_amendment_1",
-      "source_id": "hurley_v_irish_american_gay_group_1995",
+      "source_id": "hurley_v_irish_american_gay_group_of_boston_1995",
       "target_id": "amendment_1",
       "edge_type": "INTERPRETS",
       "valid_from": "1995-06-19",
@@ -26549,7 +26066,7 @@
     },
     {
       "id": "dale_modifies_expressive_association_test",
-      "source_id": "boy_scouts_v_dale_2000",
+      "source_id": "boy_scouts_of_america_v_dale_2000",
       "target_id": "expressive_association_test",
       "edge_type": "MODIFIES",
       "direction": "expands",
@@ -26564,7 +26081,7 @@
     },
     {
       "id": "dale_interprets_amendment_1",
-      "source_id": "boy_scouts_v_dale_2000",
+      "source_id": "boy_scouts_of_america_v_dale_2000",
       "target_id": "amendment_1",
       "edge_type": "INTERPRETS",
       "valid_from": "2000-06-28",
@@ -26702,7 +26219,7 @@
     },
     {
       "id": "dale_establishes_expressive_association_test",
-      "source_id": "boy_scouts_v_dale_2000",
+      "source_id": "boy_scouts_of_america_v_dale_2000",
       "target_id": "expressive_association_test",
       "edge_type": "ESTABLISHES",
       "valid_from": "2000-06-28",
@@ -26716,7 +26233,7 @@
     },
     {
       "id": "dale_modifies_expressive_association_doctrine",
-      "source_id": "boy_scouts_v_dale_2000",
+      "source_id": "boy_scouts_of_america_v_dale_2000",
       "target_id": "expressive_association_doctrine",
       "edge_type": "MODIFIES",
       "direction": "clarifies",
@@ -26731,7 +26248,7 @@
     },
     {
       "id": "dale_distinguishes_roberts",
-      "source_id": "boy_scouts_v_dale_2000",
+      "source_id": "boy_scouts_of_america_v_dale_2000",
       "target_id": "roberts_v_united_states_jaycees_1984",
       "edge_type": "DISTINGUISHES",
       "valid_from": "2000-06-28",
@@ -27664,7 +27181,7 @@
     },
     {
       "id": "miami_herald_modifies_press_doctrine",
-      "source_id": "miami_herald_v_tornillo_1974",
+      "source_id": "miami_herald_publishing_co_v_tornillo_1974",
       "target_id": "core_political_speech_doctrine",
       "edge_type": "MODIFIES",
       "direction": "clarifies",
@@ -27678,7 +27195,7 @@
     },
     {
       "id": "miami_herald_interprets_a1",
-      "source_id": "miami_herald_v_tornillo_1974",
+      "source_id": "miami_herald_publishing_co_v_tornillo_1974",
       "target_id": "amendment_1",
       "edge_type": "INTERPRETS",
       "valid_from": "1974-06-25",
@@ -27992,20 +27509,6 @@
       ]
     },
     {
-      "id": "miller_modifies_roth",
-      "source_id": "miller_v_california_1973",
-      "target_id": "obscenity_doctrine",
-      "edge_type": "MODIFIES",
-      "valid_from": "1973-06-21",
-      "valid_until": null,
-      "jurisdiction": [
-        "federal",
-        "state"
-      ],
-      "notes": "Repudiates: Miller explicitly rejected and replaced the Roth/Memoirs 'utterly without redeeming social value' standard with the three-part SLAPS test, providing a more workable definition of obscenity.",
-      "direction": "repudiates"
-    },
-    {
       "id": "paris_applies_miller",
       "source_id": "paris_adult_theatre_v_slaton_1973",
       "target_id": "miller_obscenity_test",
@@ -28177,7 +27680,7 @@
     },
     {
       "id": "miami_herald_distinguishes_red_lion",
-      "source_id": "miami_herald_v_tornillo_1974",
+      "source_id": "miami_herald_publishing_co_v_tornillo_1974",
       "target_id": "red_lion_broadcasting_v_fcc_1969",
       "edge_type": "DISTINGUISHES",
       "valid_from": "1974-06-25",
@@ -28819,7 +28322,7 @@
     },
     {
       "id": "minneapolis_star_applies_press_doctrine",
-      "source_id": "minneapolis_star_tribune_v_minnesota_1983",
+      "source_id": "minneapolis_star_and_tribune_co_v_minnesota_commissioner_of_revenue_1983",
       "target_id": "actual_malice_doctrine",
       "edge_type": "APPLIES",
       "valid_from": "1983-03-29",
@@ -28831,7 +28334,7 @@
     },
     {
       "id": "minneapolis_star_interprets_a1",
-      "source_id": "minneapolis_star_tribune_v_minnesota_1983",
+      "source_id": "minneapolis_star_and_tribune_co_v_minnesota_commissioner_of_revenue_1983",
       "target_id": "amendment_1",
       "edge_type": "INTERPRETS",
       "valid_from": "1983-03-29",
@@ -28908,20 +28411,8 @@
       }
     },
     {
-      "id": "iskcon_applies_public_forum",
-      "source_id": "iskcon_v_lee_1992",
-      "target_id": "public_forum_doctrine",
-      "edge_type": "APPLIES",
-      "valid_from": "1992-06-26",
-      "valid_until": null,
-      "jurisdiction": [
-        "federal",
-        "state"
-      ]
-    },
-    {
       "id": "iskcon_interprets_a1",
-      "source_id": "iskcon_v_lee_1992",
+      "source_id": "international_society_for_krishna_consciousness_v_lee_1992",
       "target_id": "amendment_1",
       "edge_type": "INTERPRETS",
       "valid_from": "1992-06-26",
@@ -28984,7 +28475,7 @@
     {
       "id": "van_orden_precedes_kennedy_bremerton",
       "source_id": "van_orden_v_perry_2005",
-      "target_id": "kennedy_v_bremerton_2022",
+      "target_id": "kennedy_v_bremerton_school_district_2022",
       "edge_type": "INTELLECTUALLY_PRECEDES",
       "opinion_ref": {
         "opinion_type": "plurality",
@@ -29785,18 +29276,6 @@
       ]
     },
     {
-      "id": "dred_scott_precedes_amendment_14",
-      "source_id": "dred_scott_v_sandford_1857",
-      "target_id": "amendment_14_section_1",
-      "edge_type": "INTELLECTUALLY_PRECEDES",
-      "valid_from": "1868-07-09",
-      "valid_until": "1868-07-09",
-      "jurisdiction": [
-        "federal"
-      ],
-      "notes": "Dred Scott (1857) predates the Fourteenth Amendment (1868) by eleven years. This edge represents the constitutional void that the Amendment was designed to fill \u2014 the Amendment's citizenship clause directly repudiated Taney's holding that Black persons could not be citizens."
-    },
-    {
       "id": "strauder_establishes_ep_race",
       "source_id": "strauder_v_west_virginia_1880",
       "target_id": "suspect_classification_doctrine",
@@ -30020,7 +29499,7 @@
     },
     {
       "id": "arlington_modifies_intent_doctrine",
-      "source_id": "village_of_arlington_heights_v_mhdc_1977",
+      "source_id": "village_of_arlington_heights_v_metropolitan_housing_development_corp_1977",
       "target_id": "discriminatory_intent_doctrine",
       "edge_type": "MODIFIES",
       "direction": "clarifies",
@@ -30034,7 +29513,7 @@
     },
     {
       "id": "arlington_interprets_a14",
-      "source_id": "village_of_arlington_heights_v_mhdc_1977",
+      "source_id": "village_of_arlington_heights_v_metropolitan_housing_development_corp_1977",
       "target_id": "amendment_14_section_1",
       "edge_type": "INTERPRETS",
       "valid_from": "1977-01-11",
@@ -30441,7 +29920,7 @@
     {
       "id": "romer_applies_sexual_orientation",
       "source_id": "romer_v_evans_1996",
-      "target_id": "equal_protection",
+      "target_id": "equal_protection_sexual_orientation",
       "edge_type": "APPLIES",
       "valid_from": "1996-05-20",
       "valid_until": null,
@@ -30616,7 +30095,7 @@
     {
       "id": "lawrence_applies_due_process",
       "source_id": "lawrence_v_texas_2003",
-      "target_id": "equal_protection",
+      "target_id": "substantive_due_process_liberty",
       "edge_type": "APPLIES",
       "valid_from": "2003-06-26",
       "valid_until": null,
@@ -30740,7 +30219,11 @@
         "federal",
         "state"
       ],
-      "notes": "Companion cases decided the same day holding state and federal school segregation unconstitutional under the Fourteenth and Fifth Amendments respectively."
+      "notes": "Companion cases decided the same day holding state and federal school segregation unconstitutional under the Fourteenth and Fifth Amendments respectively.",
+      "opinion_ref": {
+        "opinion_type": "majority",
+        "author": "Warren"
+      }
     },
     {
       "id": "rice_applies_suspect_class",
@@ -31231,19 +30714,6 @@
       "notes": "Griswold invokes the Fourteenth Amendment's Due Process Clause, particularly through Harlan's concurrence which grounds the right to marital privacy in substantive due process rather than the Bill of Rights penumbra."
     },
     {
-      "id": "lawrence_applies_substantive_due_process_liberty",
-      "source_id": "lawrence_v_texas_2003",
-      "target_id": "substantive_due_process_liberty",
-      "edge_type": "APPLIES",
-      "valid_from": "2003-06-26",
-      "valid_until": null,
-      "jurisdiction": [
-        "federal",
-        "state"
-      ],
-      "notes": "Lawrence clarifies and expands the substantive due process liberty doctrine by explicitly recognizing that liberty protects intimate conduct between consenting adults and extends beyond spatial bounds to include autonomy of self."
-    },
-    {
       "id": "lawrence_establishes_private_consensual_conduct",
       "source_id": "lawrence_v_texas_2003",
       "target_id": "private_consensual_conduct_protection",
@@ -31258,7 +30728,7 @@
     },
     {
       "id": "cruzan_establishes_right_to_refuse_medical_treatment",
-      "source_id": "cruzan_v_director_1990",
+      "source_id": "cruzan_v_director_missouri_department_of_health_1990",
       "target_id": "right_to_refuse_medical_treatment",
       "edge_type": "ESTABLISHES",
       "valid_from": "1990-06-25",
@@ -31271,7 +30741,7 @@
     },
     {
       "id": "cruzan_establishes_cruzan_clear_convincing_evidence_test",
-      "source_id": "cruzan_v_director_1990",
+      "source_id": "cruzan_v_director_missouri_department_of_health_1990",
       "target_id": "cruzan_clear_convincing_evidence_test",
       "edge_type": "ESTABLISHES",
       "valid_from": "1990-06-25",
@@ -33046,19 +32516,6 @@
       "notes": "Printz applied and extended the anti-commandeering doctrine to executive officials."
     },
     {
-      "id": "printz_applies_anti_commandeering_doctrine",
-      "source_id": "printz_v_united_states_1997",
-      "target_id": "anti_commandeering_doctrine",
-      "edge_type": "APPLIES",
-      "valid_from": "1997-06-27",
-      "valid_until": null,
-      "jurisdiction": [
-        "federal",
-        "state"
-      ],
-      "notes": "Printz established the anti-commandeering doctrine as a constitutional limit on federal power to compel state and local officials to administer federal programs."
-    },
-    {
       "id": "shelby_county_applies_vra_section_5",
       "source_id": "shelby_county_v_holder_2013",
       "target_id": "voting_rights_act_section_5_preclearance",
@@ -33583,7 +33040,7 @@
     },
     {
       "id": "philadelphia_establishes_commerce_clause_discrimination",
-      "source_id": "philadelphia_v_new_jersey_1978",
+      "source_id": "city_of_philadelphia_v_new_jersey_1978",
       "target_id": "dormant_commerce_clause_doctrine",
       "edge_type": "ESTABLISHES",
       "valid_from": "1978-06-23",
@@ -33593,19 +33050,6 @@
         "state"
       ],
       "notes": "Philadelphia v. New Jersey established the principle that state laws facially discriminating against interstate commerce violate the Commerce Clause."
-    },
-    {
-      "id": "philadelphia_applies_dormant_commerce_clause",
-      "source_id": "philadelphia_v_new_jersey_1978",
-      "target_id": "dormant_commerce_clause_doctrine",
-      "edge_type": "APPLIES",
-      "valid_from": "1978-06-23",
-      "valid_until": null,
-      "jurisdiction": [
-        "federal",
-        "state"
-      ],
-      "notes": "Philadelphia applied dormant Commerce Clause doctrine to invalidate discriminatory waste import ban."
     },
     {
       "id": "granholm_applies_dormant_commerce_clause",
@@ -37629,7 +37073,7 @@
     },
     {
       "id": "kennedy_est_free_exercise_protection_",
-      "source_id": "kennedy_v_bremerton_2022",
+      "source_id": "kennedy_v_bremerton_school_district_2022",
       "target_id": "free_exercise_protection_personal_religious_observance",
       "edge_type": "ESTABLISHES",
       "valid_from": "2022-06-27",
@@ -37641,7 +37085,7 @@
     },
     {
       "id": "kennedy_est_establishment_clause_hist",
-      "source_id": "kennedy_v_bremerton_2022",
+      "source_id": "kennedy_v_bremerton_school_district_2022",
       "target_id": "establishment_clause_historical_practices_test",
       "edge_type": "ESTABLISHES",
       "valid_from": "2022-06-27",
@@ -37653,7 +37097,7 @@
     },
     {
       "id": "kennedy_est_free_speech_protection_pe",
-      "source_id": "kennedy_v_bremerton_2022",
+      "source_id": "kennedy_v_bremerton_school_district_2022",
       "target_id": "free_speech_protection_personal_expression_government_employee",
       "edge_type": "ESTABLISHES",
       "valid_from": "2022-06-27",
@@ -37777,19 +37221,6 @@
         "federal"
       ],
       "notes": "BE&K addresses scope of Petition Clause protection for retaliatory litigation"
-    },
-    {
-      "id": "abington_applies_establishment_clause_school_prayer_prohibition",
-      "source_id": "abington_school_district_v_schempp_1963",
-      "target_id": "establishment_clause_school_prayer_prohibition",
-      "edge_type": "APPLIES",
-      "valid_from": "1963-06-17",
-      "valid_until": null,
-      "jurisdiction": [
-        "federal",
-        "state"
-      ],
-      "notes": "Abington established the doctrine that public schools cannot sponsor mandatory religious exercises including Bible readings and prayer recitations."
     },
     {
       "id": "alden_establishes_state_sovereign_immunity",
@@ -37934,32 +37365,6 @@
       "notes": "The Dolan exactions test is the operative mechanism for applying the takings exactions doctrine."
     },
     {
-      "id": "garcetti_applies_public_employee_speech_doctrine",
-      "source_id": "garcetti_v_ceballos_2006",
-      "target_id": "public_employee_speech_doctrine",
-      "edge_type": "APPLIES",
-      "valid_from": "2006",
-      "valid_until": null,
-      "jurisdiction": [
-        "federal",
-        "state"
-      ],
-      "notes": "Garcetti v. Ceballos established the principle that public employee speech made pursuant to official duties is not protected by the First Amendment."
-    },
-    {
-      "id": "georgia_v_mccollum_applies_equal_protection_peremptory_challenges",
-      "source_id": "georgia_v_mccollum_1992",
-      "target_id": "equal_protection_peremptory_challenges",
-      "edge_type": "APPLIES",
-      "valid_from": "1992-06-18",
-      "valid_until": null,
-      "jurisdiction": [
-        "federal",
-        "state"
-      ],
-      "notes": "Georgia v. McCollum established that the Equal Protection Clause prohibits criminal defendants from engaging in purposeful racial discrimination in the exercise of peremptory challenges."
-    },
-    {
       "id": "harriss_v_mcrae_establishes_medicaid_abortion_funding_doctrine",
       "source_id": "harriss_v_mcrae_1980",
       "target_id": "medicaid_abortion_funding_doctrine",
@@ -37997,19 +37402,6 @@
         "state"
       ],
       "notes": "Hazelwood established the test for evaluating school editorial control over school-sponsored student speech."
-    },
-    {
-      "id": "hazelwood_applies_student_speech_doctrine",
-      "source_id": "hazelwood_school_district_v_kuhlmeier_1988",
-      "target_id": "student_speech_doctrine",
-      "edge_type": "APPLIES",
-      "valid_from": "1988-01-13",
-      "valid_until": null,
-      "jurisdiction": [
-        "federal",
-        "state"
-      ],
-      "notes": "Hazelwood established the foundational doctrine distinguishing school-sponsored student speech from other student speech contexts."
     },
     {
       "id": "heart_of_atlanta_applies_civil_rights_act",
@@ -38308,19 +37700,6 @@
         "state"
       ],
       "notes": "Morse v. Frederick recognized schools' significant interest in preventing drug use as a basis for restricting student speech."
-    },
-    {
-      "id": "nguyen_applies_intermediate_scrutiny_gender_test",
-      "source_id": "nguyen_v_ins_2001",
-      "target_id": "craig_intermediate_scrutiny_gender_test",
-      "edge_type": "APPLIES",
-      "valid_from": "2001-01-01",
-      "valid_until": null,
-      "jurisdiction": [
-        "federal",
-        "state"
-      ],
-      "notes": "Nguyen articulates the intermediate scrutiny standard for gender-based classifications in the citizenship context."
     },
     {
       "id": "personnel_administrator_v_feeney_applies_discriminatory_intent_doctrine",
@@ -40836,18 +40215,6 @@
       "notes": "The Court applied the reasonable expectation of privacy doctrine to hold that curbside garbage is unprotected because it lacks a reasonable expectation of privacy."
     },
     {
-      "id": "seila_law_applies_presidential_removal_power",
-      "source_id": "seila_law_v_consumer_financial_protection_bureau_2020",
-      "target_id": "presidential_removal_power",
-      "edge_type": "APPLIES",
-      "valid_from": "2020-06-29",
-      "valid_until": null,
-      "jurisdiction": [
-        "federal"
-      ],
-      "notes": "The Court applied the doctrine of presidential removal power to evaluate the CFPB's structure, holding that the Director's removal protection violates the President's constitutional authority."
-    },
-    {
       "id": "illinois_v_wardlow_applies_reasonable_suspicion_doctrine",
       "source_id": "illinois_v_wardlow_2000",
       "target_id": "reasonable_suspicion_doctrine",
@@ -41241,7 +40608,7 @@
     },
     {
       "id": "carbone_applies_commerce_clause_dormant",
-      "source_id": "c_a_carbone_v_town_of_clarkstown_1994",
+      "source_id": "c_a_carbone_inc_v_town_of_clarkstown_1994",
       "target_id": "dormant_commerce_clause_doctrine",
       "edge_type": "APPLIES",
       "valid_from": "1994",
@@ -41336,6 +40703,19 @@
         "federal",
         "state"
       ]
+    },
+    {
+      "id": "dred_scott_interprets_amendment_14",
+      "source_id": "dred_scott_v_sandford_1857",
+      "target_id": "amendment_14_section_1",
+      "edge_type": "INTERPRETS",
+      "valid_from": "1857-03-06",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Dred Scott directly interpreted what became the basis for the 14th Amendment"
     }
   ],
   "schema_issues_found": [
