@@ -40324,19 +40324,6 @@
       "notes": "Elstad applied Miranda doctrine to hold unwarned statement does not taint subsequent warned confession"
     },
     {
-      "id": "duncan_establishes_selective_incorporation_doctrine",
-      "source_id": "duncan_v_louisiana_1968",
-      "target_id": "selective_incorporation_doctrine",
-      "edge_type": "ESTABLISHES",
-      "valid_from": "1968-05-20",
-      "valid_until": null,
-      "jurisdiction": [
-        "federal",
-        "state"
-      ],
-      "notes": "Duncan formalized the modern selective incorporation framework that survived Palko"
-    },
-    {
       "id": "mcdonald_applies_selective_incorporation_doctrine",
       "source_id": "mcdonald_v_city_of_chicago_2010",
       "target_id": "selective_incorporation_doctrine",
@@ -40424,6 +40411,19 @@
         "state"
       ],
       "notes": "Penn Central established the multifactor balancing test for regulatory takings"
+    },
+    {
+      "id": "duncan_applies_selective_incorporation_doctrine",
+      "source_id": "duncan_v_louisiana_1968",
+      "target_id": "selective_incorporation_doctrine",
+      "edge_type": "APPLIES",
+      "valid_from": "1968-05-20",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Duncan applied selective incorporation to incorporate the Sixth Amendment right to jury trial"
     }
   ],
   "schema_issues_found": [
