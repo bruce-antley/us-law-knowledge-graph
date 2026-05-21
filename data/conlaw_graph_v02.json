@@ -17,8 +17,8 @@
     "created": "2026-03-15",
     "status": "draft",
     "schema_version": "0.5",
-    "node_count": 906,
-    "edge_count": 1316,
+    "node_count": 898,
+    "edge_count": 1310,
     "schema_issue_count": 41,
     "fixes_applied": [
       "FIX 1: ConstitutionalProvision labels changed to citation form (amendment_1, amendment_14_section_1) to disambiguate from Area nodes with same common-name labels",
@@ -4171,21 +4171,6 @@
       },
       {
         "@type": "Doctrine",
-        "id": "expressive_design_speech",
-        "label": "Expressive Design as Protected Speech",
-        "description": "Custom website design for weddings, including the selection of images, text, and layout to convey a particular message about the couple and their celebration, constitutes protected First Amendment speech.",
-        "area_id": "free_speech",
-        "jurisdiction": [
-          "federal",
-          "state"
-        ],
-        "status": "active",
-        "valid_from": "2023-06-30",
-        "valid_until": null,
-        "notes": "Established in 303 Creative LLC v. Elenis as a category of expressive conduct protected by the First Amendment."
-      },
-      {
-        "@type": "Doctrine",
         "id": "rfra_remedy_doctrine",
         "label": "RFRA Remedies Against Individual Federal Officials",
         "description": "Under the Religious Freedom Restoration Act of 1993, persons whose religious exercise has been substantially burdened by federal government action may assert that violation as a claim or defense in a judicial proceeding and obtain appropriate relief, including money damages, against individual federal officials in their individual capacities.",
@@ -5080,21 +5065,6 @@
       },
       {
         "@type": "Doctrine",
-        "id": "symbolic_conduct_doctrine",
-        "label": "Symbolic Conduct Doctrine",
-        "description": "The doctrine governing when non-verbal conduct qualifies for First Amendment protection and the standards for regulating such conduct.",
-        "area_id": "free_speech",
-        "jurisdiction": [
-          "federal",
-          "state"
-        ],
-        "status": "active",
-        "valid_from": "1984-06-29",
-        "valid_until": null,
-        "notes": "Established in Clark v. Community for Creative Non-Violence as the framework for analyzing whether sleeping in tents as part of a demonstration constitutes expressive conduct protected by the First Amendment."
-      },
-      {
-        "@type": "Doctrine",
         "id": "residential_privacy_doctrine",
         "label": "Residential Privacy Protection",
         "description": "The government has a significant interest in protecting the sanctity of the home and the residential privacy of its citizens, which may justify restrictions on First Amendment activity in residential areas.",
@@ -5287,21 +5257,6 @@
         "valid_from": "2016-06-27",
         "valid_until": null,
         "notes": "Reaffirmed in Whole Woman's Health v. Hellerstedt as the foundational right against which abortion regulations are measured."
-      },
-      {
-        "@type": "Doctrine",
-        "id": "racial_gerrymandering_doctrine",
-        "label": "Racial Gerrymandering Doctrine",
-        "description": "A reapportionment plan that is so highly irregular and bizarre in shape that it rationally cannot be understood as anything other than an effort to segregate voters based on race violates the Equal Protection Clause and is subject to strict scrutiny.",
-        "area_id": "equal_protection",
-        "jurisdiction": [
-          "federal",
-          "state"
-        ],
-        "status": "active",
-        "valid_from": "1995-06-29",
-        "valid_until": null,
-        "notes": "Established in Miller v. Johnson as an application and extension of Shaw v. Reno."
       },
       {
         "@type": "Doctrine",
@@ -17898,31 +17853,6 @@
       },
       {
         "@type": "Case",
-        "id": "clark_v_community_for_creative_non_violence_1984",
-        "short_name": "Clark v. Community for Creative Non-Violence",
-        "full_name": "Clark v. Community for Creative Non-Violence",
-        "citation": "468 U.S. 288 (1984)",
-        "court_level": "scotus",
-        "court_name": "Supreme Court of the United States",
-        "binding_scope": "federal_all",
-        "decided_date": "1984-06-29",
-        "opinion_form": "signed_majority",
-        "procedural_disposition": "reversed",
-        "holding": "A National Park Service regulation prohibiting camping in certain parks does not violate the First Amendment when applied to prohibit demonstrators from sleeping in Lafayette Park and the Mall in connection with a demonstration about the plight of the homeless.",
-        "holding_type": "by_negation",
-        "majority_author": "White",
-        "per_curiam": false,
-        "vote": null,
-        "status": "good_law",
-        "precedential_weight": "binding",
-        "valid_from": "1984-06-29",
-        "valid_until": null,
-        "opinions": [],
-        "notes": "Court of Appeals was fractured with 6 judges believing the regulation violated the First Amendment and 5 judges disagreeing. The Supreme Court reversed the Court of Appeals.",
-        "courtlistener_id": "111245"
-      },
-      {
-        "@type": "Case",
         "id": "frisby_v_schultz_1988",
         "short_name": "Frisby v. Schultz",
         "full_name": "Frisby v. Schultz",
@@ -18352,31 +18282,6 @@
           }
         ],
         "notes": "5-3 decision. Justice Kagan did not participate. The majority applied the undue burden standard from Planned Parenthood v. Casey, weighing the burden on abortion access against the asserted state interests in women's health and fetal life."
-      },
-      {
-        "@type": "Case",
-        "id": "miller_v_johnson_1995",
-        "short_name": "Miller v. Johnson",
-        "full_name": "Miller v. Johnson",
-        "citation": "515 U.S. 900 (1995)",
-        "court_level": "scotus",
-        "court_name": "Supreme Court of the United States",
-        "binding_scope": "federal_all",
-        "decided_date": "1995-06-29",
-        "opinion_form": "signed_majority",
-        "procedural_disposition": "reversed",
-        "holding": "A reapportionment plan that is so highly irregular and bizarre in shape that it rationally cannot be understood as anything other than an effort to segregate voters based on race is subject to strict scrutiny under the Equal Protection Clause, applying the rule from Shaw v. Reno that race cannot be the overriding, predominant force in the redistricting process.",
-        "holding_type": "affirmative",
-        "majority_author": "Kennedy",
-        "per_curiam": false,
-        "vote": "5-4",
-        "status": "good_law",
-        "precedential_weight": "binding",
-        "valid_from": "1995-06-29",
-        "valid_until": null,
-        "opinions": [],
-        "notes": "The case applies and extends the Shaw v. Reno framework to hold that bizarrely shaped districts designed to segregate voters by race trigger strict scrutiny under equal protection.",
-        "courtlistener_id": "9150042"
       },
       {
         "@type": "Case",
@@ -22573,7 +22478,7 @@
         "label": "Fifth Amendment Takings Multifactor Test",
         "description": "A test for determining whether government action constitutes a compensable taking under the Fifth Amendment. Courts must consider multiple factors including the duration and severity of the interference, the intent behind the government action, and the degree to which the interference was a foreseeable result of an authorized government action. No single factor is dispositive, and temporary interference does not categorically exclude a finding of taking.",
         "area_id": "takings_clause",
-        "source_case_id": "arkansas_game_and_fish_commission_v_united_states_2012",
+        "source_case_id": "penn_central_transportation_co_v_new_york_city_1978",
         "scrutiny_level": "balancing",
         "burden": "shared",
         "test_form": "balancing",
@@ -23073,43 +22978,6 @@
       },
       {
         "@type": "DoctrinalTest",
-        "id": "clark_symbolic_conduct_test",
-        "label": "Symbolic Conduct Protection Test",
-        "description": "A test for determining whether non-verbal conduct qualifies for First Amendment protection and whether a regulation of such conduct is constitutional. The test examines whether the conduct is sufficiently expressive and whether the government regulation is narrowly tailored to serve a significant government interest.",
-        "area_id": "free_speech",
-        "source_case_id": "clark_v_community_for_creative_non_violence_1984",
-        "scrutiny_level": "intermediate",
-        "burden": "government",
-        "test_form": "conjunctive",
-        "prongs": [
-          {
-            "number": 1,
-            "label": "Expressive Conduct Element",
-            "description": "The conduct must be sufficiently expressive to warrant First Amendment protection. The conduct must communicate a particularized message and there must be a great likelihood that the message would be understood by those viewing it.",
-            "burden_note": "Challenger must demonstrate the conduct is expressive.",
-            "valid_from": "1984-06-29",
-            "valid_until": null,
-            "contested": false,
-            "contest_note": null
-          },
-          {
-            "number": 2,
-            "label": "Government Interest and Narrow Tailoring",
-            "description": "If the conduct is expressive, the government regulation must further a significant government interest and must be narrowly tailored to serve that interest without suppressing the expressive element.",
-            "burden_note": "Government must demonstrate the regulation serves a significant interest and is narrowly tailored.",
-            "valid_from": "1984-06-29",
-            "valid_until": null,
-            "contested": false,
-            "contest_note": null
-          }
-        ],
-        "status": "active",
-        "valid_from": "1984-06-29",
-        "valid_until": null,
-        "notes": "This test applies to non-verbal conduct that may qualify for First Amendment protection. The Court held that sleeping in tents, while potentially expressive, could be regulated by the no-camping rule because the regulation served the significant government interest in maintaining the parks and was not aimed at suppressing the expressive element."
-      },
-      {
-        "@type": "DoctrinalTest",
         "id": "iskcon_reasonableness_test",
         "label": "Non-Public Forum Reasonableness Test",
         "description": "A standard for evaluating restrictions on speech and expressive conduct in non-public forums such as airport terminals. The regulation need only be reasonable in light of the forum's purpose and the government's legitimate interests.",
@@ -23325,43 +23193,6 @@
       },
       {
         "@type": "DoctrinalTest",
-        "id": "miller_racial_gerrymandering_test",
-        "label": "Miller Racial Gerrymandering Test",
-        "description": "A test to determine whether a reapportionment plan constitutes racial gerrymandering subject to strict scrutiny. The test examines whether a district is so highly irregular and bizarre in shape that it rationally cannot be understood as anything other than an effort to segregate voters based on race, and whether race was the overriding, predominant force in the redistricting process.",
-        "area_id": "equal_protection",
-        "source_case_id": "miller_v_johnson_1995",
-        "scrutiny_level": "strict",
-        "burden": "government",
-        "test_form": "conjunctive",
-        "prongs": [
-          {
-            "number": 1,
-            "label": "Bizarre Shape",
-            "description": "The district must be so highly irregular and bizarre in shape that it rationally cannot be understood as anything other than an effort to segregate voters based on race.",
-            "burden_note": "Government must justify the irregular shape.",
-            "valid_from": "1995-06-29",
-            "valid_until": null,
-            "contested": false,
-            "contest_note": null
-          },
-          {
-            "number": 2,
-            "label": "Race as Overriding, Predominant Force",
-            "description": "Race must be the overriding, predominant force in the redistricting process.",
-            "burden_note": "Government must demonstrate that race was not the predominant factor.",
-            "valid_from": "1995-06-29",
-            "valid_until": null,
-            "contested": false,
-            "contest_note": null
-          }
-        ],
-        "status": "active",
-        "valid_from": "1995-06-29",
-        "valid_until": null,
-        "notes": "This test applies strict scrutiny to reapportionment plans where race is the overriding, predominant force, extending the framework from Shaw v. Reno."
-      },
-      {
-        "@type": "DoctrinalTest",
         "id": "intelligible_principle_test",
         "label": "Intelligible Principle Test",
         "description": "A test for determining whether a delegation of legislative power is constitutional. The legislature must establish an intelligible principle, and the delegated agency must adhere to specific directives that govern its authority.",
@@ -23517,43 +23348,6 @@
         "valid_from": "1990-06-21",
         "valid_until": null,
         "notes": "This test replaced an overly categorical approach that treated all statements labeled as 'opinion' as automatically protected. The test applies the actual malice standard to false factual assertions even when framed as opinion."
-      },
-      {
-        "@type": "DoctrinalTest",
-        "id": "44liquormart_commercial_speech_test",
-        "label": "Commercial Speech Restriction Test",
-        "description": "A government restriction on truthful commercial speech must: (1) directly advance a substantial state interest; and (2) be narrowly tailored to serve that interest. The government bears the burden of demonstrating both prongs. Paternalistic justifications for restricting truthful commercial messages receive heightened scrutiny.",
-        "area_id": "commercial_speech",
-        "source_case_id": "44_liquormart_v_rhode_island_1996",
-        "scrutiny_level": "heightened",
-        "burden": "government",
-        "test_form": "conjunctive",
-        "prongs": [
-          {
-            "number": 1,
-            "label": "Direct Advancement of Substantial State Interest",
-            "description": "The restriction must directly advance a substantial state interest. Speculative or indirect benefits are insufficient. The government must demonstrate a real connection between the restriction and the asserted interest.",
-            "burden_note": "Government must prove direct advancement",
-            "valid_from": "1996",
-            "valid_until": null,
-            "contested": false,
-            "contest_note": null
-          },
-          {
-            "number": 2,
-            "label": "Narrow Tailoring",
-            "description": "The restriction must be narrowly tailored to serve the asserted interest. The government must show that the restriction will actually achieve the stated goal and that less restrictive alternatives are inadequate.",
-            "burden_note": "Government must prove narrow tailoring",
-            "valid_from": "1996",
-            "valid_until": null,
-            "contested": false,
-            "contest_note": null
-          }
-        ],
-        "status": "active",
-        "valid_from": "1996",
-        "valid_until": null,
-        "notes": "Applied to commercial speech restrictions, particularly those claimed to protect consumers. Courts must take special care when evaluating paternalistic restrictions on truthful commercial speech."
       },
       {
         "@type": "DoctrinalTest",
@@ -37178,19 +36972,6 @@
       "notes": "BE&K addresses scope of Petition Clause protection for retaliatory litigation"
     },
     {
-      "id": "alden_establishes_state_sovereign_immunity",
-      "source_id": "alden_v_maine_1999",
-      "target_id": "state_sovereign_immunity",
-      "edge_type": "ESTABLISHES",
-      "valid_from": "1999-06-23",
-      "valid_until": null,
-      "jurisdiction": [
-        "federal",
-        "state"
-      ],
-      "notes": "Alden established that states retain sovereign immunity in their own courts, extending the doctrine beyond federal court."
-    },
-    {
       "id": "benton_applies_concurrent_sentence_doctrine",
       "source_id": "benton_v_maryland_1969",
       "target_id": "concurrent_sentence_doctrine",
@@ -38208,19 +37989,6 @@
       "notes": "The Court established that compelled speech doctrine applies to public accommodations law enforcement, prohibiting states from compelling expressive services that convey messages contrary to the service provider's beliefs."
     },
     {
-      "id": "303_creative_establishes_expressive_design_speech",
-      "source_id": "303_creative_llc_v_elenis_2023",
-      "target_id": "expressive_design_speech",
-      "edge_type": "ESTABLISHES",
-      "valid_from": "2023-06-30",
-      "valid_until": null,
-      "jurisdiction": [
-        "federal",
-        "state"
-      ],
-      "notes": "The Court established that custom website design for weddings constitutes protected First Amendment speech."
-    },
-    {
       "id": "tanzin_establishes_rfra_remedy_doctrine",
       "source_id": "tanzin_v_tanvir_2020",
       "target_id": "rfra_remedy_doctrine",
@@ -38285,32 +38053,6 @@
         "state"
       ],
       "notes": "The plurality opinion articulated the neutrality principle as a framework for analyzing Establishment Clause challenges to neutral aid programs."
-    },
-    {
-      "id": "american_legion_establishes_longstanding_monument_doctrine",
-      "source_id": "american_legion_v_american_humanist_association_2019",
-      "target_id": "establishment_clause_longstanding_monument_doctrine",
-      "edge_type": "ESTABLISHES",
-      "valid_from": "2019-06-20",
-      "valid_until": null,
-      "jurisdiction": [
-        "federal",
-        "state"
-      ],
-      "notes": "American Legion established the doctrine that longstanding religious monuments receive different Establishment Clause treatment than newly erected ones."
-    },
-    {
-      "id": "american_legion_establishes_historical_practice_doctrine",
-      "source_id": "american_legion_v_american_humanist_association_2019",
-      "target_id": "establishment_clause_historical_practice_doctrine",
-      "edge_type": "ESTABLISHES",
-      "valid_from": "2019-06-20",
-      "valid_until": null,
-      "jurisdiction": [
-        "federal",
-        "state"
-      ],
-      "notes": "American Legion established the doctrine that historical practice and tradition guide Establishment Clause analysis, moving away from the Lemon test framework."
     },
     {
       "id": "carson_establishes_free_exercise_nondiscrimination",
@@ -38589,19 +38331,6 @@
         "state"
       ],
       "notes": "The Court applied and clarified the Takings Clause doctrine by rejecting categorical rules for temporary moratoria."
-    },
-    {
-      "id": "arkansas_game_fish_establishes_takings_multifactor_test",
-      "source_id": "arkansas_game_and_fish_commission_v_united_states_2012",
-      "target_id": "takings_multifactor_test",
-      "edge_type": "ESTABLISHES",
-      "valid_from": "2012-01-01",
-      "valid_until": null,
-      "jurisdiction": [
-        "federal",
-        "state"
-      ],
-      "notes": "The Court established the multifactor balancing test for Fifth Amendment takings claims, rejecting categorical rules based on permanence."
     },
     {
       "id": "arkansas_game_fish_applies_takings_clause_doctrine",
@@ -39613,32 +39342,6 @@
       "notes": "Cox v. Louisiana applies the vagueness doctrine to invalidate Louisiana's disturbing the peace statute and the unbridled discretion in the obstructing public passages statute."
     },
     {
-      "id": "clark_establishes_symbolic_conduct_doctrine",
-      "source_id": "clark_v_community_for_creative_non_violence_1984",
-      "target_id": "symbolic_conduct_doctrine",
-      "edge_type": "ESTABLISHES",
-      "valid_from": "1984-06-29",
-      "valid_until": null,
-      "jurisdiction": [
-        "federal",
-        "state"
-      ],
-      "notes": "Clark v. Community for Creative Non-Violence established the symbolic conduct doctrine as the framework for analyzing First Amendment protection of non-verbal expressive conduct."
-    },
-    {
-      "id": "clark_establishes_clark_symbolic_conduct_test",
-      "source_id": "clark_v_community_for_creative_non_violence_1984",
-      "target_id": "clark_symbolic_conduct_test",
-      "edge_type": "ESTABLISHES",
-      "valid_from": "1984-06-29",
-      "valid_until": null,
-      "jurisdiction": [
-        "federal",
-        "state"
-      ],
-      "notes": "Clark v. Community for Creative Non-Violence established the test for determining whether non-verbal conduct qualifies for First Amendment protection and whether government regulations of such conduct are constitutional."
-    },
-    {
       "id": "frisby_establishes_residential_privacy_doctrine",
       "source_id": "frisby_v_schultz_1988",
       "target_id": "residential_privacy_doctrine",
@@ -39938,32 +39641,6 @@
       "notes": "The Court reaffirmed the constitutional right to abortion before viability as the foundational right against which the Texas regulations were measured."
     },
     {
-      "id": "miller_establishes_miller_racial_gerrymandering_test",
-      "source_id": "miller_v_johnson_1995",
-      "target_id": "miller_racial_gerrymandering_test",
-      "edge_type": "ESTABLISHES",
-      "valid_from": "1995-06-29",
-      "valid_until": null,
-      "jurisdiction": [
-        "federal",
-        "state"
-      ],
-      "notes": "Miller v. Johnson establishes the racial gerrymandering test for evaluating reapportionment plans under the Equal Protection Clause."
-    },
-    {
-      "id": "miller_establishes_racial_gerrymandering_doctrine",
-      "source_id": "miller_v_johnson_1995",
-      "target_id": "racial_gerrymandering_doctrine",
-      "edge_type": "ESTABLISHES",
-      "valid_from": "1995-06-29",
-      "valid_until": null,
-      "jurisdiction": [
-        "federal",
-        "state"
-      ],
-      "notes": "Miller v. Johnson establishes the doctrine that bizarrely shaped districts designed to segregate voters by race are subject to strict scrutiny under equal protection."
-    },
-    {
       "id": "mistretta_applies_intelligible_principle_test",
       "source_id": "mistretta_v_united_states_1989",
       "target_id": "intelligible_principle_test",
@@ -40260,19 +39937,6 @@
         "state"
       ],
       "notes": "44 Liquormart established the doctrine that commercial speech receives First Amendment protection and that paternalistic restrictions on truthful commercial messages are disfavored."
-    },
-    {
-      "id": "44liquormart_establishes_44liquormart_commercial_speech_test",
-      "source_id": "44_liquormart_v_rhode_island_1996",
-      "target_id": "44liquormart_commercial_speech_test",
-      "edge_type": "ESTABLISHES",
-      "valid_from": "1996",
-      "valid_until": null,
-      "jurisdiction": [
-        "federal",
-        "state"
-      ],
-      "notes": "Justice Stevens' plurality opinion established the test for evaluating commercial speech restrictions."
     },
     {
       "id": "44liquormart_establishes_twenty_first_amendment_limits",
@@ -40709,6 +40373,57 @@
         "state"
       ],
       "notes": "Lukumi applied Smith's neutrality and general applicability requirements, finding the city's ordinances failed both"
+    },
+    {
+      "id": "arkansas_game_fish_applies_takings_multifactor_test",
+      "source_id": "arkansas_game_and_fish_commission_v_united_states_2012",
+      "target_id": "takings_multifactor_test",
+      "edge_type": "APPLIES",
+      "valid_from": "2012-12-04",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ],
+      "notes": "Applied existing multifactor takings test to temporary government-induced flooding"
+    },
+    {
+      "id": "american_legion_applies_longstanding_monument_doctrine",
+      "source_id": "american_legion_v_american_humanist_association_2019",
+      "target_id": "establishment_clause_longstanding_monument_doctrine",
+      "edge_type": "APPLIES",
+      "valid_from": "2019-06-20",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Applied longstanding monuments approach to uphold the Bladensburg Cross"
+    },
+    {
+      "id": "american_legion_applies_historical_practice_doctrine",
+      "source_id": "american_legion_v_american_humanist_association_2019",
+      "target_id": "establishment_clause_historical_practice_doctrine",
+      "edge_type": "APPLIES",
+      "valid_from": "2019-06-20",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Applied historical practice analysis to uphold the Bladensburg Cross"
+    },
+    {
+      "id": "penn_central_establishes_takings_multifactor_test",
+      "source_id": "penn_central_transportation_co_v_new_york_city_1978",
+      "target_id": "takings_multifactor_test",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1978-06-26",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Penn Central established the multifactor balancing test for regulatory takings"
     }
   ],
   "schema_issues_found": [
