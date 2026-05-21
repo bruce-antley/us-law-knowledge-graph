@@ -24013,8 +24013,8 @@
         "state"
       ],
       "citation": null,
-      "notes": "Tightened application of prongs 3 and 4. Rejected broad deference to legislative judgment. Direction: narrows (government-friendly application).",
-      "direction": "narrows"
+      "notes": "44 Liquormart rejected Posadas greater-includes-lesser rationale and clarified that complete bans on truthful commercial speech require particularly careful Central Hudson scrutiny",
+      "direction": "clarifies"
     },
     {
       "id": "lorillard_applies_central_hudson",
@@ -24340,7 +24340,7 @@
       ],
       "citation": null,
       "notes": "Direction: clarifies. Counterman resolved the circuit split on the mens rea standard for true threats, settling that recklessness is the constitutional floor. The true threats category itself was established earlier (Virginia v. Black, 2003; R.A.V., 1992) \u2014 Counterman clarified the mental state element rather than creating the category. SCHEMA ISSUE C: The true_threats_doctrine node has valid_from: 2023 because that's when the current formulation became operative. But the category predates Counterman by decades. The ESTABLISHES edge for the category (from Virginia v. Black or R.A.V.) is missing \u2014 those cases are out of scope. Same cross-slice dependency problem as Issue B.",
-      "direction": "clarifies"
+      "direction": "expands"
     },
     {
       "id": "counterman_establishes_true_threats_test",
@@ -24610,21 +24610,6 @@
       "notes": null
     },
     {
-      "id": "alexander_modifies_prior_restraint_doctrine",
-      "source_id": "alexander_v_united_states_1993",
-      "target_id": "prior_restraint_doctrine",
-      "edge_type": "MODIFIES",
-      "direction": "clarifies",
-      "valid_from": "1993-06-28",
-      "valid_until": null,
-      "jurisdiction": [
-        "federal",
-        "state"
-      ],
-      "citation": null,
-      "notes": "Clarifies: Alexander clarified the boundary between prior restraint and subsequent punishment, holding that RICO forfeiture of assets from past obscene speech is subsequent punishment not prior restraint. This clarifies the doctrine's scope without narrowing or expanding it. Changed from DISTINGUISHES (invalid Case->Doctrine) to MODIFIES(clarifies)."
-    },
-    {
       "id": "alexander_interprets_amendment_1",
       "source_id": "alexander_v_united_states_1993",
       "target_id": "amendment_1",
@@ -24671,7 +24656,7 @@
       "source_id": "madsen_v_womens_health_center_1994",
       "target_id": "prior_restraint_doctrine",
       "edge_type": "MODIFIES",
-      "direction": "clarifies",
+      "direction": "complicates",
       "valid_from": "1994-06-30",
       "valid_until": null,
       "jurisdiction": [
@@ -25401,21 +25386,6 @@
       "direction": "clarifies"
     },
     {
-      "id": "lukumi_modifies_smith_test",
-      "source_id": "church_of_the_lukumi_babalu_aye_v_city_of_hialeah_1993",
-      "target_id": "smith_test",
-      "edge_type": "MODIFIES",
-      "direction": "complicates",
-      "valid_from": "1993-06-11",
-      "valid_until": null,
-      "jurisdiction": [
-        "federal",
-        "state"
-      ],
-      "citation": null,
-      "notes": "Clarifies: Lukumi gave definitive content to what Smith meant by neutral and generally applicable \u2014 standards that Smith articulated but did not fully define. This is a classic clarification: it resolves ambiguity in the test without narrowing or expanding its scope."
-    },
-    {
       "id": "lukumi_interprets_amendment_1",
       "source_id": "church_of_the_lukumi_babalu_aye_v_city_of_hialeah_1993",
       "target_id": "amendment_1",
@@ -25648,7 +25618,7 @@
       "source_id": "lemon_v_kurtzman_1971",
       "target_id": "establishment_clause_doctrine",
       "edge_type": "MODIFIES",
-      "direction": "clarifies",
+      "direction": "expands",
       "valid_from": "1971-06-28",
       "valid_until": null,
       "jurisdiction": [
@@ -25855,7 +25825,7 @@
       "source_id": "kennedy_v_bremerton_school_district_2022",
       "target_id": "establishment_clause_doctrine",
       "edge_type": "MODIFIES",
-      "direction": "complicates",
+      "direction": "repudiates",
       "valid_from": "2022-06-27",
       "valid_until": null,
       "jurisdiction": [
@@ -26265,7 +26235,7 @@
       "source_id": "americans_for_prosperity_v_bonta_2021",
       "target_id": "compelled_disclosure_doctrine",
       "edge_type": "MODIFIES",
-      "direction": "expands",
+      "direction": "narrows",
       "valid_from": "2021-07-01",
       "valid_until": null,
       "jurisdiction": [
@@ -26631,7 +26601,7 @@
       "source_id": "texas_monthly_v_bullock_1989",
       "target_id": "establishment_aid_doctrine",
       "edge_type": "MODIFIES",
-      "direction": "clarifies",
+      "direction": "narrows",
       "valid_from": "1989-02-21",
       "valid_until": null,
       "jurisdiction": [
@@ -27681,13 +27651,13 @@
       "source_id": "turner_broadcasting_v_fcc_1994",
       "target_id": "broadcast_regulation_doctrine",
       "edge_type": "MODIFIES",
-      "direction": "clarifies",
+      "direction": "complicates",
       "valid_from": "1994-06-27",
       "valid_until": null,
       "jurisdiction": [
         "federal"
       ],
-      "notes": "Clarifies: Turner established that cable television is intermediate between broadcast (Red Lion) and print (Tornillo) \u2014 cable operators receive more First Amendment protection than broadcasters. Content-neutral structural regulations (like must-carry rules) are subject to intermediate scrutiny under O'Brien, not the deferential broadcast standard. Content-based regulations on cable receive strict scrutiny."
+      "notes": "Turner distinguished cable from broadcast and applied intermediate scrutiny to must-carry rules, complicating the broadcast regulation framework by creating a separate cable doctrine"
     },
     {
       "id": "turner_interprets_a1",
@@ -28284,7 +28254,7 @@
       "source_id": "city_of_los_angeles_v_alameda_books_2002",
       "target_id": "secondary_effects_doctrine",
       "edge_type": "MODIFIES",
-      "direction": "narrows",
+      "direction": "expands",
       "valid_from": "2002-05-13",
       "valid_until": null,
       "jurisdiction": [
@@ -28645,7 +28615,7 @@
       "source_id": "stanley_v_georgia_1969",
       "target_id": "obscenity_doctrine",
       "edge_type": "MODIFIES",
-      "direction": "clarifies",
+      "direction": "expands",
       "valid_from": "1969-04-07",
       "valid_until": null,
       "jurisdiction": [
@@ -29536,14 +29506,14 @@
       "source_id": "adarand_constructors_v_pena_1995",
       "target_id": "affirmative_action_doctrine",
       "edge_type": "MODIFIES",
-      "direction": "clarifies",
+      "direction": "narrows",
       "valid_from": "1995-06-12",
       "valid_until": null,
       "jurisdiction": [
         "federal",
         "state"
       ],
-      "notes": "Clarifies: Adarand settled that strict scrutiny applies to all racial classifications regardless of purpose or benefited group \u2014 establishing the consistency and congruence principles that govern affirmative action analysis."
+      "notes": "Adarand applied strict scrutiny to all federal racial classifications, overruling Metro Broadcasting and narrowing the affirmative action doctrine"
     },
     {
       "id": "adarand_applies_strict_scrutiny",
@@ -29675,7 +29645,7 @@
         "state"
       ],
       "notes": "Clarifies: Reed v. Reed was the breakthrough case invalidating a sex-based classification, opening the path toward heightened scrutiny for sex, but the quasi-suspect classification doctrine in its modern form was established in Craig v. Boren (1976).",
-      "direction": "clarifies"
+      "direction": "expands"
     },
     {
       "id": "reed_interprets_a14",
@@ -32125,14 +32095,14 @@
       "source_id": "arizona_v_hicks_1987",
       "target_id": "plain_view_doctrine",
       "edge_type": "MODIFIES",
-      "direction": "clarifies",
+      "direction": "narrows",
       "valid_from": "1987-03-03",
       "valid_until": null,
       "jurisdiction": [
         "federal",
         "state"
       ],
-      "notes": "Arizona v. Hicks clarified the plain view doctrine by establishing that probable cause is required for seizure, rejecting the application of the doctrine based on mere suspicion."
+      "notes": "Hicks held plain view doctrine requires probable cause even for minimally intrusive inspections, narrowing its scope"
     },
     {
       "id": "minnesota_v_dickerson_establishes_plain_feel_doctrine",
@@ -38294,14 +38264,14 @@
       "source_id": "agostini_v_felton_1997",
       "target_id": "establishment_clause_entanglement",
       "edge_type": "MODIFIES",
-      "direction": "clarifies",
+      "direction": "narrows",
       "valid_from": "1997-01-01",
       "valid_until": null,
       "jurisdiction": [
         "federal",
         "state"
       ],
-      "notes": "Agostini clarified that only excessive entanglement violates the Establishment Clause, rejecting the prior presumption that all church-state contact has a distinctly positive or negative impact on religion."
+      "notes": "Agostini overruled Aguilar and substantially modified the excessive entanglement analysis, narrowing when state aid to parochial schools constitutes entanglement"
     },
     {
       "id": "mitchell_v_helms_2000_establishes_establishment_clause_neutrality",
@@ -40714,6 +40684,31 @@
         "state"
       ],
       "notes": "McDonald applied selective incorporation to hold the Second Amendment applies to the states"
+    },
+    {
+      "id": "alexander_applies_prior_restraint_doctrine",
+      "source_id": "alexander_v_united_states_1993",
+      "target_id": "prior_restraint_doctrine",
+      "edge_type": "APPLIES",
+      "valid_from": "1993-06-28",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ],
+      "notes": "Alexander applied prior restraint doctrine to hold RICO forfeiture is not a prior restraint \u2014 subsequent punishment, not restriction on future speech"
+    },
+    {
+      "id": "lukumi_applies_smith_test",
+      "source_id": "church_of_the_lukumi_babalu_aye_v_city_of_hialeah_1993",
+      "target_id": "smith_test",
+      "edge_type": "APPLIES",
+      "valid_from": "1993-06-11",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Lukumi applied Smith's neutrality and general applicability requirements, finding the city's ordinances failed both"
     }
   ],
   "schema_issues_found": [
