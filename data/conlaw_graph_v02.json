@@ -6635,7 +6635,7 @@
         "holding_type": "affirmative",
         "majority_author": "Powell",
         "per_curiam": false,
-        "vote": "5-4",
+        "vote": "7-2",
         "opinions": [
           {
             "type": "dissent",
@@ -7210,7 +7210,7 @@
         "holding_type": "affirmative",
         "majority_author": "Douglas",
         "per_curiam": false,
-        "vote": "9-0",
+        "vote": "7-0",
         "opinions": [],
         "status": "good_law",
         "precedential_weight": "binding",
@@ -7627,7 +7627,7 @@
         "holding_type": "affirmative",
         "majority_author": "O'Connor",
         "per_curiam": false,
-        "vote": "6-3",
+        "vote": "7-2",
         "opinions": [
           {
             "type": "dissent",
@@ -12088,7 +12088,7 @@
         "holding_type": "affirmative",
         "majority_author": "Burger",
         "per_curiam": false,
-        "vote": "9-0",
+        "vote": "7-0",
         "status": "good_law",
         "precedential_weight": "binding",
         "valid_from": "1972-02-24",
@@ -12188,7 +12188,7 @@
         "holding_type": "affirmative",
         "majority_author": "Blackmun",
         "per_curiam": false,
-        "vote": "6-3",
+        "vote": "7-2",
         "status": "good_law",
         "precedential_weight": "binding",
         "valid_from": "1992-06-18",
@@ -13339,7 +13339,7 @@
         "holding_type": "affirmative",
         "majority_author": "Powell",
         "per_curiam": false,
-        "vote": "7-1",
+        "vote": "5-3",
         "status": "good_law",
         "precedential_weight": "binding",
         "valid_from": "1977-06-28",
