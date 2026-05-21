@@ -17,8 +17,8 @@
     "created": "2026-03-15",
     "status": "draft",
     "schema_version": "0.5",
-    "node_count": 907,
-    "edge_count": 1315,
+    "node_count": 906,
+    "edge_count": 1316,
     "schema_issue_count": 41,
     "fixes_applied": [
       "FIX 1: ConstitutionalProvision labels changed to citation form (amendment_1, amendment_14_section_1) to disambiguate from Area nodes with same common-name labels",
@@ -1227,7 +1227,7 @@
         ],
         "status": "active",
         "valid_from": "1937-01-01",
-        "valid_until": null,
+        "valid_until": "2005-03-01",
         "notes": "This doctrine represents the Court's selective incorporation approach, distinguishing between fundamental rights that apply to the states and procedural protections that do not. The test asks whether a right is 'of the very essence of a scheme of ordered liberty' and whether it is 'a principle of justice so rooted in the traditions and conscience of our people as to be ranked as fundamental.'"
       },
       {
@@ -1405,7 +1405,7 @@
         ],
         "status": "active",
         "valid_from": "1949-06-27",
-        "valid_until": null,
+        "valid_until": "1961-06-19",
         "notes": "Wolf established that the Fourth Amendment's core protection is incorporated, but left open the question of what remedies states must employ to enforce this right."
       },
       {
@@ -1420,7 +1420,7 @@
         ],
         "status": "active",
         "valid_from": "1949-06-27",
-        "valid_until": null,
+        "valid_until": "1961-06-19",
         "notes": "This doctrine permits federalism-based variation in enforcement mechanisms for incorporated rights, distinguishing between the right itself and the remedy for its violation."
       },
       {
@@ -3430,7 +3430,7 @@
         ],
         "status": "active",
         "valid_from": "1971-06-28",
-        "valid_until": null,
+        "valid_until": "2022-06-27",
         "notes": "Established in Lemon v. Kurtzman as a key component of Establishment Clause analysis."
       },
       {
@@ -3521,21 +3521,6 @@
         "valid_from": "1986",
         "valid_until": null,
         "notes": "Established in Bethel School District v. Fraser as a limitation on student First Amendment rights in school settings."
-      },
-      {
-        "@type": "Doctrine",
-        "id": "right_to_counsel",
-        "label": "Right to Counsel",
-        "description": "The constitutional right of a criminal defendant to have legal representation in criminal proceedings.",
-        "area_id": "criminal_procedure",
-        "jurisdiction": [
-          "federal",
-          "state"
-        ],
-        "status": "active",
-        "valid_from": "1942-06-01",
-        "valid_until": null,
-        "notes": "Established in Betts v. Brady as a case-by-case right dependent on circumstances. Later expanded to an absolute right in all felony cases by Gideon v. Wainwright (1963)."
       },
       {
         "@type": "Doctrine",
@@ -6777,7 +6762,7 @@
         "holding_type": "affirmative",
         "majority_author": "Burger",
         "per_curiam": false,
-        "vote": "6-1",
+        "vote": "7-0",
         "opinions": [
           {
             "type": "concurrence",
@@ -11977,7 +11962,7 @@
         "procedural_disposition": "reversed",
         "holding": "The Federal Sentencing Guidelines as written violate the Sixth Amendment under Blakely v. Washington because they require judges to find facts that increase sentences beyond the maximum permitted by the jury verdict alone; as a remedy, the mandatory provisions of the Guidelines are severed and excised, making the Guidelines advisory.",
         "holding_type": "affirmative",
-        "majority_author": "Stevens",
+        "majority_author": "Breyer",
         "per_curiam": false,
         "vote": "5-4",
         "status": "good_law",
@@ -12153,7 +12138,7 @@
         "holding_type": "affirmative",
         "majority_author": "Powell",
         "per_curiam": false,
-        "vote": "5-3",
+        "vote": "8-0",
         "status": "good_law",
         "precedential_weight": "binding",
         "valid_from": "1972-12-06",
@@ -12332,7 +12317,7 @@
         "holding_type": "by_negation",
         "majority_author": "White",
         "per_curiam": false,
-        "vote": "6-3",
+        "vote": "9-0",
         "status": "good_law",
         "precedential_weight": "binding",
         "valid_from": "1993-06-07",
@@ -15029,7 +15014,7 @@
         "court_level": "scotus",
         "court_name": "Supreme Court of the United States",
         "binding_scope": "federal_all",
-        "decided_date": "1983-01-01",
+        "decided_date": "1984-07-05",
         "opinion_form": "signed_majority",
         "procedural_disposition": "reversed",
         "holding": "The exclusionary rule does not apply in civil deportation proceedings because the body or identity of a defendant is not suppressible as fruit of an illegal arrest, and the deterrent purpose of the exclusionary rule is not served in the deportation context where the INS has comprehensive internal oversight and the social cost of releasing an alien in continued violation of law outweighs minimal benefits.",
@@ -15039,7 +15024,7 @@
         "vote": "5-4",
         "status": "good_law",
         "precedential_weight": "binding",
-        "valid_from": "1983-01-01",
+        "valid_from": "1984-07-05",
         "valid_until": null,
         "opinions": [],
         "notes": "The case involved two respondents (Lopez-Mendoza and Sandoval-Sanchez) in separate deportation proceedings. The Court held that deportation proceedings are civil actions and the exclusionary rule does not apply. The majority author is not identified in the source text."
@@ -15418,9 +15403,9 @@
         "procedural_disposition": "reversed",
         "holding": "A defendant has standing to challenge the constitutionality of a federal statute on the ground that it violates the Tenth Amendment and interferes with powers reserved to the States.",
         "holding_type": "affirmative",
-        "majority_author": "Kennedy",
+        "majority_author": "Roberts",
         "per_curiam": false,
-        "vote": "9-0",
+        "vote": "8-1",
         "status": "good_law",
         "precedential_weight": "binding",
         "valid_from": "2010-01-01",
@@ -18077,7 +18062,7 @@
         "procedural_disposition": "reversed",
         "holding": "In a defamation action brought by a private figure against a newspaper publisher concerning matters of public concern, the private-figure plaintiff bears the burden of proving that the statements at issue are false, not the defendant.",
         "holding_type": "affirmative",
-        "majority_author": "White",
+        "majority_author": "O'Connor",
         "per_curiam": false,
         "vote": null,
         "status": "good_law",
@@ -18617,7 +18602,7 @@
         "procedural_disposition": "affirmed",
         "holding": "Random urinalysis drug testing of high school student athletes is reasonable under the Fourth Amendment when the school district has legitimate governmental interests in student safety and the intrusion on privacy is minimal, particularly given students' reduced expectation of privacy in school settings.",
         "holding_type": "affirmative",
-        "majority_author": "Thomas",
+        "majority_author": "Scalia",
         "per_curiam": false,
         "vote": "6-3",
         "status": "good_law",
@@ -37262,19 +37247,6 @@
       "notes": ""
     },
     {
-      "id": "betts_establishes_right_to_counsel",
-      "source_id": "betts_v_brady_1942",
-      "target_id": "right_to_counsel",
-      "edge_type": "ESTABLISHES",
-      "valid_from": "1942-06-01",
-      "valid_until": "1963-03-18",
-      "jurisdiction": [
-        "federal",
-        "state"
-      ],
-      "notes": "Betts established the right to counsel as a circumstance-dependent right, later superseded by Gideon's absolute right rule."
-    },
-    {
       "id": "borough_of_duryea_establishes_petition_clause_public_concern_doctrine",
       "source_id": "borough_of_duryea_v_guarnieri_2011",
       "target_id": "petition_clause_public_concern_doctrine",
@@ -37324,19 +37296,6 @@
         "state"
       ],
       "notes": "Branzburg applied and rejected the claimed reporter's privilege doctrine, holding no absolute privilege exists under the First Amendment."
-    },
-    {
-      "id": "brewer_applies_right_to_counsel",
-      "source_id": "brewer_v_williams_1977",
-      "target_id": "right_to_counsel",
-      "edge_type": "APPLIES",
-      "valid_from": "1977-03-23",
-      "valid_until": null,
-      "jurisdiction": [
-        "federal",
-        "state"
-      ],
-      "notes": "Brewer v. Williams establishes that statements obtained in violation of the right to counsel are inadmissible, even absent interrogation."
     },
     {
       "id": "cruzan_applies_right_to_refuse_medical_treatment",
@@ -40716,6 +40675,45 @@
         "state"
       ],
       "notes": "Dred Scott directly interpreted what became the basis for the 14th Amendment"
+    },
+    {
+      "id": "elstad_applies_miranda_rights_doctrine",
+      "source_id": "oregon_v_elstad_1985",
+      "target_id": "miranda_rights_doctrine",
+      "edge_type": "APPLIES",
+      "valid_from": "1985-03-04",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Elstad applied Miranda doctrine to hold unwarned statement does not taint subsequent warned confession"
+    },
+    {
+      "id": "duncan_establishes_selective_incorporation_doctrine",
+      "source_id": "duncan_v_louisiana_1968",
+      "target_id": "selective_incorporation_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1968-05-20",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Duncan formalized the modern selective incorporation framework that survived Palko"
+    },
+    {
+      "id": "mcdonald_applies_selective_incorporation_doctrine",
+      "source_id": "mcdonald_v_city_of_chicago_2010",
+      "target_id": "selective_incorporation_doctrine",
+      "edge_type": "APPLIES",
+      "valid_from": "2010-06-28",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "McDonald applied selective incorporation to hold the Second Amendment applies to the states"
     }
   ],
   "schema_issues_found": [
