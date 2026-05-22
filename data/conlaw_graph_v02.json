@@ -14773,7 +14773,7 @@
         "decided_date": "1983-01-01",
         "opinion_form": "signed_majority",
         "procedural_disposition": "reversed",
-        "holding": "The National Labor Relations Board may issue a cease-and-desist order to halt prosecution of a state-court civil suit brought by an employer to retaliate against employees for exercising federally protected labor rights without first finding that the suit lacks a reasonable basis in fact or law.",
+        "holding": "The National Labor Relations Board may not issue a cease-and-desist order to halt prosecution of a state-court civil suit brought by an employer, even if motivated by anti-union animus, unless the suit lacks a reasonable basis in fact or law. An employer retains the First Amendment right to petition courts, and the NLRB must first determine the suit is baseless before ordering it halted.",
         "holding_type": "affirmative",
         "majority_author": "White",
         "per_curiam": false,
@@ -14873,7 +14873,7 @@
         "decided_date": "1964-12-14",
         "opinion_form": "signed_majority",
         "procedural_disposition": "reversed",
-        "holding": "Title II of the Civil Rights Act of 1964 is constitutional as applied to restaurants and other public accommodations engaged in interstate commerce.",
+        "holding": "Title II of the Civil Rights Act of 1964 is constitutional as applied to hotels and motels that serve interstate travelers. Congress has broad power under the Commerce Clause to prohibit racial discrimination in public accommodations that affect interstate commerce, even if the discrimination is local in character.",
         "holding_type": "affirmative",
         "majority_author": "Clark",
         "per_curiam": false,
@@ -29176,18 +29176,6 @@
       ]
     },
     {
-      "id": "korematsu_interprets_a14",
-      "source_id": "korematsu_v_united_states_1944",
-      "target_id": "amendment_14_section_1",
-      "edge_type": "INTERPRETS",
-      "valid_from": "1944-12-18",
-      "valid_until": null,
-      "jurisdiction": [
-        "federal",
-        "state"
-      ]
-    },
-    {
       "id": "loving_applies_strict_scrutiny",
       "source_id": "loving_v_virginia_1967",
       "target_id": "strict_scrutiny_ep_test",
@@ -30295,32 +30283,6 @@
       ],
       "overrule_type": "explicit",
       "notes": "Dobbs explicitly overrules Planned Parenthood v. Casey, which had reaffirmed Roe's essential holding."
-    },
-    {
-      "id": "dobbs_applies_substantive_due_process",
-      "source_id": "dobbs_v_jackson_womens_health_organization_2022",
-      "target_id": "substantive_due_process_doctrine",
-      "edge_type": "APPLIES",
-      "valid_from": "2022-06-24",
-      "valid_until": null,
-      "jurisdiction": [
-        "federal",
-        "state"
-      ],
-      "notes": "Dobbs applies the substantive due process doctrine to determine whether abortion is a protected liberty interest, concluding that it is not deeply rooted in the Nation's history and tradition."
-    },
-    {
-      "id": "dobbs_applies_stare_decisis",
-      "source_id": "dobbs_v_jackson_womens_health_organization_2022",
-      "target_id": "stare_decisis_doctrine",
-      "edge_type": "APPLIES",
-      "valid_from": "2022-06-24",
-      "valid_until": null,
-      "jurisdiction": [
-        "federal",
-        "state"
-      ],
-      "notes": "Dobbs applies stare decisis principles to justify overruling Roe and Casey, identifying five factors that weigh in favor of overruling."
     },
     {
       "id": "dobbs_applies_rational_basis_review",
@@ -32628,19 +32590,6 @@
       "notes": "Lucas applied and extended Penn Central by establishing a categorical rule for total economic deprivation."
     },
     {
-      "id": "kelo_applies_takings_clause_public_use",
-      "source_id": "kelo_v_city_of_new_london_2005",
-      "target_id": "takings_clause_public_use",
-      "edge_type": "APPLIES",
-      "valid_from": "2005-06-23",
-      "valid_until": null,
-      "jurisdiction": [
-        "federal",
-        "state"
-      ],
-      "notes": "Kelo applies and interprets the takings clause doctrine by establishing that economic development qualifies as public use."
-    },
-    {
       "id": "kelo_modifies_takings_clause_doctrine",
       "source_id": "kelo_v_city_of_new_london_2005",
       "target_id": "takings_clause_doctrine",
@@ -32824,19 +32773,6 @@
         "state"
       ],
       "notes": "Granholm v. Heald established the principle that the 21st Amendment does not authorize state economic discrimination in violation of the dormant Commerce Clause."
-    },
-    {
-      "id": "seminole_tribe_applies_state_sovereign_immunity",
-      "source_id": "seminole_tribe_of_florida_v_florida_1996",
-      "target_id": "state_sovereign_immunity",
-      "edge_type": "APPLIES",
-      "valid_from": "1996-01-01",
-      "valid_until": null,
-      "jurisdiction": [
-        "federal",
-        "state"
-      ],
-      "notes": "The Court applied and reaffirmed the doctrine of state sovereign immunity under the Eleventh Amendment."
     },
     {
       "id": "seminole_tribe_establishes_congressional_abrogation",
@@ -38346,19 +38282,6 @@
       "notes": "The Court applied and clarified the Fifth Amendment Takings Clause by rejecting the categorical exception for temporary takings."
     },
     {
-      "id": "knick_applies_takings_clause_doctrine",
-      "source_id": "knick_v_township_of_scott_2019",
-      "target_id": "takings_clause_doctrine",
-      "edge_type": "APPLIES",
-      "valid_from": "2019-06-21",
-      "valid_until": null,
-      "jurisdiction": [
-        "federal",
-        "state"
-      ],
-      "notes": "Knick established that property owners may bring Fifth Amendment takings claims in federal court under \u00a7 1983 without exhausting state remedies, overruling the Williamson County requirement."
-    },
-    {
       "id": "city_philadelphia_applies_dormant_commerce",
       "source_id": "city_of_philadelphia_v_new_jersey_1978",
       "target_id": "dormant_commerce_clause_doctrine",
@@ -40298,19 +40221,6 @@
       ]
     },
     {
-      "id": "dred_scott_interprets_amendment_14",
-      "source_id": "dred_scott_v_sandford_1857",
-      "target_id": "amendment_14_section_1",
-      "edge_type": "INTERPRETS",
-      "valid_from": "1857-03-06",
-      "valid_until": null,
-      "jurisdiction": [
-        "federal",
-        "state"
-      ],
-      "notes": "Dred Scott directly interpreted what became the basis for the 14th Amendment"
-    },
-    {
       "id": "elstad_applies_miranda_rights_doctrine",
       "source_id": "oregon_v_elstad_1985",
       "target_id": "miranda_rights_doctrine",
@@ -40424,6 +40334,99 @@
         "state"
       ],
       "notes": "Duncan applied selective incorporation to incorporate the Sixth Amendment right to jury trial"
+    },
+    {
+      "id": "dred_scott_interprets_amendment_5",
+      "source_id": "dred_scott_v_sandford_1857",
+      "target_id": "amendment_5",
+      "edge_type": "INTERPRETS",
+      "valid_from": "1857-03-06",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ],
+      "notes": "Dred Scott interpreted the Fifth Amendment due process clause in holding that Congress lacked power to deprive slave owners of property"
+    },
+    {
+      "id": "korematsu_interprets_amendment_5_due_process",
+      "source_id": "korematsu_v_united_states_1944",
+      "target_id": "amendment_5_due_process",
+      "edge_type": "INTERPRETS",
+      "valid_from": "1944-12-18",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ],
+      "notes": "Korematsu challenged the internment order under the Fifth Amendment; the Court applied strict scrutiny under the due process clause"
+    },
+    {
+      "id": "dobbs_modifies_substantive_due_process",
+      "source_id": "dobbs_v_jackson_womens_health_organization_2022",
+      "target_id": "substantive_due_process_doctrine",
+      "edge_type": "MODIFIES",
+      "direction": "narrows",
+      "valid_from": "2022-06-24",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Dobbs eliminated SDP abortion right while leaving broader SDP doctrine intact"
+    },
+    {
+      "id": "dobbs_modifies_stare_decisis",
+      "source_id": "dobbs_v_jackson_womens_health_organization_2022",
+      "target_id": "stare_decisis_doctrine",
+      "edge_type": "MODIFIES",
+      "direction": "complicates",
+      "valid_from": "2022-06-24",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Dobbs extensively analyzed when stare decisis permits overruling prior decisions"
+    },
+    {
+      "id": "kelo_modifies_takings_clause_public_use",
+      "source_id": "kelo_v_city_of_new_london_2005",
+      "target_id": "takings_clause_public_use",
+      "edge_type": "MODIFIES",
+      "direction": "expands",
+      "valid_from": "2005-06-23",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Kelo expanded public use to include economic development takings"
+    },
+    {
+      "id": "knick_modifies_takings_clause_doctrine",
+      "source_id": "knick_v_township_of_scott_2019",
+      "target_id": "takings_clause_doctrine",
+      "edge_type": "MODIFIES",
+      "direction": "expands",
+      "valid_from": "2019-06-21",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Knick overruled Williamson County ripeness requirement, allowing direct federal court access"
+    },
+    {
+      "id": "seminole_tribe_establishes_state_sovereign_immunity",
+      "source_id": "seminole_tribe_of_florida_v_florida_1996",
+      "target_id": "state_sovereign_immunity",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1996-03-27",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Seminole Tribe established modern framework: Congress cannot abrogate state sovereign immunity using Article I powers"
     }
   ],
   "schema_issues_found": [
