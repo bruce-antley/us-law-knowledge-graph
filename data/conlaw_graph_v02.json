@@ -21725,7 +21725,7 @@
         "label": "Pickering Balancing Test",
         "description": "A two-step test for determining whether a public employee's speech is protected by the First Amendment. First, the court must determine whether the employee's speech addresses a matter of public concern. If so, the court must balance the employee's interest in commenting on matters of public concern against the government's interest as an employer in promoting efficiency of public services.",
         "area_id": "free_speech",
-        "source_case_id": "connick_v_myers_1983",
+        "source_case_id": "pickering_v_board_of_education_1968",
         "scrutiny_level": "balancing",
         "burden": "shared",
         "test_form": "threshold_then_conjunctive",
@@ -36170,19 +36170,6 @@
       "notes": "Connick v. Myers applied the public employee speech doctrine established in Pickering v. Board of Education."
     },
     {
-      "id": "connick_establishes_pickering_balancing_test",
-      "source_id": "connick_v_myers_1983",
-      "target_id": "pickering_balancing_test",
-      "edge_type": "ESTABLISHES",
-      "valid_from": "1983-01-01",
-      "valid_until": null,
-      "jurisdiction": [
-        "federal",
-        "state"
-      ],
-      "notes": "Connick v. Myers refined and clarified the Pickering balancing test by establishing that speech on internal office matters does not constitute speech on matters of public concern."
-    },
-    {
       "id": "virginia_black_establishes_true_threats",
       "source_id": "virginia_v_black_2003",
       "target_id": "true_threats_doctrine",
@@ -37551,19 +37538,6 @@
         "federal"
       ],
       "notes": "The doctrine of sovereign immunity abrogation via federal war powers is governed by the structural waiver test."
-    },
-    {
-      "id": "united_haulers_establishes_dormant_commerce_clause_balancing_test",
-      "source_id": "united_haulers_v_oneida_herkimer_2007",
-      "target_id": "dormant_commerce_clause_balancing_test",
-      "edge_type": "ESTABLISHES",
-      "valid_from": "2007-01-01",
-      "valid_until": null,
-      "jurisdiction": [
-        "federal",
-        "state"
-      ],
-      "notes": "The Court established a balancing test for evaluating nondiscriminatory local ordinances under the dormant Commerce Clause."
     },
     {
       "id": "united_states_v_carolene_products_1938_applies_rational_basis_review",
@@ -40427,6 +40401,30 @@
         "state"
       ],
       "notes": "Seminole Tribe established modern framework: Congress cannot abrogate state sovereign immunity using Article I powers"
+    },
+    {
+      "id": "pickering_establishes_pickering_balancing_test",
+      "source_id": "pickering_v_board_of_education_1968",
+      "target_id": "pickering_balancing_test",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1968-06-03",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
+    },
+    {
+      "id": "united_haulers_establishes_dormant_commerce_clause_balancing_test",
+      "source_id": "united_haulers_v_oneida_herkimer_2007",
+      "target_id": "dormant_commerce_clause_balancing_test",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2007-04-30",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ]
     }
   ],
   "schema_issues_found": [
