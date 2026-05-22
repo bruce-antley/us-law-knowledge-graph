@@ -1,66 +1,67 @@
 # US Law Knowledge Graph — Session Journal
-## 2026-05-22 — Full Audit Complete, Roadmap Defined
+## 2026-05-22 — Full Audit Complete, Orchestrator Built, Folder Cleaned
 
 ---
 
-## GRAPH STATE AT END OF AUDIT
+## GRAPH STATE AT END OF SESSION
 
-- **898 nodes · 1310 edges · 0 validation errors · 0 Ring 1 warnings**
-- GitHub: github.com/bruce-antley/us-law-knowledge-graph (main, current)
+- **898 nodes · 1310 edges · 0 validation errors · 0 Ring 1 errors · 1 warning (C12)**
+- GitHub: committed 0006d68 — "Full Ring 3 audit complete"
 - Neo4j AuraDB: 898/1310 confirmed
-- Syllabus corpus: 446 files, 360/366 active cases (98%)
-- Ring 2: 4 warnings — all documented deliberate decisions (Gibbons, NLRB, Braunfeld, McConnell)
+- Ring 2: 4 warnings — all documented deliberate decisions
+- Ring 1 C12 warning: 6 good-law cases with zero outgoing edges (pre-existing, deferred)
 
 ---
 
 ## FULL AUDIT SUMMARY
 
 ### Ring 1 — Deterministic (COMPLETE, CLEAN)
-13 checks, 2 seconds, 0 errors, 0 warnings. Run before every commit.
+13 checks, 2 seconds, 0 errors, 0 warnings (except C12 pre-existing).
 
 ### Ring 2 — SCDB Reference (COMPLETE, CLEAN)
-92% SCDB match rate. 4 remaining warnings are deliberate decisions:
-- Gibbons 7-0 vs 5-0: early Court attendance convention, keeping 7-0
-- NLRB 5-4 vs 9-0: Legacy DB error, our 5-4 is correct
-- Braunfeld 6-3 vs 5-4: outcome vote vs plurality coalition, keeping 6-3
-- McConnell: co-authored opinion, SCDB records Stevens only
+92% match rate. 4 deliberate decisions retained:
+- Gibbons 7-0 vs 5-0: early Court attendance convention
+- NLRB 5-4 vs 9-0: Legacy DB error, 5-4 is correct
+- Braunfeld 6-3 vs 5-4: outcome vote vs plurality coalition
+- McConnell: co-authored opinion, keeping "Stevens and O'Connor"
 
 ### Ring 3 — LLM Edge Audit (COMPLETE)
-Total real fixes applied across all checks: ~220+ fixes
+~220 real fixes across all check types.
 
-| Check | Edges | Real fixes | Notes |
-|-------|-------|-----------|-------|
-| modifies_dir | 114 | 16 | Kennedy repudiates, Stanley expands, Reed expands, etc. |
-| modifies_soft | 95 | 0 | All false positives — doctrines correctly MODIFIES |
-| overrules | 19 | 0 | All false positives — Oyez syllabi don't quote overruling language |
-| establishes | 355 | ~118 | 77 ESTABLISHES→APPLIES, 35 artifacts deleted, 6 ESTABLISHES→MODIFIES |
-| applies_real+under | 562 | ~79 | Dobbs, Knick, Kelo, Seminole Tribe among critical fixes |
+| Check | Edges | Real fixes | Key findings |
+|-------|-------|-----------|--------------|
+| modifies_dir | 114 | 16 | Kennedy repudiates, Stanley/Reed expand, etc. |
+| modifies_soft | 95 | 0 | All false positives — doctrines correctly typed |
+| overrules | 19 | 0 | Oyez syllabi don't quote overruling language |
+| establishes | 355 | ~118 | 77 ESTABLISHES→APPLIES, 35 artifacts deleted |
+| applies_real+under | 562 | ~79 | Dobbs, Knick, Kelo, Seminole Tribe fixed |
 | interprets | 165 | 2 | Dred Scott→5th Amend, Korematsu→5th Amend |
 | holding | 364 | 2 | Heart of Atlanta (restaurants error), Bill Johnson's (reversed logic) |
 
-**Key findings:**
-- Builder blindness confirmed at scale: pipeline creates ESTABLISHES edges in isolation
-- 35 pipeline artifact nodes deleted (self-named single-connection doctrine nodes)
-- Critical holding errors found: Heart of Atlanta conflated with Katzenbach companion case
-- Dobbs/Knick/Kelo correctly reclassified from APPLIES to MODIFIES
-
 ---
 
-## PIPELINE FOLDER STRUCTURE (CLEANED UP)
+## PIPELINE FOLDER STRUCTURE (CLEANED)
 
 ```
 ~/Documents/lexgraph_pipeline/
   core/        — elsa.py, validate.py, neo4j_import.py, run_pipeline.py, qa_*.py
-  audit/       — ring1-3 scripts, audit_orchestrator.py, apply_fixes.py
+  audit/       — ring1-3 scripts, audit_orchestrator.py, apply_fixes.py (patched)
   data/        — case_registry.json, .env
-  reports/     — all run output files (82 files)
-  syllabi/     — 446 syllabus files
-  archive/     — old batch files, builder prompts, pipeline_artifacts/
+  reports/     — all run output files
+  syllabi/     — 446 files
+  archive/     — pipeline_artifacts/ (drafts, needs_attention, review_queue, old batches)
 ```
 
 Standard session startup:
 ```bash
 cd ~/Documents/lexgraph_pipeline && export $(cat .env | xargs)
+```
+
+Neo4j reload (no --password needed after patch):
+```bash
+echo "yes" | caffeinate -i /Users/bruceantley/anaconda3/envs/fastai310/bin/python \
+  core/neo4j_import.py \
+  --file ~/Downloads/us-law-knowledge-graph/data/conlaw_graph_v02.json --wipe
 ```
 
 ---
@@ -69,108 +70,115 @@ cd ~/Documents/lexgraph_pipeline && export $(cat .env | xargs)
 
 Files: `audit/audit_orchestrator.py`, `audit/apply_fixes.py`
 
-Current status: working but needs improvement for full automation.
+### apply_fixes.py — 4 bugs fixed this session:
+1. **ID matching bug** — now matches on edge_id alone in Neo4j (not source+target ID)
+   This was the root cause of ~32 errors per apply run and all post-run cleanup work
+2. **Duplicate prevention** — tracks applied_edge_ids to skip duplicates in same run
+3. **Pre-write deduplication** — deduplicates edges in JSON before writing
+4. **actual_src/actual_tgt** — uses actual IDs from Neo4j query, not stale apply queue IDs
 
-**Known issues:**
-1. apply_fixes.py ID matching bug — matches on source_id/target_id but stale IDs from
-   post-dedup merges cause Neo4j errors. Workaround: full reload after apply.
-   Fix: match on edge_id first, fall back to source+target+type.
-
-2. Confidence thresholds too conservative — flat 0.85 puts too much in human review.
-   Should be check-type specific:
-   - ESTABLISHES→APPLIES: 0.78
-   - Direction fixes: 0.80
-   - DELETE_ARTIFACT: 0.85
-   - Holding changes: 0.90
-   - OVERRULES changes: 0.92
-
-3. Orchestrator system prompt too thin — Sonnet gets cold prompts without schema context,
-   causing hedging and low confidence on routine decisions.
-   Fix: legal reasoning layer (Kingsfield) as system prompt.
-
-**Target state:** One command → full audit → apply all high-confidence fixes → 
-human exceptions file with <20 items → respond → done.
+### Remaining orchestrator issues to address in automation session:
+- Check-type specific confidence thresholds (currently flat 0.85 — too conservative)
+  Target: 0.78 ESTABLISHES→APPLIES, 0.80 direction, 0.85 DELETE_ARTIFACT, 0.90 holding
+- run_audit_cycle.py — single command for full audit cycle
+- Orchestrator system prompt needs Kingsfield context to raise confidence on clear decisions
 
 ---
 
-## INTELLECTUAL DISCOVERIES
+## INTELLECTUAL DEVELOPMENTS
 
-### The GEB Moment
-Graph-assisted answer to "how did Central Hudson modify prior commercial speech doctrine"
-demonstrated ontology introspection — the system identified a missing edge type
-("operationalizes") while answering the research question. This is recursive symbolic
-reasoning: traversing the graph, hitting a representational wall, reflecting on the
-ontology itself.
+### The GEB Moment (central insight of this session)
+Graph-assisted answer to Central Hudson query demonstrated ontology introspection:
+the system identified a missing "operationalizes" edge type while answering a
+research question. This is the LexGraph thesis demonstrated empirically.
 
-This is the LexGraph thesis demonstrated empirically: not just better retrieval, but
-structurally constrained legal reasoning that produces qualitatively different answers.
+ChatGPT analysis: "This may be the first example where I'd say I can clearly see the
+distinctive reasoning contribution of the graph. Not retrieval enhancement or citation
+enrichment, but semantic role enforcement, doctrinal topology awareness, and
+ontology-sensitive reasoning."
 
-### The Kingsfield Connection
-The audit legal reasoning layer and Kingsfield are the same thing. Both require:
-- Edge semantics with examples
-- What absence of edges means
-- Pipeline artifact recognition patterns
-- False positive patterns by check type
-- Schema decision rules
+The graph answer was not merely more detailed. It was structurally constrained by
+explicit doctrinal relationships — exactly the LexGraph thesis.
 
-One document, two modes: research mode and audit mode.
+### Kingsfield = Audit Layer
+The audit legal reasoning layer and Kingsfield research interface are the same document
+in two modes. Both require identical knowledge: edge semantics, absence-of-edge meaning,
+pipeline artifact patterns, false positive patterns, schema decision rules.
+Build once, use in two modes.
 
 ### Builder Blindness
-Root cause of ~118 ESTABLISHES errors: builder generates each case in isolation without
-knowing what doctrines already exist in the graph. Fix for v0.5: inject existing
-doctrine/test node list into builder prompt before generating edges.
+Root cause of ~118 ESTABLISHES errors confirmed at scale. Fix for v0.5 builder:
+inject existing doctrine/test node list into builder prompt before generating edges.
+
+---
+
+## VIABILITY ASSESSMENT FRAMEWORK
+
+### Graph-only viability (before Kingsfield)
+
+| Dimension | Status | Notes |
+|-----------|--------|-------|
+| Structural integrity | ✅ Pass | Ring 1 clean |
+| Edge type accuracy | ✅ Pass | 220+ fixes applied, ~5% residual |
+| Holding text accuracy | ✅ Pass | 0.5% error rate (2/364) |
+| Prong quality | ❓ Not audited | Ring 4 needed |
+| Coverage (1A areas) | ✅ Pass | Treatise depth |
+| Wrong-syllabus cases | ❓ ~15 unaudited | C14 + spot-check needed |
+| Cross-area consistency | ❓ Not checked | Cypher audit needed |
+
+### Four remaining viability gaps:
+1. **C14 check** — add wrong-syllabus detection to Ring 1 (deterministic)
+2. **Cross-area consistency** — Cypher queries, one-time audit
+3. **Prong quality** — Ring 4 LLM binary (~$2, 30 min, runs on DoctrinalTest additions)
+4. **Wrong-syllabus spot-check** — manual review of ~15 cases
 
 ---
 
 ## ROADMAP
 
-### Immediate (next session)
-1. Finish Ring 3 full run if not complete (applies_real+under still running)
-2. Run through orchestrator, apply fixes
-3. Final Ring 1 validation → commit
+### Next session (Priority 1): Audit automation
+Build `run_audit_cycle.py` — single command for full audit:
+Ring 1 → Ring 2 → Ring 3 → orchestrate → apply → validate → reload → commit
+Human touchpoint: exceptions file only (target <20 items)
 
-### Phase 1: Con Law Viability Assessment
-Structured evaluation before exposing the graph:
-- Coverage: do we have the cases a con law practitioner expects?
-- Accuracy: what did the full audit find and fix?
-- Doctrinal completeness: are all 8 First Amendment areas fully modeled?
-- Decision: is this ready for a demo?
+### Session after (Priority 2): Viability gaps
+C14 + cross-area consistency + prong Ring 4 + wrong-syllabus spot-check
+Closes all foundation gaps before building on top
 
-### Phase 2: Kingsfield — Legal Reasoning Layer
-One system prompt / document that encodes:
-- Edge semantics with concrete examples from the audit
-- What absence of relationships means (the Central Hudson insight)
-- Traversal patterns for different question types
-- Schema decision rules (same rules as audit orchestrator)
-- Two modes: research and audit
+### Priority 3: Kingsfield
+One document (~500-800 lines), two modes:
 
-Build Kingsfield first — it powers both the demo and the autonomous audit.
+Section 1: Graph identity and purpose
+Section 2: Node types with semantics
+Section 3: Edge semantics with examples — the intellectual core
+  - ESTABLISHES vs APPLIES vs MODIFIES distinction with concrete examples
+  - What absence of each edge type means
+  - OVERRULES explicit vs implicit vs effective
+  - INTELLECTUALLY_PRECEDES for non-binding influence
+Section 4: What absence means (the Central Hudson insight formalized)
+Section 5: Traversal patterns by question type
+Section 6: Schema limitations to disclose
+Section 7: Audit mode rules (same knowledge, different output)
 
-### Phase 3: Exposure via MCP
-With Kingsfield in place, wrap in MCP server exposing high-level tools:
-- `research_doctrine(question)` — structured legal research
-- `trace_case_lineage(case_id)` — intellectual and doctrinal lineage
-- `check_good_law(case_id)` — current status with overruling chain
-- `explain_test(test_id)` — test prongs with case applications
+Build order: Sections 1-4 first (semantics, requires careful drafting).
+Test: rerun Central Hudson query with Kingsfield as system prompt.
+Success criterion: answer is more precise, more confident, correctly reasons
+about absence of MODIFIES edge.
 
-Option A: Extend existing Neo4j MCP server (good enough for internal use)
-Option B: Custom MCP server with abstracted tools (better for research interface)
+### Priority 4: MCP exposure
+With Kingsfield in place, wrap in MCP server.
+Tools: research_doctrine, trace_case_lineage, check_good_law, explain_test
+Option A: extend existing Neo4j MCP (good enough internally)
+Option B: custom MCP with abstracted tools (better for research interface)
+Decision: defer until Kingsfield is proven
 
-### Phase 4: Demo and Bang On It
-- Internal demo against con law questions
-- Benchmark comparisons (raw LLM vs graph-assisted)
-- Identify gaps before public exposure
-- Decision: expand to Equal Protection, or focus on First Amendment depth?
-
----
-
-## KEY ARCHITECTURAL DECISIONS
-
-- SCDB files live in ~/Downloads/ (not in pipeline — too large for git)
-- Neo4j reload required after any apply_fixes run (until ID matching bug fixed)
-- JSON is source of truth; Neo4j is synchronized from JSON
-- Kingsfield is one system prompt, not separate audit/research documents
-- MCP exposure before Equal Protection expansion
+### Priority 5: Demo
+Internal first. Benchmark questions:
+- Lineage: "Trace the clear and present danger test from Schenck to Brandenburg"
+- Current law: "What is the governing standard for commercial speech restrictions?"
+- Modification history: "How has Kennedy v. Bremerton changed Establishment Clause doctrine?"
+- Good law: "Is Lemon v. Kurtzman still good law?"
+- Failure mode test: ask about cases not in the graph — does it correctly say so?
 
 ---
 
@@ -178,8 +186,50 @@ Option B: Custom MCP server with abstracted tools (better for research interface
 
 | System | Usage | Cost |
 |--------|-------|------|
-| NVIDIA (Ring 3 judges) | ~3,000 LLM calls | ~$0 (free tier) |
-| Claude Sonnet 4.6 (orchestrator) | ~500 calls | ~$5-7 |
-| Total | | ~$5-7 |
+| NVIDIA (Ring 3 judges, 3 models) | ~3,200 LLM calls | ~$0 (free tier) |
+| Claude Sonnet 4.6 (orchestrator) | ~600 calls | ~$7 |
+| Total | Full audit of 898 nodes / 1310 edges | ~$7 |
 
-Full graph audit: essentially free.
+---
+
+## KEY COMMANDS REFERENCE
+
+```bash
+# Full session startup
+cd ~/Documents/lexgraph_pipeline && export $(cat .env | xargs)
+
+# Ring 1 (deterministic, 2 seconds)
+python3 audit/ring1_health_check.py
+
+# Ring 2 (SCDB reference)
+caffeinate -i python3 audit/ring2_scdb_check.py \
+  --scdb ~/Downloads/SCDB_2025_01_caseCentered_Citation.csv \
+  --scdb-legacy ~/Downloads/SCDB_Legacy_07_caseCentered_Citation.csv \
+  --output reports/ring2_$(date +%Y%m%d).txt
+
+# Ring 3 (all checks, ~45 min)
+caffeinate -i python3 audit/ring3_edge_audit.py --check all \
+  --output reports/ring3_full_$(date +%Y%m%d).txt
+
+# Orchestrator
+caffeinate -i python3 audit/audit_orchestrator.py \
+  --input reports/ring3_full_$(date +%Y%m%d).json \
+  --output-queue reports/apply_queue.json \
+  --output-review reports/human_review.txt
+
+# Apply fixes (dry run first)
+python3 audit/apply_fixes.py \
+  --queue reports/apply_queue.json \
+  --json ~/Downloads/us-law-knowledge-graph/data/conlaw_graph_v02.json \
+  --dry-run
+
+# Neo4j reload
+echo "yes" | caffeinate -i /Users/bruceantley/anaconda3/envs/fastai310/bin/python \
+  core/neo4j_import.py \
+  --file ~/Downloads/us-law-knowledge-graph/data/conlaw_graph_v02.json --wipe
+
+# Git commit
+cd ~/Downloads/us-law-knowledge-graph
+git commit -a -m "Audit cycle: [date] — [summary]"
+git push
+```
