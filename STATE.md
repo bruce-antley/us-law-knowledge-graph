@@ -1,5 +1,5 @@
 # US Law Knowledge Graph — Current State
-*Last updated: 2026-05-23*
+*Last updated: 2026-05-23 (end of day)*
 
 ---
 
@@ -23,14 +23,15 @@
 
 ```
 Nodes:  898     Cases: 415 · Doctrines: 334 · DoctrinalTests: 102 · Areas: 20 · ConstitutionalProvisions: 4
-Edges:  1310    APPLIES: 328 · ESTABLISHES: 257 · CHILD_OF: 242 · INTERPRETS: 165 · MODIFIES: 122
+Edges:  1298    APPLIES: 315 · ESTABLISHES: 257 · CHILD_OF: 242 · INTERPRETS: 165 · MODIFIES: 125
                 GOVERNED_BY: 62 · INTELLECTUALLY_PRECEDES: 32 · DISTINGUISHES: 20 · OVERRULES: 19
                 GROUNDED_IN: 17 · INCORPORATES: 2 · PRECONDITION_TO: 1
 
 Validation:     0 errors · 10 warnings (all documented deliberate decisions)
-Ring 1:         12/13 checks passing · 1 pre-existing C12 warning (6 isolated good-law cases)
+Ring 1:         13/14 checks passing · C14 wrong-syllabus check added · 1 pre-existing C12 warning
 Ring 2:         92% SCDB match · 4 documented deliberate decisions
 Ring 3:         Full audit complete (2026-05-22) · ~220 fixes applied
+Ring 4:         Prong quality audit complete (2026-05-23) · 50 fixes applied
 ```
 
 ---
@@ -289,10 +290,10 @@ THRESHOLDS = {
 
 ### Known issues
 
-- **C12 warning:** 6 good-law cases with zero outgoing edges (Florida v. J.L., Salinas v. Texas, Clingman v. Beaver, Masterpiece Cakeshop, Carson v. Makin + 1). Edges needed.
-- **~15 wrong-syllabus cases:** Oyez fetch errors during original pipeline run. These cases were not properly audited in Ring 3. Needs C14 check + manual spot-check.
-- **Prong quality unverified:** 40+ DoctrinalTest nodes, ~160 prongs, never LLM-audited. Ring 4 planned.
-- **Cross-area consistency:** Cases in multiple doctrinal areas not checked for edge type conflicts. One-time Cypher audit planned.
+- **C12 warning:** 6 good-law cases with zero outgoing edges (Florida v. J.L., Salinas v. Texas, Clingman v. Beaver, Masterpiece Cakeshop, Carson v. Makin + 1). Need APPLIES or ESTABLISHES edges added.
+- **Prong truncation false positives:** Ring 4 flagged ~40 "truncated" prongs but inspection showed text is complete. Sonnet was seeing mid-display truncation in context window. Not real errors.
+- **Spending Power test:** Updated to 4 prongs (added unambiguous conditions prong per South Dakota v. Dole).
+- **Escobedo test:** Corrected to 4 prongs (removed Miranda-era prong 5 — right to silence warning).
 
 ---
 
@@ -312,14 +313,15 @@ THRESHOLDS = {
 
 ## Roadmap
 
-### Immediate next (viability gaps before demo)
+### Immediate next
 
-1. **C14 check** — add wrong-syllabus detection to Ring 1 (deterministic, 30 min)
-2. **Cross-area consistency** — Cypher queries, one-time audit (30 min)
-3. **Ring 4: Prong quality** — LLM binary audit of all DoctrinalTest prongs (~$2, 30 min)
-4. **Wrong-syllabus spot-check** — manual review of ~15 cases (2 hours)
+**Viability gaps: COMPLETE** ✅
+- C14 wrong-syllabus check: integrated into Ring 1, runs automatically
+- Cross-area consistency: 12 redundant APPLIES edges removed
+- Ring 4 prong quality: 50 fixes (30 scrutiny_level, 15 burden, structural fixes)
+- Wrong-syllabus spot-check: 6 cases verified clean
 
-### Phase 2: Kingsfield
+### Phase 1: Kingsfield
 
 Finalize and deploy `kingsfield.md` as system prompt for both:
 - Research interface (answers legal questions with graph grounding)
