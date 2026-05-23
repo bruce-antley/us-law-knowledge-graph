@@ -18,7 +18,7 @@
     "status": "draft",
     "schema_version": "0.5",
     "node_count": 898,
-    "edge_count": 1310,
+    "edge_count": 1298,
     "schema_issue_count": 41,
     "fixes_applied": [
       "FIX 1: ConstitutionalProvision labels changed to citation form (amendment_1, amendment_14_section_1) to disambiguate from Area nodes with same common-name labels",
@@ -23808,7 +23808,7 @@
       ],
       "citation": null,
       "notes": "44 Liquormart rejected Posadas greater-includes-lesser rationale and clarified that complete bans on truthful commercial speech require particularly careful Central Hudson scrutiny",
-      "direction": "complicates"
+      "direction": "clarifies"
     },
     {
       "id": "lorillard_applies_central_hudson",
@@ -28048,7 +28048,7 @@
       "source_id": "city_of_los_angeles_v_alameda_books_2002",
       "target_id": "secondary_effects_doctrine",
       "edge_type": "MODIFIES",
-      "direction": "complicates",
+      "direction": "expands",
       "valid_from": "2002-05-13",
       "valid_until": null,
       "jurisdiction": [
@@ -29655,18 +29655,6 @@
       ]
     },
     {
-      "id": "romer_applies_sexual_orientation",
-      "source_id": "romer_v_evans_1996",
-      "target_id": "equal_protection_sexual_orientation",
-      "edge_type": "APPLIES",
-      "valid_from": "1996-05-20",
-      "valid_until": null,
-      "jurisdiction": [
-        "state"
-      ],
-      "notes": "Romer is the foundational constitutional protection for sexual orientation under equal protection, leading directly to Lawrence v. Texas (2003) and Obergefell v. Hodges (2015)."
-    },
-    {
       "id": "harper_establishes_voting_fundamental",
       "source_id": "harper_v_virginia_board_of_elections_1966",
       "target_id": "fundamental_rights_ep_doctrine",
@@ -30464,19 +30452,6 @@
       "notes": "Cruzan established the clear and convincing evidence standard as a constitutionally permissible procedural safeguard for decisions regarding withdrawal of life-sustaining treatment for incompetent persons."
     },
     {
-      "id": "meyer_applies_sdp_liberty",
-      "source_id": "meyer_v_nebraska_1923",
-      "target_id": "substantive_due_process_liberty",
-      "edge_type": "APPLIES",
-      "valid_from": "1923-06-04",
-      "valid_until": null,
-      "jurisdiction": [
-        "federal",
-        "state"
-      ],
-      "notes": "Meyer applied the substantive due process liberty doctrine to protect parental rights and occupational freedom from arbitrary state interference."
-    },
-    {
       "id": "meyer_establishes_meyer_sdp_rationality_test",
       "source_id": "meyer_v_nebraska_1923",
       "target_id": "meyer_sdp_rationality_test",
@@ -30644,19 +30619,6 @@
         "state"
       ],
       "notes": "Moore established that family living arrangements involving blood relatives are protected liberty interests under substantive due process."
-    },
-    {
-      "id": "skinner_applies_strict_scrutiny_ep",
-      "source_id": "skinner_v_oklahoma_1942",
-      "target_id": "strict_scrutiny_equal_protection",
-      "edge_type": "APPLIES",
-      "valid_from": "1942-06-01",
-      "valid_until": null,
-      "jurisdiction": [
-        "federal",
-        "state"
-      ],
-      "notes": "Skinner applied strict scrutiny to Oklahoma's sterilization act, holding that legislation affecting fundamental rights like procreation requires the most rigid scrutiny."
     },
     {
       "id": "troxel_establishes_parental_fundamental_right",
@@ -36460,19 +36422,6 @@
       ]
     },
     {
-      "id": "pickering_applies_public_employee_speech_doctrine",
-      "source_id": "pickering_v_board_of_education_1968",
-      "target_id": "public_employee_speech_doctrine",
-      "edge_type": "APPLIES",
-      "valid_from": "1968-01-01",
-      "valid_until": null,
-      "jurisdiction": [
-        "federal",
-        "state"
-      ],
-      "notes": "Pickering established the foundational doctrine protecting public employee speech on matters of public concern."
-    },
-    {
       "id": "tinker_establishes_tinker_material_substantial_interference_test",
       "source_id": "tinker_v_des_moines_independent_community_school_district_1969",
       "target_id": "tinker_material_substantial_interference_test",
@@ -36510,19 +36459,6 @@
         "state"
       ],
       "notes": "Wooley v. Maynard established the constitutional right to refuse to display or endorse ideological messages on private property."
-    },
-    {
-      "id": "hurley_applies_compelled_speech_doctrine",
-      "source_id": "hurley_v_irish_american_gay_group_of_boston_1995",
-      "target_id": "compelled_speech_doctrine",
-      "edge_type": "APPLIES",
-      "valid_from": "1995-06-19",
-      "valid_until": null,
-      "jurisdiction": [
-        "federal",
-        "state"
-      ],
-      "notes": "Hurley establishes that the compelled speech doctrine applies to private parade organizers and protects their right to exclude messages they do not wish to convey."
     },
     {
       "id": "timmons_establishes_timmons_ballot_access_test",
@@ -36972,19 +36908,6 @@
       "notes": "Branzburg applied and rejected the claimed reporter's privilege doctrine, holding no absolute privilege exists under the First Amendment."
     },
     {
-      "id": "cruzan_applies_right_to_refuse_medical_treatment",
-      "source_id": "cruzan_v_director_missouri_department_of_health_1990",
-      "target_id": "right_to_refuse_medical_treatment",
-      "edge_type": "APPLIES",
-      "valid_from": "1990-06-25",
-      "valid_until": null,
-      "jurisdiction": [
-        "federal",
-        "state"
-      ],
-      "notes": "Cruzan established the constitutional liberty interest in refusing unwanted medical treatment as a matter of substantive due process."
-    },
-    {
       "id": "dolan_exactions_test_governed_by_takings_exactions_doctrine",
       "source_id": "dolan_exactions_test",
       "target_id": "takings_exactions_doctrine",
@@ -37203,45 +37126,6 @@
         "state"
       ],
       "notes": "Kennedy explicitly abandons the Lemon test for Establishment Clause analysis, replacing it with a historical practices and understandings framework."
-    },
-    {
-      "id": "kennedy_applies_free_exercise_personal_observance",
-      "source_id": "kennedy_v_bremerton_school_district_2022",
-      "target_id": "free_exercise_protection_personal_religious_observance",
-      "edge_type": "APPLIES",
-      "valid_from": "2022-06-27",
-      "valid_until": null,
-      "jurisdiction": [
-        "federal",
-        "state"
-      ],
-      "notes": "Kennedy establishes that the Free Exercise Clause protects personal religious observance from government reprisal outside the scope of official duties."
-    },
-    {
-      "id": "kennedy_applies_establishment_clause_historical_framework",
-      "source_id": "kennedy_v_bremerton_school_district_2022",
-      "target_id": "establishment_clause_historical_practices_test",
-      "edge_type": "APPLIES",
-      "valid_from": "2022-06-27",
-      "valid_until": null,
-      "jurisdiction": [
-        "federal",
-        "state"
-      ],
-      "notes": "Kennedy establishes the historical practices and understandings framework as the new standard for Establishment Clause analysis."
-    },
-    {
-      "id": "kennedy_applies_free_speech_personal_expression",
-      "source_id": "kennedy_v_bremerton_school_district_2022",
-      "target_id": "free_speech_protection_personal_expression_government_employee",
-      "edge_type": "APPLIES",
-      "valid_from": "2022-06-27",
-      "valid_until": null,
-      "jurisdiction": [
-        "federal",
-        "state"
-      ],
-      "notes": "Kennedy establishes that the Free Speech Clause protects personal expression by government employees outside the scope of official duties."
     },
     {
       "id": "lee_v_weisman_establishes_establishment_clause_coercion_doctrine",
@@ -37836,18 +37720,6 @@
       "notes": "The Court applied the free exercise doctrine to strike down the state's denial of unemployment benefits."
     },
     {
-      "id": "gonzales_establishes_rfra_compelling_interest_test",
-      "source_id": "gonzales_v_o_centro_espirita_beneficente_uniao_do_vegetal_2006",
-      "target_id": "rfra_compelling_interest_test",
-      "edge_type": "APPLIES",
-      "valid_from": "2006-04-19",
-      "valid_until": null,
-      "jurisdiction": [
-        "federal"
-      ],
-      "notes": "The Court applied the RFRA compelling interest test to evaluate whether the Government's burden on the religious practice satisfied the statutory requirements."
-    },
-    {
       "id": "gonzales_applies_rfra_doctrine",
       "source_id": "gonzales_v_o_centro_espirita_beneficente_uniao_do_vegetal_2006",
       "target_id": "religious_freedom_restoration_act",
@@ -38254,19 +38126,6 @@
         "state"
       ],
       "notes": "The Court applied and clarified the Fifth Amendment Takings Clause by rejecting the categorical exception for temporary takings."
-    },
-    {
-      "id": "city_philadelphia_applies_dormant_commerce",
-      "source_id": "city_of_philadelphia_v_new_jersey_1978",
-      "target_id": "dormant_commerce_clause_doctrine",
-      "edge_type": "APPLIES",
-      "valid_from": "1978-01-01",
-      "valid_until": null,
-      "jurisdiction": [
-        "federal",
-        "state"
-      ],
-      "notes": "The Court applied dormant Commerce Clause doctrine to invalidate New Jersey's waste importation ban as discriminatory against interstate commerce."
     },
     {
       "id": "west_lynn_creamery_applies_commerce_clause_discrimination",
@@ -40056,19 +39915,6 @@
         "state"
       ],
       "notes": "Mueller v. Allen applies and reinforces the doctrine that government may provide certain forms of financial assistance to sectarian schools without violating the Establishment Clause."
-    },
-    {
-      "id": "lynch_applies_lemon_test",
-      "source_id": "lynch_v_donnelly_1984",
-      "target_id": "lemon_test_applied",
-      "edge_type": "APPLIES",
-      "valid_from": "1984-03-05",
-      "valid_until": null,
-      "jurisdiction": [
-        "federal",
-        "state"
-      ],
-      "notes": "Lynch applies the Lemon test from Lemon v. Kurtzman to evaluate the constitutionality of the creche display under the Establishment Clause."
     },
     {
       "id": "richmond_newspapers_establishes_first_amendment_right_to_access",
