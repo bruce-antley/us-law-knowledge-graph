@@ -23808,7 +23808,7 @@
       ],
       "citation": null,
       "notes": "44 Liquormart rejected Posadas greater-includes-lesser rationale and clarified that complete bans on truthful commercial speech require particularly careful Central Hudson scrutiny",
-      "direction": "clarifies"
+      "direction": "complicates"
     },
     {
       "id": "lorillard_applies_central_hudson",
@@ -28048,7 +28048,7 @@
       "source_id": "city_of_los_angeles_v_alameda_books_2002",
       "target_id": "secondary_effects_doctrine",
       "edge_type": "MODIFIES",
-      "direction": "expands",
+      "direction": "complicates",
       "valid_from": "2002-05-13",
       "valid_until": null,
       "jurisdiction": [
