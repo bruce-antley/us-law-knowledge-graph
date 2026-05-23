@@ -5,17 +5,17 @@
 
 ## What This Project Is
 
-**LexGraph** is an open-source knowledge graph of U.S. constitutional law, with a proprietary legal research tool built on top. The graph models law as a navigable, machine-readable network of doctrines, cases, and relationships — not a searchable corpus of documents.
+**LexGraph** is a proprietary knowledge graph of U.S. law — ultimately all of U.S. law, and potentially beyond — with a proprietary legal research tool built on top. The graph models law as a navigable, machine-readable network of doctrines, cases, and relationships — not a searchable corpus of documents.
 
-The commercial thesis: accuracy and hallucination-proofing are critical to lawyers. The graph's value is producing verifiable, structurally-constrained output. The failure mode is categorically different from a raw LLM — it cannot confabulate cases or fabricate holdings because every answer is grounded in explicit graph relationships.
+**The commercial thesis:** Accuracy and hallucination-reduction are critical to lawyers. The graph's value is producing verifiable, structurally-constrained output. The failure mode is categorically different from a raw LLM — it cannot confabulate cases or fabricate holdings because every answer is grounded in explicit graph relationships.
 
-**Business model:** Open core. The graph schema, taxonomy, and authority population pipelines are open source (CC-BY 4.0, GitHub). The research interface — the tool lawyers actually use — is proprietary.
+**Business model:** Surface graph results filtered through a legal reasoning layer (Kingsfield) via MCP first, then eventually a user interface.
 
 **Competitive position:** Not replicating Westlaw or Lexis. Offering something they structurally cannot: a traversable, machine-readable model of how law is organized, not just a searchable corpus of documents.
 
 **Stack:** Neo4j AuraDB (graph database) · Python (pipeline) · Claude Haiku (builder) · NVIDIA free tier (audit judges) · Claude Sonnet (orchestrator) · D3.js (visualization)
 
-**GitHub:** github.com/bruce-antley/us-law-knowledge-graph (all rights reserved, proprietary layer)
+**GitHub:** github.com/bruce-antley/us-law-knowledge-graph (all rights reserved)
 
 ---
 
@@ -347,7 +347,7 @@ Internal first. Benchmark questions across all reasoning modes. Decision: expand
 | Builder isolation problem | Inject existing doctrine list into builder prompt | Prevents ESTABLISHES errors on non-originating cases |
 | Kingsfield | One document, two modes | Audit and research require identical schema knowledge |
 | MCP exposure | After Kingsfield | Reasoning layer makes exposure meaningful |
-| Equal Protection expansion | After First Amendment demo | Validate approach before scaling |
+| Geographic expansion | U.S. law first, potentially beyond | Con law is the validated MVP, not the ceiling |
 | SCDB files | ~/Downloads/ (not in repo) | Too large for git |
 | Python environment | fastai310 | Has all dependencies including neo4j package |
 
