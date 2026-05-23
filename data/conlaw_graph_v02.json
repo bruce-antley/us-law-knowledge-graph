@@ -19003,7 +19003,7 @@
         "description": "The constitutional framework for evaluating whether a statement constitutes an unprotected true threat. Counterman v. Colorado (2023) held that the First Amendment requires proof of a subjective mental state \u2014 at minimum recklessness \u2014 before a statement can be punished as a true threat. A purely objective reasonable-person standard is constitutionally insufficient.",
         "area_id": "core_political_speech",
         "source_case_id": "counterman_v_colorado_2023",
-        "scrutiny_level": "per_se",
+        "scrutiny_level": "categorical",
         "burden": "government",
         "status": "active",
         "valid_from": "2023-06-27",
@@ -19124,8 +19124,8 @@
         "description": "The constitutional standard for determining whether a public official or public figure plaintiff may recover damages in a defamation action against a press or media defendant. Plaintiff must prove by clear and convincing evidence that the defendant published the statement with knowledge of its falsity or with reckless disregard for whether it was true or false. The standard is subjective and defendant-focused: it asks what the defendant actually believed, not what a reasonable publisher would have believed.",
         "area_id": "freedom_of_press",
         "source_case_id": "new_york_times_v_sullivan_1964",
-        "scrutiny_level": "per_se",
-        "burden": "challenger",
+        "scrutiny_level": "fault_standard",
+        "burden": "plaintiff",
         "status": "active",
         "valid_from": "1964-03-09",
         "valid_until": null,
@@ -19322,8 +19322,8 @@
         "description": "The three-part Establishment Clause test established in Lemon v. Kurtzman (1971) and explicitly overruled in Kennedy v. Bremerton School District (2022). For 51 years, a government action survived Establishment Clause scrutiny only if it: (1) had a secular legislative purpose, (2) had a primary effect that neither advanced nor inhibited religion, and (3) did not foster excessive entanglement with religion. The test was widely criticized by justices across the ideological spectrum for producing inconsistent results, but it survived until Kennedy because no majority could agree on a replacement.",
         "area_id": "establishment_clause",
         "source_case_id": "lemon_v_kurtzman_1971",
-        "scrutiny_level": "strict",
-        "burden": "government",
+        "scrutiny_level": "establishment_clause_tripartite",
+        "burden": "challenger",
         "status": "overruled",
         "valid_from": "1971-06-28",
         "valid_until": "2022-06-27",
@@ -19369,7 +19369,7 @@
         "description": "An Establishment Clause analytical framework focusing on whether government action coerces religious participation. Articulated in Justice Kennedy's Lee v. Weisman majority (1992): the Establishment Clause bars government from coercing anyone to support or participate in religion or its exercise. The coercion test asks whether government action exerts direct or indirect coercive pressure toward religious participation. It was developed as an alternative to Lemon in the school prayer context and remains operative post-Kennedy as a standalone analytical framework.",
         "area_id": "establishment_clause",
         "source_case_id": "lee_v_weisman_1992",
-        "scrutiny_level": "strict",
+        "scrutiny_level": "establishment_clause_coercion",
         "burden": "government",
         "status": "active",
         "valid_from": "1992-06-24",
@@ -19406,7 +19406,7 @@
         "description": "The constitutional framework for evaluating whether a group has a First Amendment right to exclude members whose presence would burden the group's expressive message. Established in Roberts v. United States Jaycees (1984) and applied in Boy Scouts of America v. Dale (2000). The test asks whether the group engages in expressive activity, whether forced inclusion would significantly affect the group's ability to express its views, and whether the government's interest in preventing discrimination justifies the associational burden.",
         "area_id": "freedom_of_association",
         "source_case_id": "boy_scouts_v_dale_2000",
-        "scrutiny_level": "strict",
+        "scrutiny_level": "balancing",
         "burden": "government",
         "status": "active",
         "valid_from": "1984-07-03",
@@ -19500,7 +19500,7 @@
         "description": "The governing test for student speech in public schools. School officials may restrict student expression only when they can reasonably forecast that the speech will substantially disrupt or materially interfere with school activities or the rights of other students. The test requires specific, articulable facts supporting the forecast \u2014 not speculation or undifferentiated fear. Established in Tinker v. Des Moines Independent Community School District (1969).",
         "area_id": "core_political_speech",
         "source_case_id": "tinker_v_des_moines_1969",
-        "scrutiny_level": "intermediate",
+        "scrutiny_level": "substantial_disruption",
         "burden": "government",
         "status": "active",
         "valid_from": "1969-02-24",
@@ -19638,7 +19638,7 @@
         "description": "The framework established in Buckley v. Valeo (1976) for evaluating campaign finance restrictions. Distinguishes between expenditure limits and contribution limits, applying different levels of scrutiny to each. Expenditure limits on political speech receive strict scrutiny; contribution limits receive a more deferential standard requiring a sufficiently important interest and closely drawn means.",
         "area_id": "core_political_speech",
         "source_case_id": "buckley_v_valeo_1976",
-        "scrutiny_level": "strict",
+        "scrutiny_level": "tiered",
         "burden": "government",
         "status": "active",
         "valid_from": "1976-01-30",
@@ -19700,7 +19700,7 @@
         "status": "active",
         "valid_from": "1944-12-18",
         "valid_until": null,
-        "notes": "Strict scrutiny under equal protection was first articulated in Korematsu v. United States (1944), which applied the standard while upholding Japanese internment. In practice strict scrutiny is nearly always fatal \u2014 the major exceptions are Korematsu itself (subsequently repudiated in Trump v. Hawaii, 2018) and Grutter v. Bollinger (2003), which SFFA v. Harvard (2023) later overruled.",
+        "notes": "Korematsu first applied strict scrutiny label but upheld the classification. Adarand (1995) and Loving (1967) are the canonical modern applications. See also: Adarand MODIFIES strict scrutiny doctrine.",
         "source_case_id": "korematsu_v_united_states_1944",
         "scrutiny_level": "strict",
         "burden": "government"
@@ -19826,7 +19826,7 @@
         "area_id": "substantive_due_process",
         "source_case_id": "meyer_v_nebraska_1923",
         "scrutiny_level": "rational_basis",
-        "burden": "government",
+        "burden": "challenger",
         "test_form": "conjunctive",
         "prongs": [
           {
@@ -19862,7 +19862,7 @@
         "description": "A test for determining whether a state regulation is a valid exercise of police power or an unconstitutional interference with liberty of contract. The regulation must have a fair, reasonable, and appropriate relation to a legitimate public purpose (safety, health, morals, or welfare), and the connection between the means and the end must be direct and substantial, not remote or shadowy.",
         "area_id": "substantive_due_process",
         "source_case_id": "lochner_v_new_york_1905",
-        "scrutiny_level": "rational_basis",
+        "scrutiny_level": "heightened_substantive_due_process",
         "burden": "government",
         "test_form": "conjunctive",
         "prongs": [
@@ -19909,7 +19909,7 @@
         "description": "A test for determining whether a right enumerated in the Bill of Rights is so fundamental to ordered liberty and due process that it applies to the states through the Fourteenth Amendment. The test asks whether the right is rooted in the traditions and conscience of the people and whether it is essential to a scheme of ordered liberty such that its denial would violate fundamental principles of liberty and justice.",
         "area_id": "substantive_due_process",
         "source_case_id": "palko_v_connecticut_1937",
-        "scrutiny_level": "rational_basis",
+        "scrutiny_level": "ordered_liberty",
         "burden": "challenger",
         "test_form": "balancing",
         "prongs": [
@@ -19946,7 +19946,7 @@
         "description": "A test for evaluating whether state interference with parental decisions concerning child care, custody, and control violates the Due Process Clause. The test examines whether the state has accorded appropriate deference to a fit parent's determination, whether there is a presumption favoring parental judgment, and whether the state action is narrowly tailored to address legitimate state interests.",
         "area_id": "substantive_due_process",
         "source_case_id": "troxel_v_granville_2000",
-        "scrutiny_level": "balancing",
+        "scrutiny_level": "heightened",
         "burden": "government",
         "test_form": "balancing",
         "prongs": [
@@ -20001,7 +20001,7 @@
             "number": 1,
             "label": "Investigation Focused on Particular Suspect",
             "description": "The investigation must have ceased to be a general inquiry into an unsolved crime and must have begun to focus on a particular suspect.",
-            "burden_note": "Government must demonstrate the investigation remains general; if focused on suspect, right to counsel attaches.",
+            "burden_note": "Government must demonstrate the investigation remains general.",
             "valid_from": "1964-06-22",
             "valid_until": null,
             "contested": false,
@@ -20011,7 +20011,7 @@
             "number": 2,
             "label": "Suspect in Police Custody",
             "description": "The suspect must have been taken into police custody or otherwise restrained of liberty.",
-            "burden_note": "Government must show suspect was not in custody to avoid counsel requirement.",
+            "burden_note": "Government must show suspect was not in custody.",
             "valid_from": "1964-06-22",
             "valid_until": null,
             "contested": false,
@@ -20021,7 +20021,7 @@
             "number": 3,
             "label": "Interrogation Process Conducted",
             "description": "The police must be carrying out a process of interrogations that lends itself to eliciting incriminating statements.",
-            "burden_note": "Government must show no interrogation occurred to avoid counsel requirement.",
+            "burden_note": "Government must show no interrogation occurred.",
             "valid_from": "1964-06-22",
             "valid_until": null,
             "contested": false,
@@ -20030,18 +20030,8 @@
           {
             "number": 4,
             "label": "Suspect Requested and Was Denied Counsel",
-            "description": "The suspect must have requested an opportunity to consult with his lawyer and been denied that opportunity.",
-            "burden_note": "Government must show suspect did not request counsel or was granted access to counsel.",
-            "valid_from": "1964-06-22",
-            "valid_until": null,
-            "contested": false,
-            "contest_note": null
-          },
-          {
-            "number": 5,
-            "label": "No Effective Warning of Right to Remain Silent",
-            "description": "The police must not have effectively warned the suspect of his absolute constitutional right to remain silent.",
-            "burden_note": "Government must show suspect was warned of right to remain silent to avoid exclusion of statement.",
+            "description": "The suspect must have requested an opportunity to consult with counsel, or counsel sought access to the suspect, and been denied.",
+            "burden_note": "Government must show suspect did not request counsel or was granted access.",
             "valid_from": "1964-06-22",
             "valid_until": null,
             "contested": false,
@@ -20051,7 +20041,8 @@
         "status": "active",
         "valid_from": "1964-06-22",
         "valid_until": null,
-        "notes": "When all five prongs are satisfied, the accused has been denied the Assistance of Counsel in violation of the Sixth Amendment, and any statement elicited during interrogation is inadmissible. The test applies a functional rather than formal approach, rejecting reliance on whether formal indictment has occurred."
+        "notes": "Prong 5 removed \u2014 right-to-silence warning originated in Miranda, not Escobedo.",
+        "prong_count": 4
       },
       {
         "@type": "DoctrinalTest",
@@ -20238,8 +20229,8 @@
         "description": "A test determining whether evidence obtained pursuant to a search warrant is admissible despite the warrant's invalidity, based on whether the officer's reliance on the warrant was objectively reasonable.",
         "area_id": "criminal_procedure",
         "source_case_id": "united_states_v_leon_1984",
-        "scrutiny_level": "rational_basis",
-        "burden": "challenger",
+        "scrutiny_level": "balancing",
+        "burden": "government",
         "test_form": "conjunctive",
         "prongs": [
           {
@@ -20305,7 +20296,7 @@
         "description": "A warrantless search of an automobile is valid if: (1) the seizing officer has probable cause to believe the vehicle contains contraband or goods subject to forfeiture; and (2) the search is conducted in circumstances where securing a warrant is impracticable due to the vehicle's mobility. The test balances the government's need to seize contraband in transit against the individual's Fourth Amendment protections.",
         "area_id": "criminal_procedure",
         "source_case_id": "carroll_v_united_states_1925",
-        "scrutiny_level": "rational_basis",
+        "scrutiny_level": "fourth_amendment_reasonableness",
         "burden": "government",
         "test_form": "conjunctive",
         "prongs": [
@@ -20342,7 +20333,7 @@
         "description": "A search occurs under the Fourth Amendment when: (1) the Government uses a device not in general public use; (2) to explore details of a private home; (3) that would previously have been unknowable without physical intrusion into a constitutionally protected area. Such a search is presumptively unreasonable without a warrant.",
         "area_id": "criminal_procedure",
         "source_case_id": "kyllo_v_united_states_2001",
-        "scrutiny_level": "per_se",
+        "scrutiny_level": "categorical",
         "burden": "government",
         "test_form": "conjunctive",
         "prongs": [
@@ -20389,7 +20380,7 @@
         "description": "A test determining whether a warrantless search of digital information on a cell phone seized incident to arrest is permissible. The test requires that police generally obtain a warrant before searching digital information on a cell phone, with limited exceptions for exigent circumstances and physical examination to ensure the phone will not be used as a weapon.",
         "area_id": "criminal_procedure",
         "source_case_id": "riley_v_california_2014",
-        "scrutiny_level": "balancing",
+        "scrutiny_level": "categorical",
         "burden": "government",
         "test_form": "threshold_then_conjunctive",
         "prongs": [
@@ -20437,7 +20428,7 @@
         "area_id": "criminal_procedure",
         "source_case_id": "united_states_v_wade_1967",
         "scrutiny_level": "none",
-        "burden": "government",
+        "burden": "split",
         "test_form": "balancing",
         "prongs": [
           {
@@ -20547,7 +20538,7 @@
         "description": "A test determining whether judicial fact-finding at sentencing violates the Sixth Amendment jury trial right. Any fact (other than prior conviction) that increases the sentence beyond the statutory maximum must be admitted by the defendant or found by a jury beyond a reasonable doubt.",
         "area_id": "criminal_procedure",
         "source_case_id": "blakely_v_washington_2004",
-        "scrutiny_level": "per_se",
+        "scrutiny_level": "structural_rule",
         "burden": "government",
         "test_form": "threshold_then_conjunctive",
         "prongs": [
@@ -20585,7 +20576,7 @@
         "area_id": "equal_protection",
         "source_case_id": "batson_v_kentucky_1986",
         "scrutiny_level": "none",
-        "burden": "government",
+        "burden": "challenger",
         "test_form": "conjunctive",
         "prongs": [
           {
@@ -20986,9 +20977,9 @@
           },
           {
             "number": 2,
-            "label": "Reasonable Relationship to Federal Interest",
-            "description": "The condition imposed on the receipt of federal funds must be reasonably related to the federal interest.",
-            "burden_note": "Challenger must demonstrate that the condition is not reasonably related to the federal interest.",
+            "label": "Unambiguous Conditions",
+            "description": "Congress must state the conditions unambiguously so that States can knowingly choose whether to accept the funds and the attached conditions.",
+            "burden_note": "Government must show conditions were stated clearly enough for states to make an informed choice.",
             "valid_from": "1987-06-23",
             "valid_until": null,
             "contested": false,
@@ -20996,6 +20987,16 @@
           },
           {
             "number": 3,
+            "label": "Germaneness to Federal Interest",
+            "description": "The condition must be reasonably related to the federal interest Congress sought to achieve.",
+            "burden_note": "Challenger must demonstrate that the condition is not germanely related to the federal interest.",
+            "valid_from": "1987-06-23",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 4,
             "label": "No Constitutional Prohibition",
             "description": "The condition must not be prohibited by another constitutional provision.",
             "burden_note": "Challenger must demonstrate that the condition violates another constitutional provision.",
@@ -21008,7 +21009,8 @@
         "status": "active",
         "valid_from": "1987-06-23",
         "valid_until": null,
-        "notes": "Established in South Dakota v. Dole as the framework for analyzing conditional federal spending. The test applies rational basis scrutiny to the relationship between the condition and the federal interest."
+        "notes": "Established in South Dakota v. Dole as the framework for analyzing conditional federal spending. The test applies rational basis scrutiny to the relationship between the condition and the federal interest.",
+        "prong_count": 4
       },
       {
         "@type": "DoctrinalTest",
@@ -21149,7 +21151,7 @@
         "area_id": "takings_clause",
         "source_case_id": "lucas_v_south_carolina_coastal_council_1992",
         "scrutiny_level": "per_se",
-        "burden": "government",
+        "burden": "challenger",
         "test_form": "threshold_then_conjunctive",
         "prongs": [
           {
@@ -21763,7 +21765,7 @@
         "description": "A state law violates the First Amendment right of expressive association when applied to require a private organization to admit a member if the member's presence would compel the organization to express a message inconsistent with its stated values and mission.",
         "area_id": "freedom_of_association",
         "source_case_id": "boy_scouts_of_america_v_dale_2000",
-        "scrutiny_level": "strict",
+        "scrutiny_level": "balancing",
         "burden": "government",
         "test_form": "conjunctive",
         "prongs": [
@@ -21985,7 +21987,7 @@
         "description": "A state may regulate attorney advertising only if: (1) the advertising is truthful and not misleading, and (2) the state has a substantial interest that cannot be served by less restrictive means.",
         "area_id": "free_speech",
         "source_case_id": "zauderer_v_office_of_disciplinary_counsel_1985",
-        "scrutiny_level": "heightened",
+        "scrutiny_level": "reduced",
         "burden": "government",
         "test_form": "conjunctive",
         "prongs": [
@@ -22022,7 +22024,7 @@
         "description": "A threshold test determining whether a public employee's petition claim under the Petition Clause is actionable. The employee must demonstrate that the petition relates to a matter of public concern.",
         "area_id": "freedom_of_petition",
         "source_case_id": "borough_of_duryea_v_guarnieri_2011",
-        "scrutiny_level": "rational_basis",
+        "scrutiny_level": "balancing",
         "burden": "challenger",
         "test_form": "threshold_then_conjunctive",
         "prongs": [
@@ -22097,7 +22099,7 @@
         "area_id": "equal_protection",
         "source_case_id": "shaw_v_reno_1993",
         "scrutiny_level": "strict",
-        "burden": "government",
+        "burden": "challenger",
         "test_form": "threshold_then_conjunctive",
         "prongs": [
           {
@@ -22217,7 +22219,7 @@
         "description": "A two-part test for determining whether an asserted liberty interest is a fundamental right protected by the Due Process Clause: (1) the interest must be objectively deeply rooted in the Nation's history and tradition, and (2) the Court must carefully describe the asserted fundamental liberty interest with specificity rather than at a high level of generality.",
         "area_id": "substantive_due_process",
         "source_case_id": "washington_v_glucksberg_1997",
-        "scrutiny_level": "rational_basis",
+        "scrutiny_level": "strict",
         "burden": "challenger",
         "test_form": "conjunctive",
         "prongs": [
@@ -22254,7 +22256,7 @@
         "description": "A procedural due process test for evaluating whether state procedures for classifying and placing prisoners in supermaximum security facilities comply with the Fourteenth Amendment. The test requires procedures that sufficiently minimize the risk of erroneous placement while accounting for legitimate state interests in prison security and resource allocation.",
         "area_id": "substantive_due_process",
         "source_case_id": "wilkinson_v_austin_2005",
-        "scrutiny_level": "rational_basis",
+        "scrutiny_level": "mathews_balancing",
         "burden": "government",
         "test_form": "balancing",
         "prongs": [
@@ -22376,7 +22378,7 @@
         "area_id": "separation_of_powers",
         "source_case_id": "trump_v_united_states_2024",
         "scrutiny_level": "none",
-        "burden": "government",
+        "burden": "context_dependent",
         "test_form": "threshold_then_conjunctive",
         "prongs": [
           {
@@ -22526,7 +22528,7 @@
         "description": "A test under the dormant Commerce Clause that asks whether a tax scheme would disadvantage interstate commerce if applied identically in every state. If so, the tax is unconstitutional.",
         "area_id": "dormant_commerce_clause",
         "source_case_id": "comptroller_of_treasury_v_wynne_2015",
-        "scrutiny_level": "per_se",
+        "scrutiny_level": "fair_apportionment",
         "burden": "government",
         "test_form": "threshold_then_conjunctive",
         "prongs": [
@@ -22647,7 +22649,7 @@
         "description": "A test for determining the validity of a consent-based warrantless search when multiple co-occupants are present. The search is unconstitutional if one co-occupant expressly refuses consent while another consents, provided the refusing occupant is present and able to object.",
         "area_id": "criminal_procedure",
         "source_case_id": "georgia_v_randolph_2006",
-        "scrutiny_level": "rational_basis",
+        "scrutiny_level": "fourth_amendment_reasonableness",
         "burden": "government",
         "test_form": "threshold_then_conjunctive",
         "prongs": [
@@ -22741,8 +22743,8 @@
         "description": "A three-part test for determining whether a sentence violates the Eighth Amendment's prohibition on cruel and unusual punishment by being grossly disproportionate to the offense.",
         "area_id": "individual_rights",
         "source_case_id": "solem_v_helm_1983",
-        "scrutiny_level": "heightened",
-        "burden": "government",
+        "scrutiny_level": "proportionality_review",
+        "burden": "challenger",
         "test_form": "conjunctive",
         "prongs": [
           {
@@ -22788,8 +22790,8 @@
         "description": "A two-part test for determining whether a particular crime may be punished by death under the Eighth Amendment: (1) whether there is a national consensus against the punishment, and (2) whether the punishment would be excessive in light of the crime and its circumstances.",
         "area_id": "individual_rights",
         "source_case_id": "kennedy_v_louisiana_2008",
-        "scrutiny_level": "heightened",
-        "burden": "government",
+        "scrutiny_level": "categorical",
+        "burden": "court_driven",
         "test_form": "conjunctive",
         "prongs": [
           {
@@ -22825,8 +22827,8 @@
         "description": "A two-step categorical analysis for determining whether a sentence imposed on a class of offenders violates the Eighth Amendment: (1) consider objective indicia of society's standards, and (2) determine whether the punishment violates the Constitution guided by standards elaborated by controlling precedents.",
         "area_id": "individual_rights",
         "source_case_id": "graham_v_florida_2010",
-        "scrutiny_level": "heightened",
-        "burden": "government",
+        "scrutiny_level": "categorical",
+        "burden": "challenger",
         "test_form": "conjunctive",
         "prongs": [
           {
@@ -22946,7 +22948,7 @@
         "description": "A test for determining whether a right should be incorporated against the states through the Fourteenth Amendment's Due Process Clause. A right qualifies for incorporation if it is fundamental to the Nation's scheme of ordered liberty or deeply rooted in the Nation's history and tradition.",
         "area_id": "substantive_due_process",
         "source_case_id": "mcdonald_v_city_of_chicago_2010",
-        "scrutiny_level": "rational_basis",
+        "scrutiny_level": "not_applicable",
         "burden": "challenger",
         "test_form": "disjunctive",
         "prongs": [
@@ -23020,7 +23022,7 @@
         "description": "A three-part test for determining obscenity: (1) whether the dominant theme of the material taken as a whole appeals to prurient interest; (2) whether the material is patently offensive by contemporary community standards; and (3) whether the material is utterly without redeeming social value.",
         "area_id": "free_speech",
         "source_case_id": "memoirs_v_massachusetts_1966",
-        "scrutiny_level": "per_se",
+        "scrutiny_level": "categorical",
         "burden": "government",
         "test_form": "conjunctive",
         "prongs": [
@@ -23152,7 +23154,7 @@
         "area_id": "substantive_due_process",
         "source_case_id": "whole_womans_health_v_hellerstedt_2016",
         "scrutiny_level": "balancing",
-        "burden": "government",
+        "burden": "split",
         "test_form": "balancing",
         "prongs": [
           {
@@ -23198,7 +23200,7 @@
         "description": "A test for determining whether a delegation of legislative power is constitutional. The legislature must establish an intelligible principle, and the delegated agency must adhere to specific directives that govern its authority.",
         "area_id": "federalism",
         "source_case_id": "schechter_poultry_corp_v_united_states_1935",
-        "scrutiny_level": "rational_basis",
+        "scrutiny_level": "structural_rule",
         "burden": "government",
         "test_form": "conjunctive",
         "prongs": [
@@ -23235,7 +23237,7 @@
         "description": "A two-part test for assessing the legality of searches conducted by public school officials. First, the search must be justified at its inception by reasonable suspicion that the search will uncover evidence of a violation of school rules or the law. Second, the search must not be excessively intrusive in light of the age and sex of the student and the nature of the infraction.",
         "area_id": "criminal_procedure",
         "source_case_id": "new_jersey_v_tlo_1985",
-        "scrutiny_level": "rational_basis",
+        "scrutiny_level": "reasonableness",
         "burden": "government",
         "test_form": "conjunctive",
         "prongs": [
@@ -23309,7 +23311,7 @@
         "description": "A test to determine whether a statement is protected opinion or actionable fact in defamation law. The test examines whether a reasonable reader would understand the statement as asserting objective fact, considering the full context of the statement, the medium in which it appears, and whether the statement is verifiable.",
         "area_id": "free_speech",
         "source_case_id": "milkovich_v_lorain_journal_co_1990",
-        "scrutiny_level": "balancing",
+        "scrutiny_level": "totality_of_circumstances",
         "burden": "challenger",
         "test_form": "balancing",
         "prongs": [
@@ -23394,7 +23396,7 @@
         "area_id": "freedom_of_association",
         "source_case_id": "roberts_v_united_states_jaycees_1984",
         "scrutiny_level": "strict",
-        "burden": "government",
+        "burden": "split",
         "test_form": "threshold_then_conjunctive",
         "prongs": [
           {
@@ -23431,7 +23433,7 @@
         "area_id": "takings_clause",
         "source_case_id": "pennsylvania_coal_co_v_mahon_1922",
         "scrutiny_level": "balancing",
-        "burden": "government",
+        "burden": "challenger",
         "test_form": "balancing",
         "prongs": [
           {
