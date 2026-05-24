@@ -1,5 +1,5 @@
 # US Law Knowledge Graph — Current State
-*Last updated: 2026-05-23 (end of day)*
+*Last updated: 2026-05-23*
 
 ---
 
@@ -287,6 +287,32 @@ THRESHOLDS = {
     "delete_artifact":0.85,   # Irreversible
 }
 ```
+
+### Ring 4 design decisions
+
+Ring 4 has a split automation strategy — not all fix types are equally safe to automate:
+
+**Auto-applied (bounded vocabulary, safe):**
+- `SET_SCRUTINY_LEVEL` — updates `scrutiny_level` field on DoctrinalTest node
+- `SET_BURDEN` — updates `burden` field on DoctrinalTest node
+- `SET_TEST_FORM` — sets `test_form` to disjunctive or conjunctive
+
+**Human review only (open-ended text, not safe to automate):**
+- `FIX_PRONG_TEXT` — prong description or burden_note corrections
+- `ADD_PRONG` — adding missing prongs
+- `REMOVE_PRONG` — removing spurious prongs
+
+**Rationale:** Prong text corrections require generating legal text that could be legally wrong
+if Sonnet makes an error. Scrutiny level and burden are drawn from a fixed vocabulary and
+can be validated against the schema enum. Text fixes go to the Ring 4 human review report
+for manual application.
+
+**Thresholds:** Ring 4 uses 0.85 for SET_SCRUTINY_LEVEL/SET_BURDEN (same as Ring 3 moderate
+risk), but routes all FIX_PRONG_TEXT/ADD_PRONG/REMOVE_PRONG to human review regardless
+of confidence.
+
+**When to run Ring 4:** Only when DoctrinalTest nodes are added or modified. Not on every
+commit. Trigger: `python3 run_audit_cycle.py --ring4 --checks none --skip-ring2`
 
 ### Known issues
 
