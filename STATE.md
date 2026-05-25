@@ -1,5 +1,5 @@
 # US Law Knowledge Graph — Current State
-*Last updated: 2026-05-23*
+*Last updated: 2026-05-24*
 
 ---
 
@@ -61,6 +61,11 @@ Constitutional Law
 ```
 
 **415 SCOTUS cases** spanning 1803–2024. 446 Oyez syllabi in corpus (98% coverage of active cases).
+
+**Coverage validation methodology:**
+- Seidman Constitutional Law casebook: 91/91 cases present (100%, verified 2026-05-19)
+- Rotunda Constitutional Law treatise: Full gap analysis run across all doctrinal areas (2026-05-19); gaps filled via pipeline batches 6-8. Areas covered: First Amendment (all 8 sub-areas), Equal Protection, Substantive Due Process, Procedural Due Process, Criminal Procedure, Federalism, Separation of Powers, Takings, Dormant Commerce Clause.
+- This is not an estimate — it is a verified result from systematic gap analysis.
 
 ---
 
@@ -346,6 +351,72 @@ commit. Trigger: `python3 run_audit_cycle.py --ring4 --checks none --skip-ring2`
 - Cross-area consistency: 12 redundant APPLIES edges removed
 - Ring 4 prong quality: 50 fixes (30 scrutiny_level, 15 burden, structural fixes)
 - Wrong-syllabus spot-check: 6 cases verified clean
+
+### Kingsfield — Current Status
+
+**Location:** `~/Documents/lexgraph_pipeline/kingsfield/`
+- `section1_identity_purpose.md` — LOCKED (v2, ChatGPT reviewed)
+- `section2_nature_of_legal_reasoning.md` — LOCKED (v2, ChatGPT reviewed)
+- Sections 3-9 — NOT YET WRITTEN
+
+**Intellectual foundation:**
+- Edward Levi, *An Introduction to Legal Reasoning* (1948) — legal reasoning is reasoning by example; rules emerge from case comparison, not before it
+- Frederick Schauer, *Thinking Like a Lawyer* (2009) — doctrine constrains without fully determining; rules narrow the space of defensible positions
+- These two sources ground the document's register: jurisprudential framework, not prompt engineering
+
+**Key design decisions (document these or you'll forget):**
+- Kingsfield is private IP — lives in `lexgraph_pipeline/`, NOT in the public GitHub repo
+- Written as prose first, to be modularized into YAML later (Phase 2)
+- Register: declarative reasoning constitution, not assistant instruction manual
+- "The graph doesn't replace lawyerly judgment — it grounds it"
+- Sections written to be modular so Phase 2 extraction is easy
+
+**Planned sections:**
+1. Identity and Purpose ✅
+2. The Nature of Legal Reasoning ✅
+3. Node Type Semantics
+4. Edge Semantics — the heart
+5. Schema Introspection
+6. Traversal Patterns
+7. Predictive Humility
+8. Legal Writing Style
+9. Audit Mode
+
+### A/B/C Test Results (2026-05-24)
+
+**Test design:** Four questions, three conditions
+- A = Raw Claude (no graph, no Kingsfield)
+- B = Claude + Graph (no Kingsfield)
+- C = Claude + Graph + Kingsfield (Sections 1-2 only)
+
+**Questions:**
+1. Trace the clear and present danger test from origins to Brandenburg
+2. What is the governing standard for commercial speech, and is it settled?
+3. Is Lemon v. Kurtzman still good law?
+4. What was the outcome of M&K Employee Solutions v. Trustees of IAM Nat. Pension? (decided 3 days prior — failure mode test)
+
+**Scores (1-5 scale):**
+
+| | A | B | C | B-A | C-B | C-A |
+|---|---|---|---|---|---|---|
+| Q1 | 4 | 4 | 5 | 0 | +1 | +1 |
+| Q2 | 4 | 5 | 5 | +1 | 0 | +1 |
+| Q3 | 5 | 5 | 5 | 0 | 0 | 0 |
+| Q4 | 3 | 4 | 5 | +1 | +1 | +2 |
+| **Total** | **16** | **18** | **20** | **+2** | **+2** | **+4** |
+
+**Key findings:**
+- Core hypothesis confirmed: B > A (+2), C > B (+2), C > A (+4)
+- The graph adds value where structural information matters (MODIFIES(complicates) edge note on Sorrell, explicit OVERRULES on Lemon)
+- Kingsfield adds value where analytical framing matters (three-question decomposition on Q3, source attribution on Q4)
+- B uniquely caught a data quality bug (duplicate lemon_test_applied node still marked active)
+- Q4 (failure mode) is where the categorical difference is clearest: A pattern-matched a guess, B checked and searched, C checked, explained the gap structurally, and attributed sources before answering
+- A's baseline is impressively high on well-documented doctrine — the value proposition is most visible on recent/obscure/structurally complex questions
+
+**The commercial hypothesis (untested):**
+Whether lawyers will value provenance-aware, governed legal reasoning enough to prefer it over raw frontier-model interaction. This requires a different test: real lawyers, real research tasks, asking "did you trust the output and why?" The A/B/C test validates the product. The commercial hypothesis requires validating the market.
+
+**Test files:** `~/Documents/lexgraph_pipeline/kingsfield/CARLA_ABC_Test_Matrix_Scored.xlsx`
 
 ### Phase 1: Kingsfield
 
