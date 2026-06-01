@@ -342,6 +342,22 @@ commit. Trigger: `python3 run_audit_cycle.py --ring4 --checks none --skip-ring2`
 
 ---
 
+
+### Prompt Architecture — Current State
+
+| Layer | Content | Location |
+|---|---|---|
+| Project instructions | Kingsfield-Lite (~6,100 chars) | Claude.ai project settings |
+| Project knowledge | Full Kingsfield v2, schema docs | Claude.ai project knowledge |
+| Pipeline (local) | kingsfield_v2.md, kingsfield_lite.md | ~/Documents/lexgraph_pipeline/kingsfield/ |
+| Shipped product (Phase 3) | Full Kingsfield in API system param with prompt caching | TBD |
+
+**Key lessons from prompt architecture testing:**
+- Full Kingsfield (126K chars / ~30K tokens) too large for project instructions — consumes ~15% of context window
+- Model behavior differs significantly by version: Opus 4.7 follows Kingsfield well; Opus 4.8 less consistent
+- Web search must be enabled for out-of-scope questions — without it models hallucinate while citing approved sources
+- Critical instruction: "Do not attribute training data to an external source" — prevents citing CourtListener/LII for answers drawn from training data
+
 ## Roadmap
 
 ### Immediate next
@@ -352,12 +368,49 @@ commit. Trigger: `python3 run_audit_cycle.py --ring4 --checks none --skip-ring2`
 - Ring 4 prong quality: 50 fixes (30 scrutiny_level, 15 burden, structural fixes)
 - Wrong-syllabus spot-check: 6 cases verified clean
 
+
+### Kingsfield-Lite
+
+**Location:** `~/Documents/lexgraph_pipeline/kingsfield/kingsfield_lite.md`
+**Size:** ~6,100 characters — fits in project instructions
+**Purpose:** Operative governance for working sessions; full Kingsfield in project knowledge for reference
+
+**Key lessons from testing:**
+- Full Kingsfield (126K chars / ~30K tokens) is too large for project instructions — consumes 15% of context window
+- Kingsfield-Lite contains all load-bearing directives: Standing Instructions, Five Commitments, Foundational Commitments, Out-of-Scope protocol, CRAC structure, Writing Discipline
+- Critical addition: "Do not attribute training data to an external source" — prevents models from citing CourtListener/LII while actually pattern-matching from training data
+- Opus 4.7 follows Kingsfield-Lite well; Opus 4.8 behavior is less consistent
+- Web search must be enabled for out-of-scope questions to work correctly
+
+**Prompt architecture decisions:**
+- Project instructions: Kingsfield-Lite
+- Project knowledge: Full Kingsfield v2 for section-specific reference
+- Shipped product: Full Kingsfield in API system parameter with prompt caching (Phase 3)
+
+### Round 2 A/B/C Test Results
+
+**What was tested:** C (Sections 1-2 only) vs C (full Kingsfield, Sections 1-8)
+**Finding:** Full Kingsfield produces structurally richer answers — better CRAC structure, clearer conclusions, stronger treatment of unsettled doctrine, more professional register. Quantitative scores unchanged (ceiling effect — all 5s in Round 1) but qualitative improvement is material.
+**Key insight:** The improvement is architectural, not just cosmetic. Full Kingsfield changes the answer posture; it doesn't just polish prose.
+
 ### Kingsfield — Current Status
 
 **Location:** `~/Documents/lexgraph_pipeline/kingsfield/`
-- `section1_identity_purpose.md` — LOCKED (v2, ChatGPT reviewed)
-- `section2_nature_of_legal_reasoning.md` — LOCKED (v2, ChatGPT reviewed)
-- Sections 3-9 — NOT YET WRITTEN
+- `kingsfield_v2.md` — COMPLETE, all 8 sections locked
+- `kingsfield_lite.md` — COMPLETE, operative version for project instructions (~6,100 chars)
+
+**Sections locked:**
+1. Identity and Purpose ✅
+2. The Nature of Legal Reasoning ✅
+3. Node Type Semantics ✅
+4. Edge Semantics ✅
+5. Limits of Representation ✅
+6. Traversal Patterns ✅ (includes 6.15 Cypher appendix, validated against live schema)
+7. Predictive Humility ✅
+8. Legal Writing Style ✅ (includes CRAC, threshold issues, structure-follows-confidence, Bluebook citations)
+
+**Section 9 (Audit Mode):** Deliberately excluded — admin-only function, documented separately
+**GitHub:** Kingsfield removed from public repo (proprietary IP). .gitignore updated.
 
 **Intellectual foundation:**
 - Edward Levi, *An Introduction to Legal Reasoning* (1948) — legal reasoning is reasoning by example; rules emerge from case comparison, not before it
