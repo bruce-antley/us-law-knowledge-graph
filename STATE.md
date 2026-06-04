@@ -358,6 +358,53 @@ commit. Trigger: `python3 run_audit_cycle.py --ring4 --checks none --skip-ring2`
 - Web search must be enabled for out-of-scope questions — without it models hallucinate while citing approved sources
 - Critical instruction: "Do not attribute training data to an external source" — prevents citing CourtListener/LII for answers drawn from training data
 
+
+### Test Infrastructure — Current State
+
+**Location:** `~/Documents/lexgraph_pipeline/carla/`
+
+**Status:** Scaffold complete, smoke tested, Q001 passing end-to-end
+
+**Package structure:**
+```
+carla/
+  __init__.py
+  client.py        ← API call layer with Kingsfield-Lite system prompt (this becomes the product core)
+  kingsfield.py    ← loads kingsfield_lite.md, cached after first load
+  test/
+    __init__.py
+    question_bank.py  ← loads/validates questions against JSON schema
+    evaluator.py      ← programmatic checks (case-sensitive graph term detection, narration, must-contain/not-contain)
+    runner.py         ← orchestrates end-to-end: load → send → evaluate → save results
+data/
+  carla_question_bank_schema.json  ← JSON Schema for all 100 questions
+  carla_question_bank_sample.json  ← 3 sample questions (Q001, Q042, Q093)
+  carla_question_bank.json         ← full question bank (currently = sample; 100 questions next)
+test_results/
+  carla_test_YYYYMMDD_HHMMSS.json  ← runner output files
+```
+
+**Q001 smoke test result:**
+- 1369 input tokens / 618 output tokens / 14.34s
+- Programmatic: PASS ✓
+- Kingsfield-Lite loads correctly as system prompt
+- Evaluator correctly catches graph terminology (case-sensitive), process narration, must-contain strings
+
+**Schema design:**
+- 13 question types (maps to Section 6.1 taxonomy)
+- 3 difficulty tiers (easy/medium/hard)
+- 3 evaluation tracks: programmatic (boolean), LLM-as-judge (rubric, future), human review (flag triggers)
+- Each question has: graph_anchors, expected_behavior, evaluation criteria, answer_notes
+
+**Token cost:** ~$0.02-0.03 per query at Opus pricing. 100 questions ≈ $2-3 per full test run.
+Prompt caching will amortize the 1,100-token Kingsfield-Lite cost in production.
+
+**Key architectural insight:** client.py IS the product skeleton. The test runner is built on top of it.
+The same API integration layer that runs tests will serve the shipped product with a UI on top.
+
+**Next session:** Write the full 100 questions against the schema.
+Distribution: ~7-8 per type, 3 difficulty tiers, 8 deliberate failure cases.
+
 ## Roadmap
 
 ### Immediate next
