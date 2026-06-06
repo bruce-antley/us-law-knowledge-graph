@@ -567,3 +567,59 @@ Internal first. Benchmark questions across all reasoning modes. Decision: expand
 *For narrative history, see docs/journal_entry_*.md*
 *For schema specification, see docs/uslawkg_ontology_v04.docx*
 *For reasoning layer, see kingsfield.md*
+
+---
+
+## Test Infrastructure — Current State (Updated)
+
+**Graph:** 898 nodes (415 Case, 350 Doctrine, 109 DoctrinalTest, 20 Area, 4 ConstitutionalProvision) | 1298 edges | 0 validation errors
+
+### Question Bank — Complete
+
+**Location:** `~/Documents/lexgraph_pipeline/data/carla_question_bank.json`
+**Status:** 100 questions, all valid
+
+| Type | Count |
+|---|---|
+| argument_generation | 8 |
+| authority_grounding | 8 |
+| compare_distinguish | 9 |
+| coverage | 9 |
+| current_law | 8 |
+| deliberate_failure | 9 |
+| doctrinal_orientation | 8 |
+| doctrine_stability | 8 |
+| fact_pattern | 8 |
+| good_law | 8 |
+| lineage | 9 |
+| modification_history | 8 |
+
+| Difficulty | Count |
+|---|---|
+| easy | 38 |
+| medium | 48 |
+| hard | 14 |
+
+**Generator approach:** questions split across 4 part files (~25 questions each) combined by questions.py combiner. Each part ~450-780 lines. Run: `python generate_question_bank.py --validate --summary`
+
+**Benchmark questions:**
+- Q009 (Central Hudson current law) — A/B/C Round 1 benchmark Q2
+- Q017 (Brandenburg lineage) — A/B/C Round 1 benchmark Q1
+- Q039 (Central Hudson stability) — A/B/C stability benchmark
+- Q093 (prediction refusal) — deliberate failure benchmark
+- Q095 (M&K out-of-scope) — deliberate failure benchmark
+
+**Infrastructure fixes applied:**
+- Neo4j MCP not supported via direct API — replaced with custom REST tool (client.py)
+- Web search control: runner reads `should_use_external_source` from question schema per question
+- Evaluator: case-sensitive graph terms check; APPLIES removed from GRAPH_TERMS
+- Questions use compact format (~15-20 lines each) vs inline JSON (~40 lines)
+
+### Roadmap Update
+
+1. ✅ Kingsfield v0.1 complete
+2. ✅ A/B/C Round 1 and Round 2
+3. ✅ Test infrastructure — schema, runner, evaluator, Neo4j custom tool, 100 questions
+4. **NEXT: Run full test suite** — `python -m carla.test.runner --all`
+5. MCP exposure — wrap graph + Kingsfield in MCP server
+6. Test with outside world — real lawyers, real tasks, commercial hypothesis
