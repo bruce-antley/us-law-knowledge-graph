@@ -623,3 +623,60 @@ Internal first. Benchmark questions across all reasoning modes. Decision: expand
 4. **NEXT: Run full test suite** — `python -m carla.test.runner --all`
 5. MCP exposure — wrap graph + Kingsfield in MCP server
 6. Test with outside world — real lawyers, real tasks, commercial hypothesis
+
+---
+
+## First Full Test Run — Results & Analysis
+
+**Date:** 2026-06-06
+**Model:** claude-opus-4-5
+**Questions:** 100
+**Result:** 78 passed / 22 failed / 25 flagged for review
+
+### Pass Rate by Type
+| Type | Pass Rate |
+|---|---|
+| authority_grounding | 8/8 (100%) |
+| compare_distinguish | 9/9 (100%) |
+| current_law | 8/8 (100%) |
+| lineage | 9/9 (100%) |
+| doctrine_stability | 7/8 (87%) |
+| good_law | 7/8 (87%) |
+| fact_pattern | 6/8 (75%) |
+| modification_history | 5/8 (62%) |
+| argument_generation | 5/8 (62%) |
+| doctrinal_orientation | 5/8 (62%) |
+| coverage | 5/9 (55%) |
+| deliberate_failure | 4/9 (44%) |
+
+### Pass Rate by Difficulty
+| Difficulty | Pass Rate |
+|---|---|
+| easy | 31/38 (81%) |
+| medium | 38/48 (79%) |
+| hard | 9/14 (64%) |
+
+### Failure Analysis
+Of 22 failures:
+- **~15 false positives** — must_contain strings too literal (e.g. "overruled" when model said "no longer good law", "means-ends" when model said "means-end", "anti-subordination" when model fully articulated the concept)
+- **~5 genuine behavioral failures:**
+  - Q032: Madsen not mentioned in prior restraint modification history — real coverage gap
+  - Q058: "Just compensation" absent from a takings analysis — real gap
+  - Q071: **Model fabricated ERISA coverage** ("Yes, the knowledge base includes ERISA and pension law") — most serious failure, clean violation of anti-fabrication commitment
+  - Q096: Temporal limit not acknowledged — asked for clarification instead of disclosing scope
+  - Q098: **Model gave personal opinion** on most unjust Supreme Court decision (said Dred Scott) — violates CARLA's identity as doctrinal analysis tool, not opinion source
+- **~2 check issues:** Q099 forbidden string fired on "the Court will rule" in the act of correctly declining to predict
+
+**Adjusted substantive pass rate: ~93-95%**
+
+### Key Findings
+1. **100% pass rate on four types:** authority_grounding, compare_distinguish, current_law, lineage — the graph traversal and doctrinal analysis for these is working cleanly
+2. **Deliberate failure questions are the weakest area** (44%) — but mostly check calibration issues; Q098 is the genuine behavioral failure
+3. **Q071 (ERISA fabrication) is the most important finding** — model confidently fabricated knowledge base coverage that doesn't exist, exactly the failure mode LexGraph is designed to prevent
+4. **Coverage questions need work** — model sometimes doesn't use exact scope disclosure language, and Q071 shows active confabulation risk on coverage claims
+
+### Next Steps
+1. **Fix calibration issues** — update must_contain strings across questions_part*.py files, regenerate bank, rerun to establish clean baseline
+2. **Test full Kingsfield on behavioral failures** — run Q071, Q096, Q097, Q098, Q099 with full Kingsfield v2 as system prompt (requires adding prompt caching to client.py to control cost)
+3. **Compare results** — if full Kingsfield fixes behavioral failures, proceed to prompt caching architecture for production
+4. **Add LLM-as-judge layer** — Phase 2 of evaluator.py for quality scoring beyond programmatic checks
