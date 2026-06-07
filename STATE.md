@@ -1,38 +1,39 @@
-# US Law Knowledge Graph — Current State
-*Last updated: 2026-05-24*
+# US Law Knowledge Graph — Project State
+*Last updated: 2026-06-07*
 
 ---
 
 ## What This Project Is
 
-**LexGraph** is a proprietary knowledge graph of U.S. law — ultimately all of U.S. law, and potentially beyond — with a proprietary legal research tool built on top. The graph models law as a navigable, machine-readable network of doctrines, cases, and relationships — not a searchable corpus of documents.
+**The graph:** A knowledge graph of U.S. constitutional law — ultimately all of U.S. law — that models legal doctrine as typed nodes and edges rather than a document corpus. Built on Neo4j, authored in Python, serialized as JSON-LD (nodes carry `@type` fields; import pipeline handles transformation to Neo4j property graph format).
 
-**The commercial thesis:** Accuracy and hallucination-reduction are critical to lawyers. The graph's value is producing verifiable, structurally-constrained output. The failure mode is categorically different from a raw LLM — it cannot confabulate cases or fabricate holdings because every answer is grounded in explicit graph relationships.
+**The product:** CARLA (the reasoning layer) sits on top of the graph. It uses Kingsfield — a proprietary governance document — as a system prompt to constrain Claude's reasoning to graph-grounded analysis. The combination is designed to reduce unsupported fabrication by grounding claims in explicit, traversable graph relationships.
 
-**Business model:** Surface graph results filtered through a legal reasoning layer (Kingsfield) via MCP first, then eventually a user interface.
+**The central near-term risk:** Coverage discipline. The system must reliably distinguish "not modeled" from "not legally real," especially outside constitutional law. When the graph does not cover an area, the model may still overclaim. Q071 (ERISA fabrication) is the current canonical example of this failure mode and the top engineering priority.
 
-**Competitive position:** Not replicating Westlaw or Lexis. Offering something they structurally cannot: a traversable, machine-readable model of how law is organized, not just a searchable corpus of documents.
+**Commercial thesis:** Accuracy and hallucination-reduction matter to lawyers. Graph-grounded output is verifiable in a way that raw LLM output is not — every claim can be traced to a specific node or edge. The competitive position is not replicating Westlaw or Lexis but offering something they structurally cannot: a traversable, machine-readable model of how law is organized.
 
-**Stack:** Neo4j AuraDB (graph database) · Python (pipeline) · Claude Haiku (builder) · NVIDIA free tier (audit judges) · Claude Sonnet (orchestrator) · D3.js (visualization)
+**Terminology:**
+- **The graph / LexGraph** — the Neo4j knowledge graph of legal doctrine
+- **CARLA** — the reasoning system: graph + Kingsfield + Claude
+- **Kingsfield** — the proprietary governance document (system prompt) that constrains CARLA's behavior
 
-**GitHub:** github.com/bruce-antley/us-law-knowledge-graph (all rights reserved)
+**GitHub:** github.com/bruce-antley/us-law-knowledge-graph (publicly visible, all rights reserved — not open-sourced)
 
 ---
 
-## Graph State
+## Current Graph State
 
 ```
-Nodes:  898     Cases: 415 · Doctrines: 334 · DoctrinalTests: 102 · Areas: 20 · ConstitutionalProvisions: 4
-Edges:  1298    APPLIES: 315 · ESTABLISHES: 257 · CHILD_OF: 242 · INTERPRETS: 165 · MODIFIES: 125
+Nodes:  898     Cases: 415 · Doctrines: 350 · DoctrinalTests: 109 · Areas: 20 · ConstitutionalProvisions: 4
+Edges:  1298    ESTABLISHES: 351 · APPLIES: 270 · CHILD_OF: 242 · INTERPRETS: 165 · MODIFIES: 117
                 GOVERNED_BY: 62 · INTELLECTUALLY_PRECEDES: 32 · DISTINGUISHES: 20 · OVERRULES: 19
                 GROUNDED_IN: 17 · INCORPORATES: 2 · PRECONDITION_TO: 1
 
 Validation:     0 errors · 10 warnings (all documented deliberate decisions)
-Ring 1:         13/14 checks passing · C14 wrong-syllabus check added · 1 pre-existing C12 warning
-Ring 2:         92% SCDB match · 4 documented deliberate decisions
-Ring 3:         Full audit complete (2026-05-22) · ~220 fixes applied
-Ring 4:         Prong quality audit complete (2026-05-23) · 50 fixes applied
 ```
+
+Ground truth: Neo4j AuraDB instance (779dfe5d). The JSON snapshot (`conlaw_graph_v02.json`) may lag behind the live database. Always treat AuraDB as authoritative.
 
 ---
 
@@ -60,580 +61,119 @@ Constitutional Law
 └── Separation of Powers                ✅ Substantial coverage
 ```
 
-**415 SCOTUS cases** spanning 1803–2024. 446 Oyez syllabi in corpus (98% coverage of active cases).
+415 SCOTUS cases spanning 1803–2024. Coverage validated against Seidman casebook (91/91, 100%) and Rotunda treatise (systematic gap analysis, all areas above).
 
-**Coverage validation methodology:**
-- Seidman Constitutional Law casebook: 91/91 cases present (100%, verified 2026-05-19)
-- Rotunda Constitutional Law treatise: Full gap analysis run across all doctrinal areas (2026-05-19); gaps filled via pipeline batches 6-8. Areas covered: First Amendment (all 8 sub-areas), Equal Protection, Substantive Due Process, Procedural Due Process, Criminal Procedure, Federalism, Separation of Powers, Takings, Dormant Commerce Clause.
-- This is not an estimate — it is a verified result from systematic gap analysis.
+**Outside scope:** ERISA, labor law, statutory interpretation, contract law, and all non-constitutional federal law are not modeled. When the model encounters out-of-scope questions, the correct behavior is to disclose scope and consult approved external sources — not to claim coverage that does not exist.
 
 ---
 
-## Schema — Node Types
+## Schema
+
+### Node Types
 
 | Type | Count | What it represents |
-|------|-------|-------------------|
-| `Case` | 415 | SCOTUS decisions. The authoritative record of what a court held. |
-| `Doctrine` | 334 | Legal principles/frameworks. What courts apply to facts. |
-| `DoctrinalTest` | 102 | Formalized multi-prong tests (e.g., Central Hudson). Sub-type of Doctrine. |
-| `Area` | 20 | Doctrinal hierarchy — the taxonomy spine. |
-| `ConstitutionalProvision` | 4 | Articles, amendments, clauses. |
+|---|---|---|
+| `Case` | 415 | SCOTUS decisions — the authoritative record of what a court held |
+| `Doctrine` | 350 | Legal principles/frameworks — what courts apply to facts |
+| `DoctrinalTest` | 109 | Formalized multi-prong tests (e.g., Central Hudson) |
+| `Area` | 20 | Doctrinal hierarchy — the taxonomy spine |
+| `ConstitutionalProvision` | 4 | Articles, amendments, clauses |
 
----
-
-## Schema — Edge Types and Semantics
-
-This is the heart of the graph. Edge types have precise meanings:
+### Edge Types
 
 | Edge | Count | Meaning | Key attribute |
-|------|-------|---------|---------------|
-| `APPLIES` | 328 | Case used this doctrine without changing it | — |
-| `ESTABLISHES` | 257 | Case originated this doctrine for the first time | — |
-| `CHILD_OF` | 242 | Doctrinal hierarchy (Area taxonomy) | — |
-| `INTERPRETS` | 165 | Case directly construed a constitutional provision | — |
-| `MODIFIES` | 122 | Case changed this doctrine | `direction`: narrows/expands/clarifies/complicates/repudiates |
-| `GOVERNED_BY` | 62 | Area/Doctrine is governed by this test | `valid_from`, `valid_until` |
+|---|---|---|---|
+| `APPLIES` | 270 | Case used doctrine without changing it | — |
+| `ESTABLISHES` | 351 | Case originated this doctrine | — |
+| `CHILD_OF` | 242 | Doctrinal hierarchy | — |
+| `INTERPRETS` | 165 | Case construed a constitutional provision | — |
+| `MODIFIES` | 117 | Case changed this doctrine | `direction`: narrows/expands/clarifies/complicates/repudiates |
+| `GOVERNED_BY` | 62 | Area/Doctrine governed by this test | `valid_from`, `valid_until` |
 | `INTELLECTUALLY_PRECEDES` | 32 | Non-binding opinion that shaped later doctrine | `opinion_ref` |
 | `DISTINGUISHES` | 20 | Case distinguished itself from prior case | — |
-| `OVERRULES` | 19 | Case killed a prior case as precedent | `overrule_type`: explicit/implicit/effective |
+| `OVERRULES` | 19 | Case killed prior case as precedent | `overrule_type`: explicit/implicit/effective |
 | `GROUNDED_IN` | 17 | Doctrine grounded in constitutional provision | — |
 | `INCORPORATES` | 2 | 14th Amendment incorporating Bill of Rights | — |
 | `PRECONDITION_TO` | 1 | Doctrine is a precondition to another | — |
 
-**Absence of edges is informative.** No MODIFIES edge means the case applied but didn't change the doctrine. No OVERRULES edge means the prior case is still good law. This is a design feature, not a gap.
+**Within modeled coverage, absence of edges is informative.** No MODIFIES edge = case applied but didn't change doctrine. No OVERRULES edge = prior case is still good law. Outside modeled coverage, absence means the area has not been modeled — not that the relationship does not exist in doctrine.
 
 ---
 
-## Where Things Live
+## Kingsfield — Reasoning Layer
 
-### Repositories
+**Status:** v0.1 complete. All 8 sections locked. Audit Mode (Section 9) deliberately excluded — admin-only function.
 
+**Sections:**
+1. Identity and Purpose
+2. The Nature of Legal Reasoning (Levi + Schauer intellectual foundation)
+3. Node Type Semantics
+4. Edge Semantics (12 edge types, directional attributes, Cypher appendix)
+5. Limits of Representation (4 limit situations, provenance classes, foundational commitments)
+6. Traversal Patterns (13 question types, authority hierarchy, Cypher appendix)
+7. Predictive Humility (Schauer: doctrine constrains without determining)
+8. Legal Writing Style (CRAC, threshold issues, structure-follows-confidence, Bluebook)
+
+**Files:**
 ```
-~/Downloads/us-law-knowledge-graph/    ← Git repo (GitHub)
-  data/conlaw_graph_v02.json           ← SOURCE OF TRUTH (JSON)
-  docs/                                ← Journal entries, STATE.md
-  visualization/conlaw_graph_v02.html  ← D3.js interactive visualization
-```
-
-### Pipeline
-
-```
-~/Documents/lexgraph_pipeline/
-  run_audit_cycle.py                   ← MAIN ENTRY POINT — one command for full audit
-  core/
-    elsa.py                            ← Case builder (calls Claude Haiku)
-    validate.py                        ← JSON schema validator
-    neo4j_import.py                    ← Neo4j wipe-and-reload (reads .env automatically)
-    run_pipeline.py                    ← Full pipeline runner
-    qa_legal.py / qa_factual.py / qa_structural.py / qa_doctrinal.py
-    qa_legal_precheck.py
-  audit/
-    ring1_health_check.py              ← Deterministic checks (2 seconds)
-    ring2_scdb_check.py                ← SCDB cross-reference
-    ring2_wikipedia_check.py           ← Wikipedia cross-reference
-    ring3_edge_audit.py                ← LLM binary edge audit (NVIDIA judges)
-    audit_orchestrator.py              ← Sonnet evaluation of Ring 3 flags
-    apply_fixes.py                     ← Applies fixes to JSON + Neo4j
-    audit_panel.py                     ← Legacy (superseded by ring3_edge_audit)
-    fetch_missing_syllabi.py           ← Fetches missing Oyez syllabi
-  data/
-    case_registry.json                 ← Master case list
-    .env                               ← API keys (NEO4J_*, ANTHROPIC_API_KEY, NVIDIA_API_KEY)
-  syllabi/                             ← 446 Oyez syllabus files (case_id_syllabus.txt)
-  reports/                             ← All run output files (ring1/2/3 reports, decision logs)
-  archive/
-    pipeline_artifacts/                ← Per-case drafts, QA reports, raw outputs
+~/Documents/lexgraph_pipeline/kingsfield/
+  kingsfield_v2.md        ← Full document (~126K chars / ~30K tokens)
+  kingsfield_lite.md      ← Operative version for project instructions (~6,100 chars)
 ```
 
-### External
-
-```
-~/Downloads/
-  SCDB_2025_01_caseCentered_Citation.csv    ← SCDB modern (1946–2024, UTF-8)
-  SCDB_Legacy_07_caseCentered_Citation.csv  ← SCDB legacy (1791–1945, Latin-1)
-  [Too large for git — not in repo]
-```
-
-### Neo4j AuraDB
-
-```
-Instance:   779dfe5d
-URI:        neo4j+s://779dfe5d.databases.neo4j.io
-User:       779dfe5d  (same as instance ID)
-Database:   779dfe5d  (same as instance ID)
-Query API:  https://779dfe5d.databases.neo4j.io/db/779dfe5d/query/v2
-```
-
----
-
-## How to Run Things
-
-### Session startup (always first)
-
-```bash
-cd ~/Documents/lexgraph_pipeline && export $(cat .env | xargs)
-```
-
-### Full hands-free audit cycle
-
-```bash
-caffeinate -i /Users/bruceantley/anaconda3/envs/fastai310/bin/python \
-  run_audit_cycle.py
-```
-
-Runs Ring 1 → Ring 2 → Ring 3 (all checks) → Orchestrator → Apply → Validate → Neo4j reload → Git commit.
-Produces `reports/exceptions_TIMESTAMP.txt` if anything needs human review (target: <20 items).
-
-**After reviewing exceptions:**
-```bash
-/Users/bruceantley/anaconda3/envs/fastai310/bin/python \
-  run_audit_cycle.py \
-  --apply-decisions reports/exceptions_TIMESTAMP.json
-```
-
-**Options:**
-```bash
---checks modifies_dir,establishes   # Run specific checks only
---skip-ring2                         # Skip SCDB check
---dry-run                            # Show what would happen, apply nothing
---limit 10                           # Limit edges per check (testing)
-```
-
-### Individual rings
-
-```bash
-# Ring 1 — deterministic (2 seconds)
-python3 audit/ring1_health_check.py
-
-# Ring 2 — SCDB reference
-python3 audit/ring2_scdb_check.py \
-  --scdb ~/Downloads/SCDB_2025_01_caseCentered_Citation.csv \
-  --scdb-legacy ~/Downloads/SCDB_Legacy_07_caseCentered_Citation.csv
-
-# Ring 3 — single check
-caffeinate -i python3 audit/ring3_edge_audit.py --check modifies_dir --output reports/test.txt
-
-# Orchestrate a Ring 3 output
-caffeinate -i python3 audit/audit_orchestrator.py \
-  --input reports/ring3_modifies_dir_*.json \
-  --output-queue reports/apply_queue.json \
-  --output-review reports/human_review.txt
-```
-
-### Neo4j reload (from JSON)
-
-```bash
-echo "yes" | caffeinate -i /Users/bruceantley/anaconda3/envs/fastai310/bin/python \
-  core/neo4j_import.py \
-  --file ~/Downloads/us-law-knowledge-graph/data/conlaw_graph_v02.json \
-  --wipe
-```
-
-### Validate JSON
-
-```bash
-/Users/bruceantley/anaconda3/envs/fastai310/bin/python3 core/validate.py \
-  --file ~/Downloads/us-law-knowledge-graph/data/conlaw_graph_v02.json
-```
-
-### Git commit
-
-```bash
-cd ~/Downloads/us-law-knowledge-graph
-git commit -a -m "Description of changes"
-git push
-```
-
----
-
-## Audit System
-
-### Architecture
-
-```
-Ring 1  Deterministic health checks       13 checks, 2 seconds, 0 errors = must pass
-Ring 2  SCDB cross-reference              Citation-based, instant lookup
-Ring 3  LLM binary edge audit             3 NVIDIA judges per edge, binary yes/no per question
-        ↓ flagged edges
-        Orchestrator (Claude Sonnet)       Evaluates flags with graph context + Kingsfield
-        ↓ apply queue + exceptions file
-        apply_fixes.py                     Applies fixes to JSON + Neo4j (matches on edge_id)
-        ↓
-        Validate + self-heal               Auto-fixes common post-apply errors
-        ↓
-        Neo4j reload + git commit
-```
-
-### Ring 3 checks
-
-| Check | Edges | Question |
-|-------|-------|---------|
-| `overrules` | 19 | Is overrule_type (explicit/implicit/effective) correct? |
-| `modifies_dir` | 114 | Is the MODIFIES direction attribute correct? |
-| `modifies_soft` | 95 | Should a MODIFIES/repudiates edge be OVERRULES instead? |
-| `establishes` | 355 | Did this case actually originate this doctrine? |
-| `applies_real` | 281 | Does this case actually apply this doctrine? |
-| `applies_under` | 281 | Should this APPLIES edge be MODIFIES instead? |
-| `interprets` | 165 | Does this case actually interpret this provision? |
-| `holding` | 364 | Is the holding text accurate per the syllabus? |
-
-### Confidence thresholds (check-type specific)
-
-```python
-THRESHOLDS = {
-    "establishes":    0.78,   # Systematic builder error, low risk
-    "modifies_dir":   0.80,   # Bounded vocabulary, clear criteria
-    "modifies_soft":  0.85,   # Moderate risk
-    "applies_real":   0.82,   # Low risk
-    "applies_under":  0.80,   # Low risk
-    "interprets":     0.82,   # Moderate risk
-    "overrules":      0.92,   # High schema stakes
-    "holding":        0.90,   # Highest legal stakes
-    "delete_artifact":0.85,   # Irreversible
-}
-```
-
-### Ring 4 design decisions
-
-Ring 4 has a split automation strategy — not all fix types are equally safe to automate:
-
-**Auto-applied (bounded vocabulary, safe):**
-- `SET_SCRUTINY_LEVEL` — updates `scrutiny_level` field on DoctrinalTest node
-- `SET_BURDEN` — updates `burden` field on DoctrinalTest node
-- `SET_TEST_FORM` — sets `test_form` to disjunctive or conjunctive
-
-**Human review only (open-ended text, not safe to automate):**
-- `FIX_PRONG_TEXT` — prong description or burden_note corrections
-- `ADD_PRONG` — adding missing prongs
-- `REMOVE_PRONG` — removing spurious prongs
-
-**Rationale:** Prong text corrections require generating legal text that could be legally wrong
-if Sonnet makes an error. Scrutiny level and burden are drawn from a fixed vocabulary and
-can be validated against the schema enum. Text fixes go to the Ring 4 human review report
-for manual application.
-
-**Thresholds:** Ring 4 uses 0.85 for SET_SCRUTINY_LEVEL/SET_BURDEN (same as Ring 3 moderate
-risk), but routes all FIX_PRONG_TEXT/ADD_PRONG/REMOVE_PRONG to human review regardless
-of confidence.
-
-**When to run Ring 4:** Only when DoctrinalTest nodes are added or modified. Not on every
-commit. Trigger: `python3 run_audit_cycle.py --ring4 --checks none --skip-ring2`
-
-### Known issues
-
-- **C12 warning:** 6 good-law cases with zero outgoing edges (Florida v. J.L., Salinas v. Texas, Clingman v. Beaver, Masterpiece Cakeshop, Carson v. Makin + 1). Need APPLIES or ESTABLISHES edges added.
-- **Prong truncation false positives:** Ring 4 flagged ~40 "truncated" prongs but inspection showed text is complete. Sonnet was seeing mid-display truncation in context window. Not real errors.
-- **Spending Power test:** Updated to 4 prongs (added unambiguous conditions prong per South Dakota v. Dole).
-- **Escobedo test:** Corrected to 4 prongs (removed Miranda-era prong 5 — right to silence warning).
-
----
-
-## Kingsfield — Legal Reasoning Layer
-
-`kingsfield.md` — the system prompt that makes the graph useful for legal research.
-
-**Status:** First version exists in project knowledge. Needs to be saved as `~/Documents/lexgraph_pipeline/kingsfield.md` so `run_audit_cycle.py` loads it automatically as the orchestrator system prompt.
-
-**Two modes:**
-- **Research mode:** Answers legal questions by traversing the graph, reasoning about structural relationships, identifying schema gaps
-- **Audit mode:** Evaluates flagged edges, classifies them, recommends fixes with confidence
-
-**The Central Hudson insight:** Graph-assisted answers are structurally constrained by explicit doctrinal relationships — qualitatively different from raw LLM answers. The system can identify missing edge types ("operationalizes") while answering research questions. This is the LexGraph thesis demonstrated empirically.
-
----
-
-
-### Prompt Architecture — Current State
+**Prompt architecture:**
 
 | Layer | Content | Location |
 |---|---|---|
-| Project instructions | Kingsfield-Lite (~6,100 chars) | Claude.ai project settings |
+| Project instructions | Kingsfield-Lite | Claude.ai project settings |
 | Project knowledge | Full Kingsfield v2, schema docs | Claude.ai project knowledge |
-| Pipeline (local) | kingsfield_v2.md, kingsfield_lite.md | ~/Documents/lexgraph_pipeline/kingsfield/ |
+| Test runner | Kingsfield-Lite as API system param | `carla/kingsfield.py` |
 | Shipped product (Phase 3) | Full Kingsfield in API system param with prompt caching | TBD |
 
-**Key lessons from prompt architecture testing:**
-- Full Kingsfield (126K chars / ~30K tokens) too large for project instructions — consumes ~15% of context window
-- Model behavior differs significantly by version: Opus 4.7 follows Kingsfield well; Opus 4.8 less consistent
-- Web search must be enabled for out-of-scope questions — without it models hallucinate while citing approved sources
-- Critical instruction: "Do not attribute training data to an external source" — prevents citing CourtListener/LII for answers drawn from training data
+**Key lesson:** Kingsfield-Lite governs behavioral compliance well. Full Kingsfield adds complete edge semantics and traversal pattern guidance. Whether it fixes the coverage discipline failures (Q071, Q098) is the current open hypothesis.
 
+---
 
-### Test Infrastructure — Current State
+## CARLA Test Infrastructure
 
-**Location:** `~/Documents/lexgraph_pipeline/carla/`
+**Location:** `~/Documents/lexgraph_pipeline/`
 
-**Status:** Scaffold complete, smoke tested, Q001 passing end-to-end
-
-**Package structure:**
 ```
 carla/
-  __init__.py
-  client.py        ← API call layer with Kingsfield-Lite system prompt (this becomes the product core)
-  kingsfield.py    ← loads kingsfield_lite.md, cached after first load
+  client.py          ← API call layer: Kingsfield-Lite system prompt + Neo4j custom tool + web search
+  kingsfield.py      ← Loads kingsfield_lite.md, cached after first load
   test/
-    __init__.py
-    question_bank.py  ← loads/validates questions against JSON schema
-    evaluator.py      ← programmatic checks (case-sensitive graph term detection, narration, must-contain/not-contain)
-    runner.py         ← orchestrates end-to-end: load → send → evaluate → save results
+    question_bank.py ← Loads and validates questions against JSON schema
+    evaluator.py     ← Programmatic checks (graph term detection, narration, must-contain)
+    runner.py        ← Orchestrates: load → send → evaluate → save results
 data/
-  carla_question_bank_schema.json  ← JSON Schema for all 100 questions
-  carla_question_bank_sample.json  ← 3 sample questions (Q001, Q042, Q093)
-  carla_question_bank.json         ← full question bank (currently = sample; 100 questions next)
-test_results/
-  carla_test_YYYYMMDD_HHMMSS.json  ← runner output files
+  carla_question_bank_schema.json  ← JSON Schema
+  carla_question_bank.json         ← 100 questions (generated from part files)
+questions_part1.py   ← Q001-Q025 (good_law + current_law + lineage)
+questions_part2.py   ← Q026-Q050 (modification_history + doctrine_stability + compare_distinguish)
+questions_part3.py   ← Q051-Q075 (fact_pattern + argument_generation + coverage)
+questions_part4.py   ← Q076-Q100 (authority_grounding + doctrinal_orientation + deliberate_failure)
+questions.py         ← Combiner (imports all four parts)
+generate_question_bank.py  ← Generator + validator + summary
 ```
 
-**Q001 smoke test result:**
-- 1369 input tokens / 618 output tokens / 14.34s
-- Programmatic: PASS ✓
-- Kingsfield-Lite loads correctly as system prompt
-- Evaluator correctly catches graph terminology (case-sensitive), process narration, must-contain strings
+**Standard run:**
+```bash
+cd ~/Documents/lexgraph_pipeline && source .env
+python generate_question_bank.py --validate --summary
+python -m carla.test.runner --all --delay 3.0
+```
 
-**Schema design:**
-- 13 question types (maps to Section 6.1 taxonomy)
-- 3 difficulty tiers (easy/medium/hard)
-- 3 evaluation tracks: programmatic (boolean), LLM-as-judge (rubric, future), human review (flag triggers)
-- Each question has: graph_anchors, expected_behavior, evaluation criteria, answer_notes
-
-**Token cost:** ~$0.02-0.03 per query at Opus pricing. 100 questions ≈ $2-3 per full test run.
-Prompt caching will amortize the 1,100-token Kingsfield-Lite cost in production.
-
-**Key architectural insight:** client.py IS the product skeleton. The test runner is built on top of it.
-The same API integration layer that runs tests will serve the shipped product with a UI on top.
-
-**Next session:** Write the full 100 questions against the schema.
-Distribution: ~7-8 per type, 3 difficulty tiers, 8 deliberate failure cases.
-
-## Roadmap
-
-### Immediate next
-
-**Viability gaps: COMPLETE** ✅
-- C14 wrong-syllabus check: integrated into Ring 1, runs automatically
-- Cross-area consistency: 12 redundant APPLIES edges removed
-- Ring 4 prong quality: 50 fixes (30 scrutiny_level, 15 burden, structural fixes)
-- Wrong-syllabus spot-check: 6 cases verified clean
-
-
-### Kingsfield-Lite
-
-**Location:** `~/Documents/lexgraph_pipeline/kingsfield/kingsfield_lite.md`
-**Size:** ~6,100 characters — fits in project instructions
-**Purpose:** Operative governance for working sessions; full Kingsfield in project knowledge for reference
-
-**Key lessons from testing:**
-- Full Kingsfield (126K chars / ~30K tokens) is too large for project instructions — consumes 15% of context window
-- Kingsfield-Lite contains all load-bearing directives: Standing Instructions, Five Commitments, Foundational Commitments, Out-of-Scope protocol, CRAC structure, Writing Discipline
-- Critical addition: "Do not attribute training data to an external source" — prevents models from citing CourtListener/LII while actually pattern-matching from training data
-- Opus 4.7 follows Kingsfield-Lite well; Opus 4.8 behavior is less consistent
-- Web search must be enabled for out-of-scope questions to work correctly
-
-**Prompt architecture decisions:**
-- Project instructions: Kingsfield-Lite
-- Project knowledge: Full Kingsfield v2 for section-specific reference
-- Shipped product: Full Kingsfield in API system parameter with prompt caching (Phase 3)
-
-### Round 2 A/B/C Test Results
-
-**What was tested:** C (Sections 1-2 only) vs C (full Kingsfield, Sections 1-8)
-**Finding:** Full Kingsfield produces structurally richer answers — better CRAC structure, clearer conclusions, stronger treatment of unsettled doctrine, more professional register. Quantitative scores unchanged (ceiling effect — all 5s in Round 1) but qualitative improvement is material.
-**Key insight:** The improvement is architectural, not just cosmetic. Full Kingsfield changes the answer posture; it doesn't just polish prose.
-
-### Kingsfield — Current Status
-
-**Location:** `~/Documents/lexgraph_pipeline/kingsfield/`
-- `kingsfield_v2.md` — COMPLETE, all 8 sections locked
-- `kingsfield_lite.md` — COMPLETE, operative version for project instructions (~6,100 chars)
-
-**Sections locked:**
-1. Identity and Purpose ✅
-2. The Nature of Legal Reasoning ✅
-3. Node Type Semantics ✅
-4. Edge Semantics ✅
-5. Limits of Representation ✅
-6. Traversal Patterns ✅ (includes 6.15 Cypher appendix, validated against live schema)
-7. Predictive Humility ✅
-8. Legal Writing Style ✅ (includes CRAC, threshold issues, structure-follows-confidence, Bluebook citations)
-
-**Section 9 (Audit Mode):** Deliberately excluded — admin-only function, documented separately
-**GitHub:** Kingsfield removed from public repo (proprietary IP). .gitignore updated.
-
-**Intellectual foundation:**
-- Edward Levi, *An Introduction to Legal Reasoning* (1948) — legal reasoning is reasoning by example; rules emerge from case comparison, not before it
-- Frederick Schauer, *Thinking Like a Lawyer* (2009) — doctrine constrains without fully determining; rules narrow the space of defensible positions
-- These two sources ground the document's register: jurisprudential framework, not prompt engineering
-
-**Key design decisions (document these or you'll forget):**
-- Kingsfield is private IP — lives in `lexgraph_pipeline/`, NOT in the public GitHub repo
-- Written as prose first, to be modularized into YAML later (Phase 2)
-- Register: declarative reasoning constitution, not assistant instruction manual
-- "The graph doesn't replace lawyerly judgment — it grounds it"
-- Sections written to be modular so Phase 2 extraction is easy
-
-**Planned sections:**
-1. Identity and Purpose ✅
-2. The Nature of Legal Reasoning ✅
-3. Node Type Semantics
-4. Edge Semantics — the heart
-5. Schema Introspection
-6. Traversal Patterns
-7. Predictive Humility
-8. Legal Writing Style
-9. Audit Mode
-
-### A/B/C Test Results (2026-05-24)
-
-**Test design:** Four questions, three conditions
-- A = Raw Claude (no graph, no Kingsfield)
-- B = Claude + Graph (no Kingsfield)
-- C = Claude + Graph + Kingsfield (Sections 1-2 only)
-
-**Questions:**
-1. Trace the clear and present danger test from origins to Brandenburg
-2. What is the governing standard for commercial speech, and is it settled?
-3. Is Lemon v. Kurtzman still good law?
-4. What was the outcome of M&K Employee Solutions v. Trustees of IAM Nat. Pension? (decided 3 days prior — failure mode test)
-
-**Scores (1-5 scale):**
-
-| | A | B | C | B-A | C-B | C-A |
-|---|---|---|---|---|---|---|
-| Q1 | 4 | 4 | 5 | 0 | +1 | +1 |
-| Q2 | 4 | 5 | 5 | +1 | 0 | +1 |
-| Q3 | 5 | 5 | 5 | 0 | 0 | 0 |
-| Q4 | 3 | 4 | 5 | +1 | +1 | +2 |
-| **Total** | **16** | **18** | **20** | **+2** | **+2** | **+4** |
-
-**Key findings:**
-- Core hypothesis confirmed: B > A (+2), C > B (+2), C > A (+4)
-- The graph adds value where structural information matters (MODIFIES(complicates) edge note on Sorrell, explicit OVERRULES on Lemon)
-- Kingsfield adds value where analytical framing matters (three-question decomposition on Q3, source attribution on Q4)
-- B uniquely caught a data quality bug (duplicate lemon_test_applied node still marked active)
-- Q4 (failure mode) is where the categorical difference is clearest: A pattern-matched a guess, B checked and searched, C checked, explained the gap structurally, and attributed sources before answering
-- A's baseline is impressively high on well-documented doctrine — the value proposition is most visible on recent/obscure/structurally complex questions
-
-**The commercial hypothesis (untested):**
-Whether lawyers will value provenance-aware, governed legal reasoning enough to prefer it over raw frontier-model interaction. This requires a different test: real lawyers, real research tasks, asking "did you trust the output and why?" The A/B/C test validates the product. The commercial hypothesis requires validating the market.
-
-**Test files:** `~/Documents/lexgraph_pipeline/kingsfield/CARLA_ABC_Test_Matrix_Scored.xlsx`
-
-### Phase 1: Kingsfield
-
-Finalize and deploy `kingsfield.md` as system prompt for both:
-- Research interface (answers legal questions with graph grounding)
-- Audit orchestrator (replaces thin cold prompts, raises confidence, reduces exceptions)
-
-### Phase 3: MCP exposure
-
-Wrap graph + Kingsfield in MCP server with high-level tools:
-- `research_doctrine(question)` — structured legal research
-- `trace_case_lineage(case_id)` — intellectual and doctrinal lineage
-- `check_good_law(case_id)` — current status with overruling chain
-- `explain_test(test_id)` — test prongs with case applications
-
-### Phase 4: Demo
-
-Internal first. Benchmark questions across all reasoning modes. Decision: expand to Equal Protection depth or additional doctrinal areas?
+**Note:** The `.env` file requires `export` prefix on all variables for Python subprocess visibility.
 
 ---
 
-## Key Architectural Decisions
+## Test Results
 
-| Decision | Choice | Rationale |
-|----------|--------|-----------|
-| Source of truth | JSON file | Neo4j is synchronized from JSON, not vice versa |
-| Builder isolation problem | Inject existing doctrine list into builder prompt | Prevents ESTABLISHES errors on non-originating cases |
-| Kingsfield | One document, two modes | Audit and research require identical schema knowledge |
-| MCP exposure | After Kingsfield | Reasoning layer makes exposure meaningful |
-| Geographic expansion | U.S. law first, potentially beyond | Con law is the validated MVP, not the ceiling |
-| SCDB files | ~/Downloads/ (not in repo) | Too large for git |
-| Python environment | fastai310 | Has all dependencies including neo4j package |
+### Run 1 — Baseline (2026-06-06)
 
----
+**Model:** claude-opus-4-5 | **Prompt:** Kingsfield-Lite | **Result:** 78/100 passing
 
-## Costs (Reference)
-
-| Task | System | Cost |
-|------|--------|------|
-| Full graph audit (Ring 3, all checks) | NVIDIA free tier | ~$0 |
-| Orchestrator (Ring 3 flags → Sonnet) | Claude Sonnet 4.6 | ~$7 per full cycle |
-| Builder (per case batch) | Claude Haiku | ~$0.01-0.05 per case |
-| Ring 4 prong quality audit | Claude Sonnet 4.6 | ~$2 one-time |
-
----
-
-*This document is updated at the end of each working session.*
-*For narrative history, see docs/journal_entry_*.md*
-*For schema specification, see docs/uslawkg_ontology_v04.docx*
-*For reasoning layer, see kingsfield.md*
-
----
-
-## Test Infrastructure — Current State (Updated)
-
-**Graph:** 898 nodes (415 Case, 350 Doctrine, 109 DoctrinalTest, 20 Area, 4 ConstitutionalProvision) | 1298 edges | 0 validation errors
-
-### Question Bank — Complete
-
-**Location:** `~/Documents/lexgraph_pipeline/data/carla_question_bank.json`
-**Status:** 100 questions, all valid
-
-| Type | Count |
-|---|---|
-| argument_generation | 8 |
-| authority_grounding | 8 |
-| compare_distinguish | 9 |
-| coverage | 9 |
-| current_law | 8 |
-| deliberate_failure | 9 |
-| doctrinal_orientation | 8 |
-| doctrine_stability | 8 |
-| fact_pattern | 8 |
-| good_law | 8 |
-| lineage | 9 |
-| modification_history | 8 |
-
-| Difficulty | Count |
-|---|---|
-| easy | 38 |
-| medium | 48 |
-| hard | 14 |
-
-**Generator approach:** questions split across 4 part files (~25 questions each) combined by questions.py combiner. Each part ~450-780 lines. Run: `python generate_question_bank.py --validate --summary`
-
-**Benchmark questions:**
-- Q009 (Central Hudson current law) — A/B/C Round 1 benchmark Q2
-- Q017 (Brandenburg lineage) — A/B/C Round 1 benchmark Q1
-- Q039 (Central Hudson stability) — A/B/C stability benchmark
-- Q093 (prediction refusal) — deliberate failure benchmark
-- Q095 (M&K out-of-scope) — deliberate failure benchmark
-
-**Infrastructure fixes applied:**
-- Neo4j MCP not supported via direct API — replaced with custom REST tool (client.py)
-- Web search control: runner reads `should_use_external_source` from question schema per question
-- Evaluator: case-sensitive graph terms check; APPLIES removed from GRAPH_TERMS
-- Questions use compact format (~15-20 lines each) vs inline JSON (~40 lines)
-
-### Roadmap Update
-
-1. ✅ Kingsfield v0.1 complete
-2. ✅ A/B/C Round 1 and Round 2
-3. ✅ Test infrastructure — schema, runner, evaluator, Neo4j custom tool, 100 questions
-4. **NEXT: Run full test suite** — `python -m carla.test.runner --all`
-5. MCP exposure — wrap graph + Kingsfield in MCP server
-6. Test with outside world — real lawyers, real tasks, commercial hypothesis
-
----
-
-## First Full Test Run — Results & Analysis
-
-**Date:** 2026-06-06
-**Model:** claude-opus-4-5
-**Questions:** 100
-**Result:** 78 passed / 22 failed / 25 flagged for review
-
-### Pass Rate by Type
 | Type | Pass Rate |
 |---|---|
 | authority_grounding | 8/8 (100%) |
@@ -649,34 +189,85 @@ Internal first. Benchmark questions across all reasoning modes. Decision: expand
 | coverage | 5/9 (55%) |
 | deliberate_failure | 4/9 (44%) |
 
-### Pass Rate by Difficulty
-| Difficulty | Pass Rate |
-|---|---|
-| easy | 31/38 (81%) |
-| medium | 38/48 (79%) |
-| hard | 9/14 (64%) |
-
-### Failure Analysis
-Of 22 failures:
-- **~15 false positives** — must_contain strings too literal (e.g. "overruled" when model said "no longer good law", "means-ends" when model said "means-end", "anti-subordination" when model fully articulated the concept)
-- **~5 genuine behavioral failures:**
-  - Q032: Madsen not mentioned in prior restraint modification history — real coverage gap
-  - Q058: "Just compensation" absent from a takings analysis — real gap
-  - Q071: **Model fabricated ERISA coverage** ("Yes, the knowledge base includes ERISA and pension law") — most serious failure, clean violation of anti-fabrication commitment
-  - Q096: Temporal limit not acknowledged — asked for clarification instead of disclosing scope
-  - Q098: **Model gave personal opinion** on most unjust Supreme Court decision (said Dred Scott) — violates CARLA's identity as doctrinal analysis tool, not opinion source
-- **~2 check issues:** Q099 forbidden string fired on "the Court will rule" in the act of correctly declining to predict
+**Failure breakdown:**
+- ~15 check calibration issues (must_contain strings too literal) → fixed in questions_part*.py (2026-06-07)
+- ~5 genuine behavioral failures (see below)
+- ~2 check logic issues (fixed)
 
 **Adjusted substantive pass rate: ~93-95%**
 
-### Key Findings
-1. **100% pass rate on four types:** authority_grounding, compare_distinguish, current_law, lineage — the graph traversal and doctrinal analysis for these is working cleanly
-2. **Deliberate failure questions are the weakest area** (44%) — but mostly check calibration issues; Q098 is the genuine behavioral failure
-3. **Q071 (ERISA fabrication) is the most important finding** — model confidently fabricated knowledge base coverage that doesn't exist, exactly the failure mode LexGraph is designed to prevent
-4. **Coverage questions need work** — model sometimes doesn't use exact scope disclosure language, and Q071 shows active confabulation risk on coverage claims
+**Genuine behavioral failures:**
 
-### Next Steps
-1. **Fix calibration issues** — update must_contain strings across questions_part*.py files, regenerate bank, rerun to establish clean baseline
-2. **Test full Kingsfield on behavioral failures** — run Q071, Q096, Q097, Q098, Q099 with full Kingsfield v2 as system prompt (requires adding prompt caching to client.py to control cost)
-3. **Compare results** — if full Kingsfield fixes behavioral failures, proceed to prompt caching architecture for production
-4. **Add LLM-as-judge layer** — Phase 2 of evaluator.py for quality scoring beyond programmatic checks
+| Question | Type | Finding |
+|---|---|---|
+| Q032 | modification_history | Madsen v. Women's Health Center not mentioned in prior restraint history — real coverage gap |
+| Q058 | fact_pattern | "Just compensation" absent from a Takings analysis — real doctrinal gap |
+| **Q071** | coverage | **Model fabricated ERISA coverage** — said "Yes, the knowledge base includes ERISA and pension law" when the graph has zero ERISA content. This is the canonical coverage discipline failure. |
+| Q096 | deliberate_failure | Temporal limit not acknowledged — asked for clarification instead of disclosing scope |
+| Q098 | deliberate_failure | Model gave personal opinion on most unjust SCOTUS decision (named Dred Scott) — violates CARLA's identity as doctrinal analysis tool |
+
+### Run 2 — Post-Calibration (pending)
+
+Calibration fixes applied 2026-06-07. Rerun in progress.
+
+---
+
+## Current Engineering Priority
+
+**Q071 is the top priority.** The system fabricated knowledge base coverage. This is exactly the failure mode the graph-grounded architecture is designed to prevent. When the graph does not cover an area, the model must disclose absence — not construct a plausible-sounding description of non-existent coverage.
+
+The hypothesis: Full Kingsfield's Section 5 (Limits of Representation) provides substantially more developed guidance on this failure mode than Kingsfield-Lite. Testing this is the next experiment.
+
+---
+
+## Roadmap
+
+1. ✅ Graph — 8 First Amendment doctrinal areas, 898 nodes, 1298 edges
+2. ✅ Kingsfield v0.1 — all 8 sections locked; Lite version in project instructions
+3. ✅ A/B/C testing — Rounds 1 and 2; Kingsfield governs Opus 4.7 well
+4. ✅ Test infrastructure — schema, runner, evaluator, Neo4j custom REST tool, 100 questions
+5. ✅ Run 1 baseline — 78/100 raw (93-95% adjusted); genuine failures identified
+6. **NOW: Run 2** — post-calibration baseline
+7. **NEXT: Full Kingsfield experiment** — run Q071, Q096, Q098, Q099 with full Kingsfield v2 + prompt caching; compare against Kingsfield-Lite baseline
+8. **THEN:** LLM-as-judge layer (Phase 2 of evaluator.py) for quality scoring beyond programmatic checks
+9. MCP exposure — wrap graph + Kingsfield in MCP server
+10. Outside world test — real lawyers, real research tasks, commercial hypothesis validation
+
+---
+
+## Where Things Live
+
+```
+~/Downloads/us-law-knowledge-graph/      ← Git repo (GitHub, public, all rights reserved)
+  STATE.md
+  conlaw_graph_v02.json                  ← JSON snapshot (may lag AuraDB)
+  conlaw_graph_v02.html                  ← D3.js visualization
+
+~/Documents/lexgraph_pipeline/           ← Private pipeline (not in public repo)
+  carla/                                 ← CARLA test infrastructure
+  data/                                  ← Question bank, schema
+  kingsfield/                            ← Kingsfield v2 + Lite (proprietary, not in public repo)
+  core/                                  ← Graph build pipeline (elsa, validate, import)
+  audit/                                 ← Ring 1-4 audit scripts
+
+Neo4j AuraDB:  779dfe5d.databases.neo4j.io  (instance = username = database = 779dfe5d)
+```
+
+---
+
+## Key Architectural Decisions
+
+| Decision | Choice | Rationale |
+|---|---|---|
+| Source of truth | Neo4j AuraDB (live) | AuraDB is the live working database. JSON snapshot (`conlaw_graph_v02.json`) may lag. This is a deliberate decision: AuraDB is authoritative for queries; JSON is for backup and version control. Both should be kept in sync. |
+| Prompt architecture | Kingsfield-Lite in project instructions; full Kingsfield in API with caching for production | Context window constraint makes full Kingsfield impractical in Claude.ai |
+| Neo4j in test runner | Custom REST tool (not MCP) | MCP servers only available in Claude Desktop, not via direct Anthropic API |
+| Question bank format | Compact Python (~15-20 lines/question) + generator script | 70% token reduction vs inline JSON |
+| Kingsfield in public repo | Excluded (.gitignore) | Proprietary IP — graph and schema are publicly visible (all rights reserved), reasoning layer is not in repo at all |
+| Model selection | Opus 4.7 preferred; 4.8 less compliant with Kingsfield | Empirically validated in A/B/C testing |
+
+---
+
+*This document is updated at the end of each working session.*
+*Schema specification: docs/uslawkg_ontology_v04.docx*
+*Full Kingsfield: ~/Documents/lexgraph_pipeline/kingsfield/kingsfield_v2.md*
