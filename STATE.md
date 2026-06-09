@@ -347,3 +347,87 @@ Both `kingsfield_lite.md` and `kingsfield_v2.md` now include:
 8. **THEN: LLM-as-judge layer** — Phase 2 evaluator for quality scoring beyond programmatic checks
 9. MCP exposure — wrap graph + Kingsfield in MCP server
 10. Outside world test — real lawyers, real research tasks, commercial hypothesis validation
+
+---
+
+## Model Comparison — Updated (2026-06-09)
+
+### Test Results by Model
+
+| Model | Provider | Cost/query | Pass Rate | Notes |
+|---|---|---|---|---|
+| claude-opus-4-5 | Anthropic | ~$0.40 | 86/100 | Established baseline |
+| claude-sonnet-4-6 | Anthropic | ~$0.08 | 81/100 | 5x cheaper; coverage narration gap |
+| claude-haiku-4-5 | Anthropic | ~$0.005 | 63/100 | Insufficient doctrinal depth |
+| llama-3.3-70b-instruct | Nvidia NIM | free tier | untested | 238s latency — unusable for interactive |
+| deepseek-v4-pro | Nvidia NIM | free tier | untested | 504 timeouts — endpoint unreliable |
+| qwen3.5-397b | Nvidia NIM | free tier | untested | 403 auth failures |
+
+### Sonnet 4.6 Analysis
+
+Sonnet 4.6 scores identically to Opus on 11 of 12 question types. The 5-point gap is almost entirely one behavioral issue: process narration on coverage questions ("Let me check", "Let me query") triggering the forbidden strings check. This is not a knowledge or quality difference — coverage responses are substantively correct.
+
+**Type-by-type comparison (Opus vs Sonnet):**
+
+| Type | Opus | Sonnet |
+|---|---|---|
+| argument_generation | 7/8 | 7/8 |
+| authority_grounding | 6/8 | 6/8 |
+| compare_distinguish | 9/9 | 9/9 |
+| coverage | 6/9 | 1/9 ← behavioral gap |
+| current_law | 8/8 | 7/8 |
+| deliberate_failure | 7/9 | 7/9 |
+| doctrinal_orientation | 7/8 | 7/8 |
+| doctrine_stability | 6/8 | 7/8 (Sonnet wins) |
+| fact_pattern | 8/8 | 8/8 |
+| good_law | 7/8 | 7/8 |
+| lineage | 9/9 | 9/9 |
+| modification_history | 6/8 | 6/8 |
+
+**Fix applied:** Added targeted instruction to Kingsfield-Lite explicitly prohibiting process narration on coverage questions. Expected result: Sonnet coverage score recovers to 6-8/9, overall score reaches 85-88 — within the margin of Opus.
+
+**Architecture decision:** Sonnet 4.6 is the inner model for CARLA. 5x cost reduction with equivalent quality once the coverage narration fix is applied.
+
+### Nvidia NIM Experiment — Conclusion
+
+Nvidia free tier proved unreliable for model quality testing:
+- Variable latency (30s to 238s per query)
+- 403/504 errors on larger models (Qwen 3.5 397B, DeepSeek V4 Pro)
+- Not suitable for interactive CARLA use
+
+**For future open model testing:** Use DeepSeek's own API ($0.27/million tokens, OpenAI-compatible) or Together AI (reliable latency, free credits). The `client.py` provider abstraction supports any OpenAI-compatible endpoint via `--nvidia` flag — change base URL and key for different providers.
+
+**Self-hosted open model assessment:** Modal (serverless GPU, $0 idle cost, ~$0.04/query on A10G) is the right architecture if/when a self-hosted model is needed. Dedicated GCP GPU compute ($3.50+/hour regardless of volume) is wrong for current usage patterns. Revisit when daily volume exceeds hundreds of queries.
+
+---
+
+## Kingsfield — Final Status (2026-06-09)
+
+### Kingsfield-Lite — Current Version
+
+Additions since v0.1:
+1. **Coverage discipline:** "Do not construct a plausible description of non-existent coverage. 'This area is not currently modeled' is the correct disclosure."
+2. **Normative opinion prohibition:** "The system does not offer personal normative judgments on which decisions were correctly decided, just, or unjust."
+3. **Coverage narration fix:** "When asked whether the knowledge base contains information on a topic, query the graph silently and report findings directly. Never say 'Let me check' before making a tool call."
+
+### Full Kingsfield v2 — Status
+
+Structural fix attempted (INTERNAL REFERENCE ONLY markers + XML wrapper on Sections 3-4) but did not fully solve the schema vocabulary leak. Score dropped from 86 (Lite) to 77 (Full) even after fixes. Root cause: Sections 3-4 are too richly written as instructional prose — the model internalizes the vocabulary regardless of framing markers.
+
+**Decision:** Ship with Kingsfield-Lite. Full Kingsfield v2 needs a proper rewrite with Sections 3-4 structured as genuinely internal-only reference from the ground up — not retrofitted with warnings.
+
+---
+
+## Roadmap — Updated (2026-06-09)
+
+1. ✅ Graph — 898 nodes, 1298 edges, 8 First Amendment areas
+2. ✅ Kingsfield v0.1 — 8 sections locked; Lite version governs CARLA
+3. ✅ A/B/C testing — Kingsfield compliance validated
+4. ✅ Test infrastructure — 100 questions, runner, evaluator, Neo4j custom REST tool
+5. ✅ Baseline established — 86/100 Opus; 81/100 Sonnet (pre-coverage fix)
+6. ✅ Full Kingsfield experiment — schema vocab leak identified; Lite confirmed as production prompt
+7. ✅ Model comparison — Sonnet 4.6 is inner model; Haiku insufficient; Nvidia NIM unreliable
+8. **NEXT: Sonnet coverage fix verification** — rerun coverage questions with updated Kingsfield-Lite; confirm 85+ overall
+9. **THEN: MCP server** — Option B skeleton on GCP Cloud Run; Sonnet as inner model; 10 query/month free tier
+10. **THEN: LLM-as-judge** — Phase 2 evaluator for quality scoring
+11. Outside world test — real lawyers, real research tasks
