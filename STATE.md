@@ -431,3 +431,69 @@ Structural fix attempted (INTERNAL REFERENCE ONLY markers + XML wrapper on Secti
 9. **THEN: MCP server** — Option B skeleton on GCP Cloud Run; Sonnet as inner model; 10 query/month free tier
 10. **THEN: LLM-as-judge** — Phase 2 evaluator for quality scoring
 11. Outside world test — real lawyers, real research tasks
+
+---
+
+## Final Baseline — Sonnet 4.6 + Kingsfield-Lite (2026-06-09)
+
+**This is the production configuration.**
+
+| | |
+|---|---|
+| Model | claude-sonnet-4-6 |
+| Prompt | Kingsfield-Lite |
+| Score | 88/100 programmatic |
+| Adjusted substantive pass rate | ~95-96% |
+| Cost | ~$0.08/query (5x cheaper than Opus) |
+
+### Type Breakdown
+
+| Type | Pass Rate |
+|---|---|
+| argument_generation | 7/8 |
+| authority_grounding | 7/8 |
+| compare_distinguish | 9/9 |
+| coverage | 7/9 |
+| current_law | 6/8 |
+| deliberate_failure | 8/9 |
+| doctrinal_orientation | 7/8 |
+| doctrine_stability | 7/8 |
+| fact_pattern | 7/8 |
+| good_law | 8/8 |
+| lineage | 9/9 |
+| modification_history | 6/8 |
+
+### Genuine Failures (3 — consistent across all runs)
+
+| Question | Finding |
+|---|---|
+| Q026 | Model doesn't name Posadas in Central Hudson modification arc |
+| Q032 | Model doesn't name Madsen in prior restraint modification arc |
+| Q096 | Asks clarifying questions instead of disclosing temporal limits |
+
+### Calibration Noise (~9 failures)
+
+Q009, Q035, Q054, Q064, Q068, Q074, Q082, Q085, Q016 — concept present, exact must_contain string absent. Pass rate would be ~97/100 after calibration refinement.
+
+### Full Kingsfield with Sonnet — Confirmed Broken
+
+Spot test (Q001, Q013, Q018): 1/3 passing. `valid_until` and `OVERRULES` still leak as schema vocabulary even with INTERNAL REFERENCE ONLY markers and XML wrapper. The structural problem is model-independent — it is caused by Sections 3-4 being written as rich instructional prose. The translation instruction cannot override the deeply embedded vocabulary.
+
+**Root cause:** The model cites graph properties directly as data (`` `valid_until: June 27, 2022` ``) rather than translating them. The translation table addresses sentence-level patterns but not property-citation patterns.
+
+**Resolution:** Full Kingsfield v2 requires a structural rewrite with Sections 3-4 written as genuinely internal schema reference — terse, non-instructional, not prose. This is a future project. Ship with Kingsfield-Lite.
+
+---
+
+## Roadmap — Final (2026-06-09)
+
+1. ✅ Graph — 898 nodes, 1298 edges, 8 First Amendment areas
+2. ✅ Kingsfield v0.1 — 8 sections locked; Lite governs production CARLA
+3. ✅ Test infrastructure — 100 questions, runner, evaluator, Neo4j REST tool
+4. ✅ Model selection — Sonnet 4.6 confirmed; 88/100, ~$0.08/query
+5. ✅ Kingsfield-Lite — coverage discipline, normative prohibition, coverage narration fixes applied
+6. **NEXT: MCP server** — Option B, Sonnet inner model, GCP Cloud Run, 10 query/month free tier
+7. **THEN: Calibration cleanup** — fix remaining ~9 must_contain false positives; target 95+
+8. **THEN: LLM-as-judge** — Phase 2 evaluator for quality scoring
+9. **THEN: Kingsfield v2 rewrite** — Sections 3-4 as genuine internal-only schema reference
+10. Outside world test — real lawyers, real research tasks
