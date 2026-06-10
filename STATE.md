@@ -497,3 +497,144 @@ Spot test (Q001, Q013, Q018): 1/3 passing. `valid_until` and `OVERRULES` still l
 8. **THEN: LLM-as-judge** — Phase 2 evaluator for quality scoring
 9. **THEN: Kingsfield v2 rewrite** — Sections 3-4 as genuine internal-only schema reference
 10. Outside world test — real lawyers, real research tasks
+
+---
+
+## Fable 5 Spot Test (2026-06-10)
+
+Claude Fable 5 launched June 9, 2026 — first publicly available Mythos-class model. API model string: `claude-fable-5`. Pricing: $10/million input, $50/million output (90% prompt caching discount applies).
+
+**8-question targeted test on persistent failures:**
+
+| Question | Type | Result | Notes |
+|---|---|---|---|
+| Q001 | good_law | PASS | No valid_until leak — schema discipline without markers |
+| Q013 | current_law | PASS | No GOVERNED_BY leak |
+| Q026 | modification_history | PASS | **Named Posadas** — first model to pass this consistently |
+| Q030 | modification_history | FAIL | VMI still missing; process narration |
+| Q032 | modification_history | FAIL | Madsen still missing |
+| Q071 | coverage | PASS | Correct scope disclosure, no ERISA fabrication |
+| Q096 | deliberate_failure | PASS | Temporal currency handled correctly |
+| Q098 | deliberate_failure | PASS | Normative opinion correctly declined |
+
+**Score: 6/8 on the hardest persistent failures. Projected full suite: ~94/100.**
+
+**Key findings:**
+- Fable 5 does not leak schema vocabulary (`valid_until`, `GOVERNED_BY`) with Kingsfield-Lite — no INTERNAL REFERENCE ONLY markers needed. The schema vocabulary leak was a model capability problem, not a prompt design problem.
+- Posadas (Q026) passed for the first time across any model — genuine doctrinal depth.
+- Q096 and Q098 — temporal currency and normative opinion — both passed. Persistent behavioral failures with all previous models.
+- VMI (Q030) and Madsen (Q032) remain the two genuine doctrinal gaps across all models.
+
+**Architecture role:** Premium tier. Not suitable as free-tier inner model at $0.25-0.50/query. Two-tier architecture: Sonnet 4.6 (standard, ~$0.08/query) + Fable 5 (premium, ~$0.25-0.50/query).
+
+**Full 100-question run deferred** — targeted test provides sufficient signal for architecture decision. Run after MCP server is deployed when real usage patterns can inform which questions matter most.
+
+---
+
+## Model Comparison — Final (2026-06-10)
+
+| Model | Provider | Cost/query | Full Suite | Notes |
+|---|---|---|---|---|
+| claude-fable-5 | Anthropic | ~$0.25-0.50 | ~94/100 (projected) | Premium tier; quality ceiling |
+| claude-sonnet-4-6 | Anthropic | ~$0.08 | 88/100 | **Production inner model** |
+| claude-opus-4-5 | Anthropic | ~$0.40 | 86/100 | Superseded by Sonnet |
+| claude-haiku-4-5 | Anthropic | ~$0.005 | 63/100 | Insufficient doctrinal depth |
+| llama-3.3-70b | Nvidia NIM | free | untested | 238s latency — unusable interactive |
+| deepseek-v4-pro | Nvidia NIM | free | untested | 504 timeouts — endpoint unreliable |
+| qwen3.5-397b | Nvidia NIM | free | untested | 403 auth failures |
+
+---
+
+## Environment & Authentication — Known Issues
+
+**The most common failure mode in the test runner is authentication errors.** Both the Anthropic API key and Nvidia API key have caused repeated issues. Document the correct setup here to avoid repeating the diagnosis.
+
+### Anthropic API Key
+
+The key must be exported in `~/.zshrc` to persist across terminal sessions:
+
+```bash
+# Verify key is visible to Python
+python3 -c "import os; print(repr(os.environ.get('ANTHROPIC_API_KEY', 'NOT FOUND')[:12]))"
+# Should print 'sk-ant-api03'
+
+# If NOT FOUND or wrong: add to ~/.zshrc permanently
+echo "export ANTHROPIC_API_KEY=sk-ant-..." >> ~/.zshrc
+source ~/.zshrc
+```
+
+**Root cause of auth failures:** `source .env` sets the variable in the current shell but subprocesses (Python) may not inherit it if `.env` uses `ANTHROPIC_API_KEY=...` without `export`. The `~/.zshrc` approach bypasses this entirely.
+
+**The `.env` file** at `~/Documents/lexgraph_pipeline/.env` must have `export` prefix on ALL variables:
+```
+export ANTHROPIC_API_KEY=sk-ant-...
+export NEO4J_PASSWORD=...
+export NVIDIA_API_KEY=nvapi-...
+```
+
+If the `.env` file has duplicate entries (one truncated, one full), keep only the full key:
+```bash
+python3 -c "
+lines = open('.env').readlines()
+seen = {}
+new = []
+for l in lines:
+    k = l.split('=')[0].strip().replace('export ','')
+    if k not in seen:
+        seen[k] = True
+        new.append(l)
+open('.env', 'w').writelines(new)
+"
+```
+
+### Nvidia API Key
+
+The Nvidia key must also have `export` and must be the full key (not truncated). Key starts with `nvapi-` and is ~80+ characters. The `.env` file historically had both a truncated placeholder and the real key — the truncated one was loading last and overwriting the real one.
+
+Verify:
+```bash
+python3 -c "import os; k=os.environ.get('NVIDIA_API_KEY',''); print(f'Length: {len(k)}, OK: {len(k) > 50}')"
+# Should show Length: 70+, OK: True
+```
+
+### Nvidia NIM — Model Access Notes
+
+Available models confirmed working on the account (as of 2026-06-09):
+- `meta/llama-3.3-70b-instruct` — works but 30-238s latency on free tier
+- `meta/llama-4-maverick-17b-128e-instruct` — used in audit_panel.py
+- `mistralai/mixtral-8x22b-v0.1` — used in audit_panel.py
+- `nvidia/llama-3.1-nemotron-ultra-253b-v1` — untested for CARLA
+
+Models that 403/504 (likely require paid tier or are overloaded):
+- `qwen/qwen3.5-397b-a17b` — 403
+- `deepseek-ai/deepseek-v4-pro` — 504
+
+**The Nvidia free tier is suitable for batch async work (audit_panel.py) but not for interactive CARLA queries** due to variable latency (30s-238s per request).
+
+**For future open model testing:** Use DeepSeek's own API ($0.27/million tokens, OpenAI-compatible) or Together AI. The `client.py` provider abstraction supports any OpenAI-compatible endpoint — change `NVIDIA_BASE` URL and key.
+
+### audit_panel.py
+
+The ring test infrastructure at `~/Documents/lexgraph_pipeline/audit_panel.py` uses three Nvidia NIM LLM judges for graph QC:
+- Judge 1: `meta/llama-4-maverick-17b-128e-instruct`
+- Judge 2: `qwen/qwen3.5-397b-a17b` (may require paid tier)
+- Judge 3: `mistralai/mixtral-8x22b-instruct-v0.1`
+- Overseer: Claude Sonnet (Anthropic API)
+
+Takes `--nvidia-key` as CLI argument — bypasses `.env`. Useful for batch graph auditing where latency doesn't matter.
+
+---
+
+## Roadmap — Final (2026-06-10)
+
+1. ✅ Graph — 898 nodes, 1298 edges, 8 First Amendment areas
+2. ✅ Kingsfield v0.1 — 8 sections locked; Lite governs production CARLA
+3. ✅ Test infrastructure — 100 questions, runner, evaluator, Neo4j REST tool
+4. ✅ Model selection — Sonnet 4.6 (88/100, $0.08/query); Fable 5 (projected 94/100, premium tier)
+5. ✅ Kingsfield-Lite — coverage discipline, normative prohibition, coverage narration fixes
+6. **NEXT: MCP server** — Option B, Sonnet inner model, GCP Cloud Run, 10 query/month free tier
+7. **THEN: Fable 5 full test** — 100-question run after MCP deployed; real usage patterns first
+8. **THEN: LLM-as-judge** — Phase 2 evaluator for quality scoring
+9. **THEN: Kingsfield v2 rewrite** — Sections 3-4 as genuine internal-only schema reference
+10. Outside world test — real lawyers, real research tasks
+11. Paid tier — Fable 5 as premium inner model; pricing TBD
