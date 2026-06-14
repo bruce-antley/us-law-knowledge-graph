@@ -638,3 +638,90 @@ Takes `--nvidia-key` as CLI argument — bypasses `.env`. Useful for batch graph
 9. **THEN: Kingsfield v2 rewrite** — Sections 3-4 as genuine internal-only schema reference
 10. Outside world test — real lawyers, real research tasks
 11. Paid tier — Fable 5 as premium inner model; pricing TBD
+
+---
+
+## MCP Server — Live (2026-06-11)
+
+**Service URL:** `https://carla-mcp-796649396172.us-central1.run.app/mcp`
+**Platform:** GCP Cloud Run (project: project-383bccef-7bf0-48ca-953, region: us-central1)
+**Transport:** Streamable HTTP (MCP protocol 2025-11-05), `stateless_http=True`
+**Model:** claude-sonnet-4-6 (inner model)
+**Daily spend cap:** $5.00 (in-memory, resets midnight UTC)
+
+### Connecting (Claude.ai)
+1. Customize → Connectors → + → Add custom connector
+2. URL: `https://carla-mcp-796649396172.us-central1.run.app/mcp`
+3. No authentication required
+4. Enable in conversation via tools menu
+
+### Four Tools
+| Tool | Type | Cost |
+|---|---|---|
+| `research_legal_question(question, context)` | Full CARLA pipeline — Kingsfield-Lite + Sonnet + graph | ~$0.08/query |
+| `check_good_law(case_name)` | Graph lookup only, no LLM | ~$0.001 |
+| `get_governing_test(doctrinal_area)` | Graph lookup only, no LLM | ~$0.001 |
+| `list_covered_areas()` | Graph lookup only, no LLM | ~$0.001 |
+
+### Known Issues Fixed During Deployment
+- Dockerfile CMD had `--transport sse` — server was starting on `/sse`, Claude.ai sends to `/mcp` → 404
+- argparse `choices` only had `["stdio", "sse"]` — `--transport streamable-http` crashed container on startup
+- Env vars not expanding in gcloud deploy command — keys must be loaded via `source .env` in same shell session before deploy
+- `list_covered_areas` Cypher had untyped `d2` node — variable-length path with untyped intermediate produced non-deterministic counts; fixed by typing `(d2:Doctrine)`
+- Coverage depth labels were non-deterministic and misleading — removed entirely; list now shows 18 researchable areas without depth flags
+- `get_governing_test` returned Smith and Sherbert as co-equal for Free Exercise — fixed by adding `scope` ("default"/"residual") and `condition` properties to GOVERNED_BY edges in graph
+
+### Known Limitations
+- **CRAC structure:** Inner Claude produces CRAC; outer Claude's synthesis instruction blurs it into memo prose. The MCP instructions field now asks outer Claude to preserve CRAC structure but compliance is inconsistent.
+- **Web search blending:** Outer Claude supplements CARLA's graph-grounded analysis with web search results. Division of labor is correctly attributed in responses but invisible to a reader who doesn't know to look for it.
+- **Coverage boundary:** CARLA covers SCOTUS constitutional doctrine. Circuit court applications (Caronia, Amarin) and regulatory guidance (FDA SIUU) are correctly flagged as outside scope. Not a bug — the gap-flagging is the product.
+- **Full Kingsfield:** Not in production — schema vocabulary leak not resolved. Ship with Kingsfield-Lite.
+
+### First Real-World Test Findings
+- **Gap-flagging works:** CARLA correctly disclosed that Caronia and Amarin are not in the graph rather than confabulating them. This is the hallucination-prevention property working as designed.
+- **Provenance audit passed:** Fulton four-vote claim traced to `opinions_json` node property with explicit joinder data. Brandenburg INTELLECTUALLY_PRECEDES edges confirmed: Abrams (Holmes dissent), Gitlow (Holmes dissent), Whitney (Brandeis concurrence), Yates (Harlan plurality) all point to Brandenburg node.
+- **Free Exercise modeling gap surfaced and fixed:** Sherbert and Smith were presented as co-equal tests with no relationship. Fixed by adding `scope` and `condition` to GOVERNED_BY edges. Smith now labeled [default], Sherbert [residual] with explicit scope conditions.
+- **Off-label pharmaceutical question:** Core doctrine answered correctly (Central Hudson, Sorrell, Thompson, Zauderer). Lower court applications (Caronia, Amarin) correctly flagged as outside coverage. Real lawyers asking about regulatory applications will hit this boundary.
+
+### Deployment Commands
+
+```bash
+# Standard redeploy
+cd ~/Documents/lexgraph_pipeline && source .env
+gcloud run deploy carla-mcp \
+  --source . \
+  --region us-central1 \
+  --platform managed \
+  --allow-unauthenticated \
+  --port 8080 \
+  --set-env-vars "ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY},NEO4J_PASSWORD=${NEO4J_PASSWORD},NEO4J_USERNAME=779dfe5d,NEO4J_DATABASE=779dfe5d,CARLA_MODEL=claude-sonnet-4-6,DAILY_SPEND_CAP=5.00,KINGSFIELD_PATH=/app/kingsfield_lite.md"
+
+# Update env vars without rebuilding
+gcloud run services update carla-mcp \
+  --region us-central1 \
+  --update-env-vars "KEY=value,..."
+
+# Check logs
+gcloud run services logs read carla-mcp --region us-central1 --limit 30
+
+# Test endpoint directly
+curl -X POST https://carla-mcp-796649396172.us-central1.run.app/mcp \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json, text/event-stream" \
+  -d '{"jsonrpc":"2.0","id":1,"method":"tools/list","params":{}}'
+```
+
+---
+
+## Roadmap — Updated (2026-06-14)
+
+1. ✅ Graph — 898 nodes, 1298 edges, 8 First Amendment areas
+2. ✅ Kingsfield v0.1 — 8 sections locked; Lite governs production CARLA
+3. ✅ Test infrastructure — 100 questions, runner, evaluator, Neo4j REST tool
+4. ✅ Model selection — Sonnet 4.6 (88/100, $0.08/query); Fable 5 (projected 94/100, premium tier)
+5. ✅ MCP server — live on GCP Cloud Run; four tools; daily spend cap
+6. **NEXT: Pre-exposure testing** — systematic testing before exposing to real lawyers; identify failure modes, edge cases, and coverage gaps that matter for actual legal research
+7. **THEN: First real users** — targeted individuals, not broad exposure
+8. **THEN: LLM-as-judge** — Phase 2 evaluator for quality scoring
+9. **THEN: Kingsfield v2 rewrite** — Sections 3-4 as genuine internal-only schema reference
+10. Paid tier — Fable 5 as premium inner model; pricing TBD
