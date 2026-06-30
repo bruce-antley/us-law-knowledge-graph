@@ -725,3 +725,116 @@ curl -X POST https://carla-mcp-796649396172.us-central1.run.app/mcp \
 8. **THEN: LLM-as-judge** — Phase 2 evaluator for quality scoring
 9. **THEN: Kingsfield v2 rewrite** — Sections 3-4 as genuine internal-only schema reference
 10. Paid tier — Fable 5 as premium inner model; pricing TBD
+## Session Update — 2026-06-29
+
+### Pre-Exposure Testing — Findings
+
+Ran 15-question pre-exposure test suite (A/B: Claude without CARLA vs Claude with CARLA via MCP).
+
+**Key findings:**
+
+**Q11 (adversarial — fabricated case):** Both Claude and CARLA correctly refused to confabulate Williams v. Department of Education. Neither invented a holding. CARLA's gap-disclosure is not differentiated from base Claude on this question type — Claude's web search also catches fabricated cases. CARLA's provenance advantage is most visible on in-scope questions, not on questions about nonexistent cases.
+
+**Q2 (real lawyer — permit question):** Claude without CARLA outperformed CARLA on this question. Base Claude named Ward, Shuttlesworth, Forsyth, Cox, Thomas, Elrod, three circuit cases — all cited correctly. CARLA correctly built the doctrinal framework but the anchor cases (Shuttlesworth, Ward, Cox, Thomas, Forsyth) are not in the graph. Gap-disclosure was correct but the practical output was weaker.
+
+**Q12 (prediction — social media):** Outer Claude went into diagnostic/inspection mode rather than just answering. This is a structural problem with the MCP two-Claude architecture, not a CARLA quality problem.
+
+**Graph issues surfaced during testing:**
+- AuraDB auto-paused (72h inactivity limit on Free tier) — fixed with Cloud Scheduler keep-alive
+- Response truncation on complex questions — fixed by raising max_tokens from 4096 to 8192
+- Sherbert/Smith presented as co-equal tests — fixed by adding scope/condition to GOVERNED_BY edges
+- Free Speech area has no GOVERNED_BY edge to a DoctrinalTest (taxonomy spine node, not a gap)
+- Zauderer in graph but not connected to compelled speech doctrine
+- check_good_law and research_legal_question hitting different views of Zauderer
+
+**Graph additions made this session:**
+- Added `scope` ("default"/"residual") and `condition` properties to Free Exercise GOVERNED_BY edges
+- Smith: scope="default", condition = constitutional default for neutral, generally applicable laws
+- Sherbert: scope="residual", condition = applies to unemployment/individualized exemption regimes, RFRA for federal law
+
+**Cases identified for future addition (not added this session):**
+- Elrod v. Burns — irreparable harm presumed for First Amendment violations; critical for preliminary relief
+- Ward v. Rock Against Racism — canonical TPM test statement
+- Shuttlesworth v. Birmingham — parade permit anchor case
+- Cox v. New Hampshire — permit scheme precedent
+- Thomas v. Chicago Park District — permit scheme / objective standards
+- Forsyth County v. Nationalist Movement — unbridled discretion
+- NIFLA v. Becerra — compelled disclosure / Zauderer track
+
+---
+
+### Product Direction — Key Decision
+
+**MCP architecture has a structural problem.** The two-Claude setup (inner CARLA + outer Claude.ai) causes the outer Claude to:
+1. Go into diagnostic/inspection mode analyzing CARLA's output rather than presenting it
+2. Supplement CARLA's graph-grounded analysis with web search results, blending sources invisibly
+3. Blur CRAC structure into memo prose
+
+**Decision: Build a direct web app using CARLAClient.**
+
+Architecture: Browser → FastAPI → CARLAClient → Anthropic API + Neo4j. No outer Claude. Kingsfield governs directly. Governed CRAC output goes straight to the user.
+
+The MCP server remains for Claude Desktop / API access but is not the primary user interface.
+
+---
+
+### Web App — Design
+
+Mockup designed and approved. Key design decisions:
+
+- CRAC structure visible as tagged cards (Conclusion / Rule / Application)
+- Inline citation chips (e.g. `kennedy_2022 →`) trigger graph lookups
+- Gap notice bar surfaces coverage gaps explicitly without burying in prose
+- Provenance footer: graph authority count, model + governance layer, legal advice disclaimer
+- Static password auth for initial testers
+
+**Tech stack:**
+- FastAPI backend, one `/query` endpoint wrapping CARLAClient
+- Single HTML/CSS/JS frontend (no framework, no build step)
+- Same Cloud Run project, new service name: `carla-web`
+- Same daily spend cap logic
+
+---
+
+### Conference Abstract — Submitted
+
+Submitted to AI for Law Scholars Conference, Northwestern Pritzker School of Law, August 13-14, 2026. Abstract deadline: June 29, 2026.
+
+**Title:** Is a Reasoning Layer All You Need? CARLA, a Knowledge-Graph Approach to Legal AI
+
+**Key framing:** The paper argues that the graph and Kingsfield together attempt to formalize what a careful lawyer does — reason from authority, surface instability, disclose uncertainty, never present contested doctrine as settled. The gap-disclosure behavior is not a workaround; it is the product.
+
+**Three open questions posed:**
+1. Given a robust reasoning layer, does a knowledge graph outperform web-based retrieval for legal analysis?
+2. Can legal reasoning be effectively modeled, and how should its effectiveness be measured?
+3. Can it be encoded in a system prompt, or does it require something deeper?
+
+LinkedIn articles ("The Law is not a pile of documents", "Fun with Graphs") do not disqualify submission — they are not preprints.
+
+---
+
+### GCP Credits — Strategy
+
+$300 in credits expiring in ~150 days. Recommended spend:
+- Vertex AI model testing: $50-75 (test DeepSeek, Gemma against 100-question suite)
+- Firestore for persistent rate limiting: $20-30/month
+- Remainder covers Cloud Run as user volume grows
+- Do NOT spend on dedicated GPU compute — architecture doesn't need it at current scale
+
+---
+
+### Roadmap — Updated (2026-06-29)
+
+1. ✅ Graph — 898 nodes, 1298 edges, 8 First Amendment areas
+2. ✅ Kingsfield v0.1 — Lite governs production; normative, coverage, narration fixes applied
+3. ✅ Test infrastructure — 100 questions, runner, evaluator
+4. ✅ Model selection — Sonnet 4.6 (88/100, $0.08/query); Fable 5 (projected 94/100, premium tier)
+5. ✅ MCP server — live on GCP Cloud Run; four tools; daily spend cap; keep-alive scheduled
+6. ✅ Pre-exposure testing — started; structural MCP problem identified; graph gaps catalogued
+7. **NEXT: Web app** — FastAPI + HTML frontend; direct CARLAClient; Cloud Run deploy as carla-web
+8. **THEN: First real users** — targeted individuals with web app URL + static password
+9. **THEN: Vertex AI model testing** — DeepSeek/Gemma against 100-question suite
+10. **THEN: LLM-as-judge** — Phase 2 evaluator for quality scoring
+11. **THEN: Kingsfield v2 rewrite** — Sections 3-4 as genuine internal-only schema reference
+12. Conference paper — if accepted to Northwestern; present August 13-14, 2026
+13. Paid tier — Fable 5 as premium inner model; pricing TBD
