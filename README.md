@@ -1,6 +1,6 @@
 # U.S. Law Knowledge Graph
 
-A machine-readable, navigable knowledge graph of U.S. constitutional law — built as a property graph of typed nodes and edges rather than a document corpus.
+A machine-readable, navigable knowledge graph of U.S. constitutional law — built as a graph of typed nodes and edges rather than a document corpus.
 
 <img width="2598" height="1616" alt="image" src="https://github.com/user-attachments/assets/a54828f2-8e7c-46b3-9cb6-4f0310d25383" />
 
