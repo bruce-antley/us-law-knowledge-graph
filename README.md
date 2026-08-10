@@ -1,13 +1,12 @@
 # U.S. Law Knowledge Graph
 
-A machine-readable, navigable knowledge graph of U.S. constitutional law — built as a property graph of typed nodes and edges rather than a document corpus.
+A machine-readable, navigable knowledge graph of U.S. constitutional law — built as a graph of typed nodes and edges rather than a document corpus.
 
 <img width="2598" height="1616" alt="image" src="https://github.com/user-attachments/assets/a54828f2-8e7c-46b3-9cb6-4f0310d25383" />
 
-
 The graph models legal doctrine as structure: what tests govern a doctrinal area, how cases established or modified those tests, which cases overruled which others, and how intellectual lineage flows from early dissents to later majority holdings. This is what keyword search cannot do.
 
-**Current status:** First Amendment (complete, 8 doctrinal areas) and Equal Protection (complete, casebook depth). 244 nodes · 522 edges · 0 validation errors. Graph building pipeline operational with LLM-assisted extraction, schema validation, and CourtListener factual QA.
+**Current status:** 898 nodes · 1,298 edges · 0 validation errors · 415 SCOTUS decisions spanning 1803–2024. First Amendment complete at full treatise depth (8 doctrinal areas). Equal Protection, Substantive and Procedural Due Process, Takings, Criminal Procedure, Dormant Commerce Clause, and Separation of Powers at substantial depth. Coverage validated against the Seidman casebook (91/91, 100%) and the Rotunda constitutional law treatise.
 
 ---
 
@@ -40,38 +39,43 @@ The graph is a directed acyclic graph (DAG) with typed nodes and edges.
 
 ### Node types
 
-| Type | Description |
-|------|-------------|
-| `Area` | Doctrinal areas forming the taxonomy spine |
-| `Doctrine` | Specific legal principles within an Area |
-| `DoctrinalTest` | Formalized multi-prong tests (e.g., Central Hudson, Glucksberg) |
-| `Case` | Judicial decisions — authority nodes, not taxonomy nodes |
-| `ConstitutionalProvision` | Constitutional text (e.g., U.S. Const. amend. I) |
+| Type | Count | Description |
+|------|-------|-------------|
+| `Case` | 415 | Judicial decisions — authority nodes, not taxonomy nodes |
+| `Doctrine` | 350 | Specific legal principles within an Area |
+| `DoctrinalTest` | 109 | Formalized multi-prong tests (e.g., Central Hudson, Glucksberg) |
+| `Area` | 20 | Doctrinal areas forming the taxonomy spine |
+| `ConstitutionalProvision` | 4 | Constitutional text (e.g., U.S. Const. amend. I) |
 
 ### Edge types
 
-| Edge | Meaning |
-|------|---------|
-| `ESTABLISHES` | Case created a Doctrine or DoctrinalTest |
-| `MODIFIES` | Case changed doctrine (direction: narrows, expands, clarifies, complicates, repudiates, extends) |
-| `APPLIES` | Case applied doctrine without changing it |
-| `OVERRULES` | Case overruled another (overrule_type: explicit, implicit, effective, partial) |
-| `INTELLECTUALLY_PRECEDES` | A dissent or concurrence originated reasoning later adopted as majority law |
-| `PRECONDITION_TO` | One doctrine must be satisfied before another applies |
-| `GOVERNED_BY` | Area → governing Doctrine or DoctrinalTest |
-| `CHILD_OF` | Area hierarchy |
-| `INTERPRETS` | Case interpreted a ConstitutionalProvision |
+| Edge | Count | Meaning |
+|------|-------|---------|
+| `ESTABLISHES` | 351 | Case created a Doctrine or DoctrinalTest |
+| `APPLIES` | 270 | Case applied doctrine without changing it |
+| `CHILD_OF` | 242 | Area hierarchy |
+| `INTERPRETS` | 165 | Case interpreted a ConstitutionalProvision |
+| `MODIFIES` | 117 | Case changed doctrine (`direction`: narrows, expands, clarifies, complicates, repudiates) |
+| `GOVERNED_BY` | 62 | Area or Doctrine governed by a DoctrinalTest (`valid_from`, `valid_until`) |
+| `INTELLECTUALLY_PRECEDES` | 32 | A dissent or concurrence originated reasoning later adopted as majority law |
+| `DISTINGUISHES` | 20 | Case distinguished itself from a prior case |
+| `OVERRULES` | 19 | Case overruled another (`overrule_type`: explicit, implicit, effective) |
+| `GROUNDED_IN` | 17 | Doctrine grounded in a ConstitutionalProvision |
+| `INCORPORATES` | 2 | 14th Amendment incorporating Bill of Rights provisions |
+| `PRECONDITION_TO` | 1 | One doctrine must be satisfied before another applies |
+
+**Within modeled coverage, absence of edges is informative.** No `MODIFIES` edge means a case applied but did not change doctrine. No `OVERRULES` edge means the prior case is still good law. Outside modeled coverage, absence means the area has not been modeled — not that the relationship does not exist in doctrine.
 
 ---
 
 ## Current coverage
 
-### First Amendment — complete
+### First Amendment — full treatise depth
 
-All eight doctrinal areas modeled at casebook depth:
+All eight doctrinal areas modeled:
 
 - Free Speech › Commercial Speech
-- Free Speech › Core Political Speech  
+- Free Speech › Core Political Speech
 - Free Speech › Prior Restraint
 - Freedom of the Press
 - Free Exercise of Religion
@@ -79,24 +83,25 @@ All eight doctrinal areas modeled at casebook depth:
 - Freedom of Association
 - Freedom of Petition
 
-Includes: the Brandenburg lineage (Abrams 1919 → Gitlow → Whitney → Yates → Brandenburg 1969), the Central Hudson commercial speech test and its modifications, the Lemon/Kennedy establishment clause transition, and CourtListener citation depth on commercial speech cases.
+Includes: the Brandenburg lineage (Abrams 1919 → Gitlow → Whitney → Yates → Brandenburg 1969), the Central Hudson commercial speech test and its modifications, the Lemon/Kennedy establishment clause transition, Smith/Sherbert free exercise dual-track with scope and condition properties on GOVERNED_BY edges, and CourtListener citation depth on commercial speech cases.
 
-### Equal Protection — complete
+### Constitutional law — substantial depth
 
-Full doctrinal spine including:
-
-- Three scrutiny tiers as DoctrinalTest nodes (strict, intermediate, rational basis)
-- Suspect classification doctrine: Strauder → Korematsu → Loving → Washington v. Davis → McCleskey → Adarand → SFFA (2023)
-- Quasi-suspect classification: Reed → Frontiero → Craig v. Boren → VMI
-- Rational basis with bite: Moreno → Cleburne → Romer
-- Fundamental rights EP: Harper → Reynolds → Shapiro → Rodriguez → Obergefell
-- Casebook cases: Bowers v. Hardwick, Saenz v. Roe, Bush v. Gore, Davis v. Bandemer
+- **Equal Protection** — three scrutiny tiers; suspect and quasi-suspect classification doctrine (Strauder through SFFA 2023); rational basis with bite; fundamental rights EP
+- **Substantive Due Process** — Glucksberg framework; liberty interests; Obergefell; Dobbs
+- **Procedural Due Process** — Mathews balancing; property and liberty interests; pretermination requirements
+- **Takings Clause** — Penn Central; Lucas; regulatory vs. physical takings
+- **Criminal Procedure** — Fourth Amendment search and seizure; third-party doctrine; Carpenter
+- **Dormant Commerce Clause** — Pike balancing; discrimination per se; market participant exception
+- **Separation of Powers** — non-delegation; appointment and removal; executive privilege
 
 ### Stats
 
-- **244 nodes · 522 edges · 0 validation errors**
-- Cases span 1857 (Dred Scott) through 2023 (SFFA v. Harvard)
+- **898 nodes · 1,298 edges · 0 validation errors**
+- Cases span 1803 (Marbury v. Madison) through 2024
+- Validated: Seidman casebook 91/91 (100%), Rotunda treatise systematic gap analysis
 
+---
 
 ## Quickstart
 
@@ -138,26 +143,25 @@ python qa_factual.py \
 
 ## Schema
 
-Four documents in `docs/` define the schema (current: v0.5). Key principles:
+Four documents in `docs/` define the schema. Key principles:
 
 - **Temporal validity everywhere** — `valid_from` and `valid_until` on all nodes and edges. Overruled cases are never deleted — they remain with `status: overruled` and `valid_until` populated.
 - **Separation of taxonomy and authority** — Area/Doctrine/DoctrinalTest nodes are the navigational skeleton. Case/ConstitutionalProvision nodes are the authority layer.
 - **Doctrinal lineage is explicit** — `INTELLECTUALLY_PRECEDES` with `opinion_ref` makes the dissent-to-majority path traversable. Holmes's Abrams dissent (1919) → Brandenburg majority (1969) is a graph edge.
-- **MODIFIES carries direction** — narrows, expands, clarifies, complicates, repudiates, or extends.
+- **MODIFIES carries direction** — narrows, expands, clarifies, complicates, or repudiates.
+- **GOVERNED_BY carries validity** — `valid_from` and `valid_until` track when a governing test was active, making doctrinal transitions queryable.
+
+---
+
+## CARLA
+
+This graph is the data layer for CARLA (Constitutional Law Research and Legal Analysis), a graph-grounded legal research system that combines LexGraph with a proprietary governance layer to produce citation-disciplined, provenance-attributed constitutional law analysis. CARLA is maintained in a separate repository.
 
 ---
 
 ## Roadmap
 
-- [ ] Substantive Due Process
 - [ ] CourtListener ID population for all existing Case nodes
-- [ ] QA: Legal Pressure Test agent (NetworkX sandbox)
-- [ ] Automated expansion pipeline (LangGraph/GCP)
+- [ ] Automated expansion pipeline
 - [ ] Federal statutory law — Phase 2
 - [ ] CFR regulatory spine — Phase 2
-
----
-
-## Author
-
-Bruce Antley
