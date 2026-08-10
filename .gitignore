@@ -26,3 +26,4 @@ Thumbs.db
 raw_output_backup.txt
 draft_*.json
 kingsfield/
+data/*.backup_*.json
