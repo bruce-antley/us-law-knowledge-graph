@@ -18,7 +18,7 @@
     "status": "draft",
     "schema_version": "0.5",
     "node_count": 919,
-    "edge_count": 1312,
+    "edge_count": 1304,
     "schema_issue_count": 41,
     "fixes_applied": [
       "FIX 1: ConstitutionalProvision labels changed to citation form (amendment_1, amendment_14_section_1) to disambiguate from Area nodes with same common-name labels",
@@ -28156,18 +28156,6 @@
       ]
     },
     {
-      "id": "bartnicki_applies_actual_malice",
-      "source_id": "bartnicki_v_vopper_2001",
-      "target_id": "actual_malice_doctrine",
-      "edge_type": "APPLIES",
-      "valid_from": "2001-05-21",
-      "valid_until": null,
-      "jurisdiction": [
-        "federal",
-        "state"
-      ]
-    },
-    {
       "id": "bartnicki_interprets_a1",
       "source_id": "bartnicki_v_vopper_2001",
       "target_id": "amendment_1",
@@ -28364,19 +28352,6 @@
       ]
     },
     {
-      "id": "beauharnais_applies_fighting_words",
-      "source_id": "beauharnais_v_illinois_1952",
-      "target_id": "actual_malice_doctrine",
-      "edge_type": "APPLIES",
-      "valid_from": "1952-04-28",
-      "valid_until": null,
-      "jurisdiction": [
-        "federal",
-        "state"
-      ],
-      "notes": "Applies the categorical exclusion of libel (pre-Sullivan) to group defamation. Beauharnais relied on the historical exclusion of libelous speech from First Amendment protection, not the fighting words doctrine. R.A.V. v. City of St. Paul (1992) effectively undermined Beauharnais by prohibiting viewpoint discrimination even within unprotected categories."
-    },
-    {
       "id": "beauharnais_interprets_a1",
       "source_id": "beauharnais_v_illinois_1952",
       "target_id": "amendment_1",
@@ -28529,18 +28504,6 @@
       ]
     },
     {
-      "id": "bridges_applies_incitement",
-      "source_id": "bridges_v_california_1941",
-      "target_id": "incitement_doctrine",
-      "edge_type": "APPLIES",
-      "valid_from": "1941-12-08",
-      "valid_until": null,
-      "jurisdiction": [
-        "federal",
-        "state"
-      ]
-    },
-    {
       "id": "bridges_interprets_a1",
       "source_id": "bridges_v_california_1941",
       "target_id": "amendment_1",
@@ -28620,18 +28583,6 @@
       "target_id": "amendment_1",
       "edge_type": "INTERPRETS",
       "valid_from": "1978-05-01",
-      "valid_until": null,
-      "jurisdiction": [
-        "federal",
-        "state"
-      ]
-    },
-    {
-      "id": "adderley_applies_public_forum",
-      "source_id": "adderley_v_florida_1966",
-      "target_id": "public_forum_doctrine",
-      "edge_type": "APPLIES",
-      "valid_from": "1966-11-14",
       "valid_until": null,
       "jurisdiction": [
         "federal",
@@ -31472,7 +31423,7 @@
       "source_id": "katz_v_united_states_1967",
       "target_id": "goldman_v_united_states_1942",
       "edge_type": "OVERRULES",
-      "overrule_type": "explicit",
+      "overrule_type": "implicit",
       "valid_from": "1967-12-18",
       "valid_until": null,
       "jurisdiction": [
@@ -32266,19 +32217,6 @@
         "state"
       ],
       "notes": "Chavez addressed whether coercive interrogation violates substantive due process liberty interests under the Fourteenth Amendment."
-    },
-    {
-      "id": "chavez_applies_fifth_amendment_self_incrimination",
-      "source_id": "chavez_v_martinez_2003",
-      "target_id": "fifth_amendment_self_incrimination",
-      "edge_type": "APPLIES",
-      "valid_from": "2003-05-27",
-      "valid_until": null,
-      "jurisdiction": [
-        "federal",
-        "state"
-      ],
-      "notes": "The Court applied and clarified the Fifth Amendment right against self-incrimination, holding that the right is implicated only when statements are used in a criminal prosecution."
     },
     {
       "id": "gall_establishes_gall_abuse_of_discretion_test",
@@ -37403,19 +37341,6 @@
       "notes": "Bowsher applies the doctrine of executive power to determine that the Comptroller General's deficit reduction functions are inherently executive in nature."
     },
     {
-      "id": "branzburg_applies_reporter_privilege",
-      "source_id": "branzburg_v_hayes_1972",
-      "target_id": "reporter_privilege",
-      "edge_type": "APPLIES",
-      "valid_from": "1972-06-29",
-      "valid_until": null,
-      "jurisdiction": [
-        "federal",
-        "state"
-      ],
-      "notes": "Branzburg applied and rejected the claimed reporter's privilege doctrine, holding no absolute privilege exists under the First Amendment."
-    },
-    {
       "id": "dolan_exactions_test_governed_by_takings_exactions_doctrine",
       "source_id": "dolan_exactions_test",
       "target_id": "takings_exactions_doctrine",
@@ -39301,19 +39226,6 @@
       "notes": "Barron v. Baltimore established the foundational principle that the Bill of Rights does not apply to the states."
     },
     {
-      "id": "barron_applies_just_compensation_clause",
-      "source_id": "barron_v_baltimore_1833",
-      "target_id": "just_compensation_clause",
-      "edge_type": "APPLIES",
-      "valid_from": "1833-01-01",
-      "valid_until": null,
-      "jurisdiction": [
-        "federal",
-        "state"
-      ],
-      "notes": "The case applied the Fifth Amendment's just compensation clause to determine its scope, holding it applicable only to federal government action."
-    },
-    {
       "id": "duncan_establishes_right_to_jury_trial_criminal",
       "source_id": "duncan_v_louisiana_1968",
       "target_id": "right_to_jury_trial_criminal",
@@ -40575,18 +40487,6 @@
       "notes": "McDonald applied selective incorporation to hold the Second Amendment applies to the states"
     },
     {
-      "id": "alexander_applies_prior_restraint_doctrine",
-      "source_id": "alexander_v_united_states_1993",
-      "target_id": "prior_restraint_doctrine",
-      "edge_type": "APPLIES",
-      "valid_from": "1993-06-28",
-      "valid_until": null,
-      "jurisdiction": [
-        "federal"
-      ],
-      "notes": "Alexander applied prior restraint doctrine to hold RICO forfeiture is not a prior restraint — subsequent punishment, not restriction on future speech"
-    },
-    {
       "id": "lukumi_applies_smith_test",
       "source_id": "church_of_the_lukumi_babalu_aye_v_city_of_hialeah_1993",
       "target_id": "smith_test",
@@ -40951,6 +40851,30 @@
         "federal"
       ],
       "notes": ""
+    },
+    {
+      "id": "barron_establishes_just_compensation_clause_limit",
+      "source_id": "barron_v_baltimore_1833",
+      "target_id": "just_compensation_clause",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1833-02-16",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ],
+      "notes": "Barron established that the Just Compensation Clause (and the Bill of Rights generally) applies only to the federal government, not the states. Corrected 2026-08-16."
+    },
+    {
+      "id": "branzburg_establishes_no_reporter_privilege",
+      "source_id": "branzburg_v_hayes_1972",
+      "target_id": "reporter_privilege",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1972-06-29",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ],
+      "notes": "Branzburg established that no First Amendment reporter privilege exists to refuse grand jury testimony. Corrected 2026-08-16."
     }
   ],
   "schema_issues_found": [
