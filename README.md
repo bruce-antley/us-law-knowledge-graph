@@ -6,7 +6,7 @@ A machine-readable, navigable knowledge graph of U.S. constitutional law — bui
 
 The graph models legal doctrine as structure: what tests govern a doctrinal area, how cases established or modified those tests, which cases overruled which others, and how intellectual lineage flows from early dissents to later majority holdings. This is what keyword search cannot do.
 
-**Current status:** 898 nodes · 1,298 edges · 0 validation errors · 415 SCOTUS decisions spanning 1803–2024. First Amendment complete at full treatise depth (8 doctrinal areas). Equal Protection, Substantive and Procedural Due Process, Takings, Criminal Procedure, Dormant Commerce Clause, and Separation of Powers at substantial depth. Coverage validated against the Seidman casebook (91/91, 100%) and the Rotunda constitutional law treatise.
+**Current status:** 919 nodes · 1,306 edges · 0 validation errors · 424 SCOTUS decisions spanning 1803–2024. First Amendment complete at full treatise depth (8 doctrinal areas). Justiciability, Equal Protection, Substantive and Procedural Due Process, Takings, Criminal Procedure, Dormant Commerce Clause, and Separation of Powers at substantial depth. Coverage validated against the Seidman casebook (91/91, 100%) and the Rotunda constitutional law treatise. Independently audited via a 5-model LLM panel cross-checked against primary sources.
 
 ---
 
@@ -41,21 +41,21 @@ The graph is a directed acyclic graph (DAG) with typed nodes and edges.
 
 | Type | Count | Description |
 |------|-------|-------------|
-| `Case` | 415 | Judicial decisions — authority nodes, not taxonomy nodes |
-| `Doctrine` | 350 | Specific legal principles within an Area |
-| `DoctrinalTest` | 109 | Formalized multi-prong tests (e.g., Central Hudson, Glucksberg) |
-| `Area` | 20 | Doctrinal areas forming the taxonomy spine |
+| `Case` | 424 | Judicial decisions — authority nodes, not taxonomy nodes |
+| `Doctrine` | 358 | Specific legal principles within an Area |
+| `DoctrinalTest` | 112 | Formalized multi-prong tests (e.g., Central Hudson, Glucksberg) |
+| `Area` | 21 | Doctrinal areas forming the taxonomy spine |
 | `ConstitutionalProvision` | 4 | Constitutional text (e.g., U.S. Const. amend. I) |
 
 ### Edge types
 
 | Edge | Count | Meaning |
 |------|-------|---------|
-| `ESTABLISHES` | 351 | Case created a Doctrine or DoctrinalTest |
-| `APPLIES` | 270 | Case applied doctrine without changing it |
-| `CHILD_OF` | 242 | Area hierarchy |
+| `ESTABLISHES` | 361 | Case created a Doctrine or DoctrinalTest |
+| `APPLIES` | 269 | Case applied doctrine without changing it |
+| `CHILD_OF` | 243 | Area hierarchy |
 | `INTERPRETS` | 165 | Case interpreted a ConstitutionalProvision |
-| `MODIFIES` | 117 | Case changed doctrine (`direction`: narrows, expands, clarifies, complicates, repudiates) |
+| `MODIFIES` | 115 | Case changed doctrine (`direction`: narrows, expands, clarifies, complicates, repudiates) |
 | `GOVERNED_BY` | 62 | Area or Doctrine governed by a DoctrinalTest (`valid_from`, `valid_until`) |
 | `INTELLECTUALLY_PRECEDES` | 32 | A dissent or concurrence originated reasoning later adopted as majority law |
 | `DISTINGUISHES` | 20 | Case distinguished itself from a prior case |
@@ -87,6 +87,7 @@ Includes: the Brandenburg lineage (Abrams 1919 → Gitlow → Whitney → Yates 
 
 ### Constitutional law — substantial depth
 
+- **Justiciability** — standing (Article III injury/causation/redressability, per Lujan), political question doctrine (Baker v. Carr six-factor test), taxpayer standing (Flast v. Cohen), ripeness
 - **Equal Protection** — three scrutiny tiers; suspect and quasi-suspect classification doctrine (Strauder through SFFA 2023); rational basis with bite; fundamental rights EP
 - **Substantive Due Process** — Glucksberg framework; liberty interests; Obergefell; Dobbs
 - **Procedural Due Process** — Mathews balancing; property and liberty interests; pretermination requirements
@@ -97,9 +98,10 @@ Includes: the Brandenburg lineage (Abrams 1919 → Gitlow → Whitney → Yates 
 
 ### Stats
 
-- **898 nodes · 1,298 edges · 0 validation errors**
+- **919 nodes · 1,306 edges · 0 validation errors**
 - Cases span 1803 (Marbury v. Madison) through 2024
 - Validated: Seidman casebook 91/91 (100%), Rotunda treatise systematic gap analysis
+- Independently audited: a 5-model LLM panel cross-checks every edge's legal characterization against primary source text; findings verified against case law before any correction is applied
 
 ---
 
@@ -162,6 +164,7 @@ This graph is the data layer for CARLA (Constitutional Law Research and Legal An
 ## Roadmap
 
 - [ ] CourtListener ID population for all existing Case nodes
-- [ ] Automated expansion pipeline
+- [x] Automated expansion pipeline
+- [x] Independent LLM-panel audit system, cross-checked against primary sources
 - [ ] Federal statutory law — Phase 2
 - [ ] CFR regulatory spine — Phase 2
