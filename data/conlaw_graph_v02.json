@@ -18,7 +18,7 @@
     "status": "draft",
     "schema_version": "0.5",
     "node_count": 919,
-    "edge_count": 1304,
+    "edge_count": 1306,
     "schema_issue_count": 41,
     "fixes_applied": [
       "FIX 1: ConstitutionalProvision labels changed to citation form (amendment_1, amendment_14_section_1) to disambiguate from Area nodes with same common-name labels",
@@ -26930,20 +26930,6 @@
       "notes": null
     },
     {
-      "id": "amos_applies_no_establishment_core",
-      "source_id": "corporation_of_presiding_bishop_v_amos_1987",
-      "target_id": "establishment_aid_doctrine",
-      "edge_type": "APPLIES",
-      "valid_from": "1987-06-24",
-      "valid_until": null,
-      "jurisdiction": [
-        "federal",
-        "state"
-      ],
-      "citation": null,
-      "notes": "Clarifies that exempting religious organizations from generally applicable civil regulations is permissible accommodation, not establishment — the exemption relieves a genuine regulatory burden on religious autonomy."
-    },
-    {
       "id": "amos_interprets_amendment_1",
       "source_id": "corporation_of_presiding_bishop_v_amos_1987",
       "target_id": "amendment_1",
@@ -28010,18 +27996,6 @@
       ]
     },
     {
-      "id": "barnes_applies_secondary_effects",
-      "source_id": "barnes_v_glen_theatre_1991",
-      "target_id": "secondary_effects_doctrine",
-      "edge_type": "APPLIES",
-      "valid_from": "1991-06-21",
-      "valid_until": null,
-      "jurisdiction": [
-        "federal",
-        "state"
-      ]
-    },
-    {
       "id": "barnes_applies_obrien",
       "source_id": "barnes_v_glen_theatre_1991",
       "target_id": "obrien_expressive_conduct_test",
@@ -28989,18 +28963,6 @@
       "target_id": "amendment_1",
       "edge_type": "INTERPRETS",
       "valid_from": "1984-05-15",
-      "valid_until": null,
-      "jurisdiction": [
-        "federal",
-        "state"
-      ]
-    },
-    {
-      "id": "bolger_applies_central_hudson",
-      "source_id": "bolger_v_youngs_drug_products_1983",
-      "target_id": "central_hudson_test",
-      "edge_type": "APPLIES",
-      "valid_from": "1983-06-24",
       "valid_until": null,
       "jurisdiction": [
         "federal",
@@ -32019,18 +31981,6 @@
         "federal"
       ],
       "notes": "Booker established that the Federal Sentencing Guidelines are advisory, not mandatory."
-    },
-    {
-      "id": "booker_applies_blakely_sentencing_test",
-      "source_id": "united_states_v_booker_2005",
-      "target_id": "blakely_sentencing_test",
-      "edge_type": "APPLIES",
-      "valid_from": "2005-01-12",
-      "valid_until": null,
-      "jurisdiction": [
-        "federal"
-      ],
-      "notes": "Booker applied the Blakely rule to federal sentencing guidelines, finding the mandatory Guidelines violated the Sixth Amendment."
     },
     {
       "id": "batson_establishes_batson_peremptory_challenge_test",
@@ -37265,18 +37215,6 @@
       "notes": "The Court applied the retaliatory litigation doctrine established in Power Systems to determine whether the employer's state-court civil suit violated the NLRA."
     },
     {
-      "id": "be_k_applies_petition_clause_doctrine",
-      "source_id": "be_k_construction_co_v_nlrb_2002",
-      "target_id": "petition_clause_doctrine",
-      "edge_type": "APPLIES",
-      "valid_from": "2002-06-24",
-      "valid_until": null,
-      "jurisdiction": [
-        "federal"
-      ],
-      "notes": "BE&K addresses scope of Petition Clause protection for retaliatory litigation"
-    },
-    {
       "id": "benton_applies_concurrent_sentence_doctrine",
       "source_id": "benton_v_maryland_1969",
       "target_id": "concurrent_sentence_doctrine",
@@ -40875,6 +40813,18 @@
         "federal"
       ],
       "notes": "Branzburg established that no First Amendment reporter privilege exists to refuse grand jury testimony. Corrected 2026-08-16."
+    },
+    {
+      "id": "be_k_applies_noerr_pennington",
+      "source_id": "be_k_construction_co_v_nlrb_2002",
+      "target_id": "noerr_pennington_doctrine",
+      "edge_type": "APPLIES",
+      "valid_from": "2002-06-24",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ],
+      "notes": "BE&K applied Noerr-Pennington doctrine, holding the NLRA does not permit the NLRB to impose liability for unsuccessful but reasonably based lawsuits without proof of retaliatory motive. Corrected 2026-08-25: retargeted from Petition Clause Doctrine to Noerr-Pennington after Ring 3 audit."
     }
   ],
   "schema_issues_found": [
