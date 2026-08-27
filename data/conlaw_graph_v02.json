@@ -5773,6 +5773,460 @@
         "valid_until": null,
         "secondary_area_ids": [],
         "notes": "Established through analysis of the Framers' debates on Article I, Section 5."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "separation_of_powers_legislative_judgment",
+        "label": "Separation of Powers — Legislative Direction of Judicial Outcomes",
+        "description": "A statute does not violate the separation of powers merely because it directs a particular result in a single pending case, provided Congress supplies a new law to be applied to undisputed facts rather than directing the judiciary how to decide the case.",
+        "area_id": "separation_of_powers",
+        "jurisdiction": [
+          "federal"
+        ],
+        "status": "active",
+        "valid_from": "2016-01-01",
+        "valid_until": null,
+        "secondary_area_ids": [],
+        "notes": "Distinguishes between Congress passing a law for judicial application versus Congress directing the judiciary to reach a particular outcome in a specific case."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "state_action_doctrine",
+        "label": "State Action Doctrine",
+        "description": "The Fourteenth Amendment's Equal Protection Clause prohibits state action denying equal protection, but does not reach purely private conduct. Judicial enforcement of private agreements may constitute state action triggering constitutional scrutiny.",
+        "area_id": "equal_protection",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1953-01-01",
+        "valid_until": null,
+        "secondary_area_ids": [],
+        "notes": "Barrows v. Jackson extends the state action doctrine to damages actions for breach of racial restrictive covenants, holding that judicial enforcement constitutes state action even when the covenant itself is not invalid."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "racial_restrictive_covenant_doctrine",
+        "label": "Racial Restrictive Covenant Doctrine",
+        "description": "Racial restrictive covenants cannot be enforced through state judicial action because such enforcement constitutes state action denying equal protection of the laws. This applies to both equitable relief and damages actions.",
+        "area_id": "equal_protection",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1953-01-01",
+        "valid_until": null,
+        "secondary_area_ids": [],
+        "notes": "Established in Shelley v. Kraemer (1948) for equitable enforcement; extended by Barrows v. Jackson (1953) to damages actions."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "injunctive_relief_standing_doctrine",
+        "label": "Injunctive Relief Standing Doctrine",
+        "description": "A plaintiff seeking injunctive relief must establish a real and immediate threat of future injury, not merely a past injury. For municipal liability, the plaintiff must demonstrate either systematic conduct by all officers or municipal authorization or ordering of the conduct.",
+        "area_id": "justiciability",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1983",
+        "valid_until": null,
+        "secondary_area_ids": [],
+        "notes": "Established in City of Los Angeles v. Lyons as a requirement for Article III standing in injunctive relief cases."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "scotus_appellate_jurisdiction_state_proceedings",
+        "label": "Supreme Court Appellate Jurisdiction Over State Criminal Proceedings",
+        "description": "The Supreme Court has jurisdiction to review state criminal proceedings that involve constitutional questions, regardless of the identity of the parties. State laws and constitutions that are repugnant to the Constitution and federal laws are absolutely void.",
+        "area_id": "justiciability",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1821-01-01",
+        "valid_until": null,
+        "secondary_area_ids": [
+          "separation_of_powers"
+        ],
+        "notes": "Established in Cohens v. Virginia; foundational to federal appellate jurisdiction over state courts."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "congressional_exception_to_appellate_jurisdiction",
+        "label": "Congressional Exception to Appellate Jurisdiction",
+        "description": "Congress possesses the constitutional power to make exceptions to and regulate the appellate jurisdiction of the Supreme Court under Article III, Section 2. The affirmation of appellate jurisdiction in one category implies the negation of jurisdiction not so affirmed.",
+        "area_id": "justiciability",
+        "jurisdiction": [
+          "federal"
+        ],
+        "status": "active",
+        "valid_from": "1869-01-01",
+        "valid_until": null,
+        "secondary_area_ids": [
+          "separation_of_powers"
+        ],
+        "notes": "Established in Ex parte McCardle. The doctrine holds that Congress may repeal statutes conferring appellate jurisdiction, and such repeal divests the Court of jurisdiction over pending cases arising under the repealed statute."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "voluntary_cessation_mootness_doctrine",
+        "label": "Voluntary Cessation Mootness Doctrine",
+        "description": "A defendant's voluntary cessation of allegedly unlawful conduct ordinarily does not suffice to moot a case, particularly when the defendant may resume the conduct and when the case seeks civil penalties that serve deterrent purposes.",
+        "area_id": "justiciability",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "2000-01-01",
+        "valid_until": null,
+        "secondary_area_ids": [],
+        "notes": "Established in the context of Clean Water Act citizen suits but applies more broadly to mootness doctrine."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "citizen_suit_standing_doctrine",
+        "label": "Citizen Suit Standing Doctrine",
+        "description": "Citizen suitors have standing to bring suits on behalf of their members under statutes like the Clean Water Act, allowing organizations to represent the interests of their constituents in environmental enforcement actions.",
+        "area_id": "justiciability",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "2000-01-01",
+        "valid_until": null,
+        "secondary_area_ids": [],
+        "notes": "Affirms the justiciability of citizen suits and the organizational standing doctrine."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "separation_of_powers_judicial_independence",
+        "label": "Separation of Powers and Judicial Independence",
+        "description": "The Constitution divides the federal government into three distinct and independent branches—Legislative, Executive, and Judicial—and each branch must abstain from encroachments on the others. Federal judges cannot constitutionally be assigned non-judicial duties by Congress or the Executive, even in an official capacity, as such duties are incompatible with the judicial function.",
+        "area_id": "separation_of_powers",
+        "jurisdiction": [
+          "federal"
+        ],
+        "status": "active",
+        "valid_from": "1792-01-01",
+        "valid_until": null,
+        "secondary_area_ids": [],
+        "notes": "Established through the reasoning of the Circuit Courts in Hayburn's Case. The doctrine holds that the assignment of non-judicial duties to federal judges violates the structural separation of powers, regardless of whether those duties are benevolent in purpose or assigned in an official rather than personal capacity."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "third_party_standing_abortion",
+        "label": "Third-Party Standing in Abortion Cases",
+        "description": "Abortion providers and clinics may assert the constitutional rights of their patients (third parties) when enforcement of an abortion restriction against the provider would result indirectly in violation of the patients' rights.",
+        "area_id": "justiciability",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "2020-06-29",
+        "valid_until": null,
+        "secondary_area_ids": [],
+        "notes": "Reaffirmed in June Medical Services LLC v. Russo. The plurality noted this is supported by a long line of well-established precedents."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "standing_injury_in_fact",
+        "label": "Standing: Injury-in-Fact Requirement",
+        "description": "A plaintiff seeking federal judicial review must allege some threatened or actual injury resulting from the putatively illegal action, establishing a sufficient nexus between the plaintiff's injury and the government action attacked.",
+        "area_id": "justiciability",
+        "jurisdiction": [
+          "federal"
+        ],
+        "status": "active",
+        "valid_from": "1973",
+        "valid_until": null,
+        "secondary_area_ids": [],
+        "notes": "The Court reaffirmed that despite expansion of standing doctrine, the requirement of personal injury remains fundamental. In the context of criminal statute challenges, the nexus between injury and government action must be sufficiently direct."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "federal_appellate_jurisdiction_over_state_courts",
+        "label": "Federal Appellate Jurisdiction Over State Courts",
+        "description": "The Supreme Court of the United States possesses appellate jurisdiction over state courts in cases arising under the Constitution, laws, and treaties of the United States, and state courts are bound by the Supreme Court's mandates in such cases.",
+        "area_id": "separation_of_powers",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1816-03-20",
+        "valid_until": null,
+        "secondary_area_ids": [
+          "justiciability"
+        ],
+        "notes": "Established in response to Virginia's assertion that Section 25 of the Judiciary Act was unconstitutional. Grounded in the supremacy of the Constitution and the necessity of uniform interpretation across state and federal systems."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "constitutional_supremacy_doctrine",
+        "label": "Constitutional Supremacy and Uniform Interpretation",
+        "description": "The Constitution was ordained by the people of the United States, not by the states in their sovereign capacities, and creates a supreme law that must be uniformly interpreted and applied across all jurisdictions, state and federal.",
+        "area_id": "constitutional_law",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1816-03-20",
+        "valid_until": null,
+        "secondary_area_ids": [
+          "separation_of_powers"
+        ],
+        "notes": "Foundational principle articulated in Martin v. Hunter's Lessee. The Constitution derives its authority from the people, not from state sovereignties, and grants the federal government powers that are paramount within their scope."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "one_person_one_vote_doctrine",
+        "label": "One Person, One Vote",
+        "description": "The constitutional principle that all voters must have substantially equal voting power in statewide elections, and that geographical classifications that dilute the voting power of residents in some counties violate the Equal Protection Clause.",
+        "area_id": "equal_protection",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1969-01-01",
+        "valid_until": null,
+        "secondary_area_ids": [],
+        "notes": "Established in Moore v. Ogilvie as applied to nominating procedures for statewide offices. The Court rejected the geographical diffusion rationale previously accepted in MacDougall v. Green."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "justiciability_voter_classification",
+        "label": "Justiciability of Voter Classification Disputes",
+        "description": "Disputes over state classifications of voters that favor residents of some counties over others present justiciable controversies under the Equal Protection Clause, not political questions.",
+        "area_id": "justiciability",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1969-01-01",
+        "valid_until": null,
+        "secondary_area_ids": [
+          "equal_protection"
+        ],
+        "notes": "Moore v. Ogilvie clarified that Baker v. Carr authoritatively resolved that voter classification disputes are justiciable, overcoming the political question doctrine previously applied in Colegrove v. Green."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "case_or_controversy_requirement",
+        "label": "Case or Controversy Requirement",
+        "description": "The constitutional requirement under Article III, Section 2 that the Supreme Court's judicial power extends only to actual cases and controversies, not to abstract questions or advisory opinions. The substance of the proceeding, not its form or label, determines whether this requirement is satisfied.",
+        "area_id": "justiciability",
+        "jurisdiction": [
+          "federal"
+        ],
+        "status": "active",
+        "valid_from": "1933",
+        "valid_until": null,
+        "secondary_area_ids": [],
+        "notes": "This doctrine requires courts to look to the nature and effect of the proceeding on the rights asserted, not to the procedural label or form adopted by the legislature."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "impeachment_trial_authority",
+        "label": "Senate Impeachment Trial Authority",
+        "description": "The constitutional authority granted to the Senate under Article I, Section 3, Clause 6 to have the sole power to try all impeachments, which is committed textually to the Senate as a coordinate political department.",
+        "area_id": "separation_of_powers",
+        "jurisdiction": [
+          "federal"
+        ],
+        "status": "active",
+        "valid_from": "1993-06-29",
+        "valid_until": null,
+        "secondary_area_ids": [],
+        "notes": "Held to be a textually committed power not subject to judicial review under the political question doctrine."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "judicial_finality_doctrine",
+        "label": "Judicial Finality and Article III Judicial Power",
+        "description": "The doctrine that Article III vests in the judiciary the exclusive power to render final judgments in cases and controversies, and that Congress cannot retroactively legislate to reopen or modify final judicial determinations.",
+        "area_id": "separation_of_powers",
+        "jurisdiction": [
+          "federal"
+        ],
+        "status": "active",
+        "valid_from": "1995",
+        "valid_until": null,
+        "secondary_area_ids": [],
+        "notes": "Established in Plaut v. Spendthrift Farm, Inc. as a core component of Article III separation of powers protection."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "takings_clause_railroad_reorganization",
+        "label": "Takings Clause Applied to Railroad Reorganization",
+        "description": "The Fifth Amendment's Takings Clause does not prohibit Congress from requiring transfer of railroad properties as part of a comprehensive reorganization scheme designed to address a national transportation crisis, provided the railroad receives just compensation through securities, federal obligations, and other benefits.",
+        "area_id": "takings_clause",
+        "jurisdiction": [
+          "federal"
+        ],
+        "status": "active",
+        "valid_from": "1974",
+        "valid_until": null,
+        "secondary_area_ids": [],
+        "notes": "Established in context of Regional Rail Reorganization Act requiring transfer of rail properties to Conrail in exchange for securities and federal guarantees."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "due_process_railroad_reorganization",
+        "label": "Due Process Protection in Railroad Reorganization",
+        "description": "The Fifth Amendment's Due Process Clause permits Congress to establish a reorganization process for railroads in bankruptcy that includes judicial review of fairness and equity determinations, provided the process affords adequate procedural protections and substantive fairness standards.",
+        "area_id": "procedural_due_process",
+        "jurisdiction": [
+          "federal"
+        ],
+        "status": "active",
+        "valid_from": "1974",
+        "valid_until": null,
+        "secondary_area_ids": [],
+        "notes": "Established in context of Rail Act's creation of Special Court with exclusive jurisdiction over final system plan proceedings."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "article_iii_legislative_direction_doctrine",
+        "label": "Article III Legislative Direction Doctrine",
+        "description": "The doctrine that Congress may not direct the results of pending cases by making judicial findings or compelling specific outcomes, but may modify the legal standards governing pending litigation by amending or replacing the underlying substantive law.",
+        "area_id": "separation_of_powers",
+        "jurisdiction": [
+          "federal"
+        ],
+        "status": "active",
+        "valid_from": "1992",
+        "valid_until": null,
+        "secondary_area_ids": [
+          "justiciability"
+        ],
+        "notes": "Established in Robertson v. Seattle Audubon Society. Distinguishes between impermissible legislative direction of case outcomes and permissible legislative amendment of substantive law that affects pending cases."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "partisan_gerrymandering_nonjusticiability",
+        "label": "Partisan Gerrymandering Nonjusticiability",
+        "description": "Partisan gerrymandering claims are not justiciable in federal courts because they present political questions that lack a limited and precise standard for judicial evaluation.",
+        "area_id": "justiciability",
+        "jurisdiction": [
+          "federal"
+        ],
+        "status": "active",
+        "valid_from": "2019-06-27",
+        "valid_until": null,
+        "secondary_area_ids": [
+          "equal_protection"
+        ],
+        "notes": "Established in Rucho v. Common Cause. Distinguishes partisan gerrymandering from racial gerrymandering, which remains justiciable."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "pre_enforcement_justiciability_doctrine",
+        "label": "Pre-Enforcement Justiciability Doctrine",
+        "description": "Pre-enforcement challenges to statutes are justiciable when circumstances indicate that threatened enforcement is sufficiently imminent, plaintiffs have alleged sufficient injury for Article III standing, and the challenge is prudentially ripe because it is purely legal and will not be clarified by future factual development.",
+        "area_id": "justiciability",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "2014-01-01",
+        "valid_until": null,
+        "secondary_area_ids": [
+          "first_amendment"
+        ],
+        "notes": "Established in context of First Amendment campaign speech restrictions. Applies when threatened enforcement is not imaginary or speculative."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "political_speech_protection_doctrine",
+        "label": "Political Speech Protection Doctrine",
+        "description": "Political speech concerning policy issues, such as support for or opposition to legislation, receives First Amendment protection and may continue despite changes in the targeted official's status or circumstances.",
+        "area_id": "core_political_speech",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "2014-01-01",
+        "valid_until": null,
+        "secondary_area_ids": [
+          "freedom_of_association"
+        ],
+        "notes": "Established in context of campaign speech about the Affordable Care Act. Speech focused on policy issue rather than individual official is likely to continue."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "concrete_injury_in_fact_doctrine",
+        "label": "Concrete Injury in Fact Doctrine",
+        "description": "A doctrine requiring that to establish Article III standing, a plaintiff must demonstrate concrete injury in fact that is similar to a harm traditionally recognized as providing a basis for a lawsuit in American courts, with a close historical or common-law analogue for the asserted injury.",
+        "area_id": "justiciability",
+        "jurisdiction": [
+          "federal"
+        ],
+        "status": "active",
+        "valid_from": "2021-06-25",
+        "valid_until": null,
+        "secondary_area_ids": [],
+        "notes": "Established in TransUnion LLC v. Ramirez as a requirement for Article III standing in private statutory damages actions."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "hatch_act_political_conduct_restriction",
+        "label": "Hatch Act Political Conduct Restriction Doctrine",
+        "description": "Congress may constitutionally restrict the political conduct and campaign participation of federal executive branch employees to promote integrity in the performance of their duties.",
+        "area_id": "constitutional_law",
+        "jurisdiction": [
+          "federal"
+        ],
+        "status": "active",
+        "valid_from": "1947-01-01",
+        "valid_until": null,
+        "secondary_area_ids": [],
+        "notes": "Established in United Public Workers v. Mitchell as a constitutional limitation on federal employee political activity."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "justiciability_ripeness_standing",
+        "label": "Justiciability and Ripeness Doctrine",
+        "description": "A case presents a justiciable issue only when a party is actually facing or has faced concrete injury or disciplinary action; hypothetical or speculative denials of rights do not present justiciable controversies.",
+        "area_id": "justiciability",
+        "jurisdiction": [
+          "federal"
+        ],
+        "status": "active",
+        "valid_from": "1947-01-01",
+        "valid_until": null,
+        "secondary_area_ids": [],
+        "notes": "The Court held that only George Poole, who was facing disciplinary action, presented a justiciable issue; other appellants did not."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "campus_speech_restriction_doctrine",
+        "label": "Campus Speech Restriction Doctrine",
+        "description": "Restrictions on student speech on college campuses must comply with First Amendment protections, including restrictions on religious expression and literature distribution.",
+        "area_id": "free_speech",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "2021-06-01",
+        "valid_until": null,
+        "secondary_area_ids": [
+          "first_amendment"
+        ],
+        "notes": "Uzuegbunam involved a college's designated speech zones policy that restricted where students could engage in expressive activities, including religious speech."
       }
     ],
     "areas": [
@@ -19302,6 +19756,705 @@
         "valid_until": null,
         "opinions": [],
         "notes": "Chief Justice Warren authored the majority opinion. The case establishes the distinction between exclusion and expulsion under Article I, Section 5 of the Constitution."
+      },
+      {
+        "@type": "Case",
+        "id": "bank_markazi_v_peterson_2016",
+        "short_name": "Bank Markazi v. Peterson",
+        "full_name": "Bank Markazi v. Peterson",
+        "citation": "578 U.S. 212 (2016)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "2016-01-01",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "affirmed",
+        "holding": "A statute that directs a particular result in a single pending case does not violate the separation of powers when Congress supplies a new law to be applied to undisputed facts rather than directing the judiciary how to decide the case.",
+        "holding_type": "affirmative",
+        "majority_author": "Ginsburg",
+        "per_curiam": false,
+        "vote": "6-2",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "2016-01-01",
+        "valid_until": null,
+        "opinions": [
+          {
+            "type": "dissent",
+            "author": "Roberts",
+            "joined_by": [
+              "Sotomayor"
+            ]
+          }
+        ],
+        "notes": "Chief Justice Roberts dissented, arguing that Congress violated Article III by passing legislation directed at a specific pending case, effectively picking the winner of the litigation.",
+        "courtlistener_id": "3195998"
+      },
+      {
+        "@type": "Case",
+        "id": "barrows_v_jackson_1953",
+        "short_name": "Barrows v. Jackson",
+        "full_name": "Barrows v. Jackson",
+        "citation": "346 U.S. 249 (1953)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1953-01-01",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "affirmed",
+        "holding": "A damages action against a co-covenantor for breach of a racial restrictive covenant constitutes state action in violation of the Fourteenth Amendment's Equal Protection Clause, even though the covenant itself is not invalid and voluntary adherence to it would not violate constitutional rights.",
+        "holding_type": "affirmative",
+        "majority_author": "Minton",
+        "per_curiam": false,
+        "vote": null,
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1953-01-01",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "Extends Shelley v. Kraemer to hold that damages actions for breach of racial restrictive covenants constitute impermissible state action. The Court distinguishes between voluntary adherence to covenants (individual action) and judicial enforcement (state action).",
+        "courtlistener_id": "105152"
+      },
+      {
+        "@type": "Case",
+        "id": "city_of_los_angeles_v_lyons_1983",
+        "short_name": "City of Los Angeles v. Lyons",
+        "full_name": "City of Los Angeles v. Lyons",
+        "citation": "461 U.S. 95 (1983)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1983",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "affirmed",
+        "holding": "A plaintiff seeking injunctive relief against a municipality for police conduct must establish a real and immediate threat of future injury by showing either that all police officers systematically engage in the challenged conduct or that the municipality has ordered or authorized such conduct; a single prior incident of injury does not establish the requisite likelihood of recurrence to satisfy Article III standing requirements for injunctive relief.",
+        "holding_type": "affirmative",
+        "majority_author": null,
+        "per_curiam": false,
+        "vote": "5-4",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1983",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "5-to-4 decision. The Court addressed justiciability and standing requirements for injunctive relief in civil rights cases against municipalities.",
+        "courtlistener_id": "110916"
+      },
+      {
+        "@type": "Case",
+        "id": "clapper_v_amnesty_international_usa_2013",
+        "short_name": "Clapper v. Amnesty International USA",
+        "full_name": "James R. Clapper, et al. v. Amnesty International USA, et al.",
+        "citation": "568 U.S. 398 (2013)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "2013-02-26",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "Respondents lack Article III standing to challenge FISA surveillance procedures because they have not suffered a concrete injury in fact; a reasonable likelihood or subjective fear that communications will be intercepted, without proof of actual interception, is insufficient to establish standing, and costs incurred to avoid speculative future harm do not constitute present injury.",
+        "holding_type": "by_negation",
+        "majority_author": "Alito",
+        "per_curiam": false,
+        "vote": "5-4",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "2013-02-26",
+        "valid_until": null,
+        "opinions": [
+          {
+            "type": "dissent",
+            "author": "Breyer",
+            "joined_by": [
+              "Ginsburg",
+              "Sotomayor",
+              "Kagan"
+            ]
+          }
+        ],
+        "notes": "5-4 decision. Majority held respondents lacked standing. Dissent argued future harm was not speculative and should establish standing."
+      },
+      {
+        "@type": "Case",
+        "id": "cohens_v_virginia_1821",
+        "short_name": "Cohens v. Virginia",
+        "full_name": "Cohens v. Virginia",
+        "citation": "19 U.S. 264 (1821)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1821-01-01",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "affirmed",
+        "holding": "The Supreme Court has jurisdiction to review state criminal proceedings involving constitutional questions, and this jurisdiction does not depend on the identity of the parties; state laws repugnant to the Constitution and federal laws are absolutely void.",
+        "holding_type": "affirmative",
+        "majority_author": "Marshall",
+        "per_curiam": false,
+        "vote": "6-0",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1821-01-01",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "Chief Justice Marshall established the Supreme Court's appellate jurisdiction over state criminal proceedings. The Court affirmed the Virginia conviction on the merits, holding the lottery ordinance a local matter.",
+        "courtlistener_id": "8403416"
+      },
+      {
+        "@type": "Case",
+        "id": "ex_parte_mccardle_1869",
+        "short_name": "Ex parte McCardle",
+        "full_name": "Ex parte McCardle",
+        "citation": "74 U.S. 506 (1869)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1869-01-01",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "dismissed",
+        "holding": "Congress possesses the constitutional power to make exceptions to the appellate jurisdiction of the Supreme Court, and the repeal of a statute conferring appellate jurisdiction divests the Court of jurisdiction over cases arising under that statute.",
+        "holding_type": "affirmative",
+        "majority_author": null,
+        "per_curiam": false,
+        "vote": null,
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1869-01-01",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "The Court held that the Habeas Corpus Jurisdiction Act of 1867 was repealed by the act of March 1868, divesting the Court of appellate jurisdiction over the case. The opinion establishes the principle that Congress's power to make exceptions to appellate jurisdiction is express and plenary.",
+        "courtlistener_id": "88034"
+      },
+      {
+        "@type": "Case",
+        "id": "friends_of_the_earth_inc_v_laidlaw_environmental_services_2000",
+        "short_name": "Friends of the Earth v. Laidlaw",
+        "full_name": "Friends of the Earth, Inc. v. Laidlaw Environmental Services (TOC), Inc.",
+        "citation": "528 U.S. 167 (2000)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "2000-01-01",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "A citizen suitor's claim for civil penalties under the Clean Water Act need not be dismissed as moot when the defendant, after commencement of litigation, has come into compliance with its NPDES permit, because civil penalties serve both to promote immediate compliance and to deter future violations.",
+        "holding_type": "affirmative",
+        "majority_author": "Ginsburg",
+        "per_curiam": false,
+        "vote": "7-2",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "2000-01-01",
+        "valid_until": null,
+        "opinions": [
+          "dissent"
+        ],
+        "notes": "The Court also held that FOE had standing to bring the suit on behalf of its members. The case addresses mootness doctrine and the justiciability of citizen suits under the Clean Water Act.",
+        "courtlistener_id": "118329"
+      },
+      {
+        "@type": "Case",
+        "id": "hayburn_s_case_1792",
+        "short_name": "Hayburn's Case",
+        "full_name": "Hayburn's Case",
+        "citation": "2 U.S. 409 (1792)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1792-01-01",
+        "opinion_form": "memorandum",
+        "procedural_disposition": "mooted",
+        "holding": "Federal judges cannot be assigned non-judicial duties by Congress, even in an official capacity, as the Constitution divides government into three distinct and independent branches, each of which must abstain from encroachments on the others.",
+        "holding_type": "affirmative",
+        "majority_author": null,
+        "per_curiam": false,
+        "vote": null,
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1792-01-01",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "Case was mooted when Congress provided relief for pensioners by alternative means before the Court pronounced a final decision. The Court held the motion under advisement until the next term but no decision was rendered. The substantive constitutional reasoning is preserved in the Circuit Court opinions from New York and Pennsylvania, which declined to execute the Pension Act of 1791 on separation of powers grounds.",
+        "courtlistener_id": "1299599"
+      },
+      {
+        "@type": "Case",
+        "id": "june_medical_services_l_l_c_v_russo_2020",
+        "short_name": "June Medical Services LLC v. Russo",
+        "full_name": "June Medical Services LLC v. Russo",
+        "citation": "591 U.S. 299 (2020)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "2020-06-29",
+        "opinion_form": "plurality",
+        "procedural_disposition": "reversed",
+        "holding": "A state law requiring abortion providers to hold admitting privileges at hospitals within thirty miles of the abortion facility imposes an undue burden on the right to abortion and is unconstitutional when the law is nearly identical to a previously struck-down law and the factual record does not support claimed health benefits.",
+        "holding_type": "affirmative",
+        "majority_author": "Breyer (plurality)",
+        "per_curiam": false,
+        "vote": "5-4",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "2020-06-29",
+        "valid_until": null,
+        "opinions": [
+          "concurrence_in_judgment"
+        ],
+        "notes": "Plurality opinion (Breyer, Ginsburg, Sotomayor, Kagan). Chief Justice Roberts concurred in the judgment on stare decisis grounds, disagreeing with Whole Woman's Health but applying it. Dissents by Thomas, Alito (joined by Gorsuch, Thomas, Kavanaugh in part), Gorsuch, and Kavanaugh. The case reflects a fractured Court: a 5-4 majority struck down the law, but only 4 justices endorsed the Whole Woman's Health balancing test; a different 5-4 majority rejected that test."
+      },
+      {
+        "@type": "Case",
+        "id": "linda_r_s_v_richard_d_1973",
+        "short_name": "Linda R.S. v. Richard D.",
+        "full_name": "Linda R.S. v. Richard D.",
+        "citation": "410 U.S. 614 (1973)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1973",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "affirmed",
+        "holding": "A plaintiff challenging a criminal statute on equal protection grounds must allege a sufficient nexus between her injury and the government action attacked to establish standing; a mother of an illegitimate child lacks standing to seek an injunction against a district attorney's refusal to prosecute the father under a statute that Texas courts have construed to apply only to parents of legitimate children, because the injury stems from the father's failure to provide support, not from the discriminatory application of the statute itself.",
+        "holding_type": "by_negation",
+        "majority_author": "Marshall",
+        "per_curiam": false,
+        "vote": null,
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1973",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "The Court affirmed the dismissal for lack of standing. The opinion discusses the evolution of standing doctrine and applies the requirement that a plaintiff must allege a threatened or actual injury resulting from the putatively illegal action.",
+        "courtlistener_id": "8991786"
+      },
+      {
+        "@type": "Case",
+        "id": "martin_v_hunters_lessee_1816",
+        "short_name": "Martin v. Hunter's Lessee",
+        "full_name": "Martin v. Hunter's Lessee",
+        "citation": "14 U.S. 304 (1816)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1816-03-20",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "The appellate jurisdiction of the Supreme Court of the United States extends to the courts of the states under Article III and Section 25 of the Judiciary Act, and state courts are bound by the Supreme Court's mandates in cases properly within federal jurisdiction.",
+        "holding_type": "affirmative",
+        "majority_author": "Story",
+        "per_curiam": false,
+        "vote": null,
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1816-03-20",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "Writ of error from Virginia Court of Appeals, which had refused to obey the Supreme Court's mandate. The Virginia court had declared Section 25 of the Judiciary Act unconstitutional as applied to state courts. The Supreme Court reversed, establishing the constitutional basis for federal appellate jurisdiction over state courts.",
+        "courtlistener_id": "85160"
+      },
+      {
+        "@type": "Case",
+        "id": "moore_v_ogilvie_1969",
+        "short_name": "Moore v. Ogilvie",
+        "full_name": "Moore v. Ogilvie",
+        "citation": "394 U.S. 814 (1969)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1969-01-01",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "An Illinois statute requiring independent candidates for presidential electors to obtain signatures from at least 200 qualified voters in each of at least 50 counties violates the Equal Protection Clause because it imposes an invidious geographical classification that dilutes the voting power of residents in populous counties.",
+        "holding_type": "affirmative",
+        "majority_author": "Douglas",
+        "per_curiam": false,
+        "vote": null,
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1969-01-01",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "Opinion announced by Justice Brennan. Overrules MacDougall v. Green, 335 U.S. 281, which had upheld similar geographical distribution requirements. The Court held that Baker v. Carr established that such voter classification disputes are justiciable, contrary to the political question doctrine previously applied in Colegrove v. Green.",
+        "courtlistener_id": "107919"
+      },
+      {
+        "@type": "Case",
+        "id": "macdougall_v_green_1948",
+        "short_name": "MacDougall v. Green",
+        "full_name": "MacDougall v. Green",
+        "citation": "335 U.S. 281 (1948)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1948-01-01",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "affirmed",
+        "holding": "A state may impose geographical distribution requirements on nominating petitions to assure proper diffusion of political initiative between thinly populated and densely populated counties.",
+        "holding_type": "affirmative",
+        "majority_author": null,
+        "per_curiam": false,
+        "vote": null,
+        "status": "overruled",
+        "precedential_weight": "none",
+        "valid_from": "1948-01-01",
+        "valid_until": "1969-01-01",
+        "opinions": [],
+        "notes": "Stub node — overruled by moore_v_ogilvie_1969. Full node to be added when this case is modeled.",
+        "courtlistener_id": "104593"
+      },
+      {
+        "@type": "Case",
+        "id": "nashville_c_st_l_ry_v_wallace_1933",
+        "short_name": "Nashville C. & St. L. Ry. v. Wallace",
+        "full_name": "Nashville, Chattanooga & St. Louis Railway v. Wallace",
+        "citation": "288 U.S. 249 (1933)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1933",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "affirmed",
+        "holding": "A case or controversy must be presented for the Supreme Court to exercise its appellate jurisdiction under Article III, Section 2 of the Constitution; the substance of the proceeding, not its form or label, determines whether justiciability requirements are satisfied.",
+        "holding_type": "affirmative",
+        "majority_author": "Stone",
+        "per_curiam": false,
+        "vote": null,
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1933",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "The opinion addresses the threshold justiciability question of whether a declaratory judgment proceeding under Tennessee law presents a case or controversy within the Supreme Court's appellate jurisdiction. The Court emphasizes substance over form in determining justiciability."
+      },
+      {
+        "@type": "Case",
+        "id": "nixon_v_united_states_1993",
+        "short_name": "Nixon v. United States",
+        "full_name": "Walter L. Nixon, Jr. v. United States",
+        "citation": "506 U.S. 224 (1993)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1993-06-29",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "affirmed",
+        "holding": "A claim that the Senate's use of a committee to hear evidence in an impeachment trial violates the Impeachment Trial Clause presents a nonjusticiable political question because the Constitution textually commits the sole power to try impeachments to the Senate, and there are no judicially discoverable and manageable standards for resolving the scope of that power.",
+        "holding_type": "affirmative",
+        "majority_author": "Rehnquist",
+        "per_curiam": false,
+        "vote": null,
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1993-06-29",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "The Court held that the political question doctrine bars judicial review of the Senate's impeachment procedures. The holding rests on textual commitment of impeachment authority to the Senate and the absence of judicially manageable standards."
+      },
+      {
+        "@type": "Case",
+        "id": "plaut_v_spendthrift_farm_inc_1995",
+        "short_name": "Plaut v. Spendthrift Farm, Inc.",
+        "full_name": "Plaut v. Spendthrift Farm, Inc.",
+        "citation": "514 U.S. 211 (1995)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1995",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "affirmed",
+        "holding": "Congress violates the separation of powers when it enacts retroactive legislation that prescribes what the law was at an earlier time and requires courts to reopen and reinstate cases that have been finally dismissed, thereby usurping the judicial power to render final judgments.",
+        "holding_type": "affirmative",
+        "majority_author": "Scalia",
+        "per_curiam": false,
+        "vote": "7-2",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1995",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "The Court affirmed the Sixth Circuit's judgment that the FDIC Improvement Act violated separation of powers by requiring courts to reinstate dismissed securities cases.",
+        "courtlistener_id": "117916"
+      },
+      {
+        "@type": "Case",
+        "id": "regional_rail_reorganization_act_cases_1974",
+        "short_name": "Regional Rail Reorganization Act Cases",
+        "full_name": "Regional Rail Reorganization Act Cases",
+        "citation": "419 U.S. 102 (1974)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1974",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "The Regional Rail Reorganization Act of 1973 is constitutional and does not violate the Fifth Amendment's Takings Clause or Due Process Clause as applied to railroad properties transferred under the Act's reorganization scheme.",
+        "holding_type": "affirmative",
+        "majority_author": "Brennan",
+        "per_curiam": false,
+        "vote": null,
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1974",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "Direct appeals and cross-appeal from three-judge District Court for Eastern District of Pennsylvania. The Court reversed the lower court's declaration that the Rail Act was unconstitutional in part.",
+        "courtlistener_id": "109117"
+      },
+      {
+        "@type": "Case",
+        "id": "robertson_v_seattle_audubon_society_1992",
+        "short_name": "Robertson v. Seattle Audubon Society",
+        "full_name": "Robertson, Chief, United States Forest Service, et al. v. Seattle Audubon Society",
+        "citation": "503 U.S. 429 (1992)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1992",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "A statute that modifies the legal standards governing pending litigation by amending or replacing the underlying substantive law does not violate Article III merely because it references the pending cases, provided it does not direct findings of fact or law or compel specific results in those cases.",
+        "holding_type": "affirmative",
+        "majority_author": "Thomas",
+        "per_curiam": false,
+        "vote": "9-0",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1992",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "Unanimous decision. The Court held that §318 of the Department of Interior and Related Agencies Appropriations Act did not violate Article III by directing results in pending cases because it changed the underlying law rather than making judicial findings or compelling specific outcomes.",
+        "courtlistener_id": "112716"
+      },
+      {
+        "@type": "Case",
+        "id": "rucho_v_common_cause_2019",
+        "short_name": "Rucho v. Common Cause",
+        "full_name": "Rucho v. Common Cause",
+        "citation": "588 U.S. 684 (2019)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "2019-06-27",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "Partisan gerrymandering claims are not justiciable because they present a political question beyond the reach of the federal courts, as the Constitution does not provide a limited and precise standard for evaluating when political gerrymandering has gone too far.",
+        "holding_type": "by_negation",
+        "majority_author": "Roberts",
+        "per_curiam": false,
+        "vote": "5-4",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "2019-06-27",
+        "valid_until": null,
+        "opinions": [
+          {
+            "justice": "Kagan",
+            "type": "dissent",
+            "joined_by": [
+              "Ginsburg",
+              "Breyer",
+              "Sotomayor"
+            ]
+          }
+        ],
+        "notes": "5-4 majority opinion. Chief Justice Roberts held that partisan gerrymandering presents a political question nonjusticiable in federal courts. Justice Kagan's dissent argued the Court was sidestepping fundamental constitutional rights to equal political participation. Case consolidated with Lamone v. Benisek, No. 18-726.",
+        "courtlistener_id": "9359036"
+      },
+      {
+        "@type": "Case",
+        "id": "simon_v_eastern_kentucky_welfare_rights_organization_1976",
+        "short_name": "Simon v. Eastern Kentucky Welfare Rights Organization",
+        "full_name": "Simon v. Eastern Kentucky Welfare Rights Organization",
+        "citation": "426 U.S. 26 (1976)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1976",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "affirmed",
+        "holding": "Indigent plaintiffs and organizations composed of indigents lack Article III standing to challenge IRS Revenue Rulings regarding tax-exempt status of nonprofit hospitals that limit charity care, because they have not demonstrated a sufficiently concrete and particularized injury-in-fact traceable to the challenged agency action.",
+        "holding_type": "by_negation",
+        "majority_author": "Powell",
+        "per_curiam": false,
+        "vote": null,
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1976",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "Case addresses standing doctrine under Article III. The Court concluded plaintiffs lacked standing to bring suit challenging IRS Revenue Ruling 69-545, which modified the charitable status requirements for nonprofit hospitals.",
+        "courtlistener_id": "109462"
+      },
+      {
+        "@type": "Case",
+        "id": "susan_b_anthony_list_v_driehaus_2014",
+        "short_name": "Susan B. Anthony List v. Driehaus",
+        "full_name": "Susan B. Anthony List v. Driehaus",
+        "citation": "573 U.S. 149 (2014)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "2014-01-01",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "Pre-enforcement challenges to campaign speech restrictions are justiciable when circumstances indicate that threatened enforcement of the statute is sufficiently imminent, and plaintiffs have alleged sufficient injury for Article III standing and ripeness when the threat of enforcement is not imaginary or speculative and the challenge is purely legal.",
+        "holding_type": "affirmative",
+        "majority_author": "Thomas",
+        "per_curiam": false,
+        "vote": "9-0",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "2014-01-01",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "Unanimous decision. Addresses justiciability of pre-enforcement First Amendment challenges to campaign speech restrictions.",
+        "courtlistener_id": "9347587"
+      },
+      {
+        "@type": "Case",
+        "id": "transunion_llc_v_ramirez_2021",
+        "short_name": "TransUnion LLC v. Ramirez",
+        "full_name": "TransUnion LLC v. Ramirez",
+        "citation": "594 U.S. 413 (2021)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "2021-06-25",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "A plaintiff must demonstrate concrete injury in fact, fairly traceable to the defendant's conduct and likely to be redressed by a favorable ruling, to establish Article III standing to sue for damages under the Fair Credit Reporting Act; a plaintiff must show that the asserted harm is similar to a harm traditionally recognized as providing a basis for a lawsuit in American courts, and mere risk of future harm is insufficient to establish standing.",
+        "holding_type": "affirmative",
+        "majority_author": "Kavanaugh",
+        "per_curiam": false,
+        "vote": "5-4",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "2021-06-25",
+        "valid_until": null,
+        "opinions": [
+          {
+            "author": "Thomas",
+            "type": "dissent",
+            "joined_by": [
+              "Breyer",
+              "Sotomayor",
+              "Kagan"
+            ]
+          },
+          {
+            "author": "Kagan",
+            "type": "dissent",
+            "joined_by": [
+              "Breyer",
+              "Sotomayor"
+            ]
+          }
+        ],
+        "notes": "5-4 decision. Majority held that only class members whose credit reports were actually provided to third parties (1,853 of 8,185) had Article III standing. Dissenters argued that injury in law to a private right has historically been sufficient for standing purposes.",
+        "courtlistener_id": "4894912"
+      },
+      {
+        "@type": "Case",
+        "id": "united_public_workers_v_mitchell_1947",
+        "short_name": "United Public Workers v. Mitchell",
+        "full_name": "United Public Workers v. Mitchell",
+        "citation": "330 U.S. 75 (1947)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1947-01-01",
+        "opinion_form": "plurality",
+        "procedural_disposition": "affirmed",
+        "holding": "Congress has the constitutional authority to reasonably restrict the political conduct of federal executive branch employees to promote integrity in the performance of their duties; justiciability is limited to those appellants actually facing disciplinary action under the Hatch Act.",
+        "holding_type": "affirmative",
+        "majority_author": "Reed (plurality)",
+        "per_curiam": false,
+        "vote": "4-3",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1947-01-01",
+        "valid_until": null,
+        "opinions": [
+          "concurrence",
+          "dissent",
+          "dissent"
+        ],
+        "notes": "Plurality decision. Justice Reed delivered the plurality opinion (4 justices). Justice Frankfurter concurred on jurisdictional grounds but joined the plurality on the merits. Justice Black dissented on First Amendment grounds. Justice Rutledge dissented as to Poole. Justice Douglas filed a partial dissent arguing all appellants presented justiciable issues and proposing a distinction between administrative and industrial workers. Justices Murphy and Jackson did not participate."
+      },
+      {
+        "@type": "Case",
+        "id": "uzuegbunam_v_preczewski_2021",
+        "short_name": "Uzuegbunam v. Preczewski",
+        "full_name": "Chike Uzuegbunam v. Preczewski",
+        "citation": "592 U.S. 279 (2021)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "2021-06-01",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "A constitutional challenge to a school policy that seeks nominal damages is not rendered moot by subsequent revision of the policy, because an award of nominal damages can redress the past constitutional injury and establish Article III standing.",
+        "holding_type": "affirmative",
+        "majority_author": "Thomas",
+        "per_curiam": false,
+        "vote": "8-1",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "2021-06-01",
+        "valid_until": null,
+        "opinions": [
+          {
+            "type": "concurrence",
+            "author": "Kavanaugh",
+            "summary": "Joined the majority in full but wrote separately to note agreement that a defendant should be able to accept entry of judgment for nominal damages and thereby end litigation without resolution on the merits."
+          },
+          {
+            "type": "dissent",
+            "author": "Roberts",
+            "summary": "Argued the case is moot because plaintiffs are no longer students, challenged restrictions no longer exist, and plaintiffs have not alleged actual damages. Warned that allowing nominal damages to preserve justiciability creates perverse incentives."
+          }
+        ],
+        "notes": "The case involved First Amendment free speech and religious expression rights on a college campus. The majority held that nominal damages can satisfy Article III redressability requirement even when the underlying policy has been revised during litigation."
+      },
+      {
+        "@type": "Case",
+        "id": "zivotofsky_v_clinton_2012",
+        "short_name": "Zivotofsky v. Clinton",
+        "full_name": "Menachem Binyamin Zivotofsky, By His Parents and Guardians Ari Z. Zivotofsky, et ux. v. Hillary Rodham Clinton",
+        "citation": "566 U.S. 189 (2012)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "2012-06-30",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "vacated",
+        "holding": "A claim challenging the State Department's policy of not recording 'Israel' as a place of birth on official documents does not present a nonjusticiable political question and is therefore justiciable; the Judiciary has competence to vindicate statutory rights even when foreign policy implications are present.",
+        "holding_type": "affirmative",
+        "majority_author": "Roberts",
+        "per_curiam": false,
+        "vote": "8-1",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "2012-06-30",
+        "valid_until": null,
+        "opinions": [
+          {
+            "type": "concurrence_in_judgment",
+            "author": "Sotomayor",
+            "note": "Emphasized that the political question doctrine inquiry was more demanding than the majority suggested; Justice Breyer joined Part I"
+          },
+          {
+            "type": "concurrence",
+            "author": "Alito",
+            "note": "Special concurrence noting that determining constitutionality of an Act of Congress could present a political question, but the narrow issue before the Court did not"
+          },
+          {
+            "type": "dissent",
+            "author": "Breyer",
+            "note": "Argued that adjudication would touch upon sensitive foreign policy matters and would require courts to answer a political question as defined in Baker v. Carr"
+          }
+        ],
+        "notes": "Fractured decision with 8-1 majority on justiciability but separate opinions on the scope and application of the political question doctrine. Remanded for consideration on the merits."
       }
     ],
     "doctrinal_tests": [
@@ -24063,6 +25216,221 @@
         "valid_from": "1967-01-01",
         "valid_until": null,
         "notes": "This test permits pre-enforcement judicial review of administrative regulations under the Administrative Procedure Act and Declaratory Judgment Act, even absent specific statutory review provisions."
+      },
+      {
+        "@type": "DoctrinalTest",
+        "id": "lyons_injunctive_standing_test",
+        "label": "Lyons Injunctive Relief Standing Test",
+        "description": "A test for determining whether a plaintiff has standing to seek injunctive relief against a municipality for police conduct. The plaintiff must establish a real and immediate threat of future injury.",
+        "area_id": "justiciability",
+        "source_case_id": "city_of_los_angeles_v_lyons_1983",
+        "scrutiny_level": "none",
+        "burden": "challenger",
+        "test_form": "disjunctive",
+        "prongs": [
+          {
+            "number": 1,
+            "label": "Real and Immediate Threat of Future Injury",
+            "description": "Plaintiff must show a real and immediate threat that he will again be subjected to the challenged conduct, not merely that he was injured once in the past.",
+            "burden_note": "Plaintiff bears burden of establishing likelihood of recurrence.",
+            "valid_from": "1983",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 2,
+            "label": "Systematic Conduct or Municipal Authorization",
+            "description": "Plaintiff must demonstrate either that all Los Angeles police officers always engage in the challenged conduct, or that the City ordered or authorized officers to act in such a manner.",
+            "burden_note": "Plaintiff bears burden of proving systematic practice or municipal policy.",
+            "valid_from": "1983",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          }
+        ],
+        "status": "active",
+        "valid_from": "1983",
+        "valid_until": null,
+        "notes": "Established in a 5-to-4 decision. The test requires satisfaction of at least one prong to establish standing for injunctive relief."
+      },
+      {
+        "@type": "DoctrinalTest",
+        "id": "clapper_injury_in_fact_test",
+        "label": "Clapper Injury-in-Fact Test for Standing",
+        "description": "A plaintiff must demonstrate a concrete injury in fact to establish Article III standing; speculative future harm, reasonable likelihood of harm, or costs incurred to avoid speculative harm are insufficient.",
+        "area_id": "justiciability",
+        "source_case_id": "clapper_v_amnesty_international_usa_2013",
+        "scrutiny_level": "none",
+        "burden": "challenger",
+        "test_form": "threshold_then_conjunctive",
+        "prongs": [
+          {
+            "number": 1,
+            "label": "Concrete Injury in Fact",
+            "description": "The plaintiff must show an actual, particularized injury, not merely a subjective fear or reasonable likelihood of future harm.",
+            "burden_note": "Challenger must prove concrete injury; speculative or probabilistic harm is insufficient.",
+            "valid_from": "2013-02-26",
+            "valid_until": null,
+            "contested": true,
+            "contest_note": "Dissent argued that high probability of government interception should suffice; majority rejected this."
+          },
+          {
+            "number": 2,
+            "label": "No Present Injury from Avoidance Measures",
+            "description": "Costs incurred by a plaintiff to avoid speculative future harm do not constitute a present injury sufficient for standing.",
+            "burden_note": "Challenger cannot rely on self-imposed costs to prevent hypothetical future injury.",
+            "valid_from": "2013-02-26",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          }
+        ],
+        "status": "active",
+        "valid_from": "2013-02-26",
+        "valid_until": null,
+        "notes": "This test clarifies and narrows the injury-in-fact requirement in the context of surveillance and communications privacy claims."
+      },
+      {
+        "@type": "DoctrinalTest",
+        "id": "imminent_enforcement_ripeness_test",
+        "label": "Imminent Enforcement Ripeness Test",
+        "description": "A pre-enforcement challenge to a statute is ripe for adjudication when: (1) the threat of enforcement is sufficiently imminent and not imaginary or speculative; (2) the plaintiff has alleged sufficient injury for Article III standing; and (3) the challenge is purely legal such that it will not be clarified by future factual development.",
+        "area_id": "justiciability",
+        "source_case_id": "susan_b_anthony_list_v_driehaus_2014",
+        "scrutiny_level": "rational_basis",
+        "burden": "challenger",
+        "test_form": "conjunctive",
+        "prongs": [
+          {
+            "number": 1,
+            "label": "Sufficiently Imminent Threat of Enforcement",
+            "description": "The threat of enforcement must be sufficiently imminent and not imaginary or speculative. Enforcement is sufficiently imminent when the defendant has not disavowed enforcement and circumstances indicate threatened enforcement is likely.",
+            "burden_note": "Challenger must demonstrate imminent threat; defendant's failure to disavow enforcement supports imminence.",
+            "valid_from": "2014-01-01",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 2,
+            "label": "Sufficient Injury for Article III Standing",
+            "description": "The plaintiff must have alleged sufficient injury in fact for Article III standing. Injury exists when plaintiff faces a credible threat of enforcement that would cause concrete harm.",
+            "burden_note": "Challenger must demonstrate concrete injury or imminent threat thereof.",
+            "valid_from": "2014-01-01",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 3,
+            "label": "Purely Legal Challenge Not Requiring Factual Development",
+            "description": "The challenge must be purely legal in nature such that it will not be clarified by future factual development. The issue must be ripe for judicial resolution without awaiting further events.",
+            "burden_note": "Challenger must demonstrate that the constitutional question is sufficiently developed for judicial review.",
+            "valid_from": "2014-01-01",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          }
+        ],
+        "status": "active",
+        "valid_from": "2014-01-01",
+        "valid_until": null,
+        "notes": "Applies to pre-enforcement First Amendment challenges to campaign speech restrictions. All three prongs must be satisfied for justiciability."
+      },
+      {
+        "@type": "DoctrinalTest",
+        "id": "transunion_article_iii_standing_test",
+        "label": "Article III Standing Test (TransUnion)",
+        "description": "A three-part test for establishing Article III standing: (1) the plaintiff must demonstrate concrete injury in fact, similar to a harm traditionally recognized in American courts with a close historical or common-law analogue; (2) the injury must be fairly traceable to the defendant's conduct; and (3) the injury must be likely to be redressed by a favorable ruling by the court. Mere risk of future harm is insufficient.",
+        "area_id": "justiciability",
+        "source_case_id": "transunion_llc_v_ramirez_2021",
+        "scrutiny_level": "none",
+        "burden": "challenger",
+        "test_form": "conjunctive",
+        "prongs": [
+          {
+            "number": 1,
+            "label": "Concrete Injury in Fact",
+            "description": "The plaintiff must demonstrate concrete injury in fact that is similar to a harm traditionally recognized as providing a basis for a lawsuit in American courts, with a close historical or common-law analogue for the asserted injury.",
+            "burden_note": "Plaintiff bears burden of demonstrating concrete injury; mere risk of future harm is insufficient.",
+            "valid_from": "2021-06-25",
+            "valid_until": null,
+            "contested": true,
+            "contest_note": "Dissenters argued that injury in law to a private right has historically been sufficient for standing purposes."
+          },
+          {
+            "number": 2,
+            "label": "Fairly Traceable to Defendant's Conduct",
+            "description": "The injury must be fairly traceable to the defendant's conduct.",
+            "burden_note": "Plaintiff bears burden of establishing causal connection.",
+            "valid_from": "2021-06-25",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 3,
+            "label": "Likely to be Redressed by Favorable Ruling",
+            "description": "The injury must be likely to be redressed by a favorable ruling by the court.",
+            "burden_note": "Plaintiff bears burden of demonstrating redressability.",
+            "valid_from": "2021-06-25",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          }
+        ],
+        "status": "active",
+        "valid_from": "2021-06-25",
+        "valid_until": null,
+        "notes": "This test applies to private statutory damages actions under statutes like the Fair Credit Reporting Act. The majority applied this test to hold that only class members whose credit reports were actually provided to third parties had standing; those who merely received notification letters but whose information was not shared lacked concrete injury."
+      },
+      {
+        "@type": "DoctrinalTest",
+        "id": "article_iii_standing_test",
+        "label": "Article III Standing Test",
+        "description": "Three-part test to establish Article III standing: (1) injury in fact, (2) causation (injury fairly traceable to challenged conduct), and (3) redressability (remedy sought would redress the injury).",
+        "area_id": "justiciability",
+        "source_case_id": "uzuegbunam_v_preczewski_2021",
+        "scrutiny_level": "none",
+        "burden": "challenger",
+        "test_form": "conjunctive",
+        "prongs": [
+          {
+            "number": 1,
+            "label": "Injury in Fact",
+            "description": "The plaintiff must have suffered a concrete and particularized injury that is actual or imminent, not conjectural or hypothetical.",
+            "burden_note": "Plaintiff must establish",
+            "valid_from": "2021-06-01",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 2,
+            "label": "Causation",
+            "description": "The injury must be fairly traceable to the challenged conduct of the defendant.",
+            "burden_note": "Plaintiff must establish",
+            "valid_from": "2021-06-01",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 3,
+            "label": "Redressability",
+            "description": "The remedy sought from the Court must be likely to redress the injury. Nominal damages satisfy this prong even absent proof of other damages, as every legal injury necessarily causes damage under common law tradition.",
+            "burden_note": "Plaintiff must establish",
+            "valid_from": "2021-06-01",
+            "valid_until": null,
+            "contested": true,
+            "contest_note": "Chief Justice Roberts dissented, arguing that nominal damages should not satisfy redressability when the underlying policy has been revised and plaintiffs are no longer students."
+          }
+        ],
+        "status": "active",
+        "valid_from": "2021-06-01",
+        "valid_until": null,
+        "notes": "Uzuegbunam clarified that nominal damages can satisfy the redressability prong of Article III standing, drawing on common law principles that every legal injury causes damage. This preserves justiciability even when the underlying policy has been revised during litigation."
       }
     ]
   },
@@ -40825,6 +42193,567 @@
         "federal"
       ],
       "notes": "BE&K applied Noerr-Pennington doctrine, holding the NLRA does not permit the NLRB to impose liability for unsuccessful but reasonably based lawsuits without proof of retaliatory motive. Corrected 2026-08-25: retargeted from Petition Clause Doctrine to Noerr-Pennington after Ring 3 audit."
+    },
+    {
+      "id": "bank_markazi_establishes_separation_of_powers_legislative_judgment",
+      "source_id": "bank_markazi_v_peterson_2016",
+      "target_id": "separation_of_powers_legislative_judgment",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2016-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ],
+      "notes": "The Court established the doctrine that Congress may pass legislation applicable to pending cases without violating separation of powers, provided it supplies a new law rather than directing judicial outcomes."
+    },
+    {
+      "id": "barrows_establishes_state_action_damages_doctrine",
+      "source_id": "barrows_v_jackson_1953",
+      "target_id": "state_action_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1953-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Barrows establishes that damages actions for breach of racial restrictive covenants constitute state action under the Fourteenth Amendment."
+    },
+    {
+      "id": "barrows_applies_racial_restrictive_covenant_doctrine",
+      "source_id": "barrows_v_jackson_1953",
+      "target_id": "racial_restrictive_covenant_doctrine",
+      "edge_type": "APPLIES",
+      "valid_from": "1953-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Barrows applies and extends the racial restrictive covenant doctrine established in Shelley v. Kraemer to damages actions."
+    },
+    {
+      "id": "city_of_los_angeles_v_lyons_1983_establishes_lyons_injunctive_standing_test",
+      "source_id": "city_of_los_angeles_v_lyons_1983",
+      "target_id": "lyons_injunctive_standing_test",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1983",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "city_of_los_angeles_v_lyons_1983_establishes_injunctive_relief_standing_doctrine",
+      "source_id": "city_of_los_angeles_v_lyons_1983",
+      "target_id": "injunctive_relief_standing_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1983",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "clapper_establishes_clapper_injury_in_fact_test",
+      "source_id": "clapper_v_amnesty_international_usa_2013",
+      "target_id": "clapper_injury_in_fact_test",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2013-02-26",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ],
+      "notes": "Clapper established the injury-in-fact test for standing in the surveillance context."
+    },
+    {
+      "id": "clapper_applies_article_iii_standing_doctrine",
+      "source_id": "clapper_v_amnesty_international_usa_2013",
+      "target_id": "article_iii_standing_doctrine",
+      "edge_type": "APPLIES",
+      "valid_from": "2013-02-26",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ],
+      "notes": "Clapper applies and clarifies Article III standing doctrine by establishing that subjective fear and reasonable likelihood of future harm are insufficient."
+    },
+    {
+      "id": "cohens_establishes_scotus_appellate_jurisdiction",
+      "source_id": "cohens_v_virginia_1821",
+      "target_id": "scotus_appellate_jurisdiction_state_proceedings",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1821-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Cohens v. Virginia established the foundational doctrine of Supreme Court appellate jurisdiction over state criminal proceedings involving constitutional questions."
+    },
+    {
+      "id": "mccardle_establishes_congressional_exception",
+      "source_id": "ex_parte_mccardle_1869",
+      "target_id": "congressional_exception_to_appellate_jurisdiction",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1869-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ],
+      "notes": "Ex parte McCardle established the doctrine that Congress has express constitutional power to make exceptions to the Supreme Court's appellate jurisdiction."
+    },
+    {
+      "id": "friends_of_the_earth_establishes_voluntary_cessation_mootness",
+      "source_id": "friends_of_the_earth_inc_v_laidlaw_environmental_services_2000",
+      "target_id": "voluntary_cessation_mootness_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2000-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ],
+      "notes": "The Court established the principle that voluntary cessation does not moot cases seeking civil penalties."
+    },
+    {
+      "id": "friends_of_the_earth_establishes_citizen_suit_standing",
+      "source_id": "friends_of_the_earth_inc_v_laidlaw_environmental_services_2000",
+      "target_id": "citizen_suit_standing_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2000-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ],
+      "notes": "The Court affirmed that citizen organizations have standing to bring suits on behalf of their members."
+    },
+    {
+      "id": "hayburn_s_case_establishes_separation_of_powers_judicial_independence",
+      "source_id": "hayburn_s_case_1792",
+      "target_id": "separation_of_powers_judicial_independence",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1792-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ],
+      "notes": "The Supreme Court's decision to hold the motion under advisement, combined with the Circuit Courts' unanimous reasoning that Congress cannot constitutionally assign non-judicial duties to federal judges, established the foundational doctrine that separation of powers prohibits such assignments."
+    },
+    {
+      "id": "june_medical_applies_undue_burden_standard",
+      "source_id": "june_medical_services_l_l_c_v_russo_2020",
+      "target_id": "undue_burden_standard",
+      "edge_type": "APPLIES",
+      "valid_from": "2020-06-29",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "The plurality applied the undue burden standard from Casey and Whole Woman's Health, conducting independent review of the district court's factual findings and weighing the law's asserted benefits against its burdens on abortion access."
+    },
+    {
+      "id": "june_medical_applies_third_party_standing",
+      "source_id": "june_medical_services_l_l_c_v_russo_2020",
+      "target_id": "third_party_standing_abortion",
+      "edge_type": "APPLIES",
+      "valid_from": "2020-06-29",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "The plurality reaffirmed that abortion providers have standing to assert the constitutional rights of their patients, noting the state had waived its standing argument."
+    },
+    {
+      "id": "linda_r_s_applies_standing_injury_in_fact",
+      "source_id": "linda_r_s_v_richard_d_1973",
+      "target_id": "standing_injury_in_fact",
+      "edge_type": "APPLIES",
+      "valid_from": "1973",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ],
+      "notes": "The Court applied the injury-in-fact requirement to determine that the plaintiff lacked standing because her injury (child's lack of support) was not sufficiently connected to the government action challenged (the district attorney's refusal to prosecute)."
+    },
+    {
+      "id": "martin_establishes_federal_appellate_jurisdiction",
+      "source_id": "martin_v_hunters_lessee_1816",
+      "target_id": "federal_appellate_jurisdiction_over_state_courts",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1816-03-20",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "The Court established that Section 25 of the Judiciary Act is constitutional and that the Supreme Court's appellate jurisdiction extends to state courts."
+    },
+    {
+      "id": "martin_v_hunters_lessee_1816_establishes_constitutional_supremacy_doctrine",
+      "source_id": "martin_v_hunters_lessee_1816",
+      "target_id": "constitutional_supremacy_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1816-03-20",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "The Court articulated the foundational principle that the Constitution derives authority from the people and creates a supreme law requiring uniform interpretation."
+    },
+    {
+      "id": "moore_v_ogilvie_overrules_macdougall_v_green",
+      "source_id": "moore_v_ogilvie_1969",
+      "target_id": "macdougall_v_green_1948",
+      "edge_type": "OVERRULES",
+      "overrule_type": "explicit",
+      "valid_from": "1969-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Moore explicitly rejected MacDougall's holding that states may impose geographical distribution requirements on nominating petitions to assure diffusion of political initiative."
+    },
+    {
+      "id": "moore_v_ogilvie_establishes_one_person_one_vote",
+      "source_id": "moore_v_ogilvie_1969",
+      "target_id": "one_person_one_vote_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1969-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Moore v. Ogilvie established that geographical classifications in nominating procedures that dilute voting power violate the one person, one vote principle."
+    },
+    {
+      "id": "moore_v_ogilvie_establishes_justiciability_voter",
+      "source_id": "moore_v_ogilvie_1969",
+      "target_id": "justiciability_voter_classification",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1969-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Moore clarified that voter classification disputes are justiciable controversies, applying Baker v. Carr to reject the political question doctrine."
+    },
+    {
+      "id": "nashville_establishes_case_or_controversy_requirement",
+      "source_id": "nashville_c_st_l_ry_v_wallace_1933",
+      "target_id": "case_or_controversy_requirement",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1933",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ],
+      "notes": "The Court articulates and applies the substance-over-form principle to determine whether a declaratory judgment proceeding satisfies Article III case or controversy requirements."
+    },
+    {
+      "id": "nixon_applies_political_question_doctrine",
+      "source_id": "nixon_v_united_states_1993",
+      "target_id": "political_question_doctrine",
+      "edge_type": "APPLIES",
+      "valid_from": "1993-06-29",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ],
+      "notes": "Nixon applies the political question doctrine framework from Baker v. Carr to determine that impeachment trial procedures are nonjusticiable."
+    },
+    {
+      "id": "nixon_establishes_impeachment_trial_authority",
+      "source_id": "nixon_v_united_states_1993",
+      "target_id": "impeachment_trial_authority",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1993-06-29",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ],
+      "notes": "Nixon establishes that the Senate's impeachment trial authority is a textually committed power not subject to judicial review."
+    },
+    {
+      "id": "plaut_establishes_judicial_finality_doctrine",
+      "source_id": "plaut_v_spendthrift_farm_inc_1995",
+      "target_id": "judicial_finality_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1995",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ],
+      "notes": "Plaut established the principle that Congress cannot enact retroactive legislation requiring courts to reopen final judgments."
+    },
+    {
+      "id": "regional_rail_establishes_takings_railroad",
+      "source_id": "regional_rail_reorganization_act_cases_1974",
+      "target_id": "takings_clause_railroad_reorganization",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1974",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ],
+      "notes": "Court established that Takings Clause does not bar the Rail Act's property transfer scheme when accompanied by just compensation."
+    },
+    {
+      "id": "regional_rail_establishes_due_process_railroad",
+      "source_id": "regional_rail_reorganization_act_cases_1974",
+      "target_id": "due_process_railroad_reorganization",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1974",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ],
+      "notes": "Court established that Due Process Clause permits the Rail Act's reorganization process with judicial review and fairness standards."
+    },
+    {
+      "id": "robertson_establishes_article_iii_legislative_direction_doctrine",
+      "source_id": "robertson_v_seattle_audubon_society_1992",
+      "target_id": "article_iii_legislative_direction_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1992",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ],
+      "notes": "Robertson v. Seattle Audubon Society established the doctrine that Congress may modify substantive law affecting pending cases without violating Article III, provided it does not direct judicial findings or outcomes."
+    },
+    {
+      "id": "rucho_establishes_partisan_gerrymandering_nonjusticiability",
+      "source_id": "rucho_v_common_cause_2019",
+      "target_id": "partisan_gerrymandering_nonjusticiability",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2019-06-27",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ],
+      "notes": "Rucho established that partisan gerrymandering claims are nonjusticiable."
+    },
+    {
+      "id": "rucho_applies_political_question_doctrine",
+      "source_id": "rucho_v_common_cause_2019",
+      "target_id": "political_question_doctrine",
+      "edge_type": "APPLIES",
+      "valid_from": "2019-06-27",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ],
+      "notes": "Rucho applied the political question doctrine to hold that partisan gerrymandering claims lack judicially discoverable and manageable standards."
+    },
+    {
+      "id": "simon_applies_article_iii_standing_doctrine",
+      "source_id": "simon_v_eastern_kentucky_welfare_rights_organization_1976",
+      "target_id": "article_iii_standing_doctrine",
+      "edge_type": "APPLIES",
+      "valid_from": "1976",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ],
+      "notes": "The Court applied Article III standing requirements to determine that plaintiffs lacked standing to challenge the IRS Revenue Ruling."
+    },
+    {
+      "id": "sba_list_establishes_pre_enforcement_justiciability",
+      "source_id": "susan_b_anthony_list_v_driehaus_2014",
+      "target_id": "pre_enforcement_justiciability_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2014-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Court established the doctrine that pre-enforcement challenges are justiciable when threatened enforcement is sufficiently imminent."
+    },
+    {
+      "id": "sba_list_establishes_political_speech_protection",
+      "source_id": "susan_b_anthony_list_v_driehaus_2014",
+      "target_id": "political_speech_protection_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2014-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Court held that political speech focused on policy issues receives First Amendment protection and may continue despite changes in circumstances."
+    },
+    {
+      "id": "sba_list_establishes_imminent_enforcement_ripeness",
+      "source_id": "susan_b_anthony_list_v_driehaus_2014",
+      "target_id": "imminent_enforcement_ripeness_test",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2014-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Court established the three-prong test for determining ripeness of pre-enforcement challenges."
+    },
+    {
+      "id": "pre_enforcement_justiciability_doctrine_grounded_in_first_amendment",
+      "source_id": "pre_enforcement_justiciability_doctrine",
+      "target_id": "amendment_1",
+      "edge_type": "GROUNDED_IN",
+      "valid_from": "2014-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Doctrine protects First Amendment rights by allowing pre-enforcement challenges to campaign speech restrictions."
+    },
+    {
+      "id": "political_speech_protection_doctrine_grounded_in_first_amendment",
+      "source_id": "political_speech_protection_doctrine",
+      "target_id": "amendment_1",
+      "edge_type": "GROUNDED_IN",
+      "valid_from": "2014-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Doctrine protects core political speech under the First Amendment."
+    },
+    {
+      "id": "imminent_enforcement_ripeness_test_grounded_in_justiciability",
+      "source_id": "imminent_enforcement_ripeness_test",
+      "target_id": "justiciability",
+      "edge_type": "GROUNDED_IN",
+      "valid_from": "2014-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Test addresses Article III justiciability requirements for pre-enforcement challenges."
+    },
+    {
+      "id": "transunion_establishes_transunion_article_iii_standing_test",
+      "source_id": "transunion_llc_v_ramirez_2021",
+      "target_id": "transunion_article_iii_standing_test",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2021-06-25",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ],
+      "notes": "TransUnion established the concrete injury in fact requirement for Article III standing in private statutory damages actions."
+    },
+    {
+      "id": "transunion_establishes_concrete_injury_in_fact_doctrine",
+      "source_id": "transunion_llc_v_ramirez_2021",
+      "target_id": "concrete_injury_in_fact_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2021-06-25",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ],
+      "notes": "TransUnion clarified and reinforced the concrete injury in fact doctrine by requiring a historical or common-law analogue for asserted injuries."
+    },
+    {
+      "id": "united_public_workers_establishes_hatch_act_restriction",
+      "source_id": "united_public_workers_v_mitchell_1947",
+      "target_id": "hatch_act_political_conduct_restriction",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1947-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ],
+      "notes": "The plurality opinion established that Congress has constitutional authority to restrict federal employee political conduct."
+    },
+    {
+      "id": "united_public_workers_establishes_ripeness_standing",
+      "source_id": "united_public_workers_v_mitchell_1947",
+      "target_id": "justiciability_ripeness_standing",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1947-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ],
+      "notes": "The plurality held that justiciability requires concrete injury or actual disciplinary action, not hypothetical denials of rights."
+    },
+    {
+      "id": "uzuegbunam_establishes_article_iii_standing_test",
+      "source_id": "uzuegbunam_v_preczewski_2021",
+      "target_id": "article_iii_standing_test",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2021-06-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ],
+      "notes": "Uzuegbunam clarified the redressability prong by holding that nominal damages satisfy Article III standing requirements."
+    },
+    {
+      "id": "uzuegbunam_applies_article_iii_standing_doctrine",
+      "source_id": "uzuegbunam_v_preczewski_2021",
+      "target_id": "article_iii_standing_doctrine",
+      "edge_type": "APPLIES",
+      "valid_from": "2021-06-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ],
+      "notes": "Case applies and clarifies Article III standing doctrine by establishing that nominal damages constitute redressable injury."
+    },
+    {
+      "id": "uzuegbunam_modifies_mootness_doctrine",
+      "source_id": "uzuegbunam_v_preczewski_2021",
+      "target_id": "mootness_doctrine",
+      "edge_type": "MODIFIES",
+      "valid_from": "2021-06-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ],
+      "direction": "clarifies",
+      "notes": "Clarifies that cases seeking nominal damages for past constitutional violations are not rendered moot by subsequent revision of the challenged policy."
+    },
+    {
+      "id": "uzuegbunam_applies_campus_speech_restriction_doctrine",
+      "source_id": "uzuegbunam_v_preczewski_2021",
+      "target_id": "campus_speech_restriction_doctrine",
+      "edge_type": "APPLIES",
+      "valid_from": "2021-06-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Case involved First Amendment challenge to college campus speech restrictions, including designated speech zones policy."
+    },
+    {
+      "id": "zivotofsky_v_clinton_2012_applies_political_question_doctrine",
+      "source_id": "zivotofsky_v_clinton_2012",
+      "target_id": "political_question_doctrine",
+      "edge_type": "APPLIES",
+      "valid_from": "2012-06-30",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ],
+      "notes": "The Court applied and clarified the political question doctrine, holding that the presence of foreign policy implications does not automatically render a claim nonjusticiable."
     }
   ],
   "schema_issues_found": [
