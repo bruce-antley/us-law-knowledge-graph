@@ -6227,6 +6227,42 @@
           "first_amendment"
         ],
         "notes": "Uzuegbunam involved a college's designated speech zones policy that restricted where students could engage in expressive activities, including religious speech."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "jury_trial_incorporation_doctrine",
+        "label": "Jury Trial Incorporation Doctrine",
+        "description": "The Sixth Amendment guarantee of trial by jury in criminal cases is fundamental to the American scheme of justice and is incorporated against the states through the Fourteenth Amendment, except for petty crimes.",
+        "area_id": "criminal_procedure",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1968-01-01",
+        "valid_until": null,
+        "secondary_area_ids": [
+          "procedural_due_process"
+        ],
+        "notes": "Petty crimes exception: crimes punishable by no more than six months in prison and a $500 fine are not subject to the jury trial requirement."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "second_amendment_incorporation",
+        "label": "Second Amendment Incorporation Doctrine",
+        "description": "The Second Amendment right to keep and bear arms for self-defense is incorporated against the states through the Fourteenth Amendment's Due Process Clause, making it applicable to state and local governments.",
+        "area_id": "individual_rights",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "2010-06-28",
+        "valid_until": null,
+        "secondary_area_ids": [
+          "substantive_due_process"
+        ],
+        "notes": "Established in McDonald v. City of Chicago. Applies the fundamental rights strand of substantive due process to incorporate the Second Amendment."
       }
     ],
     "areas": [
@@ -25431,6 +25467,43 @@
         "valid_from": "2021-06-01",
         "valid_until": null,
         "notes": "Uzuegbunam clarified that nominal damages can satisfy the redressability prong of Article III standing, drawing on common law principles that every legal injury causes damage. This preserves justiciability even when the underlying policy has been revised during litigation."
+      },
+      {
+        "@type": "DoctrinalTest",
+        "id": "fundamental_rights_incorporation_test",
+        "label": "Fundamental Rights Incorporation Test",
+        "description": "A right is appropriately incorporated against the states through the Fourteenth Amendment if it is fundamental to the Nation's scheme of ordered liberty or deeply rooted in the Nation's history and tradition.",
+        "area_id": "substantive_due_process",
+        "source_case_id": "mcdonald_v_city_of_chicago_2010",
+        "scrutiny_level": "strict",
+        "burden": "government",
+        "test_form": "disjunctive",
+        "prongs": [
+          {
+            "number": 1,
+            "label": "Fundamental to Ordered Liberty",
+            "description": "The right must be fundamental to the Nation's scheme of ordered liberty.",
+            "burden_note": "Government must justify any infringement of a right meeting this criterion.",
+            "valid_from": "2010-06-28",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 2,
+            "label": "Deeply Rooted in History and Tradition",
+            "description": "The right must be deeply rooted in the Nation's history and tradition.",
+            "burden_note": "Government must justify any infringement of a right meeting this criterion.",
+            "valid_from": "2010-06-28",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          }
+        ],
+        "status": "active",
+        "valid_from": "2010-06-28",
+        "valid_until": null,
+        "notes": "This test was articulated by Justice Alito in the plurality opinion. It applies the framework from Washington v. Glucksberg to the incorporation context. The test is disjunctive—a right need satisfy only one prong to qualify for incorporation."
       }
     ]
   },
@@ -42754,6 +42827,58 @@
         "federal"
       ],
       "notes": "The Court applied and clarified the political question doctrine, holding that the presence of foreign policy implications does not automatically render a claim nonjusticiable."
+    },
+    {
+      "id": "duncan_v_louisiana_1968_establishes_jury_trial_incorporation_doctrine",
+      "source_id": "duncan_v_louisiana_1968",
+      "target_id": "jury_trial_incorporation_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1968-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Duncan established that the Sixth Amendment jury trial right is incorporated against the states through the Fourteenth Amendment."
+    },
+    {
+      "id": "mcdonald_establishes_second_amendment_incorporation",
+      "source_id": "mcdonald_v_city_of_chicago_2010",
+      "target_id": "second_amendment_incorporation",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2010-06-28",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "McDonald established the doctrine that the Second Amendment is incorporated against the states through the Fourteenth Amendment."
+    },
+    {
+      "id": "mcdonald_establishes_fundamental_rights_incorporation_test",
+      "source_id": "mcdonald_v_city_of_chicago_2010",
+      "target_id": "fundamental_rights_incorporation_test",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2010-06-28",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "McDonald articulated the test for determining which rights are fundamental enough to be incorporated against the states."
+    },
+    {
+      "id": "second_amendment_incorporation_governed_by_fundamental_rights_test",
+      "source_id": "second_amendment_incorporation",
+      "target_id": "fundamental_rights_incorporation_test",
+      "edge_type": "GOVERNED_BY",
+      "valid_from": "2010-06-28",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "The incorporation of the Second Amendment is governed by the fundamental rights incorporation test, which determines whether a right qualifies for incorporation."
     }
   ],
   "schema_issues_found": [
