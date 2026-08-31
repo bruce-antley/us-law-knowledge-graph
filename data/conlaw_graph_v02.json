@@ -6609,6 +6609,292 @@
           "substantive_due_process"
         ],
         "notes": "Established that the Excessive Fines Clause is fundamental to ordered liberty and deeply rooted in the nation's history and tradition, satisfying the incorporation test."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "major_questions_doctrine",
+        "label": "Major Questions Doctrine",
+        "description": "A doctrine requiring that when an agency claims authority to regulate a matter of vast economic and political significance, Congress must speak clearly and unequivocally in delegating such authority. The doctrine reflects the principle that Congress normally intends to make major policy decisions itself rather than leave them to agencies, and serves as an interpretive tool grounded in separation of powers principles and common sense about legislative delegation.",
+        "area_id": "separation_of_powers",
+        "jurisdiction": [
+          "federal"
+        ],
+        "status": "active",
+        "valid_from": "1980-01-01",
+        "valid_until": null,
+        "secondary_area_ids": [],
+        "notes": "Doctrine applied in this case to student loan forgiveness program. Court emphasizes doctrine is not a substantive canon but rather an interpretive tool reflecting context and common sense in understanding delegations. Barrett's concurrence articulates the doctrine as contextual interpretation rather than a clear-statement rule."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "state_instrumentality_standing_doctrine",
+        "label": "State Instrumentality Standing Doctrine",
+        "description": "A doctrine permitting a state to sue on behalf of a public instrumentality it created and controls when that instrumentality is harmed in performing its public function. An injury to a state-created public corporation that serves a public purpose and is governed by state officials is treated as a direct injury to the state itself for Article III standing purposes.",
+        "area_id": "justiciability",
+        "jurisdiction": [
+          "federal"
+        ],
+        "status": "active",
+        "valid_from": "1953-01-01",
+        "valid_until": null,
+        "secondary_area_ids": [],
+        "notes": "Established in Arkansas v. Texas (1953). Applied here to permit Missouri to sue based on harm to MOHELA, a state-created nonprofit government corporation. The doctrine holds that a public corporation's separate legal personality does not bar the state from suing when the corporation is harmed in its public function."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "suspension_clause_doctrine",
+        "label": "Suspension Clause Doctrine",
+        "description": "The constitutional principle that the privilege of the writ of habeas corpus shall not be suspended except in cases of rebellion or invasion when public safety requires it. The doctrine protects the right to petition for habeas corpus and establishes that statutory procedures cannot be substituted for the writ without constitutional justification.",
+        "area_id": "procedural_due_process",
+        "jurisdiction": [
+          "federal"
+        ],
+        "status": "active",
+        "valid_from": "2008-06-12",
+        "valid_until": null,
+        "secondary_area_ids": [],
+        "notes": "Established in Boumediene v. Bush. The Court held that the Suspension Clause protects the writ of habeas corpus as a substantive right, not merely as it existed in 1789, and extends to non-citizen detainees held at overseas military bases under U.S. control."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "habeas_corpus_alien_detainee_doctrine",
+        "label": "Habeas Corpus Rights for Alien Detainees",
+        "description": "The constitutional principle that non-citizen detainees designated as enemy combatants and held at overseas military bases under U.S. control retain the right to petition for habeas corpus and invoke the Suspension Clause. Statutory procedures that do not provide adequate substitutes for the habeas writ cannot constitutionally eliminate this right.",
+        "area_id": "procedural_due_process",
+        "jurisdiction": [
+          "federal"
+        ],
+        "status": "active",
+        "valid_from": "2008-06-12",
+        "valid_until": null,
+        "secondary_area_ids": [],
+        "notes": "Established in Boumediene v. Bush. Overrules the D.C. Circuit's holding that aliens detained at overseas military bases have no habeas rights. Extends the principle from Rasul v. Bush by holding that the Suspension Clause itself protects habeas access."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "executive_power_international_relations",
+        "label": "Executive Power in International Relations",
+        "description": "The President possesses plenary and exclusive power as the sole organ of the federal government in the field of international relations, which does not require an act of Congress as a basis for its exercise but must be exercised in subordination to applicable constitutional provisions.",
+        "area_id": "separation_of_powers",
+        "jurisdiction": [
+          "federal"
+        ],
+        "status": "active",
+        "valid_from": "1981-06-28",
+        "valid_until": null,
+        "secondary_area_ids": [],
+        "notes": "Derived from Curtiss-Wright and refined in Dames & Moore. Reflects the constitutional allocation of foreign affairs authority to the Executive Branch."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "executive_agreement_authority",
+        "label": "Executive Agreement Authority",
+        "description": "The President may enter into Executive Agreements with foreign nations and take actions necessary to implement such agreements, including nullifying domestic attachments and suspending claims, as an exercise of executive power in international relations.",
+        "area_id": "separation_of_powers",
+        "jurisdiction": [
+          "federal"
+        ],
+        "status": "active",
+        "valid_from": "1981-06-28",
+        "valid_until": null,
+        "secondary_area_ids": [],
+        "notes": "Established in Dames & Moore as a specific application of executive power in international relations."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "unlawful_enemy_combatant_doctrine",
+        "label": "Unlawful Enemy Combatant Doctrine",
+        "description": "Persons who violate the law of war by engaging in sabotage or espionage without lawful combatant status may be classified as unlawful enemy combatants and are subject to trial by military commission rather than civilian courts.",
+        "area_id": "constitutional_law",
+        "jurisdiction": [
+          "federal"
+        ],
+        "status": "active",
+        "valid_from": "1942-06-01",
+        "valid_until": null,
+        "secondary_area_ids": [],
+        "notes": "Established in Ex parte Quirin as the foundational doctrine distinguishing lawful combatants (entitled to prisoner-of-war status) from unlawful combatants subject to military commission jurisdiction."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "military_commission_jurisdiction_doctrine",
+        "label": "Military Commission Jurisdiction Doctrine",
+        "description": "Congress, under the Articles of War, may authorize trial by military commission for unlawful enemy combatants, and such trials do not violate constitutional protections when applied to persons who violate the law of war.",
+        "area_id": "constitutional_law",
+        "jurisdiction": [
+          "federal"
+        ],
+        "status": "active",
+        "valid_from": "1942-06-01",
+        "valid_until": null,
+        "secondary_area_ids": [],
+        "notes": "Established in Ex parte Quirin; reflects the constitutional authority of Congress and the President to establish military tribunals for enemy combatants outside the civilian criminal justice system."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "fifth_sixth_amendment_military_tribunal_limitation",
+        "label": "Fifth and Sixth Amendment Limitation in Military Tribunals",
+        "description": "The Fifth and Sixth Amendments do not extend jury trial rights to military tribunal proceedings against unlawful enemy combatants; the amendments must be read as not abolishing military tribunals or imposing jury trial requirements on proceedings against unlawful enemy belligerents.",
+        "area_id": "constitutional_law",
+        "jurisdiction": [
+          "federal"
+        ],
+        "status": "active",
+        "valid_from": "1942-06-01",
+        "valid_until": null,
+        "secondary_area_ids": [],
+        "notes": "Established in Ex parte Quirin; clarifies that constitutional protections for jury trial do not apply to military commission trials of unlawful enemy combatants."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "presidential_removal_power_doctrine",
+        "label": "Presidential Removal Power Doctrine",
+        "description": "The constitutional principle that the President must retain adequate control over executive officers through the power of removal, and that statutory restrictions on removal that deprive the President of meaningful involvement in determining whether cause for removal exists violate the separation of powers.",
+        "area_id": "separation_of_powers",
+        "jurisdiction": [
+          "federal"
+        ],
+        "status": "active",
+        "valid_from": "2010-06-28",
+        "valid_until": null,
+        "secondary_area_ids": [],
+        "notes": "Established in Free Enterprise Fund v. PCAOB as a constraint on Congress's ability to insulate executive officers from presidential control through for-cause removal provisions."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "federal_removal_jurisdiction_doctrine",
+        "label": "Federal Removal Jurisdiction",
+        "description": "The doctrine governing removal of cases from state court to federal court, including the requirement that removal be based on a statutory grant of jurisdiction and the definition of who qualifies as a 'defendant' capable of removing.",
+        "area_id": "justiciability",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "2019-06-27",
+        "valid_until": null,
+        "secondary_area_ids": [],
+        "notes": "Established through interpretation of 28 U.S.C. §1441(a) and §1453(b). The doctrine clarifies that 'defendant' in removal statutes refers only to parties sued by the original plaintiff, not third parties brought in via counterclaim."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "limited_federal_jurisdiction_doctrine",
+        "label": "Limited Federal Jurisdiction",
+        "description": "The constitutional and statutory principle that federal courts possess only limited jurisdiction as delineated by Article III and statutory grants, and may not exercise jurisdiction absent a statutory basis.",
+        "area_id": "justiciability",
+        "jurisdiction": [
+          "federal"
+        ],
+        "status": "active",
+        "valid_from": "2019-06-27",
+        "valid_until": null,
+        "secondary_area_ids": [],
+        "notes": "Grounded in Article III, §2 of the Constitution. The opinion emphasizes that federal courts are courts of limited jurisdiction and cannot exercise jurisdiction without a statutory grant."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "presidential_absolute_immunity_doctrine",
+        "label": "Presidential Absolute Immunity from Damages",
+        "description": "The President is entitled to absolute immunity from damages liability predicated on his official acts, rooted in the constitutional tradition of separation of powers.",
+        "area_id": "separation_of_powers",
+        "jurisdiction": [
+          "federal"
+        ],
+        "status": "active",
+        "valid_from": "1982-01-24",
+        "valid_until": null,
+        "secondary_area_ids": [],
+        "notes": "Established in Nixon v. Fitzgerald. Applies to damages liability for official presidential acts."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "congressional_subpoena_presidential_papers_doctrine",
+        "label": "Congressional Subpoena of Presidential Papers Doctrine",
+        "description": "The doctrine governing the issuance of congressional subpoenas for the President's private documents, which requires courts to balance separation-of-powers concerns against Congress's legitimate investigative needs.",
+        "area_id": "separation_of_powers",
+        "jurisdiction": [
+          "federal"
+        ],
+        "status": "active",
+        "valid_from": "2020-07-09",
+        "valid_until": null,
+        "secondary_area_ids": [],
+        "notes": "Established in Trump v. Mazars USA as a response to the first case of its kind reaching the Supreme Court involving congressional subpoenas for a sitting President's information."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "presidential_immunity_state_criminal_process",
+        "label": "Presidential Immunity from State Criminal Process",
+        "description": "The doctrine governing whether a sitting President has immunity from state criminal subpoenas and investigative process. Established that a President does not have categorical immunity from state grand jury subpoenas and that no heightened need standard is constitutionally required.",
+        "area_id": "separation_of_powers",
+        "jurisdiction": [
+          "federal"
+        ],
+        "status": "active",
+        "valid_from": "2020-07-09",
+        "valid_until": null,
+        "secondary_area_ids": [],
+        "notes": "Distinguishes between federal and state criminal process. The Court applied reasoning from Clinton v. Jones (federal subpoenas) and Burr v. United States (1807) to reject categorical immunity in the state context."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "presidential_foreign_affairs_power",
+        "label": "Presidential Plenary Power in Foreign Affairs",
+        "description": "The President possesses inherent and plenary power over foreign affairs and international relations, distinct from and broader than domestic powers, which permits broad exercise of executive authority in matters affecting foreign commerce and international peace.",
+        "area_id": "separation_of_powers",
+        "jurisdiction": [
+          "federal"
+        ],
+        "status": "active",
+        "valid_from": "1936-01-01",
+        "valid_until": null,
+        "secondary_area_ids": [],
+        "notes": "Established in Curtiss-Wright as a foundational principle distinguishing the President's foreign affairs authority from domestic constitutional constraints."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "delegation_foreign_affairs",
+        "label": "Delegation Doctrine in Foreign Affairs",
+        "description": "Congress may delegate broad discretionary authority to the President in matters of foreign commerce and international affairs, including authority to determine facts and issue proclamations affecting trade, with less stringent constitutional limits than apply to domestic delegation.",
+        "area_id": "separation_of_powers",
+        "jurisdiction": [
+          "federal"
+        ],
+        "status": "active",
+        "valid_from": "1936-01-01",
+        "valid_until": null,
+        "secondary_area_ids": [],
+        "notes": "Curtiss-Wright establishes that delegation in foreign affairs context is subject to more permissive constitutional standards than delegation in domestic regulatory contexts."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "executive_privilege_doctrine",
+        "label": "Executive Privilege",
+        "description": "The right of the President to withhold information from other government branches to preserve confidential communications within the executive branch or to secure the national interest, subject to limitations in criminal proceedings and when the demands of justice require disclosure.",
+        "area_id": "separation_of_powers",
+        "jurisdiction": [
+          "federal"
+        ],
+        "status": "active",
+        "valid_from": "1974-07-24",
+        "valid_until": null,
+        "secondary_area_ids": [],
+        "notes": "Established as a qualified privilege, not absolute. Limited executive privilege recognized in military and diplomatic affairs, but subject to override by due process demands in criminal proceedings."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "presidential_removal_limitation_doctrine",
+        "label": "Presidential Removal Limitation for Quasi-Judicial Bodies",
+        "description": "The President lacks the authority to remove members of quasi-judicial bodies created by Congress at will when Congress has established the body to be independent and free from Executive control to adjudicate claims on their merits.",
+        "area_id": "separation_of_powers",
+        "jurisdiction": [
+          "federal"
+        ],
+        "status": "active",
+        "valid_from": "1958-01-01",
+        "valid_until": null,
+        "secondary_area_ids": [],
+        "notes": "Applies specifically to bodies with intrinsic judicial character created by statute."
       }
     ],
     "areas": [
@@ -21627,6 +21913,407 @@
           }
         ],
         "notes": "Unanimous decision on the incorporation of the Excessive Fines Clause. Justices Gorsuch and Thomas concurred in the judgment but disagreed on the constitutional vehicle for incorporation."
+      },
+      {
+        "@type": "Case",
+        "id": "biden_v_nebraska_2023",
+        "short_name": "Biden v. Nebraska",
+        "full_name": "Biden, President of the United States, et al. v. Nebraska et al.",
+        "citation": "600 U.S. 477 (2023)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "2023-06-30",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "The HEROES Act authorizes the Secretary of Education to waive or modify existing statutory or regulatory provisions applicable to student financial assistance programs, but does not authorize the Secretary to rewrite the statute to the extent of canceling $430 billion in student loan principal through a comprehensive debt cancellation program affecting nearly all borrowers.",
+        "holding_type": "by_negation",
+        "majority_author": "Roberts",
+        "per_curiam": false,
+        "vote": "6-3",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "2023-06-30",
+        "valid_until": null,
+        "opinions": [
+          {
+            "type": "concurrence",
+            "author": "Barrett"
+          },
+          {
+            "type": "dissent",
+            "author": "Kagan"
+          }
+        ],
+        "notes": "Fractured decision on major questions doctrine. Majority (Roberts, Thomas, Alito, Gorsuch, Kavanaugh, Barrett) holds HEROES Act does not authorize loan cancellation. Barrett concurs separately on major questions doctrine characterization. Kagan dissents (joined by Sotomayor and Jackson) on both standing and merits.",
+        "courtlistener_id": "10049655"
+      },
+      {
+        "@type": "Case",
+        "id": "boumediene_v_bush_2008",
+        "short_name": "Boumediene v. Bush",
+        "full_name": "Lakhdar Boumediene, et al. v. George W. Bush, et al.",
+        "citation": "553 U.S. 723 (2008)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "2008-06-12",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "Detainees designated as enemy combatants and held at Guantanamo Bay have the constitutional right to petition for habeas corpus and invoke the Suspension Clause; the procedures established by the Detainee Treatment Act are not adequate substitutes for the habeas writ, and the Military Commissions Act operates as an unconstitutional suspension of the writ as applied to such detainees.",
+        "holding_type": "affirmative",
+        "majority_author": "Kennedy",
+        "per_curiam": false,
+        "vote": "5-4",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "2008-06-12",
+        "valid_until": null,
+        "opinions": [
+          {
+            "justice": "Souter",
+            "type": "concurrence_in_judgment"
+          },
+          {
+            "justice": "Roberts",
+            "type": "dissent"
+          },
+          {
+            "justice": "Scalia",
+            "type": "dissent"
+          }
+        ],
+        "notes": "5-4 decision. Justice Kennedy wrote the majority opinion. Justice Souter concurred in the judgment. Chief Justice Roberts and Justice Scalia filed separate dissenting opinions. The Court reversed the D.C. Circuit's ruling and held that the MCA unconstitutionally suspended the writ of habeas corpus as applied to detainees at Guantanamo Bay."
+      },
+      {
+        "@type": "Case",
+        "id": "clinton_v_jones_1997",
+        "short_name": "Clinton v. Jones",
+        "full_name": "Clinton v. Jones",
+        "citation": "520 U.S. 681 (1997)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1997-01-01",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "affirmed_in_part",
+        "holding": "A sitting President does not have immunity from civil litigation arising from conduct alleged to have occurred before the President took office, except under highly unusual circumstances; separation of powers and confidentiality concerns do not justify unqualified presidential immunity from judicial process.",
+        "holding_type": "affirmative",
+        "majority_author": null,
+        "per_curiam": false,
+        "vote": "9-0",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1997-01-01",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "Unanimous decision. The Court affirmed the District Court's denial of presidential immunity but affirmed the Eighth Circuit's reversal of the trial deferment order.",
+        "courtlistener_id": "118115"
+      },
+      {
+        "@type": "Case",
+        "id": "dames_moore_v_regan_1981",
+        "short_name": "Dames & Moore v. Regan",
+        "full_name": "Dames & Moore v. Regan",
+        "citation": "453 U.S. 654 (1981)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1981-06-28",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "affirmed",
+        "holding": "The President possesses constitutional authority to nullify attachments and liens on foreign assets, direct their transfer to a foreign nation, and suspend claims against that nation pursuant to an Executive Agreement, as an exercise of executive power in the field of international relations subordinate to applicable constitutional provisions.",
+        "holding_type": "affirmative",
+        "majority_author": "Rehnquist",
+        "per_curiam": false,
+        "vote": null,
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1981-06-28",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "The Court emphasized deciding on the narrowest possible ground and declined to establish general guidelines beyond the specific facts presented. The opinion extensively discusses the tension between executive power and judicial oversight under the tripartite constitutional system."
+      },
+      {
+        "@type": "Case",
+        "id": "ex_parte_quirin_1942",
+        "short_name": "Ex parte Quirin",
+        "full_name": "Ex parte Quirin",
+        "citation": "317 U.S. 1 (1942)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1942-06-01",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "affirmed",
+        "holding": "Unlawful enemy combatants who violate the law of war may be tried by military commission authorized by Congress under the Articles of War, and the Fifth and Sixth Amendments do not extend jury trial rights to such military tribunal proceedings.",
+        "holding_type": "affirmative",
+        "majority_author": "Stone",
+        "per_curiam": false,
+        "vote": "9-0",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1942-06-01",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "Chief Justice Harlan Fisk Stone authored the unanimous opinion. The case involved eight German saboteurs captured after Operation Pastorius. Seven petitioned for habeas corpus; the Court upheld military commission jurisdiction over unlawful enemy combatants.",
+        "courtlistener_id": "103707"
+      },
+      {
+        "@type": "Case",
+        "id": "gundy_v_united_states_2019",
+        "short_name": "Gundy v. United States",
+        "full_name": "Gundy v. United States",
+        "citation": "588 U.S. 128 (2019)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "2019-06-27",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "affirmed",
+        "holding": "A third-party counterclaim defendant brought into a lawsuit through a counterclaim filed by the original defendant cannot remove the counterclaim under either the general removal statute (28 U.S.C. §1441(a)) or the Class Action Fairness Act removal provision (28 U.S.C. §1453(b)), because the term 'defendant' in these provisions refers only to the party sued by the original plaintiff.",
+        "holding_type": "affirmative",
+        "majority_author": "Thomas",
+        "per_curiam": false,
+        "vote": null,
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "2019-06-27",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "The opinion discusses federal removal jurisdiction under 28 U.S.C. §1441(a) and §1453(b). The case involves interpretation of removal statutes and the scope of who qualifies as a 'defendant' for removal purposes.",
+        "courtlistener_id": "9231240"
+      },
+      {
+        "@type": "Case",
+        "id": "myers_v_united_states_1926",
+        "short_name": "Myers v. United States",
+        "full_name": "Myers v. United States",
+        "citation": "272 U.S. 52 (1926)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1926-01-01",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "affirmed",
+        "holding": "The President possesses the power to remove appointed executive officers without Senate approval, as this power is vested in the President alone and is necessary to enable the President to discharge the constitutional duty of ensuring that the laws be faithfully executed.",
+        "holding_type": "affirmative",
+        "majority_author": "Taft",
+        "per_curiam": false,
+        "vote": null,
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1926-01-01",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "Chief Justice Taft relied on legislative debate from the First Congress in 1789 regarding interpretation of the President's appointment power.",
+        "courtlistener_id": "8608411"
+      },
+      {
+        "@type": "Case",
+        "id": "nixon_v_fitzgerald_1982",
+        "short_name": "Nixon v. Fitzgerald",
+        "full_name": "Richard Nixon v. A. Ernest Fitzgerald",
+        "citation": "457 U.S. 731 (1982)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1982-01-24",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "affirmed",
+        "holding": "The President is entitled to absolute immunity from damages liability predicated on his official acts.",
+        "holding_type": "affirmative",
+        "majority_author": "Powell",
+        "per_curiam": false,
+        "vote": "5-4",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1982-01-24",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "Presidential immunity doctrine grounded in separation of powers and constitutional tradition. Narrow 5-4 majority."
+      },
+      {
+        "@type": "Case",
+        "id": "panama_refining_co_v_ryan_1935",
+        "short_name": "Panama Refining Co. v. Ryan",
+        "full_name": "Panama Refining Company v. Ryan",
+        "citation": "293 U.S. 388 (1935)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1935-01-07",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "Congress cannot delegate legislative power to the executive branch without providing intelligible principles or standards to guide the executive's exercise of that delegated authority; an executive order issued under the National Industrial Recovery Act that lacked such standards violated the non-delegation doctrine.",
+        "holding_type": "affirmative",
+        "majority_author": "Hughes",
+        "per_curiam": false,
+        "vote": "8-1",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1935-01-07",
+        "valid_until": null,
+        "opinions": [
+          {
+            "type": "dissent",
+            "author": "Cardozo"
+          }
+        ],
+        "notes": "Chief Justice Hughes wrote for the 8-1 majority. Justice Cardozo dissented, arguing that sufficient standards existed to guide the President's actions and that governmental elasticity is necessary for effective governance."
+      },
+      {
+        "@type": "Case",
+        "id": "trump_v_mazars_usa_2020",
+        "short_name": "Trump v. Mazars USA",
+        "full_name": "Trump v. Mazars USA, LLP",
+        "citation": "591 U.S. 848 (2020)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "2020-07-09",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "Congressional subpoenas for the President's private documents must satisfy a four-factor balancing test that considers whether the legislative purpose requires the President's involvement, whether the subpoena scope is reasonably necessary, the substantiality of evidence supporting a valid legislative purpose, and the burden imposed on the President.",
+        "holding_type": "affirmative",
+        "majority_author": "Roberts",
+        "per_curiam": false,
+        "vote": "7-2",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "2020-07-09",
+        "valid_until": null,
+        "opinions": [
+          {
+            "author": "Thomas",
+            "type": "dissent"
+          },
+          {
+            "author": "Alito",
+            "type": "dissent"
+          }
+        ],
+        "notes": "Consolidated with Trump v. Deutsche Bank AG, No. 19-760. The Court established a new balancing test for congressional subpoenas directed at the President, rejecting both the President's 'demonstrated, specific need' standard and Congress's 'valid legislative purpose' standard.",
+        "courtlistener_id": "9366792"
+      },
+      {
+        "@type": "Case",
+        "id": "trump_v_vance_2020",
+        "short_name": "Trump v. Vance",
+        "full_name": "Donald J. Trump v. Cyrus R. Vance, Jr.",
+        "citation": "591 U.S. 786 (2020)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "2020-07-09",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "affirmed",
+        "holding": "Article II and the Supremacy Clause do not categorically preclude the issuance of a state criminal grand jury subpoena to a sitting President, nor do they require a heightened need standard for such subpoenas.",
+        "holding_type": "by_negation",
+        "majority_author": "Roberts",
+        "per_curiam": false,
+        "vote": "7-2",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "2020-07-09",
+        "valid_until": null,
+        "opinions": [
+          {
+            "type": "concurrence_in_judgment",
+            "author": "Kavanaugh",
+            "joined_by": [
+              "Gorsuch"
+            ],
+            "summary": "Would apply the specific need standard from United States v. Nixon rather than no heightened standard."
+          },
+          {
+            "type": "dissent",
+            "author": "Thomas",
+            "summary": "Distinguished between immunity from issuance and relief against enforcement; would vacate and remand."
+          },
+          {
+            "type": "dissent",
+            "author": "Alito",
+            "summary": "Would grant greater protection from state law enforcement powers against a sitting President."
+          }
+        ],
+        "notes": "Seven-justice majority affirmed the Second Circuit. All nine justices agreed that a President does not have absolute immunity from state criminal subpoenas, but disagreed on whether heightened protections apply. Chief Justice Roberts' majority opinion rejected both categorical immunity and heightened need standard. Justices Kavanaugh and Gorsuch concurred in judgment but would apply Nixon's specific need standard. Justices Thomas and Alito dissented.",
+        "courtlistener_id": "9366038"
+      },
+      {
+        "@type": "Case",
+        "id": "united_states_v_curtiss_wright_export_corp_1936",
+        "short_name": "United States v. Curtiss-Wright Export Corp.",
+        "full_name": "United States v. Curtiss-Wright Export Corp.",
+        "citation": "299 U.S. 304 (1936)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1936-01-01",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "affirmed",
+        "holding": "Congress may delegate to the President broad discretionary authority to regulate foreign commerce and international affairs, including the power to prohibit arms sales to countries engaged in armed conflict, based on the President's findings and proclamations.",
+        "holding_type": "affirmative",
+        "majority_author": "Sutherland",
+        "per_curiam": false,
+        "vote": null,
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1936-01-01",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "The case addresses the constitutionality of a Joint Resolution delegating to the President authority to prohibit arms sales to countries engaged in armed conflict in the Chaco. The opinion emphasizes the President's plenary power in foreign affairs and the validity of broad congressional delegation in that domain.",
+        "courtlistener_id": "102726"
+      },
+      {
+        "@type": "Case",
+        "id": "united_states_v_nixon_1974",
+        "short_name": "United States v. Nixon",
+        "full_name": "United States v. Nixon",
+        "citation": "418 U.S. 683 (1974)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1974-07-24",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "affirmed",
+        "holding": "Presidential executive privilege is not absolute and unqualified; the President must comply with a subpoena for evidence needed in a criminal proceeding when the generalized need for confidentiality and separation of powers concerns do not outweigh the fundamental demands of due process in the fair administration of justice.",
+        "holding_type": "affirmative",
+        "majority_author": "Burger",
+        "per_curiam": false,
+        "vote": "8-0",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1974-07-24",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "Decided together with Nixon v. United States. The Court recognized a limited executive privilege in areas of military or diplomatic affairs but held it is not absolute in the context of criminal proceedings.",
+        "courtlistener_id": "8998903"
+      },
+      {
+        "@type": "Case",
+        "id": "wiener_v_united_states_1958",
+        "short_name": "Wiener v. United States",
+        "full_name": "Wiener v. United States",
+        "citation": "357 U.S. 349 (1958)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1958-01-01",
+        "opinion_form": "per_curiam",
+        "procedural_disposition": "reversed",
+        "holding": "The President does not have the authority to remove members of the War Claims Commission at will; Congress intended to create an independent body free from Executive control to adjudicate claims on their merits.",
+        "holding_type": "affirmative",
+        "majority_author": null,
+        "per_curiam": true,
+        "vote": "9-0",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1958-01-01",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "Unanimous decision establishing limits on presidential removal power for quasi-judicial bodies created by Congress.",
+        "courtlistener_id": "8613283"
       }
     ],
     "doctrinal_tests": [
@@ -26909,6 +27596,100 @@
         "valid_from": "1985-01-01",
         "valid_until": null,
         "notes": "This test is derived from Hicklin v. Orbeck, 437 U.S. 518 (1978), and applied by Piper to bar admission requirements under the Privileges and Immunities Clause. The test requires the state to satisfy both prongs to justify nonresident discrimination."
+      },
+      {
+        "@type": "DoctrinalTest",
+        "id": "mazars_congressional_subpoena_test",
+        "label": "Mazars Congressional Subpoena Balancing Test",
+        "description": "A four-factor balancing test for evaluating the validity of congressional subpoenas directed at the President's private documents, which weighs separation-of-powers concerns against Congress's investigative authority.",
+        "area_id": "separation_of_powers",
+        "source_case_id": "trump_v_mazars_usa_2020",
+        "scrutiny_level": "balancing",
+        "burden": "shared",
+        "test_form": "balancing",
+        "prongs": [
+          {
+            "number": 1,
+            "label": "Necessity of Presidential Involvement",
+            "description": "Courts should carefully assess whether the asserted legislative purpose requires involving the President and his papers, or whether the information is available elsewhere.",
+            "burden_note": "Congress must demonstrate that the President's involvement is necessary; if information is available from other sources, the subpoena may fail.",
+            "valid_from": "2020-07-09",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 2,
+            "label": "Scope Limitation",
+            "description": "Courts should consider whether the subpoena is no broader than reasonably necessary in scope so as to still serve Congress's legislative purpose.",
+            "burden_note": "Congress must tailor the subpoena to avoid overbreadth while still achieving its legislative objectives.",
+            "valid_from": "2020-07-09",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 3,
+            "label": "Evidence of Valid Legislative Purpose",
+            "description": "Courts should evaluate the evidence Congress has offered to establish that a subpoena advances a valid legislative purpose; the more detailed and substantial the evidence, the stronger the case.",
+            "burden_note": "Congress bears the burden of demonstrating a valid legislative purpose with detailed and substantial evidence.",
+            "valid_from": "2020-07-09",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 4,
+            "label": "Burden on the President",
+            "description": "Courts should assess what burdens a subpoena imposes on the President.",
+            "burden_note": "The Court weighs the practical and constitutional burdens on the President against Congress's investigative needs.",
+            "valid_from": "2020-07-09",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          }
+        ],
+        "status": "active",
+        "valid_from": "2020-07-09",
+        "valid_until": null,
+        "notes": "This test applies specifically to congressional subpoenas for the President's private documents and represents a middle ground between the President's proposed 'demonstrated, specific need' standard and Congress's proposed 'valid legislative purpose' standard."
+      },
+      {
+        "@type": "DoctrinalTest",
+        "id": "executive_privilege_balancing_test",
+        "label": "Executive Privilege Balancing Test",
+        "description": "A balancing test that weighs the President's interest in confidentiality and separation of powers against the fundamental demands of due process in the fair administration of justice, particularly in criminal proceedings.",
+        "area_id": "separation_of_powers",
+        "source_case_id": "united_states_v_nixon_1974",
+        "scrutiny_level": "balancing",
+        "burden": "shared",
+        "test_form": "balancing",
+        "prongs": [
+          {
+            "number": 1,
+            "label": "Presidential Interest in Confidentiality",
+            "description": "The President's generalized need for confidentiality of high-level communications and separation of powers concerns.",
+            "burden_note": "President must articulate the interest in confidentiality.",
+            "valid_from": "1974-07-24",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 2,
+            "label": "Demands of Justice",
+            "description": "The fundamental demands of due process of law in the fair administration of justice, including the needs of criminal proceedings.",
+            "burden_note": "The party seeking disclosure must demonstrate the relevance and necessity of the information to the proceeding.",
+            "valid_from": "1974-07-24",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          }
+        ],
+        "status": "active",
+        "valid_from": "1974-07-24",
+        "valid_until": null,
+        "notes": "When the demands of justice in a criminal proceeding are sufficiently strong, they override the President's interest in confidentiality. The test does not recognize an absolute presidential privilege."
       }
     ]
   },
@@ -44792,6 +45573,332 @@
         "state"
       ],
       "notes": "The Court applied dormant commerce clause discrimination doctrine to strike down the Massachusetts pricing order."
+    },
+    {
+      "id": "biden_nebraska_applies_major_questions_doctrine",
+      "source_id": "biden_v_nebraska_2023",
+      "target_id": "major_questions_doctrine",
+      "edge_type": "APPLIES",
+      "valid_from": "2023-06-30",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ],
+      "notes": "Court applies major questions doctrine to conclude that the Secretary's $430 billion loan cancellation program requires clear congressional authorization that the HEROES Act does not provide. Doctrine reinforces textual analysis but is not necessary to the holding."
+    },
+    {
+      "id": "biden_nebraska_applies_state_instrumentality_standing",
+      "source_id": "biden_v_nebraska_2023",
+      "target_id": "state_instrumentality_standing_doctrine",
+      "edge_type": "APPLIES",
+      "valid_from": "2023-06-30",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ],
+      "notes": "Court applies doctrine to establish that Missouri has Article III standing to challenge the loan cancellation program through MOHELA, a state-created public instrumentality. Harm to MOHELA in performing its public function is treated as direct injury to Missouri."
+    },
+    {
+      "id": "boumediene_establishes_suspension_clause_doctrine",
+      "source_id": "boumediene_v_bush_2008",
+      "target_id": "suspension_clause_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2008-06-12",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ],
+      "notes": "Boumediene v. Bush established the modern understanding of the Suspension Clause as protecting habeas corpus rights for non-citizen detainees at overseas military bases under U.S. control."
+    },
+    {
+      "id": "boumediene_establishes_habeas_alien_detainee_doctrine",
+      "source_id": "boumediene_v_bush_2008",
+      "target_id": "habeas_corpus_alien_detainee_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2008-06-12",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ],
+      "notes": "Boumediene v. Bush established that non-citizen detainees designated as enemy combatants retain habeas corpus rights and that statutory procedures cannot constitutionally substitute for the writ."
+    },
+    {
+      "id": "clinton_v_jones_establishes_presidential_immunity_doctrine",
+      "source_id": "clinton_v_jones_1997",
+      "target_id": "presidential_immunity_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1997-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ],
+      "notes": "Clinton v. Jones established the modern framework for presidential immunity from civil litigation."
+    },
+    {
+      "id": "dames_moore_establishes_executive_power_intl",
+      "source_id": "dames_moore_v_regan_1981",
+      "target_id": "executive_power_international_relations",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1981-06-28",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ],
+      "notes": "The Court affirmed and refined the doctrine of executive power in international relations established in Curtiss-Wright."
+    },
+    {
+      "id": "dames_moore_establishes_executive_agreement",
+      "source_id": "dames_moore_v_regan_1981",
+      "target_id": "executive_agreement_authority",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1981-06-28",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ],
+      "notes": "The Court established that the President may implement Executive Agreements through domestic executive action."
+    },
+    {
+      "id": "quirin_establishes_unlawful_enemy_combatant",
+      "source_id": "ex_parte_quirin_1942",
+      "target_id": "unlawful_enemy_combatant_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1942-06-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ],
+      "notes": "Ex parte Quirin established the foundational doctrine distinguishing unlawful enemy combatants from lawful combatants."
+    },
+    {
+      "id": "quirin_establishes_military_commission_jurisdiction",
+      "source_id": "ex_parte_quirin_1942",
+      "target_id": "military_commission_jurisdiction_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1942-06-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ],
+      "notes": "Ex parte Quirin established that Congress may authorize military commission trials for unlawful enemy combatants."
+    },
+    {
+      "id": "quirin_establishes_fifth_sixth_amendment_limitation",
+      "source_id": "ex_parte_quirin_1942",
+      "target_id": "fifth_sixth_amendment_military_tribunal_limitation",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1942-06-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ],
+      "notes": "Ex parte Quirin established that the Fifth and Sixth Amendments do not extend jury trial rights to military tribunal proceedings against unlawful enemy combatants."
+    },
+    {
+      "id": "free_enterprise_fund_establishes_presidential_removal_power_doctrine",
+      "source_id": "free_enterprise_fund_v_public_company_accounting_oversight_board_2010",
+      "target_id": "presidential_removal_power_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2010-06-28",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ],
+      "notes": "The Court established that for-cause removal restrictions that exclude presidential involvement in determining cause violate separation of powers."
+    },
+    {
+      "id": "gundy_applies_limited_federal_jurisdiction_doctrine",
+      "source_id": "gundy_v_united_states_2019",
+      "target_id": "limited_federal_jurisdiction_doctrine",
+      "edge_type": "APPLIES",
+      "valid_from": "2019-06-27",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ],
+      "notes": "The Court applies the principle that federal courts have limited jurisdiction and may not exercise jurisdiction absent a statutory basis."
+    },
+    {
+      "id": "gundy_establishes_federal_removal_jurisdiction_doctrine",
+      "source_id": "gundy_v_united_states_2019",
+      "target_id": "federal_removal_jurisdiction_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2019-06-27",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "The Court establishes the rule that 'defendant' in removal statutes refers only to parties sued by the original plaintiff, not third-party counterclaim defendants."
+    },
+    {
+      "id": "myers_establishes_presidential_removal_power",
+      "source_id": "myers_v_united_states_1926",
+      "target_id": "presidential_removal_power",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1926-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "nixon_fitzgerald_establishes_pres_immunity",
+      "source_id": "nixon_v_fitzgerald_1982",
+      "target_id": "presidential_absolute_immunity_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1982-01-24",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ],
+      "notes": "Nixon v. Fitzgerald established the doctrine of absolute presidential immunity from damages liability for official acts."
+    },
+    {
+      "id": "panama_refining_establishes_non_delegation_doctrine",
+      "source_id": "panama_refining_co_v_ryan_1935",
+      "target_id": "non_delegation_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1935-01-07",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ],
+      "notes": "Panama Refining Co. v. Ryan established the non-delegation doctrine as a constitutional constraint on Congress's power to delegate legislative authority."
+    },
+    {
+      "id": "panama_refining_establishes_intelligible_principle_test",
+      "source_id": "panama_refining_co_v_ryan_1935",
+      "target_id": "intelligible_principle_test",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1935-01-07",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ],
+      "notes": "Panama Refining Co. v. Ryan established the intelligible principle test as the operative standard for evaluating whether a delegation of legislative power is constitutional."
+    },
+    {
+      "id": "non_delegation_doctrine_governed_by_intelligible_principle_test",
+      "source_id": "non_delegation_doctrine",
+      "target_id": "intelligible_principle_test",
+      "edge_type": "GOVERNED_BY",
+      "valid_from": "1935-01-07",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ],
+      "notes": "The non-delegation doctrine is operationalized through the intelligible principle test, which provides the framework for determining whether a delegation is constitutional."
+    },
+    {
+      "id": "trump_v_mazars_usa_2020_establishes_mazars_congressional_subpoena_test",
+      "source_id": "trump_v_mazars_usa_2020",
+      "target_id": "mazars_congressional_subpoena_test",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2020-07-09",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ],
+      "notes": "The Court established this four-factor balancing test as the governing standard for congressional subpoenas directed at the President."
+    },
+    {
+      "id": "trump_v_mazars_usa_2020_establishes_congressional_subpoena_presidential_papers",
+      "source_id": "trump_v_mazars_usa_2020",
+      "target_id": "congressional_subpoena_presidential_papers_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2020-07-09",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ],
+      "notes": "The Court established the doctrine governing congressional subpoenas for presidential papers as a new area of separation-of-powers law."
+    },
+    {
+      "id": "trump_v_vance_establishes_presidential_immunity_state_criminal_process",
+      "source_id": "trump_v_vance_2020",
+      "target_id": "presidential_immunity_state_criminal_process",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2020-07-09",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ],
+      "notes": "The Court established that Article II does not categorically preclude state criminal subpoenas to a sitting President and does not require heightened need standard."
+    },
+    {
+      "id": "curtiss_wright_establishes_presidential_foreign_affairs_power",
+      "source_id": "united_states_v_curtiss_wright_export_corp_1936",
+      "target_id": "presidential_foreign_affairs_power",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1936-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ],
+      "notes": "The Court's opinion articulates the foundational principle of presidential plenary power in foreign affairs."
+    },
+    {
+      "id": "curtiss_wright_establishes_delegation_foreign_affairs",
+      "source_id": "united_states_v_curtiss_wright_export_corp_1936",
+      "target_id": "delegation_foreign_affairs",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1936-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ],
+      "notes": "The Court upholds the constitutionality of broad congressional delegation to the President in foreign affairs, establishing the doctrine that such delegation is permissible."
+    },
+    {
+      "id": "presidential_foreign_affairs_power_grounded_in_separation_of_powers",
+      "source_id": "presidential_foreign_affairs_power",
+      "target_id": "separation_of_powers",
+      "edge_type": "RELATED_TO",
+      "valid_from": "1936-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ],
+      "relationship_type": "doctrinal_ancestor",
+      "notes": "Presidential foreign affairs power is a distinct doctrinal development within separation of powers jurisprudence."
+    },
+    {
+      "id": "united_states_v_nixon_1974_establishes_executive_privilege_doctrine",
+      "source_id": "united_states_v_nixon_1974",
+      "target_id": "executive_privilege_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1974-07-24",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ],
+      "notes": "The Court established the doctrine of qualified executive privilege, rejecting absolute presidential immunity."
+    },
+    {
+      "id": "united_states_v_nixon_1974_establishes_executive_privilege_balancing_test",
+      "source_id": "united_states_v_nixon_1974",
+      "target_id": "executive_privilege_balancing_test",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1974-07-24",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ],
+      "notes": "The Court established the balancing test for determining when executive privilege must yield to the demands of justice."
+    },
+    {
+      "id": "wiener_establishes_removal_limitation",
+      "source_id": "wiener_v_united_states_1958",
+      "target_id": "presidential_removal_limitation_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1958-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ],
+      "notes": "Wiener established the doctrine that Congress can limit presidential removal power for quasi-judicial bodies."
     }
   ],
   "schema_issues_found": [
