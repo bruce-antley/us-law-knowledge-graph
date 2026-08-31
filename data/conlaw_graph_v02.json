@@ -6279,6 +6279,336 @@
         "valid_until": null,
         "secondary_area_ids": [],
         "notes": "Established in Slaughter-House Cases as the authoritative interpretation of the Privileges or Immunities Clause, narrowly construing its scope to federal citizenship privileges only."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "federal_immigration_preemption_doctrine",
+        "label": "Federal Immigration Preemption Doctrine",
+        "description": "The doctrine that federal immigration law preempts state law in areas where the federal government has exercised its broad constitutional power over immigration and alien status, particularly where state law conflicts with or duplicates federal regulatory schemes.",
+        "area_id": "federalism",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "2012-06-25",
+        "valid_until": null,
+        "secondary_area_ids": [],
+        "notes": "Grounded in the federal government's constitutional power under Article I, Section 8, Clause 4 (Naturalization Clause) and its inherent sovereign power over foreign relations. The doctrine recognizes that immigration policy affects trade, investment, tourism, and diplomatic relations for the entire nation."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "privileges_immunities_fundamental_activity_doctrine",
+        "label": "Privileges and Immunities Fundamental Activity Doctrine",
+        "description": "The Privileges and Immunities Clause protects only those activities that bear on the vitality of the Nation as a single entity, not recreational or non-fundamental activities.",
+        "area_id": "individual_rights",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1978-01-01",
+        "valid_until": null,
+        "secondary_area_ids": [],
+        "notes": "Established in Baldwin v. Fish and Game Commission of Montana. The doctrine distinguishes between fundamental activities protected by the Privileges and Immunities Clause and non-fundamental activities such as recreational hunting."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "pervasive_entwinement_state_action",
+        "label": "Pervasive Entwinement State Action Doctrine",
+        "description": "A nominally private organization may be treated as a state actor when state officials and institutions are pervasively entwined in its composition, governance, and operations, and the state acknowledges its regulatory role.",
+        "area_id": "constitutional_law",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "2001",
+        "valid_until": null,
+        "secondary_area_ids": [],
+        "notes": "Established in Brentwood Academy as an application and refinement of state action doctrine under the Fourteenth Amendment."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "state_action_entanglement_doctrine",
+        "label": "State Action Through Financial and Physical Entanglement",
+        "description": "A private entity's conduct may constitute state action subject to the Equal Protection Clause when the private entity is so physically and financially intertwined with a state actor that the state actor's assistance is financially integral and indispensable to the private entity's operations.",
+        "area_id": "equal_protection",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1961-01-01",
+        "valid_until": null,
+        "secondary_area_ids": [],
+        "notes": "Establishes the entanglement test for state action liability under the Fourteenth Amendment Equal Protection Clause."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "cooley_doctrine_local_concern",
+        "label": "Cooley Doctrine of Local Concern",
+        "description": "A state may regulate matters of local concern affecting interstate commerce when the subject matter requires diverse local regulation and Congress has not preempted the field. The permissibility of state regulation depends on whether the subject is one requiring uniform national regulation or permits local variation.",
+        "area_id": "dormant_commerce_clause",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1852-01-01",
+        "valid_until": null,
+        "secondary_area_ids": [],
+        "notes": "This doctrine provides the framework for distinguishing between state regulations that are permissible exercises of local police power and those that impermissibly burden interstate commerce."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "dormant_commerce_clause_discrimination_doctrine",
+        "label": "Dormant Commerce Clause Discrimination Doctrine",
+        "description": "A state or local law that discriminates against interstate commerce on its face or in practical effect violates the dormant Commerce Clause unless the discrimination is narrowly tailored to serve a legitimate local purpose and no reasonable nondiscriminatory alternatives are available.",
+        "area_id": "dormant_commerce_clause",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1951-01-01",
+        "valid_until": null,
+        "secondary_area_ids": [],
+        "notes": "Established in Dean Milk Co. v. City of Madison. Applies strict scrutiny to facially discriminatory state and local laws affecting interstate commerce."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "public_function_doctrine",
+        "label": "Public Function Doctrine",
+        "description": "Private conduct may be subject to constitutional constraints, including the Fourteenth Amendment's equal protection guarantee, when the private entity performs a function traditionally associated with government or municipal services.",
+        "area_id": "equal_protection",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1966",
+        "valid_until": null,
+        "secondary_area_ids": [],
+        "notes": "Established in Evans v. Newton to address racial discrimination by private park operators managing parks that are municipal in character and provide essential public services such as mass recreation."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "due_process_rational_basis_economic_regulation",
+        "label": "Due Process Rational Basis Review for Economic Regulation",
+        "description": "Economic and social legislation is not subject to heightened due process scrutiny; courts should not weigh the wisdom of such legislation but instead apply rational basis review.",
+        "area_id": "substantive_due_process",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1978-01-01",
+        "valid_until": null,
+        "secondary_area_ids": [],
+        "notes": "Reaffirmed in Exxon Corp. v. Governor of Maryland, citing Ferguson v. Skrupa. The Court held that the judiciary's role is not to weigh the wisdom of legislation."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "preemption_conflict_doctrine",
+        "label": "Preemption by Direct Conflict",
+        "description": "Federal law preempts state law when there is a direct conflict making simultaneous compliance physically impossible, or when state law frustrates the purpose of federal law.",
+        "area_id": "constitutional_law",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1963",
+        "valid_until": null,
+        "secondary_area_ids": [
+          "federalism"
+        ],
+        "notes": "Established in Florida Lime & Avocado Growers v. Paul; requires actual conflict, not mere difference in standards."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "state_action_section_1983",
+        "label": "State Action Doctrine under Section 1983",
+        "description": "The doctrine that Section 1983 provides relief for deprivations of constitutional rights caused by actions occurring under the color of state law, including both direct state action and private conduct significantly aided by state officials.",
+        "area_id": "procedural_due_process",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1982-01-01",
+        "valid_until": null,
+        "secondary_area_ids": [
+          "equal_protection"
+        ],
+        "notes": "Lugar established that private parties acting with significant state aid can be treated as state actors for Section 1983 purposes."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "dormant_commerce_clause_protectionist_exception",
+        "label": "Dormant Commerce Clause Protectionist Exception",
+        "description": "A state statute that facially discriminates against interstate commerce or has a protectionist effect may be upheld if the state demonstrates that the statute serves a legitimate local purpose and that there is no adequate nondiscriminatory alternative available.",
+        "area_id": "dormant_commerce_clause",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1986",
+        "valid_until": null,
+        "secondary_area_ids": [],
+        "notes": "This doctrine establishes the framework for evaluating whether a state statute that burdens interstate commerce can survive constitutional scrutiny despite its protectionist effect."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "traditional_exclusive_public_function_doctrine",
+        "label": "Traditional Exclusive Public Function Doctrine",
+        "description": "A doctrine under the state-action framework holding that a private entity may qualify as a state actor when it exercises a function that has been traditionally and exclusively performed by government. The Court has stressed that 'very few' functions fall into this category. Functions that qualify include running elections and operating company towns. Functions that do not qualify include running sports associations, administering insurance, operating nursing homes, providing special education, representing indigent defendants, resolving private disputes, and supplying electricity.",
+        "area_id": "first_amendment",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "2019-06-17",
+        "valid_until": null,
+        "secondary_area_ids": [],
+        "notes": "This case clarifies that operation of public access channels on a cable system is not a traditional, exclusive public function, as such channels have been operated by a variety of private and public actors since the 1970s."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "company_town_public_forum_doctrine",
+        "label": "Company Town Public Forum Doctrine",
+        "description": "A privately owned company town that is open to the public and functions as a municipality is subject to First Amendment constraints and cannot restrict constitutional rights on the same basis as a private homeowner.",
+        "area_id": "free_speech",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1946-01-01",
+        "valid_until": null,
+        "secondary_area_ids": [
+          "freedom_of_petition"
+        ],
+        "notes": "Established in Marsh v. Alabama; applies to privately owned spaces that function as public forums."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "dormant_commerce_clause_antidiscrimination",
+        "label": "Dormant Commerce Clause Antidiscrimination Principle",
+        "description": "The dormant Commerce Clause prohibits state laws that seek to build up domestic commerce through burdens on the industry and business of other states. An antidiscrimination principle is at the core of the dormant Commerce Clause.",
+        "area_id": "dormant_commerce_clause",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "2023-01-01",
+        "valid_until": null,
+        "secondary_area_ids": [],
+        "notes": "Established in National Pork Producers Council v. Ross. The Court rejected an almost per se rule against state laws with extraterritorial effects."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "economic_rationale_preemption_doctrine",
+        "label": "Economic Rationale Exception to Preemption",
+        "description": "State laws regulating nuclear power based on economic concerns are not preempted by federal atomic energy law, even if they effectively slow or stop nuclear development, because Congress left sufficient state authority over economic aspects of nuclear power development.",
+        "area_id": "federalism",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1983",
+        "valid_until": null,
+        "secondary_area_ids": [],
+        "notes": "Established in Pacific Gas & Electric Co. v. State Energy Resources Conservation and Development Commission. Distinguishes between state regulation based on economic rationale versus safety rationale in preemption analysis."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "sixth_amendment_jury_unanimity",
+        "label": "Sixth Amendment Jury Unanimity Requirement",
+        "description": "The Sixth Amendment right to trial by jury, as incorporated against the states through the Fourteenth Amendment's Due Process Clause, requires that a jury find a criminal defendant guilty by a unanimous verdict. This requirement is grounded in the original public meaning of the Sixth Amendment and its historical tradition.",
+        "area_id": "individual_rights",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "2020-06-20",
+        "valid_until": null,
+        "secondary_area_ids": [
+          "substantive_due_process"
+        ],
+        "notes": "Established in Ramos v. Louisiana as a fundamental right incorporated against the states. Overrules the prior rule permitting non-unanimous verdicts in state trials established in Apodaca v. Oregon."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "market_participant_exception",
+        "label": "Market Participant Exception",
+        "description": "A state may participate in the market and favor its own citizens over out-of-state buyers without violating the dormant Commerce Clause, provided the state acts as a market participant rather than a market regulator.",
+        "area_id": "dormant_commerce_clause",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1980-01-01",
+        "valid_until": null,
+        "secondary_area_ids": [],
+        "notes": "Established in Reeves Inc. v. Stake; distinguishes between state action as a market participant (permissible) and state action as a market regulator (subject to dormant Commerce Clause scrutiny)."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "privileges_immunities_nonresident_discrimination",
+        "label": "Privileges and Immunities Clause Protection Against State Discrimination",
+        "description": "Article IV, Section 2 protects individuals' right to pursue a livelihood in a state other than their own and prohibits state discrimination against nonresidents in access to professions and economic opportunities absent substantial justification.",
+        "area_id": "individual_rights",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1985-01-01",
+        "valid_until": null,
+        "secondary_area_ids": [],
+        "notes": "Established in Piper; applies Article IV, Section 2 to bar admission requirements. The doctrine protects the right to pursue a livelihood as a fundamental right under the Privileges and Immunities Clause."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "fifteenth_amendment_private_political_organization_doctrine",
+        "label": "Fifteenth Amendment Application to Private Political Organizations",
+        "description": "The Fifteenth Amendment prohibits racial discrimination in voting by private political organizations that function as the dominant political force in a jurisdiction and whose primary elections effectively determine the outcome of general elections, regardless of whether the organization is formally regulated by state law.",
+        "area_id": "equal_protection",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1953-01-01",
+        "valid_until": null,
+        "secondary_area_ids": [],
+        "notes": "Extends the holding of Smith v. Allwright to private political organizations that, while nominally unregulated, exercise dominant political power through their primary elections. The doctrine focuses on the functional role of the organization in the electoral process rather than formal state regulation."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "excessive_fines_incorporation",
+        "label": "Incorporation of the Excessive Fines Clause",
+        "description": "The Eighth Amendment's Excessive Fines Clause is incorporated against the states through the Fourteenth Amendment's Due Process Clause, applying with equal force to state and federal governments.",
+        "area_id": "individual_rights",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "2019-02-20",
+        "valid_until": null,
+        "secondary_area_ids": [
+          "substantive_due_process"
+        ],
+        "notes": "Established that the Excessive Fines Clause is fundamental to ordered liberty and deeply rooted in the nation's history and tradition, satisfying the incorporation test."
       }
     ],
     "areas": [
@@ -20556,6 +20886,747 @@
         "valid_until": null,
         "opinions": [],
         "notes": "The opinion indicates the Court was divided on the questions presented, requiring reargument before a full bench. The text provided is the opinion of the court but does not identify the majority author by name."
+      },
+      {
+        "@type": "Case",
+        "id": "adamson_v_california_1947",
+        "short_name": "Adamson v. California",
+        "full_name": "Adamson v. California",
+        "citation": "332 U.S. 46 (1947)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1947-01-01",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "affirmed",
+        "holding": "The Fourteenth Amendment's Due Process Clause does not extend to defendants a Fifth Amendment right against self-incrimination in state courts, and states may permit prosecutors to comment on a defendant's failure to testify.",
+        "holding_type": "by_negation",
+        "majority_author": "Reed",
+        "per_curiam": false,
+        "vote": null,
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1947-01-01",
+        "valid_until": null,
+        "opinions": [
+          "dissent"
+        ],
+        "notes": "Divided decision. Justice Black filed a lengthy dissent arguing for absolute and complete application of the Bill of Rights to the states through the Fourteenth Amendment. This case was effectively overruled by Malloy v. Hogan (1964), which held that the Fifth Amendment privilege against self-incrimination is incorporated through the Fourteenth Amendment.",
+        "courtlistener_id": "104455"
+      },
+      {
+        "@type": "Case",
+        "id": "arizona_v_united_states_2012",
+        "short_name": "Arizona v. United States",
+        "full_name": "State of Arizona v. United States of America",
+        "citation": "567 U.S. 387 (2012)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "2012-06-25",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "affirmed_in_part",
+        "holding": "Federal immigration law preempts state law provisions that create state criminal offenses based on federal alien-registration requirements and unauthorized work by aliens, but does not preempt provisions authorizing state officers to verify immigration status during lawful stops or to arrest persons removable from the United States.",
+        "holding_type": "affirmative",
+        "majority_author": "Kennedy",
+        "per_curiam": false,
+        "vote": null,
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "2012-06-25",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "The Court addressed federal preemption of four provisions of Arizona's Support Our Law Enforcement and Safe Neighborhoods Act (S.B. 1070). The District Court and Ninth Circuit had issued preliminary injunctions against all four provisions; the Supreme Court affirmed in part regarding §§ 3 and 5(C) but reversed regarding §§ 2(B) and 6."
+      },
+      {
+        "@type": "Case",
+        "id": "baldwin_v_fish_and_game_commission_of_montana_1978",
+        "short_name": "Baldwin v. Fish and Game Commission",
+        "full_name": "Baldwin v. Fish and Game Commission of Montana",
+        "citation": "436 U.S. 371 (1978)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1978-01-01",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "affirmed",
+        "holding": "A state may charge nonresidents substantially higher fees for hunting licenses than residents because recreational hunting does not implicate the Privileges and Immunities Clause, which protects only activities bearing on the vitality of the Nation as a single entity.",
+        "holding_type": "affirmative",
+        "majority_author": "Blackmun",
+        "per_curiam": false,
+        "vote": "6-3",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1978-01-01",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "The Court applied the Privileges and Immunities Clause to determine that recreational hunting does not qualify as a fundamental activity protected by the clause."
+      },
+      {
+        "@type": "Case",
+        "id": "brentwood_academy_v_tennessee_secondary_school_athletic_association_2001",
+        "short_name": "Brentwood Academy v. Tennessee Secondary School Athletic Assn.",
+        "full_name": "Brentwood Academy v. Tennessee Secondary School Athletic Association",
+        "citation": "531 U.S. 288 (2001)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "2001",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "A nominally private organization regulating interscholastic athletics is a state actor subject to constitutional constraints when state school officials pervasively entwine themselves in its composition and workings and the state education board acknowledges its regulatory role.",
+        "holding_type": "affirmative",
+        "majority_author": "Souter",
+        "per_curiam": false,
+        "vote": "5-4",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "2001",
+        "valid_until": null,
+        "opinions": [
+          "dissent"
+        ],
+        "notes": "Chief Justice Rehnquist and Justices Scalia, Kennedy, and Thomas dissented. The case addresses state action doctrine in the context of private organizations with significant state involvement.",
+        "courtlistener_id": "118403"
+      },
+      {
+        "@type": "Case",
+        "id": "burton_v_wilmington_parking_authority_1961",
+        "short_name": "Burton v. Wilmington Parking Authority",
+        "full_name": "William H. Burton et al. v. Wilmington Parking Authority",
+        "citation": "365 U.S. 715 (1961)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1961-01-01",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "A private entity's racially discriminatory conduct constitutes state action in violation of the Equal Protection Clause when the private entity is so physically and financially intertwined with a state actor that the state actor's assistance is financially integral and indispensable to the private entity's operations.",
+        "holding_type": "affirmative",
+        "majority_author": "Clark",
+        "per_curiam": false,
+        "vote": "6-3",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1961-01-01",
+        "valid_until": null,
+        "opinions": [
+          {
+            "type": "concurrence_in_judgment",
+            "author": "Stewart"
+          },
+          {
+            "type": "dissent",
+            "author": "Harlan"
+          },
+          {
+            "type": "dissent",
+            "author": "Frankfurter"
+          }
+        ],
+        "notes": "Justice Harlan's dissent was joined by Justice Whittaker. Justice Frankfurter wrote a separate dissenting opinion."
+      },
+      {
+        "@type": "Case",
+        "id": "cooley_v_board_of_wardens_of_the_port_of_philadelphia_1852",
+        "short_name": "Cooley v. Board of Wardens",
+        "full_name": "Cooley v. Board of Wardens of the Port of Philadelphia",
+        "citation": "53 U.S. 299 (1852)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1852-01-01",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "affirmed",
+        "holding": "A state may regulate matters of local concern, such as pilotage within its ports, even though such regulation affects interstate commerce, provided the regulation is not inconsistent with federal legislation and addresses a subject requiring diverse local regulation.",
+        "holding_type": "affirmative",
+        "majority_author": "Curtis",
+        "per_curiam": false,
+        "vote": null,
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1852-01-01",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "Establishes the foundational doctrine that state regulation of local matters affecting interstate commerce is permissible when the subject requires diverse local regulation and Congress has not acted."
+      },
+      {
+        "@type": "Case",
+        "id": "dean_milk_co_v_city_of_madison_wisconsin_1951",
+        "short_name": "Dean Milk Co. v. City of Madison",
+        "full_name": "Dean Milk Company v. City of Madison",
+        "citation": "340 U.S. 349 (1951)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1951-01-01",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "A local ordinance that discriminates against non-local milk producers by requiring milk to be pasteurized within five miles of the city violates the dormant Commerce Clause because the discrimination is not narrowly tailored to serve legitimate local interests and reasonable nondiscriminatory alternatives are available.",
+        "holding_type": "by_negation",
+        "majority_author": "Clark",
+        "per_curiam": false,
+        "vote": "6-3",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1951-01-01",
+        "valid_until": null,
+        "opinions": [
+          {
+            "type": "dissent",
+            "author": "Black"
+          },
+          {
+            "type": "dissent",
+            "author": "Douglas"
+          },
+          {
+            "type": "dissent",
+            "author": "Minton"
+          }
+        ],
+        "notes": "6-3 decision. Dissents filed by Justices Black, Douglas, and Minton."
+      },
+      {
+        "@type": "Case",
+        "id": "evans_v_newton_1966",
+        "short_name": "Evans v. Newton",
+        "full_name": "Evans v. Newton",
+        "citation": "382 U.S. 296 (1966)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1966",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "A private park operator is subject to the Fourteenth Amendment's equal protection guarantee when the park is municipal in character and constitutes a public function, such that racial discrimination in access to the park violates equal protection regardless of whether the park is operated by private trustees.",
+        "holding_type": "affirmative",
+        "majority_author": "Douglas",
+        "per_curiam": false,
+        "vote": "6-3",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1966",
+        "valid_until": null,
+        "opinions": [
+          {
+            "type": "concurrence",
+            "author": "White"
+          },
+          {
+            "type": "dissent",
+            "author": "Black"
+          },
+          {
+            "type": "dissent",
+            "author": "Harlan"
+          }
+        ],
+        "notes": "6-3 majority. Justice Douglas wrote the majority opinion. Justice White concurred. Justices Black and Harlan dissented.",
+        "courtlistener_id": "107137"
+      },
+      {
+        "@type": "Case",
+        "id": "exxon_corp_v_governor_of_maryland_1978",
+        "short_name": "Exxon Corp. v. Governor of Maryland",
+        "full_name": "Exxon Corporation v. Governor of Maryland",
+        "citation": "437 U.S. 117 (1978)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1978-01-01",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "affirmed",
+        "holding": "A state statute prohibiting oil producers and refiners from operating gasoline stations within the state does not violate the Due Process Clause or the dormant Commerce Clause, even though it may conflict with federal antitrust statutes, where the statute does not discriminate against interstate commerce and hypothetical price discrimination concerns are speculative.",
+        "holding_type": "affirmative",
+        "majority_author": "Stevens",
+        "per_curiam": false,
+        "vote": "7-1",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1978-01-01",
+        "valid_until": null,
+        "opinions": [
+          {
+            "type": "concurrence_in_judgment",
+            "author": "Blackmun",
+            "description": "Concurred in part and dissented in part"
+          }
+        ],
+        "notes": "Justice Lewis F. Powell, Jr. did not participate. Justice Harry A. Blackmun wrote an opinion concurring in part and dissenting in part."
+      },
+      {
+        "@type": "Case",
+        "id": "florida_lime_avocado_growers_inc_v_paul_1963",
+        "short_name": "Florida Lime & Avocado Growers v. Paul",
+        "full_name": "Florida Lime & Avocado Growers, Inc. v. Paul",
+        "citation": "373 U.S. 132 (1963)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1963",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "Federal law preempts a state law only if there is a direct conflict making it physically impossible to comply with both laws simultaneously, or if the state law frustrates the purpose of the federal law; absent such conflict, state law remains valid even if it imposes different standards than federal law.",
+        "holding_type": "affirmative",
+        "majority_author": "Brennan",
+        "per_curiam": false,
+        "vote": "5-4",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1963",
+        "valid_until": null,
+        "opinions": [
+          {
+            "type": "dissent",
+            "author": "White, Black, Douglas, Clark"
+          }
+        ],
+        "notes": "Majority held that no preemption occurs absent direct conflict or frustration of federal purpose. Dissenters argued California statute was invalid under Supremacy Clause."
+      },
+      {
+        "@type": "Case",
+        "id": "jackson_v_metropolitan_edison_co_1974",
+        "short_name": "Jackson v. Metropolitan Edison Co.",
+        "full_name": "Catherine Jackson v. Metropolitan Edison Company",
+        "citation": "419 U.S. 345 (1974)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1974",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "affirmed",
+        "holding": "The termination of utility service by a private utility company does not constitute state action subject to the restrictions of the Fourteenth Amendment, even when the company is heavily regulated by a state agency.",
+        "holding_type": "by_negation",
+        "majority_author": "Rehnquist",
+        "per_curiam": false,
+        "vote": "6-3",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1974",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "The Court declined to establish a categorical rule regarding whether all actions by businesses providing essential public services constitute state action. Heavy regulation by a state agency does not convert private action into state action."
+      },
+      {
+        "@type": "Case",
+        "id": "lugar_v_edmondson_oil_co_1982",
+        "short_name": "Lugar v. Edmondson Oil Co.",
+        "full_name": "Giles M. Lugar v. Edmondson Oil Company, Inc.",
+        "citation": "457 U.S. 922 (1982)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1982-01-01",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "A state is liable for damages caused by unconstitutional conduct under 42 U.S.C. Section 1983 when the deprivation of a constitutional right is caused by the exercise of a right or privilege created by the state and the party charged with the deprivation is a person who may fairly be said to be a state actor, including those significantly aided by state officials.",
+        "holding_type": "affirmative",
+        "majority_author": "White",
+        "per_curiam": false,
+        "vote": "5-4",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1982-01-01",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "Established the two-part test for state action liability under Section 1983: (1) deprivation must be caused by exercise of a right or privilege created by the state; (2) the party charged must be a state actor or significantly aided by state officials."
+      },
+      {
+        "@type": "Case",
+        "id": "maine_v_taylor_1986",
+        "short_name": "Maine v. Taylor",
+        "full_name": "State of Maine v. Robert J. Taylor",
+        "citation": "477 U.S. 131 (1986)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1986",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "A state statute prohibiting the importation of live baitfish may constitutionally burden interstate commerce when the state demonstrates that the statute serves a legitimate local purpose (protection of fisheries from parasites and nonnative species) and that there is no adequate nondiscriminatory alternative.",
+        "holding_type": "affirmative",
+        "majority_author": "Blackmun",
+        "per_curiam": false,
+        "vote": null,
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1986",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "The Court reversed the First Circuit's holding that Maine's import ban impermissibly restricts interstate commerce. The case involves dormant Commerce Clause analysis and represents an exception to the general rule against protectionist state legislation."
+      },
+      {
+        "@type": "Case",
+        "id": "manhattan_community_access_corporation_v_halleck_2019",
+        "short_name": "Manhattan Community Access Corp. v. Halleck",
+        "full_name": "Manhattan Community Access Corporation, et al. v. DeeDee Halleck, et al.",
+        "citation": "587 U.S. 802 (2019)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "2019-06-17",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "A private entity operating public access channels on a cable system is not a state actor subject to First Amendment constraints, because operation of public access channels is not a traditional, exclusive public function traditionally and exclusively performed by government.",
+        "holding_type": "by_negation",
+        "majority_author": "Kavanaugh",
+        "per_curiam": false,
+        "vote": "5-4",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "2019-06-17",
+        "valid_until": null,
+        "opinions": [
+          {
+            "type": "dissent",
+            "author": "Sotomayor",
+            "joined_by": [
+              "Ginsburg",
+              "Breyer",
+              "Kagan"
+            ]
+          }
+        ],
+        "notes": "Majority: Kavanaugh, Roberts, Thomas, Alito, Gorsuch (5). Dissent: Sotomayor, Ginsburg, Breyer, Kagan (4). The Court held that MNN, a private nonprofit corporation designated by New York City to operate public access channels, is not a state actor and therefore not subject to First Amendment constraints on its editorial discretion."
+      },
+      {
+        "@type": "Case",
+        "id": "marsh_v_alabama_1946",
+        "short_name": "Marsh v. Alabama",
+        "full_name": "Grace Marsh v. State of Alabama",
+        "citation": "326 U.S. 501 (1946)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1946-01-01",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "A company town that is open to the public and functions as a municipality cannot restrict the exercise of First Amendment rights on the same basis as a private homeowner, because the constitutional rights of free speech and religion must prevail over private property rights when the two conflict in a public forum.",
+        "holding_type": "affirmative",
+        "majority_author": "Black",
+        "per_curiam": false,
+        "vote": null,
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1946-01-01",
+        "valid_until": null,
+        "opinions": [
+          {
+            "type": "concurrence",
+            "author": "Frankfurter"
+          },
+          {
+            "type": "dissent",
+            "author": "Reed"
+          },
+          {
+            "type": "dissent",
+            "author": "Burton"
+          },
+          {
+            "type": "dissent",
+            "author": "Stone"
+          }
+        ],
+        "notes": "Case involved a Jehovah's Witness distributing religious literature in a company town. The Court applied a balancing test weighing private property rights against constitutional rights."
+      },
+      {
+        "@type": "Case",
+        "id": "minnesota_v_clover_leaf_creamery_co_1981",
+        "short_name": "Minnesota v. Clover Leaf Creamery Co.",
+        "full_name": "Minnesota v. Clover Leaf Creamery Company",
+        "citation": "449 U.S. 456 (1981)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1981",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "affirmed",
+        "holding": "A state statute prohibiting the sale of milk in non-refillable, non-returnable plastic containers is constitutional under the rational basis test because the distinction between non-reusable plastic containers and paper or reusable plastic containers is rationally related to the legislature's legitimate interests in resource conservation and solid waste disposal, and the statute does not violate the dormant Commerce Clause because it applies uniformly to all sellers without discriminating based on origin.",
+        "holding_type": "affirmative",
+        "majority_author": "Brennan",
+        "per_curiam": false,
+        "vote": "7-1",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1981",
+        "valid_until": null,
+        "opinions": [
+          {
+            "type": "concurrence_in_judgment",
+            "author": "Powell"
+          }
+        ],
+        "notes": "Justice Powell wrote an opinion concurring in part and dissenting in part."
+      },
+      {
+        "@type": "Case",
+        "id": "moose_lodge_no_107_v_irvis_1972",
+        "short_name": "Moose Lodge No. 107 v. Irvis",
+        "full_name": "Moose Lodge No. 107 v. K. Leroy Irvis",
+        "citation": "407 U.S. 163 (1972)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1972-01-01",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "affirmed",
+        "holding": "A private social club's refusal to serve a black guest does not constitute state action subject to the Fourteenth Amendment's Equal Protection Clause merely because the state issues the club a liquor license; the state action doctrine does not extend to all private entities receiving government benefits or services.",
+        "holding_type": "by_negation",
+        "majority_author": null,
+        "per_curiam": false,
+        "vote": "6-3",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1972-01-01",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "The Court distinguished between state action and mere receipt of government services or benefits. The decision reflects the narrow scope of state action doctrine as applied to private associations."
+      },
+      {
+        "@type": "Case",
+        "id": "national_pork_producers_council_v_ross_2023",
+        "short_name": "National Pork Producers Council v. Ross",
+        "full_name": "National Pork Producers Council v. Ross",
+        "citation": "598 U.S. 356 (2023)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "2023-01-01",
+        "opinion_form": "plurality",
+        "procedural_disposition": "affirmed",
+        "holding": "A state law that has extraterritorial effects but does not purposefully discriminate against interstate commerce does not necessarily violate the dormant Commerce Clause; under the Pike balancing test, a law violates the dormant Commerce Clause only if its burdens on interstate commerce are clearly excessive in relation to the putative local benefits.",
+        "holding_type": "affirmative",
+        "majority_author": "Gorsuch (plurality)",
+        "per_curiam": false,
+        "vote": "5-4",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "2023-01-01",
+        "valid_until": null,
+        "opinions": [
+          "plurality",
+          "concurrence",
+          "concurrence_in_judgment",
+          "dissent"
+        ],
+        "notes": "Plurality opinion. Justice Gorsuch authored the plurality (5 justices). Justice Sotomayor and Justice Kagan voted with the plurality on the judgment but on different reasoning (failed to plausibly allege substantial burden). Justices Thomas and Barrett concurred in the judgment but disagreed on the Pike analysis (incommensurable benefits and burdens). Chief Justice Roberts, joined by Justices Alito, Kavanaugh, and Jackson, filed an opinion concurring in part and dissenting in part, arguing the case should be remanded. Justice Kavanaugh also filed a separate concurrence in part and dissent in part.",
+        "courtlistener_id": "9400078"
+      },
+      {
+        "@type": "Case",
+        "id": "pacific_gas_electric_v_state_energy_resources_1983",
+        "short_name": "Pacific Gas & Electric Co. v. State Energy Resources Conservation and Development Commission",
+        "full_name": "Pacific Gas & Electric Company v. State Energy Resources Conservation and Development Commission",
+        "citation": "461 U.S. 190 (1983)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1983",
+        "opinion_form": "per_curiam",
+        "procedural_disposition": "affirmed",
+        "holding": "A state law regulating nuclear power plant construction based on economic concerns regarding spent fuel storage capacity is not preempted by the federal Atomic Energy Act of 1954 when the state's rationale is economic rather than safety-based, and Congress has left sufficient authority in the states to allow nuclear power development to be slowed or stopped for economic reasons.",
+        "holding_type": "affirmative",
+        "majority_author": null,
+        "per_curiam": true,
+        "vote": "9-0",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1983",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "Unanimous decision. The Court distinguished between state regulation based on economic rationale versus safety rationale in the context of federal preemption under the Atomic Energy Act."
+      },
+      {
+        "@type": "Case",
+        "id": "ramos_v_louisiana_2020",
+        "short_name": "Ramos v. Louisiana",
+        "full_name": "Evangelisto Ramos v. State of Louisiana",
+        "citation": "590 U.S. 83 (2020)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "2020-06-20",
+        "opinion_form": "plurality",
+        "procedural_disposition": "reversed",
+        "holding": "The Sixth Amendment, as incorporated against the states through the Fourteenth Amendment's Due Process Clause, requires that a jury find a criminal defendant guilty by a unanimous verdict.",
+        "holding_type": "affirmative",
+        "majority_author": "Gorsuch (plurality)",
+        "per_curiam": false,
+        "vote": "6-3",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "2020-06-20",
+        "valid_until": null,
+        "opinions": [
+          "concurrence",
+          "concurrence",
+          "concurrence_in_judgment",
+          "dissent"
+        ],
+        "notes": "Plurality opinion. Justice Gorsuch authored the primary opinion commanding a majority on the core holding in Parts I, III, and IV-B-1. Part II-B and IV-A commanded only a four-justice plurality (Gorsuch, Ginsburg, Breyer, Sotomayor). Part IV-B-2 commanded a four-justice plurality (Gorsuch, Ginsburg, Breyer, Sotomayor; Kavanaugh did not join). Justice Sotomayor concurred as to all but Part IV-A. Justice Kavanaugh concurred in part. Justice Thomas concurred in the judgment only. Justice Alito dissented, joined by Chief Justice Roberts; Justice Kagan joined all but Part III-D of the dissent. The case overrules Apodaca v. Oregon."
+      },
+      {
+        "@type": "Case",
+        "id": "apodaca_v_oregon_1972",
+        "short_name": "Apodaca v. Oregon",
+        "full_name": "Apodaca v. Oregon",
+        "citation": "406 U.S. 404 (1972)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1972-06-22",
+        "opinion_form": "plurality",
+        "procedural_disposition": "affirmed",
+        "holding": "Non-unanimous jury verdicts are permissible in state criminal trials.",
+        "holding_type": "affirmative",
+        "majority_author": null,
+        "per_curiam": false,
+        "vote": null,
+        "status": "overruled",
+        "precedential_weight": "none",
+        "valid_from": "1972-06-22",
+        "valid_until": "2020-06-20",
+        "data_tier": "inferred",
+        "opinions": [],
+        "notes": "Stub node — overruled by ramos_v_louisiana_2020. Full node to be added when this case is modeled.",
+        "courtlistener_id": "108539"
+      },
+      {
+        "@type": "Case",
+        "id": "reeves_inc_v_stake_1980",
+        "short_name": "Reeves Inc. v. Stake",
+        "full_name": "Reeves Inc. v. Stake",
+        "citation": "447 U.S. 429 (1980)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1980-01-01",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "affirmed",
+        "holding": "A state may participate in the market as a market participant and favor its own citizens over out-of-state buyers in the absence of congressional action, even when such favoritism affects interstate commerce.",
+        "holding_type": "affirmative",
+        "majority_author": null,
+        "per_curiam": false,
+        "vote": "5-4",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1980-01-01",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "The Court reaffirmed Hughes v. Alexandria Scrap Corp. and held that South Dakota was acting as a market participant rather than a market regulator when it prioritized in-state cement sales.",
+        "courtlistener_id": "110308"
+      },
+      {
+        "@type": "Case",
+        "id": "rendell_baker_v_kohn_1982",
+        "short_name": "Rendell-Baker v. Kohn",
+        "full_name": "Rendell-Baker v. Kohn",
+        "citation": "457 U.S. 830 (1982)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1982-01-01",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "affirmed",
+        "holding": "A private school that receives substantial public funding and is regulated by public authorities does not act under color of state law when it discharges employees, because the school remains a private entity with independent control over personnel decisions and the state has not compelled or significantly influenced the discharge decision.",
+        "holding_type": "by_negation",
+        "majority_author": "Burger",
+        "per_curiam": false,
+        "vote": null,
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1982-01-01",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "The case addresses the threshold question of whether a private entity receiving substantial public funding and subject to public regulation acts under color of state law for purposes of 42 U.S.C. § 1983. The Court held that public funding and regulation alone do not convert a private entity into a state actor.",
+        "courtlistener_id": "110764"
+      },
+      {
+        "@type": "Case",
+        "id": "supreme_court_of_new_hampshire_v_piper_1985",
+        "short_name": "Supreme Court of New Hampshire v. Piper",
+        "full_name": "Supreme Court of New Hampshire v. Piper",
+        "citation": "470 U.S. 274 (1985)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1985-01-01",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "affirmed",
+        "holding": "A state bar residency requirement that excludes nonresidents from bar admission violates the Privileges and Immunities Clause of Article IV, Section 2, when the state cannot demonstrate a substantial reason for the discrimination and the requirement is not substantially related to achieving legitimate state objectives.",
+        "holding_type": "affirmative",
+        "majority_author": "Powell",
+        "per_curiam": false,
+        "vote": null,
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1985-01-01",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "The Court affirmed an evenly divided Court of Appeals decision. The opinion applies the two-part test from Hicklin v. Orbeck to the Privileges and Immunities Clause context.",
+        "courtlistener_id": "111363"
+      },
+      {
+        "@type": "Case",
+        "id": "terry_v_adams_1953",
+        "short_name": "Terry v. Adams",
+        "full_name": "Terry v. Adams",
+        "citation": "345 U.S. 461 (1953)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1953-01-01",
+        "opinion_form": "plurality",
+        "procedural_disposition": "reversed",
+        "holding": "A private political organization that functions as the dominant political force in a county and systematically excludes voters on racial grounds violates the Fifteenth Amendment, even if the organization is not formally regulated by state law, when its primaries effectively determine the outcome of general elections.",
+        "holding_type": "affirmative",
+        "majority_author": "Black (plurality)",
+        "per_curiam": false,
+        "vote": null,
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1953-01-01",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "Plurality opinion. Justice Black announced the judgment joined by Justices Douglas and Burton. The opinion reverses the Court of Appeals decision that had held the Jaybird racial exclusions were not subject to Fifteenth Amendment scrutiny because the organization was not state-regulated. The case applies Smith v. Allwright reasoning to a nominally private political organization.",
+        "courtlistener_id": "105121"
+      },
+      {
+        "@type": "Case",
+        "id": "timbs_v_indiana_2019",
+        "short_name": "Timbs v. Indiana",
+        "full_name": "Tyson Timbs v. State of Indiana",
+        "citation": "586 U.S. 146 (2019)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "2019-02-20",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "The Eighth Amendment's Excessive Fines Clause is incorporated against the states through the Fourteenth Amendment's Due Process Clause and applies with equal force to state and federal governments.",
+        "holding_type": "affirmative",
+        "majority_author": "Ginsburg",
+        "per_curiam": false,
+        "vote": "9-0",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "2019-02-20",
+        "valid_until": null,
+        "opinions": [
+          {
+            "type": "concurrence",
+            "author": "Gorsuch",
+            "summary": "Concurred in judgment; argued incorporation should occur through Privileges or Immunities Clause rather than Due Process Clause."
+          },
+          {
+            "type": "concurrence_in_judgment",
+            "author": "Thomas",
+            "summary": "Concurred in judgment; disagreed with majority's use of Due Process Clause, arguing incorporation must occur through Privileges or Immunities Clause."
+          }
+        ],
+        "notes": "Unanimous decision on the incorporation of the Excessive Fines Clause. Justices Gorsuch and Thomas concurred in the judgment but disagreed on the constitutional vehicle for incorporation."
       }
     ],
     "doctrinal_tests": [
@@ -25569,6 +26640,275 @@
         "valid_from": "2010-06-28",
         "valid_until": null,
         "notes": "This test was articulated by Justice Alito in the plurality opinion. It applies the framework from Washington v. Glucksberg to the incorporation context. The test is disjunctive—a right need satisfy only one prong to qualify for incorporation."
+      },
+      {
+        "@type": "DoctrinalTest",
+        "id": "burton_entanglement_test",
+        "label": "State Action Entanglement Test",
+        "description": "A test to determine whether a private entity's conduct constitutes state action by examining whether the private entity is so physically and financially intertwined with a state actor that the state actor's assistance is financially integral and indispensable to the private entity's operations.",
+        "area_id": "equal_protection",
+        "source_case_id": "burton_v_wilmington_parking_authority_1961",
+        "scrutiny_level": "strict",
+        "burden": "government",
+        "test_form": "conjunctive",
+        "prongs": [
+          {
+            "number": 1,
+            "label": "Physical Intertwining",
+            "description": "The private entity and state actor must be physically intertwined in their operations and facilities.",
+            "burden_note": "Challenger must demonstrate physical integration of facilities and operations.",
+            "valid_from": "1961-01-01",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 2,
+            "label": "Financial Intertwining",
+            "description": "The private entity must receive financial assistance or support from the state actor such that the state actor's assistance is financially integral and indispensable to the private entity's operations.",
+            "burden_note": "Challenger must demonstrate that state assistance is integral and indispensable to the private entity.",
+            "valid_from": "1961-01-01",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          }
+        ],
+        "status": "active",
+        "valid_from": "1961-01-01",
+        "valid_until": null,
+        "notes": "When both prongs are satisfied, the private entity's discriminatory conduct may be imputed to the state and subjected to strict scrutiny under the Equal Protection Clause."
+      },
+      {
+        "@type": "DoctrinalTest",
+        "id": "dean_milk_discrimination_test",
+        "label": "Dean Milk Discrimination Test",
+        "description": "A test for evaluating whether a state or local law that discriminates against interstate commerce violates the dormant Commerce Clause. The law must be narrowly tailored to serve a legitimate local purpose, and no reasonable nondiscriminatory alternatives may be available.",
+        "area_id": "dormant_commerce_clause",
+        "source_case_id": "dean_milk_co_v_city_of_madison_wisconsin_1951",
+        "scrutiny_level": "strict",
+        "burden": "government",
+        "test_form": "conjunctive",
+        "prongs": [
+          {
+            "number": 1,
+            "label": "Legitimate Local Purpose",
+            "description": "The discriminatory law must serve a legitimate local purpose.",
+            "burden_note": "Government must demonstrate a legitimate local interest.",
+            "valid_from": "1951-01-01",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 2,
+            "label": "Narrow Tailoring",
+            "description": "The discriminatory means must be narrowly tailored to serve the legitimate local purpose.",
+            "burden_note": "Government must show the discrimination is narrowly tailored.",
+            "valid_from": "1951-01-01",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 3,
+            "label": "No Reasonable Nondiscriminatory Alternatives",
+            "description": "No reasonable nondiscriminatory alternatives must be available to serve the legitimate local purpose.",
+            "burden_note": "Government must demonstrate absence of reasonable nondiscriminatory alternatives.",
+            "valid_from": "1951-01-01",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          }
+        ],
+        "status": "active",
+        "valid_from": "1951-01-01",
+        "valid_until": null,
+        "notes": "Applies to facially discriminatory state and local laws affecting interstate commerce. If all prongs are not satisfied, the law violates the dormant Commerce Clause."
+      },
+      {
+        "@type": "DoctrinalTest",
+        "id": "preemption_conflict_test",
+        "label": "Preemption Conflict Test",
+        "description": "A state law is preempted by federal law if: (1) it is physically impossible to comply with both laws simultaneously, or (2) the state law frustrates the purpose of the federal law. Absent such conflict, state law remains valid.",
+        "area_id": "constitutional_law",
+        "source_case_id": "florida_lime_avocado_growers_inc_v_paul_1963",
+        "scrutiny_level": "rational_basis",
+        "burden": "challenger",
+        "test_form": "disjunctive",
+        "prongs": [
+          {
+            "number": 1,
+            "label": "Physical Impossibility of Simultaneous Compliance",
+            "description": "Federal law preempts state law if it is physically impossible to comply with both laws at the same time.",
+            "burden_note": "Challenger must show actual conflict making dual compliance impossible.",
+            "valid_from": "1963",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 2,
+            "label": "Frustration of Federal Purpose",
+            "description": "Federal law preempts state law if the state law frustrates or undermines the purpose of the federal law.",
+            "burden_note": "Challenger must demonstrate that state law conflicts with federal objectives.",
+            "valid_from": "1963",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          }
+        ],
+        "status": "active",
+        "valid_from": "1963",
+        "valid_until": null,
+        "notes": "Disjunctive test: either prong suffices for preemption. Mere difference in regulatory standards does not trigger preemption if dual compliance is feasible."
+      },
+      {
+        "@type": "DoctrinalTest",
+        "id": "lugar_state_actor_test",
+        "label": "Lugar State Actor Test",
+        "description": "A two-part test for determining state action liability under Section 1983: (1) the deprivation of a constitutional right must be caused by the exercise of some right or privilege created by the state; and (2) the party charged with the deprivation must be a person who may fairly be said to be a state actor, including both state officials and those significantly aided by them.",
+        "area_id": "procedural_due_process",
+        "source_case_id": "lugar_v_edmondson_oil_co_1982",
+        "scrutiny_level": "rational_basis",
+        "burden": "challenger",
+        "test_form": "conjunctive",
+        "prongs": [
+          {
+            "number": 1,
+            "label": "State-Created Right or Privilege",
+            "description": "The deprivation of a constitutional right must be caused by the exercise of some right or privilege created by the state.",
+            "burden_note": "Challenger must show the deprivation was caused by exercise of a state-created right or privilege.",
+            "valid_from": "1982-01-01",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 2,
+            "label": "State Actor Status",
+            "description": "The party charged with the deprivation must be a person who may fairly be said to be a state actor, including both state officials and those significantly aided by state officials.",
+            "burden_note": "Challenger must show the defendant is a state actor or significantly aided by state officials.",
+            "valid_from": "1982-01-01",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          }
+        ],
+        "status": "active",
+        "valid_from": "1982-01-01",
+        "valid_until": null,
+        "notes": "This test applies to Section 1983 claims and determines whether private conduct can be attributed to the state for purposes of constitutional liability."
+      },
+      {
+        "@type": "DoctrinalTest",
+        "id": "maine_taylor_protectionist_burden_test",
+        "label": "Protectionist Burden on Interstate Commerce Test",
+        "description": "A state statute that burdens interstate commerce may be upheld if: (1) the statute serves a legitimate local purpose; and (2) there is no adequate nondiscriminatory alternative available to serve that purpose.",
+        "area_id": "dormant_commerce_clause",
+        "source_case_id": "maine_v_taylor_1986",
+        "scrutiny_level": "balancing",
+        "burden": "government",
+        "test_form": "conjunctive",
+        "prongs": [
+          {
+            "number": 1,
+            "label": "Legitimate Local Purpose",
+            "description": "The state must demonstrate that the statute serves a legitimate local purpose, such as protection of the state's fisheries from parasites and nonnative species.",
+            "burden_note": "Government must establish the legitimacy of the local purpose.",
+            "valid_from": "1986",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 2,
+            "label": "No Adequate Nondiscriminatory Alternative",
+            "description": "The state must demonstrate that there is no adequate nondiscriminatory alternative available to serve the legitimate local purpose.",
+            "burden_note": "Government must show that less discriminatory means are unavailable or inadequate.",
+            "valid_from": "1986",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          }
+        ],
+        "status": "active",
+        "valid_from": "1986",
+        "valid_until": null,
+        "notes": "This test applies when a state statute facially discriminates against or has a protectionist effect on interstate commerce. The test requires the government to satisfy both prongs to justify the burden on interstate commerce."
+      },
+      {
+        "@type": "DoctrinalTest",
+        "id": "traditional_exclusive_public_function_test",
+        "label": "Traditional Exclusive Public Function Test",
+        "description": "A test to determine whether a private entity qualifies as a state actor under the state-action doctrine. The test requires that the government must have traditionally and exclusively performed the function in question. It is not enough that the government exercised the function in the past, still does, or that the function serves the public good.",
+        "area_id": "first_amendment",
+        "source_case_id": "manhattan_community_access_corporation_v_halleck_2019",
+        "scrutiny_level": "rational_basis",
+        "burden": "challenger",
+        "test_form": "threshold_then_conjunctive",
+        "prongs": [
+          {
+            "number": 1,
+            "label": "Traditional Performance by Government",
+            "description": "The government must have traditionally performed the function in question.",
+            "burden_note": "Challenger must demonstrate historical governmental performance of the function.",
+            "valid_from": "2019-06-17",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 2,
+            "label": "Exclusive Performance by Government",
+            "description": "The government must have exclusively performed the function, meaning private entities have not traditionally performed it.",
+            "burden_note": "Challenger must demonstrate that the function was not performed by private entities.",
+            "valid_from": "2019-06-17",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          }
+        ],
+        "status": "active",
+        "valid_from": "2019-06-17",
+        "valid_until": null,
+        "notes": "This test is the primary mechanism for determining state-actor status under the traditional exclusive public function prong of state-action doctrine. The Court emphasized that 'very few' functions satisfy this test. If the test is not satisfied, the private entity is not a state actor and is not subject to First Amendment constraints."
+      },
+      {
+        "@type": "DoctrinalTest",
+        "id": "privileges_immunities_discrimination_test",
+        "label": "Privileges and Immunities Clause Discrimination Test",
+        "description": "Two-part test for evaluating state discrimination against nonresidents under Article IV, Section 2: (1) whether there is a substantial reason for the different treatment of nonresidents, and (2) whether the challenged discrimination bears a substantial relationship to the state's objectives.",
+        "area_id": "individual_rights",
+        "source_case_id": "supreme_court_of_new_hampshire_v_piper_1985",
+        "scrutiny_level": "heightened",
+        "burden": "government",
+        "test_form": "conjunctive",
+        "prongs": [
+          {
+            "number": 1,
+            "label": "Substantial Reason",
+            "description": "The state must demonstrate a substantial reason for discriminating against nonresidents.",
+            "burden_note": "Government must justify the discrimination.",
+            "valid_from": "1985-01-01",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 2,
+            "label": "Substantial Relationship to State Objectives",
+            "description": "The challenged discrimination must bear a substantial relationship to achieving the state's legitimate objectives.",
+            "burden_note": "Government must demonstrate the means are substantially related to the asserted ends.",
+            "valid_from": "1985-01-01",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          }
+        ],
+        "status": "active",
+        "valid_from": "1985-01-01",
+        "valid_until": null,
+        "notes": "This test is derived from Hicklin v. Orbeck, 437 U.S. 518 (1978), and applied by Piper to bar admission requirements under the Privileges and Immunities Clause. The test requires the state to satisfy both prongs to justify nonresident discrimination."
       }
     ]
   },
@@ -42970,6 +44310,488 @@
         "state"
       ],
       "notes": "The Court established the doctrine that the Privileges or Immunities Clause protects only federal citizenship privileges, not state citizenship privileges."
+    },
+    {
+      "id": "adamson_applies_selective_incorporation_doctrine",
+      "source_id": "adamson_v_california_1947",
+      "target_id": "selective_incorporation_doctrine",
+      "edge_type": "APPLIES",
+      "valid_from": "1947-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Adamson applied and affirmed the selective incorporation doctrine, holding that not all Bill of Rights protections are automatically extended to the states through the Fourteenth Amendment."
+    },
+    {
+      "id": "arizona_v_united_states_2012_establishes_federal_immigration_preemption_doctrine",
+      "source_id": "arizona_v_united_states_2012",
+      "target_id": "federal_immigration_preemption_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2012-06-25",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "The Court articulated and applied the doctrine that federal immigration law preempts conflicting state immigration provisions, emphasizing the federal government's exclusive power over immigration policy and foreign relations."
+    },
+    {
+      "id": "baldwin_establishes_privileges_immunities_fundamental_activity_doctrine",
+      "source_id": "baldwin_v_fish_and_game_commission_of_montana_1978",
+      "target_id": "privileges_immunities_fundamental_activity_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1978-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Baldwin established the principle that the Privileges and Immunities Clause applies only to activities bearing on the vitality of the Nation as a single entity."
+    },
+    {
+      "id": "brentwood_academy_establishes_pervasive_entwinement",
+      "source_id": "brentwood_academy_v_tennessee_secondary_school_athletic_association_2001",
+      "target_id": "pervasive_entwinement_state_action",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2001",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Brentwood Academy established the pervasive entwinement test as a framework for determining state action in nominally private organizations."
+    },
+    {
+      "id": "burton_establishes_state_action_entanglement_doctrine",
+      "source_id": "burton_v_wilmington_parking_authority_1961",
+      "target_id": "state_action_entanglement_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1961-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "burton_establishes_burton_entanglement_test",
+      "source_id": "burton_v_wilmington_parking_authority_1961",
+      "target_id": "burton_entanglement_test",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1961-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "cooley_establishes_cooley_doctrine_local_concern",
+      "source_id": "cooley_v_board_of_wardens_of_the_port_of_philadelphia_1852",
+      "target_id": "cooley_doctrine_local_concern",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1852-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Cooley v. Board of Wardens established the foundational doctrine permitting state regulation of matters of local concern affecting interstate commerce."
+    },
+    {
+      "id": "dean_milk_establishes_dormant_commerce_discrimination",
+      "source_id": "dean_milk_co_v_city_of_madison_wisconsin_1951",
+      "target_id": "dormant_commerce_clause_discrimination_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1951-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Dean Milk Co. v. City of Madison established the doctrine that discriminatory state and local laws affecting interstate commerce are subject to strict scrutiny under the dormant Commerce Clause."
+    },
+    {
+      "id": "dean_milk_establishes_dean_milk_test",
+      "source_id": "dean_milk_co_v_city_of_madison_wisconsin_1951",
+      "target_id": "dean_milk_discrimination_test",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1951-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Dean Milk Co. v. City of Madison established the three-prong test for evaluating discriminatory state and local laws under the dormant Commerce Clause."
+    },
+    {
+      "id": "evans_v_newton_establishes_public_function_doctrine",
+      "source_id": "evans_v_newton_1966",
+      "target_id": "public_function_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1966",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Evans v. Newton established the public function doctrine as applied to private park operators managing municipal parks."
+    },
+    {
+      "id": "exxon_corp_applies_dormant_commerce_nondiscrimination",
+      "source_id": "exxon_corp_v_governor_of_maryland_1978",
+      "target_id": "dormant_commerce_clause_nondiscrimination",
+      "edge_type": "APPLIES",
+      "valid_from": "1978-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "The Court applied the principle that a state statute does not violate the dormant Commerce Clause if it does not discriminate against interstate commerce, even if it may conflict with federal statutes."
+    },
+    {
+      "id": "exxon_corp_applies_due_process_rational_basis",
+      "source_id": "exxon_corp_v_governor_of_maryland_1978",
+      "target_id": "due_process_rational_basis_economic_regulation",
+      "edge_type": "APPLIES",
+      "valid_from": "1978-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "The Court applied rational basis review to the economic regulation, citing Ferguson v. Skrupa for the proposition that courts should not weigh the wisdom of legislation."
+    },
+    {
+      "id": "florida_lime_establishes_preemption_conflict_test",
+      "source_id": "florida_lime_avocado_growers_inc_v_paul_1963",
+      "target_id": "preemption_conflict_test",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1963",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Justice Brennan's majority opinion established the conflict preemption standard."
+    },
+    {
+      "id": "florida_lime_establishes_preemption_conflict_doctrine",
+      "source_id": "florida_lime_avocado_growers_inc_v_paul_1963",
+      "target_id": "preemption_conflict_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1963",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Case established the doctrine that preemption requires direct conflict, not mere regulatory difference."
+    },
+    {
+      "id": "jackson_applies_state_action_doctrine",
+      "source_id": "jackson_v_metropolitan_edison_co_1974",
+      "target_id": "state_action_doctrine",
+      "edge_type": "APPLIES",
+      "valid_from": "1974",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Jackson applied the state action doctrine to hold that a private utility company's actions, despite state regulation, do not constitute state action."
+    },
+    {
+      "id": "lugar_establishes_lugar_state_actor_test",
+      "source_id": "lugar_v_edmondson_oil_co_1982",
+      "target_id": "lugar_state_actor_test",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1982-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Lugar v. Edmondson Oil Co. established the two-part state actor test for Section 1983 liability."
+    },
+    {
+      "id": "lugar_establishes_state_action_section_1983",
+      "source_id": "lugar_v_edmondson_oil_co_1982",
+      "target_id": "state_action_section_1983",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1982-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Lugar clarified the state action doctrine as applied to Section 1983 claims, establishing that private parties significantly aided by state officials can be treated as state actors."
+    },
+    {
+      "id": "maine_v_taylor_establishes_protectionist_exception",
+      "source_id": "maine_v_taylor_1986",
+      "target_id": "dormant_commerce_clause_protectionist_exception",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1986",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Maine v. Taylor establishes the framework for evaluating protectionist state statutes under dormant Commerce Clause analysis."
+    },
+    {
+      "id": "maine_v_taylor_establishes_protectionist_burden_test",
+      "source_id": "maine_v_taylor_1986",
+      "target_id": "maine_taylor_protectionist_burden_test",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1986",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Maine v. Taylor establishes the two-prong test for evaluating whether a state statute that burdens interstate commerce can survive constitutional scrutiny."
+    },
+    {
+      "id": "manhattan_establishes_state_action_doctrine",
+      "source_id": "manhattan_community_access_corporation_v_halleck_2019",
+      "target_id": "state_action_doctrine",
+      "edge_type": "APPLIES",
+      "valid_from": "2019-06-17",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "The Court applied and clarified the state-action doctrine in holding that MNN is not a state actor."
+    },
+    {
+      "id": "manhattan_establishes_traditional_exclusive_public_function_doctrine",
+      "source_id": "manhattan_community_access_corporation_v_halleck_2019",
+      "target_id": "traditional_exclusive_public_function_doctrine",
+      "edge_type": "APPLIES",
+      "valid_from": "2019-06-17",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "The Court applied the traditional exclusive public function doctrine and clarified that operation of public access channels does not qualify as a traditional, exclusive public function."
+    },
+    {
+      "id": "manhattan_establishes_traditional_exclusive_public_function_test",
+      "source_id": "manhattan_community_access_corporation_v_halleck_2019",
+      "target_id": "traditional_exclusive_public_function_test",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2019-06-17",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "The Court articulated and applied the traditional exclusive public function test to determine whether MNN qualifies as a state actor."
+    },
+    {
+      "id": "marsh_establishes_company_town_doctrine",
+      "source_id": "marsh_v_alabama_1946",
+      "target_id": "company_town_public_forum_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1946-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Marsh v. Alabama established the principle that company towns functioning as public forums are subject to First Amendment protections."
+    },
+    {
+      "id": "minnesota_clover_leaf_applies_rational_basis_ep_test",
+      "source_id": "minnesota_v_clover_leaf_creamery_co_1981",
+      "target_id": "rational_basis_ep_test",
+      "edge_type": "APPLIES",
+      "valid_from": "1981",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Court applied rational basis test to evaluate whether the statute was rationally related to the legislature's purpose of promoting resource conservation and resolving solid waste disposal."
+    },
+    {
+      "id": "moose_lodge_applies_state_action_doctrine",
+      "source_id": "moose_lodge_no_107_v_irvis_1972",
+      "target_id": "state_action_doctrine",
+      "edge_type": "APPLIES",
+      "valid_from": "1972-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "The Court applied the state action doctrine to determine that the Moose Lodge's private discrimination was not subject to the Fourteenth Amendment."
+    },
+    {
+      "id": "nppc_v_ross_establishes_dormant_cc_antidiscrim",
+      "source_id": "national_pork_producers_council_v_ross_2023",
+      "target_id": "dormant_commerce_clause_antidiscrimination",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2023-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "The Court clarified that an antidiscrimination principle is at the core of the dormant Commerce Clause and rejected an almost per se rule against extraterritorial effects."
+    },
+    {
+      "id": "nppc_v_ross_applies_pike_balancing_test",
+      "source_id": "national_pork_producers_council_v_ross_2023",
+      "target_id": "pike_balancing_test",
+      "edge_type": "APPLIES",
+      "valid_from": "2023-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "The Court applied the Pike balancing test to evaluate whether Proposition 12 violates the dormant Commerce Clause and concluded it does not."
+    },
+    {
+      "id": "pacific_gas_electric_establishes_economic_rationale_preemption",
+      "source_id": "pacific_gas_electric_v_state_energy_resources_1983",
+      "target_id": "economic_rationale_preemption_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1983",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "The Court established that economic rationale for state nuclear regulation falls outside federal preemption."
+    },
+    {
+      "id": "ramos_establishes_sixth_amendment_jury_unanimity",
+      "source_id": "ramos_v_louisiana_2020",
+      "target_id": "sixth_amendment_jury_unanimity",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2020-06-20",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Ramos establishes the doctrine that the Sixth Amendment requires jury unanimity in criminal convictions, as incorporated against the states."
+    },
+    {
+      "id": "ramos_overrules_apodaca",
+      "source_id": "ramos_v_louisiana_2020",
+      "target_id": "apodaca_v_oregon_1972",
+      "edge_type": "OVERRULES",
+      "valid_from": "2020-06-20",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "overrule_type": "explicit",
+      "notes": "Ramos explicitly overrules Apodaca v. Oregon, which had permitted non-unanimous jury verdicts in state criminal trials. The Court found Apodaca's reasoning 'skimpy' and rejected its functionalist assessment of the jury unanimity requirement."
+    },
+    {
+      "id": "reeves_establishes_market_participant_exception",
+      "source_id": "reeves_inc_v_stake_1980",
+      "target_id": "market_participant_exception",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1980-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Reeves Inc. v. Stake established the market participant exception to dormant Commerce Clause scrutiny."
+    },
+    {
+      "id": "rendell_baker_v_kohn_applies_state_action_doctrine",
+      "source_id": "rendell_baker_v_kohn_1982",
+      "target_id": "state_action_doctrine",
+      "edge_type": "APPLIES",
+      "valid_from": "1982-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "The case applies the state action doctrine to determine whether a private school receiving substantial public funding and subject to public regulation acts under color of state law."
+    },
+    {
+      "id": "piper_establishes_privileges_immunities_nonresident_discrimination",
+      "source_id": "supreme_court_of_new_hampshire_v_piper_1985",
+      "target_id": "privileges_immunities_nonresident_discrimination",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1985-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Piper establishes that the Privileges and Immunities Clause protects the right to pursue a livelihood and prohibits state bar residency requirements that discriminate against nonresidents without substantial justification."
+    },
+    {
+      "id": "piper_establishes_privileges_immunities_discrimination_test",
+      "source_id": "supreme_court_of_new_hampshire_v_piper_1985",
+      "target_id": "privileges_immunities_discrimination_test",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1985-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Piper applies and affirms the two-part test from Hicklin v. Orbeck in the context of Privileges and Immunities Clause challenges to state professional licensing requirements."
+    },
+    {
+      "id": "terry_v_adams_establishes_fifteenth_amendment_private_political",
+      "source_id": "terry_v_adams_1953",
+      "target_id": "fifteenth_amendment_private_political_organization_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1953-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Terry v. Adams establishes that the Fifteenth Amendment applies to private political organizations that function as the dominant political force in a county, even absent formal state regulation."
+    },
+    {
+      "id": "timbs_establishes_excessive_fines_incorporation",
+      "source_id": "timbs_v_indiana_2019",
+      "target_id": "excessive_fines_incorporation",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2019-02-20",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Timbs established that the Excessive Fines Clause is incorporated against the states."
+    },
+    {
+      "id": "west_lynn_creamery_applies_dcc_discrimination",
+      "source_id": "west_lynn_creamery_v_healy_1994",
+      "target_id": "dormant_commerce_clause_discrimination_doctrine",
+      "edge_type": "APPLIES",
+      "valid_from": "1994",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "The Court applied dormant commerce clause discrimination doctrine to strike down the Massachusetts pricing order."
     }
   ],
   "schema_issues_found": [
