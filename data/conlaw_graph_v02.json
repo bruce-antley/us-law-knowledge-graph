@@ -6263,6 +6263,22 @@
           "substantive_due_process"
         ],
         "notes": "Established in McDonald v. City of Chicago. Applies the fundamental rights strand of substantive due process to incorporate the Second Amendment."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "privileges_immunities_federal_citizenship",
+        "label": "Privileges or Immunities of Federal Citizenship",
+        "description": "The Privileges or Immunities Clause of the Fourteenth Amendment protects only those privileges and immunities that arise from federal citizenship, not those arising from state citizenship. States retain broad police powers to regulate occupations and businesses within their borders.",
+        "area_id": "individual_rights",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1873-01-01",
+        "valid_until": null,
+        "secondary_area_ids": [],
+        "notes": "Established in Slaughter-House Cases as the authoritative interpretation of the Privileges or Immunities Clause, narrowly construing its scope to federal citizenship privileges only."
       }
     ],
     "areas": [
@@ -20491,6 +20507,55 @@
           }
         ],
         "notes": "Fractured decision with 8-1 majority on justiciability but separate opinions on the scope and application of the political question doctrine. Remanded for consideration on the merits."
+      },
+      {
+        "@type": "Case",
+        "id": "shelley_v_kraemer_1948",
+        "short_name": "Shelley v. Kraemer",
+        "full_name": "Shelley v. Kraemer",
+        "citation": "334 U.S. 1 (1948)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1948-01-01",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "Judicial enforcement of racially restrictive covenants by state courts constitutes state action in violation of the Equal Protection Clause of the Fourteenth Amendment, even though the covenants themselves are private agreements.",
+        "holding_type": "affirmative",
+        "majority_author": "Vinson",
+        "per_curiam": false,
+        "vote": "6-0",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1948-01-01",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "Consolidated cases from Missouri and Michigan. Established that state judicial enforcement of private racially restrictive covenants constitutes state action subject to Fourteenth Amendment scrutiny.",
+        "courtlistener_id": "104545"
+      },
+      {
+        "@type": "Case",
+        "id": "slaughter_house_cases_1873",
+        "short_name": "Slaughter-House Cases",
+        "full_name": "Slaughter-House Cases",
+        "citation": "83 U.S. 36 (1873)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1873-01-01",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "affirmed",
+        "holding": "The Privileges or Immunities Clause of the Fourteenth Amendment protects only those privileges and immunities that arise from federal citizenship, not those arising from state citizenship; a state may regulate the business of slaughtering animals within its borders without violating the Privileges or Immunities Clause.",
+        "holding_type": "affirmative",
+        "majority_author": null,
+        "per_curiam": false,
+        "vote": null,
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1873-01-01",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "The opinion indicates the Court was divided on the questions presented, requiring reargument before a full bench. The text provided is the opinion of the court but does not identify the majority author by name."
       }
     ],
     "doctrinal_tests": [
@@ -42879,6 +42944,32 @@
         "state"
       ],
       "notes": "The incorporation of the Second Amendment is governed by the fundamental rights incorporation test, which determines whether a right qualifies for incorporation."
+    },
+    {
+      "id": "shelley_v_kraemer_establishes_state_action_doctrine",
+      "source_id": "shelley_v_kraemer_1948",
+      "target_id": "state_action_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1948-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Shelley v. Kraemer established the principle that judicial enforcement of private racially restrictive covenants by state courts constitutes state action subject to Equal Protection Clause scrutiny."
+    },
+    {
+      "id": "slaughter_house_cases_establishes_privileges_immunities_federal_citizenship",
+      "source_id": "slaughter_house_cases_1873",
+      "target_id": "privileges_immunities_federal_citizenship",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1873-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "The Court established the doctrine that the Privileges or Immunities Clause protects only federal citizenship privileges, not state citizenship privileges."
     }
   ],
   "schema_issues_found": [
