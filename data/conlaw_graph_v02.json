@@ -6895,6 +6895,134 @@
         "valid_until": null,
         "secondary_area_ids": [],
         "notes": "Applies specifically to bodies with intrinsic judicial character created by statute."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "second_amendment_individual_right_doctrine",
+        "label": "Second Amendment Individual Right to Bear Arms",
+        "description": "The Second Amendment protects an individual right to possess and carry firearms for lawful purposes, including self-defense in the home, independent of militia service. The prefatory militia clause does not limit the operative clause establishing this individual right.",
+        "area_id": "individual_rights",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "2008-06-26",
+        "valid_until": null,
+        "secondary_area_ids": [],
+        "notes": "Established in District of Columbia v. Heller as a departure from prior militia-focused interpretations of the Second Amendment."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "fundamental_right_to_vote_doctrine",
+        "label": "Fundamental Right to Vote",
+        "description": "The right to vote is a fundamental right under the Fourteenth Amendment that triggers heightened scrutiny for restrictions on voting eligibility.",
+        "area_id": "equal_protection",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1966",
+        "valid_until": null,
+        "secondary_area_ids": [],
+        "notes": "Established in Harper v. Virginia State Board of Elections as a basis for heightened review of voting restrictions."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "second_amendment_historical_tradition_doctrine",
+        "label": "Second Amendment Historical Tradition Doctrine",
+        "description": "Firearm regulations are constitutional only if there is a historical tradition of such regulation in U.S. history. The right to carry a firearm in public for self-defense is deeply rooted in history and tradition.",
+        "area_id": "individual_rights",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "2022-06-23",
+        "valid_until": null,
+        "secondary_area_ids": [],
+        "notes": "Established in Bruen as the framework for evaluating Second Amendment claims, replacing means-ends scrutiny approaches."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "sensitive_places_exception_doctrine",
+        "label": "Sensitive Places Exception",
+        "description": "Some restrictions on firearm carry in certain sensitive places may be appropriate under the Second Amendment, though the determination of what constitutes a sensitive place must be grounded in historical tradition.",
+        "area_id": "individual_rights",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "2022-06-23",
+        "valid_until": null,
+        "secondary_area_ids": [],
+        "notes": "Bruen acknowledged this exception but held that Manhattan is not a sensitive place. The scope and application of this exception remains to be developed."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "defamation_not_constitutional_deprivation",
+        "label": "Defamation Standing Alone Does Not Constitute Constitutional Deprivation",
+        "description": "Defamatory publications by state officials, standing alone and apart from any other governmental action affecting a person's legal status or rights, do not constitute a deprivation of liberty or property protected by the Fourteenth Amendment and do not state a claim under 42 U.S.C. § 1983.",
+        "area_id": "substantive_due_process",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1976-01-01",
+        "valid_until": null,
+        "secondary_area_ids": [],
+        "notes": "This doctrine establishes that § 1983 claims require deprivation of a right secured by the Constitution, and that defamation alone, without accompanying governmental action affecting legal status, does not meet this threshold."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "prison_liberty_interest_doctrine",
+        "label": "Prison Liberty Interest Doctrine",
+        "description": "State prison regulations create a liberty interest protected by the Due Process Clause only when they impose substantive restrictions on the conditions of confinement itself, not merely procedural requirements governing the deprivation of privileges. A liberty interest exists only when the regulation creates a substantive entitlement of real substance, not when it merely prescribes procedures for disciplinary decisions.",
+        "area_id": "procedural_due_process",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1995",
+        "valid_until": null,
+        "secondary_area_ids": [],
+        "notes": "Established in Sandin v. Conner as a refinement and limitation of the liberty interest framework from Wolff v. McDonnell. The doctrine distinguishes between substantive entitlements (which create liberty interests) and procedural regulations (which do not)."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "sex_based_classification_equal_protection",
+        "label": "Sex-Based Classification Under Equal Protection",
+        "description": "Doctrine requiring that sex-based classifications by state actors meet an exceedingly persuasive justification standard under the Equal Protection Clause.",
+        "area_id": "equal_protection",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1996-06-26",
+        "valid_until": null,
+        "secondary_area_ids": [],
+        "notes": "Established in United States v. Virginia as the governing standard for evaluating sex-based classifications in public education and other state action contexts."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "privacy_zone_doctrine",
+        "label": "Constitutional Zone of Privacy",
+        "description": "A constitutionally protected zone of privacy exists under the Fourteenth Amendment, but state regulatory schemes that collect personal information do not violate this zone merely because of remote possibilities of data abuse if the scheme evidences proper concern with and protection of individual privacy interests.",
+        "area_id": "substantive_due_process",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1977-01-01",
+        "valid_until": null,
+        "secondary_area_ids": [],
+        "notes": "Establishes that the privacy zone is not absolute and that state regulatory schemes can survive constitutional scrutiny if they include adequate safeguards."
       }
     ],
     "areas": [
@@ -22314,6 +22442,213 @@
         "opinions": [],
         "notes": "Unanimous decision establishing limits on presidential removal power for quasi-judicial bodies created by Congress.",
         "courtlistener_id": "8613283"
+      },
+      {
+        "@type": "Case",
+        "id": "district_of_columbia_v_heller_2008",
+        "short_name": "District of Columbia v. Heller",
+        "full_name": "District of Columbia v. Dick Anthony Heller",
+        "citation": "554 U.S. 570 (2008)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "2008-06-26",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "The Second Amendment protects an individual right to possess and carry firearms for lawful purposes, including self-defense in the home, and a complete ban on handguns and a requirement that lawfully possessed firearms be kept nonfunctional in the home violates this right.",
+        "holding_type": "affirmative",
+        "majority_author": "Scalia",
+        "per_curiam": false,
+        "vote": "5-4",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "2008-06-26",
+        "valid_until": null,
+        "opinions": [
+          {
+            "type": "dissent",
+            "author": "Stevens"
+          },
+          {
+            "type": "dissent",
+            "author": "Breyer"
+          }
+        ],
+        "notes": "The majority held that the prefatory militia clause does not limit the operative clause protecting an individual right to bear arms. The dissents argued the Second Amendment protects only militia-related interests and does not protect an unlimited individual right to self-defense firearms."
+      },
+      {
+        "@type": "Case",
+        "id": "harper_v_virginia_state_board_of_elections_1966",
+        "short_name": "Harper v. Virginia State Board of Elections",
+        "full_name": "Harper v. Virginia State Board of Elections",
+        "citation": "383 U.S. 663 (1966)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1966",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "A state poll tax violates the Equal Protection Clause of the Fourteenth Amendment because the right to vote is a fundamental right and wealth has no rational connection to eligibility to vote, requiring heightened scrutiny that the poll tax cannot satisfy.",
+        "holding_type": "affirmative",
+        "majority_author": "Douglas",
+        "per_curiam": false,
+        "vote": "6-3",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1966",
+        "valid_until": null,
+        "opinions": [
+          "dissent",
+          "dissent"
+        ],
+        "notes": "Overruled Breedlove v. Suttles (1937). Justice Harlan dissented on rational basis grounds; Justice Black dissented on precedent and textual grounds.",
+        "courtlistener_id": "107197"
+      },
+      {
+        "@type": "Case",
+        "id": "breedlove_v_suttles_1937",
+        "short_name": "Breedlove v. Suttles",
+        "full_name": "Breedlove v. Suttles",
+        "citation": "302 U.S. 277 (1937)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1937-05-24",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "affirmed",
+        "holding": "A state poll tax is within the powers of the states and does not violate the Constitution.",
+        "holding_type": "affirmative",
+        "majority_author": null,
+        "per_curiam": false,
+        "vote": null,
+        "status": "overruled",
+        "precedential_weight": "none",
+        "valid_from": "1937-05-24",
+        "valid_until": "1966",
+        "data_tier": "inferred",
+        "opinions": [],
+        "notes": "Stub node — overruled by harper_v_virginia_state_board_of_elections_1966. Full node to be added when this case is modeled.",
+        "courtlistener_id": "102874"
+      },
+      {
+        "@type": "Case",
+        "id": "new_york_state_rifle_and_pistol_association_v_bruen_2022",
+        "short_name": "NYSRPA v. Bruen",
+        "full_name": "New York State Rifle & Pistol Association Inc. v. Bruen",
+        "citation": "597 U.S. 1 (2022)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "2022-06-23",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "New York's proper-cause requirement for concealed-carry licenses violates the Second Amendment as incorporated through the Fourteenth Amendment because it prevents law-abiding citizens from exercising their right to keep and bear arms in public for self-defense, and the constitutionality of firearm regulations must be assessed by reference to historical tradition rather than by means-ends scrutiny.",
+        "holding_type": "affirmative",
+        "majority_author": "Alito",
+        "per_curiam": false,
+        "vote": "6-3",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "2022-06-23",
+        "valid_until": null,
+        "opinions": [
+          {
+            "type": "concurrence",
+            "author": "Alito",
+            "note": "Argued that the effect of guns on American society is irrelevant to the constitutional issue"
+          },
+          {
+            "type": "concurrence",
+            "author": "Kavanaugh",
+            "note": "Joined by Chief Justice Roberts; noted that objective restrictions like background checks, training, mental health checks, and fingerprinting remain permissible"
+          },
+          {
+            "type": "concurrence",
+            "author": "Barrett",
+            "note": "Noted two methodological points the Court did not resolve"
+          },
+          {
+            "type": "dissent",
+            "author": "Breyer",
+            "note": "Joined by Justices Sotomayor and Kagan; argued states should be able to restrict guns to curb gun violence deaths"
+          }
+        ],
+        "notes": "Fractured decision on concurrences. Majority holding on the historical-tradition test for Second Amendment regulations is clear. Kavanaugh concurrence suggests some objective regulations may survive."
+      },
+      {
+        "@type": "Case",
+        "id": "paul_v_davis_1976",
+        "short_name": "Paul v. Davis",
+        "full_name": "Paul v. Davis",
+        "citation": "424 U.S. 693 (1976)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1976-01-01",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "A defamatory publication by state officials, standing alone and apart from any other governmental action, does not constitute a deprivation of liberty or property protected by the Fourteenth Amendment and does not state a claim under 42 U.S.C. § 1983.",
+        "holding_type": "by_negation",
+        "majority_author": "Rehnquist",
+        "per_curiam": false,
+        "vote": null,
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1976-01-01",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "The Court reversed the Sixth Circuit's holding that the distribution of a flyer identifying respondent as an 'active shoplifter' constituted a deprivation of due process. The Court held that mere defamation, without more, does not implicate constitutional protections.",
+        "courtlistener_id": "109402"
+      },
+      {
+        "@type": "Case",
+        "id": "sandin_v_conner_1995",
+        "short_name": "Sandin v. Conner",
+        "full_name": "Sandin v. Conner",
+        "citation": "515 U.S. 472 (1995)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1995",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "State prison regulations create a liberty interest protected by the Due Process Clause only when they impose substantive restrictions on the conditions of confinement itself, not merely procedural requirements governing the deprivation of privileges; disciplinary segregation of short duration does not constitute the type of atypical and significant hardship that triggers procedural due process protections.",
+        "holding_type": "affirmative",
+        "majority_author": "Rehnquist",
+        "per_curiam": false,
+        "vote": null,
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1995",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "Chief Justice Rehnquist delivered the opinion of the Court. The Court reexamined the circumstances under which state prison regulations afford inmates a liberty interest protected by the Due Process Clause, reversing the Ninth Circuit's holding that a prison regulation created a liberty interest in remaining free from disciplinary segregation.",
+        "courtlistener_id": "117957"
+      },
+      {
+        "@type": "Case",
+        "id": "whalen_v_roe_1977",
+        "short_name": "Whalen v. Roe",
+        "full_name": "Whalen v. Roe",
+        "citation": "429 U.S. 589 (1977)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1977-01-01",
+        "opinion_form": "per_curiam",
+        "procedural_disposition": "affirmed",
+        "holding": "A state statute requiring the reporting of prescription drug information to a state health department does not on its face violate a constitutionally protected zone of privacy under the Fourteenth Amendment, even though it collects personal information, because the statutory scheme evidences proper concern with and protection of individual privacy interests and remote possibilities of data abuse are insufficient to establish a violation of constitutional rights.",
+        "holding_type": "by_negation",
+        "majority_author": null,
+        "per_curiam": true,
+        "vote": "9-0",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1977-01-01",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "Unanimous decision. The Court recognized a constitutionally protected zone of privacy but held that the statutory scheme did not violate it.",
+        "courtlistener_id": "109592"
       }
     ],
     "doctrinal_tests": [
@@ -27690,6 +28025,117 @@
         "valid_from": "1974-07-24",
         "valid_until": null,
         "notes": "When the demands of justice in a criminal proceeding are sufficiently strong, they override the President's interest in confidentiality. The test does not recognize an absolute presidential privilege."
+      },
+      {
+        "@type": "DoctrinalTest",
+        "id": "bruen_historical_tradition_test",
+        "label": "Bruen Historical Tradition Test",
+        "description": "A two-step test for evaluating Second Amendment challenges to firearm regulations: (1) determine whether the regulated conduct falls within the scope of the Second Amendment right as historically understood; (2) if so, the government must demonstrate that the regulation is consistent with the Nation's historical tradition of firearm regulation.",
+        "area_id": "individual_rights",
+        "source_case_id": "new_york_state_rifle_and_pistol_association_v_bruen_2022",
+        "scrutiny_level": "strict",
+        "burden": "government",
+        "test_form": "conjunctive",
+        "prongs": [
+          {
+            "number": 1,
+            "label": "Scope of Second Amendment Right",
+            "description": "Determine whether the regulated conduct falls within the scope of the Second Amendment right as historically understood, including the right to carry a firearm in public for self-defense.",
+            "burden_note": "Challenger must establish that the conduct is protected by the Second Amendment.",
+            "valid_from": "2022-06-23",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 2,
+            "label": "Historical Tradition Consistency",
+            "description": "The government must demonstrate that the regulation is consistent with the Nation's historical tradition of firearm regulation. Regulations must be grounded in historical precedent, not contemporary policy judgments.",
+            "burden_note": "Government must show historical tradition supporting the regulation.",
+            "valid_from": "2022-06-23",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          }
+        ],
+        "status": "active",
+        "valid_from": "2022-06-23",
+        "valid_until": null,
+        "notes": "Replaces means-ends scrutiny framework for Second Amendment analysis. Kavanaugh concurrence suggests objective, non-discretionary regulations (background checks, training, mental health checks, fingerprinting) may satisfy historical tradition."
+      },
+      {
+        "@type": "DoctrinalTest",
+        "id": "sandin_atypical_significant_hardship_test",
+        "label": "Atypical and Significant Hardship Test",
+        "description": "A deprivation of a prison condition or privilege constitutes a liberty interest protected by the Due Process Clause only if it imposes an atypical and significant hardship on the inmate in relation to the ordinary incidents of prison life.",
+        "area_id": "procedural_due_process",
+        "source_case_id": "sandin_v_conner_1995",
+        "scrutiny_level": "rational_basis",
+        "burden": "challenger",
+        "test_form": "threshold_then_conjunctive",
+        "prongs": [
+          {
+            "number": 1,
+            "label": "Atypical Hardship",
+            "description": "The deprivation must be atypical—unusual or unexpected compared to ordinary incidents of prison life.",
+            "burden_note": "Challenger must demonstrate the deprivation is atypical.",
+            "valid_from": "1995",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 2,
+            "label": "Significant Hardship",
+            "description": "The deprivation must be significant—substantial in its impact on the inmate's confinement.",
+            "burden_note": "Challenger must demonstrate the deprivation is significant.",
+            "valid_from": "1995",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          }
+        ],
+        "status": "active",
+        "valid_from": "1995",
+        "valid_until": null,
+        "notes": "This test applies to determine whether a prison regulation or disciplinary action creates a liberty interest protected by the Due Process Clause. Short-term disciplinary segregation does not satisfy this test. The test requires both prongs to be satisfied; failure on either prong means no liberty interest exists."
+      },
+      {
+        "@type": "DoctrinalTest",
+        "id": "exceedingly_persuasive_justification_test",
+        "label": "Exceedingly Persuasive Justification Test",
+        "description": "A heightened scrutiny test requiring that sex-based classifications by state actors be supported by an exceedingly persuasive justification. The state must demonstrate that the classification serves important governmental objectives and that the discriminatory means employed are substantially related to achievement of those objectives.",
+        "area_id": "equal_protection",
+        "source_case_id": "united_states_v_virginia_1996",
+        "scrutiny_level": "heightened",
+        "burden": "government",
+        "test_form": "conjunctive",
+        "prongs": [
+          {
+            "number": 1,
+            "label": "Important Governmental Objective",
+            "description": "The state must identify an important governmental objective for the sex-based classification.",
+            "burden_note": "Government bears burden of articulating the objective.",
+            "valid_from": "1996-06-26",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 2,
+            "label": "Substantial Relationship to Objective",
+            "description": "The discriminatory means employed must be substantially related to achievement of the important governmental objective.",
+            "burden_note": "Government bears burden of demonstrating the substantial relationship.",
+            "valid_from": "1996-06-26",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          }
+        ],
+        "status": "active",
+        "valid_from": "1996-06-26",
+        "valid_until": null,
+        "notes": "This test applies to sex-based classifications by state actors. The Court emphasized that generalizations about the way women or men are cannot justify denying opportunities to individuals who do not fit those generalizations."
       }
     ]
   },
@@ -45899,6 +46345,163 @@
         "federal"
       ],
       "notes": "Wiener established the doctrine that Congress can limit presidential removal power for quasi-judicial bodies."
+    },
+    {
+      "id": "heller_establishes_second_amendment_individual_right",
+      "source_id": "district_of_columbia_v_heller_2008",
+      "target_id": "second_amendment_individual_right_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2008-06-26",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Heller established the doctrine that the Second Amendment protects an individual right to bear arms for self-defense purposes, not merely a militia-related right."
+    },
+    {
+      "id": "harper_overrules_breedlove",
+      "source_id": "harper_v_virginia_state_board_of_elections_1966",
+      "target_id": "breedlove_v_suttles_1937",
+      "edge_type": "OVERRULES",
+      "valid_from": "1966",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "overrule_type": "explicit",
+      "notes": "Harper explicitly overruled Breedlove's holding that poll taxes are within state powers."
+    },
+    {
+      "id": "harper_establishes_fundamental_right_to_vote",
+      "source_id": "harper_v_virginia_state_board_of_elections_1966",
+      "target_id": "fundamental_right_to_vote_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1966",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Harper established that the right to vote is a fundamental right triggering heightened scrutiny for voting restrictions."
+    },
+    {
+      "id": "bruen_establishes_historical_tradition_doctrine",
+      "source_id": "new_york_state_rifle_and_pistol_association_v_bruen_2022",
+      "target_id": "second_amendment_historical_tradition_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2022-06-23",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Bruen establishes the historical tradition framework as the governing doctrine for Second Amendment analysis."
+    },
+    {
+      "id": "bruen_establishes_sensitive_places_doctrine",
+      "source_id": "new_york_state_rifle_and_pistol_association_v_bruen_2022",
+      "target_id": "sensitive_places_exception_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2022-06-23",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Bruen acknowledges that sensitive places may be subject to firearm restrictions, though the scope remains to be defined."
+    },
+    {
+      "id": "bruen_establishes_bruen_historical_tradition_test",
+      "source_id": "new_york_state_rifle_and_pistol_association_v_bruen_2022",
+      "target_id": "bruen_historical_tradition_test",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2022-06-23",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Bruen establishes the two-step historical tradition test as the operative framework for Second Amendment claims."
+    },
+    {
+      "id": "paul_v_davis_establishes_defamation_not_constitutional_deprivation",
+      "source_id": "paul_v_davis_1976",
+      "target_id": "defamation_not_constitutional_deprivation",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1976-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Paul v. Davis established the principle that defamatory speech by state officials, standing alone, does not constitute a constitutional deprivation cognizable under § 1983."
+    },
+    {
+      "id": "sandin_establishes_prison_liberty_interest_doctrine",
+      "source_id": "sandin_v_conner_1995",
+      "target_id": "prison_liberty_interest_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1995",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Sandin v. Conner established the prison liberty interest doctrine as a refinement of Wolff v. McDonnell, clarifying that state prison regulations create liberty interests only when they impose substantive restrictions on conditions of confinement, not merely procedural requirements."
+    },
+    {
+      "id": "sandin_establishes_sandin_atypical_significant_hardship_test",
+      "source_id": "sandin_v_conner_1995",
+      "target_id": "sandin_atypical_significant_hardship_test",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1995",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Sandin v. Conner established the atypical and significant hardship test as the standard for determining whether a prison deprivation triggers procedural due process protections."
+    },
+    {
+      "id": "united_states_v_virginia_establishes_exceedingly_persuasive_justification_test",
+      "source_id": "united_states_v_virginia_1996",
+      "target_id": "exceedingly_persuasive_justification_test",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1996-06-26",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "United States v. Virginia established the exceedingly persuasive justification test as the governing standard for evaluating sex-based classifications under equal protection."
+    },
+    {
+      "id": "united_states_v_virginia_applies_sex_based_classification_doctrine",
+      "source_id": "united_states_v_virginia_1996",
+      "target_id": "sex_based_classification_equal_protection",
+      "edge_type": "APPLIES",
+      "valid_from": "1996-06-26",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "The Court applied the doctrine of sex-based classification review under equal protection to Virginia's maintenance of VMI as a single-sex institution."
+    },
+    {
+      "id": "whalen_establishes_privacy_zone_doctrine",
+      "source_id": "whalen_v_roe_1977",
+      "target_id": "privacy_zone_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1977-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Whalen establishes the framework for analyzing privacy zone claims under the Fourteenth Amendment."
     }
   ],
   "schema_issues_found": [
