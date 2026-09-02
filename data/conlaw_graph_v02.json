@@ -7023,6 +7023,422 @@
         "valid_until": null,
         "secondary_area_ids": [],
         "notes": "Establishes that the privacy zone is not absolute and that state regulatory schemes can survive constitutional scrutiny if they include adequate safeguards."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "procedural_due_process_sterilization",
+        "label": "Procedural Due Process in Sterilization Cases",
+        "description": "The doctrine that state sterilization statutes satisfy due process requirements when accompanied by adequate procedural safeguards including notice, hearing, judicial review, and observation period.",
+        "area_id": "procedural_due_process",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1927-05-02",
+        "valid_until": null,
+        "secondary_area_ids": [
+          "substantive_due_process"
+        ],
+        "notes": "Established in Buck v. Bell; reflects early 20th century approach to procedural protections in involuntary sterilization cases."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "gender_classification_compensation_doctrine",
+        "label": "Gender Classification as Compensation for Past Discrimination",
+        "description": "Gender classifications may be upheld under equal protection scrutiny when they serve the important governmental objective of redressing past economic discrimination against women, provided the classification is substantially related to that objective and is not based on archaic generalizations or role-typing.",
+        "area_id": "equal_protection",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1977-01-01",
+        "valid_until": null,
+        "secondary_area_ids": [],
+        "notes": "Established in Califano v. Webster. Distinguishes between permissible compensatory classifications and impermissible classifications based on stereotypes or generalizations."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "unbridled_discretion_licensing_doctrine",
+        "label": "Unbridled Discretion in Content-Based Licensing",
+        "description": "A licensing scheme that grants government officials standardless or open-ended discretion to approve or deny permits based on the content of speech or viewpoint is facially invalid under the First Amendment because it invites discriminatory application and promotes self-censorship.",
+        "area_id": "prior_restraint",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1988-01-01",
+        "valid_until": null,
+        "secondary_area_ids": [
+          "free_speech"
+        ],
+        "notes": "Established in City of Lakewood v. Plain Dealer Publishing Co. Applies to licensing schemes for newsracks and similar expressive activities on public property."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "shock_the_conscience_doctrine",
+        "label": "Shock the Conscience Doctrine",
+        "description": "A substantive due process doctrine requiring that government conduct must be so egregious, deliberate, or reckless as to shock the conscience in order to violate the Fourteenth Amendment's protection of liberty interests.",
+        "area_id": "substantive_due_process",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1998",
+        "valid_until": null,
+        "secondary_area_ids": [],
+        "notes": "Established in County of Sacramento v. Lewis as the standard for evaluating whether negligent or reckless government conduct violates substantive due process. Requires more than negligence; conduct must be deliberately indifferent or reckless."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "voter_id_requirement_doctrine",
+        "label": "Photo Identification Requirement for Voters",
+        "description": "A state may impose a photo identification requirement for in-person voters when the requirement is closely related to legitimate state interests in preventing voter fraud and is neutral and nondiscriminatory, provided the burden on the right to vote is not undue.",
+        "area_id": "equal_protection",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "2008-01-01",
+        "valid_until": null,
+        "secondary_area_ids": [],
+        "notes": "Established in Crawford v. Marion County Election Board as a plurality decision. The doctrine permits voter identification requirements that satisfy a balancing test between state interests and burden on voting rights."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "state_action_limitation_doctrine",
+        "label": "State Action Limitation Doctrine",
+        "description": "The Due Process Clause of the Fourteenth Amendment operates as a limitation on state power to deprive individuals of life, liberty, and property, not as an affirmative obligation to protect individuals from harm inflicted by private actors.",
+        "area_id": "substantive_due_process",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1989-06-23",
+        "valid_until": null,
+        "secondary_area_ids": [],
+        "notes": "Established in DeShaney; clarifies that the Due Process Clause does not create affirmative duties to protect against private violence absent state creation of the dangerous condition."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "post_conviction_dna_access_doctrine",
+        "label": "Post-Conviction DNA Access Doctrine",
+        "description": "The doctrine that criminal defendants do not possess a constitutional right to post-conviction access to biological evidence for DNA testing under the Fourteenth Amendment Due Process Clause, and that adequate state post-conviction relief procedures satisfy constitutional requirements.",
+        "area_id": "procedural_due_process",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "2009-06-18",
+        "valid_until": null,
+        "secondary_area_ids": [],
+        "notes": "Established in District Attorney's Office v. Osborne. The Court deferred to state legislatures to establish procedures for DNA evidence access and found that existing state post-conviction relief procedures were constitutionally adequate."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "contraceptive_access_equal_protection",
+        "label": "Equal Protection Right to Contraceptive Access",
+        "description": "The constitutional principle that unmarried individuals have the same equal protection right to access contraceptives as married individuals, and that marital status cannot serve as a basis for discriminatory restrictions on contraceptive distribution.",
+        "area_id": "equal_protection",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1972",
+        "valid_until": null,
+        "secondary_area_ids": [
+          "substantive_due_process"
+        ],
+        "notes": "Extends the substantive due process right to contraceptive access established in Griswold v. Connecticut to unmarried individuals through equal protection analysis."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "corporate_political_speech_doctrine",
+        "label": "Corporate Political Speech Doctrine",
+        "description": "The doctrine that corporations possess First Amendment rights to engage in political speech, including spending money to influence ballot initiatives and elections, when the speech addresses matters of public concern, regardless of whether the matter materially affects the corporation's assets or holdings.",
+        "area_id": "free_speech",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1978-01-01",
+        "valid_until": null,
+        "secondary_area_ids": [
+          "first_amendment"
+        ],
+        "notes": "Established in First National Bank of Boston v. Bellotti. Holds that the identity of the speaker (corporation versus individual) does not diminish First Amendment protection for political speech on matters of public concern."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "political_function_exception_aliens",
+        "label": "Political Function Exception for Alien Exclusion",
+        "description": "States possess a historical power to exclude aliens from participation in democratic political institutions and from positions involving basic governmental functions, subject to rational basis review under the Equal Protection Clause.",
+        "area_id": "equal_protection",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1978-01-01",
+        "valid_until": null,
+        "secondary_area_ids": [],
+        "notes": "Established in Foley v. Connelie. Applies rational basis scrutiny to alienage classifications when the position involves a basic governmental function."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "pregnancy_classification_doctrine",
+        "label": "Pregnancy Classification Doctrine",
+        "description": "The doctrine that classifications based on pregnancy are not inherently sex-based classifications under the Equal Protection Clause, but rather classifications between pregnant and non-pregnant persons, subject to rational basis review.",
+        "area_id": "equal_protection",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1974-01-01",
+        "valid_until": null,
+        "secondary_area_ids": [],
+        "notes": "Established in Geduldig v. Aiello. This doctrine has been substantially limited by subsequent cases, particularly in the context of employment discrimination, but remains relevant to social welfare program classifications."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "contracts_clause_emergency_limitation",
+        "label": "Contracts Clause Emergency Limitation Doctrine",
+        "description": "The Contracts Clause is not absolute and may be limited when there is a genuine public emergency requiring the state to restrain private contractual rights to further the public interest. The Constitution must be interpreted flexibly to allow states to respond to unforeseen modern problems.",
+        "area_id": "constitutional_law",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1934-01-01",
+        "valid_until": null,
+        "secondary_area_ids": [],
+        "notes": "Established in Blaisdell; permits state police power to override Contracts Clause protections during genuine emergencies."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "off_campus_student_speech_doctrine",
+        "label": "Off-Campus Student Speech Doctrine",
+        "description": "The First Amendment limits but does not entirely prohibit regulation of off-campus student speech by public school officials. Schools may regulate off-campus speech only when it materially disrupts classwork, involves substantial disorder, invades the rights of others, or falls within established exceptions for on-campus speech such as indecent/lewd/vulgar speech, speech promoting illicit drug use, or speech bearing the imprimatur of the school.",
+        "area_id": "free_speech",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "2021-06-23",
+        "valid_until": null,
+        "secondary_area_ids": [
+          "individual_rights"
+        ],
+        "notes": "Established in Mahanoy. Builds on Tinker v. Des Moines and recognizes three circumstances where schools may regulate student speech: (1) indecent, lewd, or vulgar speech on school grounds, (2) speech promoting illicit drug use during class trips, (3) speech appearing to bear school imprimatur. Three features of off-campus speech diminish need for First Amendment leeway: (1) falls within parental rather than school responsibility, (2) coupled regulations would prohibit speech entirely, (3) school has interest in protecting unpopular off-campus expression."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "age_classification_rational_basis_doctrine",
+        "label": "Age Classification Under Rational Basis Review",
+        "description": "Age classifications in legislation are subject to rational basis review rather than strict scrutiny. A classification based on age is constitutional if it rationally relates to a legitimate state interest, even if the classification is not perfectly tailored to that interest.",
+        "area_id": "equal_protection",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1976-06-25",
+        "valid_until": null,
+        "secondary_area_ids": [],
+        "notes": "Established in Murgia that age is not a suspect classification triggering strict scrutiny. The rational basis test permits classifications that rationally further legitimate state interests, even if some individuals within the age group could perform the job."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "interdistrict_desegregation_remedy_doctrine",
+        "label": "Interdistrict Desegregation Remedy Doctrine",
+        "description": "A desegregation remedy affecting multiple school districts is impermissible absent a showing of significant violation by those districts or evidence of interdistrict violation or effect.",
+        "area_id": "equal_protection",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1974-01-01",
+        "valid_until": null,
+        "secondary_area_ids": [],
+        "notes": "Established in Milliken v. Bradley as a limitation on the scope of desegregation remedies under the Equal Protection Clause."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "underinclusive_statute_standing_doctrine",
+        "label": "Standing to Challenge Underinclusive Statutes",
+        "description": "Doctrine holding that a person burdened by an underinclusive statute has standing to challenge it on equal protection grounds, even if the State could respond by extending benefits to the disfavored class or denying benefits to all.",
+        "area_id": "justiciability",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1979-06-05",
+        "valid_until": null,
+        "secondary_area_ids": [
+          "equal_protection"
+        ],
+        "notes": "The Court held that the burden imposed by the statute itself is sufficient to establish standing, and that uncertainty about how the State will respond to a finding of unconstitutionality does not defeat standing."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "race_based_classification_equal_protection",
+        "label": "Race-Based Classification Doctrine",
+        "description": "Race is a suspect classification that cannot be used as a basis for governmental action, including family law decisions, even when motivated by concern for a child's welfare or social consequences.",
+        "area_id": "equal_protection",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1984",
+        "valid_until": null,
+        "secondary_area_ids": [],
+        "notes": "Palmore establishes that race-based reasoning in custody decisions is per se unconstitutional under the Fourteenth Amendment's Equal Protection Clause, regardless of the court's benign intent or concern for the child's social adjustment."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "free_exercise_neutrality_doctrine",
+        "label": "Free Exercise Neutrality Doctrine",
+        "description": "Government action affecting religious exercise must satisfy a minimum requirement of neutrality—the government cannot single out religious entities by name for restrictions while permitting similarly situated secular entities to operate under less restrictive conditions.",
+        "area_id": "free_exercise",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "2020-11-25",
+        "valid_until": null,
+        "secondary_area_ids": [],
+        "notes": "Established in Roman Catholic Diocese of Brooklyn v. Cuomo as a requirement for evaluating COVID-19 capacity restrictions on religious services."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "free_exercise_comparable_secular_activity_doctrine",
+        "label": "Comparable Secular Activity Doctrine",
+        "description": "Government regulations are not neutral and generally applicable, and therefore trigger strict scrutiny under the Free Exercise Clause, whenever they treat any comparable secular activity more favorably than religious exercise. Comparability is judged against the asserted government interest that justifies the regulation, concerned with the risks various activities pose rather than the reasons why people gather.",
+        "area_id": "free_exercise_of_religion",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "2021-04-09",
+        "valid_until": null,
+        "secondary_area_ids": [],
+        "notes": "Clarifies and refines the standard from Roman Catholic Diocese of Brooklyn v. Cuomo (2020). Establishes that it is no answer that a State treats some comparable secular businesses or other activities as poorly as or even less favorably than the religious exercise at issue."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "free_exercise_narrow_tailoring_precautions_doctrine",
+        "label": "Narrow Tailoring and Precautions Doctrine",
+        "description": "Under strict scrutiny for Free Exercise Clause challenges, narrow tailoring requires the government to show that measures less restrictive of the First Amendment activity could not address its interest. Where the government permits other activities to proceed with precautions, it must show that the religious exercise at issue is more dangerous than those activities even when the same precautions are applied. Otherwise, precautions that suffice for other activities suffice for religious exercise too.",
+        "area_id": "free_exercise_of_religion",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "2021-04-09",
+        "valid_until": null,
+        "secondary_area_ids": [],
+        "notes": "Clarifies the burden on government in strict scrutiny analysis for Free Exercise Clause cases. The government cannot merely assert that certain risk factors are always present in worship or always absent from other secular activities."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "free_exercise_mootness_constant_threat_doctrine",
+        "label": "Mootness and Constant Threat Doctrine",
+        "description": "Even if the government withdraws or modifies a restriction in the course of litigation, that does not necessarily moot the case. So long as a case is not moot, litigants otherwise entitled to emergency injunctive relief remain entitled to such relief where the applicants remain under a constant threat that government officials will use their power to reinstate the challenged restrictions.",
+        "area_id": "free_exercise_of_religion",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "2021-04-09",
+        "valid_until": null,
+        "secondary_area_ids": [
+          "justiciability"
+        ],
+        "notes": "Addresses the mootness doctrine in the context of Free Exercise Clause challenges to government restrictions that may be withdrawn or modified during litigation."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "religious_status_discrimination_doctrine",
+        "label": "Religious Status Discrimination Doctrine",
+        "description": "Laws that deny an otherwise generally available benefit because of religious status are unconstitutional under the Free Exercise Clause, even if the law does not prevent the religious organization from practicing its religion. The distinction turns on whether the law discriminates against some or all religious beliefs.",
+        "area_id": "free_exercise",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "2017-06-26",
+        "valid_until": null,
+        "secondary_area_ids": [],
+        "notes": "Established in Trinity Lutheran Church v. Comer. The doctrine holds that a state's interest in drawing a wide berth around religious establishment concerns is not sufficiently compelling to justify discrimination against religious organizations in neutral aid programs."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "neutral_generally_applicable_aid_doctrine",
+        "label": "Neutral and Generally Applicable Aid Doctrine",
+        "description": "Laws that are neutral and generally applicable in providing aid or benefits may be upheld even if they incidentally hamper religion, but only if they do not facially discriminate against religious organizations or religious status.",
+        "area_id": "free_exercise",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "2017-06-26",
+        "valid_until": null,
+        "secondary_area_ids": [],
+        "notes": "Established in Trinity Lutheran Church v. Comer as a counterpoint to the religious status discrimination doctrine. The key distinction is whether the law facially discriminates based on religious character or status."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "content_neutral_time_place_manner_doctrine",
+        "label": "Content-Neutral Time, Place, and Manner Regulation",
+        "description": "A regulatory framework permitting government to restrict the time, place, or manner of expressive activity through content-neutral means that serve significant government interests, are narrowly tailored to those interests, and leave open ample alternative channels for communication.",
+        "area_id": "free_speech",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1989-06-22",
+        "valid_until": null,
+        "secondary_area_ids": [],
+        "notes": "Established and clarified in Ward v. Rock Against Racism as the governing standard for content-neutral restrictions on expressive activity in public forums."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "content_neutral_zoning_doctrine",
+        "label": "Content-Neutral Zoning of Adult Establishments",
+        "description": "A regulatory framework permitting municipalities to restrict the location of adult theaters and similar establishments through distance-based zoning ordinances that are content-neutral and serve legitimate governmental interests, without constituting a prior restraint or violating equal protection.",
+        "area_id": "free_speech",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1976",
+        "valid_until": null,
+        "secondary_area_ids": [
+          "equal_protection"
+        ],
+        "notes": "Established in Young v. American Mini Theatres as a permissible form of content-neutral regulation of expressive conduct."
       }
     ],
     "areas": [
@@ -22649,6 +23065,734 @@
         "opinions": [],
         "notes": "Unanimous decision. The Court recognized a constitutionally protected zone of privacy but held that the statutory scheme did not violate it.",
         "courtlistener_id": "109592"
+      },
+      {
+        "@type": "Case",
+        "id": "buck_v_bell_1927",
+        "short_name": "Buck v. Bell",
+        "full_name": "Buck v. Bell",
+        "citation": "274 U.S. 200 (1927)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1927-05-02",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "affirmed",
+        "holding": "A state statute authorizing the sexual sterilization of institutionalized individuals does not violate the Constitution when the procedure is preceded by adequate procedural safeguards, including notice, hearing, and judicial review.",
+        "holding_type": "affirmative",
+        "majority_author": "Holmes",
+        "per_curiam": false,
+        "vote": null,
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1927-05-02",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "The Court upheld Virginia's compulsory sterilization statute on substantive due process grounds, finding adequate procedural protections satisfied constitutional requirements.",
+        "courtlistener_id": "101076"
+      },
+      {
+        "@type": "Case",
+        "id": "califano_v_webster_1977",
+        "short_name": "Califano v. Webster",
+        "full_name": "Califano v. Webster",
+        "citation": "430 U.S. 313 (1977)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1977-01-01",
+        "opinion_form": "per_curiam",
+        "procedural_disposition": "reversed",
+        "holding": "Gender classifications in Social Security benefits that serve the important governmental objective of redressing past economic discrimination against women and are substantially related to that objective satisfy equal protection scrutiny under the Fifth Amendment's Due Process Clause.",
+        "holding_type": "affirmative",
+        "majority_author": null,
+        "per_curiam": true,
+        "vote": null,
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1977-01-01",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "Per curiam opinion. The Court upheld a gender classification in Social Security benefits as constitutional compensation for past economic discrimination against women.",
+        "courtlistener_id": "109618"
+      },
+      {
+        "@type": "Case",
+        "id": "city_of_lakewood_v_plain_dealer_publishing_co_1988",
+        "short_name": "City of Lakewood v. Plain Dealer Publishing Co.",
+        "full_name": "City of Lakewood v. Plain Dealer Publishing Co.",
+        "citation": "486 U.S. 750 (1988)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1988-01-01",
+        "opinion_form": "plurality",
+        "procedural_disposition": "reversed",
+        "holding": "A licensing ordinance that grants city officials unbridled discretion to grant or deny newsrack permits based on content and viewpoint is facially invalid under the First Amendment, even if the ordinance requires officials to provide explanations for denials, because such discretion promotes self-censorship and lacks adequate standards to prevent discriminatory application.",
+        "holding_type": "affirmative",
+        "majority_author": null,
+        "per_curiam": false,
+        "vote": "4-3",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1988-01-01",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "Plurality opinion (4-3). The holding reflects what commanded a majority on the core issue: facial invalidity of the ordinance due to unbridled discretion. The Court reversed the Court of Appeals decision affirming the district court.",
+        "courtlistener_id": "112103"
+      },
+      {
+        "@type": "Case",
+        "id": "city_of_mobile_v_bolden_1980",
+        "short_name": "City of Mobile v. Bolden",
+        "full_name": "City of Mobile, Alabama v. Bolden",
+        "citation": "446 U.S. 55 (1980)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1980-01-01",
+        "opinion_form": "plurality",
+        "procedural_disposition": "reversed",
+        "holding": "An at-large electoral system for municipal elections does not violate the Fourteenth or Fifteenth Amendment absent proof of discriminatory intent, and Section 2 of the Voting Rights Act of 1965 does not impose a broader standard than the Fifteenth Amendment itself.",
+        "holding_type": "by_negation",
+        "majority_author": "Stewart (plurality)",
+        "per_curiam": false,
+        "vote": null,
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1980-01-01",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "Plurality opinion. Justice Stewart announced the judgment joined by Chief Justice Burger, Justice Powell, and Justice Rehnquist. The Court reversed the lower courts' finding that Mobile's at-large electoral system violated the Fourteenth and Fifteenth Amendments. The holding reflects that discriminatory intent, not mere discriminatory effect, is required to establish a constitutional violation in voting rights cases."
+      },
+      {
+        "@type": "Case",
+        "id": "county_of_sacramento_v_lewis_1998",
+        "short_name": "County of Sacramento v. Lewis",
+        "full_name": "County of Sacramento v. Lewis",
+        "citation": "523 U.S. 833 (1998)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1998",
+        "opinion_form": "per_curiam",
+        "procedural_disposition": "affirmed",
+        "holding": "Negligent infliction of harm during a high-speed police chase does not violate the Fourteenth Amendment's due process clause because such conduct, lacking intent to injure, does not shock the conscience as required for a substantive due process violation.",
+        "holding_type": "by_negation",
+        "majority_author": null,
+        "per_curiam": true,
+        "vote": "9-0",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1998",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "Unanimous decision. Court held that Fourth Amendment seizure protections do not apply to high-speed police chases absent actual seizure. Addressed both Fourth Amendment and Fourteenth Amendment due process claims.",
+        "courtlistener_id": "118214"
+      },
+      {
+        "@type": "Case",
+        "id": "crawford_v_marion_county_election_board_2008",
+        "short_name": "Crawford v. Marion County Election Board",
+        "full_name": "Crawford v. Marion County Election Board",
+        "citation": "553 U.S. 181 (2008)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "2008-01-01",
+        "opinion_form": "plurality",
+        "procedural_disposition": "affirmed",
+        "holding": "A state photo identification requirement for in-person voters does not impose an undue burden on the right to vote when the requirement is closely related to the state's legitimate interests in preventing voter fraud and is neutral and nondiscriminatory.",
+        "holding_type": "affirmative",
+        "majority_author": "Stevens (plurality)",
+        "per_curiam": false,
+        "vote": "6-3",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "2008-01-01",
+        "valid_until": null,
+        "opinions": [
+          "concurrence",
+          "dissent"
+        ],
+        "notes": "Plurality decision. Justice Stevens wrote a concurring opinion; Justice Scalia wrote a concurring opinion. Justices Souter and Breyer each wrote dissenting opinions, with Justice Ginsburg joining Justice Souter's dissent. No single opinion commanded a majority of the Court.",
+        "courtlistener_id": "145813"
+      },
+      {
+        "@type": "Case",
+        "id": "deshaney_v_winnebago_county_department_of_social_services_1989",
+        "short_name": "DeShaney v. Winnebago County",
+        "full_name": "DeShaney v. Winnebago County Department of Social Services",
+        "citation": "489 U.S. 189 (1989)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1989-06-23",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "affirmed",
+        "holding": "The Due Process Clause does not impose an affirmative duty on the State to provide protection against private actors or to prevent harm inflicted by private parties when the State did not create the dangerous condition.",
+        "holding_type": "by_negation",
+        "majority_author": "Rehnquist",
+        "per_curiam": false,
+        "vote": "6-3",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1989-06-23",
+        "valid_until": null,
+        "opinions": [
+          "dissent"
+        ],
+        "notes": "The Court held that the Due Process Clause is a limitation on state action, not an affirmative guarantee of safety. The dissent argued for recognition of a special duty when the state has custody or control over an individual.",
+        "courtlistener_id": "112202"
+      },
+      {
+        "@type": "Case",
+        "id": "district_attorneys_office_for_the_third_judicial_district_v_osborne_2009",
+        "short_name": "District Attorney's Office v. Osborne",
+        "full_name": "District Attorney's Office for the Third Judicial District v. Osborne",
+        "citation": "557 U.S. 52 (2009)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "2009-06-18",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "A criminal defendant has no constitutional right under the Fourteenth Amendment Due Process Clause to obtain post-conviction access to biological evidence for DNA testing, and adequate state post-conviction relief procedures satisfy due process requirements.",
+        "holding_type": "by_negation",
+        "majority_author": "Roberts",
+        "per_curiam": false,
+        "vote": "5-4",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "2009-06-18",
+        "valid_until": null,
+        "opinions": [
+          {
+            "type": "concurrence",
+            "author": "Alito",
+            "joined_by": [
+              "Kennedy",
+              "Thomas"
+            ],
+            "summary": "Agreed with majority but argued additionally that § 1983 was inappropriate without state court exhaustion and that tactical decisions not to pursue DNA testing at trial preclude post-conviction access."
+          },
+          {
+            "type": "dissent",
+            "author": "Stevens",
+            "joined_by": [
+              "Ginsburg",
+              "Breyer",
+              "Souter"
+            ],
+            "summary": "Disagreed that Osborne should be denied access to evidence that could conclusively prove guilt or innocence."
+          },
+          {
+            "type": "dissent",
+            "author": "Souter",
+            "joined_by": [],
+            "summary": "Argued that Alaska's post-conviction relief procedures were insufficiently effective to satisfy the Due Process Clause."
+          }
+        ],
+        "notes": "5-4 decision. Chief Justice Roberts wrote majority opinion joined by Scalia, Kennedy, and Thomas. Justice Alito wrote concurrence joined by Kennedy and in part by Thomas. Justices Stevens, Ginsburg, Breyer, and Souter dissented."
+      },
+      {
+        "@type": "Case",
+        "id": "eisenstadt_v_baird_1972",
+        "short_name": "Eisenstadt v. Baird",
+        "full_name": "Eisenstadt v. Baird",
+        "citation": "405 U.S. 438 (1972)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1972",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "A state law that restricts access to contraceptives based on marital status violates the Equal Protection Clause of the Fourteenth Amendment, as unmarried individuals have the same constitutional right to access contraception as married individuals.",
+        "holding_type": "affirmative",
+        "majority_author": "Brennan",
+        "per_curiam": false,
+        "vote": "6-1",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1972",
+        "valid_until": null,
+        "opinions": [
+          {
+            "type": "concurrence",
+            "author": "Douglas",
+            "summary": "Argued the conviction violated the First Amendment's protections for speech and educational advocacy."
+          },
+          {
+            "type": "concurrence",
+            "author": "White",
+            "summary": "Joined by Blackmun; reasoned that the conviction could not stand because the state failed to prove the contraceptive posed any health risk."
+          },
+          {
+            "type": "dissent",
+            "author": "Burger",
+            "summary": "Argued the law legitimately regulated medical distribution of contraceptives and Baird lacked standing to challenge it on behalf of unmarried persons."
+          }
+        ],
+        "notes": "Vote was 6-1. Justices Powell and Rehnquist took no part in the case. The Court applied equal protection analysis to strike down a marital-status-based classification affecting access to contraceptives.",
+        "courtlistener_id": "108489"
+      },
+      {
+        "@type": "Case",
+        "id": "first_national_bank_of_boston_v_bellotti_1978",
+        "short_name": "First National Bank of Boston v. Bellotti",
+        "full_name": "First National Bank of Boston v. Francis X. Bellotti",
+        "citation": "435 U.S. 765 (1978)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1978-01-01",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "A state statute prohibiting corporations from spending money to influence ballot initiatives on matters that do not materially affect their assets violates the First Amendment, because the right to attempt to influence election outcomes is a primary right the First Amendment protects, and the source of the speech (corporation versus individual) does not diminish this protection.",
+        "holding_type": "affirmative",
+        "majority_author": "Powell",
+        "per_curiam": false,
+        "vote": "5-4",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1978-01-01",
+        "valid_until": null,
+        "opinions": [
+          {
+            "type": "concurrence",
+            "author": "Burger"
+          },
+          {
+            "type": "dissent",
+            "author": "White"
+          },
+          {
+            "type": "dissent",
+            "author": "Rehnquist"
+          }
+        ],
+        "notes": "5-4 decision. Chief Justice Burger concurred. Justices White and Rehnquist dissented. The case established that corporate political speech on matters of public concern receives First Amendment protection."
+      },
+      {
+        "@type": "Case",
+        "id": "foley_v_connelie_1978",
+        "short_name": "Foley v. Connelie",
+        "full_name": "Edmund Foley v. John Connelie",
+        "citation": "435 U.S. 291 (1978)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1978-01-01",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "affirmed",
+        "holding": "States have a historical power to exclude aliens from participation in democratic political institutions, and a state statute requiring United States citizenship for appointment to the state police force does not violate the Equal Protection Clause when the police function is a basic function of government.",
+        "holding_type": "affirmative",
+        "majority_author": null,
+        "per_curiam": false,
+        "vote": "6-3",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1978-01-01",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "Majority opinion. The Court applied rational basis review to the alien classification, requiring only a rational relationship between the classification and a valid state interest."
+      },
+      {
+        "@type": "Case",
+        "id": "geduldig_v_aiello_1974",
+        "short_name": "Geduldig v. Aiello",
+        "full_name": "Geduldig, Director, Department of Human Resources Development v. Aiello",
+        "citation": "417 U.S. 484 (1974)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1974-01-01",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "A state disability insurance program does not violate the Equal Protection Clause by excluding disabilities resulting from pregnancy, even if the exclusion has a disparate impact on women, when the state has a legitimate interest in maintaining program solvency and contribution rates.",
+        "holding_type": "by_negation",
+        "majority_author": "Stewart",
+        "per_curiam": false,
+        "vote": "6-3",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1974-01-01",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "The Court rejected the argument that pregnancy-based classifications constitute sex discrimination under the Equal Protection Clause, treating the classification as one between pregnant and non-pregnant persons rather than between men and women.",
+        "courtlistener_id": "8997187"
+      },
+      {
+        "@type": "Case",
+        "id": "home_building_and_loan_association_v_blaisdell_1934",
+        "short_name": "Home Building & Loan Assoc. v. Blaisdell",
+        "full_name": "Home Building & Loan Association v. Blaisdell",
+        "citation": "290 U.S. 398 (1934)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1934-01-01",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "affirmed",
+        "holding": "A state law extending the time period for mortgage repayment during an economic emergency does not violate the Contracts Clause when there is a genuine emergency, the legislation is designed to serve the public interest, the relief is narrowly tailored, the mortgagor's interests are not seriously undermined, and the legislation is temporary.",
+        "holding_type": "affirmative",
+        "majority_author": "Hughes",
+        "per_curiam": false,
+        "vote": null,
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1934-01-01",
+        "valid_until": null,
+        "opinions": [
+          {
+            "type": "dissent",
+            "author": "Sutherland",
+            "joined_by": [
+              "Van Devanter",
+              "McReynolds",
+              "Butler"
+            ]
+          }
+        ],
+        "notes": "The Court applied a five-factor test to evaluate whether the Contracts Clause permits state action during economic emergency."
+      },
+      {
+        "@type": "Case",
+        "id": "mahanoy_area_school_district_v_b_l_2021",
+        "short_name": "Mahanoy Area School District v. B.L.",
+        "full_name": "Mahanoy Area School District v. B.L.",
+        "citation": "594 U.S. 180 (2021)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "2021-06-23",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "affirmed",
+        "holding": "The First Amendment limits but does not entirely prohibit regulation of off-campus student speech by public school officials; schools may regulate off-campus student speech only in narrow circumstances including speech that materially disrupts classwork, involves substantial disorder, invades the rights of others, or falls within established exceptions for on-campus speech, and a school violates the First Amendment by suspending a student from an extracurricular team for off-campus vulgar social media posts that do not cause substantial disruption or threaten harm to others' rights.",
+        "holding_type": "affirmative",
+        "majority_author": "Breyer",
+        "per_curiam": false,
+        "vote": "8-1",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "2021-06-23",
+        "valid_until": null,
+        "opinions": [
+          {
+            "type": "concurrence",
+            "author": "Alito",
+            "joined_by": [
+              "Gorsuch"
+            ],
+            "summary": "Argued that regulation of off-premises student speech raises serious First Amendment concerns and school officials should proceed cautiously."
+          },
+          {
+            "type": "dissent",
+            "author": "Thomas",
+            "summary": "Argued that schools have historically had authority to regulate off-campus speech with proximate tendency to harm the school, its faculty, students, or programs."
+          }
+        ],
+        "notes": "8-1 decision. Justice Alito concurred joined by Justice Gorsuch. Justice Thomas dissented. The Court affirmed the Third Circuit's decision that the school violated B.L.'s First Amendment rights.",
+        "courtlistener_id": "4894053"
+      },
+      {
+        "@type": "Case",
+        "id": "massachusetts_board_of_retirement_v_murgia_1976",
+        "short_name": "Massachusetts Board of Retirement v. Murgia",
+        "full_name": "Massachusetts Board of Retirement v. Murgia",
+        "citation": "427 U.S. 307 (1976)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1976-06-25",
+        "opinion_form": "per_curiam",
+        "procedural_disposition": "reversed",
+        "holding": "A mandatory retirement age of 50 for uniformed state police officers does not violate the Equal Protection Clause when tested under the rational basis standard, as the classification rationally relates to the legitimate state interest in maintaining a physically capable police force.",
+        "holding_type": "affirmative",
+        "majority_author": null,
+        "per_curiam": true,
+        "vote": null,
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1976-06-25",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "The Court reversed the three-judge district court's finding that the age classification lacked a rational basis. The opinion establishes that age classifications are subject to rational basis review, not strict scrutiny.",
+        "courtlistener_id": "109515"
+      },
+      {
+        "@type": "Case",
+        "id": "milliken_v_bradley_1974",
+        "short_name": "Milliken v. Bradley",
+        "full_name": "Milliken v. Bradley",
+        "citation": "418 U.S. 717 (1974)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1974-01-01",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "A district court may not impose a desegregation remedy encompassing multiple school districts absent a showing of significant violation by those districts or evidence of interdistrict violation or effect.",
+        "holding_type": "by_negation",
+        "majority_author": null,
+        "per_curiam": false,
+        "vote": "5-4",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1974-01-01",
+        "valid_until": null,
+        "opinions": [
+          "dissent"
+        ],
+        "notes": "Decided together with Allen Park Public Schools v. Bradley and Grosse Pointe Public School System v. Bradley. The majority emphasized the importance of local control over school operations and rejected the notion that desegregation requires any particular racial balance in schools, grades, or classrooms."
+      },
+      {
+        "@type": "Case",
+        "id": "mississippi_university_for_women_v_hogan_1982",
+        "short_name": "Mississippi University for Women v. Hogan",
+        "full_name": "Mississippi University for Women v. Hogan",
+        "citation": "458 U.S. 718 (1982)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1982-01-01",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "A state may not deny admission to a state university's nursing program on the basis of sex without providing an exceedingly persuasive justification for the gender-based classification, and educational affirmative action for women does not constitute such justification when women have not historically lacked opportunities in the field.",
+        "holding_type": "affirmative",
+        "majority_author": "O'Connor",
+        "per_curiam": false,
+        "vote": "5-4",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1982-01-01",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "The Court applied heightened scrutiny to gender-based state action and rejected the state's justification based on educational affirmative action, finding that the policy perpetuated stereotypes about nursing as a women's profession.",
+        "courtlistener_id": "9037876"
+      },
+      {
+        "@type": "Case",
+        "id": "orr_v_orr_1979",
+        "short_name": "Orr v. Orr",
+        "full_name": "William Orr v. Lillian Orr",
+        "citation": "440 U.S. 268 (1979)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1979-06-05",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "Alabama alimony statutes that authorize courts to impose alimony obligations on husbands but not on wives violate the Equal Protection Clause because they classify on the basis of gender without substantially furthering an important governmental objective.",
+        "holding_type": "affirmative",
+        "majority_author": "Brennan",
+        "per_curiam": false,
+        "vote": null,
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1979-06-05",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "The Court addressed standing sua sponte, holding that a husband challenging an underinclusive gender-based statute has standing even though the State could respond by extending benefits to husbands or denying benefits to both spouses. The opinion emphasizes that the burden of the statute itself is sufficient to establish standing."
+      },
+      {
+        "@type": "Case",
+        "id": "palmore_v_sidoti_1984",
+        "short_name": "Palmore v. Sidoti",
+        "full_name": "Palmore v. Sidoti",
+        "citation": "466 U.S. 429 (1984)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1984",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "A state court may not base a child custody decision on the race of a parent's spouse or the social stigma that may result from an interracial relationship, as such race-based reasoning violates the Equal Protection Clause of the Fourteenth Amendment.",
+        "holding_type": "affirmative",
+        "majority_author": "Burger",
+        "per_curiam": false,
+        "vote": null,
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1984",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "The Florida trial court awarded custody to the father based explicitly on the mother's interracial remarriage and the anticipated social stigma the child would face. The Supreme Court reversed, holding that race-based classifications in custody decisions violate equal protection regardless of benign intent or concern for the child's welfare.",
+        "courtlistener_id": "111160"
+      },
+      {
+        "@type": "Case",
+        "id": "roman_catholic_diocese_of_brooklyn_v_cuomo_2020",
+        "short_name": "Roman Catholic Diocese of Brooklyn v. Cuomo",
+        "full_name": "Roman Catholic Diocese of Brooklyn v. Cuomo",
+        "citation": "592 U.S. 14 (2020)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "2020-11-25",
+        "opinion_form": "per_curiam",
+        "procedural_disposition": "reversed",
+        "holding": "Religious organizations challenging COVID-19 capacity restrictions on worship services are entitled to a preliminary injunction where the restrictions discriminate against religious entities by name while permitting secular businesses to operate under less restrictive conditions, thereby violating the minimum requirement of neutrality under the Free Exercise Clause.",
+        "holding_type": "affirmative",
+        "majority_author": null,
+        "per_curiam": true,
+        "vote": "5-4",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "2020-11-25",
+        "valid_until": null,
+        "opinions": [
+          {
+            "type": "concurrence",
+            "author": "Gorsuch"
+          },
+          {
+            "type": "concurrence",
+            "author": "Kavanaugh"
+          },
+          {
+            "type": "dissent",
+            "author": "Roberts"
+          },
+          {
+            "type": "dissent",
+            "author": "Breyer"
+          }
+        ],
+        "notes": "Per curiam opinion issued without oral argument. 5-4 decision. Gorsuch and Kavanaugh filed concurring opinions. Chief Justice Roberts and Justice Breyer (joined by Justices Sotomayor and Kagan) filed dissenting opinions.",
+        "courtlistener_id": "4833940"
+      },
+      {
+        "@type": "Case",
+        "id": "tandon_v_newsom_2021",
+        "short_name": "Tandon v. Newsom",
+        "full_name": "Ritesh Tandon, et al. v. Gavin Newsom, Governor of California, et al.",
+        "citation": "593 U.S. 61 (2021)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "2021-04-09",
+        "opinion_form": "per_curiam",
+        "procedural_disposition": "affirmed",
+        "holding": "Government regulations are not neutral and generally applicable, and therefore trigger strict scrutiny under the Free Exercise Clause, whenever they treat any comparable secular activity more favorably than religious exercise, judged against the asserted government interest; the government bears the burden to establish that the challenged law satisfies strict scrutiny by showing that measures less restrictive of the First Amendment activity could not address its interest, and where the government permits other activities to proceed with precautions, it must show that the religious exercise at issue is more dangerous than those activities even when the same precautions are applied.",
+        "holding_type": "affirmative",
+        "majority_author": null,
+        "per_curiam": true,
+        "vote": null,
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "2021-04-09",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "Per curiam opinion on application for injunctive relief. The Court granted the application for injunctive relief pending disposition of the appeal and petition for certiorari. The opinion clarifies and refines the Free Exercise Clause standard established in Roman Catholic Diocese of Brooklyn v. Cuomo (2020) and South Bay United Pentecostal Church v. Newsom (2021).",
+        "courtlistener_id": "4872486"
+      },
+      {
+        "@type": "Case",
+        "id": "trinity_lutheran_church_of_columbia_inc_v_comer_2017",
+        "short_name": "Trinity Lutheran Church v. Comer",
+        "full_name": "Trinity Lutheran Church of Columbia, Inc. v. Comer",
+        "citation": "582 U.S. 449 (2017)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "2017-06-26",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "The exclusion of churches from an otherwise neutral and secular aid program violates the Free Exercise Clause of the First Amendment when the exclusion discriminates against religious organizations based solely on their religious character and denies them an otherwise generally available benefit.",
+        "holding_type": "affirmative",
+        "majority_author": "Roberts",
+        "per_curiam": false,
+        "vote": "7-2",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "2017-06-26",
+        "valid_until": null,
+        "opinions": [
+          "concurrence",
+          "concurrence",
+          "concurrence_in_judgment",
+          "dissent",
+          "dissent"
+        ],
+        "notes": "Chief Justice Roberts delivered the majority opinion. Justice Thomas concurred in part and joined Gorsuch's concurrence in part. Justice Gorsuch wrote separately concurring in part, arguing the majority's distinction between religious status and religious use was untenable. Justice Breyer concurred in the judgment. Justices Sotomayor and Ginsburg dissented, arguing the decision raised serious Establishment Clause concerns and that prophylactic rules preventing state funding of religious organizations are permissible.",
+        "courtlistener_id": "4403793"
+      },
+      {
+        "@type": "Case",
+        "id": "vacco_v_quill_1997",
+        "short_name": "Vacco v. Quill",
+        "full_name": "Dennis C. Vacco v. Timothy E. Quill",
+        "citation": "521 U.S. 793 (1997)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1997-06-26",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "A state ban on physician-assisted suicide does not violate the Equal Protection Clause because the distinction between refusing lifesaving treatment and assisting suicide is rationally related to legitimate state interests in protecting medical ethics, preventing euthanasia, protecting vulnerable populations, and preserving human life.",
+        "holding_type": "affirmative",
+        "majority_author": "Rehnquist",
+        "per_curiam": false,
+        "vote": "9-0",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1997-06-26",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "Unanimous decision. The Court applied rational basis review to the Equal Protection Clause challenge and upheld New York's ban on physician-assisted suicide."
+      },
+      {
+        "@type": "Case",
+        "id": "ward_v_rock_against_racism_1989",
+        "short_name": "Ward v. Rock Against Racism",
+        "full_name": "Ward v. Rock Against Racism",
+        "citation": "491 U.S. 781 (1989)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1989-06-22",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "A content-neutral time, place, and manner regulation of expressive activity is constitutional if it serves a significant government interest, is narrowly tailored to serve that interest, and leaves open ample alternative channels for communication.",
+        "holding_type": "affirmative",
+        "majority_author": "Kennedy",
+        "per_curiam": false,
+        "vote": null,
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1989-06-22",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "The case addresses First Amendment protection for expressive conduct (rock concert) and the constitutionality of content-neutral time, place, and manner restrictions. The Court reversed the Second Circuit's decision that had invalidated the city's sound amplification regulation.",
+        "courtlistener_id": "112315"
+      },
+      {
+        "@type": "Case",
+        "id": "young_v_american_mini_theatres_inc_1976",
+        "short_name": "Young v. American Mini Theatres, Inc.",
+        "full_name": "Young v. American Mini Theatres, Inc.",
+        "citation": "427 U.S. 50 (1976)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1976",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "A city may restrict the location of adult theaters through zoning ordinances that require distance separations from other regulated uses and residential districts without violating the First Amendment or Equal Protection Clause, provided the ordinances are content-neutral and serve legitimate governmental interests.",
+        "holding_type": "affirmative",
+        "majority_author": "Stevens",
+        "per_curiam": false,
+        "vote": "5-4",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1976",
+        "valid_until": null,
+        "opinions": [
+          "dissent"
+        ],
+        "notes": "Justice Potter Stewart dissented, arguing that free expression should not be defined or circumscribed by popular opinion. The case involved First Amendment challenges to adult theater zoning ordinances and Equal Protection claims.",
+        "courtlistener_id": "9006086"
       }
     ],
     "doctrinal_tests": [
@@ -28136,6 +29280,459 @@
         "valid_from": "1996-06-26",
         "valid_until": null,
         "notes": "This test applies to sex-based classifications by state actors. The Court emphasized that generalizations about the way women or men are cannot justify denying opportunities to individuals who do not fit those generalizations."
+      },
+      {
+        "@type": "DoctrinalTest",
+        "id": "lakewood_licensing_discretion_test",
+        "label": "Lakewood Licensing Discretion Test",
+        "description": "A licensing ordinance for newsracks or similar expressive activity on public property is facially invalid if it grants officials unbridled or standardless discretion to grant or deny permits. Valid licensing schemes must include adequate standards and safeguards to prevent discriminatory application based on content or viewpoint.",
+        "area_id": "prior_restraint",
+        "source_case_id": "city_of_lakewood_v_plain_dealer_publishing_co_1988",
+        "scrutiny_level": "strict",
+        "burden": "government",
+        "test_form": "threshold_then_conjunctive",
+        "prongs": [
+          {
+            "number": 1,
+            "label": "Presence of Unbridled Discretion",
+            "description": "Does the ordinance grant officials standardless or open-ended discretion to approve or deny permits?",
+            "burden_note": "Government must demonstrate that the licensing scheme includes adequate standards and meaningful limitations on official discretion.",
+            "valid_from": "1988-01-01",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 2,
+            "label": "Risk of Content or Viewpoint Discrimination",
+            "description": "Does the discretion create a substantial risk that permits will be granted or denied based on the content of the publication or the viewpoint of the speaker?",
+            "burden_note": "Government must show that the scheme includes procedural safeguards and standards that prevent discriminatory application.",
+            "valid_from": "1988-01-01",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 3,
+            "label": "Promotion of Self-Censorship",
+            "description": "Does the unbridled discretion promote self-censorship by speakers who must curry favor with officials to secure permit approval?",
+            "burden_note": "The chilling effect on speech is a consequence of standardless discretion and weighs against the ordinance's validity.",
+            "valid_from": "1988-01-01",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          }
+        ],
+        "status": "active",
+        "valid_from": "1988-01-01",
+        "valid_until": null,
+        "notes": "This test applies to licensing schemes for expressive activity on public property. If unbridled discretion is found, the ordinance is facially invalid. Cities may impose reasonable restrictions and periodic licensing requirements if they include adequate standards and procedural safeguards."
+      },
+      {
+        "@type": "DoctrinalTest",
+        "id": "shock_the_conscience_test",
+        "label": "Shock the Conscience Test",
+        "description": "A test for determining whether government conduct violates substantive due process by requiring that the conduct be so egregious, deliberate, or reckless as to shock the conscience.",
+        "area_id": "substantive_due_process",
+        "source_case_id": "county_of_sacramento_v_lewis_1998",
+        "scrutiny_level": "per_se",
+        "burden": "challenger",
+        "test_form": "threshold_then_conjunctive",
+        "prongs": [
+          {
+            "number": 1,
+            "label": "Intent or Deliberate Indifference",
+            "description": "The government conduct must be intentional or demonstrate deliberate indifference to the rights of the person affected, not merely negligent.",
+            "burden_note": "Challenger must show intent or deliberate indifference; negligence alone is insufficient.",
+            "valid_from": "1998",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 2,
+            "label": "Shocks the Conscience",
+            "description": "The conduct must be so egregious, shocking, or outrageous that it violates fundamental fairness and decency, not merely unwise or improper.",
+            "burden_note": "Challenger must demonstrate the conduct is unexpectedly shocking or egregious under the circumstances.",
+            "valid_from": "1998",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          }
+        ],
+        "status": "active",
+        "valid_from": "1998",
+        "valid_until": null,
+        "notes": "Established in County of Sacramento v. Lewis. Applies to substantive due process claims arising from government conduct during police pursuits and similar contexts. Negligent infliction of harm, even if reckless, does not satisfy the test absent intent or deliberate indifference."
+      },
+      {
+        "@type": "DoctrinalTest",
+        "id": "voter_id_burden_balancing_test",
+        "label": "Voter ID Requirement Balancing Test",
+        "description": "A photo identification requirement for in-person voters is constitutional if it is closely related to legitimate state interests (such as preventing voter fraud) and is neutral and nondiscriminatory, and the burden imposed on voters' rights does not outweigh these interests.",
+        "area_id": "equal_protection",
+        "source_case_id": "crawford_v_marion_county_election_board_2008",
+        "scrutiny_level": "balancing",
+        "burden": "shared",
+        "test_form": "balancing",
+        "prongs": [
+          {
+            "number": 1,
+            "label": "Legitimate State Interest",
+            "description": "The state must demonstrate a legitimate interest, such as preventing voter fraud.",
+            "burden_note": "Government must establish the interest.",
+            "valid_from": "2008-01-01",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 2,
+            "label": "Close Relationship to Interest",
+            "description": "The photo identification requirement must be closely related to the legitimate state interest.",
+            "burden_note": "Government must show the requirement is tailored to the interest.",
+            "valid_from": "2008-01-01",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 3,
+            "label": "Neutral and Nondiscriminatory",
+            "description": "The requirement must be neutral and nondiscriminatory in its application.",
+            "burden_note": "Government must demonstrate neutrality.",
+            "valid_from": "2008-01-01",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 4,
+            "label": "Burden Does Not Outweigh Interests",
+            "description": "The burden imposed on voters' rights must not outweigh the state's legitimate interests.",
+            "burden_note": "Challenger must demonstrate undue burden; government interest must be weighed against this burden.",
+            "valid_from": "2008-01-01",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          }
+        ],
+        "status": "active",
+        "valid_from": "2008-01-01",
+        "valid_until": null,
+        "notes": "This is a balancing test applied to voting rights restrictions. The test does not employ strict scrutiny or rational basis review, but rather a flexible balancing approach that weighs state interests against the burden on the fundamental right to vote."
+      },
+      {
+        "@type": "DoctrinalTest",
+        "id": "foley_alienage_rational_basis_test",
+        "label": "Alienage Classification Rational Basis Test (Political Function)",
+        "description": "When a state classifies based on alienage in connection with a basic governmental function, the classification must have a rational relationship to a valid state interest. The state need only demonstrate this rational relationship; heightened scrutiny does not apply.",
+        "area_id": "equal_protection",
+        "source_case_id": "foley_v_connelie_1978",
+        "scrutiny_level": "rational_basis",
+        "burden": "challenger",
+        "test_form": "conjunctive",
+        "prongs": [
+          {
+            "number": 1,
+            "label": "Alienage Classification",
+            "description": "The state has classified individuals based on alienage status.",
+            "burden_note": "Challenger must identify the alienage-based classification.",
+            "valid_from": "1978-01-01",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 2,
+            "label": "Basic Governmental Function",
+            "description": "The position or function at issue is a basic function of government.",
+            "burden_note": "State must establish that the position involves a basic governmental function.",
+            "valid_from": "1978-01-01",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 3,
+            "label": "Rational Relationship",
+            "description": "There is a rational relationship between the alienage classification and a valid state interest.",
+            "burden_note": "State must show some rational relationship between the classification and a valid state interest.",
+            "valid_from": "1978-01-01",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          }
+        ],
+        "status": "active",
+        "valid_from": "1978-01-01",
+        "valid_until": null,
+        "notes": "This test applies rational basis review to alienage classifications involving basic governmental functions. The Court held that the police function qualifies as a basic governmental function."
+      },
+      {
+        "@type": "DoctrinalTest",
+        "id": "blaisdell_contracts_clause_test",
+        "label": "Blaisdell Contracts Clause Emergency Test",
+        "description": "A five-factor test to determine whether state legislation that impairs contractual obligations is constitutional under the Contracts Clause when justified by economic emergency.",
+        "area_id": "constitutional_law",
+        "source_case_id": "home_building_and_loan_association_v_blaisdell_1934",
+        "scrutiny_level": "balancing",
+        "burden": "government",
+        "test_form": "conjunctive",
+        "prongs": [
+          {
+            "number": 1,
+            "label": "Genuine Emergency",
+            "description": "There must be a genuine emergency affecting the public.",
+            "burden_note": "Government must demonstrate the existence of a genuine emergency.",
+            "valid_from": "1934-01-01",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 2,
+            "label": "Public Interest Purpose",
+            "description": "The legislation must be designed to help the public in general, not merely private interests.",
+            "burden_note": "Government must show the legislation serves a public purpose.",
+            "valid_from": "1934-01-01",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 3,
+            "label": "Narrow Tailoring",
+            "description": "The relief provided must be narrowly tailored to address the problem.",
+            "burden_note": "Government must demonstrate the legislation is appropriately calibrated to the emergency.",
+            "valid_from": "1934-01-01",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 4,
+            "label": "Protection of Mortgagor Interests",
+            "description": "The mortgagor's interests must not be seriously undermined by the legislation.",
+            "burden_note": "Government must ensure the impairment does not excessively burden the non-breaching party.",
+            "valid_from": "1934-01-01",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 5,
+            "label": "Temporary Duration",
+            "description": "The legislation must be temporary in nature, not permanent.",
+            "burden_note": "Government must establish that the impairment is limited in duration.",
+            "valid_from": "1934-01-01",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          }
+        ],
+        "status": "active",
+        "valid_from": "1934-01-01",
+        "valid_until": null,
+        "notes": "This test permits limited impairment of contractual obligations during genuine emergencies when all five factors are satisfied."
+      },
+      {
+        "@type": "DoctrinalTest",
+        "id": "mahanoy_off_campus_speech_test",
+        "label": "Mahanoy Off-Campus Student Speech Test",
+        "description": "A school may regulate off-campus student speech only when the speech materially disrupts classwork, involves substantial disorder, invades the rights of others, or falls within one of three established exceptions: (1) indecent, lewd, or vulgar speech on school grounds, (2) speech promoting illicit drug use during class trips, or (3) speech bearing the imprimatur of the school.",
+        "area_id": "free_speech",
+        "source_case_id": "mahanoy_area_school_district_v_b_l_2021",
+        "scrutiny_level": "heightened",
+        "burden": "government",
+        "test_form": "disjunctive",
+        "prongs": [
+          {
+            "number": 1,
+            "label": "Material Disruption",
+            "description": "Speech materially disrupts classwork or involves substantial disorder or invasion of the rights of others.",
+            "burden_note": "School must demonstrate material disruption, substantial disorder, or invasion of rights.",
+            "valid_from": "2021-06-23",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 2,
+            "label": "Indecent, Lewd, or Vulgar Speech Exception",
+            "description": "Speech is indecent, lewd, or vulgar and occurs on school grounds.",
+            "burden_note": "School must show speech is indecent/lewd/vulgar and on-campus.",
+            "valid_from": "2021-06-23",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 3,
+            "label": "Illicit Drug Use Promotion Exception",
+            "description": "Speech promotes illicit drug use during a class trip.",
+            "burden_note": "School must show speech promotes illicit drug use during class trip.",
+            "valid_from": "2021-06-23",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 4,
+            "label": "School Imprimatur Exception",
+            "description": "Speech reasonably appears to bear the imprimatur of the school, such as speech in a school-sponsored newspaper.",
+            "burden_note": "School must show speech reasonably appears to bear school imprimatur.",
+            "valid_from": "2021-06-23",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          }
+        ],
+        "status": "active",
+        "valid_from": "2021-06-23",
+        "valid_until": null,
+        "notes": "Applies to off-campus student speech. The test is disjunctive — a school may regulate off-campus speech if any prong is satisfied. However, the Court emphasized three features of off-campus speech that diminish the need for First Amendment leeway: (1) off-campus speech normally falls within parental rather than school responsibility, (2) off-campus speech regulations coupled with on-campus regulations would prohibit speech entirely, and (3) schools have interest in protecting unpopular off-campus expression. In this case, B.L.'s speech did not satisfy any prong because it did not cause substantial disruption, did not occur on school grounds, was not related to drugs, and did not bear school imprimatur."
+      },
+      {
+        "@type": "DoctrinalTest",
+        "id": "age_rational_basis_test",
+        "label": "Age Classification Rational Basis Test",
+        "description": "Under rational basis review, an age-based classification is constitutional if it rationally relates to a legitimate state interest. The classification need not be perfectly tailored; it is sufficient that the legislature could rationally believe the classification serves the stated purpose.",
+        "area_id": "equal_protection",
+        "source_case_id": "massachusetts_board_of_retirement_v_murgia_1976",
+        "scrutiny_level": "rational_basis",
+        "burden": "challenger",
+        "test_form": "conjunctive",
+        "prongs": [
+          {
+            "number": 1,
+            "label": "Legitimate State Interest",
+            "description": "The state must have a legitimate interest in the classification. In Murgia, the legitimate interest was maintaining a physically capable police force.",
+            "burden_note": "Challenger must show the state interest is not legitimate.",
+            "valid_from": "1976-06-25",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 2,
+            "label": "Rational Relationship",
+            "description": "The age classification must rationally relate to the legitimate state interest. The classification need not be perfectly tailored or exclude all individuals incapable of performing the job; it is sufficient that the legislature could rationally believe the classification furthers the state interest.",
+            "burden_note": "Challenger must show no rational relationship exists between the classification and the state interest.",
+            "valid_from": "1976-06-25",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          }
+        ],
+        "status": "active",
+        "valid_from": "1976-06-25",
+        "valid_until": null,
+        "notes": "The Court rejected the district court's reasoning that the classification was irrational because individual physical examinations could assess capability. Under rational basis review, the legislature need not use the least restrictive means or most accurate classification method."
+      },
+      {
+        "@type": "DoctrinalTest",
+        "id": "tandon_free_exercise_strict_scrutiny_test",
+        "label": "Tandon Free Exercise Strict Scrutiny Test",
+        "description": "A multi-part test for determining whether government regulations trigger strict scrutiny under the Free Exercise Clause and whether they satisfy that scrutiny. The test requires: (1) determining whether the regulation treats any comparable secular activity more favorably than religious exercise, judged against the asserted government interest; (2) if so, strict scrutiny applies; (3) the government must show that measures less restrictive of the First Amendment activity could not address its interest; and (4) where the government permits other activities to proceed with precautions, it must show that the religious exercise at issue is more dangerous than those activities even when the same precautions are applied.",
+        "area_id": "free_exercise_of_religion",
+        "source_case_id": "tandon_v_newsom_2021",
+        "scrutiny_level": "strict",
+        "burden": "government",
+        "test_form": "conjunctive",
+        "prongs": [
+          {
+            "number": 1,
+            "label": "Comparable Secular Activity Treatment",
+            "description": "Determine whether the government regulation treats any comparable secular activity more favorably than religious exercise. Comparability is judged against the asserted government interest that justifies the regulation and is concerned with the risks various activities pose, not the reasons why people gather.",
+            "burden_note": "Challenger bears burden of identifying comparable secular activities treated more favorably.",
+            "valid_from": "2021-04-09",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 2,
+            "label": "Strict Scrutiny Trigger",
+            "description": "If any comparable secular activity is treated more favorably than religious exercise, strict scrutiny is triggered. It is no answer that a State treats some comparable secular businesses or other activities as poorly as or even less favorably than the religious exercise at issue.",
+            "burden_note": "Once prong 1 is satisfied, strict scrutiny automatically applies.",
+            "valid_from": "2021-04-09",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 3,
+            "label": "Less Restrictive Means",
+            "description": "The government must show that measures less restrictive of the First Amendment activity could not address its interest. The government cannot merely assert that certain risk factors are always present in worship or always absent from other secular activities.",
+            "burden_note": "Government bears burden to establish that no less restrictive means exist.",
+            "valid_from": "2021-04-09",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 4,
+            "label": "Comparative Danger with Precautions",
+            "description": "Where the government permits other activities to proceed with precautions, it must show that the religious exercise at issue is more dangerous than those activities even when the same precautions are applied. Otherwise, precautions that suffice for other activities suffice for religious exercise too.",
+            "burden_note": "Government bears burden to demonstrate comparative danger even with precautions applied.",
+            "valid_from": "2021-04-09",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          }
+        ],
+        "status": "active",
+        "valid_from": "2021-04-09",
+        "valid_until": null,
+        "notes": "This test refines and clarifies the standard from Roman Catholic Diocese of Brooklyn v. Cuomo (2020) and South Bay United Pentecostal Church v. Newsom (2021). It establishes a rigorous framework for evaluating Free Exercise Clause challenges to government regulations, particularly in the context of COVID-19 restrictions."
+      },
+      {
+        "@type": "DoctrinalTest",
+        "id": "ward_content_neutral_tpm_test",
+        "label": "Content-Neutral Time, Place, and Manner Test",
+        "description": "A three-part test for evaluating the constitutionality of content-neutral time, place, and manner regulations of expressive activity.",
+        "area_id": "free_speech",
+        "source_case_id": "ward_v_rock_against_racism_1989",
+        "scrutiny_level": "intermediate",
+        "burden": "government",
+        "test_form": "conjunctive",
+        "prongs": [
+          {
+            "number": 1,
+            "label": "Significant Government Interest",
+            "description": "The regulation must serve a significant government interest.",
+            "burden_note": "Government must demonstrate that the regulation advances a significant interest.",
+            "valid_from": "1989-06-22",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 2,
+            "label": "Narrow Tailoring",
+            "description": "The regulation must be narrowly tailored to serve the significant government interest.",
+            "burden_note": "Government must show the regulation is narrowly tailored and not substantially broader than necessary.",
+            "valid_from": "1989-06-22",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 3,
+            "label": "Ample Alternative Channels",
+            "description": "The regulation must leave open ample alternative channels for communication of the information.",
+            "burden_note": "Government must ensure that speakers retain adequate alternative means to convey their message.",
+            "valid_from": "1989-06-22",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          }
+        ],
+        "status": "active",
+        "valid_from": "1989-06-22",
+        "valid_until": null,
+        "notes": "This test applies to content-neutral regulations of the time, place, or manner of expressive activity. It represents an intermediate level of scrutiny, less demanding than strict scrutiny but more demanding than rational basis review."
       }
     ]
   },
@@ -37272,7 +38869,7 @@
       "notes": "Frontiero established that sex-based classifications violate equal protection doctrine."
     },
     {
-      "id": "craig_establishes_craig_intermediate_scrutiny_gender_test",
+      "id": "craig_establishes_craig_craig_intermediate_scrutiny_gender_test",
       "source_id": "craig_v_boren_1976",
       "target_id": "craig_intermediate_scrutiny_gender_test",
       "edge_type": "ESTABLISHES",
@@ -40199,7 +41796,7 @@
       ]
     },
     {
-      "id": "craig_intermediate_scrutiny_gender_test_child_of_equal_protection",
+      "id": "craig_craig_intermediate_scrutiny_gender_test_child_of_equal_protection",
       "source_id": "craig_intermediate_scrutiny_gender_test",
       "target_id": "equal_protection",
       "edge_type": "CHILD_OF",
@@ -46502,6 +48099,578 @@
         "state"
       ],
       "notes": "Whalen establishes the framework for analyzing privacy zone claims under the Fourteenth Amendment."
+    },
+    {
+      "id": "buck_v_bell_establishes_procedural_due_process_sterilization",
+      "source_id": "buck_v_bell_1927",
+      "target_id": "procedural_due_process_sterilization",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1927-05-02",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Buck v. Bell established the framework that procedural safeguards (notice, hearing, judicial review, observation period) satisfy due process in sterilization cases."
+    },
+    {
+      "id": "califano_v_webster_establishes_gender_classification_compensation_doctrine",
+      "source_id": "califano_v_webster_1977",
+      "target_id": "gender_classification_compensation_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1977-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Califano v. Webster established the doctrine that gender classifications may be upheld as compensation for past economic discrimination against women."
+    },
+    {
+      "id": "califano_v_webster_applies_craig_intermediate_scrutiny_gender_test",
+      "source_id": "califano_v_webster_1977",
+      "target_id": "craig_intermediate_scrutiny_gender_test",
+      "edge_type": "APPLIES",
+      "valid_from": "1977-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Califano v. Webster applied the heightened scrutiny test for gender classifications established in Craig v. Boren."
+    },
+    {
+      "id": "city_of_lakewood_establishes_unbridled_discretion_licensing_doctrine",
+      "source_id": "city_of_lakewood_v_plain_dealer_publishing_co_1988",
+      "target_id": "unbridled_discretion_licensing_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1988-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "City of Lakewood established the doctrine that licensing schemes with unbridled discretion are facially invalid under the First Amendment."
+    },
+    {
+      "id": "city_of_lakewood_establishes_lakewood_licensing_discretion_test",
+      "source_id": "city_of_lakewood_v_plain_dealer_publishing_co_1988",
+      "target_id": "lakewood_licensing_discretion_test",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1988-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "City of Lakewood established the test for evaluating facial validity of licensing ordinances for newsracks and expressive activity on public property."
+    },
+    {
+      "id": "city_of_mobile_v_bolden_establishes_discriminatory_intent_doctrine",
+      "source_id": "city_of_mobile_v_bolden_1980",
+      "target_id": "discriminatory_intent_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1980-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "The Court established that discriminatory intent is required to prove a violation of the Fourteenth and Fifteenth Amendments in voting rights cases."
+    },
+    {
+      "id": "county_of_sacramento_v_lewis_1998_establishes_shock_the_conscience_doctrine",
+      "source_id": "county_of_sacramento_v_lewis_1998",
+      "target_id": "shock_the_conscience_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1998",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "County of Sacramento v. Lewis established the shock the conscience doctrine as the governing standard for substantive due process claims involving government negligence or recklessness."
+    },
+    {
+      "id": "county_of_sacramento_v_lewis_1998_establishes_shock_the_conscience_test",
+      "source_id": "county_of_sacramento_v_lewis_1998",
+      "target_id": "shock_the_conscience_test",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1998",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "County of Sacramento v. Lewis established the shock the conscience test as the operative standard for evaluating substantive due process violations."
+    },
+    {
+      "id": "crawford_establishes_voter_id_burden_balancing_test",
+      "source_id": "crawford_v_marion_county_election_board_2008",
+      "target_id": "voter_id_burden_balancing_test",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2008-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Crawford established the balancing test for evaluating photo identification requirements for voters."
+    },
+    {
+      "id": "crawford_establishes_voter_id_requirement_doctrine",
+      "source_id": "crawford_v_marion_county_election_board_2008",
+      "target_id": "voter_id_requirement_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2008-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Crawford established the doctrine permitting photo identification requirements for voters under specified conditions."
+    },
+    {
+      "id": "deshaney_establishes_state_action_limitation_doctrine",
+      "source_id": "deshaney_v_winnebago_county_department_of_social_services_1989",
+      "target_id": "state_action_limitation_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1989-06-23",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "DeShaney established the principle that the Due Process Clause does not impose affirmative duties on the state to protect individuals from private harm."
+    },
+    {
+      "id": "osborne_establishes_post_conviction_dna_access_doctrine",
+      "source_id": "district_attorneys_office_for_the_third_judicial_district_v_osborne_2009",
+      "target_id": "post_conviction_dna_access_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2009-06-18",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "The Court established that no constitutional right to post-conviction DNA access exists and that state post-conviction procedures are constitutionally adequate."
+    },
+    {
+      "id": "eisenstadt_establishes_contraceptive_access_ep",
+      "source_id": "eisenstadt_v_baird_1972",
+      "target_id": "contraceptive_access_equal_protection",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1972",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Eisenstadt established that equal protection principles prohibit marital-status-based discrimination in access to contraceptives."
+    },
+    {
+      "id": "bellotti_establishes_corporate_political_speech",
+      "source_id": "first_national_bank_of_boston_v_bellotti_1978",
+      "target_id": "corporate_political_speech_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1978-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "The Court established that corporations have First Amendment rights to political speech on matters of public concern."
+    },
+    {
+      "id": "foley_v_connelie_1978_establishes_political_function_exception_aliens",
+      "source_id": "foley_v_connelie_1978",
+      "target_id": "political_function_exception_aliens",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1978-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Foley established the political function exception doctrine for alienage classifications."
+    },
+    {
+      "id": "foley_v_connelie_1978_establishes_foley_alienage_rational_basis_test",
+      "source_id": "foley_v_connelie_1978",
+      "target_id": "foley_alienage_rational_basis_test",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1978-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Foley established the rational basis test for alienage classifications in the context of basic governmental functions."
+    },
+    {
+      "id": "geduldig_establishes_pregnancy_classification_doctrine",
+      "source_id": "geduldig_v_aiello_1974",
+      "target_id": "pregnancy_classification_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1974-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Geduldig established the framework for analyzing pregnancy-based classifications under equal protection law."
+    },
+    {
+      "id": "blaisdell_establishes_contracts_clause_emergency_limitation",
+      "source_id": "home_building_and_loan_association_v_blaisdell_1934",
+      "target_id": "contracts_clause_emergency_limitation",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1934-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "blaisdell_establishes_blaisdell_contracts_clause_test",
+      "source_id": "home_building_and_loan_association_v_blaisdell_1934",
+      "target_id": "blaisdell_contracts_clause_test",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1934-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "contracts_clause_emergency_limitation_governed_by_blaisdell_test",
+      "source_id": "contracts_clause_emergency_limitation",
+      "target_id": "blaisdell_contracts_clause_test",
+      "edge_type": "GOVERNED_BY",
+      "valid_from": "1934-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "condition_note": "The emergency limitation doctrine is applied through the five-factor Blaisdell test when evaluating whether state legislation impairs contractual obligations."
+    },
+    {
+      "id": "mahanoy_establishes_off_campus_student_speech_doctrine",
+      "source_id": "mahanoy_area_school_district_v_b_l_2021",
+      "target_id": "off_campus_student_speech_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2021-06-23",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Mahanoy established the off-campus student speech doctrine, clarifying that the First Amendment limits but does not entirely prohibit regulation of off-campus student speech."
+    },
+    {
+      "id": "mahanoy_establishes_mahanoy_off_campus_speech_test",
+      "source_id": "mahanoy_area_school_district_v_b_l_2021",
+      "target_id": "mahanoy_off_campus_speech_test",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2021-06-23",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Mahanoy established the off-campus student speech test, which sets forth the circumstances under which schools may regulate off-campus student speech."
+    },
+    {
+      "id": "murgia_establishes_age_rational_basis_test",
+      "source_id": "massachusetts_board_of_retirement_v_murgia_1976",
+      "target_id": "age_rational_basis_test",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1976-06-25",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Murgia establishes the rational basis test for age classifications in equal protection analysis."
+    },
+    {
+      "id": "murgia_establishes_age_classification_doctrine",
+      "source_id": "massachusetts_board_of_retirement_v_murgia_1976",
+      "target_id": "age_classification_rational_basis_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1976-06-25",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Murgia establishes the doctrine that age classifications are subject to rational basis review, not strict scrutiny."
+    },
+    {
+      "id": "milliken_v_bradley_1974_establishes_interdistrict_desegregation_remedy_doctrine",
+      "source_id": "milliken_v_bradley_1974",
+      "target_id": "interdistrict_desegregation_remedy_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1974-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "miss_univ_women_v_hogan_establishes_persuasive_justification_test",
+      "source_id": "mississippi_university_for_women_v_hogan_1982",
+      "target_id": "exceedingly_persuasive_justification_test",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1982-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "The case established the exceedingly persuasive justification test for gender-based classifications."
+    },
+    {
+      "id": "miss_univ_women_v_hogan_establishes_gender_classification",
+      "source_id": "mississippi_university_for_women_v_hogan_1982",
+      "target_id": "gender_based_classification_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1982-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "The case established the doctrine that gender-based classifications require an exceedingly persuasive justification."
+    },
+    {
+      "id": "orr_v_orr_1979_establishes_gender_based_classification_doctrine",
+      "source_id": "orr_v_orr_1979",
+      "target_id": "gender_based_classification_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1979-06-05",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Orr v. Orr established the doctrine that gender-based classifications are subject to heightened equal protection scrutiny."
+    },
+    {
+      "id": "orr_v_orr_1979_establishes_underinclusive_statute_standing_doctrine",
+      "source_id": "orr_v_orr_1979",
+      "target_id": "underinclusive_statute_standing_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1979-06-05",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Orr v. Orr established that a person burdened by an underinclusive statute has standing to challenge it, even if the State could respond by extending benefits or denying benefits to all."
+    },
+    {
+      "id": "orr_v_orr_1979_establishes_craig_intermediate_scrutiny_gender_test",
+      "source_id": "orr_v_orr_1979",
+      "target_id": "craig_intermediate_scrutiny_gender_test",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1979-06-05",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Orr v. Orr established the intermediate scrutiny test for gender-based classifications, requiring that such classifications be substantially related to an important governmental objective."
+    },
+    {
+      "id": "gender_classification_governed_by_craig_test",
+      "source_id": "gender_based_classification_doctrine",
+      "target_id": "craig_intermediate_scrutiny_gender_test",
+      "edge_type": "GOVERNED_BY",
+      "valid_from": "1979-06-05",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Gender-based classifications are evaluated under the intermediate scrutiny test established in Orr v. Orr."
+    },
+    {
+      "id": "palmore_establishes_race_based_classification_ep",
+      "source_id": "palmore_v_sidoti_1984",
+      "target_id": "race_based_classification_equal_protection",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1984",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Palmore establishes that race-based classifications in custody decisions violate equal protection and cannot be justified by concerns about social stigma or the child's welfare."
+    },
+    {
+      "id": "roman_catholic_diocese_establishes_free_exercise_neutrality",
+      "source_id": "roman_catholic_diocese_of_brooklyn_v_cuomo_2020",
+      "target_id": "free_exercise_neutrality_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2020-11-25",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "The Court established that a minimum requirement of neutrality applies to government restrictions on religious exercise, prohibiting discrimination against religious entities by name while permitting secular businesses to operate under less restrictive conditions."
+    },
+    {
+      "id": "tandon_establishes_tandon_free_exercise_strict_scrutiny_test",
+      "source_id": "tandon_v_newsom_2021",
+      "target_id": "tandon_free_exercise_strict_scrutiny_test",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2021-04-09",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Tandon establishes the multi-part strict scrutiny test for Free Exercise Clause challenges."
+    },
+    {
+      "id": "tandon_establishes_free_exercise_comparable_secular_activity_doctrine",
+      "source_id": "tandon_v_newsom_2021",
+      "target_id": "free_exercise_comparable_secular_activity_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2021-04-09",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Tandon clarifies and refines the comparable secular activity doctrine from Roman Catholic Diocese of Brooklyn v. Cuomo."
+    },
+    {
+      "id": "tandon_establishes_free_exercise_narrow_tailoring_precautions_doctrine",
+      "source_id": "tandon_v_newsom_2021",
+      "target_id": "free_exercise_narrow_tailoring_precautions_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2021-04-09",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Tandon establishes the narrow tailoring and precautions doctrine for strict scrutiny analysis in Free Exercise Clause cases."
+    },
+    {
+      "id": "tandon_establishes_free_exercise_mootness_constant_threat_doctrine",
+      "source_id": "tandon_v_newsom_2021",
+      "target_id": "free_exercise_mootness_constant_threat_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2021-04-09",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Tandon establishes the mootness and constant threat doctrine for Free Exercise Clause cases."
+    },
+    {
+      "id": "trinity_lutheran_establishes_religious_status_discrimination_doctrine",
+      "source_id": "trinity_lutheran_church_of_columbia_inc_v_comer_2017",
+      "target_id": "religious_status_discrimination_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2017-06-26",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Trinity Lutheran Church established the doctrine that laws denying generally available benefits based on religious status violate the Free Exercise Clause."
+    },
+    {
+      "id": "trinity_lutheran_establishes_neutral_generally_applicable_aid_doctrine",
+      "source_id": "trinity_lutheran_church_of_columbia_inc_v_comer_2017",
+      "target_id": "neutral_generally_applicable_aid_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2017-06-26",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Trinity Lutheran Church clarified that neutral and generally applicable laws may be upheld even if they incidentally hamper religion, provided they do not facially discriminate based on religious status."
+    },
+    {
+      "id": "trinity_lutheran_establishes_religious_status_discrimination_test",
+      "source_id": "trinity_lutheran_church_of_columbia_inc_v_comer_2017",
+      "target_id": "religious_status_discrimination_test",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2017-06-26",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Trinity Lutheran Church established a three-prong test for evaluating whether a law violates the Free Exercise Clause through religious status discrimination in neutral aid programs."
+    },
+    {
+      "id": "vacco_applies_rational_basis_ep_test",
+      "source_id": "vacco_v_quill_1997",
+      "target_id": "rational_basis_ep_test",
+      "edge_type": "APPLIES",
+      "valid_from": "1997-06-26",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Vacco applied rational basis review under the Equal Protection Clause to evaluate New York's physician-assisted suicide ban."
+    },
+    {
+      "id": "ward_establishes_ward_content_neutral_tpm_test",
+      "source_id": "ward_v_rock_against_racism_1989",
+      "target_id": "ward_content_neutral_tpm_test",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1989-06-22",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Ward v. Rock Against Racism established the three-part test for evaluating content-neutral time, place, and manner restrictions on expressive activity."
+    },
+    {
+      "id": "ward_establishes_content_neutral_tpm_doctrine",
+      "source_id": "ward_v_rock_against_racism_1989",
+      "target_id": "content_neutral_time_place_manner_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1989-06-22",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Ward v. Rock Against Racism clarified and established the doctrine governing content-neutral time, place, and manner regulations of expressive activity."
+    },
+    {
+      "id": "young_establishes_content_neutral_zoning",
+      "source_id": "young_v_american_mini_theatres_inc_1976",
+      "target_id": "content_neutral_zoning_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1976",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Young established that content-neutral zoning ordinances regulating adult theater locations are permissible under the First Amendment."
     }
   ],
   "schema_issues_found": [
