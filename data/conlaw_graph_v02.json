@@ -7439,6 +7439,67 @@
           "equal_protection"
         ],
         "notes": "Established in Young v. American Mini Theatres as a permissible form of content-neutral regulation of expressive conduct."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "next_friend_standing_doctrine",
+        "label": "Next Friend Standing Doctrine",
+        "description": "A doctrine governing when a third party may seek relief on behalf of another person who is unable or unwilling to appear in their own behalf. The doctrine requires: (1) an adequate explanation for why the real party in interest cannot appear on their own behalf, and (2) a genuine dedication to the real party's best interests, not the next friend's own agenda. The doctrine is inapplicable when the real party in interest has appeared and is competent to assert their own rights.",
+        "area_id": "justiciability",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1976-12-13",
+        "valid_until": null,
+        "secondary_area_ids": [],
+        "notes": "Established in Gilmore v. Utah. The doctrine requires satisfaction of two conditions before a next friend may petition on behalf of another. Once the real party in interest appears and demonstrates competence, the next friend's standing is eliminated."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "article_iii_case_or_controversy_doctrine",
+        "label": "Article III Case or Controversy Requirement",
+        "description": "The constitutional requirement under Article III that federal courts may only exercise jurisdiction when there is a genuine case or controversy properly before them. The Court's power to issue stays exists only in aid of its own jurisdiction, which is itself dependent on a live case or controversy.",
+        "area_id": "justiciability",
+        "jurisdiction": [
+          "federal"
+        ],
+        "status": "active",
+        "valid_from": "1976-12-13",
+        "valid_until": null,
+        "secondary_area_ids": [],
+        "notes": "Emphasized in Justice Burger's concurrence in Gilmore v. Utah. The case or controversy requirement is a foundational limitation on federal judicial power."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "klein_doctrine",
+        "label": "Klein Doctrine (Separation of Powers)",
+        "description": "Congress may not prescribe a rule of decision to the Judicial Department in a pending case or direct a specific outcome in a particular case, as this violates the separation of powers by infringing both judicial and executive authority. Congress may permissibly change the law applicable to pending cases generally, but may not target a specific case or class of cases with intent to dictate the judicial outcome.",
+        "area_id": "separation_of_powers",
+        "jurisdiction": [
+          "federal"
+        ],
+        "status": "active",
+        "valid_from": "1871-01-01",
+        "valid_until": null,
+        "secondary_area_ids": [],
+        "notes": "Distinguishes between permissible legislative changes to law applicable to pending cases (e.g., Pennsylvania v. Wheeling Bridge Co.) and impermissible legislative direction of a specific judicial outcome. Remains actively litigated in modern separation-of-powers cases."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "presidential_pardon_doctrine",
+        "label": "Presidential Pardon Doctrine",
+        "description": "The power of pardon is granted to the Executive alone without limit. Pardon includes amnesty and blots out the offense pardoned, removing all its penal consequences. Congress may not impair or negate the constitutional effect of a presidential pardon.",
+        "area_id": "separation_of_powers",
+        "jurisdiction": [
+          "federal"
+        ],
+        "status": "active",
+        "valid_from": "1871-01-01",
+        "valid_until": null,
+        "secondary_area_ids": [],
+        "notes": "Established that the pardon power is exclusively executive and cannot be limited or negated by subsequent Congressional action, including retroactive legislation."
       }
     ],
     "areas": [
@@ -23793,6 +23854,92 @@
         ],
         "notes": "Justice Potter Stewart dissented, arguing that free expression should not be defined or circumscribed by popular opinion. The case involved First Amendment challenges to adult theater zoning ordinances and Equal Protection claims.",
         "courtlistener_id": "9006086"
+      },
+      {
+        "@type": "Case",
+        "id": "gilmore_v_utah_1976",
+        "short_name": "Gilmore v. Utah",
+        "full_name": "Gary Mark Gilmore v. State of Utah",
+        "citation": "429 U.S. 1012 (1976)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1976-12-13",
+        "opinion_form": "per_curiam",
+        "procedural_disposition": "affirmed",
+        "holding": "A defendant who has made a knowing and intelligent waiver of federal appellate rights, established through competent psychiatric evaluation and clear on-the-record statements, may not be subjected to a stay of execution sought by a third party claiming 'next friend' standing, because the 'next friend' doctrine is inapplicable once the defendant has appeared and asserted his own rights.",
+        "holding_type": "affirmative",
+        "majority_author": null,
+        "per_curiam": true,
+        "vote": null,
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1976-12-13",
+        "valid_until": null,
+        "opinions": [
+          "concurrence",
+          "dissent"
+        ],
+        "notes": "Per curiam opinion. Justice Burger wrote a concurrence joined by others, emphasizing Article III case-or-controversy requirement. Justices White and Marshall dissented, expressing concern about executing a death sentence without appellate review of the statute's constitutionality. This case addresses next-friend standing doctrine in the context of a capital defendant's waiver of appellate rights."
+      },
+      {
+        "@type": "Case",
+        "id": "toomer_v_witsell_1948",
+        "short_name": "Toomer v. Witsell",
+        "full_name": "Toomer v. Witsell",
+        "citation": "334 U.S. 385 (1948)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1948-01-01",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "A state may not impose discriminatory taxes and licensing fees on non-resident commercial fishermen engaged in interstate commerce, nor may it require non-residents to prove payment of state income taxes as a condition of obtaining fishing licenses, as such measures violate the dormant Commerce Clause by discriminating against interstate commerce.",
+        "holding_type": "affirmative",
+        "majority_author": "Vinson",
+        "per_curiam": false,
+        "vote": null,
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1948-01-01",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "The opinion addresses standing issues, finding the corporate appellant lacked standing but the individual appellants had standing. The Court reversed the District Court's dismissal and upheld the injunction against enforcement of discriminatory state fishing statutes.",
+        "courtlistener_id": "8203220"
+      },
+      {
+        "@type": "Case",
+        "id": "united_states_v_klein_1871",
+        "short_name": "United States v. Klein",
+        "full_name": "United States v. Klein",
+        "citation": "80 U.S. 128 (1871)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1871-01-01",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "affirmed",
+        "holding": "Congress may not prescribe a rule of decision to the Judicial Department in a pending case or impair the constitutional effect of a presidential pardon, as such action violates the separation of powers by infringing both judicial and executive authority.",
+        "holding_type": "affirmative",
+        "majority_author": "Chase",
+        "per_curiam": false,
+        "vote": "7-2",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1871-01-01",
+        "valid_until": null,
+        "opinions": [
+          {
+            "type": "dissent",
+            "author": "Miller",
+            "joined_by": [
+              "Bradley"
+            ],
+            "summary": "Miller agreed the proviso was unconstitutional insofar as it prescribed the effect of a presidential pardon to the judiciary, but dissented on the underlying premise that any interest in seized property remained in a disloyal former owner after sale and payment into the treasury."
+          }
+        ],
+        "notes": "Foundational separation-of-powers case establishing the Klein doctrine: Congress may permissibly change the law applicable to pending cases but may not direct a specific outcome in a particular case by prescribing a rule of decision. Majority joined by Nelson, Clifford, Swayne, Davis, Field, Strong (7 justices). Dissent by Miller and Bradley (2 justices).",
+        "courtlistener_id": "8598942"
       }
     ],
     "doctrinal_tests": [
@@ -48671,6 +48818,68 @@
         "state"
       ],
       "notes": "Young established that content-neutral zoning ordinances regulating adult theater locations are permissible under the First Amendment."
+    },
+    {
+      "id": "gilmore_v_utah_1976_establishes_next_friend_standing_doctrine",
+      "source_id": "gilmore_v_utah_1976",
+      "target_id": "next_friend_standing_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1976-12-13",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Gilmore v. Utah established the requirements for next friend standing and clarified when the doctrine is inapplicable."
+    },
+    {
+      "id": "gilmore_v_utah_1976_applies_article_iii_case_or_controversy",
+      "source_id": "gilmore_v_utah_1976",
+      "target_id": "article_iii_case_or_controversy_doctrine",
+      "edge_type": "APPLIES",
+      "valid_from": "1976-12-13",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ],
+      "notes": "The Court applied the Article III case-or-controversy requirement to determine that Bessie Gilmore lacked standing to seek relief once Gary Gilmore appeared in his own behalf."
+    },
+    {
+      "id": "toomer_applies_dormant_commerce_discrimination_doctrine",
+      "source_id": "toomer_v_witsell_1948",
+      "target_id": "dormant_commerce_clause_discrimination_doctrine",
+      "edge_type": "APPLIES",
+      "valid_from": "1948-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Toomer v. Witsell established the principle that states cannot use discriminatory licensing fees, taxes, and conditions to burden non-resident participation in interstate commerce, even in regulation of natural resources."
+    },
+    {
+      "id": "united_states_v_klein_1871_establishes_klein_doctrine",
+      "source_id": "united_states_v_klein_1871",
+      "target_id": "klein_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1871-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ],
+      "notes": "Klein established the foundational separation-of-powers doctrine distinguishing permissible legislative changes to law from impermissible legislative direction of specific judicial outcomes."
+    },
+    {
+      "id": "united_states_v_klein_1871_establishes_presidential_pardon_doctrine",
+      "source_id": "united_states_v_klein_1871",
+      "target_id": "presidential_pardon_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1871-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ],
+      "notes": "Klein established that the presidential pardon power is exclusive to the Executive and cannot be impaired or negated by Congressional action."
     }
   ],
   "schema_issues_found": [
