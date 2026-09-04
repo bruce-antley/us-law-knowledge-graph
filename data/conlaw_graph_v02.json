@@ -7500,6 +7500,103 @@
         "valid_until": null,
         "secondary_area_ids": [],
         "notes": "Established that the pardon power is exclusively executive and cannot be limited or negated by subsequent Congressional action, including retroactive legislation."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "commerce_clause_intrastate_limitation",
+        "label": "Commerce Clause Intrastate Transaction Limitation",
+        "description": "Congress's power under the Commerce Clause does not extend to the regulation of purely intrastate transactions, even if those transactions affect interstate commerce.",
+        "area_id": "dormant_commerce_clause",
+        "jurisdiction": [
+          "federal"
+        ],
+        "status": "active",
+        "valid_from": "1935-05-27",
+        "valid_until": null,
+        "secondary_area_ids": [],
+        "notes": "Schechter Poultry Corp. v. United States held that the Live Poultry Code's regulation of intrastate slaughterhouse operations in Brooklyn exceeded congressional authority under the Commerce Clause."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "education_not_fundamental_right",
+        "label": "Education as Non-Fundamental Right",
+        "description": "Education is not a fundamental right protected by the Fourteenth Amendment's Equal Protection Clause, and therefore school finance systems need only satisfy rational basis review rather than strict scrutiny.",
+        "area_id": "equal_protection",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1973-03-21",
+        "valid_until": null,
+        "secondary_area_ids": [
+          "substantive_due_process"
+        ],
+        "notes": "This doctrine establishes that despite education's social importance, it is not a fundamental right triggering heightened constitutional protection under equal protection analysis."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "wealth_classification_rational_basis",
+        "label": "Wealth Classifications Subject to Rational Basis Review",
+        "description": "Wealth-based classifications in school finance systems are subject to rational basis review under the Equal Protection Clause, not strict scrutiny, and do not constitute a suspect classification.",
+        "area_id": "equal_protection",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1973-03-21",
+        "valid_until": null,
+        "secondary_area_ids": [],
+        "notes": "The Court rejected the argument that classifications based on wealth should trigger strict scrutiny in the education context."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "punitive_damages_due_process_doctrine",
+        "label": "Punitive Damages Due Process Limitation",
+        "description": "The Due Process Clause of the Fourteenth Amendment limits the amount of punitive damages a state may impose in a civil case. Punitive damages awards that are grossly excessive in relation to compensatory damages violate due process.",
+        "area_id": "procedural_due_process",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "2003-04-07",
+        "valid_until": null,
+        "secondary_area_ids": [],
+        "notes": "Established in State Farm v. Campbell as a constitutional constraint on state punitive damages awards."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "privileges_and_immunities_clause_doctrine",
+        "label": "Privileges and Immunities Clause Doctrine",
+        "description": "The constitutional doctrine protecting the privileges and immunities of citizens of the United States under Article IV, Section 2, Clause 1, which prohibits states and municipalities from discriminating against out-of-state citizens in matters affecting fundamental rights or important economic activities.",
+        "area_id": "constitutional_law",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1984-06-01",
+        "valid_until": null,
+        "secondary_area_ids": [],
+        "notes": "This case clarifies that the Privileges and Immunities Clause applies to municipal ordinances, not merely state laws. The New Jersey Supreme Court had held that the clause does not apply to municipal ordinances that discriminate on the basis of municipal residency rather than state residency. The U.S. Supreme Court reversed this holding, establishing that municipal ordinances are properly subject to the strictures of the Clause."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "substantive_due_process_economic_liberty",
+        "label": "Substantive Due Process Protection for Economic Liberty",
+        "description": "The Fourteenth Amendment's Due Process Clause protects economic liberty and property interests against arbitrary or unreasonable state legislation that lacks a rational basis or exceeds the legislature's constitutional authority.",
+        "area_id": "substantive_due_process",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1926-01-01",
+        "valid_until": null,
+        "secondary_area_ids": [],
+        "notes": "This doctrine reflects the Court's review of whether a state legislature has transgressed the limits of its constitutional power in regulating economic activity."
       }
     ],
     "areas": [
@@ -23940,6 +24037,129 @@
         ],
         "notes": "Foundational separation-of-powers case establishing the Klein doctrine: Congress may permissibly change the law applicable to pending cases but may not direct a specific outcome in a particular case by prescribing a rule of decision. Majority joined by Nelson, Clifford, Swayne, Davis, Field, Strong (7 justices). Dissent by Miller and Bradley (2 justices).",
         "courtlistener_id": "8598942"
+      },
+      {
+        "@type": "Case",
+        "id": "san_antonio_independent_school_district_v_rodriguez_1973",
+        "short_name": "San Antonio v. Rodriguez",
+        "full_name": "San Antonio Independent School District v. Rodriguez",
+        "citation": "411 U.S. 1 (1973)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1973-03-21",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "The Texas system of financing public education through reliance on local property taxes does not violate the Equal Protection Clause of the Fourteenth Amendment, as education is not a fundamental right under the Constitution and wealth classifications do not trigger strict scrutiny.",
+        "holding_type": "by_negation",
+        "majority_author": "Powell",
+        "per_curiam": false,
+        "vote": null,
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1973-03-21",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "The District Court had held the Texas school finance system unconstitutional under the Equal Protection Clause in a per curiam opinion. The Supreme Court reversed, establishing that education is not a fundamental right and that rational basis review applies to school finance systems.",
+        "courtlistener_id": "8993231"
+      },
+      {
+        "@type": "Case",
+        "id": "speiser_v_randall_1958",
+        "short_name": "Speiser v. Randall",
+        "full_name": "Speiser v. Randall",
+        "citation": "357 U.S. 513 (1958)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1958",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "A state may not condition the grant of a tax exemption on the surrender of constitutional rights, such as freedom of speech, without providing procedural safeguards required by the Due Process Clause of the Fourteenth Amendment.",
+        "holding_type": "affirmative",
+        "majority_author": "Brennan",
+        "per_curiam": false,
+        "vote": null,
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1958",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "The Court held that denying a tax exemption to claimants who engage in certain forms of speech is a limitation on free speech with a deterrent effect equivalent to a fine. The state cannot condition privileges or gratuities on the waiver of constitutional rights without procedural due process safeguards.",
+        "courtlistener_id": "8944224"
+      },
+      {
+        "@type": "Case",
+        "id": "state_farm_mutual_automobile_insurance_co_v_campbell_2003",
+        "short_name": "State Farm v. Campbell",
+        "full_name": "State Farm Mutual Automobile Insurance Co. v. Campbell",
+        "citation": "538 U.S. 408 (2003)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "2003-04-07",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "An award of punitive damages that is grossly excessive in relation to compensatory damages violates the Due Process Clause of the Fourteenth Amendment; courts must consider the degree of reprehensibility of the defendant's conduct, the ratio of punitive to compensatory damages, and comparable penalties imposed in similar cases.",
+        "holding_type": "affirmative",
+        "majority_author": "Kennedy",
+        "per_curiam": false,
+        "vote": null,
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "2003-04-07",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "The case addresses the constitutional limits on punitive damages under the Due Process Clause of the Fourteenth Amendment. The Court reversed a $145 million punitive damages award where compensatory damages were $1 million.",
+        "courtlistener_id": "127910"
+      },
+      {
+        "@type": "Case",
+        "id": "united_building_v_mayor_and_1984",
+        "short_name": "United Building & Construction Trades Council v. Mayor of Camden",
+        "full_name": "United Building and Construction Trades Council of Camden County and Vicinity v. Mayor and Council of the City of Camden",
+        "citation": "465 U.S. 208 (1984)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1984-06-01",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "A municipal ordinance imposing a residency requirement on construction workers is properly subject to scrutiny under the Privileges and Immunities Clause of Article IV, Section 2, and the case must be remanded to determine the ordinance's validity under the appropriate constitutional standard.",
+        "holding_type": "affirmative",
+        "majority_author": "Rehnquist",
+        "per_curiam": false,
+        "vote": null,
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1984-06-01",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "The Court reversed the New Jersey Supreme Court's holding that the Privileges and Immunities Clause does not apply to municipal ordinances discriminating on the basis of municipal residency. The case was remanded for determination of validity under the appropriate constitutional standard. The opinion notes that White v. Massachusetts Council of Construction Employers, Inc., 460 U.S. 204 (1983), was decided after the appeal was filed, creating a significant change in the posture of the case."
+      },
+      {
+        "@type": "Case",
+        "id": "weaver_v_palmer_bros_co_1926",
+        "short_name": "Weaver v. Palmer Bros. Co.",
+        "full_name": "Weaver v. Palmer Bros. Co.",
+        "citation": "270 U.S. 402 (1926)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1926-01-01",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "affirmed",
+        "holding": "A state statute that absolutely prohibits the use of shoddy material in the manufacture of comfortables violates the due process clause of the Fourteenth Amendment when applied to a business that has long manufactured such products with shoddy materials.",
+        "holding_type": "affirmative",
+        "majority_author": "Butler",
+        "per_curiam": false,
+        "vote": null,
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1926-01-01",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "The Court held that the burden is on the attacking party to establish invalidating facts. The District Court found the statute infringed appellee's constitutional rights insofar as it absolutely prohibited use of shoddy in comfortables."
       }
     ],
     "doctrinal_tests": [
@@ -29880,6 +30100,100 @@
         "valid_from": "1989-06-22",
         "valid_until": null,
         "notes": "This test applies to content-neutral regulations of the time, place, or manner of expressive activity. It represents an intermediate level of scrutiny, less demanding than strict scrutiny but more demanding than rational basis review."
+      },
+      {
+        "@type": "DoctrinalTest",
+        "id": "speiser_unconstitutional_conditions_test",
+        "label": "Unconstitutional Conditions Test",
+        "description": "A test to determine whether a condition imposed on the grant of a government benefit or privilege violates constitutional rights. The test examines whether the condition effectively penalizes the exercise of a constitutional right and whether adequate procedural safeguards are provided.",
+        "area_id": "first_amendment",
+        "source_case_id": "speiser_v_randall_1958",
+        "scrutiny_level": "heightened",
+        "burden": "government",
+        "test_form": "conjunctive",
+        "prongs": [
+          {
+            "number": 1,
+            "label": "Condition on Constitutional Right",
+            "description": "The government has conditioned the grant of a benefit, privilege, or exemption on the surrender or waiver of a constitutional right, such as freedom of speech.",
+            "burden_note": "Government must justify the condition.",
+            "valid_from": "1958",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 2,
+            "label": "Deterrent Effect",
+            "description": "The condition has a deterrent effect on the exercise of the constitutional right, equivalent to a penalty, fine, or direct prohibition.",
+            "burden_note": "Government must demonstrate the condition does not effectively penalize constitutional conduct.",
+            "valid_from": "1958",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 3,
+            "label": "Procedural Safeguards",
+            "description": "The government must provide adequate procedural due process safeguards when conditioning benefits on the waiver of constitutional rights.",
+            "burden_note": "Government must ensure fair procedures for determining eligibility and adjudicating disputes.",
+            "valid_from": "1958",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          }
+        ],
+        "status": "active",
+        "valid_from": "1958",
+        "valid_until": null,
+        "notes": "The test reflects the principle that the government cannot use its taxing or spending power to indirectly accomplish what it could not directly achieve through regulation. Conditions on privileges or gratuities must be reasonable and cannot require the waiver of constitutional rights."
+      },
+      {
+        "@type": "DoctrinalTest",
+        "id": "punitive_damages_excessiveness_test",
+        "label": "Punitive Damages Excessiveness Test",
+        "description": "A three-factor test to determine whether a punitive damages award is constitutionally excessive under the Due Process Clause: (1) the degree of reprehensibility of the defendant's conduct; (2) the ratio of punitive to compensatory damages; and (3) comparable penalties imposed in similar cases.",
+        "area_id": "procedural_due_process",
+        "source_case_id": "state_farm_mutual_automobile_insurance_co_v_campbell_2003",
+        "scrutiny_level": "balancing",
+        "burden": "challenger",
+        "test_form": "conjunctive",
+        "prongs": [
+          {
+            "number": 1,
+            "label": "Degree of Reprehensibility",
+            "description": "Courts must consider the degree of reprehensibility of the defendant's conduct, including whether the harm was physical or economic, whether the defendant acted with knowledge of its wrongfulness, and whether the defendant's conduct was an isolated incident or part of a pattern.",
+            "burden_note": "Challenger must demonstrate the conduct was sufficiently reprehensible to justify punitive damages.",
+            "valid_from": "2003-04-07",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 2,
+            "label": "Ratio of Punitive to Compensatory Damages",
+            "description": "Courts must examine the ratio between the punitive damages award and the compensatory damages. Single-digit multipliers are more likely to be constitutional; awards with ratios in the hundreds may be excessive.",
+            "burden_note": "Challenger must demonstrate the ratio is grossly excessive.",
+            "valid_from": "2003-04-07",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 3,
+            "label": "Comparable Penalties",
+            "description": "Courts must consider the civil and criminal penalties imposed in comparable cases, including statutory penalties for similar conduct.",
+            "burden_note": "Challenger must demonstrate the award exceeds comparable penalties in similar cases.",
+            "valid_from": "2003-04-07",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          }
+        ],
+        "status": "active",
+        "valid_from": "2003-04-07",
+        "valid_until": null,
+        "notes": "This test refines and clarifies the framework for reviewing punitive damages awards under the Due Process Clause. The Court emphasized that while punitive damages serve legitimate purposes, they must be reasonable in relation to compensatory damages."
       }
     ]
   },
@@ -48880,6 +49194,134 @@
         "federal"
       ],
       "notes": "Klein established that the presidential pardon power is exclusive to the Executive and cannot be impaired or negated by Congressional action."
+    },
+    {
+      "id": "schechter_establishes_nondelegation_doctrine",
+      "source_id": "schechter_poultry_corp_v_united_states_1935",
+      "target_id": "nondelegation_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1935-05-27",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ],
+      "notes": "Schechter Poultry Corp. v. United States established that the NIRA's delegation of code-promulgation authority to the President violated the non-delegation doctrine by failing to provide meaningful legislative standards."
+    },
+    {
+      "id": "schechter_establishes_commerce_clause_intrastate",
+      "source_id": "schechter_poultry_corp_v_united_states_1935",
+      "target_id": "commerce_clause_intrastate_limitation",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1935-05-27",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ],
+      "notes": "Schechter Poultry Corp. v. United States held that regulation of intrastate slaughterhouse operations falls outside the scope of the Commerce Clause, even when those operations affect interstate commerce."
+    },
+    {
+      "id": "san_antonio_v_rodriguez_establishes_education_not_fundamental",
+      "source_id": "san_antonio_independent_school_district_v_rodriguez_1973",
+      "target_id": "education_not_fundamental_right",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1973-03-21",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "The Court established that education is not a fundamental right under the Fourteenth Amendment."
+    },
+    {
+      "id": "san_antonio_v_rodriguez_establishes_wealth_rational_basis",
+      "source_id": "san_antonio_independent_school_district_v_rodriguez_1973",
+      "target_id": "wealth_classification_rational_basis",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1973-03-21",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "The Court established that wealth-based classifications in school finance are subject to rational basis review."
+    },
+    {
+      "id": "speiser_establishes_unconstitutional_conditions_doctrine",
+      "source_id": "speiser_v_randall_1958",
+      "target_id": "unconstitutional_conditions_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1958",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Speiser v. Randall established the unconstitutional conditions doctrine by holding that a state may not condition a tax exemption on the waiver of First Amendment rights."
+    },
+    {
+      "id": "speiser_establishes_speiser_unconstitutional_conditions_test",
+      "source_id": "speiser_v_randall_1958",
+      "target_id": "speiser_unconstitutional_conditions_test",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1958",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Speiser v. Randall established the unconstitutional conditions test as a framework for evaluating whether conditions on government benefits violate constitutional rights."
+    },
+    {
+      "id": "state_farm_establishes_punitive_damages_excessiveness_test",
+      "source_id": "state_farm_mutual_automobile_insurance_co_v_campbell_2003",
+      "target_id": "punitive_damages_excessiveness_test",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2003-04-07",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "State Farm v. Campbell established the three-factor test for evaluating punitive damages excessiveness under the Due Process Clause."
+    },
+    {
+      "id": "state_farm_establishes_punitive_damages_due_process_doctrine",
+      "source_id": "state_farm_mutual_automobile_insurance_co_v_campbell_2003",
+      "target_id": "punitive_damages_due_process_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2003-04-07",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "State Farm v. Campbell established the doctrine that punitive damages awards are subject to Due Process Clause limitations."
+    },
+    {
+      "id": "united_building_applies_privileges_and_immunities_clause_doctrine",
+      "source_id": "united_building_v_mayor_and_1984",
+      "target_id": "privileges_and_immunities_clause_doctrine",
+      "edge_type": "APPLIES",
+      "valid_from": "1984-06-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "The Court applied the Privileges and Immunities Clause doctrine to evaluate the Camden municipal ordinance requiring 40% of construction workers to be Camden residents, reversing the New Jersey Supreme Court's holding that the clause does not apply to municipal ordinances."
+    },
+    {
+      "id": "weaver_applies_substantive_due_process_economic_liberty",
+      "source_id": "weaver_v_palmer_bros_co_1926",
+      "target_id": "substantive_due_process_economic_liberty",
+      "edge_type": "APPLIES",
+      "valid_from": "1926-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "The Court applied substantive due process doctrine to review whether Pennsylvania's absolute prohibition on shoddy in comfortables exceeded the legislature's constitutional authority."
     }
   ],
   "schema_issues_found": [
