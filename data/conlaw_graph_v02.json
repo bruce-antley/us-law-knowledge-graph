@@ -24409,6 +24409,36 @@
         ],
         "notes": "Consolidated case involving five separate prosecutions/claims under the Civil Rights Act of 1875. This case established the foundational state action doctrine limiting most constitutional guarantees to government action only. Harlan's dissent was substantially vindicated by Jones v. Alfred H. Mayer Co. (1968) regarding the Thirteenth Amendment and by the Civil Rights Act of 1964 upheld in Heart of Atlanta Motel v. United States (1964) via the Commerce Clause.",
         "courtlistener_id": "7890904"
+      },
+      {
+        "@type": "Case",
+        "id": "goldwater_v_carter_1979",
+        "short_name": "Goldwater v. Carter",
+        "full_name": "Barry Goldwater et al. v. James Earl Carter, President of the United States, et al.",
+        "citation": "444 U.S. 996 (1979)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1979-12-13",
+        "opinion_form": "plurality",
+        "procedural_disposition": "vacated",
+        "holding": "A dispute between Congress and the President over treaty termination authority is not ripe for judicial review unless and until each branch has taken official action asserting its constitutional authority, or alternatively, presents a nonjusticiable political question.",
+        "holding_type": "by_negation",
+        "majority_author": "Rehnquist (plurality)",
+        "per_curiam": false,
+        "vote": null,
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1979-12-13",
+        "valid_until": null,
+        "opinions": [
+          "concurrence",
+          "concurrence",
+          "dissent",
+          "dissent"
+        ],
+        "notes": "Fractured decision: Six Justices concurred in the judgment to dismiss, but for different, non-overlapping reasons. Rehnquist (joined by Chief Justice, Stewart, and Stevens) applied political question doctrine; Powell concurred on ripeness grounds and explicitly disagreed with Rehnquist's political question reasoning; Marshall concurred in the result without separate opinion; Blackmun and White dissented in part; Brennan dissented entirely. No single opinion commanded a majority. The holding reflects only what the order itself establishes—dismissal on justiciability grounds—without endorsing any single rationale.",
+        "courtlistener_id": "110198"
       }
     ],
     "doctrinal_tests": [
@@ -49761,6 +49791,30 @@
         "state"
       ],
       "notes": "United States v. Stanley established the foundational state action doctrine as the governing principle limiting constitutional guarantees to government action."
+    },
+    {
+      "id": "goldwater_carter_applies_political_question_doctrine",
+      "source_id": "goldwater_v_carter_1979",
+      "target_id": "political_question_doctrine",
+      "edge_type": "APPLIES",
+      "valid_from": "1979-12-13",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ],
+      "notes": "Rehnquist's plurality opinion applied the political question doctrine to the treaty termination dispute, emphasizing the foreign relations context and distinguishing Youngstown on the ground that Goldwater involved a coordinate branch of government."
+    },
+    {
+      "id": "goldwater_carter_applies_justiciability_ripeness",
+      "source_id": "goldwater_v_carter_1979",
+      "target_id": "justiciability_ripeness_standing",
+      "edge_type": "APPLIES",
+      "valid_from": "1979-12-13",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ],
+      "notes": "Powell's concurrence applied the ripeness doctrine to the treaty termination dispute, holding that the dispute was not ripe because Congress had taken no official action asserting its constitutional authority."
     }
   ],
   "schema_issues_found": [
