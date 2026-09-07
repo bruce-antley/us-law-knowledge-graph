@@ -7647,6 +7647,54 @@
         "valid_until": null,
         "secondary_area_ids": [],
         "notes": "Enacted as 59 Stat. 33, 15 U.S.C. § 1011 et seq. Acknowledged by the Court in State Board of Insurance v. Todd Shipyards Corp., 370 U.S. 451 (1962)."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "equal_protection_consistency_doctrine",
+        "label": "Equal Protection Consistency Doctrine",
+        "description": "The standard of review for racial classifications does not depend on the race of those burdened or benefited by the classification; equal protection analysis under the Fifth Amendment is congruent with that under the Fourteenth Amendment.",
+        "area_id": "equal_protection",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1995-06-12",
+        "valid_until": null,
+        "secondary_area_ids": [],
+        "notes": "Established in Adarand as one of three foundational equal protection propositions: skepticism, consistency, and congruence. Reflects the principle that the Fifth and Fourteenth Amendments protect persons, not groups."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "equal_protection_skepticism_doctrine",
+        "label": "Equal Protection Skepticism Doctrine",
+        "description": "Any preference based on racial or ethnic criteria must necessarily receive a most searching examination; racial classifications are inherently suspect and require strict judicial scrutiny.",
+        "area_id": "equal_protection",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1995-06-12",
+        "valid_until": null,
+        "secondary_area_ids": [],
+        "notes": "Established in Adarand as one of three foundational equal protection propositions. Applies to all racial classifications regardless of characterization as benign or remedial."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "equal_protection_congruence_doctrine",
+        "label": "Equal Protection Congruence Doctrine",
+        "description": "Equal protection analysis under the Fifth Amendment's Due Process Clause (applicable to the federal government) must employ the same standard of review as equal protection analysis under the Fourteenth Amendment (applicable to the states).",
+        "area_id": "equal_protection",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1995-06-12",
+        "valid_until": null,
+        "secondary_area_ids": [],
+        "notes": "Established in Adarand as one of three foundational equal protection propositions. Rejects any distinction in scrutiny level based on whether the governmental actor is federal or state."
       }
     ],
     "areas": [
@@ -24305,6 +24353,62 @@
         "valid_from": "1961-06-19",
         "valid_until": null,
         "notes": "The majority dismissed on justiciability/ripeness grounds without reaching the merits. Justice Harlan dissented, reaching the merits and articulating an influential substantive due process framework that directly anticipated and shaped his own concurrence in Griswold v. Connecticut four years later, and became a foundational reference point for substantive due process analysis in later cases (Casey, Lawrence, Obergefell). See INTELLECTUALLY_PRECEDES edge to Griswold for this dissent lineage."
+      },
+      {
+        "@type": "Case",
+        "id": "metro_broadcasting_v_fcc_1990",
+        "short_name": "Metro Broadcasting v. FCC",
+        "full_name": "Metro Broadcasting, Inc. v. Federal Communications Commission",
+        "citation": "497 U.S. 547 (1990)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1990-05-18",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "affirmed",
+        "holding": "Intermediate scrutiny applies to benign federal racial classifications designed to remedy past discrimination.",
+        "holding_type": "affirmative",
+        "majority_author": null,
+        "per_curiam": false,
+        "vote": null,
+        "status": "overruled",
+        "precedential_weight": "none",
+        "valid_from": "1990-05-18",
+        "valid_until": "1995-06-12",
+        "opinions": [],
+        "notes": "Stub node — overruled by adarand_constructors_v_pena_1995. Full node to be added when this case is modeled.",
+        "courtlistener_id": "9095716"
+      },
+      {
+        "@type": "Case",
+        "id": "united_states_v_stanley_1883",
+        "short_name": "United States v. Stanley",
+        "full_name": "United States v. Stanley",
+        "citation": "109 U.S. 3 (1883)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1883-10-15",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "affirmed",
+        "holding": "The Civil Rights Act of 1875 sections 1 and 2 are unconstitutional as applied to the states because neither the Thirteenth nor Fourteenth Amendment authorizes Congress to regulate discriminatory conduct by private individuals or businesses; the Fourteenth Amendment's enforcement power is corrective only, permitting Congress to counteract state discriminatory laws or official acts but not to directly regulate purely private conduct absent state action.",
+        "holding_type": "by_negation",
+        "majority_author": "Bradley",
+        "per_curiam": false,
+        "vote": "8-1",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1883-10-15",
+        "valid_until": null,
+        "opinions": [
+          {
+            "type": "dissent",
+            "author": "Harlan",
+            "summary": "Harlan argued that places of public accommodation are quasi-public entities subject to legal obligations to serve without discrimination because they operate under state license or franchise and serve a public function, making their discriminatory conduct reachable under the Fourteenth Amendment; he also contended the Thirteenth Amendment's reach was broader than the majority allowed."
+          }
+        ],
+        "notes": "Consolidated case involving five separate prosecutions/claims under the Civil Rights Act of 1875. This case established the foundational state action doctrine limiting most constitutional guarantees to government action only. Harlan's dissent was substantially vindicated by Jones v. Alfred H. Mayer Co. (1968) regarding the Thirteenth Amendment and by the Civil Rights Act of 1964 upheld in Heart of Atlanta Motel v. United States (1964) via the Commerce Clause.",
+        "courtlistener_id": "7890904"
       }
     ],
     "doctrinal_tests": [
@@ -30339,6 +30443,43 @@
         "valid_from": "2003-04-07",
         "valid_until": null,
         "notes": "This test refines and clarifies the framework for reviewing punitive damages awards under the Due Process Clause. The Court emphasized that while punitive damages serve legitimate purposes, they must be reasonable in relation to compensatory damages."
+      },
+      {
+        "@type": "DoctrinalTest",
+        "id": "adarand_strict_scrutiny_racial_classification_test",
+        "label": "Adarand Strict Scrutiny for All Racial Classifications",
+        "description": "All racial classifications imposed by any governmental actor—federal, state, or local—must satisfy strict scrutiny, regardless of whether the classification is characterized as benign, remedial, or invidious. The test requires that the government demonstrate a compelling governmental interest and that the classification is narrowly tailored to achieve that interest.",
+        "area_id": "equal_protection",
+        "source_case_id": "adarand_constructors_v_pena_1995",
+        "scrutiny_level": "strict",
+        "burden": "government",
+        "test_form": "conjunctive",
+        "prongs": [
+          {
+            "number": 1,
+            "label": "Compelling Governmental Interest",
+            "description": "The government must demonstrate a compelling governmental interest for the racial classification. The government retains the ability to act to address the effects of both past and present racial discrimination.",
+            "burden_note": "Government must prove compelling interest",
+            "valid_from": "1995-06-12",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 2,
+            "label": "Narrow Tailoring",
+            "description": "The racial classification must be narrowly tailored to achieve the compelling governmental interest. Strict scrutiny does not mean the classification is automatically unconstitutional.",
+            "burden_note": "Government must prove narrow tailoring",
+            "valid_from": "1995-06-12",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          }
+        ],
+        "status": "active",
+        "valid_from": "1995-06-12",
+        "valid_until": null,
+        "notes": "This test applies uniformly to all racial classifications regardless of governmental level (federal, state, or local) or characterization (benign, remedial, or invidious). It overruled Metro Broadcasting's application of intermediate scrutiny to benign federal racial classifications. The test embodies three foundational propositions: skepticism, consistency, and congruence."
       }
     ]
   },
@@ -49542,6 +49683,84 @@
         "author": "Harlan"
       },
       "notes": "Harlan dissent in Poe, reaching the merits the majority declined to address, articulated a substantive due process framework describing due process liberty as a rational continuum not confined to rights specifically enumerated in the Bill of Rights, and identified marital privacy as protected within that liberty. This reasoning directly anticipated and shaped the Harlan concurrence in Griswold four years later, which the majority opinion drew on in reaching its penumbral-rights holding."
+    },
+    {
+      "id": "adarand_overrules_metro_broadcasting",
+      "source_id": "adarand_constructors_v_pena_1995",
+      "target_id": "metro_broadcasting_v_fcc_1990",
+      "edge_type": "OVERRULES",
+      "overrule_type": "explicit",
+      "valid_from": "1995-06-12",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ],
+      "notes": "Adarand expressly overruled Metro Broadcasting's application of intermediate scrutiny to benign federal racial classifications, holding that all racial classifications must be analyzed under strict scrutiny."
+    },
+    {
+      "id": "adarand_establishes_strict_scrutiny_test",
+      "source_id": "adarand_constructors_v_pena_1995",
+      "target_id": "adarand_strict_scrutiny_racial_classification_test",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1995-06-12",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Adarand established the controlling framework requiring strict scrutiny for all racial classifications regardless of governmental level or characterization."
+    },
+    {
+      "id": "adarand_establishes_consistency_doctrine",
+      "source_id": "adarand_constructors_v_pena_1995",
+      "target_id": "equal_protection_consistency_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1995-06-12",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Adarand established the consistency proposition as a foundational principle of equal protection."
+    },
+    {
+      "id": "adarand_establishes_skepticism_doctrine",
+      "source_id": "adarand_constructors_v_pena_1995",
+      "target_id": "equal_protection_skepticism_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1995-06-12",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Adarand established the skepticism proposition as a foundational principle of equal protection."
+    },
+    {
+      "id": "adarand_establishes_congruence_doctrine",
+      "source_id": "adarand_constructors_v_pena_1995",
+      "target_id": "equal_protection_congruence_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1995-06-12",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Adarand established the congruence proposition as a foundational principle of equal protection."
+    },
+    {
+      "id": "united_states_v_stanley_1883_establishes_state_action_doctrine",
+      "source_id": "united_states_v_stanley_1883",
+      "target_id": "state_action_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1883-10-15",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "United States v. Stanley established the foundational state action doctrine as the governing principle limiting constitutional guarantees to government action."
     }
   ],
   "schema_issues_found": [
