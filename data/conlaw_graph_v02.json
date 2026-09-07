@@ -7597,6 +7597,56 @@
         "valid_until": null,
         "secondary_area_ids": [],
         "notes": "This doctrine reflects the Court's review of whether a state legislature has transgressed the limits of its constitutional power in regulating economic activity."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "categorical_entertainment_prohibition_doctrine",
+        "label": "Categorical Entertainment Prohibition Doctrine",
+        "description": "A zoning ordinance that categorically prohibits all live entertainment throughout a municipality, without distinguishing between obscene and non-obscene expression, violates the First Amendment because it suppresses protected expression without adequate justification.",
+        "area_id": "free_speech",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1981-01-01",
+        "valid_until": null,
+        "secondary_area_ids": [],
+        "notes": "Established in Schad v. Borough of Mount Ephraim. The Court recognized that entertainment, including live entertainment such as musical and dramatic works, falls within First Amendment protection."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "physician_standing_abortion_doctrine",
+        "label": "Physician Standing in Abortion Funding Cases",
+        "description": "Physicians who perform abortions have standing to challenge restrictions on abortion funding based on their own constitutional interests in the doctor-patient relationship and the right to practice medicine, independent of their patients' fundamental rights.",
+        "area_id": "individual_rights",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1976-01-01",
+        "valid_until": null,
+        "secondary_area_ids": [
+          "substantive_due_process"
+        ],
+        "notes": "Established in Singleton v. Wulff. Recognizes that physicians have a constitutionally protected interest in the doctor-patient relationship and in practicing medicine according to professional standards, which provides an independent basis for standing separate from patients' rights."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "mccarran_ferguson_act_insurance_exemption",
+        "label": "McCarran-Ferguson Act Insurance Exemption",
+        "description": "The McCarran-Ferguson Act removes all Commerce Clause limitations on the authority of states to regulate and tax the business of insurance, conferring upon states an ability to restrict the flow of interstate commerce in insurance that they would not otherwise enjoy.",
+        "area_id": "dormant_commerce_clause",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1981-01-01",
+        "valid_until": null,
+        "secondary_area_ids": [],
+        "notes": "Enacted as 59 Stat. 33, 15 U.S.C. § 1011 et seq. Acknowledged by the Court in State Board of Insurance v. Todd Shipyards Corp., 370 U.S. 451 (1962)."
       }
     ],
     "areas": [
@@ -24160,6 +24210,80 @@
         "valid_until": null,
         "opinions": [],
         "notes": "The Court held that the burden is on the attacking party to establish invalidating facts. The District Court found the statute infringed appellee's constitutional rights insofar as it absolutely prohibited use of shoddy in comfortables."
+      },
+      {
+        "@type": "Case",
+        "id": "schad_v_borough_of_mount_ephraim_1981",
+        "short_name": "Schad v. Borough of Mount Ephraim",
+        "full_name": "Schad v. Borough of Mount Ephraim",
+        "citation": "452 U.S. 61 (1981)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1981-01-01",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "A municipal zoning ordinance that categorically prohibits all live entertainment, including non-obscene nude dancing, violates the First and Fourteenth Amendments because it suppresses a wide range of protected expression without adequate justification.",
+        "holding_type": "affirmative",
+        "majority_author": "White",
+        "per_curiam": false,
+        "vote": null,
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1981-01-01",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "The Court held that live entertainment, including nude dancing, is protected by the First Amendment. The ordinance's blanket prohibition on all live entertainment in the commercial zone was unconstitutional as applied to non-obscene expression.",
+        "courtlistener_id": "110507"
+      },
+      {
+        "@type": "Case",
+        "id": "singleton_v_wulff_1976",
+        "short_name": "Singleton v. Wulff",
+        "full_name": "Singleton v. Wulff",
+        "citation": "428 U.S. 106 (1976)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1976-01-01",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "Physicians who perform nonmedically indicated abortions have standing to challenge a state statute restricting Medicaid funding for abortions, based on their own constitutional interests in the doctor-patient relationship and the right to practice medicine, independent of their patients' rights.",
+        "holding_type": "affirmative",
+        "majority_author": "Blackmun",
+        "per_curiam": false,
+        "vote": null,
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1976-01-01",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "Justice Blackmun delivered the opinion of the Court for Parts I, II-A, and III, and an opinion for Part II-B joined by Justices Brennan, White, and Marshall. The case addresses physician standing to challenge abortion funding restrictions under Medicaid. The Court reversed the District Court's dismissal for lack of standing and held that the Court of Appeals properly proceeded to the merits.",
+        "courtlistener_id": "9006376"
+      },
+      {
+        "@type": "Case",
+        "id": "western_and_v_state_board_1981",
+        "short_name": "Western & Southern Life Insurance Co. v. State Board of Equalization",
+        "full_name": "Western and Southern Life Insurance Co. v. State Board of Equalization of California",
+        "citation": "451 U.S. 648 (1981)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1981-01-01",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "affirmed",
+        "holding": "The McCarran-Ferguson Act removes all Commerce Clause limitations on the authority of states to regulate and tax the business of insurance, rendering state insurance taxes invulnerable to Commerce Clause challenge.",
+        "holding_type": "affirmative",
+        "majority_author": "Brennan",
+        "per_curiam": false,
+        "vote": null,
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1981-01-01",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "The opinion addresses whether California's retaliatory tax on out-of-state insurers violates the Commerce Clause and Equal Protection Clause. The Court affirms the California Court of Appeal's decision upholding the retaliatory tax based on the McCarran-Ferguson Act's exemption from Commerce Clause scrutiny."
       }
     ],
     "doctrinal_tests": [
@@ -49322,6 +49446,58 @@
         "state"
       ],
       "notes": "The Court applied substantive due process doctrine to review whether Pennsylvania's absolute prohibition on shoddy in comfortables exceeded the legislature's constitutional authority."
+    },
+    {
+      "id": "schad_establishes_categorical_entertainment_prohibition_doctrine",
+      "source_id": "schad_v_borough_of_mount_ephraim_1981",
+      "target_id": "categorical_entertainment_prohibition_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1981-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Schad established that categorical bans on live entertainment violate the First Amendment when applied to non-obscene expression."
+    },
+    {
+      "id": "singleton_v_wulff_establishes_physician_standing_abortion_doctrine",
+      "source_id": "singleton_v_wulff_1976",
+      "target_id": "physician_standing_abortion_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1976-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Singleton v. Wulff established the doctrine that physicians have standing to challenge abortion funding restrictions based on their own constitutional interests."
+    },
+    {
+      "id": "western_southern_applies_dormant_commerce_clause",
+      "source_id": "western_and_v_state_board_1981",
+      "target_id": "dormant_commerce_clause_doctrine",
+      "edge_type": "APPLIES",
+      "valid_from": "1981-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "The Court applied dormant commerce clause doctrine to evaluate whether California's retaliatory tax on out-of-state insurers violated the Commerce Clause."
+    },
+    {
+      "id": "western_southern_applies_mccarran_ferguson",
+      "source_id": "western_and_v_state_board_1981",
+      "target_id": "mccarran_ferguson_act_insurance_exemption",
+      "edge_type": "APPLIES",
+      "valid_from": "1981-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "The Court held that the McCarran-Ferguson Act exempts state insurance taxes from Commerce Clause scrutiny, rendering California's retaliatory tax constitutional."
     }
   ],
   "schema_issues_found": [
