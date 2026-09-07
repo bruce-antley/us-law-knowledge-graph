@@ -7725,6 +7725,21 @@
         "valid_until": null,
         "secondary_area_ids": [],
         "notes": "Rejects EPA's argument that the Clean Air Act was not intended to regulate greenhouse gases and establishes that EPA cannot defer action based on prudential or policy considerations alone."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "price_anderson_liability_limitation_doctrine",
+        "label": "Price-Anderson Act Liability Limitation",
+        "description": "Congressional authority to impose statutory caps on liability for nuclear accidents from private nuclear power plants, with federal indemnification for damages exceeding private insurance coverage, upheld as constitutional.",
+        "area_id": "constitutional_law",
+        "jurisdiction": [
+          "federal"
+        ],
+        "status": "active",
+        "valid_from": "1978-01-01",
+        "valid_until": null,
+        "secondary_area_ids": [],
+        "notes": "Established in Duke Power Co. v. Carolina Environmental Study Group Inc. The doctrine reflects Congress's constitutional power to regulate nuclear energy development and allocate liability risks between private industry, insurers, and the federal government."
       }
     ],
     "areas": [
@@ -24502,6 +24517,125 @@
           }
         ],
         "notes": "5-4 decision. Chief Justice Roberts dissented on standing grounds; Justice Scalia dissented on statutory interpretation grounds."
+      },
+      {
+        "@type": "Case",
+        "id": "ambach_v_norwick_1979",
+        "short_name": "Ambach v. Norwick",
+        "full_name": "Gordon M. Ambach v. Susan Norwick",
+        "citation": "441 U.S. 68 (1979)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1979-01-01",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "States may bar non-citizens from public school teaching positions based on a rational relationship to the state's interest in ensuring teachers promote civic virtues and understanding, even when the non-citizen is eligible for but has declined to seek citizenship.",
+        "holding_type": "affirmative",
+        "majority_author": "Powell",
+        "per_curiam": false,
+        "vote": "5-4",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1979-01-01",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "Reversed three-judge district court decision that had struck down New York's non-citizen teacher certification bar as overbroad. The majority applied rational basis review and found the statute satisfied the rational relationship test established in Foley v. Connelie."
+      },
+      {
+        "@type": "Case",
+        "id": "duke_power_co_v_carolina_environmental_study_group_inc_1978",
+        "short_name": "Duke Power Co. v. Carolina Environmental Study Group Inc.",
+        "full_name": "Duke Power Co. v. Carolina Environmental Study Group Inc.",
+        "citation": "438 U.S. 59 (1978)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1978-01-01",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "affirmed",
+        "holding": "Congress may constitutionally impose a limitation on liability for nuclear accidents resulting from the operation of private nuclear power plants licensed by the Federal Government under the Price-Anderson Act.",
+        "holding_type": "affirmative",
+        "majority_author": "Burger",
+        "per_curiam": false,
+        "vote": null,
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1978-01-01",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "Chief Justice Burger delivered the opinion of the Court. The case addresses the constitutionality of the Price-Anderson Act of 1957, which limits aggregate liability for nuclear incidents and provides federal indemnification. The opinion discusses the legislative history and dual purpose of protecting the public while encouraging nuclear energy industry development.",
+        "courtlistener_id": "9016325"
+      },
+      {
+        "@type": "Case",
+        "id": "south_central_timber_development_inc_v_wunnicke_1984",
+        "short_name": "South-Central Timber Development, Inc. v. Wunnicke",
+        "full_name": "South-Central Timber Development, Inc. v. Wunnicke",
+        "citation": "467 U.S. 82 (1984)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1984",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "A state may not condition the sale of natural resources extracted from state lands on the requirement that the purchaser process the resources within the state, as such a condition violates the dormant Commerce Clause.",
+        "holding_type": "affirmative",
+        "majority_author": null,
+        "per_curiam": false,
+        "vote": "6-2",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1984",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "Majority opinion with 6-2 vote. Specific majority author not identified in source text.",
+        "courtlistener_id": "111189"
+      },
+      {
+        "id": "edmonson_v_leesville_concrete_co_1991",
+        "short_name": "Edmonson v. Leesville Concrete Co.",
+        "full_name": "Edmonson v. Leesville Concrete Company, Inc.",
+        "citation": "500 U.S. 614 (1991)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1991-06-03",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "affirmed",
+        "holding": "Peremptory challenges in civil litigation are subject to equal protection constraints and cannot be exercised in a manner that discriminates on the basis of race.",
+        "holding_type": "affirmative",
+        "majority_author": null,
+        "per_curiam": false,
+        "vote": "6-3",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1991-06-03",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "Extended Batsons prohibition on race-based peremptory challenges from criminal to civil litigation, finding sufficient state action in court-supervised jury selection to trigger equal protection scrutiny even in private civil suits."
+      },
+      {
+        "id": "white_v_massachusetts_council_of_construction_employers_inc_1983",
+        "short_name": "White v. Massachusetts Council of Construction Employers, Inc.",
+        "full_name": "White v. Massachusetts Council of Construction Employers, Inc.",
+        "citation": "460 U.S. 204 (1983)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1983-02-23",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "A state or municipality may impose local hiring preferences in public construction projects without violating the dormant Commerce Clause, because when a state acts as a market participant rather than a market regulator, it is not subject to the restraints of the dormant Commerce Clause.",
+        "holding_type": "affirmative",
+        "majority_author": null,
+        "per_curiam": false,
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1983-02-23",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "Applied the market-participant exception to the dormant Commerce Clause."
       }
     ],
     "doctrinal_tests": [
@@ -49902,6 +50036,71 @@
         "federal"
       ],
       "notes": "Massachusetts v. EPA established that the Clean Air Act's definition of air pollutant encompasses greenhouse gases and that EPA must regulate them unless it determines they do not contribute to climate change."
+    },
+    {
+      "id": "ambach_applies_foley_alienage_test",
+      "source_id": "ambach_v_norwick_1979",
+      "target_id": "foley_alienage_rational_basis_test",
+      "edge_type": "APPLIES",
+      "valid_from": "1979-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "The Court applied rational basis review to uphold New York's alienage-based restriction on public school teacher certification, establishing that states may justify such restrictions based on rational relationship to legitimate state interests in civic education."
+    },
+    {
+      "id": "duke_power_establishes_price_anderson_doctrine",
+      "source_id": "duke_power_co_v_carolina_environmental_study_group_inc_1978",
+      "target_id": "price_anderson_liability_limitation_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1978-01-01",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ],
+      "notes": "Duke Power Co. established the constitutional validity of the Price-Anderson Act's liability limitation scheme for nuclear power plant accidents."
+    },
+    {
+      "id": "south_central_timber_applies_dcc_doctrine",
+      "source_id": "south_central_timber_development_inc_v_wunnicke_1984",
+      "target_id": "dormant_commerce_clause_doctrine",
+      "edge_type": "APPLIES",
+      "valid_from": "1984",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Court applied dormant Commerce Clause doctrine to strike down Alaska's in-state processing requirement for timber sales."
+    },
+    {
+      "id": "edmonson_modifies_equal_protection_peremptory_challenges",
+      "source_id": "edmonson_v_leesville_concrete_co_1991",
+      "target_id": "equal_protection_peremptory_challenges",
+      "edge_type": "MODIFIES",
+      "valid_from": "1991-06-03",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Edmonson extended the Batson-derived prohibition on race-based peremptory challenges from criminal cases into civil litigation, holding that private civil litigants exercising peremptory challenges are engaged in sufficient state action through the court-supervised jury selection process to trigger equal protection constraints.",
+      "direction": "expands"
+    },
+    {
+      "id": "white_applies_dormant_commerce_clause",
+      "source_id": "white_v_massachusetts_council_of_construction_employers_inc_1983",
+      "target_id": "dormant_commerce_clause_doctrine",
+      "edge_type": "APPLIES",
+      "valid_from": "1983-02-23",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "White applied the market-participant exception to the dormant Commerce Clause, holding that a city acting as a proprietor may impose local hiring preferences without triggering dormant Commerce Clause scrutiny."
     }
   ],
   "schema_issues_found": [
