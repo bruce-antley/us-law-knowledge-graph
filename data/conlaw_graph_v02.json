@@ -7695,6 +7695,36 @@
         "valid_until": null,
         "secondary_area_ids": [],
         "notes": "Established in Adarand as one of three foundational equal protection propositions. Rejects any distinction in scrutiny level based on whether the governmental actor is federal or state."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "state_standing_quasi_sovereign_interests",
+        "label": "State Standing Based on Quasi-Sovereign Interests",
+        "description": "A state has standing to sue the federal government to protect its quasi-sovereign interests, including protection of its territory from environmental harm such as global warming.",
+        "area_id": "justiciability",
+        "jurisdiction": [
+          "federal"
+        ],
+        "status": "active",
+        "valid_from": "2007-04-02",
+        "valid_until": null,
+        "secondary_area_ids": [],
+        "notes": "Established in Massachusetts v. EPA as basis for state standing to challenge EPA inaction on greenhouse gas regulation."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "clean_air_act_greenhouse_gas_regulation",
+        "label": "Clean Air Act Regulation of Greenhouse Gases",
+        "description": "The Clean Air Act's definition of 'air pollutant' is written with sweeping, capacious language and encompasses greenhouse gas emissions. The EPA must regulate greenhouse gases as air pollutants unless it determines based on the record that greenhouse gas emissions do not contribute to climate change.",
+        "area_id": "constitutional_law",
+        "jurisdiction": [
+          "federal"
+        ],
+        "status": "active",
+        "valid_from": "2007-04-02",
+        "valid_until": null,
+        "secondary_area_ids": [],
+        "notes": "Rejects EPA's argument that the Clean Air Act was not intended to regulate greenhouse gases and establishes that EPA cannot defer action based on prudential or policy considerations alone."
       }
     ],
     "areas": [
@@ -24439,6 +24469,39 @@
         ],
         "notes": "Fractured decision: Six Justices concurred in the judgment to dismiss, but for different, non-overlapping reasons. Rehnquist (joined by Chief Justice, Stewart, and Stevens) applied political question doctrine; Powell concurred on ripeness grounds and explicitly disagreed with Rehnquist's political question reasoning; Marshall concurred in the result without separate opinion; Blackmun and White dissented in part; Brennan dissented entirely. No single opinion commanded a majority. The holding reflects only what the order itself establishes—dismissal on justiciability grounds—without endorsing any single rationale.",
         "courtlistener_id": "110198"
+      },
+      {
+        "@type": "Case",
+        "id": "massachusetts_v_environmental_protection_agency_2007",
+        "short_name": "Massachusetts v. EPA",
+        "full_name": "Commonwealth of Massachusetts v. Environmental Protection Agency",
+        "citation": "549 U.S. 497 (2007)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "2007-04-02",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "A state has standing to challenge EPA action denying a petition to regulate greenhouse gas emissions under the Clean Air Act, and the EPA must regulate greenhouse gases as air pollutants under the Act's sweeping definition unless it determines based on the record that greenhouse gas emissions do not contribute to climate change.",
+        "holding_type": "affirmative",
+        "majority_author": "Stevens",
+        "per_curiam": false,
+        "vote": "5-4",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "2007-04-02",
+        "valid_until": null,
+        "opinions": [
+          {
+            "type": "dissent",
+            "author": "Roberts"
+          },
+          {
+            "type": "dissent",
+            "author": "Scalia"
+          }
+        ],
+        "notes": "5-4 decision. Chief Justice Roberts dissented on standing grounds; Justice Scalia dissented on statutory interpretation grounds."
       }
     ],
     "doctrinal_tests": [
@@ -49815,6 +49878,30 @@
         "federal"
       ],
       "notes": "Powell's concurrence applied the ripeness doctrine to the treaty termination dispute, holding that the dispute was not ripe because Congress had taken no official action asserting its constitutional authority."
+    },
+    {
+      "id": "mass_epa_establishes_state_standing_doctrine",
+      "source_id": "massachusetts_v_environmental_protection_agency_2007",
+      "target_id": "state_standing_quasi_sovereign_interests",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2007-04-02",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ],
+      "notes": "Massachusetts v. EPA established that states have standing to sue based on quasi-sovereign interests in protecting their territory."
+    },
+    {
+      "id": "mass_epa_establishes_caa_ghg_doctrine",
+      "source_id": "massachusetts_v_environmental_protection_agency_2007",
+      "target_id": "clean_air_act_greenhouse_gas_regulation",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2007-04-02",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ],
+      "notes": "Massachusetts v. EPA established that the Clean Air Act's definition of air pollutant encompasses greenhouse gases and that EPA must regulate them unless it determines they do not contribute to climate change."
     }
   ],
   "schema_issues_found": [
