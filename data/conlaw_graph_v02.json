@@ -17,8 +17,8 @@
     "created": "2026-03-15",
     "status": "draft",
     "schema_version": "0.5",
-    "node_count": 919,
-    "edge_count": 1306,
+    "node_count": 1211,
+    "edge_count": 1524,
     "schema_issue_count": 41,
     "fixes_applied": [
       "FIX 1: ConstitutionalProvision labels changed to citation form (amendment_1, amendment_14_section_1) to disambiguate from Area nodes with same common-name labels",
@@ -7882,6 +7882,24 @@
         "valid_until": null,
         "secondary_area_ids": [],
         "notes": "The Court applied this doctrine to the unlicensed notice requirement, finding it unduly burdensome because it imposed a government-scripted disclosure requirement disconnected from the state's informational interest and potentially left unburdened speakers whose messages aligned with the state's views."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "media_access_doctrine",
+        "label": "Media Access to Government Facilities",
+        "description": "The doctrine governing whether the news media possess a constitutional right of access to government facilities and institutions, including prisons and jails, that is superior to or distinct from the access rights of the general public.",
+        "area_id": "free_speech",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1978-01-17",
+        "valid_until": null,
+        "secondary_area_ids": [
+          "freedom_of_the_press"
+        ],
+        "notes": "Established in Houchins v. KQED. The doctrine holds that absent a special constitutional right, media access to government facilities may be restricted equally with public access, provided reasonable alternative means of obtaining information are available."
       }
     ],
     "areas": [
@@ -24986,6 +25004,34 @@
         "opinions": [],
         "notes": "Three-judge District Court held the classification invalid under the Due Process Clause of the Fifth Amendment; Supreme Court affirmed.",
         "courtlistener_id": "108856"
+      },
+      {
+        "@type": "Case",
+        "id": "houchins_v_kqed_1978",
+        "short_name": "Houchins v. KQED",
+        "full_name": "Houchins v. KQED, Inc.",
+        "citation": "438 U.S. 1 (1978)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1978-01-17",
+        "opinion_form": "plurality",
+        "procedural_disposition": "reversed",
+        "holding": "The news media do not have a constitutional right of access to a county jail superior to that of the general public, and a sheriff may restrict media access to jail facilities, including prohibiting photography, tape recording, and inmate interviews, provided reasonable alternative means of public access are available.",
+        "holding_type": "by_negation",
+        "majority_author": "Burger (plurality)",
+        "per_curiam": false,
+        "vote": null,
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1978-01-17",
+        "valid_until": null,
+        "opinions": [
+          "concurrence",
+          "dissent"
+        ],
+        "notes": "Plurality opinion. Chief Justice Burger announced the judgment joined by Justices White and Rehnquist. The holding reflects the plurality position that the First Amendment does not confer a special right of media access to government facilities beyond that available to the general public.",
+        "courtlistener_id": "9018872"
       }
     ],
     "doctrinal_tests": [
@@ -50685,6 +50731,19 @@
         "federal"
       ],
       "notes": "Court applied rational basis review to evaluate whether the food stamp household classification was rationally related to a legitimate governmental purpose."
+    },
+    {
+      "id": "houchins_v_kqed_establishes_media_access_doctrine",
+      "source_id": "houchins_v_kqed_1978",
+      "target_id": "media_access_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1978-01-17",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Houchins v. KQED established the foundational doctrine that the First Amendment does not grant the news media a special constitutional right of access to government facilities beyond that available to the general public."
     }
   ],
   "schema_issues_found": [
