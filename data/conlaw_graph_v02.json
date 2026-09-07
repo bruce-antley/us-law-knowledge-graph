@@ -7740,6 +7740,148 @@
         "valid_until": null,
         "secondary_area_ids": [],
         "notes": "Established in Duke Power Co. v. Carolina Environmental Study Group Inc. The doctrine reflects Congress's constitutional power to regulate nuclear energy development and allocate liability risks between private industry, insurers, and the federal government."
+      },
+      {
+        "id": "pullman_abstention_doctrine",
+        "label": "Pullman Abstention Doctrine",
+        "description": "A federal court with jurisdiction over a case involving an unclear or ambiguous state statute should abstain from deciding the underlying federal constitutional question until the state courts have had an opportunity to authoritatively construe the state law, since a state-court interpretation might avoid or narrow the federal question entirely.",
+        "area_id": "justiciability",
+        "jurisdiction": [
+          "federal"
+        ],
+        "status": "active",
+        "valid_from": "1941-01-01",
+        "valid_until": null,
+        "secondary_area_ids": [],
+        "notes": "The establishing case, Railroad Commission of Texas v. Pullman Co. (1941), is not yet in this graph -- flagged as a pending_establishment gap.",
+        "pending_establishment": [
+          "railroad_commission_v_pullman_co_1941"
+        ]
+      },
+      {
+        "@type": "Doctrine",
+        "id": "government_spending_speech_doctrine",
+        "label": "Government Spending and Indirect Speech Effects Doctrine",
+        "description": "Congress enjoys wide latitude in setting spending priorities and funding decisions, even when such decisions may indirectly affect certain forms of expression. The government's choice to fund one activity to the exclusion of another does not constitute viewpoint discrimination merely because it affects speech.",
+        "area_id": "free_speech",
+        "jurisdiction": [
+          "federal"
+        ],
+        "status": "active",
+        "valid_from": "1998-06-25",
+        "valid_until": null,
+        "secondary_area_ids": [],
+        "notes": "Established in NEA v. Finley as a distinct doctrine governing the intersection of government spending power and free speech protections."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "vagueness_selective_subsidy_doctrine",
+        "label": "Vagueness Doctrine Applied to Selective Subsidies",
+        "description": "Statutory guidelines governing selective subsidies are not subject to the same vagueness scrutiny as direct sovereign regulation or criminal prohibitions. Imprecision in subsidy guidelines is permissible when applied to an inherently subjective selection process.",
+        "area_id": "free_speech",
+        "jurisdiction": [
+          "federal"
+        ],
+        "status": "active",
+        "valid_from": "1998-06-25",
+        "valid_until": null,
+        "secondary_area_ids": [],
+        "notes": "Clarifies that vagueness doctrine operates differently in the subsidy context than in direct regulation."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "enumerated_powers_doctrine",
+        "label": "Enumerated Powers Doctrine",
+        "description": "The Federal Government possesses only limited, enumerated powers granted by the Constitution; the enumeration of powers is also a limitation of powers, as it presupposes that unenumerated powers are not granted to the Federal Government.",
+        "area_id": "separation_of_powers",
+        "jurisdiction": [
+          "federal"
+        ],
+        "status": "active",
+        "valid_from": "1787-09-17",
+        "valid_until": null,
+        "secondary_area_ids": [
+          "federalism"
+        ],
+        "notes": "Foundational principle of the Constitution. The Court emphasizes that the Federal Government can exercise only the powers granted to it, and that the enumeration of powers necessarily implies that unenumerated powers are reserved to the States or the people."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "police_power_doctrine",
+        "label": "Police Power Doctrine",
+        "description": "States possess a general police power to govern and perform vital functions of modern government—such as punishing street crime, running public schools, and zoning property—without requiring specific constitutional authorization, as the Constitution is not the source of state power.",
+        "area_id": "federalism",
+        "jurisdiction": [
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "1787-09-17",
+        "valid_until": null,
+        "secondary_area_ids": [],
+        "notes": "Contrasts with the Federal Government's limited enumerated powers. The police power is controlled by the States and derives from state sovereignty."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "spending_power_coercion_doctrine",
+        "label": "Spending Power Coercion Doctrine",
+        "description": "Congress's spending power is limited by the principle that the Federal Government may not use conditional spending to coerce States into adopting federal policy objectives; when a spending condition is so coercive as to effectively eliminate state choice, it exceeds the bounds of the spending power.",
+        "area_id": "federalism",
+        "jurisdiction": [
+          "federal"
+        ],
+        "status": "active",
+        "valid_from": "2012-06-28",
+        "valid_until": null,
+        "secondary_area_ids": [],
+        "notes": "Established or clarified in this case regarding the Medicaid expansion provision of the ACA. The Court held that threatening to withhold all Medicaid funding if States do not comply with new coverage requirements is impermissibly coercive."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "content_based_speech_regulation_doctrine",
+        "label": "Content-Based Speech Regulation Doctrine",
+        "description": "Content-based regulations of speech are subject to heightened scrutiny and must be narrowly tailored to serve a compelling government interest. The Court rejected the characterization of the California notice requirements as regulating 'professional speech' subject to intermediate scrutiny, holding instead that content-based regulations require strict or heightened scrutiny regardless of the professional context.",
+        "area_id": "free_speech",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "2018-06-26",
+        "valid_until": null,
+        "secondary_area_ids": [],
+        "notes": "NIFLA clarified that 'professional speech' is not a categorical exception to heightened scrutiny for content-based regulations. The Court limited prior professional speech doctrine to two narrow contexts: (1) disclosure of factual, noncontroversial information in commercial speech, and (2) regulation of professional conduct that incidentally implicates speech."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "professional_speech_doctrine",
+        "label": "Professional Speech Doctrine",
+        "description": "Professional speech receives reduced First Amendment protection only in two narrow contexts: (1) where professionals are required to disclose factual, noncontroversial information in their commercial speech, and (2) where states regulate professional conduct that incidentally implicates speech. Professional speech does not constitute a separate categorical exception to heightened scrutiny for content-based regulations.",
+        "area_id": "free_speech",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "2018-06-26",
+        "valid_until": null,
+        "secondary_area_ids": [],
+        "notes": "NIFLA rejected the Ninth Circuit's broad application of professional speech doctrine and narrowed its scope to two specific contexts. The Court emphasized that professionals retain full First Amendment protection outside these narrow exceptions."
+      },
+      {
+        "@type": "Doctrine",
+        "id": "undue_burden_speech_doctrine",
+        "label": "Undue Burden on Speech Doctrine",
+        "description": "A speech requirement may violate the First Amendment if it imposes an undue burden on protected speech, particularly when the requirement is government-scripted, speaker-based, and disconnected from the government's stated informational interest, or when it leaves unburdened speakers whose messages align with the government's views.",
+        "area_id": "free_speech",
+        "jurisdiction": [
+          "federal",
+          "state"
+        ],
+        "status": "active",
+        "valid_from": "2018-06-26",
+        "valid_until": null,
+        "secondary_area_ids": [],
+        "notes": "The Court applied this doctrine to the unlicensed notice requirement, finding it unduly burdensome because it imposed a government-scripted disclosure requirement disconnected from the state's informational interest and potentially left unburdened speakers whose messages aligned with the state's views."
       }
     ],
     "areas": [
@@ -24636,6 +24778,214 @@
         "valid_until": null,
         "opinions": [],
         "notes": "Applied the market-participant exception to the dormant Commerce Clause."
+      },
+      {
+        "id": "lake_carriers_assn_v_macmullan_1972",
+        "short_name": "Lake Carriers Assn. v. MacMullan",
+        "full_name": "Lake Carriers Association et al. v. MacMullan et al.",
+        "citation": "406 U.S. 498 (1972)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1972-05-30",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "vacated",
+        "holding": "A declaratory judgment action challenging a state marine sanitation statute presents a justiciable actual controversy where compliance obligations are presently effective, but federal court abstention is nonetheless appropriate pending state court construction of ambiguous provisions in the state statute that could avoid or narrow the federal constitutional questions presented.",
+        "holding_type": "affirmative",
+        "majority_author": "Brennan",
+        "per_curiam": false,
+        "vote": "7-2",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1972-05-30",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "Applied Pullman abstention despite finding the underlying controversy justiciable."
+      },
+      {
+        "id": "norwood_v_harrison_1973",
+        "short_name": "Norwood v. Harrison",
+        "full_name": "Norwood v. Harrison",
+        "citation": "413 U.S. 455 (1973)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1973-06-25",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "A state may not provide textbooks and instructional materials to students attending racially segregated private schools, as such aid effectively subsidizes racial discrimination in violation of the Equal Protection Clause.",
+        "holding_type": "affirmative",
+        "majority_author": null,
+        "per_curiam": false,
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1973-06-25",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "State material aid facilitating private discrimination constitutes state involvement triggering Equal Protection scrutiny."
+      },
+      {
+        "id": "hudgens_v_national_labor_relations_board_1976",
+        "short_name": "Hudgens v. NLRB",
+        "full_name": "Hudgens v. National Labor Relations Board",
+        "citation": "424 U.S. 507 (1976)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1976-02-25",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "vacated",
+        "holding": "The National Labor Relations Act does not protect the right of union members to picket on privately owned shopping center property when the owner has not invited such activity and the picketers have reasonable alternative means of communicating their message to the intended audience.",
+        "holding_type": "by_negation",
+        "majority_author": null,
+        "per_curiam": false,
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1976-02-25",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "Distinguished and limited the company-town doctrine from Marsh v. Alabama; effectively overruled Logan Valley Plaza."
+      },
+      {
+        "id": "parker_v_levy_1974",
+        "short_name": "Parker v. Levy",
+        "full_name": "Parker v. Levy",
+        "citation": "417 U.S. 733 (1974)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1974-06-19",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "Articles 90, 133, and 134 of the Uniform Code of Military Justice are not unconstitutionally vague as applied to military personnel, and military courts may enforce these provisions against service members without violating the First Amendment, because the different character of the military community and mission requires a different application of vagueness and First Amendment standards than would apply to civilian society.",
+        "holding_type": "affirmative",
+        "majority_author": null,
+        "per_curiam": false,
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1974-06-19",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "Narrowed vagueness doctrine as applied in the military context given distinct disciplinary needs."
+      },
+      {
+        "@type": "Case",
+        "id": "national_endowment_for_the_arts_v_finley_1998",
+        "short_name": "NEA v. Finley",
+        "full_name": "National Endowment for the Arts v. Finley",
+        "citation": "524 U.S. 569 (1998)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1998-06-25",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "Congress enjoys wide latitude in setting spending priorities that may indirectly affect certain forms of expression, and the funding of one activity to the exclusion of another does not constitute viewpoint discrimination; statutory funding guidelines requiring consideration of decency and respect standards are not impermissibly vague when applied to selective subsidies rather than direct regulation or criminal prohibition.",
+        "holding_type": "affirmative",
+        "majority_author": "O'Connor",
+        "per_curiam": false,
+        "vote": "8-1",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1998-06-25",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "The Court reversed the lower court rulings in favor of Finley. The dissent was not identified in the source material.",
+        "courtlistener_id": "118240"
+      },
+      {
+        "@type": "Case",
+        "id": "national_federation_of_independent_business_v_sebelius_2012",
+        "short_name": "NFIB v. Sebelius",
+        "full_name": "National Federation of Independent Business v. Sebelius",
+        "citation": "567 U.S. 519",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "2012-06-28",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "affirmed_in_part",
+        "holding": "Congress possesses enumerated powers only; the individual mandate under the Affordable Care Act may be upheld as a valid exercise of the taxing power, but the Medicaid expansion provision, as written, exceeds Congress's spending power because it impermissibly coerces the States by threatening to withhold all Medicaid funding.",
+        "holding_type": "affirmative",
+        "majority_author": "Roberts",
+        "per_curiam": false,
+        "vote": null,
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "2012-06-28",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "Fractured decision. Chief Justice Roberts delivered the opinion of the Court with respect to Parts I, II, and III-C; an opinion with respect to Part IV joined by Justices Breyer and Kagan; and an opinion with respect to Parts III-A, III-B, and III-D. The case addresses the constitutionality of the individual mandate and Medicaid expansion provisions of the Patient Protection and Affordable Care Act of 2010.",
+        "courtlistener_id": "9245719"
+      },
+      {
+        "@type": "Case",
+        "id": "national_institute_of_family_and_life_advocates_v_becerra_2018",
+        "short_name": "NIFLA v. Becerra",
+        "full_name": "National Institute of Family and Life Advocates v. Becerra",
+        "citation": "585 U.S. 755 (2018)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "2018-06-26",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "reversed",
+        "holding": "A state law requiring licensed pregnancy centers to provide information about state-sponsored family planning services and requiring unlicensed facilities to disclose their unlicensed status violates the First Amendment because the requirements are content-based regulations of speech that do not survive intermediate scrutiny and impose undue burdens on protected speech.",
+        "holding_type": "affirmative",
+        "majority_author": "Thomas",
+        "per_curiam": false,
+        "vote": "5-4",
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "2018-06-26",
+        "valid_until": null,
+        "opinions": [
+          {
+            "type": "concurrence",
+            "author": "Kennedy",
+            "joined_by": [
+              "Roberts",
+              "Alito",
+              "Gorsuch"
+            ]
+          },
+          {
+            "type": "dissent",
+            "author": "Breyer",
+            "joined_by": [
+              "Ginsburg",
+              "Sotomayor",
+              "Kagan"
+            ]
+          }
+        ],
+        "notes": "5-4 decision. Majority rejected the Ninth Circuit's characterization of the licensed notice requirement as regulating 'professional speech' and held that content-based speech regulations require heightened scrutiny. The Court rejected the notion that 'professional speech' constitutes a separate category of speech subject to reduced protection, except in narrow contexts involving factual, noncontroversial commercial disclosures or regulation of professional conduct incidentally implicating speech.",
+        "courtlistener_id": "4511150"
+      },
+      {
+        "@type": "Case",
+        "id": "united_states_department_of_agriculture_v_moreno_1973",
+        "short_name": "USDA v. Moreno",
+        "full_name": "United States Department of Agriculture v. Moreno",
+        "citation": "413 U.S. 528 (1973)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1973-06-25",
+        "opinion_form": "signed_majority",
+        "procedural_disposition": "affirmed",
+        "holding": "A statutory classification that excludes from the food stamp program any household containing an individual unrelated to other household members violates the Due Process Clause of the Fifth Amendment because it is not rationally related to a legitimate governmental purpose.",
+        "holding_type": "affirmative",
+        "majority_author": "Brennan",
+        "per_curiam": false,
+        "vote": null,
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1973-06-25",
+        "valid_until": null,
+        "opinions": [],
+        "notes": "Three-judge District Court held the classification invalid under the Due Process Clause of the Fifth Amendment; Supreme Court affirmed.",
+        "courtlistener_id": "108856"
       }
     ],
     "doctrinal_tests": [
@@ -30707,6 +31057,63 @@
         "valid_from": "1995-06-12",
         "valid_until": null,
         "notes": "This test applies uniformly to all racial classifications regardless of governmental level (federal, state, or local) or characterization (benign, remedial, or invidious). It overruled Metro Broadcasting's application of intermediate scrutiny to benign federal racial classifications. The test embodies three foundational propositions: skepticism, consistency, and congruence."
+      },
+      {
+        "@type": "DoctrinalTest",
+        "id": "nifla_content_based_disclosure_test",
+        "label": "Content-Based Disclosure Requirement Test",
+        "description": "A content-based disclosure requirement imposed on speech must satisfy heightened scrutiny. Even if the requirement qualifies as a factual, noncontroversial commercial disclosure, the government must demonstrate that the disclosure addresses a potentially real and not merely hypothetical harm, and the requirement must not be wildly underinclusive relative to the government's stated purpose.",
+        "area_id": "free_speech",
+        "source_case_id": "national_institute_of_family_and_life_advocates_v_becerra_2018",
+        "scrutiny_level": "intermediate",
+        "burden": "government",
+        "test_form": "conjunctive",
+        "prongs": [
+          {
+            "number": 1,
+            "label": "Content-Based Regulation Identification",
+            "description": "Determine whether the requirement is content-based, i.e., whether it requires speakers to convey a particular message or information based on the content of their speech.",
+            "burden_note": "Government must justify content-based regulations with heightened scrutiny.",
+            "valid_from": "2018-06-26",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 2,
+            "label": "Real Harm Requirement",
+            "description": "The government must demonstrate that the disclosure requirement addresses a potentially real and not merely hypothetical harm or informational gap.",
+            "burden_note": "Government bears burden of showing real, not hypothetical, justification.",
+            "valid_from": "2018-06-26",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 3,
+            "label": "Underinclusiveness Analysis",
+            "description": "The requirement must not be wildly underinclusive relative to the government's stated purpose. If the government's purpose is to inform the public about certain services, the requirement should apply broadly to all relevant speakers, not selectively.",
+            "burden_note": "Government must show the requirement is not wildly underinclusive in light of stated purpose.",
+            "valid_from": "2018-06-26",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          },
+          {
+            "number": 4,
+            "label": "Burden Proportionality",
+            "description": "The requirement must not impose an undue burden on protected speech, particularly where it is government-scripted, speaker-based, and disconnected from the government's informational interest, or where it leaves unburdened speakers whose messages align with the government's views.",
+            "burden_note": "Government must ensure the requirement is not unduly burdensome relative to its informational objective.",
+            "valid_from": "2018-06-26",
+            "valid_until": null,
+            "contested": false,
+            "contest_note": null
+          }
+        ],
+        "status": "active",
+        "valid_from": "2018-06-26",
+        "valid_until": null,
+        "notes": "This test applies to content-based disclosure requirements imposed on speech. The Court applied it to both the licensed notice requirement (which failed on underinclusiveness grounds) and the unlicensed notice requirement (which failed on undue burden grounds). The test reflects the Court's holding that content-based speech regulations do not receive reduced scrutiny merely because they involve professional speech or factual disclosures."
       }
     ]
   },
@@ -50101,6 +50508,183 @@
         "state"
       ],
       "notes": "White applied the market-participant exception to the dormant Commerce Clause, holding that a city acting as a proprietor may impose local hiring preferences without triggering dormant Commerce Clause scrutiny."
+    },
+    {
+      "id": "lake_carriers_applies_pullman_abstention",
+      "source_id": "lake_carriers_assn_v_macmullan_1972",
+      "target_id": "pullman_abstention_doctrine",
+      "edge_type": "APPLIES",
+      "valid_from": "1972-05-30",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ],
+      "notes": "Lake Carriers applied Pullman abstention pending state court clarification of an ambiguous state statute."
+    },
+    {
+      "id": "norwood_applies_state_action_doctrine",
+      "source_id": "norwood_v_harrison_1973",
+      "target_id": "state_action_doctrine",
+      "edge_type": "APPLIES",
+      "valid_from": "1973-06-25",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "Norwood applied state action doctrine to direct state material aid facilitating private discrimination."
+    },
+    {
+      "id": "hudgens_modifies_company_town_doctrine",
+      "source_id": "hudgens_v_national_labor_relations_board_1976",
+      "target_id": "company_town_public_forum_doctrine",
+      "edge_type": "MODIFIES",
+      "valid_from": "1976-02-25",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ],
+      "notes": "Hudgens distinguished an ordinary shopping center from Marshs functionally self-contained company town.",
+      "direction": "narrows"
+    },
+    {
+      "id": "parker_modifies_vagueness_doctrine",
+      "source_id": "parker_v_levy_1974",
+      "target_id": "vagueness_doctrine",
+      "edge_type": "MODIFIES",
+      "direction": "narrows",
+      "valid_from": "1974-06-19",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ],
+      "notes": "Parker narrowed vagueness doctrine as applied in the distinct military disciplinary context."
+    },
+    {
+      "id": "nea_v_finley_establishes_government_spending_speech",
+      "source_id": "national_endowment_for_the_arts_v_finley_1998",
+      "target_id": "government_spending_speech_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1998-06-25",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ],
+      "notes": "NEA v. Finley established the principle that government spending decisions enjoy wide latitude even when indirectly affecting speech."
+    },
+    {
+      "id": "nea_v_finley_establishes_vagueness_subsidy",
+      "source_id": "national_endowment_for_the_arts_v_finley_1998",
+      "target_id": "vagueness_selective_subsidy_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "1998-06-25",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ],
+      "notes": "NEA v. Finley clarified that vagueness doctrine applies with reduced force to selective subsidy programs."
+    },
+    {
+      "id": "nfib_sebelius_establishes_spending_power_coercion",
+      "source_id": "national_federation_of_independent_business_v_sebelius_2012",
+      "target_id": "spending_power_coercion_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2012-06-28",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ],
+      "notes": "The Court established or clarified the principle that conditional spending cannot be so coercive as to eliminate meaningful state choice."
+    },
+    {
+      "id": "nfib_sebelius_applies_enumerated_powers",
+      "source_id": "national_federation_of_independent_business_v_sebelius_2012",
+      "target_id": "enumerated_powers_doctrine",
+      "edge_type": "APPLIES",
+      "valid_from": "2012-06-28",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ],
+      "notes": "The Court applied the enumerated powers doctrine to determine whether Congress possessed constitutional authority to enact the individual mandate and Medicaid expansion provisions."
+    },
+    {
+      "id": "nfib_sebelius_applies_police_power",
+      "source_id": "national_federation_of_independent_business_v_sebelius_2012",
+      "target_id": "police_power_doctrine",
+      "edge_type": "APPLIES",
+      "valid_from": "2012-06-28",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "The Court discussed the police power as the general governing authority retained by the States, contrasting it with the Federal Government's limited enumerated powers."
+    },
+    {
+      "id": "nifla_establishes_content_based_speech_regulation_doctrine",
+      "source_id": "national_institute_of_family_and_life_advocates_v_becerra_2018",
+      "target_id": "content_based_speech_regulation_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2018-06-26",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "NIFLA established that content-based speech regulations are not subject to reduced scrutiny merely because they involve professional speech or factual disclosures."
+    },
+    {
+      "id": "nifla_modifies_professional_speech_doctrine",
+      "source_id": "national_institute_of_family_and_life_advocates_v_becerra_2018",
+      "target_id": "professional_speech_doctrine",
+      "edge_type": "MODIFIES",
+      "valid_from": "2018-06-26",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "direction": "narrows",
+      "notes": "NIFLA narrowed the professional speech doctrine by rejecting the Ninth Circuit's broad application and limiting reduced protection to two narrow contexts: (1) factual, noncontroversial commercial disclosures, and (2) regulation of professional conduct incidentally implicating speech."
+    },
+    {
+      "id": "nifla_establishes_undue_burden_speech_doctrine",
+      "source_id": "national_institute_of_family_and_life_advocates_v_becerra_2018",
+      "target_id": "undue_burden_speech_doctrine",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2018-06-26",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "NIFLA established that speech requirements may violate the First Amendment if they impose undue burdens, particularly when government-scripted and disconnected from the government's informational interest."
+    },
+    {
+      "id": "nifla_establishes_nifla_content_based_disclosure_test",
+      "source_id": "national_institute_of_family_and_life_advocates_v_becerra_2018",
+      "target_id": "nifla_content_based_disclosure_test",
+      "edge_type": "ESTABLISHES",
+      "valid_from": "2018-06-26",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal",
+        "state"
+      ],
+      "notes": "NIFLA established a multi-part test for evaluating content-based disclosure requirements, requiring heightened scrutiny and analysis of real harm, underinclusiveness, and burden proportionality."
+    },
+    {
+      "id": "usda_moreno_applies_rational_basis_due_process",
+      "source_id": "united_states_department_of_agriculture_v_moreno_1973",
+      "target_id": "rational_basis_due_process",
+      "edge_type": "APPLIES",
+      "valid_from": "1973-06-25",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ],
+      "notes": "Court applied rational basis review to evaluate whether the food stamp household classification was rationally related to a legitimate governmental purpose."
     }
   ],
   "schema_issues_found": [
