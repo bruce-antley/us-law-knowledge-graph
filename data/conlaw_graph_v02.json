@@ -24284,6 +24284,27 @@
         "valid_until": null,
         "opinions": [],
         "notes": "The opinion addresses whether California's retaliatory tax on out-of-state insurers violates the Commerce Clause and Equal Protection Clause. The Court affirms the California Court of Appeal's decision upholding the retaliatory tax based on the McCarran-Ferguson Act's exemption from Commerce Clause scrutiny."
+      },
+      {
+        "id": "poe_v_ullman_1961",
+        "short_name": "Poe v. Ullman",
+        "full_name": "Poe v. Ullman",
+        "citation": "367 U.S. 497 (1961)",
+        "court_level": "scotus",
+        "court_name": "Supreme Court of the United States",
+        "binding_scope": "federal_all",
+        "decided_date": "1961-06-19",
+        "opinion_form": "plurality",
+        "procedural_disposition": "dismissed",
+        "holding": "A challenge to a Connecticut statute criminalizing the use of contraceptives is not justiciable where the statute has never been enforced against the plaintiffs or anyone else in the nearly 80 years since its enactment, presenting no genuine threat of prosecution and therefore no case or controversy ripe for adjudication.",
+        "holding_type": "by_negation",
+        "majority_author": "Frankfurter",
+        "per_curiam": false,
+        "status": "good_law",
+        "precedential_weight": "binding",
+        "valid_from": "1961-06-19",
+        "valid_until": null,
+        "notes": "The majority dismissed on justiciability/ripeness grounds without reaching the merits. Justice Harlan dissented, reaching the merits and articulating an influential substantive due process framework that directly anticipated and shaped his own concurrence in Griswold v. Connecticut four years later, and became a foundational reference point for substantive due process analysis in later cases (Casey, Lawrence, Obergefell). See INTELLECTUALLY_PRECEDES edge to Griswold for this dissent lineage."
       }
     ],
     "doctrinal_tests": [
@@ -49498,6 +49519,29 @@
         "state"
       ],
       "notes": "The Court held that the McCarran-Ferguson Act exempts state insurance taxes from Commerce Clause scrutiny, rendering California's retaliatory tax constitutional."
+    },
+    {
+      "id": "poe_applies_ripeness_doctrine",
+      "source_id": "poe_v_ullman_1961",
+      "target_id": "justiciability_ripeness_standing",
+      "edge_type": "APPLIES",
+      "valid_from": "1961-06-19",
+      "valid_until": null,
+      "jurisdiction": [
+        "federal"
+      ],
+      "notes": "Poe applied ripeness doctrine to dismiss a constitutional challenge to an unenforced criminal statute, finding no genuine threat of prosecution and therefore no justiciable case or controversy."
+    },
+    {
+      "id": "harlan_poe_dissent_precedes_griswold",
+      "source_id": "poe_v_ullman_1961",
+      "target_id": "griswold_v_connecticut_1965",
+      "edge_type": "INTELLECTUALLY_PRECEDES",
+      "opinion_ref": {
+        "opinion_type": "dissent",
+        "author": "Harlan"
+      },
+      "notes": "Harlan dissent in Poe, reaching the merits the majority declined to address, articulated a substantive due process framework describing due process liberty as a rational continuum not confined to rights specifically enumerated in the Bill of Rights, and identified marital privacy as protected within that liberty. This reasoning directly anticipated and shaped the Harlan concurrence in Griswold four years later, which the majority opinion drew on in reaching its penumbral-rights holding."
     }
   ],
   "schema_issues_found": [
