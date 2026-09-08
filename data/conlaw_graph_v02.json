@@ -3553,24 +3553,6 @@
       },
       {
         "@type": "Doctrine",
-        "id": "reporter_privilege",
-        "label": "Reporter's Privilege",
-        "description": "The claimed privilege of journalists to refuse to disclose confidential sources and information to grand juries and courts.",
-        "area_id": "freedom_of_the_press",
-        "jurisdiction": [
-          "federal",
-          "state"
-        ],
-        "status": "active",
-        "valid_from": "1972-06-29",
-        "valid_until": null,
-        "secondary_area_ids": [
-          "first_amendment"
-        ],
-        "notes": "Branzburg v. Hayes rejected an absolute reporter's privilege, holding that reporters must disclose confidential sources when grand juries have a compelling interest in the information."
-      },
-      {
-        "@type": "Doctrine",
         "id": "medicaid_abortion_funding_doctrine",
         "label": "Medicaid Abortion Funding Doctrine",
         "description": "The doctrine that the federal government and participating states may restrict Medicaid funding for abortions without violating constitutional protections, even when funding is available for childbirth-related services.",
@@ -4913,21 +4895,6 @@
         "valid_from": "1833-01-01",
         "valid_until": null,
         "notes": "Established in Barron v. Baltimore. This doctrine was later substantially modified by the Fourteenth Amendment incorporation doctrine, which selectively applied most Bill of Rights protections to the states."
-      },
-      {
-        "@type": "Doctrine",
-        "id": "just_compensation_clause",
-        "label": "Just Compensation Clause",
-        "description": "The Fifth Amendment provides that private property shall not be taken for public use without just compensation. In Barron, the Court held this clause applies only to the federal government.",
-        "area_id": "individual_rights",
-        "jurisdiction": [
-          "federal",
-          "state"
-        ],
-        "status": "active",
-        "valid_from": "1833-01-01",
-        "valid_until": null,
-        "notes": "The Fifth Amendment's just compensation requirement was held in Barron to apply only to federal takings, not state or local government action."
       },
       {
         "@type": "Doctrine",
@@ -35921,7 +35888,7 @@
         "state"
       ],
       "notes": "Expands: Arizona Free Enterprise extended Davis's reasoning from asymmetric contribution limits to triggered public matching fund systems, completing the doctrinal foreclosure of legislative attempts to level the playing field through reactive funding schemes.",
-      "direction": "expands"
+      "direction": "narrows"
     },
     {
       "id": "arizona_interprets_a1",
@@ -47886,30 +47853,6 @@
         "federal"
       ],
       "notes": ""
-    },
-    {
-      "id": "barron_establishes_just_compensation_clause_limit",
-      "source_id": "barron_v_baltimore_1833",
-      "target_id": "just_compensation_clause",
-      "edge_type": "ESTABLISHES",
-      "valid_from": "1833-02-16",
-      "valid_until": null,
-      "jurisdiction": [
-        "federal"
-      ],
-      "notes": "Barron established that the Just Compensation Clause (and the Bill of Rights generally) applies only to the federal government, not the states. Corrected 2026-08-16."
-    },
-    {
-      "id": "branzburg_establishes_no_reporter_privilege",
-      "source_id": "branzburg_v_hayes_1972",
-      "target_id": "reporter_privilege",
-      "edge_type": "ESTABLISHES",
-      "valid_from": "1972-06-29",
-      "valid_until": null,
-      "jurisdiction": [
-        "federal"
-      ],
-      "notes": "Branzburg established that no First Amendment reporter privilege exists to refuse grand jury testimony. Corrected 2026-08-16."
     },
     {
       "id": "be_k_applies_noerr_pennington",
