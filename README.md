@@ -6,7 +6,7 @@ A machine-readable, navigable knowledge graph of U.S. constitutional law — bui
 
 The graph models legal doctrine as structure: what tests govern a doctrinal area, how cases established or modified those tests, which cases overruled which others, and how intellectual lineage flows from early dissents to later majority holdings. This is what keyword search cannot do.
 
-**Current status:** 919 nodes · 1,306 edges · 0 validation errors · 424 SCOTUS decisions spanning 1803–2024. First Amendment complete at full treatise depth (8 doctrinal areas). Justiciability, Equal Protection, Substantive and Procedural Due Process, Takings, Criminal Procedure, Dormant Commerce Clause, and Separation of Powers at substantial depth. Coverage validated against the Seidman casebook (91/91, 100%) and the Rotunda constitutional law treatise. Independently audited via a 5-model LLM panel cross-checked against primary sources.
+**Current status:** 1,208 nodes · 1,521 edges · 0 validation errors · 555 SCOTUS decisions spanning 1792–2024. Constitutional law build-out is functionally complete across all major areas: First Amendment (all 8 doctrinal sub-areas), Equal Protection, Substantive and Procedural Due Process, Takings, Criminal Procedure, Justiciability, Incorporation/State Action, Dormant Commerce Clause, and Separation of Powers. Coverage validated against the full 358-case Chemerinsky v2 casebook (~100%, reasonable confidence). Independently audited via a dedicated prong-level quality audit that cross-checks every DoctrinalTest's scrutiny level, burden allocation, and prong content against primary source text.
 
 ---
 
@@ -41,9 +41,9 @@ The graph is a directed acyclic graph (DAG) with typed nodes and edges.
 
 | Type | Count | Description |
 |------|-------|-------------|
-| `Case` | 424 | Judicial decisions — authority nodes, not taxonomy nodes |
-| `Doctrine` | 358 | Specific legal principles within an Area |
-| `DoctrinalTest` | 112 | Formalized multi-prong tests (e.g., Central Hudson, Glucksberg) |
+| `Case` | 555 | Judicial decisions — authority nodes, not taxonomy nodes |
+| `Doctrine` | 488 | Specific legal principles within an Area |
+| `DoctrinalTest` | 140 | Formalized multi-prong tests (e.g., Central Hudson, Glucksberg) |
 | `Area` | 21 | Doctrinal areas forming the taxonomy spine |
 | `ConstitutionalProvision` | 4 | Constitutional text (e.g., U.S. Const. amend. I) |
 
@@ -51,17 +51,18 @@ The graph is a directed acyclic graph (DAG) with typed nodes and edges.
 
 | Edge | Count | Meaning |
 |------|-------|---------|
-| `ESTABLISHES` | 361 | Case created a Doctrine or DoctrinalTest |
-| `APPLIES` | 269 | Case applied doctrine without changing it |
-| `CHILD_OF` | 243 | Area hierarchy |
+| `ESTABLISHES` | 515 | Case created a Doctrine or DoctrinalTest |
+| `APPLIES` | 313 | Case applied doctrine without changing it |
+| `CHILD_OF` | 242 | Area hierarchy |
 | `INTERPRETS` | 165 | Case interpreted a ConstitutionalProvision |
-| `MODIFIES` | 115 | Case changed doctrine (`direction`: narrows, expands, clarifies, complicates, repudiates) |
-| `GOVERNED_BY` | 62 | Area or Doctrine governed by a DoctrinalTest (`valid_from`, `valid_until`) |
-| `INTELLECTUALLY_PRECEDES` | 32 | A dissent or concurrence originated reasoning later adopted as majority law |
+| `MODIFIES` | 120 | Case changed doctrine (`direction`: narrows, expands, clarifies, complicates, repudiates) |
+| `GOVERNED_BY` | 66 | Area or Doctrine governed by a DoctrinalTest (`valid_from`, `valid_until`) |
+| `INTELLECTUALLY_PRECEDES` | 33 | A dissent or concurrence originated reasoning later adopted as majority law |
+| `OVERRULES` | 23 | Case overruled another (`overrule_type`: explicit, implicit, effective) |
 | `DISTINGUISHES` | 20 | Case distinguished itself from a prior case |
-| `OVERRULES` | 19 | Case overruled another (`overrule_type`: explicit, implicit, effective) |
-| `GROUNDED_IN` | 17 | Doctrine grounded in a ConstitutionalProvision |
+| `GROUNDED_IN` | 20 | Doctrine grounded in a ConstitutionalProvision |
 | `INCORPORATES` | 2 | 14th Amendment incorporating Bill of Rights provisions |
+| `RELATED_TO` | 1 | Cross-doctrinal connection between two Areas not expressible as CHILD_OF/MODIFIES/APPLIES |
 | `PRECONDITION_TO` | 1 | One doctrine must be satisfied before another applies |
 
 **Within modeled coverage, absence of edges is informative.** No `MODIFIES` edge means a case applied but did not change doctrine. No `OVERRULES` edge means the prior case is still good law. Outside modeled coverage, absence means the area has not been modeled — not that the relationship does not exist in doctrine.
@@ -69,6 +70,8 @@ The graph is a directed acyclic graph (DAG) with typed nodes and edges.
 ---
 
 ## Current coverage
+
+Constitutional law build-out is now functionally complete across every major area — not just First Amendment. All areas below are modeled at substantial-to-full depth; First Amendment and Justiciability are the most thoroughly developed given their outsized role in modern doctrine.
 
 ### First Amendment — full treatise depth
 
@@ -85,23 +88,24 @@ All eight doctrinal areas modeled:
 
 Includes: the Brandenburg lineage (Abrams 1919 → Gitlow → Whitney → Yates → Brandenburg 1969), the Central Hudson commercial speech test and its modifications, the Lemon/Kennedy establishment clause transition, Smith/Sherbert free exercise dual-track with scope and condition properties on GOVERNED_BY edges, and CourtListener citation depth on commercial speech cases.
 
-### Constitutional law — substantial depth
+### Constitutional law — substantial to full depth
 
-- **Justiciability** — standing (Article III injury/causation/redressability, per Lujan), political question doctrine (Baker v. Carr six-factor test), taxpayer standing (Flast v. Cohen), ripeness
+- **Justiciability** — standing (Article III injury/causation/redressability, per Lujan), political question doctrine (Baker v. Carr six-factor test), taxpayer standing (Flast v. Cohen), ripeness, mootness
 - **Equal Protection** — three scrutiny tiers; suspect and quasi-suspect classification doctrine (Strauder through SFFA 2023); rational basis with bite; fundamental rights EP
-- **Substantive Due Process** — Glucksberg framework; liberty interests; Obergefell; Dobbs
+- **Substantive Due Process** — Glucksberg framework; Lochner-era jurisprudence modeled as its own historically-distinct standard rather than anachronistically folded into modern tiers; liberty interests; Obergefell; Dobbs
 - **Procedural Due Process** — Mathews balancing; property and liberty interests; pretermination requirements
-- **Takings Clause** — Penn Central; Lucas; regulatory vs. physical takings
-- **Criminal Procedure** — Fourth Amendment search and seizure; third-party doctrine; Carpenter
+- **Takings Clause** — Penn Central; Pennsylvania Coal's earlier diminution-of-value standard modeled distinctly from Penn Central's later multi-factor balancing; Lucas; Nollan/Dolan exactions; regulatory vs. physical takings
+- **Criminal Procedure** — Fourth Amendment search and seizure; third-party doctrine; Carpenter; eyewitness identification (Neil v. Biggers/Manson reliability framework)
+- **Incorporation / State Action** — Fourteenth Amendment incorporation doctrine; state action doctrine (entanglement, traditional exclusive public function)
 - **Dormant Commerce Clause** — Pike balancing; discrimination per se; market participant exception
-- **Separation of Powers** — non-delegation; appointment and removal; executive privilege
+- **Separation of Powers** — non-delegation (intelligible principle, traced to its actual 1928 origin in J.W. Hampton, Jr. & Co. v. United States); appointment and removal; executive privilege
 
 ### Stats
 
-- **919 nodes · 1,306 edges · 0 validation errors**
-- Cases span 1803 (Marbury v. Madison) through 2024
-- Validated: Seidman casebook 91/91 (100%), Rotunda treatise systematic gap analysis
-- Independently audited: a 5-model LLM panel cross-checks every edge's legal characterization against primary source text; findings verified against case law before any correction is applied
+- **1,208 nodes · 1,521 edges · 0 validation errors**
+- Cases span 1792 (Hayburn's Case) through 2024
+- Validated: full 358-case Chemerinsky v2 casebook (~100% coverage, reasonable confidence — the comparison script itself has not been independently audited for false negatives)
+- Independently audited: a dedicated Ring 4 prong-level quality audit cross-checks every DoctrinalTest's scrutiny level, burden allocation, and prong content against primary source text using an LLM judge; findings verified against case law and the live graph before any correction is applied — this audit's own tooling has itself been debugged and improved as part of that process
 
 ---
 
